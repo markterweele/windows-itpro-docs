@@ -140,6 +140,10 @@ We recommend that you use set specific deadlines for feature and quality updates
 - [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates)
 - [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautoreboot)
 
+
+
+[!INCLUDE [Restart notifications for compliance deadlines](./includes/wufb-restart-notifications-compliance-deadlines.md)]
+
 These policies also offer an option to opt out of automatic restarts until a deadline is reached by presenting an "engaged restart experience" until the deadline has actually expired. At that point, the device automatically schedules a restart regardless of active hours.
 
 These notifications are what the user sees depending on the settings you choose:
