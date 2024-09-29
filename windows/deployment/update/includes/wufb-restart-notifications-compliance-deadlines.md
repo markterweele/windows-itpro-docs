@@ -37,6 +37,12 @@ About 4 hours before the deadline time, a notification displays in the middle of
 
 :::image type="content" source="../media/9091858-fifteen-minutes-restart.png" alt-text="Screenshot of the dialog that's displayed for a user 15 minutes before a restart is forced due to a deadline. The notification contains the options to restart now or confirm the notification." lightbox="../media/9091858-fifteen-minutes-restart.png":::
 
+In cases where a user scheduled restart fails but there is still more time before the deadline is reached, the user receives a notification to either restart now or to reschedule the restart.
+
+:::image type="content" source="../media/9091858-scheduled-restart-failed.png" alt-text="Screenshot of the dialog that's displayed for a user if their scheduled restart fails. The notification contains the options to restart now or to reschedule the restart." lightbox="../media/9091858-scheduled-restart-failed.png":::
+
+In cases where the deadline has passed, the user receives a notification that a restart is required. The only option a user can select is to restart now. The user has 5 minutes to select restart before the device is forced to restart.
+:::image type="content" source="../media/9091858-post-deadline-restart-now.png" alt-text="Screenshot of the dialog that's displayed for a user if their scheduled restart fails. The notification contains the options to restart now or to reschedule the restart." lightbox="../media/9091858-post-deadline-restart-now.png":::
 
 
 
@@ -49,7 +55,7 @@ For the first few days, the user receives a toast notification in the corner of 
 - If the device is Windows 11, version 22H2 and the user has set [the option](../waas-wufb-csp-mdm.md#user-settings-for-notifications) **Settings** > **Windows Update** > **Advanced options** > **Notify me when a restart is required to finish updating** to **On**, they immediately receive the toast notification when the device enters a restart pending state for updates. 
 - If the device is Windows 11, version 22H2 and the user has **Notify me when a restart is required to finish updating** set to **Off** (default), they receive a toast notification that a restart is required 24 hours after the device enters a reboot pending state for updates.
 
-:::image type="content" source="../media/9091858-toast-notification.png" alt-text="Screenshot of the initial toast notification that's displayed for a user when a restart is needed for an update but the deadline hasn't been reached. This is displayed for indows 11, version 22H2 and earlier devices. " lightbox="../media/9091858-toast-notification.png":::
+:::image type="content" source="../media/9091858-initial-toast.png" alt-text="Screenshot of the initial toast notification that's displayed for a user when a restart is needed for an update but the deadline hasn't been reached. This is displayed for indows 11, version 22H2 and earlier devices. " lightbox="../media/9091858-initial-toast.png":::
 
 ---
 
