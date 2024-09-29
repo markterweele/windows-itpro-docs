@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 These deadline policies also offer an option to opt out of automatic restarts until a deadline is reached by presenting an "engaged restart experience" until the deadline has actually expired. At that point, the device automatically schedules a restart regardless of active hours.
 
-These notifications are what the user sees depending on the settings you choose, and what operating system version their device is running. Generally, the user notifications become more noticeable as the deadline approaches. The experience described is the default and assumes there is ample time for notifications before the [effective deadline](./wufb-compliancedeadlines.md) occurs. The description doesn't account for settings such as [Update/NoUpdateNotificationsDuringActiveHours](/windows/client-management/mdm/policy-csp-update#NoUpdateNotificationsDuringActiveHours) that would significantly change the experience. 
+These notifications are what the user sees depending on the settings you choose, and what operating system version their device is running. Generally, the user notifications become more noticeable as the deadline approaches. The experience described is the default and assumes there is ample time for notifications before the [effective deadline](../wufb-compliancedeadlines.md) occurs. The description doesn't account for settings such as [Update/NoUpdateNotificationsDuringActiveHours](/windows/client-management/mdm/policy-csp-update#NoUpdateNotificationsDuringActiveHours) that would significantly change the experience. 
 
 # [Windows 11, version 23H2 and later](#tab/23h2)
 
@@ -20,22 +20,22 @@ When **Specify deadlines for automatic updates and restarts** is set for Windows
 
 While restart is pending, before the deadline occurs, users receive a toast notification in the corner of their screen. The notification includes the deadline date, and options to either restart now, pick a time to restart, or restart tonight once active hours ends. 
 
-- If the user has set [the option](../waas-wufb-csp-mdm#user-settings-for-notifications) **Settings** > **Windows Update** > **Advanced options** > **Notify me when a restart is required to finish updating** to **On**, they immediately receive the toast notification when the device enters a restart pending state for updates. Automatic restarts for updates are blocked for 24 hours after the initial notification to give these users time to prepare.
+- If the user has set [the option](../waas-wufb-csp-mdm.md#user-settings-for-notifications) **Settings** > **Windows Update** > **Advanced options** > **Notify me when a restart is required to finish updating** to **On**, they immediately receive the toast notification when the device enters a restart pending state for updates. Automatic restarts for updates are blocked for 24 hours after the initial notification to give these users time to prepare.
 - If the user has **Notify me when a restart is required to finish updating** set to **Off** (default), they receive a toast notification that a restart is required 24 hours after the device enters a restart pending state for updates.
 
-:::image type="content" source="./media/9091858-toast-notification.png" alt-text="Screenshot of the initial toast notification that's displayed for a user when a restart is needed for an update but the deadline hasn't been reached." lightbox="./media/9091858-toast-notification.png":::
+:::image type="content" source="../media/9091858-initial-toast.png" alt-text="Screenshot of the initial toast notification that's displayed for a user when a restart is needed for an update but the deadline hasn't been reached." lightbox="../media/9091858-initial-toast.png":::
 
 Toast notifications occur about every 27 hours until the day of the deadline. During this time, if they are allowed, automatic restarts might be scheduled after active hours. If an automatic restart is scheduled and the user is signed in at that time, they receive a notification 15 minutes before the scheduled time.
 
-:::image type="content" source="./media/9091858-pre-deadline-restart-imminent.png" alt-text="Screenshot of the dialog that's displayed for a user when a restart is needed for an update but the deadline hasn't been reached. The notification contains the deadline time and options to restart now or acknowledge the notification" lightbox="./media/9091858-pre-deadline-restart-imminent.png":::
+:::image type="content" source="../media/9091858-pre-deadline-restart-imminent.png" alt-text="Screenshot of the dialog that's displayed for a user when a restart is needed for an update but the deadline hasn't been reached. The notification contains the deadline time and options to restart now or acknowledge the notification" lightbox="../media/9091858-pre-deadline-restart-imminent.png":::
 
 About 4 hours before the deadline time, a notification displays in the middle of the screen that contains the deadline time and options to restart now or acknowledge the notification. 
 
-:::image type="content" source="./media/9091858-initial-deadline-day-dialog.png" alt-text="Screenshot of the dialog that's displayed for a user when a restart is needed for an update but the deadline hasn't been reached. The notification contains the deadline time and options to restart now or acknowledge the notification" lightbox="./media/9091858-initial-deadline-day-dialog.png":::
+:::image type="content" source="../media/9091858-initial-deadline-day-dialog.png" alt-text="Screenshot of the dialog that's displayed for a user when a restart is needed for an update but the deadline hasn't been reached. The notification contains the deadline time and options to restart now or acknowledge the notification" lightbox="../media/9091858-initial-deadline-day-dialog.png":::
 
 15 minutes before the deadline, a notification displays in the middle of the screen notifying the user that a restart is going to occur. Users can either confirm the restart or choose to restart now.
 
-:::image type="content" source="./media/9091858-fifteen-minutes-restart.png" alt-text="Screenshot of the dialog that's displayed for a user 15 minutes before a restart is forced due to a deadline. The notification contains the options to restart now or confirm the notification." lightbox="./media/9091858-fifteen-minutes-restart.png":::
+:::image type="content" source="../media/9091858-fifteen-minutes-restart.png" alt-text="Screenshot of the dialog that's displayed for a user 15 minutes before a restart is forced due to a deadline. The notification contains the options to restart now or confirm the notification." lightbox="../media/9091858-fifteen-minutes-restart.png":::
 
 
 
@@ -46,10 +46,10 @@ When **Specify deadlines for automatic updates and restarts** is set while resta
 
 For the first few days, the user receives a toast notification in the corner of their screen. The notification includes the deadline date, and options to either restart now, pick a time to restart, or restart tonight once active hours ends. 
 
-- If the device is Windows 11, version 22H2 and the user has set [the option](../waas-wufb-csp-mdm#user-settings-for-notifications) **Settings** > **Windows Update** > **Advanced options** > **Notify me when a restart is required to finish updating** to **On**, they immediately receive the toast notification when the device enters a restart pending state for updates. 
+- If the device is Windows 11, version 22H2 and the user has set [the option](../waas-wufb-csp-mdm.md#user-settings-for-notifications) **Settings** > **Windows Update** > **Advanced options** > **Notify me when a restart is required to finish updating** to **On**, they immediately receive the toast notification when the device enters a restart pending state for updates. 
 - If the device is Windows 11, version 22H2 and the user has **Notify me when a restart is required to finish updating** set to **Off** (default), they receive a toast notification that a restart is required 24 hours after the device enters a reboot pending state for updates.
 
-:::image type="content" source="./media/9091858-toast-notification.png" alt-text="Screenshot of the initial toast notification that's displayed for a user when a restart is needed for an update but the deadline hasn't been reached." lightbox="./media/9091858-toast-notification.png":::
+:::image type="content" source="../media/9091858-toast-notification.png" alt-text="Screenshot of the initial toast notification that's displayed for a user when a restart is needed for an update but the deadline hasn't been reached. This is displayed for indows 11, version 22H2 and earlier devices. " lightbox="../media/9091858-toast-notification.png":::
 
 ---
 
