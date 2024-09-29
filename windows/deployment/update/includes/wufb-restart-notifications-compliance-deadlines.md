@@ -42,11 +42,11 @@ In cases where a user scheduled restart fails but there's still more time before
 :::image type="content" source="../media/9091858-scheduled-restart-failed.png" alt-text="Screenshot of the dialog displayed for a user if their scheduled restart fails. The notification contains the options to restart now or to reschedule the restart." lightbox="../media/9091858-scheduled-restart-failed.png":::
 
 In cases where the deadline has passed, the user receives a notification that a restart is required. The only option a user can select is to restart now. The user has 15 minutes to select restart before the device is forced to restart.
-:::image type="content" source="../media/9091858-post-deadline-restart-now.png" alt-text="Screenshot of the dialog displayed for a user if their scheduled restart fails. The notification contains the options to restart now or to reschedule the restart." lightbox="../media/9091858-post-deadline-restart-now.png":::
+:::image type="content" source="../media/9091858-post-deadline-restart-now.png" alt-text="Screenshot of the dialog displayed for a user if their scheduled restart fails and the deadline is passed. The notification contains the options to restart now or to reschedule the restart." lightbox="../media/9091858-post-deadline-restart-now.png":::
 
 In cases where the deadline has passed and the restart failed, the user receives a notification that a restart is required. If the device is plugged in, it will attempt to restart every 5 minutes until the device successfully restarts. The user has 5 minutes to restart before the device is forced to restart.
 
-:::image type="content" source="../media/9091858-past-deadline-restart-failed.png" alt-text="Screenshot of the dialog displayed for a user if their scheduled restart fails and it's past the deadline. The user has 5 minutes to select restart before the device is forced to restart." lightbox="../media/99091858-past-deadline-restart-failed.png":::
+:::image type="content" source="../media/9091858-past-deadline-restart-failed.png" alt-text="Screenshot of the dialog displayed for a user if their scheduled restart fails and it's past the deadline. The user has 5 minutes to select restart before the device is forced to restart." lightbox="../media/9091858-past-deadline-restart-failed.png":::
 
 # [Windows 11, version 22H2 and earlier](#tab/22h2)
 
@@ -67,7 +67,7 @@ As the deadline gets closer, notifications display in the middle of the screen a
 
 During this time before the deadline is reached, if they're allowed, automatic restarts might be scheduled after active hours. If an automatic restart is scheduled or the user scheduled the restart, and the user is signed in at that time, they receive a notification 15 minutes before the scheduled time.
 
-:::image type="content" source="../media/9091858-pre-deadline-restart-imminent.png" alt-text="Screenshot of the dialog displayed for a user when a restart is needed for an update but the deadline isn't reached yet. The notification contains the deadline time and options to restart now or acknowledge the notification. This notification is displayed for Windows 11, version 22H2, and earlier devices." lightbox="../media/9091858-pre-deadline-restart-imminent.png":::
+:::image type="content" source="../media/9091858-pre-deadline-restart-imminent.png" alt-text="Screenshot of the dialog displayed for a user when a restart is needed for an update but the deadline isn't reached yet. The notification contains the deadline time and options to restart now, schedule a restart, or acknowledge the notification. This notification is displayed for Windows 11, version 22H2, and earlier devices." lightbox="../media/9091858-pre-deadline-restart-imminent.png":::
 
 The day of the deadline, a notification displays that contains the deadline time and options to restart now or acknowledge the notification. 
 
@@ -83,6 +83,6 @@ In cases where a user scheduled restart fails but there's still more time before
 
 In cases where the deadline has passed and the restart failed, the user receives a notification that a restart is required. The user has 5 minutes to restart before the device is forced to restart.
 
-:::image type="content" source="../media/9091858-past-deadline-restart-failed.png" alt-text="Screenshot of the dialog displayed for a user if their scheduled restart fails and it's past the deadline. The user has 5 minutes to select restart before the device is forced to restart." lightbox="../media/99091858-past-deadline-restart-failed.png":::
+:::image type="content" source="../media/9091858-past-deadline-restart-failed.png" alt-text="Screenshot of the dialog displayed for a user if their scheduled restart fails and it's past the deadline. The user has 5 minutes to select restart before the device is forced to restart." lightbox="../media/9091858-past-deadline-restart-failed.png":::
 
 ---
