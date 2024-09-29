@@ -71,3 +71,8 @@ For quality updates, the deadline countdown starts from the time the update is *
 > [!NOTE]
 > - When using the newer policy that contains **Feature updates grace period in days**, this setting is ignored by clients that are running Windows 11 version 21H2 and earlier. The grace period for quality updates is used for both quality updates and feature updates for these clients.
 > - When **Specify deadlines for automatic updates and restarts** is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored.
+
+## User experience for restart notifications with compliance deadlines
+
+<!--using include for restart notifications for compliance deadlines-->
+[!INCLUDE [Restart notifications for compliance deadlines](./includes/wufb-restart-notifications-compliance-deadlines.md)]

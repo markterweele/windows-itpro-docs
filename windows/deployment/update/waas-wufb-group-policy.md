@@ -147,35 +147,8 @@ When you set these policies, installation happens automatically at the specified
 We recommend that you use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadline for automatic updates and restarts** for feature and quality updates to ensure that devices stay secure on Windows 10, version 1709 and later. This works by enabling you to specify the number of days that can elapse after an update is offered to a device before it must be installed. Also you can set the number of days that can elapse after a pending restart before the user is forced to restart.
 
 
+<!--using include for restart notifications for compliance deadlines-->
 [!INCLUDE [Restart notifications for compliance deadlines](./includes/wufb-restart-notifications-compliance-deadlines.md)]
-
-This policy also offers an option to opt out of automatic restarts until a deadline is reached by presenting an "engaged restart experience" until the deadline has actually expired. At that point the device will automatically schedule a restart regardless of active hours.
-
-These notifications are what the user sees depending on the settings you choose:
-
-When **Specify deadlines for automatic updates and restarts** is set (For Windows 10, version 1709 and later):
-
- - **While restart is pending, before the deadline occurs:**
-
-   - For the first few days, the user receives a toast notification
-
-   - After this period, the user receives this dialog:
-
-     ![The notification users get for an impending restart prior to deadline.](images/wufb-update-deadline-warning.png)
-
-   - If the user scheduled a restart, or if an auto restart is scheduled, 15 minutes before the scheduled time the user receives this notification that the restart is about to occur:
-
-     ![The notification users get for an impending restart 15 minutes prior to restart.](images/wufb-restart-imminent-warning.png)
-
- - **If the restart is still pending after the deadline passes:**
- 
-   - Within 12 hours before the deadline passes, the user receives this notification that the deadline is approaching:
-
-     ![The notification users get for an approaching restart deadline.](images/wufb-pastdeadline-restart-warning.png)
-
-   - Once the deadline has passed, the user is forced to restart to keep their devices in compliance and receives this notification:
-
-     ![The notification users get for an imminent restart after the deadline.](images/wufb-pastdeadline-restartnow.png)
 
 
 ### <a name="user-settings-for-notifications"></a> End user settings for notifications
