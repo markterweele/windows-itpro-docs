@@ -80,7 +80,7 @@ Some key considerations about OOB releases include:
   - OOB releases supersede any prior monthly security update and optional nonsecurity preview release. 
 - OOB releases generally require IT admins to deploy off-cycle.  
 - Some OOB releases are classified as critical.
-  - Critical OOB releases are automatically available to WSUS and Windows Update for Business, just like the monthly security update releases.  
+  - Critical OOB releases are automatically available to WSUS and Windows Update client policies, just like the monthly security update releases.  
 - Some OOB releases are classified as noncritical.
   - Noncritical releases only go to the Microsoft Update Catalog for users or organizations to voluntarily obtain the update.
 
@@ -90,8 +90,8 @@ Starting with Windows 11, version 22H2, new features and enhancements are introd
 
 Some of the new features may be disruptive to organizations. By default, these select features are turned off temporarily for all managed devices until the next annual feature update is installed. In this scenario, a device is considered managed if it uses one of the following to determine which updates to install:
 
-- Windows Update for Business
-  - Devices that have updates managed Microsoft Intune use Windows Update for Business
+- Windows Update client policies
+  - Devices that have updates managed Microsoft Intune use Windows Update client policies
 - WSUS
   - Devices that have updates managed by Configuration Manager use WSUS
 

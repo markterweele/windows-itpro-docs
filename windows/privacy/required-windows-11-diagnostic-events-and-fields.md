@@ -4216,10 +4216,10 @@ The following fields are available:
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough.
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
 - **IPVersion**  Indicates whether the download took place over IPv4 or IPv6
-- **IsWUfBDualScanEnabled**  Indicates if Windows Update for Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Indicates if Windows Update for Business is enabled on the device.
-- **IsWUfBFederatedScanDisabled**  Indicates if Windows Update for Business federated scan is disabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Indicates if Windows Update client policies dual scan is enabled on the device.
+- **IsWUfBEnabled**  Indicates if Windows Update client policies are enabled on the device.
+- **IsWUfBFederatedScanDisabled**  Indicates if Windows Update client policies federated scan is disabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the target version policy is enabled on the device.
 - **MetadataIntegrityMode**  The mode of the update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce
 - **NumberOfApplicationsCategoryScanEvaluated**  The number of categories (apps) for which an app update scan checked
 - **NumberOfLoop**  The number of round trips the scan required
@@ -4262,9 +4262,9 @@ The following fields are available:
 - **FlightBuildNumber**  If this download was for a flight (pre-release build), this indicates the build number of that flight.
 - **FlightId**  The specific ID of the flight (pre-release build) the device is getting.
 - **HardwareId**  If this download was for a driver targeted to a particular device model, this ID indicates the model of the device.
-- **IsWUfBDualScanEnabled**  Indicates if Windows Update for Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Indicates if Windows Update for Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Indicates if Windows Update client policies dual scan is enabled on the device.
+- **IsWUfBEnabled**  Indicates if Windows Update client policies are enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the target version policy is enabled on the device.
 - **PackageFullName**  The package name of the content.
 - **ProcessName**  The process name of the caller who initiated API calls, in the event where CallerApplicationName wasn't provided.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.

@@ -42,7 +42,7 @@ With the deadline-drive cadence type, you can control and customize the deferral
 > [!NOTE]
 > The configured grace period will apply to both Windows quality updates and Windows feature updates.
 
-Each deployment ring can be scheduled independent of the others, and there are no dependencies that the previous deployment ring must be scheduled before the next ring. Further, if the cadence type is set as **Deadline-driven**, the automatic update behavior setting, **Reset to default** in the Windows Update for Business policy, are applied.
+Each deployment ring can be scheduled independent of the others, and there are no dependencies that the previous deployment ring must be scheduled before the next ring. Further, if the cadence type is set as **Deadline-driven**, the automatic update behavior setting, **Reset to default** in the Windows Update client policies, are applied.
 
 It's possible for you to change the cadence from the Windows Autopatch groups blade while update deployments are in progress. Windows Autopatch abides by the principle to always respect your preferences over service-defined values.
 
@@ -73,7 +73,7 @@ The Scheduled install cadence has two options:
 
 | Option | Description |
 | ----- | ----- |
-| Active hours | The period (daily) that the user normally does their work, or the device is busy performing business critical actions.<p>The time outside of active hours is when the device is available for Windows to perform an update and restart the device (daily). The max range for Active hours is 18 hours. The six-hour period outside of the active hours is the deployment period, when Windows Update for Business scans, install and restart the device.</p>
+| Active hours | The period (daily) that the user normally does their work, or the device is busy performing business critical actions.<p>The time outside of active hours is when the device is available for Windows to perform an update and restart the device (daily). The max range for Active hours is 18 hours. The six-hour period outside of the active hours is the deployment period, when Windows Update client policies scan, install, and restart the device.</p>
 | Schedule install and restart | Use this option to prevent the service from installing Windows Updates except during the specified start time. You can specify the following occurrence options:<ul><li>Weekly</li><li>Bi-weekly</li><li>Monthly</li></ul><p>Select a time when the device has low activity for the updates to complete. Ensure that the Windows Update has three to four hours to complete the installation and restart the device.</p> |
 
 > [!NOTE]

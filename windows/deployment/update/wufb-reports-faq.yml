@@ -16,14 +16,14 @@ summary: |
 
   **General questions**:
 
-  - [What is Windows Update for Business reports?](#what-is-windows-update-for-business-reports)
-  - [Is Windows Update for Business reports free?](#is-windows-update-for-business-reports-free)
+  - [What is Windows Update for Business reports?](#what-is-Windows Update for Business reports)
+  - [Is Windows Update for Business reports free?](#is-Windows Update for Business reports-free)
   - [What Windows versions are supported?](#what-windows-versions-are-supported)
 
   **Setup questions**:
 
-  - [How do you set up Windows Update for Business reports?](#how-do-you-set-up-windows-update-for-business-reports)
-  - [Why is "Waiting for Windows Update for Business reports data" displayed on the page](#why-is--waiting-for-windows-update-for-business-reports-data--displayed-on-the-page)
+  - [How do you set up Windows Update for Business reports?](#how-do-you-set-up-Windows Update for Business reports)
+  - [Why is "Waiting for Windows Update for Business reports data" displayed on the page](#why-is--waiting-for-Windows Update for Business reports-data--displayed-on-the-page)
   - [Why am I getting the error "400 Bad Request: The specified resource already exists"?](#why-am-i-getting-the-error--400-bad-request--the-specified-resource-already-exists-)
 
   **Questions about using Windows Update for Business reports**:
@@ -147,7 +147,7 @@ sections:
             - **OSQualityUpdateStatus**: Indicates the status of the monthly update that's released on the fourth Tuesday
       - question: How do I confirm that devices are sending data?
         answer: |
-          Once enrollment is done and devices are properly configured to share data, wait for 48 hours for data to start showing up in reports. It can take up to 14 days for all of your devices to show up in reports in some cases where devices aren't active much. You can check to see if the Log Analytics tables are being populated in your workspace. The data is ingested by the service daily to generate reports. If you notice a day is missing, it's possible that the reports service missed an ingestion. To confirm devices are sending data, [query](wufb-reports-use.md#display-windows-update-for-business-reports-data) the [UCClient table](wufb-reports-schema-ucclient.md). The following query shows total enrolled device count per time-generated: 
+          Once enrollment is done and devices are properly configured to share data, wait for 48 hours for data to start showing up in reports. It can take up to 14 days for all of your devices to show up in reports in some cases where devices aren't active much. You can check to see if the Log Analytics tables are being populated in your workspace. The data is ingested by the service daily to generate reports. If you notice a day is missing, it's possible that the reports service missed an ingestion. To confirm devices are sending data, [query](wufb-reports-use.md#display-Windows Update for Business reports-data) the [UCClient table](wufb-reports-schema-ucclient.md). The following query shows total enrolled device count per time-generated: 
 
           `UCClient | summarize count() by TimeGenerated`
 

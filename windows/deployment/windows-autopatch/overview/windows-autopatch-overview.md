@@ -18,7 +18,7 @@ ms.reviewer: hathind
 # What is Windows Autopatch?
 
 > [!IMPORTANT]
-> In September, Windows Update for Business deployment service unified under Windows Autopatch. Unification is going through a gradual rollout over the next several weeks. If your experience looks different from the documentation, you didn't receive the unified experience yet. Review [Prerequisites](../prepare/windows-autopatch-prerequisites.md) and [Features and capabilities](#features-and-capabilities) to understand licensing and feature entitlement.
+> In September, Windows Autopatch unified under Windows Autopatch. Unification is going through a gradual rollout over the next several weeks. If your experience looks different from the documentation, you didn't receive the unified experience yet. Review [Prerequisites](../prepare/windows-autopatch-prerequisites.md) and [Features and capabilities](#features-and-capabilities) to understand licensing and feature entitlement.
 
 Windows Autopatch is a cloud service that automates Windows, Microsoft 365 Apps for enterprise, Microsoft Edge, and Microsoft Teams updates to improve security and productivity across your organization.
 

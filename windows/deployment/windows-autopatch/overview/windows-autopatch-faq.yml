@@ -17,9 +17,9 @@ summary: This article answers frequently asked questions about Windows Autopatch
 sections:
   - name: General
     questions: 
-      - question: What is the difference between Windows Update for Business and Windows Autopatch?
+      - question: What is the difference between Windows Update client policies and Windows Autopatch?
         answer: |
-          Windows Autopatch is a service that removes the need for organizations to plan and operate the update process. Windows Autopatch moves the burden from your IT to Microsoft. Windows Autopatch uses [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb) and other service components to update devices. Both are part of [Windows Enterprise E3+ and F3](../prepare/windows-autopatch-prerequisites.md#more-about-licenses).
+          Windows Autopatch is a service that removes the need for organizations to plan and operate the update process. Windows Autopatch moves the burden from your IT to Microsoft. Windows Autopatch uses [Windows Update client policies](/windows/deployment/update/waas-manage-updates-wufb) and other service components to update devices. Both are part of [Windows Enterprise E3+ and F3](../prepare/windows-autopatch-prerequisites.md#more-about-licenses).
       - question: Is Windows 365 for Enterprise supported with Windows Autopatch?
         answer: |
           Windows Autopatch supports Windows 365 for Enterprise. Windows 365 for Business isn't supported.

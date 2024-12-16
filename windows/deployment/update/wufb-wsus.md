@@ -1,6 +1,6 @@
 ---
-title: Use Windows Update for Business and Windows Server Update Services (WSUS) together
-description: Learn how to use Windows Update for Business and WSUS together using the new scan source policy.
+title: Use Windows Update client policies and Windows Server Update Services (WSUS) together
+description: Learn how to use Windows Update client policies and WSUS together using the new scan source policy.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
@@ -14,11 +14,11 @@ appliesto:
 ms.date: 04/22/2024
 ---
 
-# Use Windows Update for Business and WSUS together 
+# Use Windows Update client policies and WSUS together 
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
-The Windows update scan source policy enables you to choose what types of updates to get from either [WSUS](waas-manage-updates-wsus.md) or Windows Update for Business service.
+The Windows update scan source policy enables you to choose what types of updates to get from either [WSUS](waas-manage-updates-wsus.md) or Windows Update client policies.
 
 We added the scan source policy starting with the [September 1, 2021—KB5005101 (OS Builds 19041.1202, 19042.1202, and 19043.1202) Preview](https://support.microsoft.com/help/5005101) update and it applies to Window 10, version 2004 and above and Windows 11. This policy changes the way devices determine whether to scan against a local WSUS server or Windows Update service.
 
@@ -53,7 +53,7 @@ To help you better understand the scan source policy, see the default scan behav
 > The only two relevant policies for where your updates come from are the specify scan source policy and whether or not you have configured a WSUS server. This should simplify the configuration options.
 
 > [!NOTE]
-> If you have devices configured for WSUS and do not configure the scan source policy for feature updates to come from Windows update or set any Windows Update for Business offering policies, then users who select "Check online for updates" on the Settings page may see the optional upgrade to Windows 11. We recommend configuring the scan source policy or a Windows Update for Business offering policy to prevent such.
+> If you have devices configured for WSUS and do not configure the scan source policy for feature updates to come from Windows update or set any offering policies by using Windows Update client policies, then users who select "Check online for updates" on the Settings page may see the optional upgrade to Windows 11. We recommend configuring the scan source policy or an offering policy to prevent such.
 
 ## Configure the scan sources
 

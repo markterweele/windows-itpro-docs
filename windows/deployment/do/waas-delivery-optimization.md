@@ -26,7 +26,7 @@ Windows updates, upgrades, and applications can contain packages with large file
 
 To use either the peer-to-peer functionality or the Microsoft Connected Cache features, devices must have access to the Internet and Delivery Optimization cloud services. When Delivery Optimization is configured to use peers and Microsoft Connected Cache, to achieve the best possible content delivery experience, the client connects to Connected Cache and peers in parallel. If the desired content can't be obtained from Connected Cache or peers, Delivery Optimization seamlessly falls back to the HTTP source to get the requested content.
 
-You can use Delivery Optimization with Windows Update, Windows Server Update Services (WSUS), Microsoft Intune/Windows Update for Business, or Microsoft Configuration Manager (when installation of Express Updates is enabled).
+You can use Delivery Optimization with Windows Update, Windows Server Update Services (WSUS), Microsoft Intune/Windows Update client policies, or Microsoft Configuration Manager (when installation of Express Updates is enabled).
 
 For information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization](delivery-optimization-configure.md). For a comprehensive list of all Delivery Optimization settings, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
 

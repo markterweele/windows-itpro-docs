@@ -1,6 +1,6 @@
 ---
-title: Configure Windows Update for Business via Group Policy
-description: Walk through of how to configure Windows Update for Business settings using Group Policy to update devices.
+title: Configure Windows Update client policies via Group Policy
+description: Walk through of how to configure Windows Update client policies using Group Policy to update devices.
 ms.service: windows-client
 ms.subservice: itpro-updates
 manager: aaroncz
@@ -20,23 +20,24 @@ appliesto:
 ms.date: 05/16/2024
 ---
 
-# Walkthrough: Use Group Policy to configure Windows Update for Business
+# Walkthrough: Use Group Policy to configure Windows Update client policies
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
 ## Overview 
 
-You can use Group Policy through the Group Policy Management Console (GPMC) to control how Windows Update for Business works. You should consider and devise a deployment strategy for updates before you make changes to the Windows Update for Business settings. For more information, see [Prepare servicing strategy for Windows client updates](waas-servicing-strategy-windows-10-updates.md) for more information. 
+You can use Group Policy through the Group Policy Management Console (GPMC) to control how Windows Update client policies work. You should consider and devise a deployment strategy for updates before you make changes to the Windows Update client policies. For more information, see [Prepare servicing strategy for Windows client updates](waas-servicing-strategy-windows-10-updates.md) for more information. 
 
-An IT administrator can set policies for Windows Update for Business by using Group Policy, or they can be set locally (per device). All of the relevant policies are under the path **Computer configuration > Administrative Templates > Windows Components > Windows Update**.
+An IT administrator can configure Windows Update client policies by using Group Policy, or they can be set locally (per device). All of the relevant policies are under the path **Computer configuration > Administrative Templates > Windows Components > Windows Update**.
 
-To manage updates with Windows Update for Business as described in this article, you should prepare with these steps, if you haven't already:
+To manage updates with Windows Update client policies as described in this article, you should prepare with these steps, if you haven't already:
 
 - Create Active Directory security groups that align with the deployment rings you use to phase deployment of updates.
 - Allow access to the Windows Update service.
 - Download and install ADMX templates appropriate to your Windows 10 version. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and [Step-By-Step: Managing Windows 10 with Administrative templates](/archive/blogs/canitpro/step-by-step-managing-windows-10-with-administrative-templates).
 
-## Set up Windows Update for Business
+## Set up Windows Update client policies
+<a name="set-up-windows-update-for-business"></a>
 
 In this example, one security group is used to manage updates. Typically we would recommend having at least three rings (early testers for pre-release builds, broad deployment for releases, critical devices for mature releases) to deploy. 
 
@@ -50,9 +51,9 @@ Follow these steps on a device running the Remote Server Administration Tools or
 
 3. Right-click *\<your domain>* and select **Create a GPO in this domain and link it here**.
 
-4. In the **New GPO** dialog box, enter **Windows Update for Business - Group 1** as the name of the new Group Policy Object.
+4. In the **New GPO** dialog box, enter **Windows Update client policies - Group 1** as the name of the new Group Policy Object.
 
-5. Right-click the **"Windows Update for Business - Group 1"** object, and then select **Edit**.
+5. Right-click the **"Windows Update client policies - Group 1"** object, and then select **Edit**.
 
 6. In the Group Policy Management Editor, go to **Computer Configuration > Policies > Administrative Templates > Windows Components > Windows Update**. You're now ready to start assigning policies to this ring (group) of devices.
 
@@ -63,7 +64,7 @@ You can control when updates are applied, for example by deferring when an updat
 
 ### Determine which updates you want offered to your devices
 
-Both feature and quality updates are automatically offered to devices that are connected to Windows Update using Windows Update for Business policies. However, you can choose whether you want the devices to additionally receive other Microsoft Updates or drivers that are applicable to that device.
+Both feature and quality updates are automatically offered to devices that are connected to Windows Update using Windows Update client policies. However, you can choose whether you want the devices to additionally receive other Microsoft Updates or drivers that are applicable to that device.
 
 To enable Microsoft Updates, use the Group Policy Management Console go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates**  and select **Install updates for other Microsoft products**. For a list of other Microsoft products that might be updated, see [Update other Microsoft products](update-other-microsoft-products.md).
 
@@ -85,7 +86,7 @@ Drivers are automatically enabled because they're beneficial to device systems. 
 
 #### I want to manage which released feature update my devices receive
 
-A Windows Update for Business administrator can defer or pause updates. You can defer feature updates for up to 365 days and defer quality updates for up to 30 days. Deferring simply means that you won't receive the update until it has been released for at least the number of deferral days you specified (offer date = release date + deferral date). You can pause feature or quality updates for up to 35 days from a given start date that you specify.
+A Windows Update client policies administrator can defer or pause updates. You can defer feature updates for up to 365 days and defer quality updates for up to 30 days. Deferring simply means that you won't receive the update until it has been released for at least the number of deferral days you specified (offer date = release date + deferral date). You can pause feature or quality updates for up to 35 days from a given start date that you specify.
 
 - To defer or pause a feature update: **Computer configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Select when Preview Builds and feature updates are Received**
 - Defer or pause a quality update: **Computer configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Select when Quality Updates are Received**
@@ -228,7 +229,7 @@ If you use Windows Server Update Server (WSUS), you can prevent users from scann
 - Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later <!--7991583-->
 - Windows 10, version 22H2 with [KB5032278](https://support.microsoft.com/help/5032278), or a later cumulative update installed <!--8503602-->
 
-In addition to the monthly cumulative update, optional updates are available to provide new features and nonsecurity changes. Most optional updates are released on the fourth Tuesday of the month, known as optional nonsecurity preview releases. Optional updates can also include features that are gradually rolled out, known as controlled feature rollouts (CFRs). Installation of optional updates isn't enabled by default for devices that receive updates using Windows Update for Business. However, you can enable optional updates for devices by using the **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage updates offered from Windows Update > Enable optional updates** policy.
+In addition to the monthly cumulative update, optional updates are available to provide new features and nonsecurity changes. Most optional updates are released on the fourth Tuesday of the month, known as optional nonsecurity preview releases. Optional updates can also include features that are gradually rolled out, known as controlled feature rollouts (CFRs). Installation of optional updates isn't enabled by default for devices that receive updates using Windows Update client policies. However, you can enable optional updates for devices by using the **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage updates offered from Windows Update > Enable optional updates** policy.
 
 To keep the timing of updates consistent, the **Enable optional updates** policy respects the [deferral period for quality updates](waas-configure-wufb.md#configure-when-devices-receive-quality-updates). This policy allows you to choose if devices should receive CFRs in addition to the optional nonsecurity preview releases, or if the end-user can make the decision to install optional updates. This policy can change the behavior of the **Get the latest updates as soon as they're available** option in **Settings** > **Update & security** > ***Windows Update** > **Advanced options**. 
 

@@ -35,7 +35,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
-| All articles | Windows Update for Business deployment service unified under Windows Autopatch. Unification is going through a gradual rollout over the next several weeks. If your experience looks different from the documentation, you didn't receive the unified experience yet. Review [Prerequisites](../prepare/windows-autopatch-prerequisites.md) and [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities) to understand licensing and feature entitlement.|
+| All articles | Windows Autopatch unified under Windows Autopatch. Unification is going through a gradual rollout over the next several weeks. If your experience looks different from the documentation, you didn't receive the unified experience yet. Review [Prerequisites](../prepare/windows-autopatch-prerequisites.md) and [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities) to understand licensing and feature entitlement.|
 
 ## March 2024
 

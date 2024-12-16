@@ -55,13 +55,13 @@ Managed devices are devices that are under organizational control. Managed devic
 
 If you manage devices on behalf of your organization, you can upgrade eligible devices to Windows 11 using your existing deployment and management tools.
 
-Organizations that use Windows Update for Business also have the following benefits:
+Organizations that use Windows Update client policies also have the following benefits:
 
 - Ensuring that devices that don't meet the minimum hardware requirements aren't automatically offered the Windows 11 upgrade.
-- More insight into safeguard holds. While safeguard holds function for Windows 11 devices just as they do for Windows 10 today, administrators using Windows Update for Business have access to information on which safeguard holds are preventing individual devices from taking the upgrade to Windows 11.
+- More insight into safeguard holds. While safeguard holds function for Windows 11 devices just as they do for Windows 10 today, administrators using Windows Update client policies have access to information on which safeguard holds are preventing individual devices from taking the upgrade to Windows 11.
 
 > [!NOTE]
-> Also, Windows 11 has new Microsoft Software License Terms. If you deploy with Windows Update for Business or Windows Server Update Services, you accept these new license terms on behalf of the users in your organization.
+> Also, Windows 11 has new Microsoft Software License Terms. If you deploy with Windows Update client policies or Windows Server Update Services, you accept these new license terms on behalf of the users in your organization.
 
 ### Unmanaged devices
 

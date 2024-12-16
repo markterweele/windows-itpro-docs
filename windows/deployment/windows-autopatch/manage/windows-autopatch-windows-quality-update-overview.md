@@ -54,7 +54,7 @@ The service level objective for each of these states is calculated as:
 > Targeted deployment ring refers to the deployment ring value of the device in question. If a device has a five day deferral with a two day deadline, and two day grace period, the SLO for the device would be calculated to `5 + 2 + 5 = 12`-day service level objective from the second Tuesday of the month. The five day reporting period is one established by Windows Autopatch to allow enough time for device check-in reporting and data evaluation within the service.
 
 > [!IMPORTANT]
-> Windows Autopatch supports registering [Windows 10 and Windows 11 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/overview) devices that are being currently serviced by the [Windows 10 LTSC](/windows/release-health/release-information) or [Windows 11 LTSC](/windows/release-health/windows11-release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
+> Windows Autopatch supports registering [Windows 10 and Windows 11 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/overview) devices that are being currently serviced by the [Windows 10 LTSC](/windows/release-health/release-information) or [Windows 11 LTSC](/windows/release-health/windows11-release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update client policies and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
 
 ## Out of Band releases
 
@@ -69,7 +69,7 @@ For the deployment rings that pass quality updates deferral date, the OOB releas
 > [!IMPORTANT]
 > **Due to a recent change, we have identified an issue that prevents the Paused and Pause status columns from being displayed** in reporting. Until a fix is deployed, **you must keep track of your paused releases so you can resume them at a later date**. The team is actively working on resolving this issue and we'll provide an update when a fix is deployed.
 
-The service-level pause is driven by the various software update deployment-related signals. Windows Autopatch receives from Windows Update for Business, and several other product groups within Microsoft.
+The service-level pause is driven by the various software update deployment-related signals. Windows Autopatch receives from Windows Update client policies, and several other product groups within Microsoft.
 
 If Windows Autopatch detects a significant issue with a release, we might decide to pause that release.
 

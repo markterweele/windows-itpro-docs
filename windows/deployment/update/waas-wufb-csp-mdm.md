@@ -1,6 +1,6 @@
 ---
-title: Configure Windows Update for Business by using CSPs and MDM
-description: Walk through demonstration of how to configure Windows Update for Business settings using Configuration Service Providers and MDM.
+title: Configure Windows Update client policies by using CSPs and MDM
+description: Walk through demonstration of how to configure Windows Update client policies using Configuration Service Providers and MDM.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
@@ -14,18 +14,18 @@ appliesto:
 ms.date: 05/16/2024
 ---
 
-# Walkthrough: Use CSPs and MDMs to configure Windows Update for Business
+# Walkthrough: Use CSPs and MDMs to configure Windows Update client policies
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 
 ## Overview 
 
-You can use Configuration Service Provider (CSP) policies to control how Windows Update for Business works by using a Mobile Device Management (MDM) tool. You should consider and devise a deployment strategy for updates before you make changes to the Windows Update for Business settings.
+You can use Configuration Service Provider (CSP) policies to control how Windows Update client policies work by using a Mobile Device Management (MDM) tool. You should consider and devise a deployment strategy for updates before you make changes to the Windows Update client policies.
  
-An IT administrator can set policies for Windows Update for Business by using Microsoft Intune or a non-Microsoft MDM tool.
+An IT administrator can configure Windows Update client policies by using Microsoft Intune or a non-Microsoft MDM tool.
 
-To manage updates with Windows Update for Business, you should prepare with these steps, if you haven't already:
+To manage updates with Windows Update client policies, you should prepare with these steps, if you haven't already:
 
 - Create Active Directory security groups that align with the deployment rings you use to phase deployment of updates. See [Build deployment rings for Windows client updates](waas-deployment-rings-windows-10-updates.md) to learn more about deployment rings in Windows client.
 - Allow access to the Windows Update service.
@@ -37,7 +37,7 @@ You can control when updates are applied, for example by deferring when an updat
 
 ### Determine which updates you want offered to your devices
 
-Both feature and quality updates are automatically offered to devices that are connected to Windows Update using Windows Update for Business policies. However, you can choose whether you want the devices to additionally receive other Microsoft Updates or drivers that are applicable to that device.
+Both feature and quality updates are automatically offered to devices that are connected to Windows Update using Windows Update client policies. However, you can choose whether you want the devices to additionally receive other Microsoft Updates or drivers that are applicable to that device.
 
 To enable Microsoft Updates, use [Update/AllowMUUpdateService](/windows/client-management/mdm/policy-csp-update#allowmuupdateservice).
 
@@ -59,7 +59,7 @@ Drivers are automatically enabled because they're beneficial to device systems. 
 
 #### I want to manage which released feature update my devices receive
 
-A Windows Update for Business administrator can defer or pause updates. You can defer feature updates for up to 365 days and defer quality updates for up to 30 days. Deferring simply means that you don't receive the update until it has been released for at least the number of deferral days you specified (offer date = release date + deferral date). You can pause feature or quality updates for up to 35 days from a given start date that you specify.
+A Windows Update client policies administrator can defer or pause updates. You can defer feature updates for up to 365 days and defer quality updates for up to 30 days. Deferring simply means that you don't receive the update until it has been released for at least the number of deferral days you specified (offer date = release date + deferral date). You can pause feature or quality updates for up to 35 days from a given start date that you specify.
 
 - To defer a feature update: [Update/DeferFeatureUpdatesPeriodInDays](/windows/client-management/mdm/policy-csp-update#deferfeatureupdatesperiodindays)
 - To pause a feature update: [Update/PauseFeatureUpdatesStartTime](/windows/client-management/mdm/policy-csp-update#pausefeatureupdatesstarttime)
@@ -240,4 +240,4 @@ The features that are turned off by default from servicing updates will be enabl
 - Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later <!--7991583-->
 - Windows 10, version 22H2 with [KB5032278](https://support.microsoft.com/help/5032278), or a later cumulative update installed <!--8503602-->
 
-In addition to the monthly cumulative update, optional updates are available to provide new features and nonsecurity changes. Most optional updates are released on the fourth Tuesday of the month, known as optional nonsecurity preview releases. Optional updates can also include features that are gradually rolled out, known as controlled feature rollouts (CFRs). Installation of optional updates isn't enabled by default for devices that receive updates using Windows Update for Business. However, you can enable optional updates for devices by using [AllowOptionalContent](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowoptionalcontent). For more information about optional content, see [Enable optional updates](waas-configure-wufb.md#enable-optional-updates).
+In addition to the monthly cumulative update, optional updates are available to provide new features and nonsecurity changes. Most optional updates are released on the fourth Tuesday of the month, known as optional nonsecurity preview releases. Optional updates can also include features that are gradually rolled out, known as controlled feature rollouts (CFRs). Installation of optional updates isn't enabled by default for devices that receive updates using Windows Update client policies. However, you can enable optional updates for devices by using [AllowOptionalContent](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowoptionalcontent). For more information about optional content, see [Enable optional updates](waas-configure-wufb.md#enable-optional-updates).

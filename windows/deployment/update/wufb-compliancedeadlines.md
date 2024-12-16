@@ -1,7 +1,7 @@
 ---
 title: Enforce compliance deadlines with policies
-titleSuffix: Windows Update for Business
-description: This article contains information on how to enforce compliance deadlines using Windows Update for Business.
+titleSuffix: Windows Update client policies
+description: This article contains information on how to enforce compliance deadlines using Windows Update client policies.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
@@ -16,7 +16,7 @@ ms.date: 05/16/2024
 ---
 # Enforcing compliance deadlines for updates
 
-Deploying feature or quality updates for many organizations is only part of the equation for managing their device ecosystem. The ability to enforce update compliance is the next important part. Windows Update for Business provides controls to manage deadlines for when devices should migrate to newer versions.
+Deploying feature or quality updates for many organizations is only part of the equation for managing their device ecosystem. The ability to enforce update compliance is the next important part. Windows Update client policies provide controls to manage deadlines for when devices should migrate to newer versions.
 
 With a current version, it's best to use the new policy introduced in June 2019 to Windows 10, version 1709 and later: **Specify deadlines for automatic updates and restarts**. In MDM, this policy is available as separate settings:
 
