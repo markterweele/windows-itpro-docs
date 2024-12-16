@@ -27,7 +27,7 @@ This guide:
 - Helps you plan your deployment and adopt Windows Autopatch
 - Lists and describes some common objectives
 - Provides a recommended deployment plan
-- Provides migration considerations for Windows Update for Business (WUfB) and Microsoft Configuration Manager
+- Provides migration considerations for Windows Update for Business and Microsoft Configuration Manager
 - Lists some common general considerations when deploying Windows Autopatch
 - Provides suggested business case benefits and communication guidance
 - Gives additional guidance and how to join the Autopatch community
@@ -105,18 +105,18 @@ Following a successful pilot, you can commence deployment to your broader organi
 
 ## Migration considerations
 
-If you're an existing Windows Update for Business (WUfB) or Configuration Manager customer, there are several considerations that could accelerate your deployment along a shorter path.
+If you're an existing Windows Update for Business or Configuration Manager customer, there are several considerations that could accelerate your deployment along a shorter path.
 
 ### Why migrate from Windows Update for Business or Configuration Manager to Windows Autopatch?
 <a name="why-migrate-from-windows-update-for-business-or-configuration-manager-to-windows-autopatch"></a>
 
-Customers who are using Windows Update for Business (WUfB) or Configuration Manager can quickly adopt Windows Autopatch and take advantage of the key benefits that Windows Autopatch provides.
+Customers who are using Windows Update for Business or Configuration Manager can quickly adopt Windows Autopatch and take advantage of the key benefits that Windows Autopatch provides.
 
-When moving from Windows Update for Business (WUfB) or Configuration Manager to Windows Autopatch, you can enhance and optimize the update experience that you're already familiar with.
+When moving from Windows Update for Business or Configuration Manager to Windows Autopatch, you can enhance and optimize the update experience that you're already familiar with.
 
 Once migrated, there are several configuration tasks that you no longer need to carry out:
 
-| Autopatch benefit | Configuration Manager | Windows Update for Business (WUfB) |
+| Autopatch benefit | Configuration Manager | Windows Update for Business |
 | ----- | ----- | ----- |
 | Automated setup and ongoing configuration of Windows Update policies | Manage and perform recurring tasks such as:<ul><li>Download updates</li><li>Distribute to distribution points</li><li>Target update collections</li></ul> | Manage "static" deployment ring policies |
 | Automated management of deployment ring membership | Manually check collection membership and targets | Manage "static" deployment ring membership |
@@ -126,7 +126,7 @@ Once migrated, there are several configuration tasks that you no longer need to 
 
 In addition to the reports, other benefits include:
 
-| Autopatch benefit | Configuration Manager and Windows Update for Business (WUfB) |
+| Autopatch benefit | Configuration Manager and Windows Update for Business |
 | ----- | ----- |
 | Windows quality and feature update reports with integrated alerts, deep filtering, and status-at-a-glance | Requires you to manually navigate and hunt for status and alerts |
 | Filter by action needed with integrated resolution documentation | Requires you to research and discover possible actions relating to update issues |
@@ -134,29 +134,29 @@ In addition to the reports, other benefits include:
 
 Service management benefits include:
 
-| Autopatch benefit | Configuration Manager and Windows Update for Business (WUfB) |
+| Autopatch benefit | Configuration Manager and Windows Update for Business |
 | ----- | ----- |
 | Windows automation and Microsoft Insights | First or third-party resources required to support and manage updates internally |
 | Microsoft research and insights determine the 'go/no-go' for your update deployment | Limited signals and insights from your organization to determine the 'go/no-go' for your update deployment |
 | Windows Autopatch might pause or roll back an update. The pause or rollback is dependent on the scope of impact and to prevent end user disruption | Manual intervention required, widening the potential impact of any update issues |
 
-### Migrating from Windows Update for Business (WUfB) to Windows Autopatch
+### Migrating from Windows Update for Business to Windows Autopatch
 <a name="migrating-from-windows-update-for-business-wufb-to-windows-autopatch"></a>
 
-#### Assessing your readiness to migrate from Windows Update for Business (WUfB) to Windows Autopatch
+#### Assessing your readiness to migrate from Windows Update for Business to Windows Autopatch
 <a name="assessing-your-readiness-to-migrate-from-windows-update-for-business-wufb-to-windows-autopatch"></a>
 
-When moving from Windows Update for Business (WUfB) to Windows Autopatch, you can accelerate and simplify your adoption by assessing your readiness to quickly migrate to the Windows Autopatch service by considering key differences that might impact your deployment:
+When moving from Windows Update for Business to Windows Autopatch, you can accelerate and simplify your adoption by assessing your readiness to quickly migrate to the Windows Autopatch service by considering key differences that might impact your deployment:
 
 | Step | Assessment step | Recommendation |
 | ----- | ----- | ----- |
 | **1** | "User based" vs. "device based" targeting | Windows Autopatch doesn't support "user based" targeting.  If your Windows Update deployment is "user based", you must plan to move to a device-based targeting model by adding and registering devices into Windows Autopatch. Use the [Consider your Autopatch groups guidance](#step-one-prepare) |
 | **2** | Microsoft Edge channels | Windows Autopatch deploys Microsoft Edge Stable channel to devices in all deployment rings except for the Test deployment ring. The Test deployment ring is configured for the Microsoft Edge Beta channel. If you're currently using different channels, your teams should understand that your Windows Autopatch devices use these channels. For more information, see [Confirm update service needs and configure your workloads](#step-one-prepare). |
 | **3** | Microsoft 365 Apps for enterprise | Windows Autopatch deploys the Monthly Enterprise Channel to all Microsoft 365 Apps for enterprise clients. If your organization is using a different channel and you don't wish to adopt the Monthly Enterprise Channel, you can opt out Microsoft 365 Apps for enterprise updates. For more information, see [Confirm update service needs and configure your workloads](#step-one-prepare) |
-| **4** | Prepare your policies | You should consider any existing policy configurations in your Windows Update for Business (WUfB), Intune or on-premises environment that could impact your deployment of Windows Autopatch. For more information, review [General considerations](#general-considerations) |
+| **4** | Prepare your policies | You should consider any existing policy configurations in your Windows Update for Business, Intune or on-premises environment that could impact your deployment of Windows Autopatch. For more information, review [General considerations](#general-considerations) |
 | **5** | Network optimization technologies | We recommend you consider your network optimization technologies as part of your Windows Autopatch deployment.  However, if you're already using Windows Update client policies, it's likely you already have your network optimization solution in place.  For more information, see [Review network optimization](#step-one-prepare) |
 
-### Optimized deployment path: Windows Update for Business (WUfB) to Windows Autopatch
+### Optimized deployment path: Windows Update for Business to Windows Autopatch
 <a name="optimized-deployment-path:-windows-update-for-business-wufb-to-windows-autopatch"></a>
 
 Once you have assessed your readiness state to ensure you're aligned to Windows Autopatch readiness, you can optimize your deployment of Windows Autopatch to quickly migrate to the service. The following steps illustrate a recommended optimized deployment path:
@@ -219,8 +219,8 @@ On-premises AD group policies are applied in the LSDOU order (Local, Site, Domai
 | Area | Path | Recommendation |
 | -----  | ----- | ----- |
 | Windows Update Group Policy settings | `Computer Configuration\Administrative Templates\Windows Components\Windows Updates` | The most common Windows Update settings delivered through Group Policy can be found under this path. This is a good place for you to start your review. |
-| Don't connect to any Windows Update Internet locations | `Computer Configuration\Administrative Templates\Windows Components\Windows update\Do not connect to any Windows Update Internet locations` | This is a common setting for organizations that rely solely on intranet update locations such as Windows Server Update Services (WSUS) servers and can often be overlooked when moving to cloud update services such as Windows Update for Business (WUfB)<br><br>When turned on, this policy prevents contact with the public Windows Update service and won't establish connections to Windows Update, and might cause the connection to Windows Update client policies and Delivery Optimization to stop working. |
-| Scan Source policy | `Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage updates offered from Windows Server Update Service` | You can choose what types of updates to get from either Windows Server Update Services (WSUS) or Windows Update for Business (WUfB) service with the Windows Update Scan Source policy.<br><br>You should review any scan source policy settings targeting devices to ensure:<ul><li>That no conflicts exist that could affect update deployment through Windows Autopatch</li><li>Such policies aren't targeting devices enrolled into Windows Autopatch</li></ul> |
+| Don't connect to any Windows Update Internet locations | `Computer Configuration\Administrative Templates\Windows Components\Windows update\Do not connect to any Windows Update Internet locations` | This is a common setting for organizations that rely solely on intranet update locations such as Windows Server Update Services (WSUS) servers and can often be overlooked when moving to cloud update services such as Windows Update for Business<br><br>When turned on, this policy prevents contact with the public Windows Update service and won't establish connections to Windows Update, and might cause the connection to Windows Update client policies and Delivery Optimization to stop working. |
+| Scan Source policy | `Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage updates offered from Windows Server Update Service` | You can choose what types of updates to get from either Windows Server Update Services (WSUS) or Windows Update for Business service with the Windows Update Scan Source policy.<br><br>You should review any scan source policy settings targeting devices to ensure:<ul><li>That no conflicts exist that could affect update deployment through Windows Autopatch</li><li>Such policies aren't targeting devices enrolled into Windows Autopatch</li></ul> |
 
 ### Registry settings
 
@@ -244,7 +244,7 @@ When Configuration Manager is deployed, and if Software Update policies are conf
 
 Configuration Manager could require custom settings to disable software updates and assist with troubleshooting conflicting legacy, on-premises configurations to ensure that Autopatch deliver Windows and Office updates. It's safe to implement this change if you aren't managing third party updates from Configuration Manager.
 
-To ensure that Software Update Policies don't conflict with Windows Update for Business (WUfB) and Office Update policies, create a Software Update Policy in Configuration Manager that has:
+To ensure that Software Update Policies don't conflict with Windows Update for Business and Office Update policies, create a Software Update Policy in Configuration Manager that has:
 
 - Windows and Office Update configuration disabled
 - Includes devices enrolled into Autopatch to remove any existing configuration(s).
@@ -267,7 +267,7 @@ For example, Configuration Manager Software Update Policy settings exclude Autop
 
 | Policy | Description |
 | ----- | ----- |
-| **MDM to win over GP** | As part of the tenant enrollment process, Autopatch deploys a Device configuration profile, which applies to all registered devices to set Mobile Device Management (MDM) to win over Group Policy (GP) with the "MDMWinsOverGP" CSP.<br><br>When applied, any MDM policy that's set, and has an equivalent GP Policy, results in the GP service blocking the policy setting. Setting the value to 0 (zero) or deleting the policy removes the GP policy blocks and restore the saved GP policies.<br><br>This setting doesn't apply to all scenarios. This setting doesn't work for:<ul><li>User scoped settings. This setting applies to device scoped settings only</li><li>Any custom Group Policy Object (GPO) outside of ADMX. For example, Microsoft Edge or Chrome settings</li><li>Any Windows Update client policies (WUfB). When you use Windows Update for Business (WUfB), ensure all previous Group Policies (GP) are removed that relate to Windows Update to ensure that Autopatch policies can take effect</li></ul><br><br>For more information and guidance on the expected behavior applied through this policy, see [ControlPolicyConflict Policy CSP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) |
+| **MDM to win over GP** | As part of the tenant enrollment process, Autopatch deploys a Device configuration profile, which applies to all registered devices to set Mobile Device Management (MDM) to win over Group Policy (GP) with the "MDMWinsOverGP" CSP.<br><br>When applied, any MDM policy that's set, and has an equivalent GP Policy, results in the GP service blocking the policy setting. Setting the value to 0 (zero) or deleting the policy removes the GP policy blocks and restore the saved GP policies.<br><br>This setting doesn't apply to all scenarios. This setting doesn't work for:<ul><li>User scoped settings. This setting applies to device scoped settings only</li><li>Any custom Group Policy Object (GPO) outside of ADMX. For example, Microsoft Edge or Chrome settings</li><li>Any Windows Update client policies. When you use Windows Update client policies, ensure all previous Group Policies (GP) are removed that relate to Windows Update to ensure that Autopatch policies can take effect</li></ul><br><br>For more information and guidance on the expected behavior applied through this policy, see [ControlPolicyConflict Policy CSP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) |
 | **Windows Update client policies** | If you have any existing *Deployment rings for Windows 10 and later or Windows feature update DSS policies* in place, ensure that the assignments don't target Windows Autopatch devices. This is to avoid creating policy conflicts and unexpected update behavior, which could impact update compliance and end user experience. |
 | **Update Policy CSP** | If any policies from the [Update Policy CSP](/windows/client-management/mdm/policy-csp-update) that aren't deployed and managed by Windows Autopatch are deployed to devices, policy conflicts and unexpected update behavior could occur and could affect update compliance and the end user experience. |
 
