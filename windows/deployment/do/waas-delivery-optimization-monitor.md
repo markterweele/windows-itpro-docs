@@ -22,8 +22,7 @@ ms.date: 05/23/2024
 
 To monitor Delivery Optimization, you can use either the Windows Update for Business Delivery Optimization Report or Windows PowerShell cmdlets.
 
-## Monitor with Windows Update client policies Delivery Optimization report
-<a name="monitor-with-windows-update-for-business-delivery-optimization-report"></a>
+## Monitor with Windows Update for Business Delivery Optimization report
 
 Windows Update for Business Delivery Optimization Report provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer, Microsoft Connected Cache, HTTP source/CDN distribution over the past 28 days.
 
