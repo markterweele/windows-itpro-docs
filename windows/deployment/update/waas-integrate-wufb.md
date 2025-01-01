@@ -1,6 +1,6 @@
 ---
 title: Integrate Windows Update client policies
-description: Use Windows Autopatch deployments with management tools such as Windows Server Update Services (WSUS) and Microsoft Configuration Manager.
+description: Windows Update client policy deployments with management tools such as Windows Server Update Services (WSUS) and Microsoft Configuration Manager.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
