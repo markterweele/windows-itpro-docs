@@ -17,7 +17,7 @@ appliesto:
 ms.date: 05/16/2024
 ---
 
-# What is Windows Update client policies?
+# What are Windows Update client policies?
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 

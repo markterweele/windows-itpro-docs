@@ -95,7 +95,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-      - text: What is Windows Update client policies?
+      - text: What are Windows Update client policies?
         url: update/waas-manage-updates-wufb.md
       - text: Configure Windows Update client policies
         url: update/waas-configure-wufb.md

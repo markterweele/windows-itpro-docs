@@ -91,7 +91,7 @@ items:
                   href: update/waas-wu-settings.md
         - name: Use Windows Update client policies
           items:
-            - name: What is Windows Update client policies?
+            - name: What are Windows Update client policies?
               href: update/waas-manage-updates-wufb.md
             - name: Configure Windows Update client policies
               href: update/waas-configure-wufb.md
