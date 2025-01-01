@@ -18,7 +18,7 @@ ms.date: 02/27/2024
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
-You can integrate Windows Autopatch deployments with existing management tools such as Windows Server Update Services (WSUS) and Microsoft Configuration Manager.
+You can integrate Windows Update client policy deployments with existing management tools such as Windows Server Update Services (WSUS) and Microsoft Configuration Manager.
 
 ## Integrate Windows Update client policies with Windows Server Update Services
 <a name="integrate-windows-update-for-business-with-windows-server-update-services"></a>
