@@ -1,7 +1,7 @@
 ---
 title: Windows quality update end user experience
 description: This article explains the Windows quality update end user experience
-ms.date: 09/16/2024
+ms.date: 11/04/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: conceptual
@@ -32,9 +32,7 @@ In this section we review what an end user would see in the following three scen
 
 ### Typical update experience
 
-The Windows quality update is published and devices in the Broad ring have a deferral period of nine days. Devices wait nine days before downloading the latest quality update.
-
-In the following example, the user:
+In the following example, the Windows quality update is published and devices in the Broad ring have a deferral period of seven days. Devices wait seven days before downloading the latest quality update.
 
 | Day | Description |
 | --- | --- |
@@ -46,7 +44,7 @@ In the following example, the user:
 
 ### Quality update deadline forces an update
 
-In the following example, the user:
+In the following example:
 
 | Day | Description |
 | --- | --- |
@@ -58,7 +56,7 @@ In the following example, the user:
 
 ### Quality update grace period
 
-In the following example, the user:
+In the following example:
 
 | Day | Description |
 | --- | --- |
@@ -69,6 +67,11 @@ In the following example, the user:
 
 :::image type="content" source="../media/windows-quality-update-grace-period.png" alt-text="Windows quality update grace period" lightbox="../media/windows-quality-update-grace-period.png":::
 
+> [!TIP]
+> For optimal end-user experience, the recommeded settings are 2-day Deadline and 3-day Grace Period for update deployments.
+
 ## Minimize user disruption due to updates
 
-Windows Autopatch understands the importance of not disrupting end users but also updating the devices quickly. To achieve this goal, updates are automatically downloaded and installed at an optimal time determined by the device. By default, [Active hours](/windows/client-management/mdm/policy-csp-update#activehoursstart) are configured dynamically based on device usage patterns. Device restarts occur outside of active hours until the deadline is reached.
+Windows Autopatch understands the importance of not disrupting end users but also updating the devices quickly. To achieve this goal, updates are automatically downloaded and installed at an optimal time determined by the device. By default, [Active hours](/windows/client-management/mdm/policy-csp-update#activehoursstart) are configured dynamically based on device usage patterns. Device restarts occur outside of active hours until the deadline is reached. 
+
+Windows Autopatch doesn't modify the existing Windows Update notifications. If you wish to modify the end-user update notification experience, see [Use CSPs and MDMs to configure Windows Update for Business](/windows/deployment/update/waas-wufb-csp-mdm).

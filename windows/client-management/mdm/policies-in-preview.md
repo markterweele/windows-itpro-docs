@@ -1,7 +1,7 @@
 ---
 title: Configuration service provider preview policies
 description: Learn more about configuration service provider (CSP) policies that are available for Windows Insider Preview.
-ms.date: 09/27/2024
+ms.date: 11/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -29,10 +29,17 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [EnablePhysicalDeviceAccessOnErrorScreens](clouddesktop-csp.md#userenablephysicaldeviceaccessonerrorscreens)
 - [EnableBootToCloudSharedPCMode](clouddesktop-csp.md#deviceenableboottocloudsharedpcmode)
 
+## Connectivity
+
+- [UseCellularWhenWiFiPoor](policy-csp-connectivity.md#usecellularwhenwifipoor)
+- [DisableCellularSettingsPage](policy-csp-connectivity.md#disablecellularsettingspage)
+- [DisableCellularOperatorSettingsPage](policy-csp-connectivity.md#disablecellularoperatorsettingspage)
+
 ## DeclaredConfiguration CSP
 
 - [Document](declaredconfiguration-csp.md#hostcompletedocumentsdociddocument)
 - [Abandoned](declaredconfiguration-csp.md#hostcompletedocumentsdocidpropertiesabandoned)
+- [ConflictResolution](declaredconfiguration-csp.md#managementserviceconfigurationconflictresolution)
 
 ## DeliveryOptimization
 
@@ -51,6 +58,11 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [Progress](devicepreparation-csp.md#mdmproviderprogress)
 - [MdmAgentInstalled](devicepreparation-csp.md#mdmprovidermdmagentinstalled)
 - [RebootRequired](devicepreparation-csp.md#mdmproviderrebootrequired)
+
+## Display
+
+- [ConfigureMultipleDisplayMode](policy-csp-display.md#configuremultipledisplaymode)
+- [SetClonePreferredResolutionSource](policy-csp-display.md#setclonepreferredresolutionsource)
 
 ## DMClient CSP
 
@@ -95,9 +107,12 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [ConfigureDeviceStandbyAction](policy-csp-mixedreality.md#configuredevicestandbyaction)
 - [ConfigureDeviceStandbyActionTimeout](policy-csp-mixedreality.md#configuredevicestandbyactiontimeout)
 
+## NewsAndInterests
+
+- [DisableWidgetsOnLockScreen](policy-csp-newsandinterests.md#disablewidgetsonlockscreen)
+
 ## PassportForWork CSP
 
-- [EnableWindowsHelloProvisioningForSecurityKeys](passportforwork-csp.md#devicetenantidpoliciesenablewindowshelloprovisioningforsecuritykeys)
 - [DisablePostLogonProvisioning](passportforwork-csp.md#devicetenantidpoliciesdisablepostlogonprovisioning)
 
 ## Reboot CSP
@@ -108,9 +123,18 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 - [TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME](policy-csp-remotedesktopservices.md#ts_server_remoteapp_use_shellappruntime)
 
+## Start
+
+- [AlwaysShowNotificationIcon](policy-csp-start.md#alwaysshownotificationicon)
+- [TurnOffAbbreviatedDateTimeFormat](policy-csp-start.md#turnoffabbreviateddatetimeformat)
+
 ## SurfaceHub CSP
 
 - [ExchangeModernAuthEnabled](surfacehub-csp.md#deviceaccountexchangemodernauthenabled)
+
+## TextInput
+
+- [TouchKeyboardControllerModeAvailability](policy-csp-textinput.md#touchkeyboardcontrollermodeavailability)
 
 ## Update
 
@@ -123,9 +147,14 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 ## WindowsAI
 
-- [SetCopilotHardwareKey](policy-csp-windowsai.md#setcopilothardwarekey)
+- [SetDenyAppListForRecall](policy-csp-windowsai.md#setdenyapplistforrecall)
+- [SetDenyUriListForRecall](policy-csp-windowsai.md#setdenyurilistforrecall)
+- [SetMaximumStorageSpaceForRecallSnapshots](policy-csp-windowsai.md#setmaximumstoragespaceforrecallsnapshots)
+- [SetMaximumStorageDurationForRecallSnapshots](policy-csp-windowsai.md#setmaximumstoragedurationforrecallsnapshots)
 - [DisableImageCreator](policy-csp-windowsai.md#disableimagecreator)
 - [DisableCocreator](policy-csp-windowsai.md#disablecocreator)
+- [DisableGenerativeFill](policy-csp-windowsai.md#disablegenerativefill)
+- [AllowRecallEnablement](policy-csp-windowsai.md#allowrecallenablement)
 
 ## WindowsLicensing CSP
 
