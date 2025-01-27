@@ -28,11 +28,11 @@ Windows 10 and Windows 11 include two application control technologies that your
 
 ## App Control and Smart App Control
 
-Starting in Windows 11 version 22H2, [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) brings robust application control to consumers and to some small businesses with simpler app portfolios. Smart App Control ensures only signed code runs, or code predicted to be safe by our intelligent cloud-powered security service. When code is unsigned and the service is unable to predict with confidence that it is safe to run, it is blocked but can develop positive reputation over time as new signals are processed by the service. Meanwhile, code determined to be unsafe is always blocked.
+Starting in Windows 11 version 22H2, [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) brings robust application control to consumers and to some small businesses with simpler app portfolios. Smart App Control ensures only signed code runs as well as code predicted to be safe by our intelligent cloud-powered security service. When code is unsigned and the service is unable to predict with confidence that it is safe to run, it is blocked but can develop positive reputation over time as new signals are processed by the service. Meanwhile, code determined to be unsafe is always blocked.
 
-While Smart App Control is designed for consumers, it's built entirely upon App Control for Business. That means you can create a policy with the same security and compatibility as Smart App Control but which also trusts the line-of-business (LOB) apps that your organization needs. The service providing Smart App Control's intelligence to predict what code is safe to run is also available in App Control for Business, where its known as the Intelligent Security Graph (ISG).
+While Smart App Control is designed for consumers, we believe it's the ideal starting point for most organizations. And since it's built entirely upon App Control for Business, you can create a policy with the same security and compatibility as Smart App Control but which also trusts the line-of-business (LOB) apps that your organization depends on. The service providing Smart App Control's intelligence to predict what code is safe to run is also available in App Control for Business, where its called the Intelligent Security Graph (ISG).
 
-Smart App Control starts in evaluation mode and will switch itself off within 48 hours for enterprise managed devices unless the user has turned it on. To proactively turn off Smart App Control across your organization's endpoints, set the **VerifiedAndReputablePolicyState** (DWORD) registry value under `HKLM\SYSTEM\CurrentControlSet\Control\CI\Policy` as shown in the following table. After you change the registry value, you must run [CiTool.exe -r](operations/citool-commands.md#refresh-the-app-control-policies-on-the-system) for the change to take effect.
+Smart App Control starts in evaluation mode and will switch itself off within 48 hours for enterprise managed devices unless the user has turned it on first. If you want to proactively turn off Smart App Control across your organization's endpoints, set the **VerifiedAndReputablePolicyState** (DWORD) registry value under `HKLM\SYSTEM\CurrentControlSet\Control\CI\Policy` as shown in the following table. After you change the registry value, you must run [CiTool.exe -r](operations/citool-commands.md#refresh-the-app-control-policies-on-the-system) for the change to take effect.
 
 | Value | Description |
 |-------|-------------|
@@ -43,13 +43,12 @@ Smart App Control starts in evaluation mode and will switch itself off within 48
 > [!IMPORTANT]
 > Once you turn Smart App Control off, it can't be turned on without resetting or reinstalling Windows.
 
-The App Control policy used for Smart App Control comes bundled with the [App Control Wizard](design/appcontrol-wizard.md) policy authoring tool and is also found as an [example policy](design/example-appcontrol-base-policies.md) at *%windir%/schemas/CodeIntegrity/ExamplePolicies/SmartAppControl.xml and also comes bundled with the [App Control Wizard](design/appcontrol-wizard.md) policy authoring tool. To use this example policy as a starting point for creating your own policy, see [Create a custom base policy using an example App Control base policy](design/create-appcontrol-policy-for-lightly-managed-devices.md#create-a-custom-base-policy-using-an-example-app-control-base-policy).When using the Smart App Control example policy as the basis for your own custom policy, you must remove the option **Enabled:Conditional Windows Lockdown Policy** so it is ready for use as an App Control for Business policy. 
+The App Control policy used for Smart App Control comes bundled with the [App Control Wizard](design/appcontrol-wizard.md) policy authoring tool and is also found as an [example policy](design/example-appcontrol-base-policies.md) at *%windir%/schemas/CodeIntegrity/ExamplePolicies/SmartAppControl.xml*. To use this example policy as a starting point for your own policy, see [Create a custom base policy using an example App Control base policy](design/create-appcontrol-policy-for-lightly-managed-devices.md#create-a-custom-base-policy-using-an-example-app-control-base-policy).When using the Smart App Control example policy as the basis for your own custom policy, you must remove the option **Enabled:Conditional Windows Lockdown Policy** so it is ready for use as an App Control for Business policy. 
 
 [!INCLUDE [windows-defender-application-control-wdac](../../../../../includes/licensing/windows-defender-application-control-wdac.md)]
 
-## Related articles
+## What you should read next
 
-- [App Control design guide](design/appcontrol-design-guide.md)
-- [App Control deployment guide](deployment/appcontrol-deployment-guide.md)
-- [App Control operational guide](operations/appcontrol-operational-guide.md)
-- [AppLocker overview](applocker/applocker-overview.md)
+Read on to learn more about the two application control technologies available in Windows with the [App Control for Business and AppLocker Overview](./appcontrol-and-applocker-overview.md).
+
+If you're ready to jump in and get started creating policies, let's revisit Smart App Control and [Use the Smart App Control policy to build your own custom base policy](design/create-appcontrol-policy-for-lightly-managed-devices.md).
