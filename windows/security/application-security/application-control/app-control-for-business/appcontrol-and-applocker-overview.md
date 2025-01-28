@@ -2,7 +2,7 @@
 title: App Control and AppLocker Overview
 description: Compare Windows application control technologies.
 ms.localizationpriority: medium
-ms.date: 09/11/2024
+ms.date: 01/28/2025
 ms.topic: conceptual
 ---
 
@@ -26,7 +26,7 @@ App Control policies apply to the managed computer as a whole and affects all us
 - The process that launched the app or binary
 
 > [!NOTE]
-> App Control was originally released as part of Device Guard and called configurable code integrity. Device Guard and configurable code integrity are no longer used except to find where to deploy App Control policy via Group Policy.
+> App Control was originally released as part of Device Guard and called configurable code integrity. Device Guard and configurable code integrity are no longer used except when deploying App Control policy via Group Policy.
 
 ### App Control System Requirements
 
