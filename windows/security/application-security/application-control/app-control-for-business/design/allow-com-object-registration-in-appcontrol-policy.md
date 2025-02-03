@@ -2,7 +2,7 @@
 title: Allow COM object registration in an App Control policy
 description: You can allow COM object registration in an App Control for Business policy.
 ms.localizationpriority: medium
-ms.date: 09/11/2024
+ms.date: 02/01/2025
 ms.topic: how-to
 ---
 
@@ -16,11 +16,10 @@ The [Microsoft Component Object Model (COM)](/windows/desktop/com/the-component-
 
 App Control for Business enforces a built-in allowlist for COM object registration. While this list works for most common application usage scenarios, you may need to allow more COM objects to support the apps used in your organization. You can specify allowed COM objects via their GUID in your App Control policy as described in this article.
 
-> [!NOTE]
-> To add this functionality to other versions of Windows 10, you can install the following or later updates.
-
-- [Windows 10, 1809 June 18, 2019-KB4501371 (OS Build 17763.592)](https://support.microsoft.com/help/4501371/windows-10-update-kb4501371)
-- [Windows 10, 1607 June 18, 2019-KB4503294 (OS Build 14393.3053)](https://support.microsoft.com/help/4503294/windows-10-update-kb4503294)
+> [!IMPORTANT]
+> When any App Control for Business policy with Option 0 - Enabled:UMCI is enforced on a device, .NET adds an extra validation check before running COM objects. The check verifies the COM object's system registration matches the code being run. If there is a mismatch between the GUID calculated by .NET and the GUID stored in the COM registration, .NET won't load the object and the user sees a general error dialog informing them about the failure. This mitigates certain COM-based attacks which could otherwise be used to run an attacker's own malicious or vulnerable payload.
+>
+> The COM allow list mechanism described in this article **doesn't affect .NET's GUID validation check for COM objects**. Any .NET app attempting to run a COM object with a mismatched GUID are thus incompatible with App Control at this time. There are no policy control options to manage the GUID verification check, meaning the check is always performed. If you see COM object failures after an App Control policy is deployed, contact the software developer or the Independent Software Vendor (ISV) who produces the app to request a fix for the issue.
 
 ### Get COM object GUID
 
