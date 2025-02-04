@@ -14,10 +14,10 @@ The [Microsoft Component Object Model (COM)](/windows/desktop/com/the-component-
 
 ## COM object configurability in App Control policy
 
-App Control for Business enforces a built-in allowlist for COM object registration. While this list works for most common application usage scenarios, you may need to allow more COM objects to support the apps used in your organization. You can specify allowed COM objects via their GUID in your App Control policy as described in this article.
+App Control for Business enforces a built-in allowlist for COM object registration. While this list works for most common application usage scenarios, you might need to allow more COM objects to support the apps used in your organization. You can specify allowed COM objects via their GUID in your App Control policy as described in this article.
 
 > [!IMPORTANT]
-> When any App Control for Business policy with Option 0 - Enabled:UMCI is enforced on a device, .NET adds an extra validation check before running COM objects. The check verifies the COM object's system registration matches the code being run. If there is a mismatch between the GUID calculated by .NET and the GUID stored in the COM registration, .NET won't load the object and the user sees a general error dialog informing them about the failure. This mitigates certain COM-based attacks which could otherwise be used to run an attacker's own malicious or vulnerable payload.
+> When any App Control for Business policy with option **0 - Enabled:UMCI** is enforced on a device, .NET adds an extra validation check before running COM objects. The check verifies the COM object's system registration matches the code being run. If there is a mismatch between the GUID calculated by .NET and the GUID stored in the COM registration, .NET won't load the object and the user sees a general error dialog informing them about the failure. This mitigates certain COM-based attacks which could otherwise be used to run an attacker's own malicious or vulnerable payload.
 >
 > The COM allow list mechanism described in this article **doesn't affect .NET's GUID validation check for COM objects**. Any .NET app attempting to run a COM object with a mismatched GUID are thus incompatible with App Control at this time. There are no policy control options to manage the GUID verification check, meaning the check is always performed. If you see COM object failures after an App Control policy is deployed, contact the software developer or the Independent Software Vendor (ISV) who produces the app to request a fix for the issue.
 
