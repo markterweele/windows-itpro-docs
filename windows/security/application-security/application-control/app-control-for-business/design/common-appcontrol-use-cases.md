@@ -2,13 +2,15 @@
 title: Policy creation for common App Control usage scenarios
 description: Develop a plan for deploying App Control for Business in your organization based on these common scenarios.
 ms.localizationpriority: medium
-ms.date: 09/11/2024
+ms.date: 01/31/2025
 ms.topic: conceptual
 ---
 
 # App Control for Business deployment in different scenarios: types of devices
 
 [!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
+
+Whenever possible, App Control for Business (app control) should be enabled when setting up a device for the first time and before installing any apps. This ensures the system is in a "clean" state when App Control starts, and is especially important for apps allowed because they were installed by a managed installer or because the Intelligent Security Graph (ISG) determined that the app was safe to run. 
 
 Typically, deployment of App Control for Business happens best in phases, rather than being a feature that you simply "turn on." The choice and sequence of phases depends on the way various computers and other devices are used in your organization, and to what degree IT manages those devices. The following table can help you begin to develop a plan for deploying App Control in your organization. It's common for organizations to have device use cases across each of the categories described.
 
