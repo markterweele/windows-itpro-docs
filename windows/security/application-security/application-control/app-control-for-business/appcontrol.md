@@ -51,4 +51,4 @@ The App Control policy used for Smart App Control comes bundled with the [App Co
 
 Read on to learn more about the two application control technologies available in Windows with the [App Control for Business and AppLocker Overview](./appcontrol-and-applocker-overview.md).
 
-If you're ready to jump in and get started creating policies, let's revisit Smart App Control and [Use the Smart App Control policy to build your own custom base policy](design/create-appcontrol-policy-for-lightly-managed-devices.md).
+If you're ready to jump in and get started creating policies, let's revisit Smart App Control and [Use the Smart App Control policy to build your own starter policy](design/create-appcontrol-policy-for-lightly-managed-devices.md).

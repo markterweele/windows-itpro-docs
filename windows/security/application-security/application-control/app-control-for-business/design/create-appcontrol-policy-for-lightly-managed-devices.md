@@ -1,27 +1,37 @@
 ---
-title: Create an App Control policy for lightly managed devices
+title: Use the Smart App Control policy to build your starter base policy
 description: App Control for Business restricts which applications users are allowed to run and the code that runs in the system core.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 09/11/2024
+ms.date: 02/07/2025
 ---
 
-# Create an App Control policy for lightly managed devices
+# Use the Smart App Control policy to build your starter policy
 
 [!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-This section outlines the process to create an App Control for Business policy for **lightly managed devices** within an organization. Typically, organizations that are new to App Control will be most successful if they start with a permissive policy like the one described in this article. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their App Control-managed devices as described in later articles.
+This article describes how to create an App Control for Business policy using the Smart App Control policy as a template. [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) is an app control-based security solution designed for consumer users. It uses the same technology as App Control for Business so it's easy to use as the basis for an equally robust but flexible enterprise policy. 
 
-> [!NOTE]
-> Some of the App Control for Business options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's App Control policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
+> [!INFORMATION]
+> We strongly recommend the policy created in this article as the ideal starter policy for most App Control deployments to end user's devices. Typically, organizations that are new to App Control will be most successful if they start with a permissive policy like the one described in this article. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their App Control-managed devices as described in later articles.
 
 As in [App Control for Business deployment in different scenarios: types of devices](common-appcontrol-use-cases.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of App Control to prevent unwanted or unauthorized applications from running on their managed devices.
 
-**Alice Pena** is the IT team lead tasked with the rollout of App Control. Lamna currently has loose application usage policies and a culture of maximum app flexibility for users. So, Alice knows she'll need to take an incremental approach to App Control and use different policies for different workloads.
+**Alice Pena** is the IT team lead tasked with the rollout of App Control. Lamna currently has loose application usage policies and a culture of maximum app flexibility for users. So, Alice knows she'll need to take an incremental approach to App Control and eventually use different policies for different workloads.
+
+## Analyze the "circle-of-trust" of the Smart App Control policy
+
+Alice follows the guidance from the article [Plan for app control policy lifecycle management](./plan-appcontrol-management.md#policy-xml-lifecycle-management), and starts by analyzing the "circle-of-trust" for Smart App Control's policy. Alice reads all of Microsoft's online help articles related to Smart App Control, which she finds do a good job defining it's "circle-of-trust". Alice decides to dig a little deeper by analyzing the Smart App Control policy XML itself.
+
+Alice is familiar with the App Control Policy Wizard, an open-source policy authoring UI whose principal maintainers are from Microsoft's Platform Integrity team, the same people responsible for App Control for Business and Smart App Control. She downloads the tool from its official [download site](https://aka.ms/appcontrolwizard) and runs it. 
+
+On the **App Control Policy Wizard's** main page, Alice selects **Policy Creator** which brings her to **Select a Policy Type**. Leaving the default values unaltered, she selects **Next**. On the next page, she immediately notices the template called **Signed and Reputable Mode** and reads the list of code the template authorizes, which perfectly matches the "circle-of-trust" for Smart App Control. Alice selects the template and selects **Next** to see the policy rules set by the template.
+
+"Circle of Trust" described in this article is strongly recommended as a safe and effective app control policy for almost any environment. The policy we'll create is particularly well-suited for **lightly managed devices** within an organization. T
+
+and its policy ensures only signed code runs along with code predicted to be safe by our intelligent cloud-powered security service. Unsigned code is blocked from running if the service can't predict that the code is safe to run. And code determined to be unsafe is always blocked.
 
 For most users and devices, Alice wants to create an initial policy that is as relaxed as possible in order to minimize user productivity impact, while still providing security value.
-
-## Define the "circle-of-trust" for lightly managed devices
 
 Alice identifies the following key factors to arrive at the "circle-of-trust" for Lamna's lightly managed devices, which currently include most end-user devices:
 
