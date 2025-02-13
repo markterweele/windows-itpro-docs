@@ -12,8 +12,8 @@ ms.date: 02/07/2025
 
 This article describes how to create an App Control for Business policy using the Smart App Control policy as a template. [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) is an app control-based security solution designed for consumer users. It uses the same technology as App Control for Business so it's easy to use as the basis for an equally robust but flexible enterprise policy. 
 
-> [!INFORMATION]
-> We strongly recommend the policy created in this article as the ideal starter policy for most App Control deployments to end user's devices. Typically, organizations that are new to App Control will be most successful if they start with a permissive policy like the one described in this article. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their App Control-managed devices as described in later articles.
+> [!NOTE]
+> Microsoft recommends the policy created in this article as the ideal starter policy for most App Control deployments to end user's devices. Typically, organizations who are new to App Control will be most successful if they start with a permissive policy like the one described in this article. You can choose to harden the policy over time to achieve a stronger overall security posture on your App Control-managed devices as described in later articles.
 
 As in [App Control for Business deployment in different scenarios: types of devices](common-appcontrol-use-cases.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of App Control to prevent unwanted or unauthorized applications from running on their managed devices.
 

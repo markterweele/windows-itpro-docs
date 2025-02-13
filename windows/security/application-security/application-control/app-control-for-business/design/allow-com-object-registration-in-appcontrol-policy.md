@@ -16,10 +16,8 @@ The [Microsoft Component Object Model (COM)](/windows/desktop/com/the-component-
 
 App Control for Business enforces a built-in allowlist for COM object registration. While this list works for most common application usage scenarios, you might need to allow more COM objects to support the apps used in your organization. You can specify allowed COM objects via their GUID in your App Control policy as described in this article.
 
-> [!IMPORTANT]
-> When any App Control for Business policy with option **0 - Enabled:UMCI** is enforced on a device, .NET adds an extra validation check before running COM objects. The check verifies the COM object's system registration matches the code being run. If there is a mismatch between the GUID calculated by .NET and the GUID stored in the COM registration, .NET won't load the object and the user sees a general error dialog informing them about the failure. This mitigates certain COM-based attacks which could otherwise be used to run an attacker's own malicious or vulnerable payload.
->
-> The COM allow list mechanism described in this article **doesn't affect .NET's GUID validation check for COM objects**. Any .NET app attempting to run a COM object with a mismatched GUID are thus incompatible with App Control at this time. There are no policy control options to manage the GUID verification check, meaning the check is always performed. If you see COM object failures after an App Control policy is deployed, contact the software developer or the Independent Software Vendor (ISV) who produces the app to request a fix for the issue.
+> [!WARNING]
+> When App Control is enforced, .NET doesn't load certain COM objects if their registration GUID doesn't match the one calculated by the system at runtime. When that happens, the user sees a general COM load error dialog, but no events or other information is logged to the system. The COM allowlist mechanism described in this article **doesn't affect .NET's GUID validation check for COM objects** leaving those .NET apps incompatible with App Control at this time. For more information, see [App Control Admin Tips & Known Issues: .NET doesn't load COM objects with mismatched GUIDs](../operations/known-issues.md#net-doesnt-load-component-object-model-com-objects-with-mismatched-guids)
 
 ### Get COM object GUID
 
@@ -130,7 +128,7 @@ To add this CLSID to the existing policy, follow these steps:
     PS C:\WINDOWS\system32> Set-CIPolicySetting -FilePath <path to policy xml>\AppControl_policy.xml -Key "{f8d253d9-89a4-4daa-87b6-1168369f0b21}" -Provider WSH -Value true -ValueName EnterpriseDefinedClsId -ValueType Boolean
     ```
 
-    Once the command has run, find the following section added to the policy XML.
+    Once the command runs, find the following section added to the policy XML.
 
     ```XML
     <Settings>
