@@ -10,22 +10,32 @@ ms.date: 02/07/2025
 
 [!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-This article describes how to create an App Control for Business policy using the Smart App Control policy as a template. [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) is an app control-based security solution designed for consumer users. It uses the same technology as App Control for Business so it's easy to use as the basis for an equally robust but flexible enterprise policy. 
+This article describes how to create an App Control for Business policy using the Smart App Control policy as a template. [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) is an app control-based security solution designed for consumer users. It uses the same technology as App Control for Business so it's easy to use as the basis for an equally robust but flexible enterprise policy.
 
-> [!NOTE]
+> [!TIP]
 > Microsoft recommends the policy created in this article as the ideal starter policy for most App Control deployments to end user's devices. Typically, organizations who are new to App Control will be most successful if they start with a permissive policy like the one described in this article. You can choose to harden the policy over time to achieve a stronger overall security posture on your App Control-managed devices as described in later articles.
 
-As in [App Control for Business deployment in different scenarios: types of devices](common-appcontrol-use-cases.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of App Control to prevent unwanted or unauthorized applications from running on their managed devices.
+As we did in [App Control for Business deployment in different scenarios: types of devices](common-appcontrol-use-cases.md), we'll use the fictional example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of App Control to prevent unwanted or unauthorized applications from running on their managed devices.
 
-**Alice Pena** is the IT team lead tasked with the rollout of App Control. Lamna currently has loose application usage policies and a culture of maximum app flexibility for users. So, Alice knows she'll need to take an incremental approach to App Control and eventually use different policies for different workloads.
+**Alice Pena** is the IT team lead tasked with the rollout of App Control. Lamna currently has loose application usage policies and a culture of maximum app flexibility for users. So, Alice knows she'll need to take an incremental approach to App Control and eventually use different policies for different user segments. But for now, she wants to begin with a policy that can cover the vast majority of users without any modifications.
 
-## Analyze the "circle-of-trust" of the Smart App Control policy
+## Analyze the "circle-of-trust" of the Smart App Control policy and its fit in your organization
 
-Alice follows the guidance from the article [Plan for app control policy lifecycle management](./plan-appcontrol-management.md#policy-xml-lifecycle-management), and starts by analyzing the "circle-of-trust" for Smart App Control's policy. Alice reads all of Microsoft's online help articles related to Smart App Control, which she finds do a good job defining it's "circle-of-trust". Alice decides to dig a little deeper by analyzing the Smart App Control policy XML itself.
+Alice follows the guidance from the article [Plan for app control policy lifecycle management](./plan-appcontrol-management.md#policy-xml-lifecycle-management), and starts by analyzing the "circle-of-trust" for Smart App Control's policy. Alice reads all of Microsoft's online help articles related to Smart App Control, which she finds do a good job defining it's "circle-of-trust". Its policy ensures only signed code runs along with code predicted to be safe by the [Intelligent Security Graph](./use). Unsigned code is blocked from running if the service can't predict that the code is safe to run. And code determined to be unsafe is always blocked.
 
-Alice is familiar with the App Control Policy Wizard, an open-source policy authoring UI whose principal maintainers are from Microsoft's Platform Integrity team, the same people responsible for App Control for Business and Smart App Control. She downloads the tool from its official [download site](https://aka.ms/appcontrolwizard) and runs it. 
+Now Alice considers how to adapt the policy for Lamna's use cases. For most users and devices, Alice wants to create an initial policy that is as relaxed as possible in order to minimize user productivity impact, while still providing security value. Even though Lamna's leadership would prefer a more restrictive posture, she's been careful not to over-promise how quickly the company can get to that state and has leadership buy-in on her strategy.
 
-On the **App Control Policy Wizard's** main page, Alice selects **Policy Creator** which brings her to **Select a Policy Type**. Leaving the default values unaltered, she selects **Next**. On the next page, she immediately notices the template called **Signed and Reputable Mode** and reads the list of code the template authorizes, which perfectly matches the "circle-of-trust" for Smart App Control. Alice selects the template and selects **Next** to see the policy rules set by the template.
+Alice next identifies the key factors about Lamna's environment that she believes will shape the "circle-of-trust" it needs to operate the business until it can reform its app management processes. They also help her narrow the set of systems she will start with. Alice writes down these factors in her planning worksheet:
+
+- Most clients are running Windows 11, with small numbers of clients remaining on Windows 10 through the remainder of the fiscal year;
+- All clients are managed by Microsoft Intune;
+- Most, but not all, apps are deployed using Intune;
+- Most users run as standard user, though some have local admin rights on their devices; the people with admin rights are accustomed to the freedom they have to install whatever apps they want;
+- Lamna has hundreds of line-of-business (LOB) apps across its business units; almost all of the apps use unsigned or mostly unsigned code, though the company has started to require codesigning in the past two years; all of the signed LOB apps 
+
+Alice is familiar with the App Control Policy Wizard, an open-source policy authoring UI maintained by the team responsible for App Control for Business and Smart App Control. She downloads the tool from its official [download site](https://aka.ms/appcontrolwizard) and runs it.
+
+1. On the **App Control Policy Wizard's** main page, Alice selects **Policy Creator** which brings her to **Select a Policy Type**. Leaving the default values unaltered, she selects **Next**. On the next page, she immediately notices the template called **Signed and Reputable Mode** and reads the list of code the template authorizes, which perfectly matches the "circle-of-trust" for Smart App Control. Alice selects the template and selects **Next** to see the policy rules set by the template.
 
 "Circle of Trust" described in this article is strongly recommended as a safe and effective app control policy for almost any environment. The policy we'll create is particularly well-suited for **lightly managed devices** within an organization. T
 
