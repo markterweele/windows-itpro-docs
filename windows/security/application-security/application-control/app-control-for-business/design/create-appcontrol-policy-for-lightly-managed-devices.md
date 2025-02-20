@@ -31,7 +31,7 @@ Alice next identifies the key factors about Lamna's environment that she believe
 - All clients are managed by Microsoft Intune;
 - Most, but not all, apps are deployed using Intune;
 - Most users run as standard user, though some have local admin rights on their devices; the people with admin rights are accustomed to the freedom they have to install whatever apps they want;
-- Lamna has hundreds of line-of-business (LOB) apps across its business units; almost all of the apps use unsigned or mostly unsigned code, though the company has started to require codesigning in the past two years; all of the signed LOB apps 
+- Lamna has hundreds of line-of-business (LOB) apps across its business units; almost all of the apps use unsigned or mostly unsigned code, though the company has started to require codesigning in the past two years; all of the signed LOB apps use a codesigning certificate issued using Lamna's internal PKI meaning they aren't publicly trusted
 
 Alice is familiar with the App Control Policy Wizard, an open-source policy authoring UI maintained by the team responsible for App Control for Business and Smart App Control. She downloads the tool from its official [download site](https://aka.ms/appcontrolwizard) and runs it.
 
