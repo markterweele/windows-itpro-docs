@@ -42,3 +42,17 @@ Click to Do has the following minimum requirements:
 
 
 ## Configure policy for Click to Do
+
+Click to Do lets people take action on content on their screens. When activated, it takes a screenshot of their screen and analyzes it to present actions. Click to Do ends when they exit it, and it can't take screenshots while closed. Screenshot analysis is always performed locally on their device. By default, Click to Do is enabled for users.
+
+This policy setting allows you to determine whether Click to Do is available for users on their device.
+
+When the policy is enabled, the Click to Do component and entry points will not be available to users.
+
+When the policy is disabled, users will have Click to Do available on their device.
+
+| &nbsp; | Setting  |
+|---|---|
+| **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[DisableClickToDo](mdm/policy-csp-windowsai.md#DisableClickToDo) </br></br> ./User/Vendor/MSFT/Policy/Config/WindowsAI/[DisableClickToDo](mdm/policy-csp-windowsai.md#DisableClickToDo)|
+| **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Disable Click to Do** </br></br>User Configuration > Administrative Templates > Windows Components > Windows AI > **Disable Click to Do**|
+
