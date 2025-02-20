@@ -1,7 +1,8 @@
 ---
 title: Configuration service provider preview policies
 description: Learn more about configuration service provider (CSP) policies that are available for Windows Insider Preview.
-ms.date: 11/27/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -19,6 +20,10 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [TurnOffApplicationFootprint](policy-csp-appdeviceinventory.md#turnoffapplicationfootprint)
 - [TurnOffWin32AppBackup](policy-csp-appdeviceinventory.md#turnoffwin32appbackup)
 
+## ApplicationManagement
+
+- [AllowedNonAdminPackageFamilyNameRules](policy-csp-applicationmanagement.md#allowednonadminpackagefamilynamerules)
+
 ## ClientCertificateInstall CSP
 
 - [AttestPrivateKey](clientcertificateinstall-csp.md#userscepuniqueidinstallattestprivatekey)
@@ -31,6 +36,7 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 ## Connectivity
 
+- [DisableCrossDeviceResume](policy-csp-connectivity.md#disablecrossdeviceresume)
 - [UseCellularWhenWiFiPoor](policy-csp-connectivity.md#usecellularwhenwifipoor)
 - [DisableCellularSettingsPage](policy-csp-connectivity.md#disablecellularsettingspage)
 - [DisableCellularOperatorSettingsPage](policy-csp-connectivity.md#disablecellularoperatorsettingspage)
@@ -45,6 +51,10 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 - [DODisallowCacheServerDownloadsOnVPN](policy-csp-deliveryoptimization.md#dodisallowcacheserverdownloadsonvpn)
 - [DOVpnKeywords](policy-csp-deliveryoptimization.md#dovpnkeywords)
+
+## DeviceGuard
+
+- [MachineIdentityIsolation](policy-csp-deviceguard.md#machineidentityisolation)
 
 ## DevicePreparation CSP
 
@@ -80,6 +90,12 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 - [AttestErrorMessage](healthattestation-csp.md#attesterrormessage)
 
+## HumanPresence
+
+- [ForcePrivacyScreen](policy-csp-humanpresence.md#forceprivacyscreen)
+- [ForcePrivacyScreenDim](policy-csp-humanpresence.md#forceprivacyscreendim)
+- [ForcePrivacyScreenNotification](policy-csp-humanpresence.md#forceprivacyscreennotification)
+
 ## InternetExplorer
 
 - [AllowLegacyURLFields](policy-csp-internetexplorer.md#allowlegacyurlfields)
@@ -97,6 +113,7 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 ## LocalPoliciesSecurityOptions
 
+- [InteractiveLogon_NumberOfPreviousLogonsToCache](policy-csp-localpoliciessecurityoptions.md#interactivelogon_numberofpreviouslogonstocache)
 - [UserAccountControl_BehaviorOfTheElevationPromptForAdministratorProtection](policy-csp-localpoliciessecurityoptions.md#useraccountcontrol_behavioroftheelevationpromptforadministratorprotection)
 - [UserAccountControl_TypeOfAdminApprovalMode](policy-csp-localpoliciessecurityoptions.md#useraccountcontrol_typeofadminapprovalmode)
 
@@ -110,18 +127,23 @@ This article lists the policies that are applicable for Windows Insider Preview 
 ## NewsAndInterests
 
 - [DisableWidgetsOnLockScreen](policy-csp-newsandinterests.md#disablewidgetsonlockscreen)
+- [DisableWidgetsBoard](policy-csp-newsandinterests.md#disablewidgetsboard)
 
 ## PassportForWork CSP
 
 - [DisablePostLogonProvisioning](passportforwork-csp.md#devicetenantidpoliciesdisablepostlogonprovisioning)
 
-## Reboot CSP
+## Printers
 
-- [WeeklyRecurrent](reboot-csp.md#scheduleweeklyrecurrent)
+- [ConfigureIppTlsCertificatePolicy](policy-csp-printers.md#configureipptlscertificatepolicy)
 
 ## RemoteDesktopServices
 
 - [TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME](policy-csp-remotedesktopservices.md#ts_server_remoteapp_use_shellappruntime)
+
+## SettingsSync
+
+- [EnableWindowsbackup](policy-csp-settingssync.md#enablewindowsbackup)
 
 ## Start
 
