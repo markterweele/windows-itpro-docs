@@ -24,7 +24,7 @@ Click to Do (preview) helps users to get things done faster by identifying text 
 > - In-market commercial devices are defined as devices with an Enterprise (ENT) or Education (EDU) SKU or any premium SKU device that is managed by an IT administrator (whether via Microsoft Endpoint Manager or other endpoint management solution), has a volume license key, or is joined to a domain. Commercial devices during Out of Box Experience (OOBE) are defined as those with ENT or EDU SKU or any premium SKU device that has a volume license key or is Microsoft Entra joined. 
 > - Click to Do is optimized for select languages English, Chinese (simplified), French, German, Japanese, and Spanish. Content-based and storage limitations apply. For more information, see [https://aka.ms/copilotpluspcs](https://aka.ms/copilotpluspcs).
 
-## ## What is Click to Do?
+## What is Click to Do?
 
 Click to Do (preview) analyzes what's on the screen and then allows users to choose the text or image they want to take action on. 
 
