@@ -64,7 +64,7 @@ When you choose to send info from Click to Do to an app, like Paint, Click to Do
 
 - `C:\Users\{username}\AppData\Local\Temp`
 
-Temporary files may also be saved when you choose send feedback. These temporary files aren't saved long term. Click to Do doesn't keep any content from your screen after completing the requested action, but some [diagnostic data](../privacy/configure-windows-diagnostic-data-in-your-organization.md) is gathered to keep Click to Do secure, up to date, and working.
+Temporary files may also be saved when you choose send feedback. These temporary files aren't saved long term. Click to Do doesn't keep any content from your screen after completing the requested action, but some [diagnostic data](/windows/privacy/configure-windows-diagnostic-data-in-your-organization) is gathered to keep Click to Do secure, up to date, and working.
 
 Click to Do's more intelligent text actions, including **Summarize**, **Rewrite (Casual)**, **Rewrite (Formal)**, and **Refine**, are powered by a state-of-the-art small language model called Phi Silica. Phi Silica leverages the NPU and the language model runs locally on Copilot+ PCs. Phi Silica ships inbox with Windows on Copilot+ PCs. 
 
