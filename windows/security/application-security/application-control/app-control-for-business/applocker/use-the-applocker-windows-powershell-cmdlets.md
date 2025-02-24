@@ -2,7 +2,7 @@
 title: Use the AppLocker Windows PowerShell cmdlets
 description: This article for IT professionals describes how each AppLocker Windows PowerShell cmdlet can help you administer your AppLocker application control policies.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 

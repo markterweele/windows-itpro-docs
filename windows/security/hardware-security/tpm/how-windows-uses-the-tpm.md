@@ -1,7 +1,7 @@
 ---
 title: How Windows uses the TPM
 description: Learn how Windows uses the Trusted Platform Module (TPM) to enhance security.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/10/2024
 ---
 
