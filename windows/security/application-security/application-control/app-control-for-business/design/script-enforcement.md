@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 [!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
 > [!IMPORTANT]
-> Option **11 Disabled:Script Enforcement** is not supported on **Windows Server 2016** or on **Windows 10 1607 LTSB** and should not be used on those platforms. Doing so will result in unexpected script enforcement behaviors.
+> Option **11 Disabled:Script Enforcement** isn't supported on **Windows Server 2016** or on **Windows 10 1607 LTSB** and shouldn't be used on those platforms. Doing so will result in unexpected script enforcement behaviors.
 
 ## Script enforcement overview
 
@@ -23,7 +23,7 @@ Validation for signed scripts is done using the [WinVerifyTrust API](/windows/wi
 App Control shares the *AppLocker - MSI and Script* event log for all script enforcement events. Whenever a script host asks App Control if a script should be allowed, an event is logged with the answer App Control returned to the script host. For more information on App Control script enforcement events, see [Understanding App Control events](../operations/event-id-explanations.md#app-control-block-events-for-packaged-apps-msi-installers-scripts-and-com-objects).
 
 > [!NOTE]
-> When a script runs that is not allowed by policy, App Control raises an event indicating that the script was "blocked." However, the actual script enforcement behavior is handled by the script host and may not actually completely block the file from running.
+> When a script runs that isn't allowed by policy, App Control raises an event indicating that the script was "blocked." However, the actual script enforcement behavior is handled by the script host and may not actually completely block the file from running.
 >
 > Also be aware that some script hosts may change how they behave even if an App Control policy is in audit mode only. You should review the script host specific information in this article and test thoroughly within your environment to ensure the scripts you need to run are working properly.
 
