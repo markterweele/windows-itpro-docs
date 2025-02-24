@@ -2,7 +2,7 @@
 title: Edit an AppLocker policy
 description: This article for IT professionals describes the steps required to modify an AppLocker policy.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2024
 ---
 
