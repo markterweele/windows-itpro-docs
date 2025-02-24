@@ -3,7 +3,7 @@ title: Microsoft Connected Cache for Enterprise and Education prerequisites
 description: Details of prerequisites and recommendations for using Microsoft Connected Cache for Enterprise and Education.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 ms.author: lichris
 author: chrisjlin
 manager: naengler

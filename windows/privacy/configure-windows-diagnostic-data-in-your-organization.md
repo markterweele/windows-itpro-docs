@@ -9,7 +9,7 @@ ms.author: danbrown
 manager: laurawi
 ms.date: 03/11/2016
 ms.collection: highpri
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Configure Windows diagnostic data in your organization
