@@ -7,7 +7,7 @@ manager: aaroncz
 author: nidos
 ms.author: nidos
 ms.reviewer: mstewart
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.collection: tier3
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
