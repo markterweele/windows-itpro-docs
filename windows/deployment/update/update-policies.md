@@ -3,7 +3,7 @@ title: Policies for update compliance and user experience
 description: Explanation and recommendations for update compliance, activity, and user experience for your organization.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
 manager: aaroncz
