@@ -2,7 +2,7 @@
 title: Enhanced Phishing Protection in Microsoft Defender SmartScreen
 description: Learn how Enhanced Phishing Protection for Microsoft Defender SmartScreen helps protect Microsoft school or work passwords against phishing and unsafe usage on sites and apps.
 ms.date: 07/10/2024
-ms.topic: conceptual
+ms.topic: article
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2</a>
 ---
