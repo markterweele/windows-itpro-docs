@@ -74,6 +74,10 @@ Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
 
 # [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
+``` cmd
+netsh.exe advfirewall set allprofiles state off
+```
+
 ---
 
 ## Deploy basic firewall rules
