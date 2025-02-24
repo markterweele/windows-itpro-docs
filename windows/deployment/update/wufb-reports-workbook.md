@@ -4,7 +4,7 @@ titleSuffix: Windows Update for Business reports
 description: How to use the Windows Update for Business reports workbook from the Azure portal.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: how-to
 author: mestew
 ms.author: mstewart
 manager: aaroncz
