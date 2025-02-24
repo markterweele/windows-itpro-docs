@@ -2,7 +2,7 @@
 title: Understand the AppLocker policy deployment process
 description: This planning and deployment article for the IT professional describes the process for using AppLocker when deploying application control policies.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/11/2024
 ---
 

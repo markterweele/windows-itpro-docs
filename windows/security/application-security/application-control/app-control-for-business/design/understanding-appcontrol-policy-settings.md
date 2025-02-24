@@ -3,7 +3,7 @@ title: Understanding App Control for Business secure settings
 description: Learn about secure settings in App Control for Business.
 ms.localizationpriority: medium
 ms.date: 09/11/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Understanding App Control Policy Settings

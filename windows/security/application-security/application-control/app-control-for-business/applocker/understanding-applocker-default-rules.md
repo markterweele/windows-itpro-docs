@@ -2,7 +2,7 @@
 title: Understanding AppLocker default rules
 description: This article for IT professional describes the set of rules that can be used to ensure that required Windows system files continue to run when the policy is applied.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/11/2024
 ---
 
