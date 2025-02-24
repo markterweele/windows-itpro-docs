@@ -4,7 +4,7 @@ description: This article explains the Windows quality update end user experienc
 ms.date: 11/04/2024
 ms.service: windows-client
 ms.subservice: autopatch
-ms.topic: conceptual
+ms.topic: article
 ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
