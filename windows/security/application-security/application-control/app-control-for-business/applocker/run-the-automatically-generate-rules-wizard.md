@@ -2,7 +2,7 @@
 title: Run the Automatically Generate Rules wizard
 description: This article for IT professionals describes steps to run the wizard to create AppLocker rules on a reference device.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2024
 ---
 

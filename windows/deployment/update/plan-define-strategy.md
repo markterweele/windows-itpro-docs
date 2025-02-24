@@ -3,7 +3,7 @@ title: Define update strategy
 description: Example of using a calendar-based approach to achieve consistent update installation in your organization.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
 manager: aaroncz

@@ -1,7 +1,7 @@
 ---
 title: Create an App Control policy for fully managed devices
 description: App Control for Business restricts which applications users are allowed to run and the code that runs in system core.
-ms.topic: conceptual
+ms.topic: how-to
 ms.localizationpriority: medium
 ms.date: 09/11/2024
 ---
@@ -10,12 +10,12 @@ ms.date: 09/11/2024
 
 [!INCLUDE [Feature availability note](../includes/feature-availability-note.md)]
 
-This section outlines the process to create an App Control for Business policy for **fully managed devices** within an organization. The key difference between this scenario and [lightly managed devices](create-appcontrol-policy-for-lightly-managed-devices.md) is that all software deployed to a fully managed device is managed by IT and users of the device can't install arbitrary apps. Ideally, all apps are deployed using a software distribution solution, such as Microsoft Intune. Additionally, users on fully managed devices should ideally run as standard user and only authorized IT pros have administrative access.
+This section outlines the process to create an App Control for Business policy for **fully managed devices** within an organization. The key difference between this scenario and [lightly managed devices](create-appcontrol-policy-for-lightly-managed-devices.md) is that all software that's deployed to a fully managed device is managed by IT and users of the device can't install arbitrary apps. Ideally, all apps are deployed using a software distribution solution, such as Microsoft Intune. Additionally, users on fully managed devices should ideally run as standard user and only authorized IT pros have administrative access.
 
 > [!NOTE]
 > Some of the App Control for Business options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's App Control policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
 
-As described in [common App Control for Business deployment scenarios](common-appcontrol-use-cases.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of App Control to prevent unwanted or unauthorized applications from running on their managed devices.
+As described in [common App Control for Business deployment scenarios](common-appcontrol-use-cases.md), we use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of App Control to prevent unwanted or unauthorized applications from running on their managed devices.
 
 **Alice Pena** is the IT team lead tasked with the rollout of App Control.
 
@@ -55,7 +55,7 @@ Having defined the "circle-of-trust", Alice is ready to generate the initial pol
 Alice follows these steps to complete this task:
 
 > [!NOTE]
-> If you do not use Configuration Manager or prefer to use a different [example App Control for Business base policy](example-appcontrol-base-policies.md) for your own policy, skip to step 2 and substitute the Configuration Manager policy path with your preferred example base policy.
+> If you don't use Configuration Manager or prefer to use a different [example App Control for Business base policy](example-appcontrol-base-policies.md) for your own policy, skip to step 2 and substitute the Configuration Manager policy path with your preferred example base policy.
 
 1. [Use Configuration Manager to create and deploy an audit policy](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) to a client device running Windows 10 version 1903 or above, or Windows 11.
 

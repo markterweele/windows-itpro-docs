@@ -2,7 +2,7 @@
 title: Configure an AppLocker policy for audit only
 description: This article for IT professionals describes how to set AppLocker policies to Audit only within your IT environment by using AppLocker.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2024
 ---
 

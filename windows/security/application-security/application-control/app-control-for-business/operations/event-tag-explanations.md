@@ -3,7 +3,7 @@ title: Understanding App Control event tags
 description: Learn what different App Control for Business event tags signify.
 ms.localizationpriority: medium
 ms.date: 09/11/2024
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Understanding App Control event tags

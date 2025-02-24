@@ -3,7 +3,7 @@ title: Create your App Control for Business AppId Tagging Policies
 description: Create your App Control for Business AppId tagging policies for Windows devices.
 ms.localizationpriority: medium
 ms.date: 09/23/2024
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Creating your App Control AppId Tagging Policies
