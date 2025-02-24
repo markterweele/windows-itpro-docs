@@ -3,7 +3,7 @@ title: Understand App Control script enforcement
 description: App Control script enforcement
 ms.manager: jsuther
 ms.date: 09/11/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ms.localizationpriority: medium
 ---
 
