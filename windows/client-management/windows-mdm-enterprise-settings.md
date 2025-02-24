@@ -1,7 +1,7 @@
 ---
 title: Enterprise settings and policy management
 description: The DMClient manages the interaction between a device and a server. Learn more about the client-server management workflow.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/08/2024
 ---
 

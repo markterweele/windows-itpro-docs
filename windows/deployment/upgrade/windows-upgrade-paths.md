@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 author: frankroj
 manager: aaroncz
 ms.author: frankroj
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.collection:
   - highpri
   - tier2
