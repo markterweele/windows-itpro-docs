@@ -2,7 +2,7 @@
 title: AppLocker technical reference
 description: This overview article for IT professionals provides links to the articles in the technical reference.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 09/11/2024
 ---
 
