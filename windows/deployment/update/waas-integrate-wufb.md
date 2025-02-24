@@ -3,7 +3,7 @@ title: Integrate Windows Update for Business
 description: Use Windows Update for Business deployments with management tools such as Windows Server Update Services (WSUS) and Microsoft Configuration Manager.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: integration
 author: mestew
 ms.author: mstewart
 manager: aaroncz
