@@ -116,8 +116,6 @@
                   href: monitor/windows-autopatch-windows-quality-update-status-report.md
                 - name: Quality update trending report
                   href: monitor/windows-autopatch-windows-quality-update-trending-report.md
-                - name: Reliability report
-                  href: monitor/windows-autopatch-reliability-report.md
                 - name: Hotpatch quality update report
                   href: monitor/windows-autopatch-hotpatch-quality-update-report.md
             - name: Windows feature and quality update device alerts
