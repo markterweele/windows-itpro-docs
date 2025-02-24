@@ -3,7 +3,7 @@ title: Microsoft Connected Cache for Enterprise and Education Overview
 description: Overview, supported scenarios, and content types for Microsoft Connected Cache for Enterprise and Education.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 ms.author: andyriv
 author: chrisjlin
 manager: naengler
