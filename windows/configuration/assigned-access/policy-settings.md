@@ -20,6 +20,7 @@ The following policy settings are applied at the device level when you deploy a 
 
 | Type    | Path                                                                       | Name/Description                                                          |
 |---------|----------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **CSP** | `./Vendor/MSFT/Policy/Config/Settings/AllowOnlineTips`                     | Allow Online Tips                                                         |
 | **CSP** | `./Vendor/MSFT/Policy/Config/Experience/AllowCortana`                      | Disable Cortana                                                           |
 | **CSP** | `./Vendor/MSFT/Policy/Config/Start/AllowPinnedFolderDocuments`             | Disable Start documents icon                                              |
 | **CSP** | `./Vendor/MSFT/Policy/Config/Start/AllowPinnedFolderDownloads`             | Disable Start downloads icon                                              |
@@ -37,6 +38,7 @@ The following policy settings are applied at the device level when you deploy a 
 | **CSP** | `./Vendor/MSFT/Policy/Config/WindowsInkWorkspace/AllowWindowsInkWorkspace` | Access to ink workspace is disabled                                       |
 | **CSP** | `./Vendor/MSFT/Policy/Config/WindowsLogon/DontDisplayNetworkSelectionUI`   | Hide networks UI on the logon screen, as well as on "security options" UI |
 
+
 ## User policy settings
 
 The following policy settings are applied to targeted user accounts when you deploy a restricted user experience:
@@ -45,8 +47,9 @@ The following policy settings are applied to targeted user accounts when you dep
 |---------|----------------------------------------------------------------------------------|-------------------------------------------------------------------|
 | **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/DisableContextMenus`                     | Disable Context Menu for Start menu apps                          |
 | **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/HidePeopleBar`                           | Hide People Bar from appearing on taskbar                         |
-| **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/HideRecentlyAddedApps`                   | Hide recently added apps from appearing on the Start menu         |
 | **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/HideRecentJumplists`                     | Hide recent jumplists from appearing on the Start menu/taskbar    |
+| **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/HideRecentlyAddedApps`                   | Hide recently added apps from appearing on the Start menu         |
+| **CSP** | User Configuration\Administrative Templates\Windows Components\Windows Copilot   | Turn off Windows Copilot                                          |
 | **GPO** | User Configuration\Administrative Templates\Desktop                              | Hide and disable all items on the desktop                         |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Clear history of recently opened documents on exit                |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Disable showing balloon notifications as toasts                   |
@@ -68,6 +71,7 @@ The following policy settings are applied to targeted user accounts when you dep
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Remove Control Center                                             |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Remove frequent programs list from the Start Menu                 |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Remove Notification and Action Center                             |
+| **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Remove pinned programs from the Taskbar                           |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Remove Quick Settings                                             |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Remove Run menu from Start Menu                                   |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Turn off all balloon notifications                                |
@@ -81,6 +85,7 @@ The following policy settings are applied to targeted user accounts when you dep
 | **GPO** | User Configuration\Administrative Templates\Windows Components\File Explorer     | Remove *Map network drive* and *Disconnect Network Drive*         |
 | **GPO** | User Configuration\Administrative Templates\Windows Components\File Explorer     | Remove File Explorer's default context menu                       |
 | **GPO** | User Configuration\Administrative Templates\Windows Components\Windows Copilot   | Turn off Windows Copilot                                          |
+| **GPO** | User Configuration\Administrative Templates\WindowsComponents\File Explorer      | Prevent access to drives from My Computer                         |
 
 The following policy settings are applied to the kiosk account when you configure a kiosk experience with Microsoft Edge:
 
