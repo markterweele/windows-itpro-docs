@@ -13,65 +13,79 @@ ms.date: 02/20/2025
 This article describes how to create an App Control for Business policy using the Smart App Control policy as a template. [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) is an app control-based security solution designed for consumer users. It uses the same technology as App Control for Business so it's easy to use as the basis for an equally robust but flexible enterprise policy.
 
 > [!TIP]
-> Microsoft recommends the policy created in this article as the ideal starter policy for most App Control deployments to end user's devices. Typically, organizations who are new to App Control will be most successful if they start with a permissive policy like the one described in this article. You can harden the policy over time to achieve a stronger overall security posture on your App Control-managed devices as described in later articles.
+> Microsoft recommends the policy created in this article as the ideal starter policy for most App Control deployments to end users' devices. Typically, organizations new to App Control will be most successful if they start with a permissive policy like the one described in this article. You can harden the policy over time to achieve a stronger overall security posture on your App Control-managed devices as described in later articles.
 
 As we did in [App Control for Business deployment in different scenarios](common-appcontrol-use-cases.md), we'll use the fictional example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna intends to adopt stronger application policies, including the use of App Control to prevent unwanted or unauthorized applications from running on their managed devices.
 
-**Alice Pena** is the IT team lead tasked with the rollout of App Control. Lamna currently has relaxed application usage policies and a culture of maximum app flexibility for users. So, Alice knows she'll need to take an incremental approach to App Control and eventually use different policies for different user segments. But for now, she wants to begin with a policy that can cover the vast majority of users without any modifications.
+**Alice Pena** is the IT team lead tasked with the rollout of App Control. Lamna currently has relaxed application usage policies and a culture of maximum app flexibility for users. So, Alice knows she'll need to take an incremental approach to App Control and likely use different policies for different user segments. But for now, she wants to begin with a policy that can cover the vast majority of users without any modifications, Smart App Control's "Signed & Reputable" policy adapted for Lamna.
 
 ## Analyze how Smart App Control's "circle-of-trust" fits for you
 
-Alice follows the guidance from the article [Plan for app control policy lifecycle management](./plan-appcontrol-management.md#policy-xml-lifecycle-management), and starts by analyzing the "circle-of-trust" for Smart App Control's policy. Alice reads all of Microsoft's online help articles related to Smart App Control to be sure she understands it well. From her reading, she learns that the Smart App Control allows only publicly-trusted signed code or unsigned code that the [Intelligent Security Graph (ISG)](./use-appcontrol-with-intelligent-security-graph.md) predicts is safe. Publicly-trusted signed code means the signing certificate was issued by one of the certificate authorities (CA) who are in Microsoft's Trusted Root Program. Unsigned code is blocked from running if the ISG can't predict that the code is safe to run. And code determined to be unsafe is always blocked.
+Alice follows the guidance from the article [Plan for app control policy lifecycle management](./plan-appcontrol-management.md#policy-xml-lifecycle-management), and starts by analyzing the "circle-of-trust" for Smart App Control's policy. Alice reads Microsoft's online help articles about Smart App Control to be sure she understands it well. From her reading, she learns that Smart App Control allows only publicly-trusted signed code or unsigned code that the [Intelligent Security Graph (ISG)](./use-appcontrol-with-intelligent-security-graph.md) predicts is safe. Publicly-trusted signed code means the signing certificate was issued by one of the certificate authorities (CA) who are in Microsoft's Trusted Root Program. Unsigned code is blocked from running if the ISG can't predict that the code is safe to run. And code determined to be unsafe is always blocked.
 
-Now Alice considers how to adapt the policy for Lamna's use. Alice wants to create an initial policy that is as relaxed as possible to cover more users, avoid user productivity impact, but still provide tangible security value. Even though Lamna's leadership would prefer a more restrictive posture, more rapidly, she's educated key stakeholders on the challenges and complexities ahead. As a result, she has senior leadership buy-in on her strategy.
+Now Alice considers how to adapt the policy for Lamna's use. Alice wants to create an initial policy that is as relaxed as possible, but still provide durable security value. Alice knows that some within Lamna's leadership advocate an approach much more aggressive than she plans. They want to immediately lockdown end users' devices and hope there's limited fallout. For now, she has enough support for her approach, because more of the leadership team appreciate that the corporate app culture that exists at Lamna is deeply ingrained. An app culture that developed slowly over the course of the company's existence won't just go away. 
 
 ### Consider the key factors about your organization
 
-Alice next identifies the key factors about Lamna's environment that she thinks will shape the company's "circle-of-trust". The policy must be flexible to meet the needs of the business while adjusting its app management processes so that a more restrictive policy is even practical. The key factors also help her choose which systems to include in the first deployment. Alice writes down these factors in her planning worksheet so that whoever follows her knows :
+Alice next identifies the key factors about Lamna's environment that she believes will most influence the company's "circle-of-trust". The policy must be flexible to meet the needs of the business in the short- and medium-term, while they introduce new app management processes that will make it practical to consider a more restrictive app control policy. The key factors also help her choose which systems to include in the first deployment. Alice writes down these factors in her planning worksheet so that whomever may follow her will know how she viewed the challenge:
 
-- **Privileges:** Most users operate as standard user, though nearly a quarter still have local admin rights on their devices; the people with admin rights view the freedoms that gives them as essential, including the option to run whatever apps they want;
+- **User privileges:** Most users operate as standard user, though nearly a quarter still have local admin rights on their devices; the people with admin rights view the freedoms that gives them as essential, including the option to run whatever apps they want;
 - **Operating Systems:** Windows 11 runs most user devices, but Windows 10 will remain on roughly 10% of clients at least through the next fiscal year, particularly those in smaller satellite offices; Alice's group doesn't manage Lamna's servers or any specialized equipment; Lamna's server IT group plans to wait to see how the client rollout of App Control unfolds before implementing the technology on the servers they control;
 - **Client management:** Lamna uses Microsoft Intune for all Windows 11 devices, deployed as Microsoft Entra cloud-native; they continue to use Microsoft Endpoint Configuration Manager (MEMCM) with Microsoft Entra hybrid join on all Windows 10 devices;
-- Most, but not all, apps are deployed using Intune; there's a long tail of business-unit-specific apps, and "Shadow IT" apps that lack an official charter, but are critical to the employees who use them;
-- Lamna has hundreds of line-of-business (LOB) apps across its business units; almost all of the apps use unsigned or mostly unsigned code, though the company has started to require codesigning in the past two years; all of the signed LOB apps 
+- **App management:** Most, but not all, apps are deployed using Intune; there's a long tail of business-unit-specific apps, and "Shadow IT" apps that lack an official charter, but are critical to the employees who use them;
+- **App ecosystem complexity:** Lamna has hundreds of line-of-business (LOB) apps across its business units; almost all of the apps use unsigned, or mostly unsigned, code, though the company has started to require codesigning in the past two years; they've used a codesigning certificate issued by Lamna's corporate Public Key Infrastructure (PKI), meaning that they aren't trusted by the Smart App Control policy by default; Alice must add the certs to the policy.
 
-Alice is familiar with the App Control Policy Wizard, an open-source policy authoring UI maintained by the team responsible for App Control for Business and Smart App Control. She downloads the tool from its official [download site](https://aka.ms/appcontrolwizard) and runs it.
-
-1. On the **App Control Policy Wizard's** main page, Alice selects **Policy Creator** which brings her to **Select a Policy Type**. Leaving the default values unaltered, she selects **Next**. On the next page, she immediately notices the template called **Signed and Reputable Mode** and reads the list of code the template authorizes, which perfectly matches the "circle-of-trust" for Smart App Control. Alice selects the template and selects **Next** to see the policy rules set by the template.
-
-"Circle of Trust" described in this article is strongly recommended as a safe and effective app control policy for almost any environment. The policy we'll create is particularly well-suited for **lightly managed devices** within an organization. T
-
-and its policy ensures only signed code runs along with code predicted to be safe by our intelligent cloud-powered security service. Unsigned code is blocked from running if the service can't predict that the code is safe to run. And code determined to be unsafe is always blocked.
-
-For most users and devices, Alice wants to create an initial policy that is as relaxed as possible in order to minimize user productivity impact, while still providing security value.
-
-Alice identifies the following key factors to arrive at the "circle-of-trust" for Lamna's lightly managed devices, which currently include most end-user devices:
-
-- All clients are running Windows 10 version 1903 and above, or Windows 11;
-- All clients are managed by Configuration Manager or with Intune.
-- Some, but not all, apps are deployed using Configuration Manager;
-- Most users are local administrators on their devices;
-- Some teams may need more rules to authorize specific apps that don't apply generally to all other users.
-
-Based on the above, Alice defines the pseudo-rules for the policy:
+Based on the above, Alice defines the pseudo-rules for the Lamna version of Microsoft's Signed & Reputable policy:
 
 1. **"Windows works"** rules that authorize:
    - Windows
    - WHQL (third-party kernel drivers)
-   - Windows Store signed apps
+ 
+2. **"Any signed code"** rules that authorize code signed by publicly trusted certificates or issued from Lamna's PKI:
+    - Signer rules for Microsoft-signed code and "AuthRoot" signers to allow publicly trusted signed code to properly function.
+    - A signer rule authorizing Lamna Codesigning PCA, the intermediate cert issued from their own internal PKI.
 
-1. **"ConfigMgr works"** rules that include:
-    - Signer and hash rules for Configuration Manager components to properly function.
-    - **Allow Managed Installer** rule to authorize Configuration Manager as a managed installer.
+3. **Allow apps based on their "reputation"** rule to authorize apps deemed "safe" by the ISG.
 
-1. **Allow Intelligent Security Graph (ISG)** (reputation-based authorization)
+4. **Allow Managed Installer** rule to authorize Intune's management extensions and Configuration Manager as a managed installer. Based on articles she's read, Alice decides to configure the auto-updater process for many popular apps as managed installers to ensure the code those apps use is always allowed.
 
-1. **Signed apps** using a certificate issued by a Windows Trusted Root Program certificate authority
-
-1. **Admin-only path rules** for the following locations:
+5. **Admin-only path rules** for the following locations:
    - C:\Program Files\*
    - C:\Program Files (x86)\*
    - %windir%\*
+   - "D:\Lamna Helpdesk\*
+
+## Modify the "Signed & Reputable" policy template to suit your business needs
+
+Alice is familiar with the App Control Policy Wizard, the open-source policy authoring UI maintained by the team responsible for App Control for Business and Smart App Control. She downloads the tool from its official [download site](https://aka.ms/appcontrolwizard) and runs it.
+
+1. On the **App Control Policy Wizard's** welcome page, Alice sees three options: **Policy Creator**, **Policy Editor**, and **Policy Merger**. Alice selects **Policy Creator** which takes her to the next page. 
+
+2. On **Select a Policy Type**, Alice must choose whether to create a *Multiple Policy Format* or *Single Policy Format* policy. Since all of the end users' devices run Windows 11 or current versions of Windows 10, she takes the default *Multiple Policy Format*. Similarly, the choice between *Base Policy* and *Supplemental Policy* is straightforward and, here too, she leaves the default, *Base Policy* intact. She selects **Next** to move to the next page.
+
+3. On the next page, she immediately notices the template called **Signed and Reputable Mode** and reads the list of code the template authorizes, which perfectly matches the "circle-of-trust" for Smart App Control. Alice selects the template and selects **Next** to see the policy rules set by the template.
+
+
+
+When creating policies for use with App Control for Business, it's recommended to start with a template policy, and then add or remove rules to suit your App Control scenario. For this reason, the App Control Wizard offers three template policies to start from and customize during the base policy creation workflow. Prerequisite information about App Control can be accessed through the [App Control design guide](appcontrol-design-guide.md). This page outlines the steps to create a new App Control policy from a template, configure the policy options, and the signer and file rules.
+
+## Template Base Policies
+
+Each of the template policies has a unique set of policy allowlist rules that affect the circle-of-trust and security model of the policy. The following table lists the policies in increasing order of trust and freedom. For instance, the Default Windows mode policy trusts fewer application publishers and signers than the Signed and Reputable mode policy. The Default Windows policy has a smaller circle-of-trust with better security than the Signed and Reputable policy, but at the expense of compatibility.
+
+| Template Base Policy | Description |
+|---------------------------------|-------------------------------------------------------------------|
+| **Default Windows Mode**      | Default Windows mode authorizes the following components: </br><ul><li>Windows operating components - any binary installed by a fresh install of Windows</li><li>Apps installed from the Microsoft Store</li><li>Microsoft Office365 apps, OneDrive, and Microsoft Teams</li><li>Third-party [Windows Hardware Compatible drivers](/windows-hardware/drivers/install/whql-release-signature)</li></ul>|
+| **Allow Microsoft Mode**      | Allow mode authorizes the following components: </br><ul><li>Windows operating components - any binary installed by a fresh install of Windows</li><li>Apps installed from the Microsoft Store</li><li>Microsoft Office365 apps, OneDrive, and Microsoft Teams</li><li>Third-party [Windows Hardware Compatible drivers](/windows-hardware/drivers/install/whql-release-signature)</li><li>*All Microsoft-signed software*</li></ul>|
+| **Signed and Reputable Mode** | Signed and Reputable mode authorizes the following components: </br><ul><li>Windows operating components - any binary installed by a fresh install of Windows</li><li>Apps installed from the Microsoft Store</li><li>Microsoft Office365 apps, OneDrive, and Microsoft Teams</li><li>Third-party [Windows Hardware Compatible drivers](/windows-hardware/drivers/install/whql-release-signature)</li><li>All Microsoft-signed software</li><li>*Files with good reputation per [Microsoft Defender's Intelligent Security Graph technology](use-appcontrol-with-intelligent-security-graph.md)*</li></ul>|
+
+*Italicized content denotes the changes in the current policy with respect to the policy prior.*
+
+More information about the Default Windows Mode and Allow Microsoft Mode policies can be accessed through the [Example App Control for Business base policies article](example-appcontrol-base-policies.md).
+
+![Selecting a base template for the policy.](../images/appcontrol-wizard-template-selection.png)
+
+Once the base template is selected, give the policy a name and choose where to save the App Control policy on disk.
 
 ## Create a custom base policy using an example App Control base policy
 

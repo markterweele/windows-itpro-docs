@@ -2,7 +2,7 @@
 title: Applications that can bypass App Control and how to block them
 description: View a list of recommended block rules, based on knowledge shared between Microsoft and the wider security community.
 ms.localizationpriority: medium
-ms.date: 09/11/2024
+ms.date: 02/23/2025
 ms.topic: reference
 ---
 
@@ -36,7 +36,6 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - lxssmanager.dll
 - lxrun.exe
 - Microsoft.Build.dll
-- Microsoft.Build.Framework.dll
 - Microsoft.Workflow.Compiler.exe
 - msbuild.exe<sup>2</sup>
 - msbuild.dll
@@ -168,7 +167,6 @@ The blocklist policy that follows includes "Allow all" rules for both kernel and
     <Deny ID="ID_DENY_INTUNE_AGENT" FriendlyName="IntuneWindowsAgent.exe" FileName="Microsoft.Management.Services.IntuneWindowsAgent.exe" MinimumFileVersion="1.46.204.0" />
     <Deny ID="ID_DENY_MFC40" FriendlyName="mfc40.dll" FileName="mfc40.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
-    <Deny ID="ID_DENY_MS_BUILD_FMWK" FriendlyName="Microsoft.Build.Framework.dll" FileName="Microsoft.Build.Framework.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_MWFC" FriendlyName="Microsoft.Workflow.Compiler.exe" FileName="Microsoft.Workflow.Compiler.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_MSBUILD" FriendlyName="MSBuild.exe" FileName="MSBuild.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_MSBUILD_DLL" FriendlyName="MSBuild.dll" FileName="MSBuild.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
@@ -871,7 +869,6 @@ The blocklist policy that follows includes "Allow all" rules for both kernel and
           <FileRuleRef RuleID="ID_DENY_INTUNE_AGENT" />
           <FileRuleRef RuleID="ID_DENY_MFC40" />
           <FileRuleRef RuleID="ID_DENY_MS_BUILD" />
-          <FileRuleRef RuleID="ID_DENY_MS_BUILD_FMWK" />
           <FileRuleRef RuleID="ID_DENY_MWFC" />
           <FileRuleRef RuleID="ID_DENY_MSBUILD" />
           <FileRuleRef RuleID="ID_DENY_MSBUILD_DLL" />
