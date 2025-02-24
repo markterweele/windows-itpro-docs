@@ -3,7 +3,7 @@ title: Use audit events to create App Control policy rules
 description: Audits allow admins to discover apps, binaries, and scripts that should be added to the App Control policy.
 ms.localizationpriority: medium
 ms.date: 09/11/2024
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Use audit events to create App Control policy rules

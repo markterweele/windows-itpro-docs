@@ -2,7 +2,7 @@
 title: Create Your AppLocker rules
 description: This article for the IT professional describes what you need to know about AppLocker rules and the methods that you can to create rules.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2024
 ---
 

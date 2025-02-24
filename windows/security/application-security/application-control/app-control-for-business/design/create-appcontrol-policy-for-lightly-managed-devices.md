@@ -1,7 +1,7 @@
 ---
 title: Create an App Control policy for lightly managed devices
 description: App Control for Business restricts which applications users are allowed to run and the code that runs in the system core.
-ms.topic: conceptual
+ms.topic: how-to
 ms.localizationpriority: medium
 ms.date: 09/11/2024
 ---
