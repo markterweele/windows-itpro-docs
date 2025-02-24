@@ -5,7 +5,7 @@ author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
 ms.date: 10/03/2017
-ms.topic: conceptual
+ms.topic: article
 ms.service: windows-client
 ms.subservice: itpro-apps
 ms.localizationpriority: medium

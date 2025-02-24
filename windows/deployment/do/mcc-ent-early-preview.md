@@ -3,7 +3,7 @@ title: Microsoft Connected Cache for Enterprise and Education early preview
 description: Details on Microsoft Connected Cache for Enterprise early preview
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 manager: naengler
 ms.author: lichris
 author: chrisjlin
