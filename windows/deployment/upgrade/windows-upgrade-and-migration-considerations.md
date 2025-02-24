@@ -5,7 +5,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.subservice: itpro-deploy
 ms.date: 08/30/2024
 ---
