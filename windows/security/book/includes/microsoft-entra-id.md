@@ -17,7 +17,7 @@ Organizations can deploy Microsoft Entra ID joined devices to enable access to b
         For users wanting to connect to Microsoft Entra on their personal devices, they can do so by adding their work or school account to Windows. This action registers the user's personal device with Microsoft Entra ID, allowing IT admins to support users in bring your own device (BYOD) scenarios. Credentials are authenticated and bound to the joined device, and can't be copied to another device without explicit reverification.
     :::column-end:::
     :::column:::
-:::image type="content" source="../images/device-registration.png" alt-text="Screenshot of the Entra account registration page." border="false" lightbox="images/device-registration.png":::
+:::image type="content" source="../images/device-registration.png" alt-text="Screenshot of the Entra account registration page." border="false" lightbox="../images/device-registration.png":::
     :::column-end:::
 :::row-end:::
 
