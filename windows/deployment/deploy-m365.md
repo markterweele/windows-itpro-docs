@@ -6,7 +6,7 @@ description: Learn about deploying Windows with Microsoft 365 and how to use a f
 ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.date: 02/13/2024
 ms.subservice: itpro-deploy
 appliesto:
