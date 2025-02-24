@@ -1,7 +1,7 @@
 ---
 title: Automatic MDM enrollment in the Intune admin center
 description: Automatic MDM enrollment in the Intune admin center
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/08/2024
 ---
 

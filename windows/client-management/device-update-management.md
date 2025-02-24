@@ -1,7 +1,7 @@
 ---
 title: Mobile device management MDM for device updates
 description: Windows provides several APIs to help mobile device management (MDM) solutions manage updates. Learn how to use these APIs to implement update management.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/08/2024
 ms.collection:
 - highpri

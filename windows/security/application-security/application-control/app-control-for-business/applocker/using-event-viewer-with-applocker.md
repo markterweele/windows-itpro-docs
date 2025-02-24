@@ -2,7 +2,7 @@
 title: Using Event Viewer with AppLocker
 description: This article lists AppLocker events and describes how to use Event Viewer with AppLocker.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 
