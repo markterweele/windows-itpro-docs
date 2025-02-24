@@ -2,7 +2,7 @@
 title: How AppLocker works
 description: This article for the IT professional provides links to articles about AppLocker architecture and components, processes and interactions, rules and policies.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 

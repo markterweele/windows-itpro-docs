@@ -2,7 +2,7 @@
 title: App Control for Business Wizard App Control Event Parsing
 description: Creating App Control policy rules from the App Control event logs and the MDE Advanced Hunting App Control events.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 
