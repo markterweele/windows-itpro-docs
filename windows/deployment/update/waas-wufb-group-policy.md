@@ -4,7 +4,7 @@ description: Walk through of how to configure Windows Update for Business settin
 ms.service: windows-client
 ms.subservice: itpro-updates
 manager: aaroncz
-ms.topic: conceptual
+ms.topic: how-to
 author: mestew
 ms.localizationpriority: medium
 ms.author: mstewart
