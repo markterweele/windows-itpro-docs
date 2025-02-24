@@ -8,7 +8,7 @@ ms.author: mstewart
 manager: aaroncz
 ms.topic: reference
 ms.subservice: itpro-fundamentals
-ms.date: 12/09/2024
+ms.date: 02/25/2025
 ms.collection:
   - highpri
   - tier1
@@ -38,6 +38,7 @@ The following features and functionalities have been removed from the installed 
 
 |Feature    |  Details and mitigation  | Support removed |
 | ----------- | --------------------- | ------ |
+| Data Encryption Standard (DES) <!--9720338--> | DES, the symmetric-key block encryption cipher, is considered insecure against modern cryptographic attacks, and replaced by more robust encryption algorithms. DES was disabled starting with Windows Server 2008 R2 and is removed from Windows Server 2025 and later releases.| February 2025 | 
 | NTLMv1 <!--9544861--> | NTLMv1 is removed starting in Windows 11, version 24H2 and Windows Server 2025. | 24H2 |
 | Windows Information Protection | Windows Information Protection is removed starting in Windows 11, version 24H2. <!--9561151--> | 24H2 |
 | Microsoft Defender Application Guard for Edge | [Microsoft Defender Application Guard](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview), including the [Windows Isolated App Launcher APIs](/windows/win32/api/isolatedapplauncher/), is deprecated for Microsoft Edge for Business and is no longer available starting with Windows 11, version 24H2. | 24H2 |
