@@ -6,7 +6,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.topic: conceptual
+ms.topic: article
 ms.subservice: itpro-deploy
 ms.date: 01/29/2025
 appliesto:
