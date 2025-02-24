@@ -3,7 +3,7 @@ title: Servicing stack updates
 description: In this article, learn how servicing stack updates improve the code that installs the other updates.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
 manager: aaroncz
