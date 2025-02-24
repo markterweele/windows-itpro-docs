@@ -58,6 +58,9 @@ Users with the following permissions can access the reports:
 - Intune Service Administrator
 - Global Reader
 - Services Support Administrator
+- Policy and Profile Manager
+- Read Only Operator
+- Help Desk Operator
 
 ## About data latency
 
