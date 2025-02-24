@@ -2,7 +2,7 @@
 title: Use code signing for added control and protection with App Control
 description: Code signing can be used to better control Win32 app authorization and add protection for your App Control for Business policies.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 
