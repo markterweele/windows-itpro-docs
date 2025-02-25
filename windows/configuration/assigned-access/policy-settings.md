@@ -2,7 +2,7 @@
 title: Assigned Access policy settings
 description: Learn about the policy settings enforced on a device configured with Assigned Access.
 ms.topic: reference
-ms.date: 10/31/2024
+ms.date: 02/25/2025
 ---
 
 # Assigned Access policy settings
@@ -38,7 +38,6 @@ The following policy settings are applied at the device level when you deploy a 
 | **CSP** | `./Vendor/MSFT/Policy/Config/WindowsInkWorkspace/AllowWindowsInkWorkspace` | Access to ink workspace is disabled                                       |
 | **CSP** | `./Vendor/MSFT/Policy/Config/WindowsLogon/DontDisplayNetworkSelectionUI`   | Hide networks UI on the logon screen, as well as on "security options" UI |
 
-
 ## User policy settings
 
 The following policy settings are applied to targeted user accounts when you deploy a restricted user experience:
@@ -58,6 +57,7 @@ The following policy settings are applied to targeted user accounts when you dep
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Do not display or track items in Jump Lists from remote locations |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Hide and disable all items on the desktop                         |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Hide the Task View button                                         |
+| **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Hide the TaskView button                                          |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Lock all taskbar settings                                         |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Lock the Taskbar                                                  |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Prevent users from adding or removing toolbars                    |
@@ -71,7 +71,6 @@ The following policy settings are applied to targeted user accounts when you dep
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Remove Control Center                                             |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Remove frequent programs list from the Start Menu                 |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Remove Notification and Action Center                             |
-| **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Remove pinned programs from the Taskbar                           |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Remove Quick Settings                                             |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Remove Run menu from Start Menu                                   |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Turn off all balloon notifications                                |
