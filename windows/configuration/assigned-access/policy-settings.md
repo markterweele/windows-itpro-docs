@@ -56,7 +56,6 @@ The following policy settings are applied to targeted user accounts when you dep
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Do not allow pinning programs to the Taskbar                      |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Do not display or track items in Jump Lists from remote locations |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Hide and disable all items on the desktop                         |
-| **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Hide the Task View button                                         |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Hide the TaskView button                                          |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Lock all taskbar settings                                         |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Lock the Taskbar                                                  |
