@@ -1,13 +1,15 @@
 ---
-title: WEDL\_AssignedAccess
-description: WEDL\_AssignedAccess
-ms.date: 05/20/2024
+title: WEDL_AssignedAccess
+description: WEDL_AssignedAccess
+ms.date: 02/25/2025
 ms.topic: reference
 ---
 
-# WEDL\_AssignedAccess
+# WEDL_AssignedAccess
 
 This Windows Management Instrumentation (WMI) provider class configures settings for assigned access.
+
+[!INCLUDE [shell-launcher](../../../includes/licensing/shell-launcher.md)]
 
 ## Syntax
 
@@ -129,13 +131,3 @@ if ($AssignedAccessConfig) {
     "Could not set up assigned access account."
 }
 ```
-
-## Requirements
-
-| Windows Edition        | Supported |
-|:-----------------------|:---------:|
-| Windows Home           | No        |
-| Windows Pro            | No        |
-| Windows Enterprise     | Yes       |
-| Windows Education      | Yes       |
-| Windows IoT Enterprise | Yes       |
