@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business cloud Kerberos trust deployment guide
 description: Learn how to deploy Windows Hello for Business in a cloud Kerberos trust scenario.
-ms.date: 11/22/2024
+ms.date: 02/25/2025
 ms.topic: tutorial
 ---
 
@@ -45,7 +45,7 @@ When Microsoft Entra Kerberos is enabled in an Active Directory domain, an *Azur
 - Is only used by Microsoft Entra ID to generate TGTs for the Active Directory domain
 
   > [!NOTE]
-  > Similar rules and restrictions used for RODCs apply to the AzureADKerberos computer object. For example, users that are direct or indirect members of priviliged built-in security groups won't be able to use cloud Kerberos trust.
+  > Similar rules and restrictions used for RODCs apply to the AzureADKerberos computer object. For example, users that are direct or indirect members of privileged built-in security groups won't be able to use cloud Kerberos trust.
 
 :::image type="content" source="images/azuread-kerberos-object.png" alt-text="Screenshot of the Active Directory Users and Computers console, showing the computer object representing the Microsoft Entra Kerberos server." lightbox="images/azuread-kerberos-object.png":::
 
