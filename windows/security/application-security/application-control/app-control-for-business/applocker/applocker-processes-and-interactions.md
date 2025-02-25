@@ -2,7 +2,7 @@
 title: AppLocker processes and interactions
 description: This article for the IT professional describes the process dependencies and interactions when AppLocker evaluates and enforces rules.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Windows Sandbox versions
 description: Windows Sandbox versions
-ms.topic: conceptual
+ms.topic: article
 ms.date: 10/22/2024
 ---
 

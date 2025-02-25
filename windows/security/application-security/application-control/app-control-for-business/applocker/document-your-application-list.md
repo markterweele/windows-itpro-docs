@@ -2,7 +2,7 @@
 title: Document your app list
 description: This planning article describes the app information that you should document when you create a list of apps for AppLocker policies.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 
