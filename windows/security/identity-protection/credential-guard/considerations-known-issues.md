@@ -1,5 +1,5 @@
 ---
-ms.date: 06/20/2024
+ms.date: 02/25/2025
 title: Considerations and known issues when using Credential Guard
 description: Considerations, recommendations, and known issues when using Credential Guard.
 ms.topic: troubleshooting
