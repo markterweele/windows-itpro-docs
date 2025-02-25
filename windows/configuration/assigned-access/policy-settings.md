@@ -2,7 +2,7 @@
 title: Assigned Access policy settings
 description: Learn about the policy settings enforced on a device configured with Assigned Access.
 ms.topic: reference
-ms.date: 10/31/2024
+ms.date: 02/25/2025
 ---
 
 # Assigned Access policy settings
@@ -20,6 +20,7 @@ The following policy settings are applied at the device level when you deploy a 
 
 | Type    | Path                                                                       | Name/Description                                                          |
 |---------|----------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **CSP** | `./Vendor/MSFT/Policy/Config/Settings/AllowOnlineTips`                     | Allow Online Tips                                                         |
 | **CSP** | `./Vendor/MSFT/Policy/Config/Experience/AllowCortana`                      | Disable Cortana                                                           |
 | **CSP** | `./Vendor/MSFT/Policy/Config/Start/AllowPinnedFolderDocuments`             | Disable Start documents icon                                              |
 | **CSP** | `./Vendor/MSFT/Policy/Config/Start/AllowPinnedFolderDownloads`             | Disable Start downloads icon                                              |
@@ -45,8 +46,9 @@ The following policy settings are applied to targeted user accounts when you dep
 |---------|----------------------------------------------------------------------------------|-------------------------------------------------------------------|
 | **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/DisableContextMenus`                     | Disable Context Menu for Start menu apps                          |
 | **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/HidePeopleBar`                           | Hide People Bar from appearing on taskbar                         |
-| **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/HideRecentlyAddedApps`                   | Hide recently added apps from appearing on the Start menu         |
 | **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/HideRecentJumplists`                     | Hide recent jumplists from appearing on the Start menu/taskbar    |
+| **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/HideRecentlyAddedApps`                   | Hide recently added apps from appearing on the Start menu         |
+| **CSP** | User Configuration\Administrative Templates\Windows Components\Windows Copilot   | Turn off Windows Copilot                                          |
 | **GPO** | User Configuration\Administrative Templates\Desktop                              | Hide and disable all items on the desktop                         |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Clear history of recently opened documents on exit                |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Disable showing balloon notifications as toasts                   |
@@ -55,6 +57,7 @@ The following policy settings are applied to targeted user accounts when you dep
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Do not display or track items in Jump Lists from remote locations |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Hide and disable all items on the desktop                         |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Hide the Task View button                                         |
+| **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Hide the TaskView button                                          |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Lock all taskbar settings                                         |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Lock the Taskbar                                                  |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Prevent users from adding or removing toolbars                    |
@@ -81,6 +84,7 @@ The following policy settings are applied to targeted user accounts when you dep
 | **GPO** | User Configuration\Administrative Templates\Windows Components\File Explorer     | Remove *Map network drive* and *Disconnect Network Drive*         |
 | **GPO** | User Configuration\Administrative Templates\Windows Components\File Explorer     | Remove File Explorer's default context menu                       |
 | **GPO** | User Configuration\Administrative Templates\Windows Components\Windows Copilot   | Turn off Windows Copilot                                          |
+| **GPO** | User Configuration\Administrative Templates\WindowsComponents\File Explorer      | Prevent access to drives from My Computer                         |
 
 The following policy settings are applied to the kiosk account when you configure a kiosk experience with Microsoft Edge:
 
