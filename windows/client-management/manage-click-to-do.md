@@ -54,10 +54,8 @@ The policy setting below allows you to determine whether Click to Do is availabl
 | **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[DisableClickToDo](mdm/policy-csp-windowsai.md) </br></br> ./User/Vendor/MSFT/Policy/Config/WindowsAI/[DisableClickToDo](mdm/policy-csp-windowsai.md)|
 | **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Disable Click to Do** </br></br>User Configuration > Administrative Templates > Windows Components > Windows AI > **Disable Click to Do**|
 
-
-When the policy is enabled, the Click to Do component and entry points won't be available to users.
-
-When the policy is disabled or not configured, users will have Click to Do available on their device.
+- When the policy is enabled, the Click to Do component and entry points won't be available to users.
+- When the policy is disabled or not configured, users will have Click to Do available on their device.
 
 
 ## Click to Do privacy considerations  
