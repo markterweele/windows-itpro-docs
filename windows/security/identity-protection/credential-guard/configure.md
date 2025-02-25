@@ -1,5 +1,5 @@
 ---
-ms.date: 06/20/2024
+ms.date: 02/25/2025
 title: Configure Credential Guard
 description: Learn how to configure Credential Guard using MDM, Group Policy, or the registry.
 ms.topic: how-to
