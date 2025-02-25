@@ -1,7 +1,7 @@
 ---
 title: MDM enrollment of Windows devices
 description: Learn about mobile device management (MDM) enrollment of Windows devices to simplify access to your organization's resources.
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection:
 - highpri
 - tier2

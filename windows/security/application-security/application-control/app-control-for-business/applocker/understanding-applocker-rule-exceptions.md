@@ -2,7 +2,7 @@
 title: Understanding AppLocker rule exceptions
 description: This article describes the result of applying AppLocker rule exceptions to rule collections.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/11/2024
 ---
 
