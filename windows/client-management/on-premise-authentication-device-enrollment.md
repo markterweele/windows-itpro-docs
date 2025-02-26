@@ -1,7 +1,7 @@
 ---
 title: On-premises authentication device enrollment
 description: This section provides an example of the mobile device enrollment protocol using on-premises authentication policy.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/08/2024
 ---
 

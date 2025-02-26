@@ -1,7 +1,7 @@
 ---
 title: Enterprise app management
 description: This article covers one of the key mobile device management (MDM) features for managing the lifecycle of apps across Windows devices.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/08/2024
 ---
 

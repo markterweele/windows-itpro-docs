@@ -5,7 +5,7 @@ manager: aaroncz
 ms.author: frankroj
 author: frankroj
 ms.service: windows-client
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.date: 08/30/2024
 ms.subservice: itpro-deploy
 ---

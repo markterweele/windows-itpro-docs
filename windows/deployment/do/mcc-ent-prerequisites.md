@@ -3,7 +3,7 @@ title: Microsoft Connected Cache for Enterprise and Education prerequisites
 description: Details of prerequisites and recommendations for using Microsoft Connected Cache for Enterprise and Education.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 ms.author: lichris
 author: chrisjlin
 manager: naengler
@@ -52,7 +52,7 @@ This article details the requirements and recommended specifications for using M
 ### Additional requirements for Linux host machines
 
 - The Linux host machine must be using one of the following operating systems:
-    - Ubuntu 22.04
+    - Ubuntu 22.04, 24.04
     - Red Hat Enterprise Linux (RHEL) 8.* or 9.*
         - If using RHEL, the default container engine (Podman) must be replaced with [Moby](https://github.com/moby/moby#readme)
 

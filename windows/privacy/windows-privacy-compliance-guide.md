@@ -8,7 +8,7 @@ author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
 ms.date: 05/20/2019
-ms.topic: conceptual
+ms.topic: article
 ms.collection: essentials-compliance
 ---
 

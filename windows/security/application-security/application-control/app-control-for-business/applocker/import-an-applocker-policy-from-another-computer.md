@@ -2,7 +2,7 @@
 title: Import an AppLocker policy from another computer
 description: This article for IT professionals describes how to import an AppLocker policy.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2024
 ---
 

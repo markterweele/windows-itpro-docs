@@ -5,7 +5,7 @@ manager: aaroncz
 description: Microsoft admin center populates Windows Update for Business reports data into the software updates page.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
