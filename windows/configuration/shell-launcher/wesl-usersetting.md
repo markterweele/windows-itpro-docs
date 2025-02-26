@@ -1,13 +1,15 @@
 ---
 title: WESL_UserSetting
 description: WESL_UserSetting
-ms.date: 05/02/2017
+ms.date: 02/25/2025
 ms.topic: reference
 ---
 
 # WESL_UserSetting
 
 This class configures which application Shell Launcher starts based on the security identifier (SID) of the signed in user, and also configures the set of return codes and return actions that Shell Launcher performs when the application exits.
+
+[!INCLUDE [shell-launcher](../../../includes/licensing/shell-launcher.md)]
 
 ## Syntax
 
@@ -158,17 +160,3 @@ $ShellLauncherClass.RemoveCustomShell($Admins_SID)
 
 $ShellLauncherClass.RemoveCustomShell($Cashier_SID)
 ```
-
-## Requirements
-
-| Windows Edition        | Supported |
-|:-----------------------|:---------:|
-| Windows Home           | No        |
-| Windows Pro            | No        |
-| Windows Enterprise     | Yes       |
-| Windows Education      | Yes       |
-| Windows IoT Enterprise | Yes       |
-
-## Related topics
-
-- [Shell Launcher](index.md)
