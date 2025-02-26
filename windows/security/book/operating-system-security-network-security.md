@@ -19,7 +19,7 @@ In enterprise environments, network protection works best with Microsoft Defende
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [How to protect your network][LINK-1]
+- [How to protect your network](/defender-endpoint/network-protection)
 
 [!INCLUDE [transport-layer-security](includes/transport-layer-security.md)]
 
