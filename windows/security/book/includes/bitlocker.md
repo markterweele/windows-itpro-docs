@@ -17,7 +17,7 @@ The BitLocker preboot recovery screen includes the Microsoft account (MSA) hint,
 
 [!INCLUDE [learn-more](learn-more.md)]
 
-- [BitLocker overview](/windows/security/operating-system-security/data-protection/bitlocker/index.md)
+- [BitLocker overview](/windows/security/operating-system-security/data-protection/bitlocker/index)
 
 ### BitLocker To Go
 
@@ -25,4 +25,4 @@ BitLocker To Go refers to BitLocker on removable data drives. BitLocker To Go in
 
 [!INCLUDE [learn-more](learn-more.md)]
 
-- [BitLocker FAQ](/windows/security/operating-system-security/data-protection/bitlocker/faq.yml)
+- [BitLocker FAQ](/windows/security/operating-system-security/data-protection/bitlocker/faq)

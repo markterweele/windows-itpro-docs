@@ -17,4 +17,4 @@ The Device encryption prerequisites of DMA and HSTI/Modern Standby are removed. 
 
 [!INCLUDE [learn-more](learn-more.md)]
 
-- [Device encryption](/windows/security/operating-system-security/data-protection/bitlocker/index.md#device-encryption)
+- [Device encryption](/windows/security/operating-system-security/data-protection/bitlocker#device-encryption)

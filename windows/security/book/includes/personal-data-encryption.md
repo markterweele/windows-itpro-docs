@@ -19,4 +19,4 @@ Personal Data Encryption is further enhanced with *Personal Data Encryption for 
 
 [!INCLUDE [learn-more](learn-more.md)]
 
-- [Personal Data Encryption](/windows/security/operating-system-security/data-protection/personal-data-encryption/index.md)
+- [Personal Data Encryption](/windows/security/operating-system-security/data-protection/personal-data-encryption)

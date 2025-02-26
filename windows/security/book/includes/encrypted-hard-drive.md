@@ -20,4 +20,4 @@ Encrypted hard drives enable:
 
 [!INCLUDE [learn-more](learn-more.md)]
 
-- [Encrypted hard drive](/windows/security/operating-system-security/data-protection/encrypted-hard-drive.md)
+- [Encrypted hard drive](/windows/security/operating-system-security/data-protection/encrypted-hard-drive)

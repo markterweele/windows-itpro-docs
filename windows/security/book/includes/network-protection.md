@@ -9,8 +9,8 @@ ms.topic: include
 
 While Microsoft Defender Smartscreen works with Microsoft Edge, for third-party browsers and processes, Windows 11 has Network protection that protects against phishing scams, malware websites, and the downloading of potentially malicious files.
 
-When using Network Protection with Microsoft Defender for Endpoint, you'll be able to use Indicators of Compromise to block specific URL's and/or ip addresses.
-Also integrates with Microsoft Defender for Cloud Apps to block unsactioned web apps in your organization.  Allow or block access to websites based on category with Microsoft Defender for Endpoint's Web Content Filtering.
+When using Network Protection with Microsoft Defender for Endpoint, you can use *Indicators of Compromise* to block specific URLs and/or ip addresses.
+Also integrates with Microsoft Defender for Cloud Apps to block unsactioned web apps in your organization. Allow or block access to websites based on category with Microsoft Defender for Endpoint's Web Content Filtering.
 
 [!INCLUDE [learn-more](learn-more.md)]
 
