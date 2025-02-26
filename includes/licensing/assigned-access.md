@@ -11,12 +11,19 @@ ms.topic: include
 
 The following table lists the Windows editions that support Assigned Access:
 
-|Edition|Assigned Access support|
-|:---|:---:|
-|Education|✅|
-|Enterprise |✅|
-|Enterprise LTSC|✅|
-|IoT Enterprise | ✅|
-|IoT Enterprise LTSC|✅|
-|Pro Education|✅|
-|Pro|✅|
+||Windows Edition|
+|---:|:---|
+|✅|Education|
+|✅|Enterprise |
+|✅|Enterprise LTSC|
+|✅|IoT Enterprise |
+|✅|IoT Enterprise LTSC|
+|✅|Pro Education|
+|✅|Pro|
+
+The following list contains the Windows editions that support Assigned Access:
+
+✅ Pro
+✅ Enterprise / Enterprise LTSC
+✅ Education
+✅ IoT Enterprise / IoT Enterprise LTSC

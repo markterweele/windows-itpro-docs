@@ -21,3 +21,11 @@ The following table lists the Windows editions that support Shell Launcher:
 |Pro Education|❌|
 |Pro|❌|
 |Home|❌|
+
+The following list contains the Windows editions that support Shell Launcher:
+
+❌ Home
+❌ Pro / Pro Education
+✅ Enterprise / Enterprise LTSC
+✅ Education
+✅ IoT Enterprise / IoT Enterprise LTSC
