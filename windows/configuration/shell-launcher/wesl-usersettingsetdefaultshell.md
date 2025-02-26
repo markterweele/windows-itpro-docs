@@ -1,13 +1,15 @@
 ---
 title: WESL_UserSetting.SetDefaultShell
 description: WESL_UserSetting.SetDefaultShell
-ms.date: 05/20/2024
+ms.date: 02/25/2025
 ms.topic: reference
 ---
 
 # WESL_UserSetting.SetDefaultShell
 
 This method sets the default Shell Launcher configuration.
+
+[!INCLUDE [shell-launcher](../../../includes/licensing/shell-launcher.md)]
 
 ## Syntax
 
@@ -40,18 +42,3 @@ Returns an HRESULT value that indicates [WMI status](/windows/win32/wmisdk/wmi-n
 ## Remarks
 
 Shell Launcher uses the default configuration when the security identifier (SID) of the user who is currently signed in does not match any custom defined Shell Launcher configurations.
-
-## Requirements
-
-| Windows Edition        | Supported |
-|:-----------------------|:---------:|
-| Windows Home           | No        |
-| Windows Pro            | No        |
-| Windows Enterprise     | Yes       |
-| Windows Education      | Yes       |
-| Windows IoT Enterprise | Yes       |
-
-## Related topics
-
-- [WESL_UserSetting](wesl-usersetting.md)
-- [Shell Launcher](index.md)

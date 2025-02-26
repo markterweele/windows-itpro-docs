@@ -1,13 +1,15 @@
 ---
 title: WESL_UserSetting.GetCustomShell
 description: WESL_UserSetting.GetCustomShell
-ms.date: 05/20/2024
+ms.date: 02/25/2025
 ms.topic: reference
 ---
 
 # WESL_UserSetting.GetCustomShell
 
 This method retrieves the Shell Launcher configuration for a specific user or group, based on the security identifier (SID).
+
+[!INCLUDE [shell-launcher](../../../includes/licensing/shell-launcher.md)]
 
 ## Syntax
 
@@ -60,18 +62,3 @@ Returns an HRESULT value that indicates [WMI status](/windows/win32/wmisdk/wmi-n
 Shell Launcher uses the *CustomReturnCodes* and *CustomReturnCodesAction* arrays to determine the system behavior when the shell application exits, based on the return value of the application.
 
 If the return value does not exist in *CustomReturnCodes*, or if the corresponding action defined in *CustomReturnCodesAction* is not a valid value, Shell Launcher uses *DefaultAction* to determine system behavior. If *DefaultAction* is not defined, or is not a valid value, Shell Launcher restarts the shell application.
-
-## Requirements
-
-| Windows Edition        | Supported |
-|:-----------------------|:---------:|
-| Windows Home           | No        |
-| Windows Pro            | No        |
-| Windows Enterprise     | Yes       |
-| Windows Education      | Yes       |
-| Windows IoT Enterprise | Yes       |
-
-## Related topics
-
-- [WESL_UserSetting](wesl-usersetting.md)
-- [Shell Launcher](index.md)
