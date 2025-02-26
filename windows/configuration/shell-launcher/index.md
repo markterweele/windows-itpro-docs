@@ -25,7 +25,7 @@ With Shell Launcher, you can use features and methods to control access to other
 
 Shell Launcher is part of the Assigned Access feature, which allows you to configure kiosks or restricted user experiences. To learn about the differences between Shell Launcher and the other options offered by Assigned Access, see [Windows kiosks and restricted user experiences](../kiosk/index.md).
 
-[!INCLUDE [shell-launcher](../../../../includes/licensing/shell-launcher.md)]
+[!INCLUDE [shell-launcher](../../../includes/licensing/shell-launcher.md)]
 
 ## Limitations
 
@@ -44,7 +44,7 @@ The configuration of Shell Launcher is done using an XML file. The XML file is a
 
 To learn how to configure the Shell Launcher XML file, see [Create a Shell Launcher configuration file](configuration-file.md).
 
-[!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
+[!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
 #### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
@@ -57,16 +57,16 @@ Assign the policy to a group that contains as members the devices that you want 
 
 #### [:::image type="icon" source="../../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
-[!INCLUDE [provisioning-package-1](../../../../includes/configure/provisioning-package-1.md)]
+[!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
 
 - **Path:** `SMISettings/ShellLauncher`
 - **Value:** depends on specific settings
 
-[!INCLUDE [provisioning-package-2](../../../../includes/configure/provisioning-package-2.md)]
+[!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
-#### [:::image type="icon" source="../../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
+#### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 
-[!INCLUDE [powershell-wmi-bridge-1](../../../../includes/configure/powershell-wmi-bridge-1.md)]
+[!INCLUDE [powershell-wmi-bridge-1](../../../includes/configure/powershell-wmi-bridge-1.md)]
 
 ```PowerShell
 $shellLauncherConfiguration = @"
@@ -105,7 +105,7 @@ if($cimSetError) {
 Write-Output "Successfully applied Shell Launcher configuration"
 ```
 
-[!INCLUDE [powershell-wmi-bridge-2](../../../../includes/configure/powershell-wmi-bridge-2.md)]
+[!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
 
 ---
 

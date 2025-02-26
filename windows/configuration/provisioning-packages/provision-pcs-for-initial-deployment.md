@@ -12,7 +12,7 @@ This article explains how to create and apply a provisioning package that contai
 The following wizard options provide a simple interface for configuring common settings for desktop and kiosk devices:
 
 - [Instructions for the desktop wizard](#start-a-new-project)
-- [Instructions for the kiosk wizard](../assigned-access/overview.md)
+- [Instructions for the kiosk wizard](../assigned-access/index.md)
 - [Instructions for the HoloLens wizard](/hololens/hololens-provisioning#provisioning-package-hololens-wizard)
 - [Instructions for the Surface Hub wizard](/surface-hub/provisioning-packages-for-surface-hub)
 

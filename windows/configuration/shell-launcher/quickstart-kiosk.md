@@ -22,7 +22,7 @@ The examples can be modified to fit your specific requirements. For example, you
 
 ## Configure a kiosk device
 
-[!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
+[!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
 #### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
@@ -42,13 +42,13 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 [!INCLUDE [quickstart-xml](includes/quickstart-xml.md)]
 
-#### [:::image type="icon" source="../../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
+#### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 
-[!INCLUDE [powershell-wmi-bridge-1](../../../../includes/configure/powershell-wmi-bridge-1.md)]
+[!INCLUDE [powershell-wmi-bridge-1](../../../includes/configure/powershell-wmi-bridge-1.md)]
 
 [!INCLUDE [quickstart-ps](includes/quickstart-ps.md)]
 
-[!INCLUDE [powershell-wmi-bridge-2](../../../../includes/configure/powershell-wmi-bridge-2.md)]
+[!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
 
 ---
 

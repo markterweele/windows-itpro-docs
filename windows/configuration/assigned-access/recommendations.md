@@ -20,7 +20,7 @@ Consider enabling *automatic sign-in* for your kiosk device. When the device res
 You can configure the Assigned Access and Shell Launcher XML files with an account to sign-in automatically. For more information, review the articles:
 
 - [Create an Assigned Access configuration XML file](configuration-file.md)
-- [Create a Shell Launcher configuration file](shell-launcher/configuration-file.md)
+- [Create a Shell Launcher configuration file](../shell-launcher/configuration-file.md)
 
 Alternatively, you can edit the Registry to have an account sign in automatically:
 

@@ -98,7 +98,7 @@ After the settings are applied, reboot the device. A local user account is autom
 > [!div class="nextstepaction"]
 > Learn more about Assigned Access and how to configure it:
 >
-> [Assigned Access overview](overview.md)
+> [Assigned Access overview](index.md)
 
 [WIN-3]: /windows/client-management/mdm/assignedaccess-csp
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10

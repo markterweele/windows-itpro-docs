@@ -85,7 +85,7 @@ After the settings are applied, reboot the device. A local user account is autom
 > [!div class="nextstepaction"]
 > Learn more about Assigned Access and how to configure it:
 >
-> [Assigned Access overview](overview.md)
+> [Assigned Access overview](index.md)
 
 <!--links-->
 
