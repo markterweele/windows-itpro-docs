@@ -1,17 +1,17 @@
 items:
 - name: Overview
   href: index.md
-- name: Configure a kiosk experience (single app)
+- name: Configure a single-app kiosk
   href: configure-single-app-kiosk.md
-- name: Configure a restricted user experience (multi-app)
+- name: Configure a multi-app kiosk
   href: configure-multi-app-kiosk.md
 - name: Create a configuration file
   href: configuration-file.md
 - name: Quickstarts
   items:
-    - name: Configure a kiosk with Assigned Access
+    - name: Configure a single-app kiosk
       href: quickstart-kiosk.md
-    - name: Configure a restricted user experience with Assigned Access
+    - name: Configure a multi-app kiosk
       href: quickstart-restricted-user-experience.md
 - name: Recommendations
   href: recommendations.md

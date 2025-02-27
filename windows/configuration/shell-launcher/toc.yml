@@ -1,9 +1,11 @@
 items:
 - name: Overview
   href: index.md
-- name: Configure a kiosk with Shell Launcher
+- name: 🔴 Overview
+  href: index_old
+- name: Configure a kiosk
   href: configure.md
-- name: "Quickstart: Configure a kiosk with Shell Launcher"
+- name: "Quickstart: Configure a kiosk"
   href: quickstart-kiosk.md
 - name: Create a configuration file
   href: configuration-file.md

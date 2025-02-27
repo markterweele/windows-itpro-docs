@@ -17,7 +17,7 @@ To learn how to configure the Shell Launcher XML file, see [Create a Shell Launc
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
+#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
 You can configure devices using a [custom policy][MEM-1] with the [AssignedAccess CSP][WIN-3].
 
@@ -26,7 +26,7 @@ You can configure devices using a [custom policy][MEM-1] with the [AssignedAcces
 
 Assign the policy to a group that contains as members the devices that you want to configure.
 
-#### [:::image type="icon" source="../../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+#### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
 [!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
 

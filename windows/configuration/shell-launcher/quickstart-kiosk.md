@@ -24,7 +24,7 @@ The examples can be modified to fit your specific requirements. For example, you
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
+#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
 > [!TIP]
 > Use the following Graph call to automatically create a custom policy in your Microsoft Intune tenant without assignments nor scope tags.
