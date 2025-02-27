@@ -3,7 +3,7 @@ title: Understand App Control for Business policy rules and file rules
 description: Learn how App Control policy rules and file rules can control your Windows 10 and Windows 11 computers.
 ms.localizationpriority: medium
 ms.date: 09/11/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Understand App Control for Business policy rules and file rules

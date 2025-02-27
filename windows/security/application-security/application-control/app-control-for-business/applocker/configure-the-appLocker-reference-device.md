@@ -2,7 +2,7 @@
 title: Configure the AppLocker reference device
 description: This article for the IT professional describes the steps to create an AppLocker policy platform structure on a reference computer.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2024
 ---
 

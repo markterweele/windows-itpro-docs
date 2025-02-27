@@ -2,7 +2,7 @@
 title: Create a rule that uses a file hash condition
 description: This article for IT professionals shows how to create an AppLocker rule with a file hash condition.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2024
 ---
 

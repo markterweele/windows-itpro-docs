@@ -2,7 +2,7 @@
 title: App Control for Business Wizard
 description: The App Control for Business policy wizard tool allows you to create, edit, and merge App Control policies in a simple to use Windows application.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 

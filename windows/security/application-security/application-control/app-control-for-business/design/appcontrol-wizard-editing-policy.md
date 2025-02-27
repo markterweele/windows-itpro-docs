@@ -2,7 +2,7 @@
 title: Editing App Control for Business Policies with the Wizard
 description: Editing existing base and supplemental policies with the Microsoft App Control Wizard.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 

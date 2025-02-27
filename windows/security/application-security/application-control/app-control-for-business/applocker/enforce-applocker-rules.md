@@ -2,7 +2,7 @@
 title: Enforce AppLocker rules
 description: This article for IT professionals describes how to enforce application control rules by using AppLocker.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 
