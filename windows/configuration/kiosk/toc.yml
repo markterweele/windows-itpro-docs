@@ -1,9 +1,9 @@
 items:
 - name: Overview
   href: index.md
-- name: 🔴 Kiosk mode
+- name: 🔴 Kiosk mode (merged to Overview doc ↖️)
   href: kiosk-mode.md
-- name: 🔴 Browser
+- name: 🔴 Browser (merged to Overview doc ↖️)
   href: browser-support.md
 - name: Assigned Access
   href: ../assigned-access/toc.yml
