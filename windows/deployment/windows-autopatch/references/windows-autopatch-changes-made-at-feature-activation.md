@@ -1,7 +1,7 @@
 ---
 title: Changes made at feature activation
 description: This reference article details the changes made to your tenant when you activate Windows Autopatch
-ms.date: 09/16/2024
+ms.date: 03/03/2025
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: concept-article
@@ -48,14 +48,6 @@ The following groups target Windows Autopatch configurations to devices and mana
 | Modern Workplace Devices-Windows Autopatch-First | First production deployment ring for early adopters |
 | Modern Workplace Devices-Windows Autopatch-Fast | Fast deployment ring for quick rollout and adoption |
 | Modern Workplace Devices-WindowsAutopatch-Broad | Final deployment ring for broad rollout into the organization |
-
-## Device configuration policies
-
-- Windows Autopatch - Data Collection
-
-| Policy name | Policy description | Properties | Value |
-| ----- | ----- | ----- | ----- |
-| Windows Autopatch - Data Collection | Windows Autopatch and Telemetry settings processes diagnostic data from the Windows device.<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>|<ol><li>[Allow Telemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)</li><li>[Limit Enhanced Diagnostic Data Windows Analytics](/windows/client-management/mdm/policy-csp-system#system-limitenhanceddiagnosticdatawindowsanalytics)</li><li>[Limit Dump Collection](/windows/client-management/mdm/policy-csp-system#system-limitdumpcollection)</li><li>[Limit Diagnostic Log Collection](/windows/client-management/mdm/policy-csp-system#system-limitdiagnosticlogcollection)</li></ol>|<ol><li>Full</li><li>Enabled</li><li>Enabled</li><li>Enabled</li></ol> |
 
 ## Windows feature update policies
 
