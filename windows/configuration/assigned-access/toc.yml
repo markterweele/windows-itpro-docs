@@ -23,5 +23,7 @@ items:
       href: examples.md
     - name: Assigned Access policy settings
       href: policy-settings.md
+    - name: WMI Class WEDL_AssignedAccess
+      href: wedl-assigneaccess.md
     - name: Assigned Access CSP 🔗
       href: /windows/client-management/mdm/assignedaccess-csp

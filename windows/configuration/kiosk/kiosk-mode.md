@@ -9,7 +9,7 @@ description: Learn about Kiosk Mode in Windows IoT Enterprise.
 
 Windows IoT Enterprise allows you to build fixed purpose devices such as ATM machines, point-of-sale terminals, medical devices, digital signs, or kiosks. Kiosk mode helps you create a dedicated and locked down user experience on these fixed purpose devices. Windows IoT Enterprise offers a set of different locked-down experiences for public or specialized use: [assigned access single-app kiosks](single-app-kiosk.md), [assigned access multi-app kiosks](multi-app-kiosk.md), or [shell launcher](index.md).
 
-Kiosk configurations are based upon either [assigned access](../assigned-access/overview.md) or [shell launcher](index.md). There are several kiosk configuration methods that you can choose from, depending on your answers to the following questions.
+Kiosk configurations are based upon either [assigned access](../assigned-access/index.md) or [shell launcher](index.md). There are several kiosk configuration methods that you can choose from, depending on your answers to the following questions.
 
 > [!NOTE]
 >

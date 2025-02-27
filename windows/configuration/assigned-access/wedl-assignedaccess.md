@@ -9,7 +9,7 @@ ms.topic: reference
 
 This Windows Management Instrumentation (WMI) provider class configures settings for assigned access.
 
-[!INCLUDE [shell-launcher](../../../includes/licensing/assigned-access.md)]
+[!INCLUDE [assigned-access](../../../includes/licensing/assigned-access.md)]
 
 ## Syntax
 

@@ -1,8 +1,10 @@
 items:
 - name: Overview
   href: index.md
+- name: 🔴 Kiosk mode
+  href: kiosk-mode.md
 - name: 🔴 Browser
-  href: browser-support
+  href: browser-support.md
 - name: Assigned Access
   href: ../assigned-access/toc.yml
 - name: Shell Launcher
