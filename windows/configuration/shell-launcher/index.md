@@ -1,11 +1,11 @@
 ---
-title: What is Shell Launcher?
+title: Shell Launcher Overview
 description: Learn how to configure devices with Shell Launcher.
-ms.date: 10/31/2024
+ms.date: 02/27/2025
 ms.topic: overview
 ---
 
-# What is Shell Launcher?
+# Shell Launcher Overview
 
 Shell Launcher is a Windows feature that you can use to replace the default Windows Explorer shell (`Explorer.exe`) with a Windows desktop application or a Universal Windows Platform (UWP) app.
 

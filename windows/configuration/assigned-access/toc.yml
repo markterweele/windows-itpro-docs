@@ -3,11 +3,11 @@ items:
   href: index.md
 - name: Configure a single-app kiosk
   href: configure-single-app-kiosk.md
-- name: 🔴 Single-app kiosk
+- name: 🔴 Single-app kiosk (merged ↖️)
   href: single-app-kiosk.md
 - name: Configure a multi-app kiosk
   href: configure-multi-app-kiosk.md
-- name: 🔴 Multi-app kiosk
+- name: 🔴 Multi-app kiosk (merged ↖️)
   href: multi-app-kiosk.md
 - name: Create a configuration file
   href: configuration-file.md

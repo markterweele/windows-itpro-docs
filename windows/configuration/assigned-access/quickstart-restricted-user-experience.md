@@ -2,7 +2,7 @@
 title: "Quickstart: configure a restricted user experience with Assigned Access"
 description: Learn how to configure a restricted user experience with Assigned Access using the Assigned Access configuration service provider (CSP), Microsoft Intune, PowerShell, or group policy (GPO).
 ms.topic: quickstart
-ms.date: 10/31/2024
+ms.date: 02/27/2025
 appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---

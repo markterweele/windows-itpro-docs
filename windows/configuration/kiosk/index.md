@@ -2,7 +2,7 @@
 title: Windows Single-App and Multi-App Kiosk Configuration Options Overview
 description: Learn how to configure Windows kiosks with single-app and multi-app options for a secure and enhanced user experience.
 ms.topic: overview
-ms.date: 10/31/2024
+ms.date: 02/27/2025
 ---
 
 # Windows Kiosks Configuration Options Overview
@@ -14,14 +14,14 @@ Organizations are constantly seeking ways to streamline operations, improve cust
 - **Consistent brand experience**: kiosks ensure a uniform brand experience across different locations. Whether in retail stores, schools, airports, or healthcare facilities, the interface remains consistent. Brand consistency builds trust and reinforces the organization's image
 - **Customization and flexibility**: kiosks can be tailored to specific needs. From touchscreens to barcode scanners, organizations choose features that align with their goals. Whether it's self-checkout, wayfinding, or interactive product catalogs, kiosks adapt to diverse requirements
 
-Windows offers two options for public or specialized use:
+Windows offers two kiosk modes for public or specialized use:
 
 :::row:::
     :::column span="1":::
     :::image type="content" source="images/kiosk.png" alt-text="Icon representing a kiosk." border="false":::
     :::column-end:::
     :::column span="3":::
-    #### Kiosk
+    #### Single-app kiosk
     :::column-end:::
 :::row-end:::
 

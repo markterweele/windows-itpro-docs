@@ -1,11 +1,11 @@
 ---
-title: "Quickstart: configure a kiosk experience with Shell Launcher"
-description: Learn how to configure a kiosk experience with Shell Launcher, using the Assigned Access configuration service provider (CSP), Microsoft Intune, PowerShell, or group policy (GPO).
+title: "Quickstart: configure a single-app kiosk with Shell Launcher"
+description: Learn how to configure a signle-app kiosk experience with Shell Launcher, using the Assigned Access configuration service provider (CSP), Microsoft Intune, PowerShell, or group policy (GPO).
 ms.topic: quickstart
-ms.date: 10/31/2024
+ms.date: 02/27/2025
 ---
 
-# Quickstart: configure a kiosk experience with Shell Launcher
+# Quickstart: Configure a Kiosk With Shell Launcher
 
 This quickstart provides practical examples of how to configure a *kiosk experience* on Windows with Shell Launcher. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, and PowerShell. While different solutions are used, the configuration settings and results are the same.
 

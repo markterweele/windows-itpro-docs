@@ -2,7 +2,7 @@
 title: Assigned Access recommendations
 description: Learn about the recommended kiosk and restricted user experience configuration options.
 ms.topic: best-practice
-ms.date: 10/31/2024
+ms.date: 02/27/2025
 ---
 
 # Assigned Access recommendations
