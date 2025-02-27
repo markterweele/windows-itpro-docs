@@ -5,8 +5,10 @@ ms.date: 09/18/2023
 ms.topic: include
 ---
 
-## Windows edition requirements
+### Windows edition requirements
 
 The following list contains the Windows editions that support Shell Launcher:
 
-❌ Home<br>❌ Pro / Pro Education<br>✅ Enterprise / Enterprise LTSC<br>✅ Education<br>✅ IoT Enterprise / IoT Enterprise LTSC
+✅ Enterprise / Enterprise LTSC\
+✅ Education\
+✅ IoT Enterprise / IoT Enterprise LTSC
