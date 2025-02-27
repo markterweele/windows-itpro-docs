@@ -37,7 +37,7 @@ Windows has two features to configure a single-app kiosk:
     :::image type="content" source="images/restricted-user-experience.png" alt-text="Icon representing a restricted user experience." border="false":::
     :::column-end:::
     :::column span="3":::
-    #### Restricted user experience (multi-app kiosk)
+    #### Restricted user experience
     :::column-end:::
 :::row-end:::
 
@@ -78,15 +78,15 @@ To learn more, see [Microsoft Edge kiosk mode](/deployedge/microsoft-edge-config
 
 ## Next steps
 
-Learn more about the options available to configure kiosks and restricted user experiences:
+Learn more about the Windows features to configure kiosk devices:
 
 - [Assigned Access](../assigned-access/index.md)
 - [Shell Launcher](../shell-launcher/index.md)
 
 ### :::image type="icon" source="../images/icons/rocket.svg" border="false"::: Quickstarts
 
-If you're ready to try out the options available to configure kiosks and restricted user experiences, check out the following quickstarts:
+If you're ready to configure kiosk devices, check out the following quickstarts:
 
-- [Quickstart: configure a kiosk with Assigned Access](../assigned-access/quickstart-kiosk.md)
-- [Quickstart: configure a kiosk with Shell Launcher](../shell-launcher/quickstart-kiosk.md)
+- [Quickstart: configure a single-app kiosk with Assigned Access](../assigned-access/quickstart-kiosk.md)
 - [Quickstart: configure a restricted user experience with Assigned Access](../assigned-access/quickstart-restricted-user-experience.md)
+- [Quickstart: configure a kiosk with Shell Launcher](../shell-launcher/quickstart-kiosk.md)

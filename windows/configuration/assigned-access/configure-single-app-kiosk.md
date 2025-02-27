@@ -7,6 +7,8 @@ ms.topic: overview
 
 # Configure a single-app kiosk experience with Assigned Access
 
+A single-app kiosk uses the Assigned Access feature to run a single application above the lock screen. When the kiosk account signs in, the app is launched automatically. The person using the kiosk can't do anything on the device outside of the kiosk app.
+
 There are several options to configure a kiosk experience. If you need to configure a single device with a local account, you can use:
 
 - PowerShell: you can use the `Set-AssignedAccess` PowerShell cmdlet to configure a kiosk experience using a local standard account

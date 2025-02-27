@@ -7,6 +7,8 @@ ms.topic: overview
 
 # Configure a restricted user experience (multi-app kiosk) with Assigned Access
 
+An Assigned Access restriced user experience runs one or more apps from the desktop. People using the kiosk have a customized Start menu that shows only the tiles for the apps that are allowed. With this approach, you can configure a locked-down experience for different account types. A multi-app kiosk is appropriate for devices that are shared by multiple people.
+
 To configure a restricted user experience with Assigned Access, you must create an XML configuration file with the settings for the desired experience. The XML file is applied to the device via the [Assigned Access CSP](/windows/client-management/mdm/assignedaccess-csp#shelllauncher), using one of the following options:
 
 - A Mobile Device Management (MDM) solution, like Microsoft Intune

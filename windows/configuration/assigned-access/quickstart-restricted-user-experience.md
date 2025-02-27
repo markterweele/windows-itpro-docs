@@ -1,5 +1,5 @@
 ---
-title: "Quickstart: configure a restricted user experience with Assigned Access"
+title: "Quickstart: Configure a Restricted User Experience With Assigned Access"
 description: Learn how to configure a restricted user experience with Assigned Access using the Assigned Access configuration service provider (CSP), Microsoft Intune, PowerShell, or group policy (GPO).
 ms.topic: quickstart
 ms.date: 02/27/2025
@@ -7,9 +7,9 @@ appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
 
-# Quickstart: configure a restricted user experience with Assigned Access
+# Quickstart: Configure a Restricted User Experience With Assigned Access
 
-This quickstart provides practical examples of how to configure a *restricted user experience* on Windows. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
+This quickstart provides practical examples of how to configure a restricted user experience on Windows. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
 
 The examples can be modified to fit your specific requirements. For example, you can add or remove applications from the list of allowed apps, or change the name of the user that automatically signs in to Windows.
 
