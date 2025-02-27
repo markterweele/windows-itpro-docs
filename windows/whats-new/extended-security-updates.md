@@ -7,7 +7,7 @@ ms.author: mstewart
 author: mestew
 manager: aaroncz
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 02/19/2025
 ms.collection:
   - highpri

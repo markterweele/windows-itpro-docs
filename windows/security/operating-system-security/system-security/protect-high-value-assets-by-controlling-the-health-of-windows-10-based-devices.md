@@ -2,7 +2,7 @@
 title: Control the health of Windows devices
 description: This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows devices.
 ms.date: 07/10/2024
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Control the health of Windows devices

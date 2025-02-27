@@ -1,7 +1,7 @@
 ---
 title: Plan a Windows Hello for Business Deployment
 description: Learn about the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of your infrastructure.
-ms.date: 10/30/2024
+ms.date: 02/25/2025
 ms.topic: concept-article
 ---
 
@@ -251,7 +251,7 @@ Here are some considerations regarding licensing requirements for cloud services
 
 ### Windows requirements
 
-All supported Windows versions can be used with Windows Hello for Business. However, cloud Kerberos trust requires minimum versions:
+All supported Windows (client) versions can be used with Windows Hello for Business. However, cloud Kerberos trust requires minimum versions:
 
 || Deployment model | Trust type | Windows version|
 |--|--|--|--|

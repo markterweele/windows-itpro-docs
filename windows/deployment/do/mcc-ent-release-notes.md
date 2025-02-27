@@ -3,7 +3,7 @@ title: Microsoft Connected Cache Release Notes
 description: Release Notes for Microsoft Connected Cache for Enterprise and Education.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: release-notes
 ms.author: lichris
 author: chrisjlin
 manager: naengler
