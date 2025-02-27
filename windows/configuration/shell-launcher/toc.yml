@@ -3,10 +3,6 @@ items:
   href: index.md
 - name: 🔴 Overview
   href: index_old.md
-- name: 🔴 Multi-app kiosk
-  href: multi-app-kiosk.md
-- name: 🔴 Single-app kiosk
-  href: single-app-kiosk.md
 - name: Configure a kiosk
   href: configure.md
 - name: "Quickstart: Configure a kiosk"

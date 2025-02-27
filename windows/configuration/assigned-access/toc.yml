@@ -3,8 +3,12 @@ items:
   href: index.md
 - name: Configure a single-app kiosk
   href: configure-single-app-kiosk.md
+- name: 🔴 Single-app kiosk
+  href: single-app-kiosk.md
 - name: Configure a multi-app kiosk
   href: configure-multi-app-kiosk.md
+- name: 🔴 Multi-app kiosk
+  href: multi-app-kiosk.md
 - name: Create a configuration file
   href: configuration-file.md
 - name: Quickstarts
