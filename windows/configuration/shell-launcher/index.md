@@ -7,15 +7,9 @@ ms.topic: overview
 
 # Shell Launcher Overview
 
-Shell Launcher is a Windows feature that you can use to replace the default Windows Explorer shell (`Explorer.exe`) with a Windows desktop application or a Universal Windows Platform (UWP) app.
+Shell Launcher is a Windows feature that you can use to replace the default Windows Explorer shell (`Explorer.exe`) with a Windows desktop application or a Universal Windows Platform (UWP) app. This feature is useful for creating a custom user experience on devices that are used for a specific purpose, including kiosks, ATMs, and digital signage.
 
-Practical examples include:
-
-- Public browsing
-- Interactive digital signage
-- ATMs
-
-Shell Launcher controls which application the user sees as the shell after sign-in. It doesn't prevent the user from accessing other desktop applications and system components. From a custom shell, you can launch secondary views displayed on multiple monitors, or launch other apps in full screen on user's demand.
+Shell Launcher controls which application a user gets as the shell after sign-in. It doesn't prevent a user from accessing other desktop applications and system components. From a custom shell, you can launch secondary views displayed on multiple monitors, or launch other apps in full screen on user's demand. You can also configure Shell Launcher to launch different shell applications for different users or user groups.
 
 With Shell Launcher, you can use features and methods to control access to other applications or system components. These methods include, but aren't limited to:
 
@@ -23,9 +17,17 @@ With Shell Launcher, you can use features and methods to control access to other
 - Group policy (GPO)
 - [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)
 
-Shell Launcher is part of the Assigned Access feature, which allows you to configure kiosks or restricted user experiences. To learn about the differences between Shell Launcher and the other options offered by Assigned Access, see [Windows kiosks and restricted user experiences](../kiosk/index.md).
+> [!NOTE]
+>Shell Launcher is part of the Assigned Access feature, which allows you to configure kiosks or restricted user experiences. To learn about the differences between Shell Launcher and the other options offered by Assigned Access, see [Windows Kiosks Configuration Options Overview](../kiosk/index.md).
 
 [!INCLUDE [shell-launcher](../../../includes/licensing/shell-launcher.md)]
+
+## Shell Launcher user rights
+
+A custom shell is launched with the same level of user rights as the account that is signed in. This means that a user with administrative rights can perform any system action that requires administrative rights, including launching other applications with administrative rights.
+
+> [!WARNING]
+> If your shell application requires administrative rights and needs to be elevated, and User Account Control (UAC) is enabled, you must disable UAC for Shell Launcher to launch the shell application.
 
 ## Limitations
 
