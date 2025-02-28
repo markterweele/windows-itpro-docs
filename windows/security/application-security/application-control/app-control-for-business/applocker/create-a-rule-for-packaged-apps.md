@@ -2,7 +2,7 @@
 title: Create a rule for packaged apps
 description: This article for IT professionals shows how to create an AppLocker rule for packaged apps with a publisher condition.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2024
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Certificate Renewal
 description: Learn how to find all the resources that you need to provide continuous access to client certificates.
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/08/2024
 ---
 

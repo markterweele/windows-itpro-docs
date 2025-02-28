@@ -3,7 +3,7 @@ title: Configure Windows Update for Business by using CSPs and MDM
 description: Walk through demonstration of how to configure Windows Update for Business settings using Configuration Service Providers and MDM.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: how-to
 author: mestew
 ms.author: mstewart
 manager: aaroncz

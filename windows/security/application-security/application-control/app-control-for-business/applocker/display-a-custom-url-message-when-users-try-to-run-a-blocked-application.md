@@ -2,7 +2,7 @@
 title: Display a custom URL message when users try to run a blocked app
 description: This article for IT professionals describes the steps for displaying a customized message to users when an AppLocker policy blocks an app.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2024
 ---
 

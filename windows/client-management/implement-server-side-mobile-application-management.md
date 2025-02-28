@@ -1,7 +1,7 @@
 ---
 title: Support for Windows Information Protection (WIP) on Windows
 description: Learn about implementing the Windows version of Windows Information Protection (WIP), which is a lightweight solution for managing company data access and security on personal devices.
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/08/2024
 ---
 
