@@ -20,7 +20,7 @@ This article contains details about the latest releases of Connected Cache. Sinc
 
 ## February 2025 Release
 
-Released on **2/27/2025**
+Released on **2/28/2025**
 
 This release contains improvements that can only be applied by redeploying your cache nodes using the updated installation script.
 
