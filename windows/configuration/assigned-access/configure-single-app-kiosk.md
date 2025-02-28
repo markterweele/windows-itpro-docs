@@ -163,5 +163,7 @@ When the device isn't joined to an Active Directory domain or Microsoft Entra ID
 > [!TIP]
 > For practical examples, see the [Quickstart: Configure a kiosk with Assigned Access](quickstart-kiosk.md).
 
+[!INCLUDE [user-experience](includes/user-experience.md)]
+
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
 [WIN-3]: /windows/client-management/mdm/assignedaccess-csp

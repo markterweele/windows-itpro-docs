@@ -298,6 +298,20 @@ After the settings are applied, the users that are configured to use Shell Launc
 
 Depending on your configuration, you can have a user to automatically sign in to the device.
 
+## Remove Shell Launcher
+
+Once you no longer need the kiosk configuration, you can remove it.
+
+Here's a PowerShell example to remove the Shell Launcher configuration:
+
+```powershell
+$namespaceName="root\cimv2\mdm\dmmap"
+$className="MDM_AssignedAccess"
+$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
+$obj.ShellLauncher = $null
+Set-CimInstance -CimInstance $obj
+```
+
 ## Next steps
 
 > [!div class="nextstepaction"]

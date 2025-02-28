@@ -80,6 +80,22 @@ After the settings are applied, reboot the device. A local user account is autom
 
 ::: zone-end
 
+## Remove Assigned Access
+
+Once you no longer need the restricted user experience, you can remove it. Deleting the Assigned Access configuration removes the policy settings associated with the users, but it can't revert all the changes. For example, the Start menu configuration is maintained.
+
+Here's a PowerShell example to remove the configuration:
+
+```powershell
+$namespaceName="root\cimv2\mdm\dmmap"
+$className="MDM_AssignedAccess"
+$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
+$obj.Configuration = $null
+Set-CimInstance -CimInstance $obj
+```
+
+Reboot the device to apply the changes.
+
 ## Next steps
 
 > [!div class="nextstepaction"]

@@ -91,6 +91,22 @@ Here are the steps to configure a kiosk using the Settings app:
 
 After the settings are applied, reboot the device. A local user account is automatically signed in, opening Microsoft Edge.
 
+## Remove Assigned Access
+
+Once you no longer need the kiosk configuration, you can remove it.
+
+Here's a PowerShell example to remove the Assigned Access configuration:
+
+```powershell
+$namespaceName="root\cimv2\mdm\dmmap"
+$className="MDM_AssignedAccess"
+$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
+$obj.Configuration = $null
+Set-CimInstance -CimInstance $obj
+```
+
+Reboot the device to apply the changes.
+
 ## Next steps
 
 > [!div class="nextstepaction"]

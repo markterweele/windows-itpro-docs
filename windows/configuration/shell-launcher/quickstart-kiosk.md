@@ -56,6 +56,20 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 After the settings are applied, reboot the device. A local user account is automatically signed in, opening Microsoft Edge.
 
+## Remove Shell Launcher
+
+Once you no longer need the kiosk configuration, you can remove it.
+
+Here's a PowerShell example to remove the Shell Launcher configuration:
+
+```powershell
+$namespaceName="root\cimv2\mdm\dmmap"
+$className="MDM_AssignedAccess"
+$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
+$obj.ShellLauncher = $null
+Set-CimInstance -CimInstance $obj
+```
+
 ## Next steps
 
 > [!div class="nextstepaction"]

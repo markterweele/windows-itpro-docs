@@ -88,45 +88,7 @@ This option isn't available using Settings.
 > [!TIP]
 > For practical examples, see the [Quickstart: Configure a restricted user experience with Assigned Access](quickstart-restricted-user-experience.md)
 
-## User experience
-
-To validate the kiosk or restricted user experience, sign in with the user account you specified in the configuration file.
-
-The Assigned Access configuration takes effect the next time the targeted user signs in. If that user account is signed in when you apply the configuration, sign out and sign back in to validate the experience.
-
-> [!NOTE]
-> Starting in Windows 11, a restricted user experience supports the use of multiple monitors.
-
-### Autotrigger touch keyboard
-
-The touch keyboard is automatically triggered when there's an input needed and no physical keyboard is attached on touch-enabled devices. You don't need to configure any other setting to enforce this behavior.
-
-> [!TIP]
-> The touch keyboard is triggered only when tapping a textbox. Mouse clicks don't trigger the touch keyboard. If you're testing this feature, use a physical device instead of a virtual machine (VM), as the touch keyboard isn't triggered on VMs.
-
-### Sign out of assigned access
-
-By default, to exit the kiosk experience, press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>. The kiosk app exits automatically. If you sign in again as the Assigned Access account, or wait for the sign in screen time-out, the kiosk app relaunches. The default time-out is 30 seconds, but you can change the time-out with the registry key:
-
-`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI`
-
-To change the default time for Assigned Access to resume, add *IdleTimeOut* (DWORD) and enter the value data as milliseconds in hexadecimal.
-
-> [!NOTE]
-> `IdleTimeOut` doesn't apply to the Microsoft Edge kiosk mode.
-
-The Breakout Sequence of <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> is the default, but this sequence can be configured to be a different sequence of keys. The breakout sequence uses the format **modifiers + keys**. An example breakout sequence is <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>A</kbd>, where <kbd>CTRL</kbd> + <kbd>ALT</kbd> are the modifiers, and <kbd>A</kbd> is the key value. To learn more, see [Create an Assigned Access configuration XML file](configuration-file.md).
-
-## Remove Assigned Access
-
-Deleting the restricted user experience removes the policy settings associated with the users, but it can't revert all the configurations. For example, the Start menu configuration is maintained.
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> Review the recommendations before you deploy Assigned Access:
->
-> [Assigned Access recommendations](recommendations.md)
+[!INCLUDE [user-experience](includes/user-experience.md)]
 
 <!--links-->
 
