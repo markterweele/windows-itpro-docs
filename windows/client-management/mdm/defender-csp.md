@@ -2926,7 +2926,8 @@ This policy setting controls whether or not exclusions are visible to local admi
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Applying this setting won't remove exclusions from the device registry, it will only prevent them from being applied/used. This is reflected in Get-MpPreference.
+> Applying this setting won't remove exclusions from the device registry. They will be applied and enforced, but they will not be visible via the Defender manageability tools like Get-MpPreference nor by the registry editor to the Defender owned registry hive.
+
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Editable-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-DFProperties-Begin -->
