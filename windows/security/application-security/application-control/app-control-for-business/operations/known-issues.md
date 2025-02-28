@@ -62,7 +62,7 @@ Although App Control audit mode is designed to avoid impact to apps, some featur
 
 ### .NET native images may generate false positive block events
 
-In some cases, the code integrity logs where App Control for Business errors and warnings are written include error events for native images generated for .NET assemblies. Typically, native image blocks are functionally benign as a blocked native image falls back to its corresponding assembly and .NET regenerates the native image at its next scheduled maintenance window.
+In some cases, the code integrity logs where App Control for Business errors and warnings are written include error events for native images generated for .NET assemblies. Typically, native image blocks are functionally benign as a blocked native image falls back to its corresponding assembly and .NET regenerates the native image at its next scheduled maintenance window. To prevent that, consider compiling your .NET application ahead of time using the [Native AOT](https://learn.microsoft.com/dotnet/core/deploying/native-aot) feature.
 
 ### Signatures using elliptical curve cryptography (ECC) aren't supported
 
