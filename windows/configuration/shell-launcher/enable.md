@@ -2,7 +2,7 @@
 title: Enable Shell Launcher
 description: Learn how to enable the Shell Launcher feature.
 ms.date: 02/27/2025
-ms.topic: How-to
+ms.topic: how-to
 ---
 
 # Enable Shell Launcher

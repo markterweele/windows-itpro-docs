@@ -5,7 +5,7 @@ ms.date: 02/27/2025
 ms.topic: overview
 ---
 
-# Configure a single-app kiosk experience with Assigned Access
+# Configure a single-app kiosk with Assigned Access
 
 A single-app kiosk uses the Assigned Access feature to run a single application above the lock screen. When the kiosk account signs in, the app is launched automatically. The person using the kiosk can't do anything on the device outside of the kiosk app.
 

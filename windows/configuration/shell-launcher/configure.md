@@ -2,7 +2,7 @@
 title: Configure a Kiosk With Shell Launcher
 description: Learn how to configure a Windows kiosk with Shell Launcher.
 ms.date: 02/27/2025
-ms.topic: How-to
+ms.topic: how-to
 ---
 
 # Configure a kiosk with Shell Launcher
