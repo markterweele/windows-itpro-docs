@@ -5,7 +5,7 @@ ms.topic: concept-article
 description: Learn about browser support in Kiosk Mode
 ---
 
-# Browser Support
+# Browser support
 
 Today, you can use two browsers, Internet Explorer 11 and [Microsoft Edge](/deployedge/microsoft-edge-configure-kiosk-mode) to create an assigned access single-app or multi-app kiosk experience.
 

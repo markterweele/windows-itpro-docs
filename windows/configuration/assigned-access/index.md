@@ -1,11 +1,11 @@
 ---
-title: What is Assigned Access?
+title: Assigned Access Overview
 description: Learn how to configure a Windows kiosk for single-app and multi-app scenarios with Assigned Access.
 ms.date: 02/27/2025
 ms.topic: overview
 ---
 
-# What is Assigned Access?
+# Assigned Access overview
 
 Assigned Access is a Windows feature that you can use to configure a device as a kiosk or with a restricted user experience.
 
@@ -31,3 +31,17 @@ Here are the requirements for Assigned Access:
 - To use a kiosk experience, you must sign in from the console. The kiosk experience isn't supported over a remote desktop connection
 
 [!INCLUDE [assigned-access](../../../includes/licensing/assigned-access.md)]
+
+## Next steps
+
+Learn how to configure Assigned Access:
+
+- [Configure a single-app kiosk experience with Assigned Access](configure-single-app-kiosk.md)
+- [Configure a restricted user experience (multi-app kiosk) with Assigned Access](configure-multi-app-kiosk.md)
+
+### :::image type="icon" source="../images/icons/rocket.svg" border="false"::: Quickstarts
+
+If you want to quickly test Assigned Access, check out the following quickstarts:
+
+- [Quickstart: configure a single-app kiosk with Assigned Access](quickstart-kiosk.md)
+- [Quickstart: configure a restricted user experience with Assigned Access](quickstart-restricted-user-experience.md)

@@ -1,5 +1,5 @@
 ---
-title: Assigned Access examples
+title: Assigned Access Examples
 description: Practical examples of XML files to configure Assigned Access.
 ms.date: 02/27/2025
 ms.topic: reference

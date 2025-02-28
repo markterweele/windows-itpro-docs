@@ -1,5 +1,5 @@
 ---
-title: Assigned Access recommendations
+title: Assigned Access Recommendations
 description: Learn about the recommended kiosk and restricted user experience configuration options.
 ms.topic: best-practice
 ms.date: 02/27/2025

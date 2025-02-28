@@ -5,7 +5,7 @@ ms.topic: overview
 ms.date: 02/27/2025
 ---
 
-# Windows Kiosks Configuration Options Overview
+# Windows kiosks configuration options overview
 
 Organizations are constantly seeking ways to streamline operations, improve customer service, and enhance productivity. One effective solution is the deployment of kiosk devices. These specialized devices offer a range of benefits that can significantly impact an organization's efficiency and success. For example:
 

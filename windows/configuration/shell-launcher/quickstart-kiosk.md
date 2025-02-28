@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.date: 02/27/2025
 ---
 
-# Quickstart: Configure a Kiosk With Shell Launcher
+# Quickstart: configure a kiosk with Shell Launcher
 
 This quickstart provides practical examples of how to configure a *kiosk experience* on Windows with Shell Launcher. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, and PowerShell. While different solutions are used, the configuration settings and results are the same.
 

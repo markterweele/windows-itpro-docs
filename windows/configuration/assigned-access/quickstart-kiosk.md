@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.date: 02/27/2025
 ---
 
-# Quickstart: Configure a Single-App Kiosk With Assigned Access
+# Quickstart: configure a single-app kiosk with Assigned Access
 
 This quickstart provides practical examples of how to configure a single-app kiosk on Windows with Assigned Access. The examples describe the steps using the Settings app, a mobile device management solution (MDM) like Microsoft Intune, provisioning packages (PPKG), and PowerShell. While different solutions are used, the configuration settings and results are the same.
 

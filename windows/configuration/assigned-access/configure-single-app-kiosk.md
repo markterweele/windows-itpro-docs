@@ -1,5 +1,5 @@
 ---
-title: Configure a single-app kiosk with Assigned Access
+title: Configure a Single-App Kiosk With Assigned Access
 description: Learn how to configure a single-app kiosk with Assigned Access.
 ms.date: 02/27/2025
 ms.topic: overview
