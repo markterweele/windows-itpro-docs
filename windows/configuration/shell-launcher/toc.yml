@@ -13,7 +13,7 @@ items:
   items:
     - name: Shell Launcher XSD
       href: xsd.md
-    - name: Enable Shell Launcher
+    - name: 🟡 Enable Shell Launcher
       href: enable.md
     - name: WMI Provider
       items:

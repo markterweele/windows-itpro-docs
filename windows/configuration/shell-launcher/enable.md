@@ -8,9 +8,9 @@ ms.topic: how-to
 # Enable Shell Launcher
 
 > [!NOTE]
-> Configuring Shell Launcher using Assigned Access CSP, automatically enables Shell Launcher on the device, if the device supports it. There's no need to enable Shell Launcher separately if you configure it using Assigned Access CSP.
+> When you configure Shell Launcher with the Assigned Access Configuration Service Provider (CSP), Shell Launcher is automatically enabled, if the device supports it. There's no need to enable Shell Launcher separately when you configure it using Assigned Access CSP.
 
-Shell Launcher is an optional component and isn't turned on by default in Windows. It must be turned on prior to configuring. You can turn on and configure Shell Launcher in a customized Windows 10 image (.wim) if Microsoft Windows hasn't been installed. If Windows has already been installed, you must turn on Shell Launcher before applying a provisioning package to configure Shell Launcher.
+Shell Launcher is an optional component and isn't turned on by default in Windows. It must be turned on before configuring it. You can turn on and configure Shell Launcher in a customized Windows image, or you must turn on Shell Launcher before applying a provisioning package to configure Shell Launcher.
 
 ## Enable Shell Launcher using Control Panel
 
@@ -21,7 +21,7 @@ Shell Launcher is an optional component and isn't turned on by default in Window
 1. Select **Close** to close the **Windows Features** window.
 
 > [!NOTE]
-> Turning on Shell Launcher does not require a device restart.
+> Turning on Shell Launcher doesn't require a device restart.
 
 ## Enable Shell Launcher by calling WESL_UserSetting
 

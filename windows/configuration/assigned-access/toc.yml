@@ -9,6 +9,8 @@ items:
   href: configure-multi-app-kiosk.md
 - name: 🔴 Multi-app kiosk (merged ↖️)
   href: multi-app-kiosk.md
+- name: Recommendations
+  href: recommendations.md
 - name: Create a configuration file
   href: configuration-file.md
 - name: Quickstarts
@@ -17,8 +19,6 @@ items:
       href: quickstart-kiosk.md
     - name: Configure a multi-app kiosk
       href: quickstart-restricted-user-experience.md
-- name: Recommendations
-  href: recommendations.md
 - name: Reference
   items:
     - name: Assigned Access XSD
