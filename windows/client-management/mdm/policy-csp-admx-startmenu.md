@@ -1,7 +1,8 @@
 ---
 title: ADMX_StartMenu Policy CSP
 description: Learn more about the ADMX_StartMenu Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -997,7 +998,7 @@ This policy setting allows you to prevent users from changing their Start screen
 |:--|:--|
 | Name | NoChangeStartMenu |
 | Friendly Name | Prevent users from customizing their Start Screen |
-| Location | User Configuration |
+| Location | Computer and User Configuration |
 | Path | Start Menu and Taskbar |
 | Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
 | Registry Value Name | NoChangeStartMenu |

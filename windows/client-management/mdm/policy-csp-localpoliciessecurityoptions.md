@@ -1,7 +1,8 @@
 ---
 title: LocalPoliciesSecurityOptions Policy CSP
 description: Learn more about the LocalPoliciesSecurityOptions Area in Policy CSP.
-ms.date: 09/11/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -360,7 +361,7 @@ Accounts: Rename guest account This security setting determines whether a differ
 <!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-Applicability-End -->
 
 <!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-OmaUri-Begin -->
@@ -388,9 +389,26 @@ Audit: Audit the use of Backup and Restore privilege This security setting deter
 |:--|:--|
 | Format | `b64` |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | List (Delimiter: ``) |
-| Default Value  | 00 |
+| Default Value  | AA== |
 <!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-DFProperties-End -->
+
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| AQ== | Enable. |
+| AA== (Default) | Disable. |
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-AllowedValues-End -->
+
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit: Audit the use of Backup and Restore privilege |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-GpMapping-End -->
 
 <!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
@@ -404,7 +422,7 @@ Audit: Audit the use of Backup and Restore privilege This security setting deter
 <!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-Applicability-End -->
 
 <!-- Audit_ForceAuditPolicySubcategorySettingsToOverrideAuditPolicyCategorySettings-OmaUri-Begin -->
@@ -445,7 +463,7 @@ Audit: Force audit policy subcategory settings (Windows Vista or later) to overr
 <!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-Applicability-End -->
 
 <!-- Audit_ShutdownSystemImmediatelyIfUnableToLogSecurityAudits-OmaUri-Begin -->
@@ -718,7 +736,7 @@ Devices: Restrict CD-ROM access to locally logged-on user only This security set
 <!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-Applicability-End -->
 
 <!-- Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly-OmaUri-Begin -->
@@ -771,7 +789,7 @@ Devices: Restrict floppy access to locally logged-on user only This security set
 <!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-Applicability-End -->
 
 <!-- DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways-OmaUri-Begin -->
@@ -825,7 +843,7 @@ Domain member: Digitally encrypt or sign secure channel data (always) This secur
 <!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-Applicability-End -->
 
 <!-- DomainMember_DigitallyEncryptSecureChannelDataWhenPossible-OmaUri-Begin -->
@@ -878,7 +896,7 @@ Domain member: Digitally encrypt secure channel data (when possible) This securi
 <!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-Applicability-End -->
 
 <!-- DomainMember_DigitallySignSecureChannelDataWhenPossible-OmaUri-Begin -->
@@ -928,7 +946,7 @@ Domain member: Digitally sign secure channel data (when possible) This security 
 <!-- DomainMember_DisableMachineAccountPasswordChanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DomainMember_DisableMachineAccountPasswordChanges-Applicability-End -->
 
 <!-- DomainMember_DisableMachineAccountPasswordChanges-OmaUri-Begin -->
@@ -982,7 +1000,7 @@ Domain member: Disable machine account password changes Determines whether a dom
 <!-- DomainMember_MaximumMachineAccountPasswordAge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DomainMember_MaximumMachineAccountPasswordAge-Applicability-End -->
 
 <!-- DomainMember_MaximumMachineAccountPasswordAge-OmaUri-Begin -->
@@ -1035,7 +1053,7 @@ Domain member: Maximum machine account password age This security setting determ
 <!-- DomainMember_RequireStrongSessionKey-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DomainMember_RequireStrongSessionKey-Applicability-End -->
 
 <!-- DomainMember_RequireStrongSessionKey-OmaUri-Begin -->
@@ -1335,7 +1353,7 @@ Interactive logon: Don't require CTRL+ALT+DEL This security setting determines w
 <!-- InteractiveLogon_MachineAccountLockoutThreshold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- InteractiveLogon_MachineAccountLockoutThreshold-Applicability-End -->
 
 <!-- InteractiveLogon_MachineAccountLockoutThreshold-OmaUri-Begin -->
@@ -1454,6 +1472,8 @@ Interactive logon: Message text for users attempting to log on This security set
 
 <!-- InteractiveLogon_MessageTextForUsersAttemptingToLogOn-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!IMPORTANT]
+> Windows Autopilot pre-provisioning doesn't work when this policy setting is enabled. For more information, see [Windows Autopilot troubleshooting FAQ](/autopilot/troubleshooting-faq#troubleshooting-policy-conflicts-with-windows-autopilot).
 <!-- InteractiveLogon_MessageTextForUsersAttemptingToLogOn-Editable-End -->
 
 <!-- InteractiveLogon_MessageTextForUsersAttemptingToLogOn-DFProperties-Begin -->
@@ -1503,6 +1523,8 @@ Interactive logon: Message title for users attempting to log on This security se
 
 <!-- InteractiveLogon_MessageTitleForUsersAttemptingToLogOn-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!IMPORTANT]
+> Windows Autopilot pre-provisioning doesn't work when this policy setting is enabled. For more information, see [Windows Autopilot troubleshooting FAQ](/autopilot/troubleshooting-faq#troubleshooting-policy-conflicts-with-windows-autopilot).
 <!-- InteractiveLogon_MessageTitleForUsersAttemptingToLogOn-Editable-End -->
 
 <!-- InteractiveLogon_MessageTitleForUsersAttemptingToLogOn-DFProperties-Begin -->
@@ -1551,6 +1573,8 @@ Interactive logon: Number of previous logons to cache (in case domain controller
 
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This setting previously showed as applicable to Windows 11, version 24H2 [10.0.26100] and later in error.  MDM solutions may show as applicable to that version until a future release.
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Editable-End -->
 
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-DFProperties-Begin -->
@@ -1575,7 +1599,7 @@ Interactive logon: Number of previous logons to cache (in case domain controller
 <!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-Applicability-End -->
 
 <!-- InteractiveLogon_PromptUserToChangePasswordBeforeExpiration-OmaUri-Begin -->
@@ -1864,7 +1888,7 @@ Microsoft network client: Send unencrypted password to connect to third-party SM
 <!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-Applicability-End -->
 
 <!-- MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession-OmaUri-Begin -->
@@ -2047,7 +2071,7 @@ Microsoft network server: Digitally sign communications (if client agrees) This 
 <!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-Applicability-End -->
 
 <!-- MicrosoftNetworkServer_DisconnectClientsWhenLogonHoursExpire-OmaUri-Begin -->
@@ -2090,7 +2114,7 @@ Microsoft network server: Disconnect clients when logon hours expire This securi
 <!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-Applicability-End -->
 
 <!-- MicrosoftNetworkServer_ServerSPNTargetNameValidationLevel-OmaUri-Begin -->
@@ -2131,7 +2155,7 @@ Microsoft network server: Server SPN target name validation level This policy se
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-Applicability-End -->
 
 <!-- NetworkAccess_AllowAnonymousSIDOrNameTranslation-OmaUri-Begin -->
@@ -2312,7 +2336,7 @@ Network access: Don't allow anonymous enumeration of SAM accounts and shares Thi
 <!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-Applicability-End -->
 
 <!-- NetworkAccess_DoNotAllowStorageOfPasswordsAndCredentialsForNetworkAuthentication-OmaUri-Begin -->
@@ -2360,7 +2384,7 @@ Network access: Don't allow storage of passwords and credentials for network aut
 <!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-Applicability-End -->
 
 <!-- NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers-OmaUri-Begin -->
@@ -2412,7 +2436,7 @@ Network access: Let Everyone permissions apply to anonymous users This security 
 <!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-Applicability-End -->
 
 <!-- NetworkAccess_NamedPipesThatCanBeAccessedAnonymously-OmaUri-Begin -->
@@ -2452,7 +2476,7 @@ Network access: Named pipes that can be accessed anonymously This security setti
 <!-- NetworkAccess_RemotelyAccessibleRegistryPaths-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- NetworkAccess_RemotelyAccessibleRegistryPaths-Applicability-End -->
 
 <!-- NetworkAccess_RemotelyAccessibleRegistryPaths-OmaUri-Begin -->
@@ -2495,7 +2519,7 @@ Network access: Remotely accessible registry paths This security setting determi
 <!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-Applicability-End -->
 
 <!-- NetworkAccess_RemotelyAccessibleRegistryPathsAndSubpaths-OmaUri-Begin -->
@@ -2644,7 +2668,7 @@ Network access: Restrict clients allowed to make remote calls to SAM This policy
 <!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-Applicability-End -->
 
 <!-- NetworkAccess_SharesThatCanBeAccessedAnonymously-OmaUri-Begin -->
@@ -2684,7 +2708,7 @@ Network access: Shares that can be accessed anonymously This security setting de
 <!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-Applicability-End -->
 
 <!-- NetworkAccess_SharingAndSecurityModelForLocalAccounts-OmaUri-Begin -->
@@ -2728,7 +2752,7 @@ Network access: Sharing and security model for local accounts This security sett
 <!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-Applicability-End -->
 
 <!-- NetworkSecurity_AllowLocalSystemNULLSessionFallback-OmaUri-Begin -->
@@ -2958,7 +2982,7 @@ Network security: Don't store LAN Manager hash value on next password change Thi
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-Applicability-End -->
 
 <!-- NetworkSecurity_ForceLogoffWhenLogonHoursExpire-OmaUri-Begin -->
@@ -3083,7 +3107,7 @@ Network security LAN Manager authentication level This security setting determin
 <!-- NetworkSecurity_LDAPClientSigningRequirements-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- NetworkSecurity_LDAPClientSigningRequirements-Applicability-End -->
 
 <!-- NetworkSecurity_LDAPClientSigningRequirements-OmaUri-Begin -->
@@ -3489,7 +3513,7 @@ Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers This po
 <!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-Applicability-End -->
 
 <!-- RecoveryConsole_AllowAutomaticAdministrativeLogon-OmaUri-Begin -->
@@ -3539,7 +3563,7 @@ Recovery console: Allow automatic administrative logon This security setting det
 <!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-Applicability-End -->
 
 <!-- RecoveryConsole_AllowFloppyCopyAndAccessToAllDrivesAndAllFolders-OmaUri-Begin -->
@@ -3696,7 +3720,7 @@ Shutdown: Clear virtual memory pagefile This security setting determines whether
 <!-- SystemCryptography_ForceStrongKeyProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- SystemCryptography_ForceStrongKeyProtection-Applicability-End -->
 
 <!-- SystemCryptography_ForceStrongKeyProtection-OmaUri-Begin -->
@@ -3737,7 +3761,7 @@ System Cryptography: Force strong key protection for user keys stored on the com
 <!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-Applicability-End -->
 
 <!-- SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems-OmaUri-Begin -->
@@ -3787,7 +3811,7 @@ System objects: Require case insensitivity for non-Windows subsystems This secur
 <!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-Applicability-End -->
 
 <!-- SystemObjects_StrengthenDefaultPermissionsOfInternalSystemObjects-OmaUri-Begin -->

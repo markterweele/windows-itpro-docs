@@ -2,7 +2,7 @@
 title: Understanding AppLocker allow and deny actions on rules
 description: This article explains the differences between allow and deny actions on AppLocker rules.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/11/2024
 ---
 

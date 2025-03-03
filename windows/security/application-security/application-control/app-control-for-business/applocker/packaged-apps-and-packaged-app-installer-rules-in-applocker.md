@@ -2,7 +2,7 @@
 title: Packaged apps and packaged app installer rules in AppLocker
 description: This article explains the AppLocker rule collection for packaged app installers and packaged apps.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 

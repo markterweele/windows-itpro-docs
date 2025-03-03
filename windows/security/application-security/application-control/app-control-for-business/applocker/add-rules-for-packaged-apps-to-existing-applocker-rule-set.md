@@ -2,7 +2,7 @@
 title: Add rules for packaged apps to existing AppLocker rule-set
 description: This article for IT professionals describes how to update your existing AppLocker policies for packaged apps using the Remote Server Administration Toolkit (RSAT).
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: TPM recommendations
 description: This article provides recommendations for Trusted Platform Module (TPM) technology for Windows.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/10/2024
 ms.collection:
 - tier1

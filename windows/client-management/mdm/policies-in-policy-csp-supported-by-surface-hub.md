@@ -1,7 +1,8 @@
 ---
 title: Policies supported by Windows 10 Team
 description: Learn about the policies supported by Windows 10 Team.
-ms.date: 08/06/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -382,8 +383,10 @@ This article lists the policies that are applicable for the Surface Hub operatin
 
 ## Start
 
+- [AlwaysShowNotificationIcon](policy-csp-start.md#alwaysshownotificationicon)
 - [HideRecommendedPersonalizedSites](policy-csp-start.md#hiderecommendedpersonalizedsites)
 - [StartLayout](policy-csp-start.md#startlayout)
+- [TurnOffAbbreviatedDateTimeFormat](policy-csp-start.md#turnoffabbreviateddatetimeformat)
 
 ## System
 
@@ -417,6 +420,7 @@ This article lists the policies that are applicable for the Surface Hub operatin
 - [ExcludeJapaneseIMEExceptJIS0208andEUDC](policy-csp-textinput.md#excludejapaneseimeexceptjis0208andeudc)
 - [ExcludeJapaneseIMEExceptShiftJIS](policy-csp-textinput.md#excludejapaneseimeexceptshiftjis)
 - [ForceTouchKeyboardDockedState](policy-csp-textinput.md#forcetouchkeyboarddockedstate)
+- [TouchKeyboardControllerModeAvailability](policy-csp-textinput.md#touchkeyboardcontrollermodeavailability)
 - [TouchKeyboardDictationButtonAvailability](policy-csp-textinput.md#touchkeyboarddictationbuttonavailability)
 - [TouchKeyboardEmojiButtonAvailability](policy-csp-textinput.md#touchkeyboardemojibuttonavailability)
 - [TouchKeyboardFullModeAvailability](policy-csp-textinput.md#touchkeyboardfullmodeavailability)

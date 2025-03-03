@@ -1,7 +1,8 @@
 ---
 title: MixedReality Policy CSP
 description: Learn more about the MixedReality Area in Policy CSP.
-ms.date: 09/11/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -139,7 +140,7 @@ This opt-in policy can help with the setup of new devices in new areas or new us
 
 <!-- AllowLaunchUriInSingleAppKiosk-Description-Begin -->
 <!-- Description-Source-DDF -->
-By default, launching applications via Launcher API (Launcher Class (Windows. System) - Windows UWP applications | Microsoft Docs) is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
+By default, launching applications via Launcher API is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
 <!-- AllowLaunchUriInSingleAppKiosk-Description-End -->
 
 <!-- AllowLaunchUriInSingleAppKiosk-Editable-Begin -->

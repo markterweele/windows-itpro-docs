@@ -4,7 +4,7 @@ description: This article for IT professionals describes AppLocker rule types an
 ms.localizationpriority: medium
 msauthor: jsuther
 ms.date: 09/11/2024
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Working with AppLocker rules

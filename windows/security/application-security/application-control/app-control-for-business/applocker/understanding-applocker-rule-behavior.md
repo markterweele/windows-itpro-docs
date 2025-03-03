@@ -2,7 +2,7 @@
 title: Understanding AppLocker rule behavior
 description: This article describes how AppLocker rules are enforced by using the allow and deny options in AppLocker.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/11/2024
 ---
 

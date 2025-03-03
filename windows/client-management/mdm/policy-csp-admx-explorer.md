@@ -1,7 +1,8 @@
 ---
 title: ADMX_Explorer Policy CSP
 description: Learn more about the ADMX_Explorer Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -120,7 +121,7 @@ This policy setting configures File Explorer to always display the menu bar.
 | Name | Value |
 |:--|:--|
 | Name | AlwaysShowClassicMenu |
-| Friendly Name | Display the menu bar in File Explorer  |
+| Friendly Name | Display the menu bar in File Explorer |
 | Location | User Configuration |
 | Path | WindowsComponents > File Explorer |
 | Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |

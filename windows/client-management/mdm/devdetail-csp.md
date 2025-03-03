@@ -1,7 +1,8 @@
 ---
 title: DevDetail CSP
 description: Learn more about the DevDetail CSP.
-ms.date: 08/06/2024
+ms.date: 02/14/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -399,7 +400,7 @@ Total free storage in MB from first internal drive on the device.
 
 <!-- Device-Ext-Microsoft-LocalTime-Description-Begin -->
 <!-- Description-Source-DDF -->
-Returns the client local time in ISO 8601 format. Example: 2003-06-16. T18:37:44Z.
+Returns the client local time in ISO 8601 format. Example: 2003-06-16T18:37:44Z.
 <!-- Device-Ext-Microsoft-LocalTime-Description-End -->
 
 <!-- Device-Ext-Microsoft-LocalTime-Editable-Begin -->
@@ -1259,7 +1260,7 @@ Returns the name of the Original Equipment Manufacturer (OEM) as a string, as de
 
 <!-- Device-SwV-Description-Begin -->
 <!-- Description-Source-DDF -->
-Returns the Windows 10 OS software version in the format MajorVersion. MinorVersion. BuildNumber. QFEnumber. Currently the BuildNumber returns the build number on the desktop and mobile build number on the phone. In the future, the build numbers may converge.
+Returns the Windows 10 OS software version in the format `MajorVersion.MinorVersion.BuildNumber.QFEnumber`. Currently the BuildNumber returns the build number on the desktop and mobile build number on the phone. In the future, the build numbers may converge.
 <!-- Device-SwV-Description-End -->
 
 <!-- Device-SwV-Editable-Begin -->

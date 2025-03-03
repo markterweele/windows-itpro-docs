@@ -3,7 +3,7 @@ title: Opt out of safeguard holds
 description: How to install an update in your organization even when a safeguard hold for a known issue has been applied to it. 
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
 manager: aaroncz

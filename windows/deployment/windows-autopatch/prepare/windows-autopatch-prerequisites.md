@@ -1,7 +1,7 @@
 ---
 title: Prerequisites
 description: This article details the prerequisites needed for Windows Autopatch
-ms.date: 09/27/2024
+ms.date: 10/30/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: concept-article
@@ -135,12 +135,15 @@ For more information about feature entitlement, see [Features and capabilities](
 The following Windows 10/11 editions, build version, and architecture are supported when [devices are registered with Windows Autopatch](../deploy/windows-autopatch-register-devices.md):
 
 - Windows 11 Professional, Education, Enterprise, Pro Education, or Pro for Workstations editions
+- Windows 11 IoT Enterprise edition
 - Windows 10 Professional, Education, Enterprise, Pro Education, or Pro for Workstations editions
+- Windows 10 IoT Enterprise edition
 
 Windows Autopatch service supports Windows client devices on the **General Availability Channel**.
 
-> [!NOTE]
-> Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
+
+> [!IMPORTANT]
+> Windows Autopatch supports registering [Windows 10 and Windows 11 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/overview) devices that are being currently serviced by the [Windows 10 LTSC](/windows/release-health/release-information) or [Windows 11 LTSC](/windows/release-health/windows11-release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
 
 ## Configuration Manager co-management requirements
 
@@ -171,14 +174,17 @@ You can add the *Device configurations* permission with one or more rights to yo
 
 ### [Windows Enterprise E3+ and F3](#tab/windows-enterprise-e3-f3-intune-permissions)
 
+Your account must be assigned an [Intune role-based access control](/mem/intune/fundamentals/role-based-access-control) (RBAC) role that includes the following permissions:
+
+- **Device configurations**:
+    - Assign
+    - Create
+    - Delete
+    - View Reports
+    - Update
+- Read
+
 After you [activate Windows Autopatch features](../prepare/windows-autopatch-feature-activation.md#activate-windows-autopatch-features), use the Intune Service Administrator role to register devices, manage your update deployments, and reporting tasks.
-
-If you want to assign less-privileged user accounts to perform specific tasks in the Windows Autopatch portal, such as register devices with the service, you can add these user accounts into one of the two Microsoft Entra groups created during the [Start using Windows Autopatch](../prepare/windows-autopatch-feature-activation.md) process:
-
-| Microsoft Entra group name | Discover devices | Modify columns | Refresh device list | Export to .CSV | Device actions |
-| --- | --- | --- | --- | --- | --- |
-| Modern Workplace Roles - Service Administrator | Yes | Yes | Yes | Yes | Yes |
-| Modern Workplace Roles - Service Reader | No | Yes | Yes | Yes | Yes |
 
 For more information, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference) and [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 

@@ -1,7 +1,8 @@
 ---
 title: DeclaredConfiguration CSP
 description: Learn more about the DeclaredConfiguration CSP.
-ms.date: 09/12/2024
+ms.date: 02/14/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -45,6 +46,8 @@ The following list shows the DeclaredConfiguration configuration service provide
       - [Results](#hostinventoryresults)
         - [{DocID}](#hostinventoryresultsdocid)
           - [Document](#hostinventoryresultsdociddocument)
+  - [ManagementServiceConfiguration](#managementserviceconfiguration)
+    - [ConflictResolution](#managementserviceconfigurationconflictresolution)
 <!-- DeclaredConfiguration-Tree-End -->
 
 <!-- Device-Host-Begin -->
@@ -223,7 +226,7 @@ Uniquely identifies the configuration document. No other document can have this 
 
 <!-- Device-Host-Complete-Documents-{DocID}-Document-Description-Begin -->
 <!-- Description-Source-DDF -->
-The Document node's value is an XML based document containing a collection of settings and values to configure the specified scenario. The Declared Configuration stack verifies the syntax of the document, the stack marks the document to be processed asynchronously by the client. The stack then returns control back to the OMA-DM service. The stack, in turn, asynchronously processes the request. Below is an example of a specified desired state configuration using the Declared Configuration URI ./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/27FEA311-68. B9-4320-9. FC4-296. F6FDFAFE2/Document.
+The Document node's value is an XML based document containing a collection of settings and values to configure the specified scenario. The Declared Configuration stack verifies the syntax of the document, the stack marks the document to be processed asynchronously by the client. The stack then returns control back to the OMA-DM service. The stack, in turn, asynchronously processes the request. Below is an example of a specified desired state configuration using the Declared Configuration URI ./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document.
 <!-- Device-Host-Complete-Documents-{DocID}-Document-Description-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Document-Editable-Begin -->
@@ -588,7 +591,7 @@ Uniquely identifies the inventory document. No other document can have this id. 
 
 <!-- Device-Host-Inventory-Documents-{DocID}-Document-Description-Begin -->
 <!-- Description-Source-DDF -->
-The Document node's value is an XML based document containing a collection of settings that will be used to retrieve their values. The Declared Configuration stack verifies the syntax of the document, the stack marks the document to be processed asynchronously by the client. The stack then returns control back to the OMA-DM service. The stack, in turn, asynchronously processes the request. Below is an example of a specified desired state configuration using the Declared Configuration URI ./Device/Vendor/MSFT/DeclaredConfiguration/Host/Inventory/Documents/27FEA311-68. B9-4320-9. FC4-296. F6FDFAFE2/Document.
+The Document node's value is an XML based document containing a collection of settings that will be used to retrieve their values. The Declared Configuration stack verifies the syntax of the document, the stack marks the document to be processed asynchronously by the client. The stack then returns control back to the OMA-DM service. The stack, in turn, asynchronously processes the request. Below is an example of a specified desired state configuration using the Declared Configuration URI ./Device/Vendor/MSFT/DeclaredConfiguration/Host/Inventory/Documents/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document.
 <!-- Device-Host-Inventory-Documents-{DocID}-Document-Description-End -->
 
 <!-- Device-Host-Inventory-Documents-{DocID}-Document-Editable-Begin -->
@@ -727,6 +730,93 @@ The Document node's value is an XML based document containing a collection of se
 <!-- Device-Host-Inventory-Results-{DocID}-Document-Examples-End -->
 
 <!-- Device-Host-Inventory-Results-{DocID}-Document-End -->
+
+<!-- Device-ManagementServiceConfiguration-Begin -->
+## ManagementServiceConfiguration
+
+<!-- Device-ManagementServiceConfiguration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-ManagementServiceConfiguration-Applicability-End -->
+
+<!-- Device-ManagementServiceConfiguration-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DeclaredConfiguration/ManagementServiceConfiguration
+```
+<!-- Device-ManagementServiceConfiguration-OmaUri-End -->
+
+<!-- Device-ManagementServiceConfiguration-Description-Begin -->
+<!-- Description-Source-DDF -->
+The ManagementServiceConfiguration node that's used to control certain Windows Declared Configuration behavior.
+<!-- Device-ManagementServiceConfiguration-Description-End -->
+
+<!-- Device-ManagementServiceConfiguration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ManagementServiceConfiguration-Editable-End -->
+
+<!-- Device-ManagementServiceConfiguration-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-ManagementServiceConfiguration-DFProperties-End -->
+
+<!-- Device-ManagementServiceConfiguration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ManagementServiceConfiguration-Examples-End -->
+
+<!-- Device-ManagementServiceConfiguration-End -->
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Begin -->
+### ManagementServiceConfiguration/ConflictResolution
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Applicability-End -->
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DeclaredConfiguration/ManagementServiceConfiguration/ConflictResolution
+```
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-OmaUri-End -->
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node controls to turn on conflict resolution on and off.
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Description-End -->
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Editable-End -->
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-DFProperties-End -->
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | The conflict resolution is OFF. |
+| 1 | The conflict resolution is ON. |
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-AllowedValues-End -->
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Examples-End -->
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-End -->
 
 <!-- DeclaredConfiguration-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

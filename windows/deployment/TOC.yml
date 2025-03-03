@@ -294,6 +294,8 @@ items:
           href: update/windows-update-logs.md
         - name: Servicing stack updates
           href: update/servicing-stack-updates.md
+        - name: Checkpoint cumulative updates and Microsoft Update Catalog usage
+          href: update/catalog-checkpoint-cumulative-updates.md          
         - name: Update CSP policies
           href: /windows/client-management/mdm/policy-csp-update?context=/windows/deployment/context/context
         - name: Update other Microsoft products
@@ -317,7 +319,7 @@ items:
           href: configure-a-pxe-server-to-load-windows-pe.md
         - name: Windows Deployment Services (WDS) boot.wim support
           href: wds-boot-support.md
-        - name: Windows ADK for Windows 10 scenarios for IT Pros
+        - name: Windows ADK for Windows scenarios for IT Pros
           href: windows-adk-scenarios-for-it-pros.md
         - name: User State Migration Tool (USMT) technical reference
           items:

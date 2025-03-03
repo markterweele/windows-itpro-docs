@@ -48,12 +48,12 @@ items:
     - name: Protocol
       expanded: true
       items:
-        - name: Overview
-          href: ../declared-configuration.md
-        - name: Discovery
-          href: ../declared-configuration-discovery.md
-        - name: Enrollment
-          href: ../declared-configuration-enrollment.md
+      - name: Overview
+        href: ../declared-configuration.md
+      - name: Discovery
+        href: ../declared-configuration-discovery.md
+      - name: Enrollment
+        href: ../declared-configuration-enrollment.md
     - name: Extensibility
       href: ../declared-configuration-extensibility.md
     - name: Resource access
@@ -387,7 +387,7 @@ items:
           href: policy-csp-authentication.md
         - name: Autoplay
           href: policy-csp-autoplay.md
-        - name: BitLocker
+        - name: Bitlocker
           href: policy-csp-bitlocker.md
         - name: BITS
           href: policy-csp-bits.md
@@ -537,6 +537,8 @@ items:
           href: policy-csp-settingssync.md
         - name: SmartScreen
           href: policy-csp-smartscreen.md
+        - name: SpeakForMe
+          href: policy-csp-speakforme.md
         - name: Speech
           href: policy-csp-speech.md
         - name: Start
@@ -835,10 +837,10 @@ items:
       items:
       - name: PassportForWork DDF file
         href: passportforwork-ddf.md
-    - name: PDE
+    - name: Personal Data Encryption
       href: personaldataencryption-csp.md
       items:
-      - name: PDE DDF file
+      - name: Personal Data Encryption DDF file
         href: personaldataencryption-ddf-file.md
     - name: Personalization
       href: personalization-csp.md
