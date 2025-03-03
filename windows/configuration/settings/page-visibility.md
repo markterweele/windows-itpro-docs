@@ -11,7 +11,7 @@ ms.author: paoloma
 
 *Settings* is a Windows application that provides users with a unified interface to manage their system settings. However, in certain scenarios, you may want to restrict access to specific settings pages to ensure a more controlled and secure environment. This is especially beneficial for devices used in specific environments, such as kiosks or student devices, where limiting access to certain settings can prevent unauthorized changes and maintain a consistent user experience.
 
-You can configure the visibility of settings pages using the *page visibility list* policy setting. This policy allows you to block a given set of pages from the Settings app. Blocked pages will not be visible in the app, and if all pages in a category are blocked the category will be hidden as well. Direct navigation to a blocked page via URI, context menu in Explorer or other means will result in the front page of Settings being shown instead.
+You can configure the visibility of settings pages using the *page visibility list* policy setting. This policy allows you to block a given set of pages from the Settings app. Blocked pages won't be visible in the app, and if all pages in a category are blocked, the category is hidden too. Direct navigation to a blocked page via URI, context menu in Explorer or other means results in the first page of Settings displayed instead.
 
 This policy has two modes:
 

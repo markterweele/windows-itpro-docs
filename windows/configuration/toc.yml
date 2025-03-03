@@ -9,6 +9,8 @@ items:
   href: taskbar/toc.yml
 - name: Windows spotlight
   href: windows-spotlight/index.md
+- name: Settings
+  href: settings/page-visibility.md
 - name: Microsoft Store
   href: store/toc.yml
 - name: Cellular settings
