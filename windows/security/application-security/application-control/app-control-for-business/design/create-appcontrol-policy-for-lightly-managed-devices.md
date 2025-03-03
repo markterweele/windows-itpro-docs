@@ -33,27 +33,32 @@ Alice next identifies the key factors about Lamna's environment that she believe
 - **Operating Systems:** Windows 11 runs most user devices, but Windows 10 will remain on roughly 10% of clients at least through the next fiscal year, particularly those in smaller satellite offices; Alice's group doesn't manage Lamna's servers or any specialized equipment; Lamna's server IT group plans to wait to see how the client rollout of App Control unfolds before implementing the technology on the servers they control;
 - **Client management:** Lamna uses Microsoft Intune for all Windows 11 devices, deployed as Microsoft Entra cloud-native; they continue to use Microsoft Endpoint Configuration Manager (MEMCM) with Microsoft Entra hybrid join on all Windows 10 devices;
 - **App management:** Most, but not all, apps are deployed using Intune; there's a long tail of business-unit-specific apps, and "Shadow IT" apps that lack an official charter, but are critical to the employees who use them;
-- **App ecosystem complexity:** Lamna has hundreds of line-of-business (LOB) apps across its business units; almost all of the apps use unsigned, or mostly unsigned, code, though the company has started to require codesigning in the past two years; they've used a codesigning certificate issued by Lamna's corporate Public Key Infrastructure (PKI), meaning that they aren't trusted by the Smart App Control policy by default; Alice must add the certs to the policy.
+- **App ecosystem complexity:** Lamna has hundreds of line-of-business (LOB) apps across its business units; almost all of the apps use unsigned, or mostly unsigned, code; though the company has started to require codesigning, they use a codesigning certificate issued by Lamna's corporate Public Key Infrastructure (PKI), meaning that they aren't trusted by the Smart App Control policy by default; Alice must add the certs to the policy.
 
 Based on the above, Alice defines the pseudo-rules for the Lamna version of Microsoft's Signed & Reputable policy:
 
-1. **"Windows works"** rules that authorize:
-   - Windows
-   - WHQL (third-party kernel drivers)
+1. **"Windows and Microsoft-certified kernel drivers"** One or more signer rules allowing:
+   - Windows and its components
+   - Microsoft-certified third-party kernel drivers (WHQL)
  
-2. **"Any signed code"** rules that authorize code signed by publicly trusted certificates or issued from Lamna's PKI:
-    - Signer rules for Microsoft-signed code and "AuthRoot" signers to allow publicly trusted signed code to properly function.
-    - A signer rule authorizing Lamna Codesigning PCA, the intermediate cert issued from their own internal PKI.
+2. **"Publicly-trusted signed code"** One or more signer rules allowing:
+    - Code signed with certificates issued from any certificate authority participating in the [Microsoft Trusted Root Program ("AuthRoot")](/security/trusted-root/program-requirements) or non-OS code signed by Microsoft.
 
-3. **Allow apps based on their "reputation"** rule to authorize apps deemed "safe" by the ISG.
+3. **Lamna signed code** One or more signer rules allowing: 
+    - Code signed by certificates issued from Lamna Codesigning PCA, the intermediate cert issued from their own internal PKI.
 
-4. **Allow Managed Installer** rule to authorize Intune's management extensions and Configuration Manager as a managed installer. Based on articles she's read, Alice decides to configure the auto-updater process for many popular apps as managed installers to ensure the code those apps use is always allowed.
+3. **Allow apps based on their "reputation"** A policy option allowing:
+    - Apps predicted to be "safe" by the ISG.
 
-5. **Admin-only path rules** for the following locations:
-   - C:\Program Files\*
-   - C:\Program Files (x86)\*
-   - %windir%\*
-   - "D:\Lamna Helpdesk\*
+4. **Allow Managed Installer** A policy option allowing:
+    - Code written to the system by a process designated by policy as a managed installer. 
+    - Alice sets Lamna's managed installer policy based on articles she's read Alice decides to configure the auto-updater process for many popular apps as managed installers to ensure the code those apps use is always allowed.
+
+5. **Admin-only path rules** One or more filepath rules for the following locations:
+   - "C:\Program Files\*"
+   - "C:\Program Files (x86)\*"
+   - "%windir%\*"
+   - "D:\Lamna Helpdesk\*"
 
 ## Modify the "Signed & Reputable" policy template to suit your business needs
 
