@@ -27,15 +27,6 @@ Configuring desktop and lock screen backgrounds in Windows offers a simple yet e
 
 This article explains how to configure the desktop and lock screen background in Windows using policy settings. It includes examples of how to implement these configurations using Microsoft Intune, Configuration Service Provider (CSP), and Group Policy Object (GPO).
 
-## Windows edition requirements
-
-The configuration of the desktop and lock screen background varies based on how the policy settings are applied:
-
-| Windows edition | Intune/CSP | GPO |
-|Pro / Pro Education|✅|❌|
-|Enterprise / Education|✅|✅|
-|IoT Enterprise|✅|✅|
-
 ## Image ratios and scaling
 
 A key consideration when using custom images is how they appear on devices with varying screen sizes and resolutions. For example, a custom image created in a 16:9 aspect ratio (such as 1600x900) scales properly on devices with 16:9 resolutions, like 1280x720 or 1920x1080. On devices with other aspect ratios, such as 4:3 (1024x768) or 16:10 (1280x800), the image's height scales correctly, but the width is cropped to match the aspect ratio. The image remains centered on the screen.
@@ -43,6 +34,16 @@ A key consideration when using custom images is how they appear on devices with 
 Images created in non-standard aspect ratios may scale and center unpredictably when displayed on devices with different resolutions. To ensure consistent results, especially for images containing text (e.g., legal statements), it is recommended to design the image in a 16:9 resolution while keeping critical text within the 4:3 region. This approach ensures that the text remains visible across all aspect ratios.
 
 ## Configure the desktop background
+
+Windows edition requirements
+
+The configuration of the desktop background varies based on how the policy settings are applied:
+
+| Windows edition | Intune/CSP | GPO |
+|-|-|-|
+|Pro / Pro Education|✅|❌|
+|Enterprise / Education|✅|✅|
+|IoT Enterprise|✅|✅|
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
@@ -78,6 +79,16 @@ Enable the Enable Active Desktop policy;
 ---
 
 ## Configure the lock screen background
+
+Windows edition requirements
+
+The configuration of the lock screen background varies based on how the policy settings are applied:
+
+| Windows edition | Intune/CSP | GPO |
+|-|-|-|
+|Pro / Pro Education|✅|❌|
+|Enterprise / Education|✅|✅|
+|IoT Enterprise|✅|✅|
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
