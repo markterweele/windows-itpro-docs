@@ -12,7 +12,7 @@ manager: aaroncz
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 05/16/2024
+ms.date: 03/04/2025
 ---
 # Enforcing compliance deadlines for updates
 
@@ -41,9 +41,11 @@ With a current version, it's best to use the new policy introduced in June 2019 
 
 When **Specify deadlines for automatic updates and restarts** is set:
 
-The deadline calculation for both quality and feature updates is based off the time the client's update scan initially discovered the update. Previously, the deadline was based off the release date of the update for quality updates and the reboot pending date for feature updates. The change for deadline calculation was made to improve the predictability of restart.
+The deadline calculation for both quality and feature updates is based off the time the client's update scan initially discovered the update. Previously, the deadline was based off the release date of the update for quality updates and the reboot pending date for feature updates. The change for deadline calculation was made to improve the predictability of restart. 
 
-The grace period for both quality and feature updates starts its countdown from the time of a pending restart after the installation is complete. As soon as installation is complete and the device reaches pending restart, users are able to schedule restarts during the grace period and Windows can still automatically restart outside of active hours if users choose not to schedule restarts. Once the *effective deadline* is reached, the device tries to restart during active hours. (The effective deadline is whichever is the later of the restart pending date plus the specified deadline or the restart pending date plus the grace period.) Grace periods are useful for users who may be coming back from vacation, or other extended time away from their device, to ensure a forced reboot doesn't occur immediately after they return.
+The grace period for both quality and feature updates starts its countdown from the time of a pending restart after the installation is complete. This grace period is especially helpful for users returning from vacation or the time away, preventing an immediate forced reboot when they come back.
+
+Once the *effective deadline* is reached, the device tries to restart during active hours. The effective deadline is whichever is the later of the  scan discovery time plus the specified deadline or the  scan discovery time plus the grace period. As soon as installation is complete and the device reaches pending restart, users are able to schedule restarts during the grace period and Windows can still automatically restart outside of active hours if users choose not to schedule restarts.
 
 > [!NOTE]
 > - When these policies are used, [user settings for notifications](waas-wufb-csp-mdm.md#user-settings-for-notifications) are also used on clients running Windows 11, version 22H2 and later.
