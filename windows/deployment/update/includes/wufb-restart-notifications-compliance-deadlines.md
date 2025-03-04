@@ -97,21 +97,21 @@ When **Specify deadlines for automatic updates and restarts** is set (For Window
 
    - After this period, the user receives this dialog:
 
-     ![The notification users get for an impending restart prior to deadline.](images/wufb-update-deadline-warning.png)
+     ![The notification users get for an impending restart prior to deadline.](../images/wufb-update-deadline-warning.png)
 
    - If the user scheduled a restart, or if an auto restart is scheduled, 15 minutes before the scheduled time the user receives this notification that the restart is about to occur:
 
-     ![The notification users get for an impending restart 15 minutes prior to restart.](images/wufb-restart-imminent-warning.png)
+     ![The notification users get for an impending restart 15 minutes prior to restart.](../images/wufb-restart-imminent-warning.png)
 
  - **If the restart is still pending after the deadline passes:**
 
    - Within 12 hours before the deadline passes, the user receives this notification that the deadline is approaching:
 
-     ![The notification users get for an approaching restart deadline.](images/wufb-pastdeadline-restart-warning.png)
+     ![The notification users get for an approaching restart deadline.](../images/wufb-pastdeadline-restart-warning.png)
 
    - Once the deadline has passed, the user is forced to restart to keep their devices in compliance and receives this notification:
 
-     ![The notification users get for an imminent restart after the deadline.](images/wufb-pastdeadline-restartnow.png)
+     ![The notification users get for an imminent restart after the deadline.](../images/wufb-pastdeadline-restartnow.png)
 
 
 ---
