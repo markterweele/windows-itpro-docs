@@ -7,7 +7,7 @@ items:
   href: start/toc.yml
 - name: Taskbar
   href: taskbar/toc.yml
-- name: Background
+- name: Desktop and lock screen background
   href: background/index.md
 - name: Windows spotlight
   href: windows-spotlight/index.md
