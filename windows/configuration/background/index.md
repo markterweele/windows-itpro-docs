@@ -1,6 +1,6 @@
 ---
 title: Configure the Desktop and Lock Screen Background in Windows
-description: Learn how to configure the desktop and lock screen background in Windows using policy settings, including Intune, CSP and GPO.
+description: Learn how to configure the desktop and lock screen background in Windows using policy settings, including Intune, CSP, and GPO.
 ms.topic: how-to
 ms.date: 03/03/2025
 author: paolomatarazzo
@@ -11,7 +11,9 @@ zone_pivot_groups: windows-versions-11-10
 
 # Configure the desktop and lock screen background
 
-Configuring desktop and lock screen backgrounds in Windows offers a simple yet effective way to enhance productivity, enforce consistency, and strengthen organizational branding. Predefined backgrounds can display company logos, mission statements, or school emblems, reinforcing identity across devices. This is especially valuable for kiosks, where lock screens can provide clear instructions, or student devices, where consistent branding fosters a sense of belonging and professionalism.
+Configuring desktop and lock screen backgrounds in Windows offers a simple yet effective way to enhance productivity, enforce consistency, and strengthen organizational branding.
+
+Predefined backgrounds can display company logos, mission statements, or school emblems, reinforcing identity across devices. Examples where predefined backgrounds are especially valuable include kiosks, where lock screens can provide clear instructions, or student devices, where consistent branding fosters a sense of belonging and professionalism.
 
 ::: zone pivot="windows-11"
 
@@ -31,17 +33,15 @@ This article explains how to configure the desktop and lock screen background in
 
 A key consideration when using custom images is how they appear on devices with varying screen sizes and resolutions. For example, a custom image created in a 16:9 aspect ratio (such as 1600x900) scales properly on devices with 16:9 resolutions, like 1280x720 or 1920x1080. On devices with other aspect ratios, such as 4:3 (1024x768) or 16:10 (1280x800), the image's height scales correctly, but the width is cropped to match the aspect ratio. The image remains centered on the screen.
 
-Images created in non-standard aspect ratios may scale and center unpredictably when displayed on devices with different resolutions. To ensure consistent results, especially for images containing text (e.g., legal statements), it is recommended to design the image in a 16:9 resolution while keeping critical text within the 4:3 region. This approach ensures that the text remains visible across all aspect ratios.
+Images created in nonstandard aspect ratios might scale and center unpredictably when displayed on devices with different resolutions. To ensure consistent results, especially for images containing text (for example, legal statements), it's recommended to design the image in a 16:9 resolution while keeping critical text within the 4:3 region. This approach ensures that the text remains visible across all aspect ratios.
 
 ## Configure the desktop background
 
-Windows edition requirements
-
-The configuration of the desktop background varies based on how the policy settings are applied:
+**Windows edition requirements**. The configuration of the desktop background varies based on how the policy settings are applied:
 
 | Windows edition | Intune/CSP | GPO |
 |-|-|-|
-|Pro / Pro Education|✅|❌|
+|Pro / Pro Education|✅|✅|
 |Enterprise / Education|✅|✅|
 |IoT Enterprise|✅|✅|
 
@@ -53,7 +53,7 @@ The configuration of the desktop background varies based on how the policy setti
 
 | Category | Setting name | Value |
 |--|--|--|
-| **Personalization** | Desktop Image Url | An http or https URL to a jpg, jpeg or png image file. |
+| **Personalization** | Desktop Image Url | An http or https URL to a jpg, jpeg, or png image file. |
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
@@ -61,7 +61,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 | Setting |
 |--------|
-| - **OMA-URI:** `./Vendor/MSFT/Personalization/DesktopImageUrl`<br>- **Data type:** string <br>- **Value:** An http or https URL to a jpg, jpeg or png image file. |
+| - **OMA-URI:** `./Vendor/MSFT/Personalization/DesktopImageUrl`<br>- **Data type:** string <br>- **Value:** An http or https URL to a jpg, jpeg, or png image file. |
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
@@ -71,18 +71,13 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 | - | - | - |
 | **User Configuration\Administrative Templates\Desktop\Desktop** |Desktop Wallpaper | Fully qualified path and name of the image file. You can use a local path or a UNC path. |
 
- User Configuration -> Policies -> Administrative Templates -> Desktop -> Desktop;
-Enable the Enable Active Desktop policy;
-
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
 
 ---
 
 ## Configure the lock screen background
 
-Windows edition requirements
-
-The configuration of the lock screen background varies based on how the policy settings are applied:
+**Windows edition requirements**. The configuration of the lock screen background varies based on how the policy settings are applied:
 
 | Windows edition | Intune/CSP | GPO |
 |-|-|-|
@@ -98,7 +93,7 @@ The configuration of the lock screen background varies based on how the policy s
 
 | Category | Setting name | Value |
 |--|--|--|
-| **Personalization** | Lock Screen Image Url| An http or https URL to a jpg, jpeg or png image file. |
+| **Personalization** | Lock Screen Image Url| An http or https URL to a jpg, jpeg, or png image file. |
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
@@ -106,7 +101,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 | Setting |
 |--------|
-| - **OMA-URI:** `./Vendor/MSFT/Personalization/LockScreenImageUrl`<br>- **Data type:** string <br>- **Value:** An http or https URL to a jpg, jpeg or png image file.|
+| - **OMA-URI:** `./Vendor/MSFT/Personalization/LockScreenImageUrl`<br>- **Data type:** string <br>- **Value:** An http or https URL to a jpg, jpeg, or png image file.|
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
@@ -121,7 +116,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 ---
 
 > [!TIP]
-> You also have the option to configure a custom lock screen image using [organizational messages in the Microsoft 365 admin center][M365-1].
+> You can also configure a custom lock screen image using [organizational messages in the Microsoft 365 admin center][M365-1].
 
 ## User experience
 
