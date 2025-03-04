@@ -85,4 +85,33 @@ In cases where the deadline has passed and the restart failed, the user receives
 
 :::image type="content" source="../media/9091858-past-deadline-restart-failed.png" alt-text="Screenshot of the dialog displayed for a user if their scheduled restart fails and it's past the deadline. The user has 5 minutes to select restart before the device is forced to restart." lightbox="../media/9091858-past-deadline-restart-failed.png":::
 
+# [Windows 10, version 22H2](#tab/10)
+
+These notifications are what the user sees on Windows 10, depending on the settings you choose:
+
+When **Specify deadlines for automatic updates and restarts** is set (For Windows 10, version 1709 and later):
+
+ - **While restart is pending, before the deadline occurs:**
+
+   - For the first few days, the user receives a toast notification
+
+   - After this period, the user receives this dialog:
+
+     ![The notification users get for an impending restart prior to deadline.](images/wufb-update-deadline-warning.png)
+
+   - If the user scheduled a restart, or if an auto restart is scheduled, 15 minutes before the scheduled time the user receives this notification that the restart is about to occur:
+
+     ![The notification users get for an impending restart 15 minutes prior to restart.](images/wufb-restart-imminent-warning.png)
+
+ - **If the restart is still pending after the deadline passes:**
+
+   - Within 12 hours before the deadline passes, the user receives this notification that the deadline is approaching:
+
+     ![The notification users get for an approaching restart deadline.](images/wufb-pastdeadline-restart-warning.png)
+
+   - Once the deadline has passed, the user is forced to restart to keep their devices in compliance and receives this notification:
+
+     ![The notification users get for an imminent restart after the deadline.](images/wufb-pastdeadline-restartnow.png)
+
+
 ---
