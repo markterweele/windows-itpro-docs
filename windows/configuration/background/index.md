@@ -27,6 +27,15 @@ Configuring desktop and lock screen backgrounds in Windows offers a simple yet e
 
 This article explains how to configure the desktop and lock screen background in Windows using policy settings. It includes examples of how to implement these configurations using Microsoft Intune, Configuration Service Provider (CSP), and Group Policy Object (GPO).
 
+## Windows edition requirements
+
+The configuration of the desktop and lock screen background varies based on how the policy settings are applied:
+
+| Windows edition | Intune/CSP | GPO |
+|Pro / Pro Education|✅|❌|
+|Enterprise / Education|✅|✅|
+|IoT Enterprise|✅|✅|
+
 ## Image ratios and scaling
 
 A key consideration when using custom images is how they appear on devices with varying screen sizes and resolutions. For example, a custom image created in a 16:9 aspect ratio (such as 1600x900) scales properly on devices with 16:9 resolutions, like 1280x720 or 1920x1080. On devices with other aspect ratios, such as 4:3 (1024x768) or 16:10 (1280x800), the image's height scales correctly, but the width is cropped to match the aspect ratio. The image remains centered on the screen.
@@ -43,15 +52,15 @@ Images created in non-standard aspect ratios may scale and center unpredictably 
 
 | Category | Setting name | Value |
 |--|--|--|
-| **Administrative Templates > System > Credentials Delegation** | Remote host allows delegation of nonexportable credentials | Enabled |
+| **Personalization** | Desktop Image Url | An http or https URL to a jpg, jpeg or png image file. |
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][INT-3] with the [Policy CSP][CSP-1].
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [Personalization CSP][CSP-1].
 
 | Setting |
 |--------|
-| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials`<br>- **Data type:** string<br>- **Value:** `<enabled/>`|
+| - **OMA-URI:** `./Vendor/MSFT/Personalization/DesktopImageUrl`<br>- **Data type:** string <br>- **Value:** An http or https URL to a jpg, jpeg or png image file. |
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
@@ -59,7 +68,10 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 
 | Group policy path | Group policy setting | Value |
 | - | - | - |
-| **Computer Configuration\Administrative Templates\System\Credentials Delegation** | Remote host allows delegation of nonexportable credentials | Enabled |
+| **User Configuration\Administrative Templates\Desktop\Desktop** |Desktop Wallpaper | Fully qualified path and name of the image file. You can use a local path or a UNC path. |
+
+ User Configuration -> Policies -> Administrative Templates -> Desktop -> Desktop;
+Enable the Enable Active Desktop policy;
 
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
 
@@ -75,15 +87,15 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 
 | Category | Setting name | Value |
 |--|--|--|
-| **Administrative Templates > System > Credentials Delegation** | Remote host allows delegation of nonexportable credentials | Enabled |
+| **Personalization** | Lock Screen Image Url| An http or https URL to a jpg, jpeg or png image file. |
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][INT-3] with the [Policy CSP][CSP-1].
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [Personalization CSP][CSP-1].
 
 | Setting |
 |--------|
-| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials`<br>- **Data type:** string<br>- **Value:** `<enabled/>`|
+| - **OMA-URI:** `./Vendor/MSFT/Personalization/LockScreenImageUrl`<br>- **Data type:** string <br>- **Value:** An http or https URL to a jpg, jpeg or png image file.|
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
 
@@ -91,32 +103,27 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 
 | Group policy path | Group policy setting | Value |
 | - | - | - |
-| **Computer Configuration\Administrative Templates\System\Credentials Delegation** | Remote host allows delegation of nonexportable credentials | Enabled |
+| **Computer Configuration\Administrative Templates\Control Panel\Personalization** | Force a specific default lock screen and logon image | Fully qualified path and name of the image file. You can use a local path or a UNC path.|
 
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
 
 ---
-
-To configure the lock screen and background images, use the [Personalization CSP][CSP-2].
-
-|Policy name| CSP | GPO |
-|-|-|-|
-|[DesktopImageUrl](/windows/client-management/mdm/personalization-csp#desktopimageurl)|✅|✅|
-|[LockScreenImageUrl](/windows/client-management/mdm/personalization-csp#lockscreenimageurl)|✅|✅|
 
 > [!TIP]
 > You also have the option to configure a custom lock screen image using [organizational messages in the Microsoft 365 admin center][M365-1].
 
 ## User experience
 
-When the policy is applied, the lock screen and desktop background images are set to the specified URL. The images are downloaded and cached locally on the device. The images are displayed in the background when the user signs in, and on the lock screen when the user locks the device.
+When the policy is applied, the lock screen and desktop background images are set to the specified URL or path. The images are downloaded and cached locally on the device. The images are displayed in the background when the user signs in, and on the lock screen when the user locks the device.
 
 ## Windows spotlight
 
-Windows Spotlight is a feature that displays beautiful images on the lock screen and desktop background. It can be configured to show different images each day, or to display a specific image. Windows Spotlight can also provide personalized content, such as tips and tricks for using Windows. To learn more about Windows Spotlight, see [Windows Spotlight for Business](https://learn.microsoft.com/windows/configuration/windows-spotlight-business).
+Windows spotlight is a feature that can display a different image on the lock screen and desktop background every day. Windows spotlight can also provide personalized content, such as tips and tricks for using Windows. You can configure a custom background image or lock screen image and still use Windows spotlight. When you do so, users can still receive suggestions, fun facts, tips, or organizational messages, but the background image is replaced with the custom image.
+
+To learn more, see [Configure Windows spotlight](../windows-spotlight/index.md).
 
 <!--links-->
 
-[CSP-2]: /windows/client-management/mdm/personalization-csp
+[CSP-1]: /windows/client-management/mdm/personalization-csp
 [M365-1]: /microsoft-365/admin/misc/organizational-messages-microsoft-365?view=o365-worldwide
-[INT-3]: /mem/intune/configuration/settings-catalog
+[INT-1]: /mem/intune/configuration/settings-catalog
