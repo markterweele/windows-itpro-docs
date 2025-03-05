@@ -90,7 +90,7 @@ A configuration file can contain one or more profiles. Each profile is identifie
 
 A profile can be one of two types:
 
-- `KioskModeApp`: is used to configure a kiosk experience. Users assigned this profile don't access the desktop, but only the Universal Windows Platform (UWP) application or Microsoft Edge running in full-screen above the Lock screen
+- `KioskModeApp`: is used to configure a kiosk experience. Users assigned this profile execute a Universal Windows Platform (UWP) application or Microsoft Edge running in full-screen
 - `AllAppList` is used to configure a restricted user experience. Users assigned this profile, access the desktop with the specific apps on the Start menu
 
 > [!IMPORTANT]

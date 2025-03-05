@@ -23,7 +23,12 @@ When you configure a **restricted user experience**, users can only execute a de
 > [!NOTE]
 > When you configure a restricted user experience, different policy settings are applied to the device. Some policy settings apply to standard users only, and some to administrator accounts too. For more information, see [Assigned Access policy settings](policy-settings.md).
 
+<<<<<<< HEAD
 ## Requirements
+=======
+- **Assigned Access**: used to execute a single Universal Windows Platform (UWP) app or Microsoft Edge in full screen. When the kiosk account signs in, the kiosk app launches automatically. If the UWP app is closed, it automatically restarts
+- **Shell Launcher**: used to configure a device to execute a Windows desktop application as the user interface. The specified application replaces the default Windows shell (`Explorer.exe`) that usually runs when a user signs in
+>>>>>>> 29fc1e82cb8d18c0059926e1e862a382aa6ae7a9
 
 Here are the requirements for Assigned Access:
 

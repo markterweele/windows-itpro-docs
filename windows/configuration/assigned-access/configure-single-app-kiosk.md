@@ -7,7 +7,36 @@ ms.topic: overview
 
 # Configure a single-app kiosk with Assigned Access
 
+<<<<<<< HEAD:windows/configuration/assigned-access/configure-single-app-kiosk.md
 A single-app kiosk uses the Assigned Access feature to run a single application above the lock screen. When the kiosk account signs in, the app is launched automatically. The person using the kiosk can't do anything on the device outside of the kiosk app.
+=======
+Assigned Access is a Windows feature that you can use to configure a device as a kiosk or with a restricted user experience.
+
+When you configure a **kiosk experience**, a single Universal Windows Platform (UWP) application or Microsoft Edge is executed in full screen. Users can only use that application and once the kiosk app is closed, it automatically restarts. Practical examples include:
+
+- Public browsing
+- Interactive digital signage
+
+When you configure a **restricted user experience**, users can only execute a defined list of applications, with a tailored Start menu and Taskbar. Different policy settings and AppLocker rules are enforced, creating a locked down experience. The users can access a familiar Windows desktop, while limiting their access, reducing distractions, and potential for inadvertent uses. Ideal for shared devices, you can create different configurations for different users. Practical examples include:
+
+- Frontline worker devices
+- Student devices
+- Lab devices
+
+> [!NOTE]
+> When you configure a restricted user experience, different policy settings are applied to the device. Some policy settings apply to standard users only, and some to administrator accounts too. For more information, see [Assigned Access policy settings](policy-settings.md).
+
+## Requirements
+
+Here are the requirements for Assigned Access:
+
+- To use a kiosk experience, [User account control (UAC)](/windows/security/identity-protection/user-account-control/user-account-control-overview) must be enabled
+- To use a kiosk experience, you must sign in from the console. The kiosk experience isn't supported over a remote desktop connection
+
+[!INCLUDE [assigned-access](../../../includes/licensing/assigned-access.md)]
+
+## Configure a kiosk experience
+>>>>>>> 29fc1e82cb8d18c0059926e1e862a382aa6ae7a9:windows/configuration/assigned-access/overview.md
 
 There are several options to configure a kiosk experience. If you need to configure a single device with a local account, you can use:
 
@@ -145,7 +174,7 @@ Here are the steps to configure a kiosk using the Settings app:
     >[!NOTE]
     >If there are any local standard user accounts already, the **Create an account** dialog offers the option to **Choose an existing account**
 
-1. Choose the application to run when the kiosk account signs in. Only apps that can run above the lock screen are available in the list of apps to choose from. If you select **Microsoft Edge** as the kiosk app, you configure the following options:
+1. Choose the application to run when the kiosk account signs in. If you select **Microsoft Edge** as the kiosk app, you configure the following options:
 
     - Whether Microsoft Edge should display your website full-screen (digital sign) or with some browser controls available (public browser)
     - Which URL should be open when the kiosk accounts signs in
