@@ -149,7 +149,7 @@ Example:
     <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
     <App DesktopAppPath="C:\Windows\system32\cmd.exe" />
     <App DesktopAppPath="%windir%\explorer.exe" />
-    <App AppUserModelId="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" />
+    <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" />
     <App DesktopAppPath="C:\Windows\System32\notepad.exe" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="%windir%\setuperr.log" />
   </AllowedApps>
 </AllAppsList>
