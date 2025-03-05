@@ -3,7 +3,7 @@ title: Checkpoint cumulative updates and the Microsoft Update Catalog
 description: This article describes how to handle checkpoint cumulative updates when you use the Microsoft Update Catalog to update devices and images.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 ms.author: mstewart
 author: mestew
 manager: aaroncz

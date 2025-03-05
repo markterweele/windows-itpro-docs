@@ -1,7 +1,7 @@
 ---
 title: Microsoft Security Compliance Toolkit Guide
 description: This article describes how to use Security Compliance Toolkit in your organization.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/01/2024
 ---
 

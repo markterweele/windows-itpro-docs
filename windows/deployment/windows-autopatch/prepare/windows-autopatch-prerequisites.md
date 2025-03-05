@@ -174,14 +174,17 @@ You can add the *Device configurations* permission with one or more rights to yo
 
 ### [Windows Enterprise E3+ and F3](#tab/windows-enterprise-e3-f3-intune-permissions)
 
+Your account must be assigned an [Intune role-based access control](/mem/intune/fundamentals/role-based-access-control) (RBAC) role that includes the following permissions:
+
+- **Device configurations**:
+    - Assign
+    - Create
+    - Delete
+    - View Reports
+    - Update
+- Read
+
 After you [activate Windows Autopatch features](../prepare/windows-autopatch-feature-activation.md#activate-windows-autopatch-features), use the Intune Service Administrator role to register devices, manage your update deployments, and reporting tasks.
-
-If you want to assign less-privileged user accounts to perform specific tasks in the Windows Autopatch portal, such as register devices with the service, you can add these user accounts into one of the two Microsoft Entra groups created during the [Start using Windows Autopatch](../prepare/windows-autopatch-feature-activation.md) process:
-
-| Microsoft Entra group name | Discover devices | Modify columns | Refresh device list | Export to .CSV | Device actions |
-| --- | --- | --- | --- | --- | --- |
-| Modern Workplace Roles - Service Administrator | Yes | Yes | Yes | Yes | Yes |
-| Modern Workplace Roles - Service Reader | No | Yes | Yes | Yes | Yes |
 
 For more information, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference) and [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 

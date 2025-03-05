@@ -7,7 +7,7 @@ author: frankroj
 ms.service: windows-client
 ms.localizationpriority: medium
 ms.topic: install-set-up-deploy
-ms.date: 02/13/2024
+ms.date: 02/27/2025
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

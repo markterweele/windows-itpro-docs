@@ -6,7 +6,7 @@ ms.service: windows-client
 author: mestew
 ms.localizationpriority: medium
 ms.author: mstewart
-ms.topic: conceptual
+ms.topic: article
 ms.subservice: itpro-updates
 ms.collection:
   - tier1

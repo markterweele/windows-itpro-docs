@@ -2,7 +2,7 @@
 title: Find digitally signed apps on a reference device
 description: This article for the IT professional describes how to use AppLocker logs and tools to determine which applications are digitally signed.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2024
 ---
 
