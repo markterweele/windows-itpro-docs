@@ -33,7 +33,7 @@ This article explains how to configure the desktop and lock screen backgrounds i
 
 A key consideration when using custom images is how they appear on devices with varying screen sizes and resolutions. For example, a custom image created in a 16:9 aspect ratio (such as 1600x900) scales properly on devices with 16:9 resolutions, like 1280x720 or 1920x1080. On devices with other aspect ratios, such as 4:3 (1024x768) or 16:10 (1280x800), the image's height scales correctly, but the width is cropped to match the aspect ratio. The image remains centered on the screen.
 
-Images created in nonstandard aspect ratios might scale and center unpredictably when displayed on devices with different resolutions. To ensure consistent results, especially for images containing text (for example, legal statements), it's recommended to design the image in a 16:9 resolution while keeping critical text within the 4:3 region. This approach ensures that the text remains visible across all aspect ratios.
+Images created in nonstandard aspect ratios might scale and center unpredictably when displayed on devices with different resolutions. To ensure consistent results, especially for images containing text (for example, legal statements), design the image in a 16:9 resolution and keep critical text within the 4:3 region. This approach ensures that the text remains visible across all aspect ratios.
 
 ## Configure the desktop background
 
