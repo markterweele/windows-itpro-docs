@@ -9,7 +9,7 @@ ms.topic: overview
 
 Assigned Access is a Windows feature that you can use to configure a device as a kiosk or with a restricted user experience.
 
-When you configure a **kiosk experience**, a single Universal Windows Platform (UWP) application or Microsoft Edge is executed in full screen, above the lock screen. Users can only use that application. If the kiosk app is closed, it automatically restarts. Practical examples include:
+When you configure a **kiosk experience**, a single Universal Windows Platform (UWP) application or Microsoft Edge is executed in full screen. Users can only use that application and once the kiosk app is closed, it automatically restarts. Practical examples include:
 
 - Public browsing
 - Interactive digital signage
@@ -170,7 +170,7 @@ Here are the steps to configure a kiosk using the Settings app:
     >[!NOTE]
     >If there are any local standard user accounts already, the **Create an account** dialog offers the option to **Choose an existing account**
 
-1. Choose the application to run when the kiosk account signs in. Only apps that can run above the lock screen are available in the list of apps to choose from. If you select **Microsoft Edge** as the kiosk app, you configure the following options:
+1. Choose the application to run when the kiosk account signs in. If you select **Microsoft Edge** as the kiosk app, you configure the following options:
 
     - Whether Microsoft Edge should display your website full-screen (digital sign) or with some browser controls available (public browser)
     - Which URL should be open when the kiosk accounts signs in
