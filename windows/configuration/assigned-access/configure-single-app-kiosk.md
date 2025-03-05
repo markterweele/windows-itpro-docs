@@ -7,9 +7,6 @@ ms.topic: overview
 
 # Configure a single-app kiosk with Assigned Access
 
-<<<<<<< HEAD:windows/configuration/assigned-access/configure-single-app-kiosk.md
-A single-app kiosk uses the Assigned Access feature to run a single application above the lock screen. When the kiosk account signs in, the app is launched automatically. The person using the kiosk can't do anything on the device outside of the kiosk app.
-=======
 Assigned Access is a Windows feature that you can use to configure a device as a kiosk or with a restricted user experience.
 
 When you configure a **kiosk experience**, a single Universal Windows Platform (UWP) application or Microsoft Edge is executed in full screen. Users can only use that application and once the kiosk app is closed, it automatically restarts. Practical examples include:
@@ -36,7 +33,6 @@ Here are the requirements for Assigned Access:
 [!INCLUDE [assigned-access](../../../includes/licensing/assigned-access.md)]
 
 ## Configure a kiosk experience
->>>>>>> 29fc1e82cb8d18c0059926e1e862a382aa6ae7a9:windows/configuration/assigned-access/overview.md
 
 There are several options to configure a kiosk experience. If you need to configure a single device with a local account, you can use:
 
