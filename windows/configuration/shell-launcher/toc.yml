@@ -1,10 +1,14 @@
 items:
 - name: Overview
   href: index.md
-- name: 🔴 Overview (merged to configure.md and enable.md ↙️)
+- name: 🟡 Old content
   href: index_old.md
+- name: 🟡 Enable Shell Launcher
+  href: enable.md
 - name: Configure a kiosk
   href: configure.md
+- name: Configure a kiosk (wmi)
+  href: configure-wmi.md
 - name: "Quickstart: Configure a kiosk"
   href: quickstart-kiosk.md
 - name: Create a configuration file
@@ -13,8 +17,6 @@ items:
   items:
     - name: Shell Launcher XSD
       href: xsd.md
-    - name: 🟡 Enable Shell Launcher
-      href: enable.md
     - name: WMI Provider
       items:
       - name: Class WESL_UserSetting
