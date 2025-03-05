@@ -1,5 +1,5 @@
 ---
-title: Configure the Desktop and Lock Screen Background in Windows
+title: Configure the Desktop and Lock Screen Backgrounds in Windows
 description: Learn how to configure the desktop and lock screen background in Windows using policy settings, including Intune, CSP, and GPO.
 ms.topic: how-to
 ms.date: 03/03/2025
@@ -9,7 +9,7 @@ appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
 
-# Configure the desktop and lock screen background
+# Configure the desktop and lock screen backgrounds
 
 Configuring desktop and lock screen backgrounds in Windows offers a simple yet effective way to enhance productivity, enforce consistency, and strengthen organizational branding.
 
@@ -27,7 +27,7 @@ Predefined backgrounds can display company logos, mission statements, or school 
 
 ::: zone-end
 
-This article explains how to configure the desktop and lock screen background in Windows using policy settings. It includes examples of how to implement these configurations using Microsoft Intune, Configuration Service Provider (CSP), and Group Policy Object (GPO).
+This article explains how to configure the desktop and lock screen backgrounds in Windows using policy settings. It includes examples of how to implement these configurations using Microsoft Intune, Configuration Service Provider (CSP), and Group Policy Object (GPO).
 
 ## Image ratios and scaling
 
@@ -37,10 +37,10 @@ Images created in nonstandard aspect ratios might scale and center unpredictably
 
 ## Configure the desktop background
 
-**Windows edition requirements**. The configuration of the desktop background varies based on how the policy settings are applied:
+**Windows edition requirements**. The following table summarizes the Windows editions and licensing requirements for configuring the desktop background:
 
 | Windows edition | Intune/CSP | GPO |
-|-|-|-|
+|:-|:-:|:-:|
 |Pro / Pro Education|✅|✅|
 |Enterprise / Education|✅|✅|
 |IoT Enterprise|✅|✅|
@@ -77,10 +77,10 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 ## Configure the lock screen background
 
-**Windows edition requirements**. The configuration of the lock screen background varies based on how the policy settings are applied:
+**Windows edition requirements**. The following table summarizes the Windows editions and licensing requirements for configuring the lock screen background:
 
 | Windows edition | Intune/CSP | GPO |
-|-|-|-|
+|:-|:-:|:-:|
 |Pro / Pro Education|✅|❌|
 |Enterprise / Education|✅|✅|
 |IoT Enterprise|✅|✅|
