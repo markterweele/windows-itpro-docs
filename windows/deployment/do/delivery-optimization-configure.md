@@ -16,7 +16,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
-ms.date: 07/23/2024
+ms.date: 02/27/2025
 ---
 
 # Configure Delivery Optimization (DO) for Windows
@@ -232,7 +232,12 @@ Delivery Optimization is integrated with both Microsoft Endpoint Manager and Con
 
 ## Monitor Delivery Optimization
 
-Whether you opt for the default Delivery Optimization configurations or tailor them to suit your environment, you'll want to track the outcomes to see how they improve your efficiency. [Learn more](waas-delivery-optimization-monitor.md) about the monitoring options for Delivery Optimization.
+Whether you opt for the default Delivery Optimization configurations or tailor them to suit your environment, you'll want to track the outcomes to see how they improve your efficiency. The following options are available to monitor Delivery Optimization: 
+
+- On clients, review the activity monitor, which displays a breakdown of downloads by source, average speed, and upload stats for the current month
+   - **Windows 11**: Settings > Windows Update > Advanced Options > Delivery Optimization > Activity Monitor
+   - **Windows 10**: Settings > Update & Security > Delivery Optimization > Activity Monitor
+- Windows Update for Business reports offers a Delivery Optimization report. For more information, see [Monitor Delivery Optimization](waas-delivery-optimization-monitor.md). 
 
 ## Troubleshoot Delivery Optimization
 

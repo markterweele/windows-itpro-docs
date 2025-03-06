@@ -94,22 +94,9 @@ Here's a sorted list of the policy settings to configure Windows spotlight:
 
 ## Custom lock screen and background images
 
-You can replace the Windows spotlight lock screen and background images with a custom image. When you do so, users can still see suggestions, fun facts, tips, or organizational messages on the lock screen, but the background image is replaced with the custom image.
+You can replace the Windows spotlight lock screen and background images with a custom image. When you do so, users can still receive suggestions, fun facts, tips, or organizational messages, but the background image is replaced with the custom image.
 
-To configure the lock screen and background images, use the [Personalization CSP][CSP-2].
-
-|Policy name| CSP | GPO |
-|-|-|-|
-|[DesktopImageUrl](/windows/client-management/mdm/personalization-csp#desktopimageurl)|✅|✅|
-|[LockScreenImageUrl](/windows/client-management/mdm/personalization-csp#lockscreenimageurl)|✅|✅|
-
->[!NOTE]
-> A concern with custom images is how they'll appear on different screen sizes and resolutions. A custom image created in `16:9` aspect ratio (for example, `1600x900`) scales properly on devices using a `16:9` resolution, such as `1280x720` or `1920x1080`. On devices using other aspect ratios, such as `4:3` (`1024x768`) or `16:10` (`1280x800`), height scales correctly and width is cropped to a size equal to the aspect ratio. The image remains centered on the screen.
->
-> Lock screen images created at other aspect ratios might scale and center unpredictably on your device when changing aspect ratios. The recommendation for custom images that include text (such as a legal statement), is to create the lock screen image in `16:9` resolution with text contained in the `4:3` region, allowing the text to remain visible at any aspect ratio.
-
-> [!TIP]
-> You also have the option to configure a custom lock screen image using [organizational messages in the Microsoft 365 admin center][M365-1].
+To learn more, see [Configure the desktop and lock screen background](../background/index.md).
 
 ## User experience
 
@@ -137,6 +124,5 @@ To learn more about organizational messages, see:
 <!--links-->
 
 [CSP-1]: /windows/client-management/mdm/policy-csp-experience
-[CSP-2]: /windows/client-management/mdm/personalization-csp
 [INT-1]: /mem/intune/remote-actions/organizational-messages-overview
 [M365-1]: /microsoft-365/admin/misc/organizational-messages-microsoft-365?view=o365-worldwide

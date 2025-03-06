@@ -7,8 +7,12 @@ items:
   href: start/toc.yml
 - name: Taskbar
   href: taskbar/toc.yml
+- name: Desktop and lock screen backgrounds
+  href: background/index.md
 - name: Windows spotlight
   href: windows-spotlight/index.md
+- name: Settings page visibility
+  href: settings/page-visibility.md
 - name: Microsoft Store
   href: store/toc.yml
 - name: Cellular settings
