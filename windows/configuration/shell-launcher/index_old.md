@@ -34,3 +34,20 @@ Methods of controlling access to other desktop applications and system component
   - The custom shell app runs in full screen, and can run other apps in full screen on user's demand.
 
 For sample XML configurations for the different app combinations, see [Samples for Shell Launcher v2](https://github.com/microsoft/Windows-IoT-Samples/tree/master/samples/ShellLauncher/ShellLauncherV2).
+
+
+
+## FROM COPILOT
+
+Shell Launcher is a feature in Windows that allows administrators to replace the default Windows Explorer shell with a custom shell for specialized devices or environments. Over time, Shell Launcher has evolved to meet the needs of modern deployments, leading to the introduction of Shell Launcher v2.
+
+Shell Launcher v1 was the original implementation, introduced to provide basic functionality for replacing the default shell. However, it had limitations, such as only supporting Win32 applications as custom shells and lacking flexibility for handling modern app scenarios.
+
+Shell Launcher v2, introduced with Windows 10, version 1809, brought significant enhancements. It added support for Universal Windows Platform (UWP) apps as custom shells, making it more versatile for modern environments. Additionally, v2 introduced the ability to configure fallback shells, ensuring a more robust experience in case the primary shell fails to launch. This feature is particularly useful for maintaining system reliability in critical-use cases, such as kiosks or embedded systems.
+
+Shell Launcher v2 is the preferred choice because it:
+
+Supports both Win32 and UWP apps, offering greater flexibility.
+Provides fallback shell functionality, improving system resilience.
+Is better suited for modern Windows environments, especially those leveraging UWP apps or mixed app ecosystems.
+By upgrading to Shell Launcher v2, administrators can take advantage of these improvements to create more reliable and adaptable custom shell experiences.

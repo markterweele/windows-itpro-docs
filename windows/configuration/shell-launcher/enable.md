@@ -7,12 +7,12 @@ ms.topic: how-to
 
 # Enable Shell Launcher
 
+Shell Launcher is an optional component and isn't turned on by default in Windows. It must be turned on before configuring it. You can turn on and configure Shell Launcher in a customized Windows image, or you must turn on Shell Launcher before applying a provisioning package to configure Shell Launcher.
+
 > [!NOTE]
 > When you configure Shell Launcher with the Assigned Access Configuration Service Provider (CSP), Shell Launcher is automatically enabled, if the device supports it. There's no need to enable Shell Launcher separately when you configure it using Assigned Access CSP.
 
-Shell Launcher is an optional component and isn't turned on by default in Windows. It must be turned on before configuring it. You can turn on and configure Shell Launcher in a customized Windows image, or you must turn on Shell Launcher before applying a provisioning package to configure Shell Launcher.
-
-## Enable Shell Launcher using Control Panel
+#### [:::image type="icon" source="../images/icons/control-panel.svg"::: **Control Panel**](#tab/control-panel)
 
 1. In the **Search the web and Windows** field, type **Programs and Features** and either press **Enter** or tap or select **Programs and Features** to open it.
 1. In the **Programs and Features** window, select **Turn Windows features on or off**.
@@ -20,17 +20,34 @@ Shell Launcher is an optional component and isn't turned on by default in Window
 1. The **Windows Features** window indicates that Windows is searching for required files and displays a progress bar. Once found, the window indicates that Windows is applying the changes. When completed, the window indicates the requested changes are completed.
 1. Select **Close** to close the **Windows Features** window.
 
-> [!NOTE]
-> Turning on Shell Launcher doesn't require a device restart.
 
-## Enable Shell Launcher by calling WESL_UserSetting
+Control Panel > Programs > Turn Windows features on or off or use the command `optionalfeatures.exe`
 
-1. Enable or disable Shell Launcher by calling the WESL_UserSetting. SetEnabled function in the Windows Management Instrumentation (WMI) class WESL_UserSetting
-1. If you enable or disable Shell Launcher using WESL_UserSetting, the changes don't affect any sessions that are currently signed in; you must sign out and sign back in
+Expand **Device Lockdown** and select **Shell Launcher**
 
-This example uses a Windows image called install.wim, but you can use the same procedure to apply a provisioning package. For more information on DISM, see [What Is Deployment Image Servicing and Management](/windows-hardware/manufacture/desktop/what-is-dism).
+#### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/powershell)
 
-## Enable Shell Launcher using DISM
+Enable-WindowsOptionalFeature -FeatureName Client-DeviceLockdown,Client-EmbeddedShellLauncher -Online
+
+#### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+
+The Shell Launcher settings are also available as Windows provisioning settings so you can configure these settings to be applied during the image runtime. You can set one or all Shell Launcher settings by creating a provisioning package using Windows Configuration Designer and then applying the provisioning package during image deployment time or runtime. If Windows hasn't been installed and you're using Windows Configuration Designer to create installation media with settings for Shell Launcher included in the image or you're applying a provisioning package during setup, you must enable Shell Launcher on the installation media with DISM in order for a provisioning package to successfully apply.
+
+Use the following steps to create a provisioning package that contains the ShellLauncher settings.
+
+1. Build a provisioning package in Windows Configuration Designer by following the instructions in [Create a provisioning package for Windows](/windows/configuration/provisioning-packages/provisioning-create-package)
+1. In the **Available customizations** page, select **Runtime settings** > **SMISettings** > **ShellLauncher**
+1. Set the value of **Enable** to **ENABLE**. More options to configure Shell Launcher appears, and you can set the values as desired
+1. Once you have finished configuring the settings and creating the provisioning package, you can apply the package to the image deployment time or runtime. See the [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) for more information. The process for applying the package to a Windows 10 Enterprise image is the same
+
+
+| Path | Setting name | Value |
+|--|--|--|
+| `Policies/Authentication` | `EnableWebSignIn` | Enabled |
+| `Policies/Authentication` | `ConfigureWebSignInAllowedUrls` | This setting is optional, and it contains a semicolon-separated list of domains required for sign in, for example: `idp.example.com;example.com` |
+| `Policies/Authentication` | `ConfigureWebCamAccessDomainNames` | This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `example.com` |
+
+#### [:::image type="icon" source="../images/icons/settings.svg"::: **DISM**](#tab/dism)
 
 1. Open a command prompt with administrator privileges.
 1. Copy install.wim to a temporary folder on hard drive (in the following steps, we assume it's called `C:\wim`)
@@ -58,39 +75,14 @@ This example uses a Windows image called install.wim, but you can use the same p
     dism /unmount-wim /MountDir:c:\wim /Commit
     ```
 
-## Enable Shell Launcher using Windows Configuration Designer
+#### [:::image type="icon" source="../images/icons/dev.svg"::: **WMI**](#tab/wmi)
 
-The Shell Launcher settings are also available as Windows provisioning settings so you can configure these settings to be applied during the image runtime. You can set one or all Shell Launcher settings by creating a provisioning package using Windows Configuration Designer and then applying the provisioning package during image deployment time or runtime. If Windows hasn't been installed and you're using Windows Configuration Designer to create installation media with settings for Shell Launcher included in the image or you're applying a provisioning package during setup, you must enable Shell Launcher on the installation media with DISM in order for a provisioning package to successfully apply.
+Enable Shell Launcher by calling WESL_UserSetting
 
-Use the following steps to create a provisioning package that contains the ShellLauncher settings.
+1. Enable or disable Shell Launcher by calling the WESL_UserSetting. SetEnabled function in the Windows Management Instrumentation (WMI) class WESL_UserSetting
+1. If you enable or disable Shell Launcher using WESL_UserSetting, the changes don't affect any sessions that are currently signed in; you must sign out and sign back in
 
-1. Build a provisioning package in Windows Configuration Designer by following the instructions in [Create a provisioning package for Windows](/windows/configuration/provisioning-packages/provisioning-create-package)
-1. In the **Available customizations** page, select **Runtime settings** > **SMISettings** > **ShellLauncher**
-1. Set the value of **Enable** to **ENABLE**. More options to configure Shell Launcher appears, and you can set the values as desired
-1. Once you have finished configuring the settings and creating the provisioning package, you can apply the package to the image deployment time or runtime. See the [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) for more information. The process for applying the package to a Windows 10 Enterprise image is the same
+This example uses a Windows image called install.wim, but you can use the same procedure to apply a provisioning package. For more information on DISM, see [What Is Deployment Image Servicing and Management](/windows-hardware/manufacture/desktop/what-is-dism).
 
-#### [:::image type="icon" source="../../../images/icons/control-panel.svg"::: **Control Panel**](#tab/control-panel)
-
-Control Panel > Programs > Turn Windows features on or off or use the command `optionalfeatures.exe`
-
-Expand **Device Lockdown** and select **Shell Launcher**
-
-#### [:::image type="icon" source="../../../images/icons/powershell.svg"::: **PowerShell**](#tab/powershell)
-
-Enable-WindowsOptionalFeature -FeatureName Client-DeviceLockdown,Client-EmbeddedShellLauncher -Online
-
-#### [:::image type="icon" source="../../../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
-
-
-| Path | Setting name | Value |
-|--|--|--|
-| `Policies/Authentication` | `EnableWebSignIn` | Enabled |
-| `Policies/Authentication` | `ConfigureWebSignInAllowedUrls` | This setting is optional, and it contains a semicolon-separated list of domains required for sign in, for example: `idp.example.com;example.com` |
-| `Policies/Authentication` | `ConfigureWebCamAccessDomainNames` | This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `example.com` |
-
-#### [:::image type="icon" source="../../../images/icons/settings.svg"::: **DISM**](#tab/dism)
-
-
-#### [:::image type="icon" source="../../../images/icons/dev.svg"::: **WMI**](#tab/wmi)
 
 ---
