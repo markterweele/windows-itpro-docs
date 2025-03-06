@@ -1876,27 +1876,27 @@ This is applicable to Windows 10.
 
   -and-
 
-- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Specify intranet Microsoft update service location** to **Enabled** and ensure all Option settings (Intranet Update Service, Intranet Statistics Server, Alternate Download Server) are set to **" "**
+- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Specify intranet Microsoft update service location** to **Enabled** and ensure the settings under **Options** (intranet update service, intranet statistics server, and alternate download server) are set to **" "**
 
   -and-
 
-- Set the Group Policy **User Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Remove access to use all Windows Update features** to **Enabled** and then set **Computer Configurations** to **0 (zero)**.
+- Set the Group Policy **User Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Remove access to use all Windows Update features** to **Enabled** and then set **Configure notifications** to **0 - Do not show any notifications***.
 
 This is applicable to Windows 11.
 
-- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Manage updates offered from Windows Server Update Service** > **Do not connect to any Windows Update Internet locations** to **Enabled**
+- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Manage updates offered from Windows Server Update Service** > **Do not connect to any Windows Update Internet locations** to **Enabled**.
 
   -and-
 
-- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Manage updates offered from Windows Server Update Service** > **Specify intranet Microsoft update service location** to **Enabled** and ensure all Option settings (Intranet Update Service, Intranet Statistics Server, Alternate Download Server) are set to **" "**
+- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Manage updates offered from Windows Server Update Service** > **Specify intranet Microsoft update service location** to **Enabled** and ensure the settings under **Options** (intranet update service, intranet statistics server, and alternate download server) are set to **" "**
 
   -and-
 
-- Set the Group Policy **User Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Remove access to use all Windows Update features** to **Enabled** and then set **Computer Configurations** to **0 (zero)**.
+- Set the Group Policy **User Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Manage updates offered from Windows Server Update Service** > **Remove access to use all Windows Update features** to **Enabled** and then set **Configure notifications** to **0 - Do not show any notifications**.
 
   -and-
 
-- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **System** > **Internet Communication Management** > **Internet Communication Settings** > **Turn off access to all Windows Update features** to **Enabled**
+- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **System** > **Internet Communication Management** > **Internet Communication settings** > **Turn off access to all Windows Update features** to **Enabled**.
 
 You can turn off automatic updates by doing the following. This isn't recommended.
 
