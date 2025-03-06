@@ -5,10 +5,8 @@ items:
   href: index_old.md
 - name: 🟡 Enable Shell Launcher
   href: enable.md
-- name: Configure a kiosk
+- name: Configure Shell Launcher
   href: configure.md
-- name: Configure a kiosk (wmi)
-  href: configure-wmi.md
 - name: "Quickstart: Configure a kiosk"
   href: quickstart-kiosk.md
 - name: Create a configuration file
@@ -35,3 +33,5 @@ items:
         href: wesl-usersettingsetdefaultshell.md
       - name: SetEnabled
         href: wesl-usersettingsetenabled.md
+      - name: Configure Shell Launcher with WMI
+        href: configure-wmi.md

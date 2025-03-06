@@ -2,19 +2,21 @@
 title: Configure Shell Launcher with the WMI provider
 description: Learn how to configure a Windows kiosk using the WMI provider for Shell Launcher.
 ms.date: 02/27/2025
-ms.topic: how-to
+ms.topic: reference
 ---
 
 # Configure Shell Launcher with the WMI provider
 
-> [!NOTE]
-> When using the WMI providers option, you must first [enable Shell Launcher](enable.md).
+This article provides a guide on configuring Shell Launcher using the WMI provider, which consists of a set of classes for managing Shell Launcher settings.
 
-## Verify Shell Launcher license
+Included in this article is a PowerShell script that demonstrates how to utilize the WMI provider for configuring Shell Launcher. The script offers examples on setting the default shell, assigning a custom shell to a user, and removing a custom shell. Additionally, the WMI provider can be used to enable or disable Shell Launcher.
 
-Shell Launcher is a licensed feature. You can verify that the Shell Launcher license is enabled on the device by executing the following sample PowerShell script. The script checks the license status and then displays the current license status.
+> [!IMPORTANT]
+> The script is not intended to be run as-is. You must modify the script to match your environment and requirements. For example, you must change the user name in the script to match an existing user on your system. The script is provided as a reference only.
 
 ```PowerShell
+# Verify Shell Launcher license
+
 function Check-ShellLauncherLicenseEnabled
 {
     [string]$source = @"
@@ -58,10 +60,6 @@ if (-not($result))
     "`nThis device doesn't have required license to use Shell Launcher"
     exit
 }
-
-```
-
-```PowerShell
 
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
@@ -144,5 +142,3 @@ $IsShellLauncherEnabled = $ShellLauncherClass.IsEnabled()
 "`nEnabled is set to " + $IsShellLauncherEnabled.Enabled
 ```
 
-> [!NOTE]
-> The previous script includes examples of multiple configuration options, including removing a custom shell and disabling Shell Launcher. It is not intended to be run as-is.

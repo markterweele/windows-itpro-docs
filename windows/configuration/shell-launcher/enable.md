@@ -20,13 +20,14 @@ To enable Shell Launcher using Control Panel, follow these steps:
 
 1. Open **Control Panel** > **Programs** > **Turn Windows features on or off** or use the command `optionalfeatures.exe`
 1. Expand **Device Lockdown** and select **Shell Launcher**
+1. Select **OK** to enable Shell Launcher
 
 #### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 To enable Shell Launcher using PowerShell, follow these steps:
 
 1. Open a PowerShell window with administrator privileges
-1. Run the following command to enable Shell Launcher:
+1. Run the following command:
 
     ```powershell
     Enable-WindowsOptionalFeature -FeatureName Client-DeviceLockdown,Client-EmbeddedShellLauncher -Online
