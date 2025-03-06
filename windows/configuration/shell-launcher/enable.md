@@ -69,9 +69,31 @@ Use the following steps to create a provisioning package that contains the Shell
 1. Set the value of **Enable** to **ENABLE**. More options to configure Shell Launcher appears, and you can set the values as desired
 1. Once you have finished configuring the settings and creating the provisioning package, you can apply the package to the image deployment time or runtime. See the [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) for more information. The process for applying the package to a Windows 10 Enterprise image is the same
 
-## Next steps
+#### [:::image type="icon" source="../../images/icons/control-panel.svg"::: **Control Panel**](#tab/control-panel)
 
-> [!div class="nextstepaction"]
-> Learn how to configure Shell Launcher:
->
-> [Configure a kiosk with Shell Launcher](configure.md)
+Control Panel > Programs > Turn Windows features on or off or use the command `optionalfeatures.exe`
+
+Expand **Device Lockdown** and select **Shell Launcher**
+
+#### [:::image type="icon" source="../../images/icons/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+Enable-WindowsOptionalFeature -FeatureName Client-DeviceLockdown,Client-EmbeddedShellLauncher -Online
+
+#### [:::image type="icon" source="../../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+
+[!INCLUDE [provisioning-package-1](../../../../includes/configure/provisioning-package-1.md)]
+
+| Path | Setting name | Value |
+|--|--|--|
+| `Policies/Authentication` | `EnableWebSignIn` | Enabled |
+| `Policies/Authentication` | `ConfigureWebSignInAllowedUrls` | This setting is optional, and it contains a semicolon-separated list of domains required for sign in, for example: `idp.example.com;example.com` |
+| `Policies/Authentication` | `ConfigureWebCamAccessDomainNames` | This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `example.com` |
+
+[!INCLUDE [provisioning-package-2](../../../../includes/configure/provisioning-package-2.md)]
+
+#### [:::image type="icon" source="../../images/icons/settings.svg"::: **DISM**](#tab/dism)
+
+
+#### [:::image type="icon" source="../../images/icons/dev.svg"::: **WMI**](#tab/wmi)
+
+---
