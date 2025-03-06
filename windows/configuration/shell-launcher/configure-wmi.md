@@ -10,10 +10,11 @@ ms.topic: how-to
 > [!NOTE]
 > When using the WMI providers option, you must first [enable Shell Launcher](enable.md).
 
-Modify the following PowerShell script as appropriate and run the script on the device.
+## Verify Shell Launcher license
+
+Shell Launcher is a licensed feature. You can verify that the Shell Launcher license is enabled on the device by executing the following sample PowerShell script. The script checks the license status and then displays the current license status.
 
 ```PowerShell
-# Check if shell launcher license is enabled
 function Check-ShellLauncherLicenseEnabled
 {
     [string]$source = @"
@@ -54,9 +55,13 @@ $result = Check-ShellLauncherLicenseEnabled
 "`nShell Launcher license enabled is set to " + $result
 if (-not($result))
 {
-    "`nThis device doesn&#39;t have required license to use Shell Launcher"
+    "`nThis device doesn't have required license to use Shell Launcher"
     exit
 }
+
+```
+
+```PowerShell
 
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
