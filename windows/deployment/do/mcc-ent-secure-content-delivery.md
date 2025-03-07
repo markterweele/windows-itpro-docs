@@ -47,7 +47,7 @@ The following section is intended to provide a high-level overview of the securi
 
 The first layer of security lies with the Azure resources that your Microsoft Connected Cache nodes communicate with. You should ensure that your organization’s Azure tenant is using role-based access control (RBAC) to apply policies that enforce least-privilege access to the Connected Cache Azure resources you have provisioned. Only trusted individuals should have the ability to perform create, read, update, and delete (CRUD) operations on your organization’s MCC Azure resources and cache nodes.
 
-You can read more about [Azure identity management and access control security best practices](/azure/security/fundamentals/identity-management-best-practices) and the [Microsoft cloud security benchmark (MCSB) documentation for Identity management](/security/benchmark/azure/mcsb-network-security).
+You can read more about [Azure identity management and access control security best practices](/azure/security/fundamentals/identity-management-best-practices) and the [Microsoft cloud security benchmark (MCSB) documentation for Identity management](/security/benchmark/azure/mcsb-identity-management).
 
 ### 2. Local network
 
@@ -59,7 +59,7 @@ You can read more about [Azure best practices for network security](/azure/secur
 
 ### 3. Cache node host machine OS
 
-The third layer of security lies with the Operating System (OS) of your Connected Cache node’s host machine. When using Microsoft Connected Cache for Enterprise, your organization may choose to host Microsoft Connected Cache nodes on a [compatible host OS](mcc-ent-prerequisites.md) of your choice.
+The third layer of security lies with the Operating System (OS) of your Connected Cache node’s host machine. When using Microsoft Connected Cache for Enterprise, your organization may choose to host Microsoft Connected Cache nodes on a [compatible host OS](mcc-ent-prerequisites.md/#cache-node-host-machine-requirements) of your choice.
 
 Regardless of which host OS you choose to use, you should ensure that it meets the recommendations of the Microsoft cloud security benchmark for [Windows](/azure/governance/policy/samples/guest-configuration-baseline-windows), [Linux](/azure/governance/policy/samples/guest-configuration-baseline-linux), and [Docker](/azure/governance/policy/samples/guest-configuration-baseline-docker) hosts and that you perform regular OS updates to keep it up to date.
 
@@ -79,7 +79,7 @@ There are three scheduled MCC container updates per year. These updates included
 
 If a new Common Vulnerability and Exposure (CVE) is identified, Microsoft Connected Cache will publish a critical security patch to the MCC container in line with its SLA.
 
-You can read more information about Connected Cache container updates in the [Connected Cache updating documentation](mcc-ent-update-cache-node.md).
+You can read more information about Connected Cache container updates in the [Connected Cache container update documentation](mcc-ent-update-cache-node.md).
 
 ### What security improvements are included in the latest Connected Cache container update?
 
