@@ -296,6 +296,7 @@ With the exported Start menu configuration, use the `v5:StartPins` element and a
 
 Example with some apps pinned:
 
+``` xml
 <v5:StartPins>
   <![CDATA[
     {
@@ -307,6 +308,7 @@ Example with some apps pinned:
     }
   ]]>
 </v5:StartPins>
+```
 
 ::: zone-end
 
