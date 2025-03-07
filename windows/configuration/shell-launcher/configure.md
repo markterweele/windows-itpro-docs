@@ -10,17 +10,16 @@ ms.topic: how-to
 There are two ways you can configure Shell Launcher:
 
 1. Using the `ShellLauncher` node of the [Assigned Access Configuration Service Provider (CSP)](/windows/client-management/mdm/assignedaccess-csp), which also automatically enables Shell Launcher on the device, if the device supports it
-1. Using the **Shell Launcher WMI providers** directly in an application. When using this method, you must [enable Shell Launcher](enable.md) first
+1. Using the **Shell Launcher WMI providers** directly in an application. When using this method, you must [enable Shell Launcher](#enable-shell-launcher) first
 
 You can configure the following options for Shell Launcher:
 
-- Enable or disable Shell Launcher
-- Specify a shell configuration for a specific user or group
-- Remove a shell configuration for a specific user or group
+- Add/remove a shell configuration for a specific user or group
 - Change the default shell configuration
 - Get information on a shell configuration for a specific user or group
 
-Any changes don't take effect until a user signs in.
+> [!NOTE]
+> Any changes don't take effect until a user signs in.
 
 ## Enable Shell Launcher
 
@@ -52,12 +51,7 @@ To enable Shell Launcher using PowerShell, follow these steps:
 
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg1)
 
-[!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
 
-- **Path:** `SMISettings/ShellLauncher/Enable`
-- **Value:**  ENABLE
-
-[!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
 > [!IMPORTANT]
 > You can configure Shell Launcher by creating a provisioning package and then applying the provisioning package during image deployment time or at runtime. If you're creating an installation media with settings for Shell Launcher included in the image, or you're applying a provisioning package during setup, you must enable Shell Launcher on the installation media with DISM for a provisioning package to successfully apply.
@@ -175,7 +169,10 @@ Assign the policy to a group that contains as members the devices that you want 
 
 [!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
 
-- **Path:** `SMISettings/ShellLauncher`
+- **Path:** `SMISettings/ShellLauncher/Enable`
+- **Value:**  ENABLE
+
+- **Path:** `SMISettings/ShellLauncher/*`
 - **Value:** depends on specific settings
 
 [!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
