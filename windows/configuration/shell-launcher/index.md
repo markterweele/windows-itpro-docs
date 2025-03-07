@@ -53,9 +53,10 @@ A custom shell is launched with the same level of user rights as the account tha
 
 ## Next steps
 
-Learn how to configure Shell Launcher:
-
-- [Configure a kiosk with Shell Launcher](configure.md)
+> [!div class="nextstepaction"]
+> Learn how to configure Shell Launcher:
+>
+> [Configure Shell Launcher](configure.md)
 
 ### :::image type="icon" source="../images/icons/rocket.svg" border="false"::: Quickstarts
 
