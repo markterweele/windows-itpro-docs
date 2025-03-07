@@ -27,13 +27,13 @@ This article describes how Connected Cache nodes facilitate secure delivery of M
 
 Connected Cache nodes act as transparent content caches, meaning any device can request Microsoft content from a Connected Cache node without needing to provide authentication of identity. This allows for efficient discovery and connectivity between devices and Connected Cache nodes on the same network.
 
-Connected Cache nodes only download and store Microsoft content from provisioned Microsoft and CDN endpoints, so there are no concerns about the cache storing personal or sensitive data.
+Connected Cache nodes only download and store Microsoft content from provisioned Microsoft and Content Delivery Network (CDN) endpoints, so there are no concerns about the cache storing personal or sensitive data.
 
-Regardless of download source, the Delivery Optimization client on each Windows device verifies the authenticity and integrity of content using its metadata hash, content hash, and signature before installing. This ensures that the Windows device is protected against man-in-the-middle attacks that may attempt to tamper with content while it's in transit.
+Regardless of download source, the Delivery Optimization client on each Windows device verifies the authenticity and integrity of content using its metadata hash, content hash, and signature before installing. This ensures that the Windows device is protected against man-in-the-middle attacks that attempt to tamper with content while it's in transit.
 
 ![Diagram of content delivery between CDN, cache node, and DO client](images/mcc-ent-secure-content-delivery-diagram.png)
 
-As you can see in this diagram, Connected Cache nodes currently utilize HTTP to communicate with CDN endpoints and Delivery Optimization clients. There is work planned to support HTTPS communication between CDN endpoints and Delivery Optimization clients in the future.
+As you can see in this diagram, Connected Cache nodes currently utilize HTTP to communicate with CDN endpoints and Delivery Optimization clients. There's work planned to support HTTPS communication between CDN endpoints and Delivery Optimization clients in the future.
 
 ## Security considerations for Connected Cache nodes
 
@@ -45,13 +45,13 @@ The following section is intended to provide a high-level overview of the securi
 
 ### 1. Azure resources
 
-The first layer of security lies with the Azure resources that your Microsoft Connected Cache nodes communicate with. You should ensure that your organization’s Azure tenant is using role-based access control (RBAC) to apply policies that enforce least-privilege access to the MCC Azure resources you have provisioned. Only trusted individuals should have the ability to perform create, read, update, and delete (CRUD) operations on your organization’s MCC Azure resources and cache nodes.
+The first layer of security lies with the Azure resources that your Microsoft Connected Cache nodes communicate with. You should ensure that your organization’s Azure tenant is using role-based access control (RBAC) to apply policies that enforce least-privilege access to the Connected Cache Azure resources you have provisioned. Only trusted individuals should have the ability to perform create, read, update, and delete (CRUD) operations on your organization’s MCC Azure resources and cache nodes.
 
 You can read more about [Azure identity management and access control security best practices](/azure/security/fundamentals/identity-management-best-practices) and the [Microsoft cloud security benchmark (MCSB) documentation for Identity management](/security/benchmark/azure/mcsb-network-security).
 
 ### 2. Local network
 
-The second layer of security lies with your organization’s local network. It is recommended that your organization adopts a Zero Trust approach to network security so that your organizational data is protected even if an attacker breaches your network perimeter.
+The second layer of security lies with your organization’s local network. It's recommended that your organization adopts a Zero Trust approach to network security so that your organizational data is protected even if an attacker breaches your network perimeter.
 
 You can read more about [Azure best practices for network security](/azure/security/fundamentals/network-best-practices) and the [Microsoft cloud security benchmark (MCSB) documentation for Network security](/security/benchmark/azure/mcsb-network-security).
 
@@ -61,7 +61,7 @@ The third layer of security lies with the Operating System (OS) of your Connecte
 
 Regardless of which host OS you choose to use, you should ensure that it meets the recommendations of the Microsoft cloud security benchmark for [Windows](/azure/governance/policy/samples/guest-configuration-baseline-windows), [Linux](/azure/governance/policy/samples/guest-configuration-baseline-linux), and [Docker](/azure/governance/policy/samples/guest-configuration-baseline-docker) hosts and that you perform regular OS updates to keep it up to date.
 
-If you are hosting on Windows, your host machine will use Windows Subsystem for Linux (WSL) to run the Connected Cache container. You should ensure that your deployment of WSL meets the [recommended Enterprise set up for WSL](/windows/wsl/enterprise).
+If you're hosting on Windows, your host machine will use Windows Subsystem for Linux (WSL) to run the Connected Cache container. You should ensure that your deployment of WSL meets the [recommended Enterprise set up for WSL](/windows/wsl/enterprise).
 
 ### 4. Organization-managed Windows devices
 
@@ -75,7 +75,7 @@ Below are some common questions you may have about the security of Microsoft Con
 
 There are three scheduled MCC container updates per year. These updates included minor security patches, feature updates, and bug fixes.
 
-In the event of a new Common Vulnerability and Exposure (CVE) being identified, Microsoft Connected Cache will publish a critical security patch to the MCC container in line with its SLA.
+If a new Common Vulnerability and Exposure (CVE) is identified, Microsoft Connected Cache will publish a critical security patch to the MCC container in line with its SLA.
 
 You can read more information about Connected Cache container updates in the [Connected Cache updating documentation](mcc-ent-update-cache-node.md).
 
