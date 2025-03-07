@@ -51,7 +51,7 @@ Based on the above, Alice defines the pseudo-rules for the Lamna version of Micr
     - Apps predicted to be "safe" by the ISG.
 
 5. **Allow Managed Installer** A policy option allowing:
-    - Code written to the system by a process designated by policy as a managed installer. For Lamna's managed installer policy, Alice includes the Intune Management Extension, and also well-known auto-updater processes from ISVs whose apps are popular and likely to find across the company. She also includes a filepath rule, "D:\ Lamna Helpdesk\*" where Lamna's helpdesk admins are trained to copy the app installers and scripts they use to repair user's apps and systems.
+    - Code written to the system by a process designated by policy as a managed installer. For Lamna's managed installer policy, Alice includes the Intune Management Extension, and also well-known auto-updater processes for widely-used apps. She also includes a filepath rule, "D:\ Lamna Helpdesk\*" where Lamna's helpdesk admins are trained to copy the app installers and scripts they use to repair user's apps and systems.
 
 6. **Admin-only path rules** One or more filepath rules for the following locations:
    - "C:\Program Files\*"
@@ -75,11 +75,15 @@ Alice is familiar with the App Control Policy Wizard, the open-source policy aut
     | **Allow Microsoft mode**      | Allow Microsoft mode authorizes the following components: </br><ul><li>All code allowed by Default Windows mode, plus...</li><li>*All Microsoft-signed software*</li></ul>|
     | **Signed and Reputable mode** | Signed and Reputable mode authorizes the following components: </br><ul><li>All code allowed by Allow Microsoft mode, plus...<</li><li>*Files created or installed by a process configured as a [managed installer](./configure-authorized-apps-deployed-with-a-managed-installer.md)*</li><li>*Files with good reputation per [Microsoft Defender's Intelligent Security Graph technology](use-appcontrol-with-intelligent-security-graph.md)*</li></ul>|
     
-  Alice selects the **Signed and Reputable mode** template and then **Next**, accepting the defaults for the policy filename and location.
+      Alice selects the **Signed and Reputable mode** template and then **Next**, accepting the defaults for the policy filename and location.
 
 4. On the **Configure Policy Template - Policy rules** page, Alice reviews the set of options enabled for the policy. She's pleased to see the template already has most options set as recommended by Microsoft. The only changes she makes are to check the options for **Managed Installer** and **Require WHQL**. This way apps installed by Intune or any of the other managed installers are automatically allowed, and only kernel drivers built for Windows 10 or higher will run. Then she selects **Next**.
 
-5. On the **File Rules** page, Alice adds rules to e. For this reason, the Prerequisite information about App Control can be accessed through the [App Control design guide](appcontrol-design-guide.md). This page outlines the steps to create a new App Control policy from a template, configure the policy options, and the signer and file rules.
+5. On the **File Rules** page, Alice sees the rules Microsoft included in the Signed and Reputable mode template policy. Here, she'll add the Signer rule to trust Lamna-signed code, and the filepath rules to allow code in admin-writable-only locations under the two Program Files directories, the Windows directory, and Lamna's Helpdesk folder. 
+
+      To create each rule, Alice selects **+ Add Custom** which opens the **Custom Rules** dialog where the conditions for the rule are defined. For the first rule, she leaves the default selections for **Rule Scope** and **Rule Action**. For the **Rule Type** dropdown, she chooses the **Publisher** option to create a Signer rule. She then selects **Browse** to choose a file she knows is signed by a cert chaining up to the Lamna Codesigning PCA. The Wizard shows the signature information it found on the file with checkboxes for each element of the signature and the file's signed .rsrc header section, including Product Name and Original File Name. In this case, since she intends to allow everything signed with Lamna's interal codesigning certs, she only leaves Issuing CA and Publisher checked. Having set the rule conditions for the Lamna Codesigning PCA rule, she selects **Create Rule** and sees that the rule is now shown in the list.
+
+      Alice repeats the preceding steps to create the rest of the rules. choose whether to allow or block based on it.  adds rules to e. For this reason, the Prerequisite information about App Control can be accessed through the [App Control design guide](appcontrol-design-guide.md). This page outlines the steps to create a new App Control policy from a template, configure the policy options, and the signer and file rules.
 
 ## Template Base Policies
 
