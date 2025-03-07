@@ -155,6 +155,12 @@ Example:
 </AllAppsList>
 ```
 
+> [!IMPORTANT]
+> If you pins elements to the Start menu with secondary tiles, ensure to include the following apps in the allowed apps list:
+>
+> - `<App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge_proxy.exe" />`
+> - `<App AppUserModelId="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!App"/>`
+
 ::: zone pivot="windows-10"
 
 ### File Explorer restrictions
