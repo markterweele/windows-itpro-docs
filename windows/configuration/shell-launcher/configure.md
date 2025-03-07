@@ -31,7 +31,7 @@ Shell Launcher is an optional component in Windows that is not enabled by defaul
 
 There are multiple ways to enable Shell Launcher, select the method that best fits your needs to learn more.
 
-#### [:::image type="icon" source="../images/icons/control-panel.svg"::: **Control Panel**](#tab/control-panel)
+#### [:::image type="icon" source="../images/icons/control-panel.svg"::: **Control Panel**](#tab/control-panel1)
 
 To enable Shell Launcher using Control Panel, follow these steps:
 
@@ -39,7 +39,7 @@ To enable Shell Launcher using Control Panel, follow these steps:
 1. Expand **Device Lockdown** and select **Shell Launcher**
 1. Select **OK** to enable Shell Launcher
 
-#### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/powershell)
+#### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/powershell1)
 
 To enable Shell Launcher using PowerShell, follow these steps:
 
@@ -50,7 +50,7 @@ To enable Shell Launcher using PowerShell, follow these steps:
     Enable-WindowsOptionalFeature -FeatureName Client-DeviceLockdown,Client-EmbeddedShellLauncher -Online
     ```
 
-#### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+#### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg1)
 
 [!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
 
@@ -62,7 +62,7 @@ To enable Shell Launcher using PowerShell, follow these steps:
 > [!IMPORTANT]
 > You can configure Shell Launcher by creating a provisioning package and then applying the provisioning package during image deployment time or at runtime. If you're creating an installation media with settings for Shell Launcher included in the image, or you're applying a provisioning package during setup, you must enable Shell Launcher on the installation media with DISM for a provisioning package to successfully apply.
 
-#### [:::image type="icon" source="../images/icons/settings.svg"::: **DISM**](#tab/dism)
+#### [:::image type="icon" source="../images/icons/settings.svg"::: **DISM**](#tab/dism1)
 
 The following example uses a Windows image called `install.wim`, but you can use the same procedure to apply a provisioning package.
 
