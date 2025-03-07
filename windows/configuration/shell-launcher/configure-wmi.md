@@ -141,4 +141,3 @@ $ShellLauncherClass.SetEnabled($FALSE)
 $IsShellLauncherEnabled = $ShellLauncherClass.IsEnabled()
 "`nEnabled is set to " + $IsShellLauncherEnabled.Enabled
 ```
-

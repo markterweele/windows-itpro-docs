@@ -35,8 +35,6 @@ Methods of controlling access to other desktop applications and system component
 
 For sample XML configurations for the different app combinations, see [Samples for Shell Launcher v2](https://github.com/microsoft/Windows-IoT-Samples/tree/master/samples/ShellLauncher/ShellLauncherV2).
 
-
-
 ## FROM COPILOT
 
 Shell Launcher is a feature in Windows that allows administrators to replace the default Windows Explorer shell with a custom shell for specialized devices or environments. Over time, Shell Launcher has evolved to meet the needs of modern deployments, leading to the introduction of Shell Launcher v2.

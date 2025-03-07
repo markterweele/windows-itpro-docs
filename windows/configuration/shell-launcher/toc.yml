@@ -3,8 +3,6 @@ items:
   href: index.md
 - name: 🟡 Old content
   href: index_old.md
-- name: 🟡 Enable Shell Launcher
-  href: enable.md
 - name: Configure Shell Launcher
   href: configure.md
 - name: "Quickstart: Configure a kiosk"
