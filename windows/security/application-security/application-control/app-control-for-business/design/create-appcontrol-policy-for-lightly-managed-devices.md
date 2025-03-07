@@ -3,7 +3,7 @@ title: Use the Smart App Control policy to build your starter base policy
 description: App Control for Business restricts which applications users are allowed to run and the code that runs in the system core.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 02/20/2025
+ms.date: 03/05/2025
 ---
 
 # Use the Smart App Control policy to build your starter policy
@@ -23,7 +23,7 @@ As we did in [App Control for Business deployment in different scenarios](common
 
 Alice follows the guidance from the article [Plan for app control policy lifecycle management](./plan-appcontrol-management.md#policy-xml-lifecycle-management), and starts by analyzing the "circle-of-trust" for Smart App Control's policy. Alice reads Microsoft's online help articles about Smart App Control to be sure she understands it well. From her reading, she learns that Smart App Control allows only publicly-trusted signed code or unsigned code that the [Intelligent Security Graph (ISG)](./use-appcontrol-with-intelligent-security-graph.md) predicts is safe. Publicly-trusted signed code means the signing certificate was issued by one of the certificate authorities (CA) who are in Microsoft's Trusted Root Program. Unsigned code is blocked from running if the ISG can't predict that the code is safe to run. And code determined to be unsafe is always blocked.
 
-Now Alice considers how to adapt the policy for Lamna's use. Alice wants to create an initial policy that is as relaxed as possible, but still provide durable security value. Alice knows that some within Lamna's leadership advocate an approach much more aggressive than she plans. They want to immediately lockdown end users' devices and hope there's limited fallout. For now, she has enough support for her approach, because more of the leadership team appreciate that the corporate app culture that exists at Lamna is deeply ingrained. An app culture that developed slowly over the course of the company's existence won't just go away. 
+Now Alice considers how to adapt the policy for Lamna's use. Alice wants to create an initial policy that is as relaxed as possible, but still provide durable security value. Alice knows that some within Lamna advocate a more aggressive approach than she plans. They want to immediately lockdown end users' devices and hope there's limited fallout. For now, she has support for her approach, because more of the leadership team agrees that the Lamna app culture that developed slowly over the course of the company's existence won't just go away overnight, so the policy must maintain substantial flexibility initially.
 
 ### Consider the key factors about your organization
 
@@ -33,28 +33,27 @@ Alice next identifies the key factors about Lamna's environment that she believe
 - **Operating Systems:** Windows 11 runs most user devices, but Windows 10 will remain on roughly 10% of clients at least through the next fiscal year, particularly those in smaller satellite offices; Alice's group doesn't manage Lamna's servers or any specialized equipment; Lamna's server IT group plans to wait to see how the client rollout of App Control unfolds before implementing the technology on the servers they control;
 - **Client management:** Lamna uses Microsoft Intune for all Windows 11 devices, deployed as Microsoft Entra cloud-native; they continue to use Microsoft Endpoint Configuration Manager (MEMCM) with Microsoft Entra hybrid join on all Windows 10 devices;
 - **App management:** Most, but not all, apps are deployed using Intune; there's a long tail of business-unit-specific apps, and "Shadow IT" apps that lack an official charter, but are critical to the employees who use them;
-- **App ecosystem complexity:** Lamna has hundreds of line-of-business (LOB) apps across its business units; almost all of the apps use unsigned, or mostly unsigned, code; though the company has started to require codesigning, they use a codesigning certificate issued by Lamna's corporate Public Key Infrastructure (PKI), meaning that they aren't trusted by the Smart App Control policy by default; Alice must add the certs to the policy.
+- **App development and code signing:** Lamna has hundreds of line-of-business (LOB) apps across its business units; Lamna hasn't aligned its business units on development platforms and frameworks, so Alice expects lots of variability and complexity; almost all of the apps use unsigned, or mostly unsigned, code; although the company has started to require codesigning, their codesigning certificates come from Lamna's corporate Public Key Infrastructure (PKI), so they aren't trusted by the Smart App Control policy by default; Alice must add the certs to the policy.
 
 Based on the above, Alice defines the pseudo-rules for the Lamna version of Microsoft's Signed & Reputable policy:
 
 1. **"Windows and Microsoft-certified kernel drivers"** One or more signer rules allowing:
-   - Windows and its components
-   - Microsoft-certified third-party kernel drivers (WHQL)
- 
+   - Windows and its components.
+   - Microsoft-certified third-party kernel drivers (WHQL).
+
 2. **"Publicly-trusted signed code"** One or more signer rules allowing:
     - Code signed with certificates issued from any certificate authority participating in the [Microsoft Trusted Root Program ("AuthRoot")](/security/trusted-root/program-requirements) or non-OS code signed by Microsoft.
 
-3. **Lamna signed code** One or more signer rules allowing: 
+3. **Lamna signed code** One or more signer rules allowing:
     - Code signed by certificates issued from Lamna Codesigning PCA, the intermediate cert issued from their own internal PKI.
 
-3. **Allow apps based on their "reputation"** A policy option allowing:
+4. **Allow apps based on their "reputation"** A policy option allowing:
     - Apps predicted to be "safe" by the ISG.
 
-4. **Allow Managed Installer** A policy option allowing:
-    - Code written to the system by a process designated by policy as a managed installer. 
-    - Alice sets Lamna's managed installer policy based on articles she's read Alice decides to configure the auto-updater process for many popular apps as managed installers to ensure the code those apps use is always allowed.
+5. **Allow Managed Installer** A policy option allowing:
+    - Code written to the system by a process designated by policy as a managed installer. For Lamna's managed installer policy, Alice includes the Intune Management Extension, and also well-known auto-updater processes from ISVs whose apps are popular and likely to find across the company. She also includes a filepath rule, "D:\ Lamna Helpdesk\*" where Lamna's helpdesk admins are trained to copy the app installers and scripts they use to repair user's apps and systems.
 
-5. **Admin-only path rules** One or more filepath rules for the following locations:
+6. **Admin-only path rules** One or more filepath rules for the following locations:
    - "C:\Program Files\*"
    - "C:\Program Files (x86)\*"
    - "%windir%\*"
