@@ -47,6 +47,9 @@ This option loads the Windows desktop, but it only allows to run a defined set o
 
 To configure a restricted user experience, you use the **Assigned Access** feature.
 
+> [!NOTE]
+> You can't configure both Shell Launcher and Assigned Access on the same system.
+
 ## Choose the right experience
 
 When you're considering a kiosk or restricted user experience, you need to choose the right experience for your needs. A good approach is to ask yourself the following set of questions:

@@ -107,16 +107,16 @@ For more information about common security identifiers, see [Well-known SIDs](/w
 
 When the current signed in account belongs to two or more groups that have different configurations defined for each group, Shell Launcher uses the first configuration it finds. The search order isn't defined, so we recommend that you avoid assigning a user to multiple groups with different Shell Launcher configurations.
 
-## Perform an action when the shell exits
+## Shell Launcher startup and exit behavior
 
-When a custom shell exits, Shell Launcher can perform one of four actions:
+Shell Launcher processes the `Run` and `RunOnce` registry keys before starting the custom shell, so your custom shell doesn't need to handle the automatic startup of other applications and services.
 
-|Action|Description|
-|:---:|:---|
-|`0`|Restart the shell.|
-|`1`|Restart the device.|
-|`2`|Shut down the device.|
-|`3`|Do nothing.|
+Shell Launcher also handles the behavior of the system when your custom shell exits. You can configure the shell exit behavior if the default behavior doesn't meet your needs. When a custom shell exits, Shell Launcher can perform one of four actions:
+
+`0`: Restart the shell
+`1`: Restart the device
+`2`: Shut down the device
+`3`: Do nothing
 
 > [!IMPORTANT]
 > Make sure that your shell application does not automatically exit and is not automatically closed by any features such as Dialog Filter, as this can lead to an infinite cycle of exiting and restarting, unless the return code action is set to do nothing.
