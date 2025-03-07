@@ -1,7 +1,7 @@
 ---
 title: Configure a Multi-App Kiosk With Assigned Access
 description: Learn how to configure a multi-app kiosk with Assigned Access.
-ms.date: 02/27/2025
+ms.date: 3/7/2025
 ms.topic: overview
 ---
 

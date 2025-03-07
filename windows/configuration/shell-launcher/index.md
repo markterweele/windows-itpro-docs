@@ -1,7 +1,7 @@
 ---
 title: Shell Launcher Overview
 description: Learn how to configure devices with Shell Launcher.
-ms.date: 02/27/2025
+ms.date: 3/7/2025
 ms.topic: overview
 ---
 

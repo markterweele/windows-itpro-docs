@@ -1,7 +1,7 @@
 ---
 title: Assigned Access Overview
 description: Learn how to configure a Windows kiosk for single-app and multi-app scenarios with Assigned Access.
-ms.date: 02/27/2025
+ms.date: 3/7/2025
 ms.topic: overview
 ---
 

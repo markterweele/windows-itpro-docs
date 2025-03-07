@@ -1,7 +1,7 @@
 ---
 title: Create a Shell Launcher configuration file
 description: Learn how to create an XML file to configure a device with Shell Launcher.
-ms.date: 02/27/2025
+ms.date: 3/7/2025
 ms.topic: how-to
 ---
 

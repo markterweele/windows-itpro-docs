@@ -1,7 +1,7 @@
 ---
 title: Configure Shell Launcher with the WMI provider
 description: Learn how to configure a Windows kiosk using the WMI provider for Shell Launcher.
-ms.date: 02/27/2025
+ms.date: 3/7/2025
 ms.topic: reference
 ---
 

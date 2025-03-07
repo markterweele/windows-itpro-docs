@@ -1,7 +1,7 @@
 ---
 title: Configure Shell Launcher
 description: Learn how to configure Shell Launcher.
-ms.date: 02/27/2025
+ms.date: 3/7/2025
 ms.topic: how-to
 ---
 
@@ -84,15 +84,16 @@ For more information, see [WESL_UserSetting](wesl-usersetting.md).
 
 ## Launch different shells for different user accounts
 
-By default, Shell Launcher runs the default shell, which is specified when you create the OS image at design time. The default shell is set to Cmd.exe, but you can specify any executable file to be the default shell.
+By default, Shell Launcher runs the default shell, which is specified when you create the OS image at design time. The default shell is set to the Windows Command Processor (`Cmd.exe`), but you can specify any executable file to be the default shell.
 
-You can configure Shell Launcher to launch a different shell for specific users or groups if you don't want to run the default shell. For example, you might configure a device to run a custom application shell for guest accounts, but run the standard Windows Explorer shell for administrator accounts in order to service the device.
-
-If you use the WMI providers to configure Shell Launcher for a user or group at run time, you must use the security identifier (SID) for that user or group; you can't use the user name or group name.
-
-For more information about common security identifiers, see [Well-known SIDs](/windows/win32/secauthz/well-known-sids).
+You can also configure Shell Launcher to launch a different shell for specific users or groups if you don't want to run the default shell. For example, you might configure a device to launch a custom application shell for guest accounts, but run the standard Windows Explorer shell for administrator accounts for servicing the device.
 
 When the current signed in account belongs to two or more groups that have different configurations defined for each group, Shell Launcher uses the first configuration it finds. The search order isn't defined, so we recommend that you avoid assigning a user to multiple groups with different Shell Launcher configurations.
+
+> [!NOTE]
+> If you use the WMI provider to configure Shell Launcher for a user or group at run time, you must use the security identifier (SID) for that security principal. You can't use the user name or group name.
+>
+> For more information about common security identifiers, see [Well-known SIDs](/windows/win32/secauthz/well-known-sids).
 
 ## Shell Launcher startup and exit behavior
 

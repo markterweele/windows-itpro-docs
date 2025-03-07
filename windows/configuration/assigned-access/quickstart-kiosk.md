@@ -2,7 +2,7 @@
 title: "Quickstart: Configure a Single-App Kiosk With Assigned Access"
 description: Learn how to configure a single-app kiosk with Assigned Access using the Assigned Access configuration service provider (CSP), Microsoft Intune, PowerShell, or group policy (GPO).
 ms.topic: quickstart
-ms.date: 02/27/2025
+ms.date: 3/7/2025
 ---
 
 # Quickstart: configure a single-app kiosk with Assigned Access

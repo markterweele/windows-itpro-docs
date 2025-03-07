@@ -2,7 +2,7 @@
 title: Windows Single-App and Multi-App Kiosk Configuration Options Overview
 description: Learn how to configure Windows kiosks with single-app and multi-app options for a secure and enhanced user experience.
 ms.topic: overview
-ms.date: 02/27/2025
+ms.date: 3/7/2025
 ---
 
 # Windows kiosks configuration options overview
