@@ -59,7 +59,7 @@ You can read more about [Azure best practices for network security](/azure/secur
 
 ### 3. Cache node host machine OS
 
-The third layer of security lies with the Operating System (OS) of your Connected Cache node’s host machine. When using Microsoft Connected Cache for Enterprise, your organization may choose to host Microsoft Connected Cache nodes on a [compatible host OS](mcc-ent-prerequisites.md/#cache-node-host-machine-requirements) of your choice.
+The third layer of security lies with the Operating System (OS) of your Connected Cache node’s host machine. When using Microsoft Connected Cache for Enterprise, your organization may choose to host Microsoft Connected Cache nodes on a [compatible host OS](mcc-ent-prerequisites.md#cache-node-host-machine-requirements) of your choice.
 
 Regardless of which host OS you choose to use, you should ensure that it meets the recommendations of the Microsoft cloud security benchmark for [Windows](/azure/governance/policy/samples/guest-configuration-baseline-windows), [Linux](/azure/governance/policy/samples/guest-configuration-baseline-linux), and [Docker](/azure/governance/policy/samples/guest-configuration-baseline-docker) hosts and that you perform regular OS updates to keep it up to date.
 
