@@ -53,6 +53,8 @@ You can read more about [Azure identity management and access control security b
 
 The second layer of security lies with your organization’s local network. It's recommended that your organization adopts a Zero Trust approach to network security so that your organizational data is protected even if an attacker breaches your network perimeter.
 
+If your organization's network utilizes a firewall, you should ensure that it's configured to allow communication between your Connected Cache nodes and the [Microsoft and CDN endpoints](delivery-optimization-endpoints.md) used to install Connected Cache and download Microsoft content.
+
 You can read more about [Azure best practices for network security](/azure/security/fundamentals/network-best-practices) and the [Microsoft cloud security benchmark (MCSB) documentation for Network security](/security/benchmark/azure/mcsb-network-security).
 
 ### 3. Cache node host machine OS
