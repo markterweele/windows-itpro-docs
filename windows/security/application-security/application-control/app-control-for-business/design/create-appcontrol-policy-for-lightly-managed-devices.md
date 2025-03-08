@@ -69,6 +69,7 @@ Alice is familiar with the App Control Policy Wizard, the open-source policy aut
 
 3. The next page is where Alice will **Select a Base Template for the Policy**. The App Control Wizard offers three template policies to use when creating a new Base Policy. Each template policy applies slightly different rules to alter its circle-of-trust and security model of the policy. The three template policies are:
 
+
     | Template Base Policy | Description |
     |---------------------------------|-------------------------------------------------------------------|
     | **Default Windows mode**      | Default Windows mode authorizes the following components: </br><ul><li>Windows operating system components - any binary installed by a fresh install of Windows</li><li>Packaged apps (MSIX) signed by the Microsoft Store MarketPlace signer</li><li>Microsoft Office365 apps, OneDrive, and Microsoft Teams</li><li>Third-party [Windows Hardware Compatible drivers](/windows-hardware/drivers/install/whql-release-signature)</li></ul>|
@@ -81,109 +82,11 @@ Alice is familiar with the App Control Policy Wizard, the open-source policy aut
 
 5. On the **File Rules** page, Alice sees the rules Microsoft included in the Signed and Reputable mode template policy. Here, she'll add the Signer rule to trust Lamna-signed code, and the filepath rules to allow code in admin-writable-only locations under the two Program Files directories, the Windows directory, and Lamna's Helpdesk folder. 
 
-      To create each rule, Alice selects **+ Add Custom** which opens the **Custom Rules** dialog where the conditions for the rule are defined. For the first rule, she leaves the default selections for **Rule Scope** and **Rule Action**. For the **Rule Type** dropdown, she chooses the **Publisher** option to create a Signer rule. She then selects **Browse** to choose a file she knows is signed by a cert chaining up to the Lamna Codesigning PCA. The Wizard shows the signature information it found on the file with checkboxes for each element of the signature and the file's signed .rsrc header section, including Product Name and Original File Name. In this case, since she intends to allow everything signed with Lamna's interal codesigning certs, she only leaves Issuing CA and Publisher checked. Having set the rule conditions for the Lamna Codesigning PCA rule, she selects **Create Rule** and sees that the rule is now shown in the list.
+      To create each rule, Alice selects **+ Add Custom** which opens the **Custom Rules** dialog where the conditions for the rule are defined. For the first rule, she leaves the default selections for **Rule Scope** and **Rule Action**. For the **Rule Type** dropdown, she chooses the **Publisher** option to  a Signer rule. She then selects **Browse** to choose a file she knows is signed by a cert chaining up to the Lamna Codesigning PCA. The Wizard shows the signature information it found on the file with checkboxes for each element of the signature and the file's signed .rsrc header section, including Product Name and Original File Name. In this case, since she intends to allow everything signed with Lamna's interal codesigning certs, she only leaves Issuing CA and Publisher checked. Having set the rule conditions for the Lamna Codesigning PCA rule, she selects **Create Rule** and sees that the rule is now shown in the list. Alice repeats these steps for the rest of Lamna's custom rules.
 
-      Alice repeats the preceding steps to create the rest of the rules. choose whether to allow or block based on it.  adds rules to e. For this reason, the Prerequisite information about App Control can be accessed through the [App Control design guide](appcontrol-design-guide.md). This page outlines the steps to create a new App Control policy from a template, configure the policy options, and the signer and file rules.
+6. Having made all the edits she planned, Alice selects **Next** and the wizard creates the App Control policy files, consisting of an XML form and a compiled binary form of the policy. Alice does a cursory review of the XML policy file to confirm the final result.
 
-## Template Base Policies
-
- The following table lists the policies in increasing order of trust and freedom. For instance, the Default Windows mode policy trusts fewer application publishers and signers than the Signed and Reputable mode policy. The Default Windows policy has a smaller circle-of-trust with better security than the Signed and Reputable policy, but at the expense of compatibility.
-
-, she immediately notices the template called **Signed and Reputable Mode** and reads the list of code the template authorizes, which perfectly matches the "circle-of-trust" for Smart App Control. Alice selects the template and selects **Next** to see the policy rules set by the template.
-
-
-*Italicized content denotes the changes in the current policy with respect to the policy prior.*
-
-More information about the Default Windows Mode and Allow Microsoft Mode policies can be accessed through the [Example App Control for Business base policies article](example-appcontrol-base-policies.md).
-
-![Selecting a base template for the policy.](../images/appcontrol-wizard-template-selection.png)
-
-Once the base template is selected, give the policy a name and choose where to save the App Control policy on disk.
-
-## Create a custom base policy using an example App Control base policy
-
-Having defined the "circle-of-trust", Alice is ready to generate the initial policy for Lamna's lightly managed devices. Alice decides to use the example `SmartAppControl.xml` to create the initial base policy and then customize it to meet Lamna's needs.
-
-Alice follows these steps to complete this task:
-
-1. On a client device, run the following commands in an elevated Windows PowerShell session to initialize variables:
-
-    > [!NOTE]
-    > If you prefer to use a different [example App Control for Business base policy](example-appcontrol-base-policies.md), substitute the example policy path with your preferred base policy in this step.
-
-    ```powershell
-    $PolicyPath = $env:userprofile+"\Desktop\"
-    $PolicyName= "Lamna_LightlyManagedClients_Audit"
-    $LamnaPolicy=Join-Path $PolicyPath "$PolicyName.xml"
-    $ExamplePolicy=$env:windir+"\schemas\CodeIntegrity\ExamplePolicies\SmartAppControl.xml"
-    ```
-
-1. Copy the example policy to the desktop:
-
-    ```powershell
-    Copy-Item $ExamplePolicy $LamnaPolicy
-    ```
-
-1. Modify the policy to remove unsupported rule:
-
-    > [!NOTE]
-    > `SmartAppControl.xml` is available on Windows 11 version 22H2 and later. This policy includes "Enabled:Conditional Windows Lockdown Policy" rule that is unsupported for enterprise App Control policies and must be removed. For more information, see [App Control and Smart App Control](../appcontrol.md#app-control-and-smart-app-control). If you are using an example policy other than `SmartAppControl.xml`, skip this step.
-
-    ```powershell
-    [xml]$xml = Get-Content $LamnaPolicy
-    $ns = New-Object System.Xml.XmlNamespaceManager($xml.NameTable)
-    $ns.AddNamespace("ns", $xml.DocumentElement.NamespaceURI)
-    $node = $xml.SelectSingleNode("//ns:Rules/ns:Rule[ns:Option[.='Enabled:Conditional Windows Lockdown Policy']]", $ns)
-    $node.ParentNode.RemoveChild($node)
-    $xml.Save($LamnaPolicy)
-    ```
-
-1. Give the new policy a unique ID, descriptive name, and initial version number:
-
-    ```powershell
-    Set-CIPolicyIdInfo -FilePath $LamnaPolicy -PolicyName $PolicyName -ResetPolicyID
-    Set-CIPolicyVersion -FilePath $LamnaPolicy -Version "1.0.0.0"
-    ```
-
-1. [Use Configuration Manager to create and deploy an audit policy](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) to the client device running Windows 10 version 1903 and above, or Windows 11. Merge the Configuration Manager policy with the example policy.
-
-    > [!NOTE]
-    > If you do not use Configuration Manager, skip this step.
-
-    ```powershell
-    $ConfigMgrPolicy=$env:windir+"\CCM\DeviceGuard\MergedPolicy_Audit_ISG.xml"
-    Merge-CIPolicy -OutputFilePath $LamnaPolicy -PolicyPaths $LamnaPolicy,$ConfigMgrPolicy
-    Set-RuleOption -FilePath $LamnaPolicy -Option 13 # Managed Installer
-    ```
-
-1. Modify the policy to set additional policy rules:
-
-    ```powershell
-    Set-RuleOption -FilePath $LamnaPolicy -Option 3  # Audit Mode
-    Set-RuleOption -FilePath $LamnaPolicy -Option 12 # Enforce Store Apps
-    Set-RuleOption -FilePath $LamnaPolicy -Option 19 # Dynamic Code Security
-    ```
-
-1. Add rules to allow the Windows and Program Files directories:
-
-    ```powershell
-    $PathRules += New-CIPolicyRule -FilePathRule "%windir%\*"
-    $PathRules += New-CIPolicyRule -FilePathRule "%OSDrive%\Program Files\*"
-    $PathRules += New-CIPolicyRule -FilePathRule "%OSDrive%\Program Files (x86)\*"
-    Merge-CIPolicy -OutputFilePath $LamnaPolicy -PolicyPaths $LamnaPolicy -Rules $PathRules
-    ```
-
-1. If appropriate, add more signer or file rules to further customize the policy for your organization.
-
-1. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the App Control for Business policy to a binary format:
-
-    ```powershell
-    [xml]$PolicyXML = Get-Content $LamnaPolicy
-    $LamnaPolicyBin = Join-Path $PolicyPath "$($PolicyXML.SiPolicy.PolicyID).cip"
-    ConvertFrom-CIPolicy $LamnaPolicy $LamnaPolicyBin
-    ```
-
-1. Upload your base policy XML and the associated binary to a source control solution, such as [GitHub](https://github.com/) or a document management solution such as [Office 365 SharePoint](https://products.office.com/sharepoint/collaboration).
+With her starter policy in hand, Alice uploads both files to a Github repository Alice created specifically for lifecycle management and earlier created a project to store and manage Lamna's policies over time. your base policy XML and the associated binary to a source control solution, such as [GitHub](https://github.com/) or a document management solution such as [Office 365 SharePoint](https://products.office.com/sharepoint/collaboration).
 
 At this point, Alice now has an initial policy that is ready to deploy in audit mode to the managed clients within Lamna.
 
@@ -254,7 +157,7 @@ In order to minimize user productivity impact, Alice has defined a policy that m
 
   - Use a reputable antimalware or antivirus software with real-time protection, such as Microsoft Defender, to protect your devices from malicious files, adware, and other threats.
 
-## Up next
+## What you should read next
 
-- [Create an App Control for Business policy for fully managed devices](create-appcontrol-policy-for-fully-managed-devices.md)
-- [Prepare to deploy App Control for Business policies](../deployment/appcontrol-deployment-guide.md)
+- Learn more about managed installers: how they work, how to set them up, and what are some of their limitations in [Automatically allow apps deployed by a managed installer](./configure-authorized-apps-deployed-with-a-managed-installer.md).
+- Or to see your starter policy in action, [Prepare to deploy App Control for Business policies](../deployment/appcontrol-deployment-guide.md).
