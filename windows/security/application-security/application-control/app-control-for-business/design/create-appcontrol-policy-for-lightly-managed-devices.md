@@ -1,7 +1,7 @@
 ---
 title: Use the Smart App Control policy to build your starter base policy
 description: App Control for Business restricts which applications users are allowed to run and the code that runs in the system core.
-ms.topic: conceptual
+ms.topic: how-to
 ms.localizationpriority: medium
 ms.date: 03/09/2025
 ---

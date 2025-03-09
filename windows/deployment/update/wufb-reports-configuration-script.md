@@ -4,7 +4,7 @@ titleSuffix: Windows Update for Business reports
 description: How to get and use the Windows Update for Business reports configuration script to configure devices for Windows Update for Business reports.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
 manager: aaroncz

@@ -2,7 +2,7 @@
 title: Deploy the AppLocker policy into production
 description: This article for the IT professional describes the tasks that should be completed before you deploy AppLocker application control settings.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.date: 09/11/2024
 ---
 

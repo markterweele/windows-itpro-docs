@@ -2,7 +2,7 @@
 title: Document your AppLocker rules
 description: Learn how to document your AppLocker rules and associate rule conditions with files, permissions, rule source, and implementation.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2024
 ---
 

@@ -174,7 +174,7 @@ This policy setting allows you to specify which DNS host names and which DNS suf
 <!-- HostToRealm-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> The list of DNS host names and DNS suffixes has a 2048 character limit. This policy would not apply if you exceed this limit.
+> The list of DNS host names and DNS suffixes has a 2048 character limit. This policy would not apply if you exceed this limit. For more information, see [Kerberos realm to host mapping policy string-length limitations](https://support.microsoft.com/topic/e86856c2-1e02-43fe-9c58-d7c9d6386f01).
 <!-- HostToRealm-Editable-End -->
 
 <!-- HostToRealm-DFProperties-Begin -->

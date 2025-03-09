@@ -2,7 +2,7 @@
 title: App Control for Business design guide
 description: Microsoft App Control for Business allows organizations to control what apps and drivers will run on their managed Windows devices.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 

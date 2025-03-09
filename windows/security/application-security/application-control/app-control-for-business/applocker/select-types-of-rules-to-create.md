@@ -2,7 +2,7 @@
 title: Select the types of rules to create
 description: This article lists resources you can use when selecting your application control policy rules by using AppLocker.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 

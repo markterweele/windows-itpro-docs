@@ -3,7 +3,7 @@ title: Policy creation for common App Control usage scenarios
 description: Develop a plan for deploying App Control for Business in your organization based on these common scenarios.
 ms.localizationpriority: medium
 ms.date: 01/31/2025
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ---
 
 # App Control for Business deployment in different scenarios: types of devices

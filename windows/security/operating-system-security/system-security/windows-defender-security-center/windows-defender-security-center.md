@@ -2,7 +2,7 @@
 title: Windows Security
 description: Windows Security brings together common Windows security features into one place.
 ms.date: 06/27/2024
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Windows Security
