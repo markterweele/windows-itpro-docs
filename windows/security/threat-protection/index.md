@@ -4,7 +4,7 @@ description: Describes the security capabilities in Windows client focused on th
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.topic: conceptual
+ms.topic: article
 ms.date: 12/31/2017
 ---
 

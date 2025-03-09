@@ -3,7 +3,6 @@ author: paolomatarazzo
 ms.author: paoloma
 ms.date: 12/11/2024
 ms.topic: include
-ms.service: windows-client
 ---
 
 ## :::image type="icon" source="../images/new-button-title.svg" border="false"::: Win32 app isolation

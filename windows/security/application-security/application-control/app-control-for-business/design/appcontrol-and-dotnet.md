@@ -3,7 +3,7 @@ title: App Control for Business and .NET
 description: Understand how App Control and .NET work together and use Dynamic Code Security to verify code loaded by .NET at runtime.
 ms.localizationpriority: medium
 ms.date: 02/13/2025
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # App Control for Business and .NET

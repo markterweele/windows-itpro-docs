@@ -2,7 +2,7 @@
 title: What Is AppLocker
 description: This article for the IT professional describes what AppLocker is.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/11/2024
 ---
 

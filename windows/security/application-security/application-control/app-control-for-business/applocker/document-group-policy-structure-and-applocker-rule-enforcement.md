@@ -2,7 +2,7 @@
 title: Document Group Policy structure & AppLocker rule enforcement
 description: This planning article describes what you need to include in your plan when you use AppLocker.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2024
 ---
 

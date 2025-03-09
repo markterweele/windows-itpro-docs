@@ -2,7 +2,7 @@
 title: Provisioning packages overview
 description: With Windows, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image. Learn about what provisioning packages are and what they do.
 ms.reviewer: kevinsheehan
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.date: 07/08/2024
 ---
 

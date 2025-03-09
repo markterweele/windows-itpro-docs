@@ -2,7 +2,7 @@
 title: Configure an AppLocker policy for enforce rules
 description: This article for IT professionals describes the steps to enable the AppLocker policy enforcement setting.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2024
 ---
 
