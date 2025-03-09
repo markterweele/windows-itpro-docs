@@ -2,7 +2,7 @@
 title: App Control and AppLocker Overview
 description: Compare Windows application control technologies.
 ms.localizationpriority: medium
-ms.date: 01/28/2025
+ms.date: 03/09/2025
 ms.topic: conceptual
 ---
 

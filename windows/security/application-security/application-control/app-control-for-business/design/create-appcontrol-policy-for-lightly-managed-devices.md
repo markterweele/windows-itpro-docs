@@ -3,7 +3,7 @@ title: Use the Smart App Control policy to build your starter base policy
 description: App Control for Business restricts which applications users are allowed to run and the code that runs in the system core.
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 03/08/2025
+ms.date: 03/09/2025
 ---
 
 # Use the Smart App Control policy to build your starter policy
@@ -23,7 +23,7 @@ As we did in [App Control for Business deployment in different scenarios](common
 
 Alice follows the guidance from the article [Plan for app control policy lifecycle management](./plan-appcontrol-management.md#policy-xml-lifecycle-management), and starts by analyzing the "circle-of-trust" for Smart App Control's policy. Alice reads Microsoft's online help articles about Smart App Control to understand it well. From that reading, Alice learns that Smart App Control allows only publicly trusted signed code or unsigned code that the [Intelligent Security Graph (ISG)](./use-appcontrol-with-intelligent-security-graph.md) predicts to be safe. Publicly trusted signed code means the signing certificate's issuer is one of the certificate authorities (CA) in Microsoft's Trusted Root Program. Unsigned code is blocked from running if the ISG can't predict that the code is safe to run. And code determined to be unsafe is always blocked.
 
-Now Alice considers how to adapt the policy for Lamna's use. Alice wants to create an initial policy that is as relaxed as possible, but still provides durable security value. Some within Lamna advocate a more aggressive approach than Alice plans. They want to immediately lockdown end users' devices and hope for limited fallout. But the leadership team agrees with Alice that Lamna's app culture, formed slowly over tie, won't just go away overnight and so the initial policy needs much flexibility.
+Now Alice considers how to adapt the policy for Lamna's use. Alice wants to create an initial policy that is as relaxed as possible, but still provides durable security value. Some within Lamna advocate a more aggressive approach than Alice plans. They want to immediately lockdown end users' devices and hope for limited fallout. But the leadership team agrees with Alice that Lamna's app culture, formed slowly over time, won't just go away overnight and so the initial policy needs much flexibility.
 
 ### Consider the key factors about your organization
 
