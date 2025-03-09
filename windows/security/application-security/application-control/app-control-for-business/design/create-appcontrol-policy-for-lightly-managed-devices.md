@@ -35,6 +35,8 @@ Alice next identifies the key factors about Lamna's environment that affect the 
 - **App management:** Lamna has hundreds of line-of-business (LOB) apps across its business units. Alice's team deploys most, but not all, of these apps using Intune. And there's a long tail of apps used by smaller teams, including many "Shadow IT" apps, that have no official charter, but are critical to the employees who use them.
 - **App development and code signing:** Lamna business units aren't standardized on development platforms and frameworks, so significant variability and complexity is likely. Almost all of the apps use unsigned, or mostly unsigned, code. Although the company now requires codesigning, Lamna's codesigning certificates come from its corporate Public Key Infrastructure (PKI), and require custom rules in the policy.
 
+## Define the "circle-of-trust" for lightly managed devices
+
 Based on these factors, Alice writes the pseudo-rules for the Lamna version of Microsoft's Signed & Reputable policy:
 
 1. **"Windows and Microsoft-certified kernel drivers"** One or more signer rules allowing:

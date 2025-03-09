@@ -58,7 +58,7 @@ Until you apply the Windows security update released on or after April 9, 2024, 
 Although App Control audit mode is designed to avoid any effect on apps, some features are always on/always enforced with any App Control policy that turns on user mode code integrity (UMCI) with the option **0 Enabled:UMCI**. Here's a list of known system changes in audit mode:
 
 - Some script hosts might block code or run code with fewer privileges even in audit mode. See [Script enforcement with App Control](../design/script-enforcement.md) for information about individual script host behaviors.
-- Option **19 Enabled:Dynamic Code Security** is always enforced if any UMCI policy includes that option. See [App Control and .NET](../design/appcontrol-and-dotnet.md#app-control-and-net-hardening).
+- Option **19 Enabled:Dynamic Code Security** is always enforced if any UMCI policy includes that option on some versions of Windows and Windows Server. See [App Control and .NET](../design/appcontrol-and-dotnet.md#app-control-and-net-dynamic-code-security-hardening).
 
 ### .NET native images may generate false positive block events
 

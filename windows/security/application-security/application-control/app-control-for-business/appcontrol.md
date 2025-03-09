@@ -4,7 +4,7 @@ description: Application Control restricts which applications users are allowed 
 ms.localizationpriority: medium
 ms.collection:
 - tier3
-ms.date: 03/08/2025
+ms.date: 03/09/2025
 ms.topic: overview
 ---
 
@@ -43,7 +43,7 @@ Smart App Control starts in evaluation mode and switches off within 48 hours for
 > [!IMPORTANT]
 > Once you turn Smart App Control off, it can't be turned on without resetting or reinstalling Windows.
 
-The App Control policy used for Smart App Control comes bundled with the [App Control Wizard](design/appcontrol-wizard.md) policy authoring tool and is also found as an [example policy](design/example-appcontrol-base-policies.md) at *%windir%/schemas/CodeIntegrity/ExamplePolicies/SmartAppControl.xml*. To use this example policy as a starting point for your own policy, see [Create a custom base policy using an example App Control base policy](design/create-appcontrol-policy-for-lightly-managed-devices.md#create-a-custom-base-policy-using-an-example-app-control-base-policy). When using the Smart App Control example policy as the basis for your own custom policy, you must remove the option **Enabled:Conditional Windows Lockdown Policy** so it's ready for use as an App Control for Business policy.
+The App Control policy used for Smart App Control comes bundled with the [App Control Wizard](design/appcontrol-wizard.md) policy authoring tool and is also found as an [example policy](design/example-appcontrol-base-policies.md) at *%windir%/schemas/CodeIntegrity/ExamplePolicies/SmartAppControl.xml*. To use this example policy as a starting point for your own policy, see [Use the Smart App Control Policy to build your own base policy](design/create-appcontrol-policy-for-lightly-managed-devices.md#use-the-smart-app-control-policy-to-build-your-starter-policy). When using the Smart App Control example policy as the basis for your own custom policy, you must remove the option **Enabled:Conditional Windows Lockdown Policy** so it's ready for use as an App Control for Business policy.
 
 [!INCLUDE [windows-defender-application-control-wdac](../../../../../includes/licensing/windows-defender-application-control-wdac.md)]
 
