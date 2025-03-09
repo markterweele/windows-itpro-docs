@@ -69,6 +69,7 @@ Alice downloads the App Control Policy Wizard from https://aka.ms/appcontrolwiza
 
 3. The next page is where Alice will **Select a Base Template for the Policy**. The App Control Wizard offers three template policies to use when creating a new Base Policy. Each template policy applies slightly different rules to alter its circle-of-trust and security model of the policy. The three template policies are:
 
+    ![Selecting a base template for the policy.](../images/appcontrol-wizard-template-selection.png)
 
     | Template Base Policy | Description |
     |---------------------------------|-------------------------------------------------------------------|
@@ -80,9 +81,14 @@ Alice downloads the App Control Policy Wizard from https://aka.ms/appcontrolwiza
 
 4. On **Configure Policy Template - Policy rules**, Alice reviews the set of options enabled for the policy. The template already has most options set as recommended by Microsoft. The only changes Alice makes are to check the options for **Managed Installer** and **Require WHQL**. This way apps installed by Intune or any of the other managed installers are automatically allowed, and only kernel drivers built for Windows 10 or higher can run. Selecting **Next** advances the wizard.
 
+    > [!div class="mx-imgBorder"]
+    > ![Rule options UI for Windows Allowed mode policy.](../images/appcontrol-wizard-rule-options-UI-advanced-collapsed.png)
+
 5. The **File Rules** page shows the rules from the Signed and Reputable mode template policy. Alice adds the Signer rule to trust Lamna-signed code, and the filepath rules to allow code in admin-writable-only locations under the two Program Files directories, the Windows directory, and Lamna's Helpdesk folder. 
 
       To create each rule, Alice selects **+ Add Custom** which opens the **Custom Rules** dialog where the conditions for the rule are defined. For the first rule, the default selections for **Rule Scope** and **Rule Action** are correct. For the **Rule Type** dropdown, the **Publisher** option is the correct choice to create a Signer rule. Alice then selects **Browse** and picks a file signed by a cert issued by the Lamna Codesigning PCA. The Wizard shows the signature information and information pulled from the resource header section (RSRC) of the file, like ***product name*** and the ***original file name*** with checkboxes by each element. In this case, since they intend to allow everything signed with Lamna's internal codesigning certs, Alice leaves only ***Issuing CA*** and ***Publisher*** checked. With the rule conditions for the Lamna Codesigning PCA rule set, Alice selects **Create Rule** and sees the rule is included in the list. Alice repeats these steps for the rest of Lamna's custom rules.
+
+    ![Custom filepublisher file rule creation.](../images/appcontrol-wizard-custom-publisher-rule.png)
 
 6. Now that all of the edits described in the pseudo-rules are done, Alice selects **Next** and the wizard creates the App Control policy files. The output files include an XML form and a compiled binary form of the policy. Alice does a cursory review of the XML policy file to confirm the result looks good and then closes the wizard.
 
