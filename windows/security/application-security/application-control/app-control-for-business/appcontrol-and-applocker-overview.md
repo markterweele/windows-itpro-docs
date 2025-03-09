@@ -59,6 +59,11 @@ However, in some cases, AppLocker might be the more appropriate technology for y
 
 - You have a mixed Windows operating system (OS) environment and need to apply the same policy controls to Windows 10 and earlier versions of the OS.
 - You need to apply different policies for different users or groups on shared computers.
-- You don't want to enforce application control on application files such as DLLs or drivers.
 
 AppLocker can also be deployed as a complement to App Control to add user or group-specific rules for shared device scenarios, where it's important to prevent some users from running specific apps. As a best practice, you should enforce App Control at the most restrictive level possible for your organization, and then you can use AppLocker to further fine-tune the restrictions.
+
+## What you should read next
+
+- If you want to use App control, one of the most powerful security features in Windows, you must plan and prepare if you want to succeed. Start that by exploring the [App Control for Business Design Guide](design/appcontrol-design-guide.md).
+
+- If you're ready to jump in and start creating policies, revisit Smart App Control and [Use the Smart App Control policy to build your own starter policy](design/create-appcontrol-policy-for-lightly-managed-devices.md).
