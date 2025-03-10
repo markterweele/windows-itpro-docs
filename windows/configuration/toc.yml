@@ -25,3 +25,12 @@ items:
   href: provisioning-packages/toc.yml
 - name: Windows Configuration Designer
   href: wcd/toc.yml
+- name: Unbranded boot
+  href: unbranded-boot/toc.yml
+- name: Unified write filter
+  href: unified-write-filter/toc.yml
+- name: Keyboard filter
+  href: keyboard-filter/toc.yml
+- name: Custom logon
+  href: custom-logon/toc.yml
+
