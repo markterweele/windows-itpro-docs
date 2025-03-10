@@ -231,17 +231,27 @@ Depending on your configuration, you can have a user to automatically sign in to
 
 ## Remove Shell Launcher
 
-Once you no longer need the kiosk configuration, you can remove it.
+Here are the options to remove Shell Launcher, select the method that best fits your needs:
 
-Here's a PowerShell example to remove the Shell Launcher configuration:
+#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
-```powershell
+Unassign or delete the policy that contains the configuration.
+
+#### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+
+Uninstall the provisioning package that contains the configuration.
+
+#### [:::image type="icon" source="../../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
+
+```PowerShell
 $namespaceName="root\cimv2\mdm\dmmap"
 $className="MDM_AssignedAccess"
 $obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
-$obj.ShellLauncher = $null
+$obj.Configuration = $null
 Set-CimInstance -CimInstance $obj
 ```
+
+---
 
 ## Next steps
 
