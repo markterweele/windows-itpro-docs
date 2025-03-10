@@ -26,11 +26,15 @@ items:
 - name: Windows Configuration Designer
   href: wcd/toc.yml
 - name: Unbranded boot
-  href: unbranded-boot/toc.yml
+  href: unbranded-boot/index.md
 - name: Unified write filter
   href: unified-write-filter/toc.yml
-- name: Keyboard filter
+- name: Keyboard Filter
   href: keyboard-filter/toc.yml
-- name: Custom logon
-  href: custom-logon/toc.yml
+- name: Custom Logon
+  items:
+    - name: Configure Custom Logon
+      href: custom-logon/index.md
+    - name: Troubleshoot
+      href: custom-logon/troubleshoot.md
 

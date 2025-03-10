@@ -5,6 +5,7 @@ items:
   href: configure-single-app-kiosk.md
 - name: Configure a multi-app kiosk
   href: configure-multi-app-kiosk.md
+  displayName: Configure a restricted user experience
 - name: Recommendations
   href: recommendations.md
 - name: Create a configuration file
@@ -13,8 +14,10 @@ items:
   items:
     - name: Configure a single-app kiosk
       href: quickstart-kiosk.md
+      displayName: Configure a single-app kiosk quickstart
     - name: Configure a multi-app kiosk
       href: quickstart-restricted-user-experience.md
+      displayName: Configure a restricted user experience quickstart
 - name: Reference
   items:
     - name: Assigned Access XSD
