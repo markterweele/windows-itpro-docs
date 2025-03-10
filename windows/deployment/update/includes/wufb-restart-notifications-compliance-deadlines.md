@@ -5,7 +5,7 @@ manager: aaroncz
 ms.subservice: itpro-updates
 ms.service: windows-client
 ms.topic: include
-ms.date: 03/04/2025
+ms.date: 03/14/2025
 ms.localizationpriority: medium
 ---
 <!--This file is shared by update/wufb-compliancedeadlines.md, /update/waas-wufb-csp-mdm.md, /update/waas-wufb-group-policy.md, and  ?/update/waas-restart.md? articles. Headings are driven by article context. Updated with 9091858 -->
@@ -16,7 +16,7 @@ These notifications are what the user sees depending on the settings you choose,
 
 # [Windows 11, version 23H2 and later](#tab/23h2)
 
-When **Specify deadlines for automatic updates and restarts** is set for Windows 11, version 23H2 and later:
+When **Specify deadlines for automatic updates and restarts** is set for Windows 11, version 23H2 and later: 
 
 While restart is pending, before the deadline occurs, users receive a toast notification in the corner of their screen. The notification includes the deadline date, and options to either restart now, pick a time to restart, or restart tonight once active hours ends. 
 

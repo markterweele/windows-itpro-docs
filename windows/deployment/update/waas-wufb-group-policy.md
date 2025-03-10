@@ -146,9 +146,7 @@ When you set these policies, installation happens automatically at the specified
 
 We recommend that you use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadline for automatic updates and restarts** for feature and quality updates to ensure that devices stay secure on Windows 10, version 1709 and later. This works by enabling you to specify the number of days that can elapse after an update is offered to a device before it must be installed. Also you can set the number of days that can elapse after a pending restart before the user is forced to restart.
 
-
-<!--using include for restart notifications for compliance deadlines-->
-[!INCLUDE [Restart notifications for compliance deadlines](./includes/wufb-restart-notifications-compliance-deadlines.md)]
+For more information, see [Enforcing compliance deadlines for updates](wufb-compliancedeadlines.md).
 
 
 ### <a name="user-settings-for-notifications"></a> End user settings for notifications

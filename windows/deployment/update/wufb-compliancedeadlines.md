@@ -12,7 +12,7 @@ manager: aaroncz
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 03/04/2025
+ms.date: 03/14/2025
 ---
 # Enforcing compliance deadlines for updates
 
@@ -54,6 +54,7 @@ Once the *effective deadline* is reached, the device tries to restart during act
 > - When these policies are used, [user settings for notifications](waas-wufb-csp-mdm.md#user-settings-for-notifications) are also used on clients running Windows 11, version 22H2 and later.
 > - When **Specify deadlines for automatic updates and restarts** is used, updates will be downloaded and installed as soon as they are offered. 
 > - When **Specify deadlines for automatic updates and restarts** is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored.
+>    - For Windows 11 clients, starting with the December 10, 2024 update, [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored once the deadline passes.
 
 
 # [Policy setting for Windows 11, version 21H2 and earlier](#tab/2h2policy)
@@ -78,6 +79,7 @@ For quality updates, the deadline countdown starts from the time the update is *
 > [!NOTE]
 > - When using the newer policy that contains **Feature updates grace period in days**, this setting is ignored by clients that are running Windows 11 version 21H2 and earlier. The grace period for quality updates is used for both quality updates and feature updates for these clients.
 > - When **Specify deadlines for automatic updates and restarts** is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored. 
+>    - For Windows 11 clients, starting with the December 10, 2024 update, [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored once the deadline passes.
 ---
 
 ## User experience for restart notifications with compliance deadlines

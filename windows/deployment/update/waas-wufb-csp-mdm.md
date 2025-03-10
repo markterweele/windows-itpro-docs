@@ -140,10 +140,7 @@ We recommend that you use set specific deadlines for feature and quality updates
 - [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates)
 - [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautoreboot)
 
-
-<!--using include for restart notifications for compliance deadlines-->
-[!INCLUDE [Restart notifications for compliance deadlines](./includes/wufb-restart-notifications-compliance-deadlines.md)]
-
+For more information, see [Enforcing compliance deadlines for updates](wufb-compliancedeadlines.md).
 
 
 ### <a name="user-settings-for-notifications"></a> End user settings for notifications
