@@ -26,6 +26,7 @@ With a current version, it's best to use the new policy introduced in June 2019 
 - [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates) (Windows 11, version 22H2 or later)
 - [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
 
+# [Policy setting for Windows 11, version 22H2 and later](#tab/22h2policy)
 
 ## Policy setting overview for clients running Windows 11, version 22H2 and later
 
@@ -52,6 +53,7 @@ Once the *effective deadline* is reached, the device tries to restart during act
 > - When **Specify deadlines for automatic updates and restarts** is used, updates will be downloaded and installed as soon as they are offered. 
 > - When **Specify deadlines for automatic updates and restarts** is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored.
 
+# [Policy setting for Windows 11, version 21H2 and earlier](#tab/2h2policy)
 ## Policy setting overview for clients running Windows 11, version 21H2 and earlier
 
 |Policy|Description |
@@ -72,7 +74,8 @@ For quality updates, the deadline countdown starts from the time the update is *
 
 > [!NOTE]
 > - When using the newer policy that contains **Feature updates grace period in days**, this setting is ignored by clients that are running Windows 11 version 21H2 and earlier. The grace period for quality updates is used for both quality updates and feature updates for these clients.
-> - When **Specify deadlines for automatic updates and restarts** is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored.
+> - When **Specify deadlines for automatic updates and restarts** is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored. 
+---
 
 ## User experience for restart notifications with compliance deadlines
 
