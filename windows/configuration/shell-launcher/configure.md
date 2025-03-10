@@ -101,10 +101,10 @@ Shell Launcher processes the `Run` and `RunOnce` registry keys before starting t
 
 Shell Launcher also handles the behavior of the system when your custom shell exits. You can configure the shell exit behavior if the default behavior doesn't meet your needs. When a custom shell exits, Shell Launcher can perform one of four actions:
 
-`0`: Restart the shell
-`1`: Restart the device
-`2`: Shut down the device
-`3`: Do nothing
+- `0`: Restart the shell
+- `1`: Restart the device
+- `2`: Shut down the device
+- `3`: Do nothing
 
 > [!IMPORTANT]
 > Make sure that your shell application does not automatically exit and is not automatically closed by any features such as Dialog Filter, as this can lead to an infinite cycle of exiting and restarting, unless the return code action is set to do nothing.

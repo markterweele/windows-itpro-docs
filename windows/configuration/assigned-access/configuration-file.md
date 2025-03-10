@@ -296,7 +296,7 @@ With the exported Start menu configuration, use the `v5:StartPins` element and a
 </v5:StartPins>
 ```
 
-Example with some apps and a Microsoft Edge secondary tile pinned:
+Example with some apps and a Microsoft Edge pinned site:
 
 ``` xml
 <v5:StartPins>
