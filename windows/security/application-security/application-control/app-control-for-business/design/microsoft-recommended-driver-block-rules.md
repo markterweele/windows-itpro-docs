@@ -70,13 +70,12 @@ To check that the policy was successfully applied on your computer:
 
 ## Vulnerable driver blocklist XML
 
-> [!IMPORTANT]
-> The following policy contains **Allow All** rules. If your version of Windows supports App Control multiple policies, we recommend deploying this policy alongside any existing App Control policies. If you do plan to merge this policy with another policy, you may need to remove the **Allow All** rules before merging it if the other policy applies an explicit allow list. For more information, see [Create an App Control Deny Policy](create-appcontrol-deny-policy.md#guidance-on-creating-app-control-deny-policies).
+The recommended blocklist xml policy file can be downloaded from the [Microsoft Download Center](https://aka.ms/VulnerableDriverBlockList).
+
+This policy contains **Allow All** rules. If your version of Windows supports App Control multiple policies, we recommend deploying this policy alongside any existing App Control policies. If you do plan to merge this policy with another policy, you may need to remove the **Allow All** rules before merging it if the other policy applies an explicit allow list. For more information, see [Create an App Control Deny Policy](create-appcontrol-deny-policy.md#guidance-on-creating-app-control-deny-policies).
 
 > [!NOTE]
 > To use this policy with Windows Server 2016, you must convert the policy XML on a device running a newer operating system.
-
-The recommended blocklist xml policy file can be downloaded from the [Microsoft Download Center](https://aka.ms/VulnerableDriverBlockList).
 
 ## More information
 
