@@ -27,7 +27,7 @@ In this example, we use the **Provision desktop devices** option which helps you
 - Create local administrator account
 - Add applications and certificates
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > You must run Windows Configuration Designer on Windows client to configure Microsoft Entra enrollment using any of the wizards.
 
 ## Start a new project
