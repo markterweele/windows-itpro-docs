@@ -78,6 +78,9 @@ To check that the policy was successfully applied on your computer:
 
 The following recommended blocklist xml policy file can also be downloaded from the [Microsoft Download Center](https://aka.ms/VulnerableDriverBlockList).
 
+<details>
+  <summary>Expand to see policy XML</summary>
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
@@ -5041,6 +5044,8 @@ The following recommended blocklist xml policy file can also be downloaded from 
   <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID>
 </SiPolicy>
 ```
+
+</details>
 
 ## More information
 
