@@ -23,7 +23,7 @@ To learn how to configure the Assigned Access XML file, see [Create an Assigned 
 
 You can configure devices using a [custom policy][MEM-1] with the [AssignedAccess CSP][WIN-3].
 
-- **Setting:** `./Vendor/MSFT/AssignedAccess/ShellLauncher`
+- **Setting:** `./Vendor/MSFT/AssignedAccess/Configuration`
 - **Value:** content of the XML configuration file
 
 Assign the policy to a group that contains as members the devices that you want to configure.
