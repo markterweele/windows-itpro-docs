@@ -35,17 +35,15 @@ The Breakout Sequence of <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> is th
 
 Deleting the Assigned Access configuration removes the policy settings associated with the users, but it can't revert all the changes. For example, in a multi-app kiosk scenario the Start menu configuration is maintained.
 
-[!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
-
-#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
+#### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
 To remove the Assigned Access configuration, delete the policy that contains the configuration.
 
-#### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+#### [:::image type="icon" source="../../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
 To remove the Assigned Access configuration, uninstall the provisioning package that contains the configuration.
 
-#### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
+#### [:::image type="icon" source="../../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 
 ```PowerShell
 $namespaceName="root\cimv2\mdm\dmmap"
@@ -55,7 +53,7 @@ $obj.Configuration = $null
 Set-CimInstance -CimInstance $obj
 ```
 
-#### [:::image type="icon" source="../images/icons/settings-app.svg"::: **Settings**](#tab/settings)
+#### [:::image type="icon" source="../../images/icons/settings-app.svg"::: **Settings**](#tab/settings)
 
 This option isn't available using Settings.
 
