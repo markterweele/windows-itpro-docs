@@ -21,7 +21,7 @@ This method retrieves a value that indicates if Shell Launcher is enabled or dis
 
 ## Parameters
 
-**Enabled**</br>\[out, required\] A Boolean value that indicates if Shell Launcher is enabled.
+**Enabled**<br/>\[out, required\] A Boolean value that indicates if Shell Launcher is enabled.
 
 ## Return Value
 

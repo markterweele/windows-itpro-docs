@@ -25,13 +25,13 @@ This method retrieves the Shell Launcher configuration for a specific user or gr
 
 ## Parameters
 
-**Sid**</br>\[in, required\] A string containing the security identifier (SID) of the user or group that Shell Launcher is configured for.
+**Sid**<br/>\[in, required\] A string containing the security identifier (SID) of the user or group that Shell Launcher is configured for.
 
-**Shell**</br>\[out, required\] The application or executable that Shell Launcher starts as the shell.
+**Shell**<br/>\[out, required\] The application or executable that Shell Launcher starts as the shell.
 
-**CustomReturnCodes**</br>\[out, required\] An array of custom return codes returned by the shell application.
+**CustomReturnCodes**<br/>\[out, required\] An array of custom return codes returned by the shell application.
 
-**CustomReturnCodesAction**</br>\[out, required\] An array of custom return code actions that determine the action that Shell Launcher takes when the shell application exits. The custom actions map to the array of *CustomReturnCodes*.
+**CustomReturnCodesAction**<br/>\[out, required\] An array of custom return code actions that determine the action that Shell Launcher takes when the shell application exits. The custom actions map to the array of *CustomReturnCodes*.
 
 The possible actions are defined in the following table:
 
@@ -42,7 +42,7 @@ The possible actions are defined in the following table:
 | 2 | Shut down the device. |
 | 3 | Do nothing. |
 
-**DefaultAction**</br>\[out, required\] The default action that Shell Launcher takes when the shell application exits.
+**DefaultAction**<br/>\[out, required\] The default action that Shell Launcher takes when the shell application exits.
 
 The possible actions are defined in the following table:
 
