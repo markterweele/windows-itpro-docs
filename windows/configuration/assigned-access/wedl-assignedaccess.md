@@ -13,7 +13,7 @@ This Windows Management Instrumentation (WMI) provider class configures settings
 
 ## Syntax
 
-```powershell
+```mof
 class WEDL_AssignedAccess {
     [Key] string UserSID;
     [Read, Write] string AppUserModelId;
