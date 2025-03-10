@@ -6,7 +6,7 @@ items:
   - name: Key Names
     href: keyboardfilter-key-names.md
   - name: Predefined Key Combinations
-    href: keyboardfilter-list-all-configured-key-combinations.md
+    href: predefined-key-combinations.md
   - name: WMI Provider Reference
     items:
     - name: Overview
