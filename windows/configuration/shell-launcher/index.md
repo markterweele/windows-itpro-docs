@@ -38,8 +38,8 @@ Methods of controlling access to other desktop applications and system component
 
 ## Differences between Shell Launcher v1 and Shell Launcher v2
 
-Shell Launcher v1 replaces ```explorer.exe```, the default shell, with ```eshell.exe```, which can launch a Windows desktop application.
-Shell Launcher v2 replaces ```explorer.exe``` with ```customshellhost.exe```. This new executable file can launch a Windows desktop application or a UWP app.
+Shell Launcher v1 replaces `explorer.exe`, the default shell, with `eshell.exe`, which can launch a Windows desktop application.
+Shell Launcher v2 replaces `explorer.exe` with `customshellhost.exe`. This new executable file can launch a Windows desktop application or a UWP app.
 In addition to allowing you to use a UWP app for your replacement shell, Shell Launcher v2 offers more enhancements:
 
 - You can use a custom Windows desktop application that can then launch UWP apps, such as Settings and Touch Keyboard.
