@@ -13,7 +13,7 @@ This method removes a Shell Launcher configuration for a specific user or group,
 
 ## Syntax
 
-```powershell
+```mof
 [Static] uint32 RemoveCustomShell (
     [In, Required] string Sid
 );
@@ -21,7 +21,7 @@ This method removes a Shell Launcher configuration for a specific user or group,
 
 ## Parameters
 
-**Sid**</br>\[in, required\] A string containing the security identifier (SID) of the user or group that Shell Launcher is configured for.
+**Sid**<br/>\[in, required\] A string containing the security identifier (SID) of the user or group that Shell Launcher is configured for.
 
 ## Return Value
 
