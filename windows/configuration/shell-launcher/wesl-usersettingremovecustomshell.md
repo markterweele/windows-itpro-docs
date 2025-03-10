@@ -1,7 +1,7 @@
 ---
 title: WESL_UserSetting.RemoveCustomShell
 description: WESL_UserSetting.RemoveCustomShell
-ms.date: 02/25/2025
+ms.date: 3/7/2025
 ms.topic: reference
 ---
 

@@ -1,11 +1,11 @@
 ---
-title: "Quickstart: configure a kiosk experience with Shell Launcher"
-description: Learn how to configure a kiosk experience with Shell Launcher, using the Assigned Access configuration service provider (CSP), Microsoft Intune, PowerShell, or group policy (GPO).
+title: "Quickstart: configure a single-app kiosk with Shell Launcher"
+description: Learn how to configure a signle-app kiosk experience with Shell Launcher, using the Assigned Access configuration service provider (CSP), Microsoft Intune, PowerShell, or group policy (GPO).
 ms.topic: quickstart
-ms.date: 10/31/2024
+ms.date: 3/7/2025
 ---
 
-# Quickstart: configure a kiosk experience with Shell Launcher
+# Quickstart: configure a kiosk with Shell Launcher
 
 This quickstart provides practical examples of how to configure a *kiosk experience* on Windows with Shell Launcher. The examples describe the steps using a mobile device management solution (MDM) like Microsoft Intune, and PowerShell. While different solutions are used, the configuration settings and results are the same.
 
@@ -22,9 +22,9 @@ The examples can be modified to fit your specific requirements. For example, you
 
 ## Configure a kiosk device
 
-[!INCLUDE [tab-intro](../../../../includes/configure/tab-intro.md)]
+[!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
+#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
 > [!TIP]
 > Use the following Graph call to automatically create a custom policy in your Microsoft Intune tenant without assignments nor scope tags.
@@ -42,19 +42,33 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 
 [!INCLUDE [quickstart-xml](includes/quickstart-xml.md)]
 
-#### [:::image type="icon" source="../../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
+#### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 
-[!INCLUDE [powershell-wmi-bridge-1](../../../../includes/configure/powershell-wmi-bridge-1.md)]
+[!INCLUDE [powershell-wmi-bridge-1](../../../includes/configure/powershell-wmi-bridge-1.md)]
 
 [!INCLUDE [quickstart-ps](includes/quickstart-ps.md)]
 
-[!INCLUDE [powershell-wmi-bridge-2](../../../../includes/configure/powershell-wmi-bridge-2.md)]
+[!INCLUDE [powershell-wmi-bridge-2](../../../includes/configure/powershell-wmi-bridge-2.md)]
 
 ---
 
 ## User experience
 
 After the settings are applied, reboot the device. A local user account is automatically signed in, opening Microsoft Edge.
+
+## Remove Shell Launcher
+
+Once you no longer need the kiosk configuration, you can remove it.
+
+Here's a PowerShell example to remove the Shell Launcher configuration:
+
+```powershell
+$namespaceName="root\cimv2\mdm\dmmap"
+$className="MDM_AssignedAccess"
+$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
+$obj.ShellLauncher = $null
+Set-CimInstance -CimInstance $obj
+```
 
 ## Next steps
 
