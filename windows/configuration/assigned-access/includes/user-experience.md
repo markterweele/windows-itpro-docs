@@ -37,7 +37,7 @@ Deleting the Assigned Access configuration removes the policy settings associate
 
 #### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
-To remove the Assigned Access configuration, delete the policy that contains the configuration.
+To remove the Assigned Access configuration, unassign or delete the policy that contains the configuration.
 
 #### [:::image type="icon" source="../../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -55,7 +55,18 @@ Set-CimInstance -CimInstance $obj
 
 #### [:::image type="icon" source="../../images/icons/settings-app.svg"::: **Settings**](#tab/settings)
 
-This option isn't available using Settings.
+1. Go to **Settings > Accounts > Other Users**, or use the following shortcut:
+
+    > [!div class="nextstepaction"]
+    >
+    > [Other Users](ms-settings:otherusers)
+
+1. Select **Kiosk**
+1. Under **Kiosk info**, expand the application used for the kiosk experience
+1. Select **Remove kiosk**
+
+> [!NOTE]
+> This option isn't available using Settings if you configured a restricted user experience.
 
 ---
 
