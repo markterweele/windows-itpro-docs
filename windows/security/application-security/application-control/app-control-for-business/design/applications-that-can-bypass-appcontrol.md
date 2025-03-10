@@ -100,7 +100,7 @@ If you wish to use this blocklist policy on Windows Server 2016, locate the deny
 - msxml6.dll
 - jscript9.dll
 
-The blocklist policy that follows includes "Allow all" rules for both kernel and user mode that make it safe to deploy as a standalone App Control policy. On Windows versions 1903 and above, Microsoft recommends converting this policy to multiple policy format using the *Set-CiPolicyIdInfo* cmdlet with the *-ResetPolicyId* switch. Then, you can deploy it as a Base policy side-by-side with any other policies in your environment. To instead add these rules to an existing Base policy, you can merge the policy that follows using the *Merge-CIPolicy* cmdlet. If merging into an existing policy that includes an explicit allowlist, you should first remove the two "Allow all" rules and their corresponding FileRuleRefs from the blocklist policy.
+The blocklist policy that follows includes "Allow all" rules for both kernel and user mode that make it safe to deploy as a standalone App Control policy. On Windows versions 1903 and above, Microsoft recommends converting this policy to multiple policy formats using the *Set-CiPolicyIdInfo* cmdlet with the *-ResetPolicyId* switch. Then, you can deploy it as a Base policy side-by-side with any other policies in your environment. To instead add these rules to an existing Base policy, you can merge the policy that follows using the *Merge-CIPolicy* cmdlet. If merging into an existing policy that includes an explicit allowlist, you should first remove the two "Allow all" rules and their corresponding FileRuleRefs from the blocklist policy.
 
 **App Control policy XML**:
 
