@@ -86,25 +86,25 @@ This example uses a Windows image called install.wim, but you can use the same p
 1. Copy install.wim to a temporary folder on hard drive (in the following steps, we assume it's called C:\\wim).
 1. Create a new directory.
 
-    ```CMD
+    ```cmd
     md c:\wim
     ```
 
 1. Mount the image.
 
-    ```CMD
+    ```cmd
     dism /mount-wim /wimfile:c:\bootmedia\sources\install.wim /index:1 /MountDir:c:\wim
     ```
 
 1. Enable the feature.
 
-    ```CMD
+    ```cmd
     dism /image:c:\wim /enable-feature /all /featureName:Client-EmbeddedShellLauncher
     ```
 
 1. Commit the change.
 
-    ```CMD
+    ```cmd
     dism /unmount-wim /MountDir:c:\wim /Commit
     ```
 

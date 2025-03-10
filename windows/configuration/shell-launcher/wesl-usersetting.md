@@ -13,7 +13,7 @@ This class configures which application Shell Launcher starts based on the secur
 
 ## Syntax
 
-```powershell
+```mof
 class WESL_UserSetting {
     [read, write, Required] string Sid;
     [read, write, Required] string Shell;

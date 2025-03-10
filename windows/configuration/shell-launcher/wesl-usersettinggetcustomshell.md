@@ -13,7 +13,7 @@ This method retrieves the Shell Launcher configuration for a specific user or gr
 
 ## Syntax
 
-```powershell
+```mof
 [Static] uint32 GetCustomShell (
     [In, Required] string Sid,
     [Out, Required] string Shell,

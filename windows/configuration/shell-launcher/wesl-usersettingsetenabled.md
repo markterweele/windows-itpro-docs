@@ -13,7 +13,7 @@ This method enables or disables Shell Launcher.
 
 ## Syntax
 
-```powershell
+```mof
 [Static] uint32 SetEnabled(
     [In, Required] boolean Enabled
 );

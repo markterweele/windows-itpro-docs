@@ -13,7 +13,7 @@ This method sets the default Shell Launcher configuration.
 
 ## Syntax
 
-```powershell
+```mof
 [Static] uint32 SetDefaultShell (
     [In, Required] string Shell,
     [In, Required] sint32 DefaultAction

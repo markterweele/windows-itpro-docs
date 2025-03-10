@@ -13,7 +13,7 @@ This method configures Shell Launcher for a specific user or group, based on the
 
 ## Syntax
 
-```powershell
+```mof
 [Static] uint32 SetCustomShell (
     [In, Required] string Sid,
     [In, Required] string Shell,
