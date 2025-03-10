@@ -241,7 +241,7 @@ Unassign or delete the policy that contains the configuration.
 
 Uninstall the provisioning package that contains the configuration.
 
-#### [:::image type="icon" source="../../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
+#### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 
 ```PowerShell
 $namespaceName="root\cimv2\mdm\dmmap"
