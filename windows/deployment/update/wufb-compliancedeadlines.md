@@ -30,7 +30,7 @@ With a current version, it's best to use the new policy introduced in June 2019 
 
 # [Policy setting for Windows 11, version 22H2 and later](#tab/22h2policy)
 
-## Policy setting overview for clients running Windows 11, version 22H2 and later
+### Policy setting overview for clients running Windows 11, version 22H2 and later
 
 |Policy| Description |
 |-|-|
@@ -58,7 +58,8 @@ Once the *effective deadline* is reached, the device tries to restart during act
 
 
 # [Policy setting for Windows 11, version 21H2 and earlier](#tab/2h2policy)
-## Policy setting overview for clients running Windows 11, version 21H2 and earlier
+
+### Policy setting overview for clients running Windows 11, version 21H2 and earlier
 
 |Policy|Description |
 |-|-|
