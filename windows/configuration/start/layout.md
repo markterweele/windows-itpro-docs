@@ -431,9 +431,10 @@ You can edit the JSON file to make any modifications to the **Pinned** section o
 
     | Key | Description |
     |--|--|
-    | `packagedAppID` | Used for Universal Windows Platform (UWP) apps. To pin a UWP app, use the app's AUMID. |
-    | `desktopAppID` | Used for desktop apps. To pin a desktop app, use the app's AUMID. If the app doesn't have an AUMID, use the `desktopAppLink` instead. |
-    | `desktopAppLink` | Used for desktop apps that don't have an associated AUMID. To pin this type of app, use the path to the `.lnk` shortcut that points to the app. |
+    |`packagedAppID`| Used for Universal Windows Platform (UWP) apps. To pin a UWP app, use the app's AUMID. |
+    |`desktopAppID`| Used for desktop apps. To pin a desktop app, use the app's AUMID. If the app doesn't have an AUMID, use the `desktopAppLink` instead. |
+    |`desktopAppLink`| Used for desktop apps that don't have an associated AUMID. To pin this type of app, use the path to the `.lnk` shortcut that points to the app. |
+    |`secondaryTile`| Used for Microsoft Edge pinned sites. |
 
 ::: zone-end
 
