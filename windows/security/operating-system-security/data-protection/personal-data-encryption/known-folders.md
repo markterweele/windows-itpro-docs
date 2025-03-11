@@ -28,15 +28,14 @@ The following table lists the settings to configuire Personal Data Encryption fo
 |--|--|--|
 |  |  |  |
 
-[!INCLUDE [intune-settings-catalog-2](../../../../includes/configure/intune-settings-catalog-2.md)]
+[!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
 
 Alternatively, you can configure devices using a [custom policy][INT-1] with the [DeviceGuard Policy CSP][CSP-1].
 
 | Setting |
-|--------|
+|-|
 | **Setting name**: <br>**OMA-URI**: ``<br>**Data type**: int<br>**Value**: `1`|
 | **Setting name**: <br>**OMA-URI**: ``<br>**Data type**: int<br>**Value**:<br>&emsp;**Enabled with UEFI lock**: `1`<br>&emsp;**Enabled without lock**: `2`|
-
 
 If you use Microsoft Intune to manage your devices, you can configure Personal Data Encryption using a disk encryption policy, a settings catalog policy, or a custom profile.
 
