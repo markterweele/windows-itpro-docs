@@ -3,7 +3,7 @@ title: Deploying App Control for Business AppId tagging policies
 description: How to deploy your App Control AppId tagging policies locally and globally within your managed environment.
 ms.localizationpriority: medium
 ms.date: 09/11/2024
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ---
 
 # Deploying App Control for Business AppId tagging policies

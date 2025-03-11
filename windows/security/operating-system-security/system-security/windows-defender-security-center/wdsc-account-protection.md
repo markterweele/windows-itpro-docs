@@ -9,7 +9,7 @@ ms.topic: how-to
 
 The **Account protection** section contains information and settings for account protection and sign-in. You can get more information about these capabilities from the following list:
 
-- [Microsoft Account](https://account.microsoft.com/account/faq)
+- [Microsoft Account](https://support.microsoft.com/account-billing/ace6f3b3-e2d3-aeb1-6b96-d2e9e7e52133)
 - [Windows Hello for Business](../../../identity-protection/hello-for-business/index.md)
 - [Lock your Windows 10 PC automatically when you step away from it](https://support.microsoft.com/help/4028111/windows-lock-your-windows-10-pc-automatically-when-you-step-away-from)
 

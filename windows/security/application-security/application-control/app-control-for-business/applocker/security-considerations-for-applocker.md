@@ -2,7 +2,7 @@
 title: Security considerations for AppLocker
 description: This article for the IT professional describes the security considerations you need to address when implementing AppLocker.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 
