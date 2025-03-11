@@ -145,8 +145,18 @@
         "wcd//**/*.md": "vinpa",
         "wcd//**/*.yml": "vinpa"
       },
+      "manager":{
+        "custom-logon//**/*.md": "vlokeshwar",
+        "custom-logon//**/*.yml": "vlokeshwar",
+        "keyboard-filter//**/*.md": "vlokeshwar",
+        "keyboard-filter//**/*.yml": "vlokeshwar",
+        "unbranded-boot//**/*.md": "vlokeshwar",
+        "unbranded-boot//**/*.yml": "vlokeshwar",
+        "unified-write-filter//**/*.md": "vlokeshwar",
+        "unified-write-filter//**/*.yml": "vlokeshwar"
+      },
       "ms.reviewer": {
-        "kiosk//**/*.md": "sybruckm",
+        "kiosk//**/*.md": "twarwick",
         "start//**/*.md": "ericpapa"
       },
       "ms.collection": {
