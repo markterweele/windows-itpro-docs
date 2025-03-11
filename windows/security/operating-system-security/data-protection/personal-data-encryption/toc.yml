@@ -3,5 +3,7 @@ items:
   href: index.md
 - name: Configure Personal Data Encryption
   href: configure.md
+- name: Personal Data Encryption for known folders
+  href: known-folders.md
 - name: Frequently asked questions (FAQ)
   href: faq.yml
