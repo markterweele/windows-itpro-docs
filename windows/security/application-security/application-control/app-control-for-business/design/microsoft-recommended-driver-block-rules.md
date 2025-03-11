@@ -19,7 +19,7 @@ Microsoft has strict requirements for code running in kernel. So, malicious acto
 - Malicious behaviors (malware) or certificates used to sign malware
 - Behaviors that aren't malicious but circumvent the Windows Security Model and can be exploited by attackers to elevate privileges in the Windows kernel
 
-Drivers can be submitted to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission). For more information about driver submission, see [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/). To report an issue or request a change to the blocklist, including updating a block rule once a driver has been fixed, visit the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi) or submit feedback on this article.
+Drivers can be submitted to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission). For more information about driver submission, see [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/). To report an issue or request a change to the blocklist, including updating a block rule once a driver has been fixed, visit the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi).
 
 > [!NOTE]
 > Blocking drivers can cause devices or software to malfunction, and in rare cases, lead to blue screen. The vulnerable driver blocklist is not guaranteed to block every driver found to have vulnerabilities. Microsoft attempts to balance the security risks from vulnerable drivers with the potential impact on compatibility and reliability to produce the blocklist. As always, Microsoft recommends using an explicit allow list approach to security wherever possible.
@@ -36,9 +36,9 @@ With Windows 11 2022 update, the vulnerable driver blocklist  is enabled by defa
 >
 > - For Windows Insiders, the option to turn Microsoft's vulnerable driver blocklist on or off using **Windows Security** settings is grayed out when HVCI, Smart App Control, or S mode is enabled. You must disable HVCI or Smart App Control, or switch the device out of S mode, and restart the device before you can turn off the Microsoft vulnerable driver blocklist.
 
-The blocklist is updated with each new major release of Windows, typically 1-2 times per year, including most recently with the Windows 11 2022 update released in September 2022. The most current blocklist is now also available for Windows 10 20H2 and Windows 11 21H2 users as an optional update from Windows Update. Microsoft will occasionally publish future updates through regular Windows servicing.
+The blocklist is updated with each new major release of Windows, typically 1-2 times per year. The most current blocklist is now also available for Windows 10 20H2 and Windows 11 21H2 users as an optional update from Windows Update. Microsoft will occasionally publish future updates through regular Windows servicing.
 
-Customers who always want the most up-to-date driver blocklist can also use App Control for Business to apply the latest recommended driver blocklist contained in this article. For your convenience, we provide a download of the most up-to-date vulnerable driver blocklist along with instructions to apply it on your computer at the end of this article. Otherwise, use the following XML to create your own custom App Control policies.
+Customers who always want the most up-to-date driver blocklist can also use App Control for Business to apply the latest recommended driver blocklist. For your convenience, we provide a download of the most up-to-date vulnerable driver blocklist along with instructions to apply it on your computer at the end of this article.
 
 ## Blocking vulnerable drivers using App Control
 
@@ -49,7 +49,7 @@ Microsoft recommends enabling [HVCI](../../../../hardware-security/enable-virtua
 
 ## Steps to download and apply the vulnerable driver blocklist binary
 
-If you prefer to apply the [vulnerable driver blocklist](#vulnerable-driver-blocklist-xml) exactly as shown, follow these steps:
+If you prefer to apply the [vulnerable driver blocklist](#vulnerable-driver-blocklist-xml), follow these steps:
 
 1. Download the [App Control policy refresh tool](https://aka.ms/refreshpolicy)
 2. Download and extract the [vulnerable driver blocklist binaries](https://aka.ms/VulnerableDriverBlockList)
