@@ -49,7 +49,7 @@ Microsoft recommends enabling [HVCI](../../../../hardware-security/enable-virtua
 
 ## Steps to download and apply the vulnerable driver blocklist binary
 
-If you prefer to apply the [vulnerable driver blocklist](#vulnerable-driver-blocklist-xml), follow these steps:
+If you prefer to apply the vulnerable driver blocklist, follow these steps:
 
 1. Download the [App Control policy refresh tool](https://aka.ms/refreshpolicy)
 2. Download and extract the [vulnerable driver blocklist binaries](https://aka.ms/VulnerableDriverBlockList)
