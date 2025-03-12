@@ -24,8 +24,9 @@ With a current version, it's best to use the new policy introduced in June 2019 
 - [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 - [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
 - [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates) (Windows 11, version 22H2 and later)
-- [Update/ConfigureDeadlineNoAutoRebootForQualityUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautorebootforqualityupdates) (Windows 11, version 22H2 and later)
-- [Update/ConfigureDeadlineNoAutoRebootForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautorebootforfeatureupdates) (Windows 11, version 22H2 and later)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautoreboot) (Windows 11, version 21H2 and Windows 10, version 22H2 and earlier)
+   - [Update/ConfigureDeadlineNoAutoRebootForQualityUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautorebootforqualityupdates) (Windows 11, version 22H2 and later)
+   - [Update/ConfigureDeadlineNoAutoRebootForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautorebootforfeatureupdates) (Windows 11, version 22H2 and later)
 
 ## Policy settings for compliance deadlines
 
