@@ -17,7 +17,7 @@ Unlike BitLocker, which encrypts entire volumes and disks, Personal Data Encrypt
 
 :::row:::
   :::column span="2":::
-  Starting in Windows 11, version 24H2, Personal Data Encryption is further enhanced with *Personal Data Encryption for known folders*, which extends protection to the Windows folders: **Desktop**, **Documents**, and **Pictures**. This means that any files stored in these folders are automatically encrypted, providing an extra layer of security for commonly used directories.
+  Starting in Windows 11, version 24H2, Personal Data Encryption is further enhanced with *Personal Data Encryption for known folders*. Once enabled, the Windows folders **Desktop**, **Documents**, and **Pictures**, along with their contents, are automatically encrypted. This feature provides a quick and easy way to add an extra layer of security to commonly used folders.
   :::column-end:::
   :::column span="2":::
   :::image type="content" source="images/pde-known-folders.png" alt-text="Icons of the known folders with a padlock representing their encryption status." border="false":::
@@ -29,6 +29,7 @@ Unlike BitLocker, which encrypts entire volumes and disks, Personal Data Encrypt
 To use Personal Data Encryption, the following prerequisites must be met:
 
 - Windows 11, version 22H2 and later
+  - Personal Data Encryption for known folders is only available on Windows 11, version 24H2 and later
 - The devices must be [Microsoft Entra joined][ENTRA-1] or [Microsoft Entra hybrid joined][ENTRA-2]. Domain-joined devices aren't supported
 - Users must sign in using [Windows Hello for Business](../../../identity-protection/hello-for-business/index.md)
 
