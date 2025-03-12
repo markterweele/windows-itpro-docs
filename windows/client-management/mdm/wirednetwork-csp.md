@@ -1,7 +1,7 @@
 ---
 title: WiredNetwork CSP
 description: Learn more about the WiredNetwork CSP.
-ms.date: 02/13/2025
+ms.date: 03/12/2025
 ms.topic: generated-reference
 ---
 
@@ -32,7 +32,7 @@ The following list shows the WiredNetwork configuration service provider nodes:
 <!-- Device-EnableBlockPeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-EnableBlockPeriod-Applicability-End -->
 
 <!-- Device-EnableBlockPeriod-OmaUri-Begin -->
@@ -72,7 +72,7 @@ Enable block period (minutes), used to specify the duration for which automatic 
 <!-- Device-LanXML-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-LanXML-Applicability-End -->
 
 <!-- Device-LanXML-OmaUri-Begin -->
@@ -111,7 +111,7 @@ XML describing the wired network configuration and follows the LAN_profile schem
 <!-- User-EnableBlockPeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- User-EnableBlockPeriod-Applicability-End -->
 
 <!-- User-EnableBlockPeriod-OmaUri-Begin -->
@@ -151,7 +151,7 @@ Enable block period (minutes), used to specify the duration for which automatic 
 <!-- User-LanXML-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- User-LanXML-Applicability-End -->
 
 <!-- User-LanXML-OmaUri-Begin -->
