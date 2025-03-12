@@ -18,7 +18,7 @@ ms.date: 03/14/2025
 
 Deploying feature or quality updates for many organizations is only part of the equation for managing their device ecosystem. The ability to enforce update compliance is the next important part. Windows Update for Business provides controls to manage deadlines for when devices should migrate to newer versions.
 
-With a current version, it's best to use the new policy introduced in June 2019 to Windows 10, version 1709 and later: **Specify deadlines for automatic updates and restarts**. In MDM, this policy is available as separate settings:
+With a current version of Windows, it's best to use the policy first introduced in June 2019 to Windows 10, version 1709 and later: **Specify deadlines for automatic updates and restarts**. In MDM, this policy is available as separate settings:
 
 - [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates) 
 - [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
@@ -36,27 +36,22 @@ With a current version, it's best to use the new policy introduced in June 2019 
 
 |Policy| Description |
 |-|-|
-| Specify deadlines for automatic updates and restarts | This policy lets you specify the number of days before quality and feature updates are installed on devices automatically, and a grace period, after which required restarts occur automatically. This policy includes an option to opt out of automatic restarts until the end of the grace period is reached. |
+| Specify deadline for automatic updates and restarts for quality update | This policy lets you specify the number of days before quality  updates are installed on devices automatically, and a grace period, after which required restarts occur automatically. This policy includes an option to opt out of automatic restarts until the end of the grace period is reached. |
+| Specify deadline for automatic updates and restarts for feature update | This policy lets you specify the number of days before feature updates are installed on devices automatically, and a grace period, after which required restarts occur automatically. This policy includes an option to opt out of automatic restarts until the end of the grace period is reached. |
 
-### Suggested configurations for clients running Windows 11, version 22H2 and later
-
-| Policy | Location | Quality updates deadline in days | Quality updates grace period in days | Feature updates deadline in days | Feature updates grace period in days |
-|-|-|-|-|-|-|
-| Specify deadlines for automatic updates and restarts | GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadlines for automatic updates and restarts | 2 | 3 | 2 | 3 |
-
-When **Specify deadlines for automatic updates and restarts** is set:
+When **Specify deadlines for automatic updates and restarts** for either quality updates or feature updates is set:
 
 The deadline calculation for both quality and feature updates is based off the time the client's update scan initially discovered the update. Previously, the deadline was based off the release date of the update for quality updates and the reboot pending date for feature updates. The change for deadline calculation was made to improve the predictability of restart. 
 
 The grace period for both quality and feature updates starts its countdown from the time of a pending restart after the installation is complete. This grace period is especially helpful for users returning from vacation or the time away, preventing an immediate forced reboot when they come back.
 
-Once the *effective deadline* is reached, the device tries to restart during active hours. The effective deadline is whichever is the later of the  scan discovery time plus the specified deadline or the  scan discovery time plus the grace period. As soon as installation is complete and the device reaches pending restart, users are able to schedule restarts during the grace period and Windows can still automatically restart outside of active hours if users choose not to schedule restarts.
+Once the *effective deadline* is reached, the device tries to restart during active hours. The effective deadline is whichever is the later of the scan discovery time plus the specified deadline or the  scan discovery time plus the grace period. As soon as installation is complete and the device reaches pending restart, user are able to schedule restart before deadline occurs and Windows can still automatically restart outside of active hours if users choose not to schedule restarts.
 
 > [!NOTE]
 > - When these policies are used, [user settings for notifications](waas-wufb-csp-mdm.md#user-settings-for-notifications) are also used on clients running Windows 11, version 22H2 and later.
-> - When **Specify deadlines for automatic updates and restarts** is used, updates will be downloaded and installed as soon as they are offered. 
-> - When **Specify deadlines for automatic updates and restarts** is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored.
->    - For Windows 11 clients, starting with the December 10, 2024 update, [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored once the deadline passes.
+> - When **Specify deadlines for automatic updates and restarts** for either quality updates or feature updates is used, updates will be downloaded and installed as soon as they are offered. 
+> - When **Specify deadlines for automatic updates and restarts** for either quality updates or feature updates is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored.
+>    - Starting with the December 10, 2024 update for Windows 11, version 22H2 and later clients, [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are respected before the deadline occurs, and ignored once the deadline passes.
 
 
 # [Policy setting for Windows 11, version 21H2 and earlier](#tab/2h2policy)
@@ -82,7 +77,7 @@ For quality updates, the deadline countdown starts from the time the update is *
 > [!NOTE]
 > - When using the newer policy that contains **Feature updates grace period in days**, this setting is ignored by clients that are running Windows 11 version 21H2 and earlier. The grace period for quality updates is used for both quality updates and feature updates for these clients.
 > - When **Specify deadlines for automatic updates and restarts** is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored. 
->    - For Windows 11 clients, starting with the December 10, 2024 update, [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored once the deadline passes.
+
 ---
 
 ## User experience for restart notifications with compliance deadlines
