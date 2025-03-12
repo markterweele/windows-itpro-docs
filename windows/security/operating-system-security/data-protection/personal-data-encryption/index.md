@@ -7,9 +7,9 @@ ms.date: 03/12/2025
 
 # Personal Data Encryption overview
 
-Personal Data Encryption is a security feature that provides file-based data encryption capabilities to Windows. It utilizes Windows Hello for Business to link *data encryption keys* with user credentials. When a user signs in to a device using Windows Hello for Business, decryption keys are released, and encrypted data becomes accessible to the user. Conversely, when a user logs off, decryption keys are discarded, rendering the data inaccessible even if another user signs into the device. This ensures that sensitive information remains protected at all times.
+Personal Data Encryption is a security feature that provides file-based data encryption capabilities to Windows. It utilizes Windows Hello for Business to link *data encryption keys* with user credentials. When a user signs in to a device using Windows Hello, decryption keys are released, and encrypted data becomes accessible to the user. Conversely, when a user logs off, decryption keys are discarded, rendering the data inaccessible even if another user signs into the device. This ensures that sensitive information remains protected at all times.
 
-The benefits of Personal Data Encryption are significant. By reducing the number of credentials needed to access encrypted content, users only need to sign in with Windows Hello for Business. Additionally, the accessibility features available with Windows Hello for Business extend to Personal Data Encryption protected content.
+The benefits of Personal Data Encryption are significant. By reducing the number of credentials needed to access encrypted content, users only need to sign in with Windows Hello. Additionally, the accessibility features available with Windows Hello extend to Personal Data Encryption protected content.
 
 Unlike BitLocker, which encrypts entire volumes and disks, Personal Data Encryption focuses on individual files, providing an additional layer of security. This feature not only enhances data protection but also shows a strong commitment to safeguarding personal information.
 
