@@ -8,7 +8,7 @@ ms.topic: include
 ms.date: 03/14/2025
 ms.localizationpriority: medium
 ---
-<!--This file is shared by update/wufb-compliancedeadlines.md, /update/waas-wufb-csp-mdm.md, /update/waas-wufb-group-policy.md, and  ?/update/waas-restart.md? articles. Headings are driven by article context. Updated with 9091858 -->
+<!--This file is shared by update/wufb-compliancedeadlines.md. It may be added to /update/waas-wufb-csp-mdm.md, /update/waas-wufb-group-policy.md, and /update/waas-restart.md articles later. Headings are driven by article context. Updated with 9091858 -->
 
 These deadline policies also offer an option to opt out of automatic restarts until a deadline is reached by presenting an "engaged restart experience" until the deadline passes. At that point, the device automatically schedules a restart regardless of active hours.
 
@@ -25,7 +25,7 @@ While restart is pending, before the deadline occurs, users receive a toast noti
 
 :::image type="content" source="../media/9091858-11-initial-toast.png" alt-text="Screenshot of the initial toast notification displayed in Windows 11 version 23H2, or later, for a user when a restart is needed for an update but isn't past the deadline." lightbox="../media/9091858-initial-toast.png":::
 
-Toast notifications occur about every 27 hours until the day of the deadline. During this time, if they're allowed, automatic restarts might be scheduled after active hours. If an automatic restart is scheduled or the user scheduled the restart, and the user is signed in at that time, they receive a notification 15 minutes before the scheduled time.
+Depending on settings both users and admins configure, toast notification may occur occasionally before the day of the deadline to remind the user of the update. During this time, if they're allowed, automatic restarts might be scheduled after active hours. If an automatic restart is scheduled or the user scheduled the restart, and the user is signed in at that time, they receive a notification 15 minutes before the scheduled time.
 
 :::image type="content" source="../media/9091858-11-pre-deadline-restart-imminent.png" alt-text="Screenshot of the dialog displayed in Windows 11 version 23H2, or later, for a user when a restart is needed for an update but the deadline isn't reached yet. The notification contains the deadline time and options to restart now or acknowledge the notification" lightbox="../media/9091858-pre-deadline-restart-imminent.png":::
 
@@ -59,7 +59,7 @@ For the first few days, the user receives a toast notification in the corner of 
 
 :::image type="content" source="../media/9091858-initial-toast.png" alt-text="Screenshot of the initial toast notification displayed for a user when a restart is needed for an update but the deadline isn't reached yet. This notification is displayed for Windows 11, version 22H2, and earlier devices. " lightbox="../media/9091858-initial-toast.png":::
 
-As the deadline gets closer, notifications display in the middle of the screen about every 24 hours until the day of the deadline. 
+Depending on settings both users and admins configure, notifications display in the middle of the screen as the deadline gets closer. 
 - If there's still time for an automatic restart to occur after active hours, the dialog displays an option to let the device restart later along with options to restart now or to pick a time to schedule a restart.
    :::image type="content" source="../media/9091858-dialog-18-hours.png" alt-text="Screenshot of the notification displayed for a user when a restart is needed for an update and there's still time for an automatic restart to occur." lightbox="../media/9091858-dialog-18-hours.png":::
 - If there's not time for an automatic restart to occur after active hours, the dialog displays options to pick a time to schedule a restart, restart now, or remind the user later.
