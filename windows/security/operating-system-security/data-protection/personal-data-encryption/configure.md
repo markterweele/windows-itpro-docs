@@ -1,8 +1,8 @@
 ---
-title: Personal Data Encryption settings and configuration
-description: Learn about the available options to configure Personal Data Encryption (Personal Data Encryption) and how to configure them via Microsoft Intune or Configuration Service Providers (CSP).
+title: Personal Data Encryption Settings and Configuration
+description: Learn about the available options to configure Personal Data Encryption and how to configure them via Microsoft Intune or Configuration Service Providers (CSP).
 ms.topic: how-to
-ms.date: 09/24/2024
+ms.date: 03/12/2025
 ---
 
 # Personal Data Encryption settings and configuration

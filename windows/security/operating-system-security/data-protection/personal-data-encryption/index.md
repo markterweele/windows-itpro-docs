@@ -1,24 +1,28 @@
 ---
-title: Personal Data Encryption
-description: Personal Data Encryption unlocks user encrypted files at user sign-in instead of at boot.
-ms.topic: how-to
-ms.date: 09/24/2024
+title: Personal Data Encryption Overview
+description: Learn about Personal Data Encryption, a security feature that provides file-based data encryption capabilities to Windows.
+ms.topic: overview
+ms.date: 03/12/2025
 ---
 
-# Personal Data Encryption
+# Personal Data Encryption overview
 
-Starting in Windows 11, version 22H2, Personal Data Encryption is a security feature that provides file-based data encryption capabilities to Windows.
+Personal Data Encryption is a security feature that provides file-based data encryption capabilities to Windows. It utilizes Windows Hello for Business to link *data encryption keys* with user credentials. When a user signs in to a device using Windows Hello for Business, decryption keys are released, and encrypted data becomes accessible to the user. Conversely, when a user logs off, decryption keys are discarded, rendering the data inaccessible even if another user signs into the device. This ensures that sensitive information remains protected at all times.
 
-Personal Data Encryption utilizes Windows Hello for Business to link *data encryption keys* with user credentials. When a user signs in to a device using Windows Hello for Business, decryption keys are released, and encrypted data is accessible to the user.\
-When a user logs off, decryption keys are discarded and data is inaccessible, even if another user signs into the device.
+The benefits of Personal Data Encryption are significant. By reducing the number of credentials needed to access encrypted content, users only need to sign in with Windows Hello for Business. Additionally, the accessibility features available with Windows Hello for Business extend to Personal Data Encryption protected content.
 
-The use of Windows Hello for Business offers the following advantages:
+Unlike BitLocker, which encrypts entire volumes and disks, Personal Data Encryption focuses on individual files, providing an additional layer of security. This feature not only enhances data protection but also shows a strong commitment to safeguarding personal information.
 
-- It reduces the number of credentials to access encrypted content: users only need to sign-in with Windows Hello for Business
-- The accessibility features available when using Windows Hello for Business extend to Personal Data Encryption protected content
+## Personal Data Encryption for known folders
 
-Personal Data Encryption differs from BitLocker in that it encrypts files instead of whole volumes and disks. Personal Data Encryption occurs in addition to other encryption methods such as BitLocker.\
-Unlike BitLocker that releases data encryption keys at boot, Personal Data Encryption doesn't release data encryption keys until a user signs in using Windows Hello for Business.
+:::row:::
+  :::column span="2":::
+  Starting in Windows 11, version 24H2, Personal Data Encryption is further enhanced with *Personal Data Encryption for known folders*, which extends protection to the Windows folders: **Desktop**, **Documents**, and **Pictures**. This means that any files stored in these folders are automatically encrypted, providing an extra layer of security for commonly used directories.
+  :::column-end:::
+  :::column span="2":::
+  :::image type="content" source="images/pde-known-folders.png" alt-text="Icons of the known folders with a padlock representing their encryption status." border="false":::
+  :::column-end:::
+:::row-end:::
 
 ## Prerequisites
 
@@ -95,14 +99,6 @@ The following are recommendations for using Personal Data Encryption:
 - Backup solution such as [OneDrive in Microsoft 365](/sharepoint/onedrive-overview). In certain scenarios, such as TPM resets or destructive PIN resets, the keys used by Personal Data Encryption to protect content will be lost making any protected content inaccessible. The only way to recover such content is from a backup. If the files are synced to OneDrive, to regain access you must re-sync OneDrive
 - [Windows Hello for Business PIN reset service](../../../identity-protection/hello-for-business/hello-feature-pin-reset.md). Destructive PIN resets will cause keys used by Personal Data Encryption to protect content to be lost, making any content protected with Personal Data Encryption inaccessible. After a destructive PIN reset, content protected with Personal Data Encryption must be recovered from a backup. For this reason, Windows Hello for Business PIN reset service is recommended since it provides non-destructive PIN resets
 - [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security) offers additional security when authenticating with Windows Hello for Business via biometrics or PIN
-
-## Windows out of box applications that support Personal Data Encryption
-
-Certain Windows applications support Personal Data Encryption out of the box. If Personal Data Encryption is enabled on a device, these applications will utilize Personal Data Encryption:
-
-| App name | Details |
-|-|-|
-| Mail | Supports protecting both email bodies and attachments|
 
 ## Next steps
 

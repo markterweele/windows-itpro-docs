@@ -7,9 +7,14 @@ ms.date: 09/24/2024
 
 # Personal Data Encryption for know folders
 
-Starting in Windows 11, version 24H2, Personal Data Encryption is further enhanced with Personal Data Encryption for known folders, which extends protection to the Windows folders: **Desktop**, **Documents**, and **Pictures**.
-
-:::image type="content" source="images/known-folders-pde.png" alt-text="Icons of the known folders with a padlock representing their encryption status.":::
+:::row:::
+  :::column span="2":::
+  Starting in Windows 11, version 24H2, Personal Data Encryption is further enhanced with *Personal Data Encryption for known folders*, which extends protection to the Windows folders: **Desktop**, **Documents**, and **Pictures**. This means that any files stored in these folders are automatically encrypted, providing an extra layer of security for commonly used directories.
+  :::column-end:::
+  :::column span="2":::
+  :::image type="content" source="images/pde-known-folders.png" alt-text="Icons of the known folders with a padlock representing their encryption status." border="false":::
+  :::column-end:::
+:::row-end:::
 
 ## Personal Data Encryption for know folders settings
 
