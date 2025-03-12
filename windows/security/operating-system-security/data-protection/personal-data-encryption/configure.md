@@ -91,6 +91,22 @@ Alternatively, you can configure devices using the [Policy CSP][CSP-1] and [Pers
 |`./Device/Vendor/MSFT/Policy/Config/Power/AllowHibernate` |int| `0`|
 |`./Device/Vendor/MSFT/Policy/Config/ADMX_CredentialProviders/AllowDomainDelayLock`|string|`<disabled/>`|
 
+## STORE
+
+[!INCLUDE [intune-settings-catalog-1](../../../../../includes/configure/intune-settings-catalog-1.md)]
+
+| Category | Setting name | Value |
+|--|--|--|
+| **Administrative Templates > Windows Components > Store** | Turn off the Store application| **Enabled**|
+
+[!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
+
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [Policy CSP][CSP-1].
+
+| Setting |
+|--|
+|- **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsStore/RemoveWindowsStore_2`<br>- **Data type:** string<br>- **Value:** `<enabled/>`|
+
 ## Disable Personal Data Encryption
 
 Once Personal Data Encryption is enabled, it isn't recommended to disable it. However if you need to disable Personal Data Encryption, you can do so using the following steps.
