@@ -23,6 +23,16 @@ The following table lists the required settings to enable Personal Data Encrypti
 |Enable Personal Data Encryption|Personal Data Encryption isn't enabled by default. Before Personal Data Encryption can be used, you must enable it.|
 |Sign-in and lock last interactive user automatically after a restart| Winlogon automatic restart sign-on (ARSO) isn't supported for use with Personal Data Encryption. To use Personal Data Encryption, ARSO must be disabled.|
 
+## Personal Data Encryption for known folders settings
+
+The following table lists the settings to configure Personal Data Encryption for known folders.
+
+| Setting name | Description |
+|-|-|
+|Protect Desktop|Enable Personal Data Encryption on the Desktop folder.|
+|Protect Documents|Enable Personal Data Encryption on the Documents folder.|
+|Protect Pictures|Enable Personal Data Encryption on the Pictures folder.|
+
 ## Personal Data Encryption hardening recommendations
 
 The following table lists the recommended settings to improve Personal Data Encryption's security.
@@ -55,7 +65,10 @@ Assign the policy to a group that contains as members the devices or users that 
 
 | Category | Setting name | Value |
 |--|--|--|
-|**PDE**|Enable Personal Data Encryption (User)|Enable Personal Data Encryption|
+|**Personal Data Encryption**|Enable Personal Data Encryption (User)|Enable Personal Data Encryption|
+|**Personal Data Encryption**|Protect Desktop (User)|Enable protection for the Desktop folder|
+|**Personal Data Encryption**|Protect Documents (User)|Enable protection for the Documents folder|
+|**Personal Data Encryption**|Protect Pictures (User)|Enable protection for the Pictures folder|
 |**Administrative Templates > Windows Components > Windows Logon Options**|Sign-in and lock last interactive user automatically after a restart|Disabled|
 |**Memory Dump**|Allow Live Dump|Block|
 |**Memory Dump**|Allow Crash Dump|Block|
@@ -84,6 +97,9 @@ Alternatively, you can configure devices using the [Policy CSP][CSP-1] and [Pers
 |OMA-URI|Format|Value|
 |-|-|-|
 |`./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption`|int|`1`|
+|`./User/Vendor/MSFT/PDE/ProtectFolders/ProtectDesktop`|int|`1`|
+|`./User/Vendor/MSFT/PDE/ProtectFolders/ProtectDocuments`|int|`1`|
+|`./User/Vendor/MSFT/PDE/ProtectFolders/ProtectPictures`|int|`1`|
 |`./Device/Vendor/MSFT/Policy/Config/WindowsLogon/AllowAutomaticRestartSignOn`|string|`<disabled/>`|
 |`./Device/Vendor/MSFT/Policy/Config/MemoryDump/AllowCrashDump`| int| `0`|
 |`./Device/Vendor/MSFT/Policy/Config/MemoryDump/AllowLiveDump` |int| `0`|
@@ -91,21 +107,16 @@ Alternatively, you can configure devices using the [Policy CSP][CSP-1] and [Pers
 |`./Device/Vendor/MSFT/Policy/Config/Power/AllowHibernate` |int| `0`|
 |`./Device/Vendor/MSFT/Policy/Config/ADMX_CredentialProviders/AllowDomainDelayLock`|string|`<disabled/>`|
 
-## STORE
+## User experience
 
-[!INCLUDE [intune-settings-catalog-1](../../../../../includes/configure/intune-settings-catalog-1.md)]
+When Personal Data Encryption is enabled, the user experience is as follows:
 
-| Category | Setting name | Value |
-|--|--|--|
-| **Administrative Templates > Windows Components > Store** | Turn off the Store application| **Enabled**|
+- If the user is signed in with Windows Hello for Business, the user can access Personal Data Encryption protected content
+- The data protected by Personal Data Encryption is only accessible when the user is signed in with Windows Hello for Business, and can be identified by the padlock icon on the file or folder
+    :::image type="content" source="images/pde-protection.png" alt-text="Screenshot of File Explorer with some files protected by Personal Data Encryption, displaying a padlock.":::
+- If the user tries to sign in with a password, a message appears on the sign in screen indicating that the user must sign in with Windows Hello for Business to access Personal Data Encryption protected content
+    :::image type="content" source="images/pde-sign-in.png" alt-text="Screenshot of the sign in screen. If a user attempts to sign in with a password, a message indicates that the files protected by Personal Data Encryption will be unavailable.":::
 
-[!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
-
-Alternatively, you can configure devices using a [custom policy][INT-1] with the [Policy CSP][CSP-1].
-
-| Setting |
-|--|
-|- **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsStore/RemoveWindowsStore_2`<br>- **Data type:** string<br>- **Value:** `<enabled/>`|
 
 ## Disable Personal Data Encryption
 
@@ -128,7 +139,7 @@ Assign the policy to a group that contains as members the devices or users that 
 
 | Category | Setting name | Value |
 |--|--|--|
-|**PDE**|**Enable Personal Data Encryption (User)**|Disable Personal Data Encryption|
+|**Personal Data Encryption**|**Enable Personal Data Encryption (User)**|Disable Personal Data Encryption|
 
 [!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
 
@@ -142,7 +153,7 @@ You can disable Personal Data Encryption with CSP using the following setting:
 
 ## Decrypt encrypted content
 
-Disabling Personal Data Encryption doesn't decrypt any Personal Data Encryption protected content. It only prevents the Personal Data Encryption API from being able to protect any additional content. Pprotected files can be manually decrypted using the following steps:
+Disabling Personal Data Encryption decrypts only the content in the known folders. It doesn't decrypt any content that was protected using the Personal Data Encryption APIs and prevents the Personal Data Encryption API from being able to protect any additional content. Protected files can be manually decrypted using the following steps:
 
 1. Open the properties of the file
 1. Under the **General** tab, select **Advanced...**
