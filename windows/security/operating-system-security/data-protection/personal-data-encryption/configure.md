@@ -10,9 +10,9 @@ ms.date: 03/12/2025
 This article describes the Personal Data Encryption settings and how to configure them via Microsoft Intune or Configuration Service Providers (CSP).
 
 > [!NOTE]
-> Personal Data Encryption can be configured using MDM policies. The content to be protected by Personal Data Encryption can be specified using [Personal Data Encryption APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager). There is no user interface in Windows to either enable Personal Data Encryption or protect content using Personal Data Encryption.
+> Personal Data Encryption can be configured using CSP policies. The content to be protected by Personal Data Encryption can be specified using Personal Data Encryption for known folders and [Personal Data Encryption APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager).
 >
-> The Personal Data Encryption APIs can be used to create custom applications and scripts to specify which content to protect and at what level to protect the content. Additionally, the Personal Data Encryption APIs can't be used to protect content until the Personal Data Encryption policy has been enabled.
+> The Personal Data Encryption APIs can be used to create custom applications and scripts to specify which content to protect and at what level to protect the content. Additionally, the Personal Data Encryption APIs can't be used to protect content until the Personal Data Encryption policy is enabled.
 
 ## Personal Data Encryption settings
 
@@ -81,7 +81,7 @@ Assign the policy to a group that contains as members the devices or users that 
 > [!TIP]
 > Use the following Graph call to automatically create the settings catalog policy in your tenant without assignments nor scope tags.
 >
-> When using this call, authenticate to your tenant in the Graph Explorer window. If it's the first time using Graph Explorer, you may need to authorize the application to access your tenant or to modify the existing permissions. This graph call requires *DeviceManagementConfiguration.ReadWrite.All* permissions.
+> When using this call, authenticate to your tenant in the Graph Explorer window. If it's the first time using Graph Explorer, you might need to authorize the application to access your tenant or to modify the existing permissions. This graph call requires *DeviceManagementConfiguration.ReadWrite.All* permissions.
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies
@@ -111,12 +111,12 @@ Alternatively, you can configure devices using the [Policy CSP][CSP-1] and [Pers
 
 When Personal Data Encryption is enabled, the user experience is as follows:
 
-- If the user signs in with Windows Hello, the user can access Personal Data Encryption protected content
-- If the user signs in without Windows Hello, the user is denied access to Personal Data Encryption protected content
-- The data protected by Personal Data Encryption can be identified by the padlock icon on the file or folder
+- Access to Personal Data Encryption protected content is only possible when users sign in using Windows Hello (biometrics or PIN). If users sign in without Windows Hello, they can't open encrypted content
+- If a user attempts to sign in without Windows Hello, a message appears on the sign in screen indicating that to access encrypted content the user must sign in with Windows Hello
+    :::image type="content" source="images/pde-sign-in.png" lightbox="images/pde-sign-in.png" alt-text="Screenshot of the sign in screen. If a user attempts to sign in with a password, a message indicates that the files protected by Personal Data Encryption aren't accessible." border="false":::
+- The data protected by Personal Data Encryption has a padlock on the file or folder's icon. The padlock icon is displayed in File Explorer and on the desktop
     :::image type="content" source="images/pde-protection.png" alt-text="Screenshot of File Explorer with some files protected by Personal Data Encryption, displaying a padlock." border="false":::
-- If the user tries to sign in without using Windows Hello, a message appears on the sign in screen indicating that the user must sign in with Windows Hello to access encrypted content
-    :::image type="content" source="images/pde-sign-in.png" lightbox="images/pde-sign-in.png" alt-text="Screenshot of the sign in screen. If a user attempts to sign in with a password, a message indicates that the files protected by Personal Data Encryption will be unavailable." border="false":::
+
 
 ## Disable Personal Data Encryption
 
@@ -153,7 +153,7 @@ You can disable Personal Data Encryption with CSP using the following setting:
 
 ## Decrypt encrypted content
 
-Disabling Personal Data Encryption decrypts only the content in the known folders. It doesn't decrypt any content that was protected using the Personal Data Encryption APIs and prevents the Personal Data Encryption API from being able to protect any additional content. Protected files can be manually decrypted using the following steps:
+When you disable Personal Data Encryption, the content encrypted using Personal Data Encryption for known folders is automatically decrypted. However, the content encrypted using Personal Data Encryption APIs isn't decrypted automatically. To decrypt this content, follow these steps:
 
 1. Open the properties of the file
 1. Under the **General** tab, select **Advanced...**
@@ -180,7 +180,7 @@ To decrypt files on a device using `cipher.exe`:
   ```
 
 > [!IMPORTANT]
-> Once a user selects to manually decrypt a file, the user won't be able to manually protect the file again using Personal Data Encryption.
+> Once a user selects to manually decrypt a file, the user can't manually protect the file again using Personal Data Encryption.
 
 ## Next steps
 
