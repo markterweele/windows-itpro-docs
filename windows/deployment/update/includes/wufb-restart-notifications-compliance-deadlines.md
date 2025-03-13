@@ -16,7 +16,9 @@ These notifications are what the user sees depending on the settings you choose,
 
 # [Windows 11, version 23H2 and later](#tab/23h2)
 
-When **Specify deadlines for automatic updates and restarts** is set for Windows 11, version 23H2 and later: 
+The following notifications are what the user sees on Windows 11, version 23H2 and later, depending on the settings chosen by the user and the IT administrator:
+
+When **Specify deadlines for automatic updates and restarts** is set: 
 
 While restart is pending, before the deadline occurs, users receive a toast notification in the corner of their screen. The notification includes the deadline date, and options to either restart now, pick a time to restart, or restart tonight once active hours ends. 
 
@@ -50,7 +52,9 @@ In cases where the deadline has passed and the restart failed, the user receives
 
 # [Windows 11, version 22H2 and earlier](#tab/22h2)
 
-When **Specify deadlines for automatic updates and restarts** is set while restart is pending, before the deadline occurs:
+The following notifications are what the user sees on Windows 11, version 22H2 and earlier, depending on the settings chosen by the user and the IT administrator:
+
+When **Specify deadlines for automatic updates and restarts** is set:
 
 For the first few days, the user receives a toast notification in the corner of their screen. The notification includes the deadline date, and options to either restart now, pick a time to restart, or restart tonight once active hours ends. 
 
@@ -87,7 +91,7 @@ In cases where the deadline has passed and the restart failed, the user receives
 
 # [Windows 10, version 22H2](#tab/10)
 
-These notifications are what the user sees on Windows 10, depending on the settings you choose:
+These notifications are what the user sees on Windows 10, depending on the settings chosen by the user and the IT administrator:
 
 When **Specify deadlines for automatic updates and restarts** is set (For Windows 10, version 1709 and later):
 

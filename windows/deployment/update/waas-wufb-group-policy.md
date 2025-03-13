@@ -17,7 +17,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
-ms.date: 10/01/2024
+ms.date: 03/15/2025
 ---
 
 # Walkthrough: Use Group Policy to configure Windows Update for Business
@@ -168,8 +168,7 @@ Users have the following options for the **Notify me when a restart is required 
 When a deadline is set for 0 days, no matter which option is selected, the only notification users receive is a final nondismissable notification 15 minutes before a forced restart.
 
 The user preference for notifications applies when [compliance deadlines](wufb-compliancedeadlines.md) are used. The policy for compliance deadlines is under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Specify deadlines for automatic updates and restarts**.
-
-
+- In Windows version 22H2 and later, the **Specify deadlines for automatic updates and restarts** policy is split in to two policies: **Specify deadline for automatic updates and restarts for quality update** and **Specify deadline for automatic updates and restarts for feature update**. 
 ### I want to manage the notifications a user sees
 
 There are additional settings that affect the notifications.

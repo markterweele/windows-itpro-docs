@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 10/01/2024
+ms.date: 03/15/2025
 ---
 
 # Walkthrough: Use CSPs and MDMs to configure Windows Update for Business
@@ -109,7 +109,7 @@ If you need a device to stay on a version beyond the point when deferrals on the
 
 ### I want to manage when devices download, install, and restart after updates
 
-We recommended that you allow to update automatically, which is the default behavior. If you don't set an automatic update policy, the device attempts to download, install, and restart at the best times for the user by using built-in intelligence such as intelligent active hours.
+We recommended that you allow updating automatically, which is the default behavior. If you don't set an automatic update policy, the device attempts to download, install, and restart at the best times for the user by using built-in intelligence such as intelligent active hours.
 
 For more granular control, you can set the maximum period of active hours the user can set with [Update/ActiveHoursMaxRange](/windows/client-management/mdm/policy-csp-update#activehoursmaxrange). You could also set specific start and end times for active ours with [Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#activehoursend) and [Update/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#activehoursstart).
 
@@ -134,11 +134,19 @@ If you don't want to allow any automatic updates prior to the deadline, set [Upd
 
 We recommend that you use set specific deadlines for feature and quality updates to ensure that devices stay secure on Windows 10, version 1709 and later. Deadlines work by enabling you to specify the number of days that can elapse after an update is offered to a device before it must be installed. Also you can set the number of days that can elapse after a pending restart before the user is forced to restart. Use these settings:
 
-- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlineforfeatureupdates) 
-- [Update/ConfigureDeadlineForQualityUpdates ](/windows/client-management/mdm/policy-csp-update#configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates)
-- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautoreboot)
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates) 
+- [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates) (Windows 11, version 22H2 and later)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautoreboot) (Windows 11, version 21H2 and Windows 10, version 22H2 and earlier)
+   - [Update/ConfigureDeadlineNoAutoRebootForQualityUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautorebootforqualityupdates) (Windows 11, version 22H2 and later)
+   - [Update/ConfigureDeadlineNoAutoRebootForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautorebootforfeatureupdates) (Windows 11, version 22H2 and later)
+
+> [!NOTE]
+> - When these policies are used, [user settings for notifications](w#user-settings-for-notifications) are also used on clients running Windows 11, version 22H2 and later.
+> - When **Specify deadlines for automatic updates and restarts** for either quality updates or feature updates is used, updates will be downloaded and installed as soon as they are offered. 
+> - When **Specify deadlines for automatic updates and restarts** for either quality updates or feature updates is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored.
+>    - Starting with the December 10, 2024 update for Windows 11, version 22H2 and later clients, [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are respected before the deadline occurs, and ignored once the deadline passes.
 
 For more information, see [Enforcing compliance deadlines for updates](wufb-compliancedeadlines.md).
 
@@ -166,8 +174,11 @@ The user preference for notifications applies when the following policies for [c
 - [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates) 
 - [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 - [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineGracePeriodForFeatureUpdates (Windows 11, version 22H2 or later)](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates)
-- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot) 
+- [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates) (Windows 11, version 22H2 and later)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautoreboot) (Windows 11, version 21H2 and Windows 10, version 22H2 and earlier)
+   - [Update/ConfigureDeadlineNoAutoRebootForQualityUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautorebootforqualityupdates) (Windows 11, version 22H2 and later)
+   - [Update/ConfigureDeadlineNoAutoRebootForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautorebootforfeatureupdates) (Windows 11, version 22H2 and later)
+
 
 ### I want to manage the notifications a user sees
 
