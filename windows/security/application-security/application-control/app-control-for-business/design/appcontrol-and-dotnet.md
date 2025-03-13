@@ -21,7 +21,7 @@ To mitigate any performance reduction caused when the App Control EA isn't valid
 
 - Avoid updating the App Control policies often.
 - Run `ngen update` (on all machine architectures) to force .NET to regenerate all NI files immediately after applying changes to your App Control policies.
-- Migrate applications to .NET Core (.NET 6 or greater).
+- Migrate applications to .NET Core (.NET 6 or greater) and enable [Native AOT](/dotnet/core/deploying/native-aot).
 
 ## App Control and .NET Dynamic Code Security hardening
 
