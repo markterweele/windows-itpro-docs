@@ -14,7 +14,7 @@ These deadline policies also offer an option to opt out of automatic restarts un
 
 These notifications are what the user sees depending on the settings you choose, and what operating system version their device is running. Generally, the user notifications become more noticeable as the deadline approaches. The experience described is the default and assumes there's ample time for notifications before the [effective deadline](../wufb-compliancedeadlines.md) occurs. The description doesn't account for changes to the **Display options for update notifications** policy ([Update/NoUpdateNotificationsDuringActiveHours](/windows/client-management/mdm/policy-csp-update#noupdatenotificationsduringactivehours)) or other settings that would significantly change the experience. 
 
-# [Windows 11, version 23H2 and later](#tab/23h2)
+# [Windows 11, version 23H2 and later](#tab/w11-23h2-notifications)
 
 The following notifications are what the user sees on Windows 11, version 23H2 and later, depending on the settings chosen by the user and the IT administrator:
 
@@ -50,7 +50,7 @@ In cases where the deadline has passed and the restart failed, the user receives
 
 :::image type="content" source="../media/9091858-past-deadline-restart-failed.png" alt-text="Screenshot of the dialog displayed in Windows 11 version 23H2, or later, for a user if their scheduled restart fails and it's past the deadline. The user has 5 minutes to select restart before the device is forced to restart." lightbox="../media/9091858-past-deadline-restart-failed.png":::
 
-# [Windows 11, version 22H2 and earlier](#tab/22h2)
+# [Windows 11, version 22H2 and earlier](#tab/w11-22h2-notifications)
 
 The following notifications are what the user sees on Windows 11, version 22H2 and earlier, depending on the settings chosen by the user and the IT administrator:
 
@@ -89,7 +89,7 @@ In cases where the deadline has passed and the restart failed, the user receives
 
 :::image type="content" source="../media/9091858-past-deadline-restart-failed.png" alt-text="Screenshot of the dialog displayed for a user if their scheduled restart fails and it's past the deadline. The user has 5 minutes to select restart before the device is forced to restart." lightbox="../media/9091858-past-deadline-restart-failed.png":::
 
-# [Windows 10, version 22H2](#tab/10)
+# [Windows 10, version 22H2](#tab/w10-22h2-notifications)
 
 These notifications are what the user sees on Windows 10, depending on the settings chosen by the user and the IT administrator:
 

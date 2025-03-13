@@ -16,30 +16,31 @@ ms.date: 03/14/2025
 ---
 # Enforcing compliance deadlines for updates
 
-Deploying feature or quality updates for many organizations is only part of the equation for managing their device ecosystem. The ability to enforce update compliance is the next important part. Windows Update for Business provides controls to manage deadlines for when devices should migrate to newer versions.
+Deploying feature or quality updates for many organizations is only part of the equation for managing their device ecosystem. The ability to enforce update compliance is the next important part. Windows Update for Business provides controls to manage deadlines for when devices should migrate to newer versions. This article contains information on how to enforce compliance deadlines for clients that use Windows Update for Business.
 
-With a current version of Windows, it's best to use the policy first introduced in June 2019 to Windows 10, version 1709 and later: **Specify deadlines for automatic updates and restarts**. In MDM, this policy is available as separate settings:
 
-- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates) 
-- [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates) (Windows 11, version 22H2 and later)
-- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautoreboot) (Windows 11, version 21H2 and Windows 10, version 22H2 and earlier)
-   - [Update/ConfigureDeadlineNoAutoRebootForQualityUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautorebootforqualityupdates) (Windows 11, version 22H2 and later)
-   - [Update/ConfigureDeadlineNoAutoRebootForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautorebootforfeatureupdates) (Windows 11, version 22H2 and later)
+## Policies for compliance deadlines
 
-## Policy settings for compliance deadlines
+# [Policies for Windows 11, version 22H2 and later](#tab/w11-22h2-policy)
 
-# [Policy setting for Windows 11, version 22H2 and later](#tab/22h2policy)
+### Policies for clients running Windows 11, version 22H2 and later
 
-### Policy setting overview for clients running Windows 11, version 22H2 and later
+With Windows 11, version 22H2 and later, the following policies are available to manage compliance deadlines for updates:
 
 |Policy| Description |
 |-|-|
-| Specify deadline for automatic updates and restarts for quality update | This policy lets you specify the number of days before quality  updates are installed on devices automatically, and a grace period, after which required restarts occur automatically. This policy includes an option to opt out of automatic restarts until the end of the grace period is reached. |
-| Specify deadline for automatic updates and restarts for feature update | This policy lets you specify the number of days before feature updates are installed on devices automatically, and a grace period, after which required restarts occur automatically. This policy includes an option to opt out of automatic restarts until the end of the grace period is reached. |
+| **Specify deadline for automatic updates and restarts for quality update** | This policy lets you specify the number of days before quality  updates are installed on devices automatically, and a grace period, after which required restarts occur automatically. This policy includes an option to opt out of automatic restarts until the end of the grace period is reached. |
+| **Specify deadline for automatic updates and restarts for feature update** | This policy lets you specify the number of days before feature updates are installed on devices automatically, and a grace period, after which required restarts occur automatically. This policy includes an option to opt out of automatic restarts until the end of the grace period is reached. |
 
-When **Specify deadlines for automatic updates and restarts** for either quality updates or feature updates is set:
+In MDM, these policies are available as separate settings:
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates) 
+- [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates) <!--Windows 11, version 22H2 and later-->
+- [Update/ConfigureDeadlineNoAutoRebootForQualityUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautorebootforqualityupdates) <!--Windows 11, version 22H2 and later-->
+- [Update/ConfigureDeadlineNoAutoRebootForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautorebootforfeatureupdates) <!--Windows 11, version 22H2 and later-->
+
+When **Specify deadline for automatic updates and restarts** for either quality updates or feature updates is set:
 
 The deadline calculation for both quality and feature updates is based off the time the client's update scan initially discovered the update. Previously, the deadline was based off the release date of the update for quality updates and the reboot pending date for feature updates. The change for deadline calculation was made to improve the predictability of restart. 
 
@@ -49,24 +50,34 @@ Once the *effective deadline* is reached, the device tries to restart during act
 
 > [!NOTE]
 > - When these policies are used, [user settings for notifications](waas-wufb-csp-mdm.md#user-settings-for-notifications) are also used on clients running Windows 11, version 22H2 and later.
-> - When **Specify deadlines for automatic updates and restarts** for either quality updates or feature updates is used, updates will be downloaded and installed as soon as they are offered. 
-> - When **Specify deadlines for automatic updates and restarts** for either quality updates or feature updates is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored.
+> - When **Specify deadline for automatic updates and restarts** for either quality updates or feature updates is used, updates will be downloaded and installed as soon as they are offered. 
+> - When **Specify deadline for automatic updates and restarts** for either quality updates or feature updates is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored.
 >    - Starting with the December 10, 2024 update for Windows 11, version 22H2 and later clients, [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are respected before the deadline occurs, and ignored once the deadline passes.
 
 
-# [Policy setting for Windows 11, version 21H2 and earlier](#tab/2h2policy)
+# [Policies for Windows 10, version 22H2](#tab/w10-2h2-policy)
 
-### Policy setting overview for clients running Windows 11, version 21H2 and earlier
+### Policies for clients running Windows 10, version 22H2
+<!-- also applies to Windows 11, version 21H2 and earlier --> 
+With Windows 10, version 22H2, the following policies are available to manage compliance deadlines for updates:
 
 |Policy|Description |
 |-|-|
-| (Windows 10, version 1709 and later) Specify deadlines for automatic updates and restarts | This policy includes a deadline and a configurable grace period with the option to opt out of automatic restarts until the deadline is reached. This is the recommended policy for Windows 10, version 1709 and later.|
+| Specify deadlines for automatic updates and restarts | This policy includes a deadline and a configurable grace period with the option to opt out of automatic restarts until the deadline is reached. This is the recommended policy for Windows 10, version 1709 and later.|
 
-### Suggested configurations for clients running Windows 11, version 21H2 and earlier
+In MDM, these policies are available as separate settings: 
+
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates) 
+- [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautoreboot) 
+
+### Suggested configurations for clients running Windows 10, version 22H2
 
 |Policy|Location|Quality update deadline in days|Feature update deadline in days|Grace period in days|
 |-|-|-|-|-|
-|(Windows 10, version 1709 and later) Specify deadlines for automatic updates and restarts | GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadlines for automatic updates and restarts  | 2 | 2 | 3 |
+| Specify deadlines for automatic updates and restarts | GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadlines for automatic updates and restarts  | 2 | 2 | 3 |
 
 When **Specify deadlines for automatic updates and restarts** is set (Windows 10, version 1709 and later):
 
