@@ -196,7 +196,7 @@ When you disable this setting, users will see **Some settings are managed by you
 If you use Windows Server Update Server (WSUS), you can prevent users from scanning Windows Update. To do this, use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Remove access to use all Windows Update features**.
 
 ### I want to enable optional updates
-<!--7991583-->
+<!--7991583--> 
 *Applies to:* 
 - Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later <!--7991583-->
 - Windows 10, version 22H2 with [KB5032278](https://support.microsoft.com/help/5032278), or a later cumulative update installed <!--8503602-->
