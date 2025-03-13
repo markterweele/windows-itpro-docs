@@ -49,3 +49,5 @@ sections:
       - question: Do I need to use OneDrive in Microsoft 365 as my backup provider?
         answer: |
           No, Personal Data Encryption doesn't have a requirement for a backup provider, including OneDrive in Microsoft 365. However, backups are recommended in case the keys used by Personal Data Encryption to protect files are lost. OneDrive in Microsoft 365 is a recommended backup provider.
+      - question: Are the files encrypted by Personal Data Encryption synced to OneDrive in an encrypted form?
+        answer: Personal Data Encryption ensures that files are protected from unauthorized access by encrypting them at rest. When files are synced to OneDrive, they are transferred over a secure connection. However, Personal Data Encryption's encryption only applies to local data saved to the disk. Applications accessing the files, including OneDrive when it syncs data, get cleartext data. This means that while Personal Data Encryption protects files on the local disk, the files synced to OneDrive are not encrypted by Personal Data Encryption in the cloud.

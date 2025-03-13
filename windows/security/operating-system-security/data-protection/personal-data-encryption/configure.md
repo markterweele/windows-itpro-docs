@@ -112,7 +112,8 @@ Alternatively, you can configure devices using the [Policy CSP][CSP-1] and [Pers
 When Personal Data Encryption is enabled, the user experience is as follows:
 
 - If the user signs in with Windows Hello, the user can access Personal Data Encryption protected content
-- The data protected by Personal Data Encryption is only accessible when the user signs in with Windows Hello, and can be identified by the padlock icon on the file or folder
+- If the user signs in without Windows Hello, the user is denied access to Personal Data Encryption protected content
+- The data protected by Personal Data Encryption can be identified by the padlock icon on the file or folder
     :::image type="content" source="images/pde-protection.png" alt-text="Screenshot of File Explorer with some files protected by Personal Data Encryption, displaying a padlock." border="false":::
 - If the user tries to sign in without using Windows Hello, a message appears on the sign in screen indicating that the user must sign in with Windows Hello to access encrypted content
     :::image type="content" source="images/pde-sign-in.png" lightbox="images/pde-sign-in.png" alt-text="Screenshot of the sign in screen. If a user attempts to sign in with a password, a message indicates that the files protected by Personal Data Encryption will be unavailable." border="false":::
