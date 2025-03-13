@@ -2,7 +2,7 @@
 title: App Control Admin Tips & Known Issues
 description: App Control Known Issues
 ms.manager: jsuther
-ms.date: 09/11/2024
+ms.date: 02/13/2025
 ms.topic: troubleshooting
 ms.localizationpriority: medium
 ---
@@ -28,21 +28,21 @@ For **single policy format App Control policies**, in addition to the two preced
 - &lt;OS Volume&gt;\\Windows\\System32\\CodeIntegrity\\SiPolicy.p7b
 
 > [!NOTE]
-> A multiple policy format App Control policy using the single policy format GUID `{A244370E-44C9-4C06-B551-F6016E563076}` may exist under any of the policy file locations.
+> A multiple policy format App Control policy using the single policy format GUID `{A244370E-44C9-4C06-B551-F6016E563076}` might exist under any of the policy file locations.
 
 ## File Rule Precedence Order
 
 When the App Control engine evaluates files against the active set of policies on the device, rules are applied in the following order. Once a file encounters a match, App Control stops further processing.
 
-1. Explicit deny rules - a file is blocked if any explicit deny rule exists for it, even if other rules are created to try to allow it. Deny rules can use any [rule level](../design/select-types-of-rules-to-create.md#app-control-for-business-file-rule-levels). Use the most specific rule level practical when creating deny rules to avoid blocking more than you intend.
+1. Any file matching an explicit deny rule is blocked, even if you create other rules to try to allow it. Deny rules can use any [rule level](../design/select-types-of-rules-to-create.md#app-control-for-business-file-rule-levels). Use the most specific rule level practical when creating deny rules to avoid blocking more than you intend.
 
-2. Explicit allow rules - if any explicit allow rule exists for the file, the file runs.
+2. Any file matching an explicit allow rule runs.
 
-3. App Control then checks for the [Managed Installer extended attribute (EA)](../design/configure-authorized-apps-deployed-with-a-managed-installer.md) or the [Intelligent Security Graph (ISG) EA](../design/use-appcontrol-with-intelligent-security-graph.md) on the file. If either EA exists and the policy enables the corresponding option, then the file is allowed.
+3. Any file that has a [Managed Installer](../design/configure-authorized-apps-deployed-with-a-managed-installer.md) or [Intelligent Security Graph (ISG)](../design/use-appcontrol-with-intelligent-security-graph.md) extended attribute (EA) runs if the policy enables the matching option (managed installer or ISG).
 
-4. Lastly, App Control makes a cloud call to the ISG to get reputation about the file, if the policy enables the ISG option.
+4. Any file that isn't allowed based on the preceding conditions, is checked for reputation using the ISG when that option is enabled in the policy. The file runs if the ISG decides that it's safe and a new ISG EA is written on the file.
 
-5. Any file not allowed by an explicit rule or based on ISG or MI is blocked implicitly.
+5. Any file not allowed by an explicit rule, or based on ISG or managed installer, is blocked implicitly.
 
 ## Known issues
 
@@ -51,18 +51,28 @@ When the App Control engine evaluates files against the active set of policies o
 Until you apply the Windows security update released on or after April 9, 2024, your device is limited to 32 active policies. If the maximum number of policies is exceeded, the device bluescreens referencing ci.dll with a bug check value of 0x0000003b. Consider this maximum policy count limit when planning your App Control policies. Any [Windows inbox policies](inbox-appcontrol-policies.md) that are active on the device also count towards this limit. To remove the maximum policy limit, install the Windows security update released on, or after, April 9, 2024 and then restart the device. Otherwise, reduce the number of policies on the device to remain below 32 policies.
 
 > [!NOTE]
-> The policy limit was not removed on Windows 11 21H2, and will remain limited to 32 policies.
+> The policy limit wasn't removed on Windows 11 21H2, and remains limited to 32 policies.
 
 ### Audit mode policies can change the behavior for some apps or cause app crashes
 
-Although App Control audit mode is designed to avoid impact to apps, some features are always on/always enforced with any App Control policy that turns on user mode code integrity (UMCI) with the option **0 Enabled:UMCI**. Here's a list of known system changes in audit mode:
+Although App Control audit mode is designed to avoid any effect on apps, some features are always on/always enforced with any App Control policy that turns on user mode code integrity (UMCI) with the option **0 Enabled:UMCI**. Here's a list of known system changes in audit mode:
 
 - Some script hosts might block code or run code with fewer privileges even in audit mode. See [Script enforcement with App Control](../design/script-enforcement.md) for information about individual script host behaviors.
-- Option **19 Enabled:Dynamic Code Security** is always enforced if any UMCI policy includes that option. See [App Control and .NET](../design/appcontrol-and-dotnet.md#app-control-and-net-hardening).
+- Option **19 Enabled:Dynamic Code Security** is always enforced if any UMCI policy includes that option on some versions of Windows and Windows Server. See [App Control and .NET](../design/appcontrol-and-dotnet.md#app-control-and-net-dynamic-code-security-hardening).
 
 ### .NET native images may generate false positive block events
 
 In some cases, the code integrity logs where App Control for Business errors and warnings are written include error events for native images generated for .NET assemblies. Typically, native image blocks are functionally benign as a blocked native image falls back to its corresponding assembly and .NET regenerates the native image at its next scheduled maintenance window. To prevent that, consider compiling your .NET application ahead of time using the [Native AOT](/dotnet/core/deploying/native-aot) feature.
+
+### .NET doesn't load Component Object Model (COM) objects with mismatched GUIDs
+
+COM objects make it easy for different software components to communicate and work together. To be used by another component, COM objects must be registered with the operating system. The registration includes a GUID that is calculated based on the object's code. Loading and activation of the COM object is done using another part of the registration called the type name. Sometimes a mismatch exists between the registered GUID and the actual GUID of the activated COM object's code. Mismatches might come from bugs in the app's COM object registration code or if the COM object's code is changed in a way that affects the GUID. Normally, Windows and .NET are forgiving about this condition and runs the COM object’s code regardless. But allowing COM objects to load where there are GUID mismatches leaves the system vulnerable to attackers who can exploit the GUID confusion to run unintended code.
+
+To increase App Control's protective effectiveness on a system vulnerable to this attack technique, .NET applies an extra validation to check that the registered COM object GUID matches the system calculated one. If a mismatch is found, .NET doesn't load the COM object and a general COM load error is raised. Apps using COM objects with this condition might behave in unexpected ways and must be updated to fix issues with the app's COM object registration code.
+
+Since this behavior only occurs when App Control policy is enforced on user mode code, you can't detect it while in audit mode. There's no logging or other events when a COM object fails to load due to the extra validation check. Repairing or reinstalling the app can resolve the issue temporarily, but an app update is needed to fix the COM registration issue and prevent future instances of the problem.
+
+There are no policy control options to manage .NET's GUID verification check, meaning the check is always performed. If you see COM object failures after an App Control policy is deployed, contact the software developer or the Independent Software Vendor (ISV) who produces the app to request a fix for the issue.
 
 ### Signatures using elliptical curve cryptography (ECC) aren't supported
 

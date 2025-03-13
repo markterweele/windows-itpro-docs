@@ -1,7 +1,7 @@
 ---
 title: SettingsSync Policy CSP
 description: Learn more about the SettingsSync Area in Policy CSP.
-ms.date: 02/13/2025
+ms.date: 03/12/2025
 ms.topic: generated-reference
 ---
 
@@ -24,7 +24,7 @@ ms.topic: generated-reference
 <!-- DisableAccessibilitySettingSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DisableAccessibilitySettingSync-Applicability-End -->
 
 <!-- DisableAccessibilitySettingSync-OmaUri-Begin -->
@@ -85,7 +85,7 @@ If you don't set or disable this setting, syncing of the "accessibility" group i
 <!-- DisableLanguageSettingSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DisableLanguageSettingSync-Applicability-End -->
 
 <!-- DisableLanguageSettingSync-OmaUri-Begin -->
@@ -146,7 +146,7 @@ If you don't set or disable this setting, syncing of the "language preferences" 
 <!-- EnableWindowsbackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- EnableWindowsbackup-Applicability-End -->
 
 <!-- EnableWindowsbackup-OmaUri-Begin -->
