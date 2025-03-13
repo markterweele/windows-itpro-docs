@@ -1,7 +1,7 @@
 ---
 title: Power Policy CSP
 description: Learn more about the Power Area in Policy CSP.
-ms.date: 02/13/2025
+ms.date: 03/12/2025
 ms.topic: generated-reference
 ---
 
@@ -22,7 +22,7 @@ ms.topic: generated-reference
 <!-- AllowHibernate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowHibernate-Applicability-End -->
 
 <!-- AllowHibernate-OmaUri-Begin -->
@@ -75,7 +75,7 @@ This policy setting decides if hibernate on the machine is allowed or not. Suppo
 <!-- AllowStandbyStatesWhenSleepingOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowStandbyStatesWhenSleepingOnBattery-Applicability-End -->
 
 <!-- AllowStandbyStatesWhenSleepingOnBattery-OmaUri-Begin -->
@@ -134,7 +134,7 @@ This policy setting manages whether or not Windows is allowed to use standby sta
 <!-- AllowStandbyWhenSleepingPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowStandbyWhenSleepingPluggedIn-Applicability-End -->
 
 <!-- AllowStandbyWhenSleepingPluggedIn-OmaUri-Begin -->
@@ -193,7 +193,7 @@ This policy setting manages whether or not Windows is allowed to use standby sta
 <!-- DisplayOffTimeoutOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisplayOffTimeoutOnBattery-Applicability-End -->
 
 <!-- DisplayOffTimeoutOnBattery-OmaUri-Begin -->
@@ -253,7 +253,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- DisplayOffTimeoutPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisplayOffTimeoutPluggedIn-Applicability-End -->
 
 <!-- DisplayOffTimeoutPluggedIn-OmaUri-Begin -->
@@ -313,7 +313,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- EnergySaverBatteryThresholdOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- EnergySaverBatteryThresholdOnBattery-Applicability-End -->
 
 <!-- EnergySaverBatteryThresholdOnBattery-OmaUri-Begin -->
@@ -372,7 +372,7 @@ This policy setting allows you to specify battery charge level at which Energy S
 <!-- EnergySaverBatteryThresholdPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- EnergySaverBatteryThresholdPluggedIn-Applicability-End -->
 
 <!-- EnergySaverBatteryThresholdPluggedIn-OmaUri-Begin -->
@@ -431,7 +431,7 @@ This policy setting allows you to specify battery charge level at which Energy S
 <!-- HibernateTimeoutOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- HibernateTimeoutOnBattery-Applicability-End -->
 
 <!-- HibernateTimeoutOnBattery-OmaUri-Begin -->
@@ -491,7 +491,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- HibernateTimeoutPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- HibernateTimeoutPluggedIn-Applicability-End -->
 
 <!-- HibernateTimeoutPluggedIn-OmaUri-Begin -->
@@ -551,7 +551,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- RequirePasswordWhenComputerWakesOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RequirePasswordWhenComputerWakesOnBattery-Applicability-End -->
 
 <!-- RequirePasswordWhenComputerWakesOnBattery-OmaUri-Begin -->
@@ -610,7 +610,7 @@ This policy setting specifies whether or not the user is prompted for a password
 <!-- RequirePasswordWhenComputerWakesPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RequirePasswordWhenComputerWakesPluggedIn-Applicability-End -->
 
 <!-- RequirePasswordWhenComputerWakesPluggedIn-OmaUri-Begin -->
@@ -669,7 +669,7 @@ This policy setting specifies whether or not the user is prompted for a password
 <!-- SelectLidCloseActionOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectLidCloseActionOnBattery-Applicability-End -->
 
 <!-- SelectLidCloseActionOnBattery-OmaUri-Begin -->
@@ -745,7 +745,7 @@ Possible actions include:
 <!-- SelectLidCloseActionPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectLidCloseActionPluggedIn-Applicability-End -->
 
 <!-- SelectLidCloseActionPluggedIn-OmaUri-Begin -->
@@ -821,7 +821,7 @@ Possible actions include:
 <!-- SelectPowerButtonActionOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectPowerButtonActionOnBattery-Applicability-End -->
 
 <!-- SelectPowerButtonActionOnBattery-OmaUri-Begin -->
@@ -897,7 +897,7 @@ Possible actions include:
 <!-- SelectPowerButtonActionPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectPowerButtonActionPluggedIn-Applicability-End -->
 
 <!-- SelectPowerButtonActionPluggedIn-OmaUri-Begin -->
@@ -973,7 +973,7 @@ Possible actions include:
 <!-- SelectSleepButtonActionOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectSleepButtonActionOnBattery-Applicability-End -->
 
 <!-- SelectSleepButtonActionOnBattery-OmaUri-Begin -->
@@ -1049,7 +1049,7 @@ Possible actions include:
 <!-- SelectSleepButtonActionPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- SelectSleepButtonActionPluggedIn-Applicability-End -->
 
 <!-- SelectSleepButtonActionPluggedIn-OmaUri-Begin -->
@@ -1125,7 +1125,7 @@ Possible actions include:
 <!-- StandbyTimeoutOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- StandbyTimeoutOnBattery-Applicability-End -->
 
 <!-- StandbyTimeoutOnBattery-OmaUri-Begin -->
@@ -1185,7 +1185,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- StandbyTimeoutPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- StandbyTimeoutPluggedIn-Applicability-End -->
 
 <!-- StandbyTimeoutPluggedIn-OmaUri-Begin -->
@@ -1245,7 +1245,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- TurnOffHybridSleepOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- TurnOffHybridSleepOnBattery-Applicability-End -->
 
 <!-- TurnOffHybridSleepOnBattery-OmaUri-Begin -->
@@ -1312,7 +1312,7 @@ This policy setting allows you to turn off Hybrid Sleep.
 <!-- TurnOffHybridSleepPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- TurnOffHybridSleepPluggedIn-Applicability-End -->
 
 <!-- TurnOffHybridSleepPluggedIn-OmaUri-Begin -->
@@ -1379,7 +1379,7 @@ This policy setting allows you to turn off Hybrid Sleep.
 <!-- UnattendedSleepTimeoutOnBattery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- UnattendedSleepTimeoutOnBattery-Applicability-End -->
 
 <!-- UnattendedSleepTimeoutOnBattery-OmaUri-Begin -->
@@ -1440,7 +1440,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!-- UnattendedSleepTimeoutPluggedIn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- UnattendedSleepTimeoutPluggedIn-Applicability-End -->
 
 <!-- UnattendedSleepTimeoutPluggedIn-OmaUri-Begin -->

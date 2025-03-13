@@ -1,7 +1,7 @@
 ---
 title: Display Policy CSP
 description: Learn more about the Display Area in Policy CSP.
-ms.date: 02/13/2025
+ms.date: 03/12/2025
 ms.topic: generated-reference
 ---
 
@@ -22,7 +22,7 @@ ms.topic: generated-reference
 <!-- ConfigureMultipleDisplayMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureMultipleDisplayMode-Applicability-End -->
 
 <!-- ConfigureMultipleDisplayMode-OmaUri-Begin -->
@@ -82,7 +82,7 @@ This policy sets the default display arrangement to pick between clone or extend
 <!-- DisablePerProcessDpiForApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DisablePerProcessDpiForApps-Applicability-End -->
 
 <!-- DisablePerProcessDpiForApps-OmaUri-Begin -->
@@ -148,7 +148,7 @@ Enabling this setting lets you specify the system-wide default for desktop appli
 <!-- EnablePerProcessDpi-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnablePerProcessDpi-Applicability-End -->
 
 <!-- EnablePerProcessDpi-OmaUri-Begin -->
@@ -239,7 +239,7 @@ Enabling this setting lets you specify the system-wide default for desktop appli
 <!-- EnablePerProcessDpiForApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnablePerProcessDpiForApps-Applicability-End -->
 
 <!-- EnablePerProcessDpiForApps-OmaUri-Begin -->
@@ -305,7 +305,7 @@ Enabling this setting lets you specify the system-wide default for desktop appli
 <!-- SetClonePreferredResolutionSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- SetClonePreferredResolutionSource-Applicability-End -->
 
 <!-- SetClonePreferredResolutionSource-OmaUri-Begin -->
@@ -365,7 +365,7 @@ This policy sets the cloned monitor preferred resolution source to an internal o
 <!-- TurnOffGdiDPIScalingForApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TurnOffGdiDPIScalingForApps-Applicability-End -->
 
 <!-- TurnOffGdiDPIScalingForApps-OmaUri-Begin -->
@@ -443,7 +443,7 @@ To validate on Desktop, do the following tasks:
 <!-- TurnOnGdiDPIScalingForApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TurnOnGdiDPIScalingForApps-Applicability-End -->
 
 <!-- TurnOnGdiDPIScalingForApps-OmaUri-Begin -->
