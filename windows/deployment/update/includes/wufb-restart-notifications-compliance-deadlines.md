@@ -45,6 +45,7 @@ In cases where a user scheduled restart fails but there's still more time before
 :::image type="content" source="../media/9091858-11-scheduled-restart-failed.png" alt-text="Screenshot of the dialog displayed in Windows 11 version 23H2, or later, for a user if their scheduled restart fails. The notification contains the options to restart now or to reschedule the restart." lightbox="../media/9091858-11-scheduled-restart-failed.png":::
 
 In cases where the deadline has passed, the user receives a notification that a restart is required. The only options a user can select is to restart now or confirm. The user has 15 minutes to select restart before the device is forced to restart.
+
 :::image type="content" source="../media/9091858-11-fifteen-minutes-restart.png" alt-text="Screenshot of the dialog displayed in Windows 11 version 23H2, or later, for a user if their scheduled restart fails and the deadline is passed. The notification contains the options to restart now or to reschedule the restart." lightbox="../media/9091858-11-fifteen-minutes-restart.png":::
 
 In cases where the deadline has passed and the restart failed, the user receives a notification that a restart is required. If the device is plugged in, it will attempt to restart every 5 minutes until the device successfully restarts. The user has 5 minutes to restart before the device is forced to restart.
