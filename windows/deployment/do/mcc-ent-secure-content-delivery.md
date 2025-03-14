@@ -29,7 +29,7 @@ Connected Cache nodes act as transparent content caches, meaning any device can 
 
 Connected Cache nodes only download and store Microsoft content from provisioned Microsoft and Content Delivery Network (CDN) endpoints, so there are no concerns about the cache storing personal or sensitive data.
 
-Regardless of download source, the Delivery Optimization client on each Windows device verifies the authenticity and integrity of content using its metadata hash, content hash, and signature before installing. This ensures that the Windows device is protected against man-in-the-middle attacks that attempt to tamper with content while it's in transit.
+Connected Cache works in tandem with the [Delivery Optimization (DO) client](waas-delivery-optimization.md), a component of Windows Update that manages the downloading of Microsoft content. Regardless of download source, the DO client on each Windows device verifies the authenticity and integrity of downloaded content using its metadata hash, content hash, and signature before installing. This process ensures that the Windows device is protected against man-in-the-middle attacks that attempt to tamper with content while it's in transit.
 
 ![Diagram of content delivery between CDN, cache node, and DO client](images/mcc-ent-secure-content-delivery-diagram.png)
 
@@ -37,47 +37,47 @@ As you can see in this diagram, Connected Cache nodes currently utilize HTTP to 
 
 ## Security considerations for Connected Cache nodes
 
-The security of each Connected Cache node is dependent on the security of the environment in which it's deployed.
+The security of each Connected Cache node is dependent on the security of its environment.
 
-In order to securely function as designed, Connected Cache expects the user to have taken steps to secure the different layers of their organization’s network and devices.
+In order to securely function as designed, Connected Cache expects the user to take steps to secure the different layers of their organization’s network and devices.
 
-The following section is intended to provide a high-level overview of the security layers to be considered by the user, and additional resources for learning more.
+The following section is intended to provide a high-level overview of some of the security layers the user should consider and resources for learning more.
 
-### 1. Azure resources
+### Azure resources
 
-The first layer of security lies with the Azure resources that your Microsoft Connected Cache nodes communicate with. You should ensure that your organization’s Azure tenant is using role-based access control (RBAC) to apply policies that enforce least-privilege access to the Connected Cache Azure resources you have provisioned. Only trusted individuals should have the ability to perform create, read, update, and delete (CRUD) operations on your organization’s MCC Azure resources and cache nodes.
+One layer of security lies with the Azure resources that your Microsoft Connected Cache nodes communicate with. You should ensure that your organization’s Azure tenant is using role-based access control (RBAC) to apply policies that enforce least-privilege access to the Connected Cache Azure resources you provision. Only trusted individuals should have the ability to perform create, read, update, and delete (CRUD) operations on your organization’s MCC Azure resources and cache nodes.
 
-You can read more about [Azure identity management and access control security best practices](/azure/security/fundamentals/identity-management-best-practices) and the [Microsoft cloud security benchmark (MCSB) documentation for Identity management](/security/benchmark/azure/mcsb-identity-management).
+You can learn more about the principles of Azure resource security by referring to the [Azure identity management and access control security best practices](/azure/security/fundamentals/identity-management-best-practices) and the [Microsoft cloud security benchmark (MCSB) documentation for Identity management](/security/benchmark/azure/mcsb-identity-management).
 
-### 2. Local network
+### Local network
 
-The second layer of security lies with your organization’s local network. It's recommended that your organization adopts a Zero Trust approach to network security so that your organizational data is protected even if an attacker breaches your network perimeter.
+Another layer of security lies with your organization’s local network. It's recommended that your organization adopts a Zero Trust approach to network security so that your organizational data is protected even if an attacker breaches your network perimeter.
 
-If your organization's network utilizes a firewall, you should ensure that it's configured to allow communication between your Connected Cache nodes and the [Microsoft and CDN endpoints](delivery-optimization-endpoints.md) used to install Connected Cache and download Microsoft content.
+One best practice is to utilize a firewall on your organization's network. When using a network firewall, you should configure it to allow communication between your Connected Cache nodes and the [Microsoft and CDN endpoints](delivery-optimization-endpoints.md) used to install Connected Cache and download Microsoft content.
 
-You can read more about [Azure best practices for network security](/azure/security/fundamentals/network-best-practices) and the [Microsoft cloud security benchmark (MCSB) documentation for Network security](/security/benchmark/azure/mcsb-network-security).
+You can learn more about the principles of network security by referring to the [Azure best practices for network security](/azure/security/fundamentals/network-best-practices) and the [Microsoft cloud security benchmark (MCSB) documentation for Network security](/security/benchmark/azure/mcsb-network-security).
 
-### 3. Cache node host machine OS
+### Cache node host machine OS
 
-The third layer of security lies with the Operating System (OS) of your Connected Cache node’s host machine. When using Microsoft Connected Cache for Enterprise, your organization may choose to host Microsoft Connected Cache nodes on a [compatible host OS](mcc-ent-prerequisites.md#cache-node-host-machine-requirements) of your choice.
+Another layer of security lies with the Operating System (OS) of your Connected Cache node’s host machine. Your organization can choose to host Microsoft Connected Cache nodes on a [compatible host OS](mcc-ent-prerequisites.md#cache-node-host-machine-requirements) of your choice.
 
-Regardless of which host OS you choose to use, you should ensure that it meets the recommendations of the Microsoft cloud security benchmark for [Windows](/azure/governance/policy/samples/guest-configuration-baseline-windows), [Linux](/azure/governance/policy/samples/guest-configuration-baseline-linux), and [Docker](/azure/governance/policy/samples/guest-configuration-baseline-docker) hosts and that you perform regular OS updates to keep it up to date.
+Regardless of which host OS you choose to use, you should ensure that you perform regular OS updates to keep it up to date.
 
-If you're hosting on Windows, your host machine will use Windows Subsystem for Linux (WSL) to run the Connected Cache container. You should ensure that your deployment of WSL meets the [recommended Enterprise set up for WSL](/windows/wsl/enterprise).
+If you're hosting on Windows, your host machine uses Windows Subsystem for Linux (WSL) to run the Connected Cache container. You should ensure that your deployment of WSL meets the [recommended Enterprise set up for WSL](/windows/wsl/enterprise).
 
-### 4. Organization-managed Windows devices
+### Organization-managed Windows devices
 
-The fourth and final layer of security lies with the organization-managed Windows devices that will be requesting Microsoft content from your Connected Cache nodes. The Windows devices that are connecting to the MCC node should be secured according to your organization’s security policy.
+Another layer of security lies with the organization-managed Windows devices that request Microsoft content from your Connected Cache nodes. The Windows devices that are connecting to the MCC node should be secured according to your organization’s security policy.
 
 ## Frequently asked questions
 
-Below are some common questions you may have about the security of Microsoft Connected Cache for Enterprise and Education.
+Here are some common questions you might have about the security of Microsoft Connected Cache for Enterprise and Education.
 
 ### How often is the Connected Cache container updated?
 
 There are three scheduled MCC container updates per year. These updates included minor security patches, feature updates, and bug fixes.
 
-If a new Common Vulnerability and Exposure (CVE) is identified, Microsoft Connected Cache will publish a critical security patch to the MCC container in line with its SLA.
+In addition to scheduled MCC container updates, Microsoft publishes critical container security patches when a new Common Vulnerability and Exposure (CVE) being identified.
 
 You can read more information about Connected Cache container updates in the [Connected Cache container update documentation](mcc-ent-update-cache-node.md).
 
