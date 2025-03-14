@@ -4,13 +4,13 @@ manager: aaroncz
 description: Overview of the security for Windows Update including security for the metadata exchange and content download.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 08/28/2023
+ms.date: 08/15/2024
 ---
 
 # Windows Update security

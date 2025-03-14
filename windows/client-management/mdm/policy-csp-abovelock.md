@@ -1,7 +1,8 @@
 ---
 title: AboveLock Policy CSP
 description: Learn more about the AboveLock Area in Policy CSP.
-ms.date: 04/10/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -71,7 +72,7 @@ This policy is deprecated.
 <!-- AllowCortanaAboveLock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowCortanaAboveLock-Applicability-End -->
 
 <!-- AllowCortanaAboveLock-OmaUri-Begin -->
@@ -138,7 +139,7 @@ This policy setting determines whether or not the user can interact with Cortana
 <!-- AllowToasts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowToasts-Applicability-End -->
 
 <!-- AllowToasts-OmaUri-Begin -->

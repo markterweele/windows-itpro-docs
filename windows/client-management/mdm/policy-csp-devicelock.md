@@ -1,7 +1,8 @@
 ---
 title: DeviceLock Policy CSP
 description: Learn more about the DeviceLock Area in Policy CSP.
-ms.date: 04/10/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -10,8 +11,6 @@ ms.date: 04/10/2024
 # Policy CSP - DeviceLock
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- DeviceLock-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -25,7 +24,7 @@ ms.date: 04/10/2024
 <!-- AccountLockoutPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- AccountLockoutPolicy-Applicability-End -->
 
 <!-- AccountLockoutPolicy-OmaUri-Begin -->
@@ -64,7 +63,7 @@ Account lockout threshold - This security setting determines the number of faile
 <!-- AllowAdministratorLockout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- AllowAdministratorLockout-Applicability-End -->
 
 <!-- AllowAdministratorLockout-OmaUri-Begin -->
@@ -114,7 +113,7 @@ Allow Administrator account lockout This security setting determines whether the
 <!-- AllowIdleReturnWithoutPassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowIdleReturnWithoutPassword-Applicability-End -->
 
 <!-- AllowIdleReturnWithoutPassword-OmaUri-Begin -->
@@ -169,7 +168,7 @@ Specifies whether the user must input a PIN or password when the device resumes 
 <!-- AllowScreenTimeoutWhileLockedUserConfig-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowScreenTimeoutWhileLockedUserConfig-Applicability-End -->
 
 <!-- AllowScreenTimeoutWhileLockedUserConfig-OmaUri-Begin -->
@@ -218,7 +217,7 @@ Specifies whether to show a user-configurable setting to control the screen time
 <!-- AllowSimpleDevicePassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowSimpleDevicePassword-Applicability-End -->
 
 <!-- AllowSimpleDevicePassword-OmaUri-Begin -->
@@ -272,7 +271,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 <!-- AlphanumericDevicePasswordRequired-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AlphanumericDevicePasswordRequired-Applicability-End -->
 
 <!-- AlphanumericDevicePasswordRequired-OmaUri-Begin -->
@@ -329,7 +328,7 @@ Determines the type of PIN or password required. This policy only applies if the
 <!-- ClearTextPassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- ClearTextPassword-Applicability-End -->
 
 <!-- ClearTextPassword-OmaUri-Begin -->
@@ -380,7 +379,7 @@ This security setting determines whether the operating system stores passwords u
 <!-- DevicePasswordEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- DevicePasswordEnabled-Applicability-End -->
 
 <!-- DevicePasswordEnabled-OmaUri-Begin -->
@@ -432,7 +431,6 @@ Specifies whether device lock is enabled.
 
 > [!NOTE]
 > DevicePasswordExpiration isn't supported through MDMWinsOverGP.
-
 <!-- DevicePasswordEnabled-Editable-End -->
 
 <!-- DevicePasswordEnabled-DFProperties-Begin -->
@@ -466,7 +464,7 @@ Specifies whether device lock is enabled.
 <!-- DevicePasswordExpiration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- DevicePasswordExpiration-Applicability-End -->
 
 <!-- DevicePasswordExpiration-OmaUri-Begin -->
@@ -514,7 +512,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 <!-- DevicePasswordHistory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- DevicePasswordHistory-Applicability-End -->
 
 <!-- DevicePasswordHistory-OmaUri-Begin -->
@@ -564,7 +562,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 <!-- EnforceLockScreenAndLogonImage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- EnforceLockScreenAndLogonImage-Applicability-End -->
 
 <!-- EnforceLockScreenAndLogonImage-OmaUri-Begin -->
@@ -603,7 +601,7 @@ Specifies the default lock screen and logon image shown when no user is signed i
 <!-- EnforceLockScreenProvider-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- EnforceLockScreenProvider-Applicability-End -->
 
 <!-- EnforceLockScreenProvider-OmaUri-Begin -->
@@ -641,7 +639,7 @@ Specifies the default lock screen and logon image shown when no user is signed i
 <!-- MaxDevicePasswordFailedAttempts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- MaxDevicePasswordFailedAttempts-Applicability-End -->
 
 <!-- MaxDevicePasswordFailedAttempts-OmaUri-Begin -->
@@ -686,7 +684,7 @@ The number of authentication failures allowed before the device will be wiped. A
 <!-- MaximumPasswordAge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- MaximumPasswordAge-Applicability-End -->
 
 <!-- MaximumPasswordAge-OmaUri-Begin -->
@@ -739,7 +737,7 @@ This security setting determines the period of time (in days) that a password ca
 <!-- MaxInactivityTimeDeviceLock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- MaxInactivityTimeDeviceLock-Applicability-End -->
 
 <!-- MaxInactivityTimeDeviceLock-OmaUri-Begin -->
@@ -786,7 +784,7 @@ On HoloLens, this timeout is controlled by the device's system sleep timeout, re
 <!-- MaxInactivityTimeDeviceLockWithExternalDisplay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- MaxInactivityTimeDeviceLockWithExternalDisplay-Applicability-End -->
 
 <!-- MaxInactivityTimeDeviceLockWithExternalDisplay-OmaUri-Begin -->
@@ -827,7 +825,7 @@ Sets the maximum timeout value for the external display.
 <!-- MinDevicePasswordComplexCharacters-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- MinDevicePasswordComplexCharacters-Applicability-End -->
 
 <!-- MinDevicePasswordComplexCharacters-OmaUri-Begin -->
@@ -905,7 +903,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 <!-- MinDevicePasswordLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- MinDevicePasswordLength-Applicability-End -->
 
 <!-- MinDevicePasswordLength-OmaUri-Begin -->
@@ -976,7 +974,7 @@ The following example shows how to set the minimum password length to 4 characte
 <!-- MinimumPasswordAge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- MinimumPasswordAge-Applicability-End -->
 
 <!-- MinimumPasswordAge-OmaUri-Begin -->
@@ -1026,7 +1024,7 @@ This security setting determines the period of time (in days) that a password mu
 <!-- MinimumPasswordLength-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- MinimumPasswordLength-Applicability-End -->
 
 <!-- MinimumPasswordLength-OmaUri-Begin -->
@@ -1079,7 +1077,7 @@ This security setting determines the least number of characters that a password 
 <!-- MinimumPasswordLengthAudit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- MinimumPasswordLengthAudit-Applicability-End -->
 
 <!-- MinimumPasswordLengthAudit-OmaUri-Begin -->
@@ -1129,7 +1127,7 @@ This security setting determines the minimum password length for which password 
 <!-- PasswordComplexity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- PasswordComplexity-Applicability-End -->
 
 <!-- PasswordComplexity-OmaUri-Begin -->
@@ -1189,7 +1187,7 @@ Complexity requirements are enforced when passwords are changed or created.
 <!-- PasswordHistorySize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- PasswordHistorySize-Applicability-End -->
 
 <!-- PasswordHistorySize-OmaUri-Begin -->
@@ -1243,7 +1241,7 @@ This security setting determines the number of unique new passwords that have to
 <!-- PreventEnablingLockScreenCamera-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- PreventEnablingLockScreenCamera-Applicability-End -->
 
 <!-- PreventEnablingLockScreenCamera-OmaUri-Begin -->
@@ -1302,7 +1300,7 @@ If you enable this setting, users will no longer be able to enable or disable lo
 <!-- PreventLockScreenSlideShow-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PreventLockScreenSlideShow-Applicability-End -->
 
 <!-- PreventLockScreenSlideShow-OmaUri-Begin -->
@@ -1361,7 +1359,7 @@ If you enable this setting, users will no longer be able to modify slide show se
 <!-- RelaxMinimumPasswordLengthLimits-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- RelaxMinimumPasswordLengthLimits-Applicability-End -->
 
 <!-- RelaxMinimumPasswordLengthLimits-OmaUri-Begin -->
@@ -1419,7 +1417,7 @@ This setting controls whether the minimum password length setting can be increas
 <!-- ScreenTimeoutWhileLocked-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ScreenTimeoutWhileLocked-Applicability-End -->
 
 <!-- ScreenTimeoutWhileLocked-OmaUri-Begin -->

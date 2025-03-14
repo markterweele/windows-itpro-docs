@@ -1,5 +1,5 @@
 ---
-ms.date: 06/20/2024
+ms.date: 02/25/2025
 title: Configure Credential Guard
 description: Learn how to configure Credential Guard using MDM, Group Policy, or the registry.
 ms.topic: how-to
@@ -11,9 +11,7 @@ This article describes how to configure Credential Guard using Microsoft Intune,
 
 ## Default enablement
 
-[!INCLUDE [windows-server-2025-preview](../../includes/windows-server-2025-preview.md)]
-
-Starting in Windows 11, 22H2 and Windows Server 2025 (preview), Credential Guard is [enabled by default on devices which meet the requirements](index.md#default-enablement).
+Starting in Windows 11, 22H2 and Windows Server 2025, Credential Guard is [enabled by default on devices which meet the requirements](index.md#default-enablement).
 
 System administrators can explicitly [enable](#enable-credential-guard) or [disable](#disable-credential-guard) Credential Guard using one of the methods described in this article. Explicitly configured values overwrite the default enablement state after a reboot.
 
@@ -404,4 +402,4 @@ bcdedit /set vsmlaunchtype off
 <!--links-->
 
 [CSP-1]: /windows/client-management/mdm/policy-csp-deviceguard#enablevirtualizationbasedsecurity
-[INT-1]: /mem/intune/configuration/settings-catalog
+[INT-1]: /mem/intune/configuration/custom-settings-configure

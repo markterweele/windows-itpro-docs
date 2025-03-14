@@ -3,7 +3,7 @@ title: Safeguard holds for Windows
 description: What are safeguard holds? How to can you tell if a safeguard hold is in effect, and what to do about it.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
 manager: aaroncz
@@ -27,7 +27,7 @@ The safeguard holds lifespan varies depending on the time required to investigat
 
 Safeguard holds only affect devices that use the Windows Update service for updates. We encourage IT admins who manage updates to devices through other channels (such as media installations or updates coming from Windows Server Update Services) to remain aware of known issues that might also be present in their environments.
 
-IT admins managing updates using the [Windows Update for Business deployment service](/windows/deployment/update/deployment-service-overview) also benefit from safeguard holds on devices that are likely to be affected by an issue. To learn more, see [Safeguard holds against likely and known issues](/windows/deployment/update/deployment-service-overview#safeguard-holds-against-likely-and-known-issues).
+IT admins managing updates using [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview) also benefit from safeguard holds on devices that are likely to be affected by an issue. To learn more, see [Safeguard holds against likely and known issues](/windows/deployment/update/deployment-service-overview#safeguard-holds-against-likely-and-known-issues).
 
 ## Am I affected by a safeguard hold?
 

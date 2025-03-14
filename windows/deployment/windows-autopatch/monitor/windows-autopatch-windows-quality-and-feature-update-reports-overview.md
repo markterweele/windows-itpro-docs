@@ -1,9 +1,9 @@
 ---
 title: Windows quality and feature update reports overview
 description: This article details the types of reports available and info about update device eligibility, device update health, device update trends in Windows Autopatch.
-ms.date: 07/10/2024 
+ms.date: 03/03/2025
 ms.service: windows-client
-ms.subservice: itpro-updates
+ms.subservice: autopatch
 ms.topic: overview
 ms.localizationpriority: medium
 author: tiaraquan
@@ -17,6 +17,17 @@ ms.collection:
 
 # Windows quality and feature update reports overview
 
+[!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
+
+## Prerequisites
+
+Windows Autopatch requires, and uses Windows diagnostic data to display device update statuses in Autopatch reports.
+
+- Service state and substate data are included for all devices configured for Windows quality and feature updates. No data collection configuration is required.
+- Client and substate data are collected from devices only if Windows data collection data is properly configured.
+
+This data collection configuration method using Windows diagnostic data in Intune is shared across Autopatch reports. To support Autopatch reporting, you must configure the [Enable Windows diagnostic data collection settings](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-settings) from devices at the **Required** or higher level.
+
 ## Windows quality update reports
 
 The Windows quality reports provide you with information about:
@@ -25,7 +36,7 @@ The Windows quality reports provide you with information about:
 - Device update health
 - Device update alerts
 
-Together, these reports provide insight into the quality update state and compliance of Windows devices that are enrolled into Windows Autopatch.
+Together, these reports provide insight into the quality update state and compliance of Intune devices.
 
 The Windows quality report types are organized into the following focus areas:
 
@@ -33,7 +44,6 @@ The Windows quality report types are organized into the following focus areas:
 | ----- | ----- |
 | Organizational | The [Summary dashboard](../operate/windows-autopatch-groups-windows-quality-update-summary-dashboard.md) provide the current update status summary for all devices.<p>The [Quality update status report](../operate/windows-autopatch-groups-windows-quality-update-status-report.md) provides the current update status of all devices at the device level. |
 | Device trends | The [Quality update trending report](../operate/windows-autopatch-groups-windows-quality-update-trending-report.md) provides the update status trend of all devices over the last 90 days. |
-| [Reliability report](../operate/windows-autopatch-reliability-report.md) | The Reliability report provides a reliability score for each Windows quality update cycle based on stop error codes detected on managed devices. |
 
 ## Windows feature update reports
 
@@ -56,10 +66,13 @@ Users with the following permissions can access the reports:
 - Intune Service Administrator
 - Global Reader
 - Services Support Administrator
+- Policy and Profile Manager
+- Read Only Operator
+- Help Desk Operator
 
 ## About data latency
 
-The data source for these reports is Windows [diagnostic data](../overview/windows-autopatch-privacy.md#microsoft-windows-1011-diagnostic-data). The data typically uploads from enrolled devices once per day. Then, the data is processed in batches before being made available in Windows Autopatch. The maximum end-to-end latency is approximately 48 hours.
+The data source for these reports is Windows [diagnostic data](../overview/windows-autopatch-privacy.md#microsoft-windows-1011-diagnostic-data). The data typically uploads from enrolled devices once per day. Then, the data is processed in batches before being made available in Windows Autopatch. The maximum end-to-end latency is approximately four hours.
 
 ## Windows quality and feature update statuses
 
@@ -76,27 +89,27 @@ Each status has its own set of sub statuses to further describe the status.
 Up to date devices are devices that meet all of the following prerequisites:
 
 - [Prerequisites](../prepare/windows-autopatch-prerequisites.md)
-- [Prerequisites for device registration](../deploy/windows-autopatch-register-devices.md#prerequisites-for-device-registration)
+- [Prerequisites for device registration](../deploy/windows-autopatch-device-registration-overview.md#prerequisites-for-device-registration)
 - [Windows quality and feature update device readiness](../deploy/windows-autopatch-post-reg-readiness-checks.md)
 - [Post-device readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md)
 - Applied the current monthly cumulative updates
 
 > [!NOTE]
-> Device that are [Up to Date](#up-to-date-devices) will remain with the **In Progress** status until either the current monthly cumulative update is applied, or an [alert](../operate/windows-autopatch-device-alerts.md) is received. If the device receives an alert, the device's status will change to [Not up to Date](#not-up-to-date-devices).
+> Devices that are [Up to Date](#up-to-date-devices) remain with the **In Progress** status until either the current monthly cumulative update is applied, or an [alert](../operate/windows-autopatch-device-alerts.md) is received. If the device receives an alert, the device's status changes to [Not up to Date](#not-up-to-date-devices).
 
 #### Up to Date sub statuses
 
 | Sub status | Description |
 | ----- | ----- |
 | In Progress | Devices are currently installing the latest [quality update](../operate/windows-autopatch-groups-windows-quality-update-overview.md#release-schedule) or [feature update](../operate/windows-autopatch-groups-windows-feature-update-overview.md#default-release) deployed through the Windows Autopatch release schedule. |
-| Paused | Devices that are currently paused due to a Windows Autopatch or customer-initiated Release management pause. For more information, see pausing and resuming a [Windows quality update](../operate/windows-autopatch-groups-windows-quality-update-overview.md#pause-and-resume-a-release) or [Windows feature update](../operate/windows-autopatch-groups-manage-windows-feature-update-release.md#pause-and-resume-a-release). |
+| Paused | Devices that are currently paused due to a Windows Autopatch or customer-initiated pause. For more information, see pausing and resuming a [Windows quality update](../operate/windows-autopatch-groups-windows-quality-update-overview.md#pause-and-resume-a-release) or [Windows feature update](../operate/windows-autopatch-windows-feature-update-overview.md#pause-and-resume-a-release). |
 
 ### Not up to Date devices
 
 Not Up to Date means a device isn't up to date when the:
 
 - Quality or feature update is out of date, or the device is on the previous update.
-- The assigned update schedule has elapsed and the device still has not applied the current release.
+- The assigned update schedule elapsed and the device still didn't apply the current release.
 - Device has an [alert](../operate/windows-autopatch-device-alerts.md) resulting in an error and action must be taken.
 
 ### Not Ready devices

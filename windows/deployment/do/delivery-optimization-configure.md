@@ -16,7 +16,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
-ms.date: 07/23/2024
+ms.date: 02/27/2025
 ---
 
 # Configure Delivery Optimization (DO) for Windows
@@ -35,7 +35,7 @@ Use this checklist to guide you through different aspects when modifying Deliver
     * System resources
     * Improve P2P efficiencies
   
-1. Using Connected Cache (MCC)
+1. Using Microsoft Connected Cache
 1. Choose where to set Delivery Optimization policies
 
 ## 1. Prerequisites to allow Delivery Optimization communication
@@ -69,7 +69,7 @@ Delivery Optimization requires the use of certain ports to deliver content. Make
 | Port    | Protocol | Function          |
 |---------|-------------------|----------|
 | 7680    | TCP/IP | Listen for P2P using TCP/IP |
-| 3544    | TCP/IP | Use Teredo to discover and connect to peers across NATs |
+| 3544    | UDP | Use Teredo to discover and connect to peers across NATs. For more information, see the [Teredo documentation](/windows/win32/teredo/required-firewall-exceptions-for-teredo). |
 | 443     | HTTPS / TLS 1.2 | Use to communicate Delivery Optimization client and service |
 
 ## 2. Evaluate Delivery Optimization policies
@@ -189,7 +189,7 @@ Regardless of P2P, consider setting the following policies to avoid network disr
 > [!NOTE]
 > The absolute policies are recommended in low bandwidth environments.
 
-## 3. Using Connected Cache (MCC)
+## 3. Using Connected Cache
 
 :::image type="content" source="images/do-setup-connected-cache.png" alt-text="Screenshot of Delivery Optimization options when using Connected Cache." lightbox="images/do-setup-connected-cache.png":::
 
@@ -232,7 +232,12 @@ Delivery Optimization is integrated with both Microsoft Endpoint Manager and Con
 
 ## Monitor Delivery Optimization
 
-Whether you opt for the default Delivery Optimization configurations or tailor them to suit your environment, you'll want to track the outcomes to see how they improve your efficiency. [Learn more](waas-delivery-optimization-monitor.md) about the monitoring options for Delivery Optimization.
+Whether you opt for the default Delivery Optimization configurations or tailor them to suit your environment, you'll want to track the outcomes to see how they improve your efficiency. The following options are available to monitor Delivery Optimization: 
+
+- On clients, review the activity monitor, which displays a breakdown of downloads by source, average speed, and upload stats for the current month
+   - **Windows 11**: Settings > Windows Update > Advanced Options > Delivery Optimization > Activity Monitor
+   - **Windows 10**: Settings > Update & Security > Delivery Optimization > Activity Monitor
+- Windows Update for Business reports offers a Delivery Optimization report. For more information, see [Monitor Delivery Optimization](waas-delivery-optimization-monitor.md). 
 
 ## Troubleshoot Delivery Optimization
 
