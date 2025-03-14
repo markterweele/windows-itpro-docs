@@ -169,6 +169,7 @@ When a deadline is set for 0 days, no matter which option is selected, the only 
 
 The user preference for notifications applies when [compliance deadlines](wufb-compliancedeadlines.md) are used. The policy for compliance deadlines is under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Specify deadlines for automatic updates and restarts**.
 - In Windows version 22H2 and later, the **Specify deadlines for automatic updates and restarts** policy is split in to two policies: **Specify deadline for automatic updates and restarts for quality update** and **Specify deadline for automatic updates and restarts for feature update**. 
+
 ### I want to manage the notifications a user sees
 
 There are additional settings that affect the notifications.

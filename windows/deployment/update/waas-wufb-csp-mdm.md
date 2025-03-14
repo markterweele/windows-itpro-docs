@@ -132,7 +132,7 @@ If you don't want to allow any automatic updates prior to the deadline, set [Upd
 
 ### I want to keep devices secure and compliant with update deadlines
 
-We recommend that you use set specific deadlines for feature and quality updates to ensure that devices stay secure on Windows 10, version 1709 and later. Deadlines work by enabling you to specify the number of days that can elapse after an update is offered to a device before it must be installed. Also you can set the number of days that can elapse after a pending restart before the user is forced to restart. Use these settings:
+We recommend that you use set specific deadlines for feature and quality updates to ensure that devices stay secure on Windows 10, version 1709 and later. Deadlines work by enabling you to specify the number of days that can elapse after an update is offered to a device before it must be installed. Also you can set the number of days that can elapse after a pending restart before the user is forced to restart. For more information about these settings, see [Enforcing compliance deadlines for updates](wufb-compliancedeadlines.md). The following settings enforce compliance deadlines for updates:
 
 For Windows 10, version 22H2:
 
@@ -156,8 +156,6 @@ For Windows 11, version 22H2 and later:
 > - When **Specify deadlines for automatic updates and restarts** for either quality updates or feature updates is used, updates will be downloaded and installed as soon as they are offered. 
 > - When **Specify deadlines for automatic updates and restarts** for either quality updates or feature updates is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored.
 >    - Starting with the December 10, 2024 update for Windows 11, version 22H2 and later clients, [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are respected before the deadline occurs, and ignored once the deadline passes.
-
-For more information, see [Enforcing compliance deadlines for updates](wufb-compliancedeadlines.md).
 
 
 ### <a name="user-settings-for-notifications"></a> End user settings for notifications
