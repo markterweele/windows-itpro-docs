@@ -62,33 +62,34 @@ For the first few days, the user receives a toast notification in the corner of 
 - If the device is Windows 11, version 22H2 and the user set [the option](../waas-wufb-csp-mdm.md#user-settings-for-notifications) **Settings** > **Windows Update** > **Advanced options** > **Notify me when a restart is required to finish updating** to **On**, they immediately receive the toast notification when the device enters a restart pending state for updates. Automatic restarts for updates are blocked for 24 hours after the initial notification to give these users time to prepare.
 - If the device is Windows 11, version 22H2 and the user set **Notify me when a restart is required to finish updating** to **Off** (default), they receive a toast notification that a restart is required 24 hours after the device enters a reboot pending state for updates.
 
-:::image type="content" source="../media/9091858-initial-toast.png" alt-text="Screenshot of the initial toast notification displayed for a user when a restart is needed for an update but the deadline isn't reached yet. This notification is displayed for Windows 11, version 22H2, and earlier devices. " lightbox="../media/9091858-initial-toast.png":::
+   :::image type="content" source="../media/9091858-11-initial-toast.png" alt-text="Screenshot of the initial toast notification displayed in Windows 11 version 23H2, or later, for a user when a restart is needed for an update but isn't past the deadline." lightbox="../media/9091858-initial-toast.png":::
 
 Depending on settings both users and admins configure, notifications display in the middle of the screen as the deadline gets closer. 
 - If there's still time for an automatic restart to occur after active hours, the dialog displays an option to let the device restart later along with options to restart now or to pick a time to schedule a restart.
-   :::image type="content" source="../media/9091858-dialog-18-hours.png" alt-text="Screenshot of the notification displayed for a user when a restart is needed for an update and there's still time for an automatic restart to occur." lightbox="../media/9091858-dialog-18-hours.png":::
+
 - If there's not time for an automatic restart to occur after active hours, the dialog displays options to pick a time to schedule a restart, restart now, or remind the user later.
-   :::image type="content" source="../media/9091858-dialog-8-hours.png" alt-text="Screenshot of the notification displayed for a user when a restart is needed for an update and there's not time for an automatic restart to occur." lightbox="../media/9091858-dialog-8-hours.png":::
+
+
 
 During this time before the deadline is reached, if they're allowed, automatic restarts might be scheduled after active hours. If an automatic restart is scheduled or the user scheduled the restart, and the user is signed in at that time, they receive a notification 15 minutes before the scheduled time.
 
-:::image type="content" source="../media/9091858-pre-deadline-restart-imminent.png" alt-text="Screenshot of the dialog displayed for a user when a restart is needed for an update but the deadline isn't reached yet. The notification contains the deadline time and options to restart now, schedule a restart, or acknowledge the notification. This notification is displayed for Windows 11, version 22H2, and earlier devices." lightbox="../media/9091858-pre-deadline-restart-imminent.png":::
+:::image type="content" source="../media/9091858-11-pre-deadline-restart-imminent.png" alt-text="Screenshot of the dialog displayed for a user when a restart is needed for an update but the deadline isn't reached yet. The notification contains the deadline time and options to restart now, schedule a restart, or acknowledge the notification. This notification is displayed for Windows 11, version 22H2, and earlier devices." lightbox="../media/9091858-11-pre-deadline-restart-imminent.png":::
 
 The day of the deadline, a notification displays that contains the deadline time and options to restart now or acknowledge the notification. 
 
-:::image type="content" source="../media/9091858-initial-deadline-day-dialog.png" alt-text="Screenshot of the dialog displayed for a user when a restart is needed for an update but the deadline isn't reached yet. The notification contains the deadline time and options to restart now or acknowledge the notification. This notification is displayed for Windows 11, version 22H2, and earlier devices." lightbox="../media/9091858-initial-deadline-day-dialog.png":::
+:::image type="content" source="../media/9091858-11-dialog-18-hours.png" alt-text="Screenshot of the dialog displayed for a user when a restart is needed for an update but the deadline isn't reached yet. The notification contains the deadline time and options to restart now or acknowledge the notification. This notification is displayed for Windows 11, version 22H2, and earlier devices." lightbox="../media/9091858-11-dialog-18-hours.png":::
 
 If the restart is still pending once the deadline passes, a notification displays in the middle of the screen notifying the user that a restart is going to occur. Users can either confirm the restart or choose to restart now.
 
-:::image type="content" source="../media/9091858-fifteen-minutes-restart.png" alt-text="Screenshot of the dialog displayed for a user 15 minutes before a restart is forced due to a deadline. The notification contains the options to restart now or confirm the notification. This notification is displayed for Windows 11, version 22H2, and earlier devices." lightbox="../media/9091858-fifteen-minutes-restart.png":::
+:::image type="content" source="../media/9091858-11-fifteen-minutes-restart.png" alt-text="Screenshot of the dialog displayed for a user 15 minutes before a restart is forced due to a deadline. The notification contains the options to restart now or confirm the notification. This notification is displayed for Windows 11, version 22H2, and earlier devices." lightbox="../media/9091858-11-fifteen-minutes-restart.png":::
 
 In cases where a user scheduled restart fails but there's still more time before the deadline is reached, the user receives a notification to either restart now or to reschedule the restart.
 
-:::image type="content" source="../media/9091858-scheduled-restart-failed-22h2.png" alt-text="Screenshot of the dialog displayed for a user if their scheduled restart fails. The notification contains the options to restart now or to reschedule the restart. This notification is displayed for Windows 11, version 22H2, and earlier devices." lightbox="../media/9091858-scheduled-restart-failed-22h2.png":::
+:::image type="content" source="../media/9091858-11-scheduled-restart-failed.png" alt-text="Screenshot of the dialog displayed for a user if their scheduled restart fails. The notification contains the options to restart now or to reschedule the restart. This notification is displayed for Windows 11, version 22H2, and earlier devices." lightbox="../media/9091858-11-scheduled-restart-failed.png":::
 
 In cases where the deadline has passed and the restart failed, the user receives a notification that a restart is required. The user has 5 minutes to restart before the device is forced to restart.
 
-:::image type="content" source="../media/9091858-past-deadline-restart-failed.png" alt-text="Screenshot of the dialog displayed for a user if their scheduled restart fails and it's past the deadline. The user has 5 minutes to select restart before the device is forced to restart." lightbox="../media/9091858-past-deadline-restart-failed.png":::
+:::image type="content" source="../media/9091858-11-past-deadline-restart-failed.png" alt-text="Screenshot of the dialog displayed for a user if their scheduled restart fails and it's past the deadline. The user has 5 minutes to select restart before the device is forced to restart." lightbox="../media/9091858-11-past-deadline-restart-failed.png":::
 
 # [Windows 10, version 22H2](#tab/w10-22h2-notifications)
 
