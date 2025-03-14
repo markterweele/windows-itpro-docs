@@ -88,6 +88,6 @@ You can find a list of security improvements and other fixes in the [Connected C
 ## Related content
 
 - [Understand Windows Update security](/windows/deployment/update/windows-update-security)
-- [Understand the Delivery Optimization secure workflow](delivery-optimization-workflow.md)
+- [Understand the Delivery Optimization secure workflow](delivery-optimization-workflow.md#download-request-workflow)
 - [Understand delivery of Win32 apps via Intune](/troubleshoot/mem/intune/app-management/develop-deliver-working-win32-app-via-intune#the-flow-behind-delivery-of-a-win32-app-to-the-client)
 - [Microsoft Win32 Content Prep Tool](https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool)
