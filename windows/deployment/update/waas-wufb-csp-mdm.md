@@ -152,7 +152,7 @@ For Windows 11, version 22H2 and later:
 - [Update/ConfigureDeadlineNoAutoRebootForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautorebootforfeatureupdates) <!--Windows 11, version 22H2 and later-->
 
 > [!NOTE]
-> - When these policies are used, [user settings for notifications](w#user-settings-for-notifications) are also used on clients running Windows 11, version 22H2 and later.
+> - When these policies are used, [user settings for notifications](#user-settings-for-notifications) are also used on clients running Windows 11, version 22H2 and later.
 > - When **Specify deadlines for automatic updates and restarts** for either quality updates or feature updates is used, updates will be downloaded and installed as soon as they are offered. 
 > - When **Specify deadlines for automatic updates and restarts** for either quality updates or feature updates is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored.
 >    - Starting with the December 10, 2024 update for Windows 11, version 22H2 and later clients, [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are respected before the deadline occurs, and ignored once the deadline passes.
