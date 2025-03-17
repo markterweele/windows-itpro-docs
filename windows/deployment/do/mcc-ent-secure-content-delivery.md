@@ -39,19 +39,19 @@ As you can see in this diagram, Connected Cache nodes currently utilize HTTP to 
 
 The security of each Connected Cache node is dependent on the security of its environment.
 
-In order to securely function as designed, Connected Cache expects the user to take steps to secure the different layers of their organization’s network and devices.
+In order to securely function as designed, Connected Cache expects the user to take steps to secure the different components of their organization’s network and devices.
 
-The following section is intended to provide a high-level overview of some of the security layers the user should consider and resources for learning more.
+The following section is intended to provide a high-level overview of some of the security aspects the user should consider and resources for learning more.
 
 ### Azure resources
 
-One layer of security lies with the Azure resources that your Microsoft Connected Cache nodes communicate with. You should ensure that your organization’s Azure tenant is using role-based access control (RBAC) to apply policies that enforce least-privilege access to the Connected Cache Azure resources you provision. Only trusted individuals should have the ability to perform create, read, update, and delete (CRUD) operations on your organization’s MCC Azure resources and cache nodes.
+One aspect of security lies with the Azure resources that your Microsoft Connected Cache nodes communicate with. You should ensure that your organization’s Azure tenant is using role-based access control (RBAC) to apply policies that enforce least-privilege access to the Connected Cache Azure resources you provision. Only trusted individuals should have the ability to perform create, read, update, and delete (CRUD) operations on your organization’s MCC Azure resources and cache nodes.
 
 You can learn more about the principles of Azure resource security by referring to the [Azure identity management and access control security best practices](/azure/security/fundamentals/identity-management-best-practices) and the [Microsoft cloud security benchmark (MCSB) documentation for Identity management](/security/benchmark/azure/mcsb-identity-management).
 
 ### Local network
 
-Another layer of security lies with your organization’s local network. It's recommended that your organization adopts a Zero Trust approach to network security so that your organizational data is protected even if an attacker breaches your network perimeter.
+Another aspect of security lies with your organization’s local network. It's recommended that your organization adopts a Zero Trust approach to network security so that your organizational data is protected even if an attacker breaches your network perimeter.
 
 One best practice is to utilize a firewall on your organization's network. When using a network firewall, you should configure it to allow communication between your Connected Cache nodes and the [Microsoft and CDN endpoints](delivery-optimization-endpoints.md) used to install Connected Cache and download Microsoft content.
 
@@ -59,7 +59,7 @@ You can learn more about the principles of network security by referring to the 
 
 ### Cache node host machine OS
 
-Another layer of security lies with the Operating System (OS) of your Connected Cache node’s host machine. Your organization can choose to host Microsoft Connected Cache nodes on a [compatible host OS](mcc-ent-prerequisites.md#cache-node-host-machine-requirements) of your choice.
+Another aspect of security lies with the Operating System (OS) of your Connected Cache node’s host machine. Your organization can choose to host Microsoft Connected Cache nodes on a [compatible host OS](mcc-ent-prerequisites.md#cache-node-host-machine-requirements) of your choice.
 
 Regardless of which host OS you choose to use, you should ensure that you perform regular OS updates to keep it up to date.
 
@@ -67,7 +67,7 @@ If you're hosting on Windows, your host machine uses Windows Subsystem for Linux
 
 ### Organization-managed Windows devices
 
-Another layer of security lies with the organization-managed Windows devices that request Microsoft content from your Connected Cache nodes. The Windows devices that are connecting to the MCC node should be secured according to your organization’s security policy.
+Another aspect of security lies with the organization-managed Windows devices that request Microsoft content from your Connected Cache nodes. The Windows devices that are connecting to the MCC node should be secured according to your organization’s security policy.
 
 ## Frequently asked questions
 
