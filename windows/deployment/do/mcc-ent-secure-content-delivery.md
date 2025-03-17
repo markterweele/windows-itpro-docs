@@ -77,7 +77,7 @@ Here are some common questions you might have about the security of Microsoft Co
 
 There may be several MCC container updates per year. These updates may contain new features, bug fixes, and security patches. When a new Common Vulnerability and Exposure (CVE) is identified, Microsoft may release a new container update to address the vulnerability.
 
-You can read more information about Connected Cache container updates and how to schedule their application in the [Connected Cache container update documentation](mcc-ent-update-cache-node.md).
+You can read more information about Connected Cache container updates and how to schedule their installation in the [Connected Cache container update documentation](mcc-ent-update-cache-node.md).
 
 ### What security improvements are included in the latest Connected Cache container update?
 
