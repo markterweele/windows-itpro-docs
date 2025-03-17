@@ -29,7 +29,7 @@ For more information on sizing and OS requirements, see [the prerequisites for u
 ## Create Connected Cache Azure resource
 
 >[!Note]
-   >* You cannot move your Connected Cache Azure resource to a different subscription after creation.
+   >* Resource move is not currently supported for Connected Cache Azure resources. If you need to move your Connected Cache Azure resource, you can consider deleting the existing resource and create another one in another location.
 
 # [Azure portal](#tab/portal)
 
