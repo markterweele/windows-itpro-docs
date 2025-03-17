@@ -28,6 +28,9 @@ For more information on sizing and OS requirements, see [the prerequisites for u
 
 ## Create Connected Cache Azure resource
 
+>[!Note]
+   >* You cannot move your Connected Cache Azure resource to a different subscription after creation.
+
 # [Azure portal](#tab/portal)
 
 1. In the [Azure portal](https://portal.azure.com), select **Create a Resource** and search for `Microsoft Connected Cache for Enterprise and Education`.
