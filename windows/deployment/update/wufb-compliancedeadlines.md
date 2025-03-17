@@ -12,7 +12,7 @@ manager: aaroncz
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 03/14/2025
+ms.date: 03/18/2025
 ---
 # Enforcing compliance deadlines for updates
 
@@ -35,7 +35,7 @@ With Windows 11, version 22H2 and later, the following policies are available to
 In MDM, these policies are available as separate settings:
 - [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates) 
 - [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod) (for quality updates) 
 - [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates) <!--Windows 11, version 22H2 and later-->
 - [Update/ConfigureDeadlineNoAutoRebootForQualityUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautorebootforqualityupdates) <!--Windows 11, version 22H2 and later-->
 - [Update/ConfigureDeadlineNoAutoRebootForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautorebootforfeatureupdates) <!--Windows 11, version 22H2 and later-->
@@ -46,13 +46,13 @@ The deadline calculation for both quality and feature updates is based off the t
 
 The grace period for both quality and feature updates starts its countdown from the time of a pending restart after the installation is complete. This grace period is especially helpful for users returning from vacation or the time away, preventing an immediate forced reboot when they come back.
 
-Once the *effective deadline* is reached, the device tries to restart during active hours. The effective deadline is whichever is the later of the scan discovery time plus the specified deadline or the  scan discovery time plus the grace period. As soon as installation is complete and the device reaches pending restart, user are able to schedule restart before deadline occurs and Windows can still automatically restart outside of active hours if users choose not to schedule restarts.
+The *effective deadline* is whichever is the later of the scan discovery time plus the specified deadline or the scan discovery time plus the grace period. As soon as installation is complete and the device reaches pending restart, users are able to schedule restarts before effective deadline and Windows can still automatically restart outside of active hours if users choose not to schedule restarts. Once the effective deadline is reached, the device tries to restart regardless of active hours.
 
 > [!NOTE]
 > - When these policies are used, [user settings for notifications](waas-wufb-csp-mdm.md#user-settings-for-notifications) are also used on clients running Windows 11, version 22H2 and later.
 > - When **Specify deadline for automatic updates and restarts** for either quality updates or feature updates is used, updates will be downloaded and installed as soon as they are offered. 
 > - When **Specify deadline for automatic updates and restarts** for either quality updates or feature updates is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored.
->    - Starting with the December 10, 2024 update for Windows 11, version 22H2 and later clients, [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are respected before the deadline occurs, and ignored once the deadline passes.
+>    - Starting with the December 10, 2024 update for Windows 11, version 22H2 and later clients, [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are respected before the deadline occurs, and ignored once the deadline passes. For instance, if you set up [Configure Automatic Updates](waas-restart.md#schedule-update-installation) to schedule update installation at 3:00 AM, you also set up a commercial deadline, then the download and install occurs at the scheduled time from [Configure Automatic Updates](waas-restart.md#schedule-update-installation) so long as it's not past the deadline. 
 
 
 # [Policies for Windows 10, version 22H2](#tab/w10-2h2-policy)
