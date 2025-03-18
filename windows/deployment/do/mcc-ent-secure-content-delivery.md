@@ -29,7 +29,7 @@ Connected Cache nodes act as transparent content caches, meaning any device can 
 
 Connected Cache nodes only download and store Microsoft content from provisioned Microsoft and Content Delivery Network (CDN) endpoints, so there are no concerns about the cache storing personal or sensitive data.
 
-Connected Cache works in tandem with the [Delivery Optimization (DO) client](waas-delivery-optimization.md), a component of Windows that manages the downloading of Microsoft content. Regardless of download source, the DO client on each Windows device verifies the authenticity and integrity of downloaded content using its metadata hash and content hash. In addition, the downloaded content's signature is verified before it is installed. This process ensures that the Windows device is protected against man-in-the-middle attacks that attempt to tamper with content while it's in transit.
+Connected Cache works in tandem with the [Delivery Optimization (DO) client](waas-delivery-optimization.md), a component of Windows that manages the downloading of Microsoft content. Regardless of download source, the DO client on each Windows device verifies the authenticity and integrity of downloaded content using its metadata hash and content hash. In addition, the downloaded content's signature is verified before it's installed. This process ensures that the Windows device is protected against man-in-the-middle attacks that attempt to tamper with content while it's in transit.
 
 ![Diagram of content delivery between CDN, cache node, and DO client](images/mcc-ent-secure-content-delivery-diagram.png)
 
