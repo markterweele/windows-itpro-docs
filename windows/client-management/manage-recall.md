@@ -146,7 +146,7 @@ To filter websites from being saved in snapshots, use the **Set a list of URIs t
 **Set a list of apps to be filtered from snapshots for Recall** policy allows you to filter apps from being saved in snapshots. Define the list using a semicolon to separate apps. The list can include Application User Model IDs (AUMID) or the name of the executable file. For example: `code.exe;Microsoft. WindowsNotepad_8wekyb3d8bbwe!App;ms-teams.exe`
 
 > [!Note]
-> -	Like other Windows apps, such as the Snipping Tool, Recall won't store digital rights management (DRM) content.
+> -	Like other Windows apps, such as the Snipping Tool, Recall won't store [digital rights management (DRM)](/windows/win32/wmformat/digital-rights-management-features) content.
 > - Changes to this policy take effect after device restart.
 
 | &nbsp; | Setting  |
@@ -167,7 +167,21 @@ Snapshots won't be saved when remote desktop connection clients are used. The fo
   - [Remote applications integrated locally (RAIL)](/openspecs/windows_protocols/ms-rdperp/485e6f6d-2401-4a9c-9330-46454f0c5aba) windows
   - [Windows App from the Microsoft Store](/windows-app/get-started-connect-devices-desktops-apps) is saved in snapshots. To prevent the app from being saved in snapshots, add it to the app filtering list.
 
+## Bring your own device (BYOD) considerations
 
+For managed devices, IT admins have control over if they want to allow users access to Recall. It's removed by default unless IT sets the policy to enable Recall. When organizations allow users to BYOD, they need to consider the following:
+
+- **Recall availability**: For unmanaged Copilot+ PC devices, Recall is available by default. Users can enable or disable Recall on their own. 
+
+- **Conditional access restrictions**: On unmanaged devices, there isn't a way to determine if Recall is running and saving snapshots. Currently, there aren't any built-in [Conditional Access policies in Microsoft Intune](/mem/intune-service/protect/create-conditional-access-intune) or in [Microsoft Entra](/entra/identity/conditional-access/overview) for Recall. 
+
+- **Security threat of screenshots**: Recall uses general Windows screenshot APIs. There are numerous applications available for screen recording and screenshots. Recall is only one. It's a general security risk to allow screenshots of content that you want to prevent from being exfiltrated. Determine whether your content is already at risk from these types of applications, or not.
+
+- **Recall and virtual machines**: If you're using a virtual desktop setup to protect your data, make sure you test that your supported clients honor *screen capture protection*. For example, both [Azure Virtual Desktop](/azure/virtual-desktop/overview) and [Windows 365](/windows-365/overview) have policies that you can set to prevent your content from being saved in a screenshot. For instance, there's [screen capture protection in Azure Virtual Desktop](/azure/virtual-desktop/screen-capture-protection). Check with the provider of your remote client software to see if they have a similar policy. 
+
+   If the client does not support screen capture protection, then it's an easy feature to add. Windows allows applications to exclude their window from being included in screenshot. This DRM flag is set by the application as a property on its window. It's a simple feature for application developers to implement using [SetWindowDisplayAffinity function (winuser.h)](/win32/api/winuser/nf-winuser-setwindowdisplayaffinity). By setting the flag `WDA_EXCLUDEFROMCAPTURE`, the window content won't show up in Recall or any other screenshot application. 
+
+- **Office content**: If Office content is only accessible inside the virtual desktop client, it can be protected from screen capture like all content on the virtual desktop. If Office content is accessible in the BYOD browser, you can try using protection with Purview, which is a Microsoft Data Loss Prevention tool. This allows you to create sensitivity classes that would prevent screenshots. You could, for example, set a policy such that all Office documents are excluded from screenshots. For more information, see [Protect Office documents with Microsoft Purview Information Protection](/deployedge/microsoft-edge-management-service-office-mip).
 
 
 ## Information for developers
