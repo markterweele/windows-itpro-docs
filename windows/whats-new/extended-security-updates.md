@@ -35,7 +35,7 @@ ESUs doesn't include the following items:
 - New features
 - Customer-requested nonsecurity updates
 - Design change requests
-- General support won't be provided for Windows versions past the end of support date. The Windows 10 ESU only includes support for the license activation, installation, and possible regressions of the ESU itself. To get technical support for the ESU, organizations must have an active [support plan](https://serviceshub.microsoft.com/) in place. <!--9913216-->
+- General support won't be provided for Windows versions past the end of support date. The Windows 10 ESU only includes support for the license activation, installation, and possible regressions of the ESU itself. To get technical support for the ESU, organizations must have an active [support plan](https://www.microsoft.com/microsoft-unified) in place. <!--9913216-->
 
 
 
