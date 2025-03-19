@@ -59,7 +59,7 @@ For more information on sizing and OS requirements, see [the prerequisites for u
 
     * Run [az version](/cli/azure/reference-index#az-version) to find the version and dependent libraries that are installed. To upgrade to the latest version, run [az upgrade](/cli/azure/reference-index#az-upgrade).
 
-    * Install Azure CLI extension `mcc` by following the instructions [here](/cli/azure/azure-cli-extensions-overview#how-to-install-extensions).
+    * Install Azure CLI extension `mcc` by following the instructions [here](/cli/azure/azure-cli-extensions-overview#how-to-install-extensions). 
 
     * Resource group under which a Connected Cache resource can be created. Use the [az group create](/cli/azure/group#az-group-create) command to create a new Resource group if you don't already have one.
 
