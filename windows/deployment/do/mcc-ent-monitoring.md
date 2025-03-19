@@ -11,7 +11,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ Supported Linux distributions
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise</a>	
-ms.date: 10/30/2024
+ms.date: 03/19/2025
 ---
 
 # Monitor cache node usage
@@ -67,7 +67,7 @@ The content types displayed in the chart each have a distinct color and are sort
 
 ### Cache node details
 
-The **Cache Nodes** section under the **Cache Node Management** tab displays cache node information such as Status, Host machine OS, Software Version, and Cache Node ID.
+The **Cache Nodes** section under the **Cache Node Management** tab displays cache node information such as status, host machine OS, software version, and cache node ID.
 
 ![Screenshot of cache node details in the Azure portal interface.](images/mcc-ent-cache-node-details.png)
 
