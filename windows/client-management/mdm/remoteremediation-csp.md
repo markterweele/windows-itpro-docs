@@ -1,7 +1,7 @@
 ---
 title: RemoteRemediation CSP
 description: Learn more about the RemoteRemediation CSP.
-ms.date: 03/20/2025
+ms.date: 03/21/2025
 ms.topic: generated-reference
 ---
 
@@ -30,7 +30,6 @@ The following list shows the RemoteRemediation configuration service provider no
         - [NetworkPasswordEncryptionStore](#cloudremediationsettingsnetworksettingsnetworkcredentialsnetworkpasswordencryptionstore)
         - [NetworkPasswordEncryptionType](#cloudremediationsettingsnetworksettingsnetworkcredentialsnetworkpasswordencryptiontype)
         - [NetworkSSID](#cloudremediationsettingsnetworksettingsnetworkcredentialsnetworkssid)
-  - [EnableHeadless](#enableheadless)
 <!-- RemoteRemediation-Tree-End -->
 
 <!-- Device-CloudRemediationSettings-Begin -->
@@ -466,7 +465,7 @@ The encryption store that's specified if we are using a custom certificate for p
 
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPasswordEncryptionType-Description-Begin -->
 <!-- Description-Source-DDF -->
-The type of encryption that might be used for the entwork password.
+The type of encryption that might be used for the network password.
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPasswordEncryptionType-Description-End -->
 
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPasswordEncryptionType-Editable-Begin -->
@@ -538,54 +537,6 @@ Get/Set the network SSID that cloud remediation will attempt to connect to durin
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkSSID-Examples-End -->
 
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkSSID-End -->
-
-<!-- Device-EnableHeadless-Begin -->
-## EnableHeadless
-
-<!-- Device-EnableHeadless-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
-<!-- Device-EnableHeadless-Applicability-End -->
-
-<!-- Device-EnableHeadless-OmaUri-Begin -->
-```Device
-./Vendor/MSFT/RemoteRemediation/EnableHeadless
-```
-<!-- Device-EnableHeadless-OmaUri-End -->
-
-<!-- Device-EnableHeadless-Description-Begin -->
-<!-- Description-Source-DDF -->
-Enable or disable headless mode. Note that if true, then during remediation, there will be no opportunity for user interaction.
-<!-- Device-EnableHeadless-Description-End -->
-
-<!-- Device-EnableHeadless-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-EnableHeadless-Editable-End -->
-
-<!-- Device-EnableHeadless-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `bool` |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Device-EnableHeadless-DFProperties-End -->
-
-<!-- Device-EnableHeadless-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| true | Headless remediation enabled. |
-| false | Headless remediation disabled. |
-<!-- Device-EnableHeadless-AllowedValues-End -->
-
-<!-- Device-EnableHeadless-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-EnableHeadless-Examples-End -->
-
-<!-- Device-EnableHeadless-End -->
 
 <!-- RemoteRemediation-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

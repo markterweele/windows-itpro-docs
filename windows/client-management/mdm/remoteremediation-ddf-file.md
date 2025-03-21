@@ -1,7 +1,7 @@
 ---
 title: RemoteRemediation DDF file
 description: View the XML file containing the device description framework (DDF) for the RemoteRemediation configuration service provider.
-ms.date: 03/20/2025
+ms.date: 03/21/2025
 ms.topic: generated-reference
 ---
 
@@ -469,40 +469,6 @@ The following XML file contains the device description framework (DDF) for the R
           </Node>
         </Node>
       </Node>
-    </Node>
-    <Node>
-      <NodeName>EnableHeadless</NodeName>
-      <DFProperties>
-        <AccessType>
-          <Add />
-          <Delete />
-          <Get />
-          <Replace />
-        </AccessType>
-        <Description>Enable or disable headless mode. Note that if true, then during remediation, there will be no opportunity for user interaction</Description>
-        <DFFormat>
-          <bool />
-        </DFFormat>
-        <Occurrence>
-          <One />
-        </Occurrence>
-        <Scope>
-          <Dynamic />
-        </Scope>
-        <DFType>
-          <MIME />
-        </DFType>
-        <MSFT:AllowedValues ValueType="ENUM">
-          <MSFT:Enum>
-            <MSFT:Value>true</MSFT:Value>
-            <MSFT:ValueDescription>Headless remediation enabled</MSFT:ValueDescription>
-          </MSFT:Enum>
-          <MSFT:Enum>
-            <MSFT:Value>false</MSFT:Value>
-            <MSFT:ValueDescription>Headless remediation disabled</MSFT:ValueDescription>
-          </MSFT:Enum>
-        </MSFT:AllowedValues>
-      </DFProperties>
     </Node>
   </Node>
 </MgmtTree>
