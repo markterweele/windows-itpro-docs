@@ -36,6 +36,8 @@ In many cases, applications should be able to replace NTLM with Negotiate using 
 
 Negotiate's built-in fallback to NTLM is preserved to mitigate compatibility issues during this transition. For updates on NTLM deprecation, see [https://aka.ms/ntlm](https://aka.ms/ntlm). 
 
+NTLM v1 is removed starting in Windows 11, version 24H2 and Windows Server 2025. Some situations still use NTLMv1 primitives for legacy reasons. MSCHAPv2 uses the same response function as NTLMv1 and is vulnerable to the same attacks against the weak crypto.  MSCHAPv2 is only disabled by enabling Credential Guard.
+
 ## WordPad
 
 WordPad is removed from all editions of Windows starting in Windows 11, version 24H2 and Windows Server 2025. As a result, Windows will no longer have a built-in, default RTF reader. We recommend Microsoft Word for rich text documents like .doc and .rtf and Notepad for plain text documents like .txt. The following binaries will be removed as a result of WordPad removal:
