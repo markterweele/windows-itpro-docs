@@ -11,7 +11,7 @@ In many cases, a first step for administrators is to customize the firewall prof
 
 This article describes the concepts and recommendations for creating and managing firewall rules.
 
-## Rule precedence for inbound rules
+## Rule precedence for inbound and outbound rules
 
 In many cases, allowing specific types of inbound traffic is required for applications to function in the network. Administrators should keep the following rule precedence behaviors in mind when configuring inbound exceptions:
 
@@ -19,7 +19,9 @@ In many cases, allowing specific types of inbound traffic is required for applic
 1. Explicit block rules take precedence over any conflicting allow rules
 1. More specific rules take precedence over less specific rules, except if there are explicit block rules as mentioned in 2. For example, if the parameters of rule 1 include an IP address range, while the parameters of rule 2 include a single IP host address, rule 2 takes precedence
 
-Because of 1 and 2, when designing a set of policies you should make sure that there are no other explicit block rules that could inadvertently overlap, thus preventing the traffic flow you wish to allow.
+Because of 1 and 2, when designing a set of policies, you should make sure that there are no other explicit block rules that could inadvertently overlap, thus preventing the traffic flow you wish to allow.
+
+Outbound rules follow the same precedence behaviors. 
 
 > [!NOTE]
 > Windows Firewall doesn't support weighted, administrator-assigned rule ordering. An effective policy set with expected behaviors can be created by keeping in mind the few, consistent, and logical rule behaviors as described.
