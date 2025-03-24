@@ -27,6 +27,8 @@ Your investments in updates and device management are carried forward. For examp
 
 This article lists what's new, and some of the features & improvements. For more information on what's new for OEMs, see [What's new in manufacturing, customization, and design](/windows-hardware/get-started/what-s-new-in-windows).
 
+[!INCLUDE [Windows roadmap](./includes/windows-roadmap.md)]
+
 ## Security and scanning
 
 The security and privacy features in Windows 11 are similar to Windows 10. Security for your devices starts with the hardware, and includes OS security, application security, and user & identity security. There are features available in the Windows OS to help in these areas. This section describes some of these features. For a more comprehensive view, including zero trust, see [Windows security](/windows/security/).

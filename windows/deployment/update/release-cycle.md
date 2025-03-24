@@ -21,6 +21,8 @@ Windows updates help you to stay productive and protected. They provide your use
 
 This article provides details on the types of updates that Microsoft provides, and how they help make the overall user experience simple and consistent.
 
+[!INCLUDE [Windows roadmap](../../whats-new/includes/windows-roadmap.md)]
+
 ## Types of update releases
 
 |Release type | Description | Release cycle |

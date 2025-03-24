@@ -104,6 +104,8 @@ A consolidated [Windows 11 update history](https://support.microsoft.com/topic/5
 
 It's important that organizations have adequate time to plan for Windows 11. Microsoft also recognizes that many organizations have a mix of Windows 11 and Windows 10 devices across their ecosystem. Devices on in-service versions of Windows 10 continue to receive monthly Windows 10 security updates, and incremental improvements to Windows 10 to support ongoing Microsoft 365 deployments. For more information, see the [Windows 10 release information](/windows/release-health/release-information) page.
 
+[!INCLUDE [Windows roadmap](./includes/windows-roadmap.md)]
+
 ## Application compatibility
 
 Microsoft's compatibility promise for Windows 10 is maintained for Windows 11. Data from the App Assure program shows that Windows 10 compatibility rates are over 99.7% for enterprise organizations, including line of business (LOB) apps. Microsoft remains committed to ensuring that the apps you rely upon continue to work as expected when you upgrade. Windows 11 is subject to the same app compatibility validation requirements that are in place for Windows 10 today, for both feature and quality updates.
