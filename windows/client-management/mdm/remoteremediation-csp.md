@@ -1,7 +1,7 @@
 ---
 title: RemoteRemediation CSP
 description: Learn more about the RemoteRemediation CSP.
-ms.date: 03/21/2025
+ms.date: 03/24/2025
 ms.topic: generated-reference
 ---
 
@@ -38,7 +38,7 @@ The following list shows the RemoteRemediation configuration service provider no
 <!-- Device-CloudRemediationSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-CloudRemediationSettings-Applicability-End -->
 
 <!-- Device-CloudRemediationSettings-OmaUri-Begin -->
@@ -78,7 +78,7 @@ Interior node containing settings related to cloud remediation. Delete on this n
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-Applicability-End -->
 
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-OmaUri-Begin -->
@@ -117,7 +117,7 @@ Interior node containing settings related to auto remediation. Delete on this no
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-EnableAutoRemediation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-EnableAutoRemediation-Applicability-End -->
 
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-EnableAutoRemediation-OmaUri-Begin -->
@@ -128,7 +128,7 @@ Interior node containing settings related to auto remediation. Delete on this no
 
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-EnableAutoRemediation-Description-Begin -->
 <!-- Description-Source-DDF -->
-Interior node containing settings related to auto remediation. Delete on this node will reset all auto remediation settings to their default values.
+Enabled or disable auto remediation.
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-EnableAutoRemediation-Description-End -->
 
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-EnableAutoRemediation-Editable-Begin -->
@@ -166,7 +166,7 @@ Interior node containing settings related to auto remediation. Delete on this no
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-SetRetryInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-SetRetryInterval-Applicability-End -->
 
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-SetRetryInterval-OmaUri-Begin -->
@@ -207,7 +207,7 @@ Get/set the retry interval (in minutes) during auto cloud remediation. The retry
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-SetTimeToReboot-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-SetTimeToReboot-Applicability-End -->
 
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-SetTimeToReboot-OmaUri-Begin -->
@@ -248,7 +248,7 @@ Get/set the time to reboot (in minutes) during auto cloud remediation. The maxim
 <!-- Device-CloudRemediationSettings-EnableCloudRemediation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-CloudRemediationSettings-EnableCloudRemediation-Applicability-End -->
 
 <!-- Device-CloudRemediationSettings-EnableCloudRemediation-OmaUri-Begin -->
@@ -296,7 +296,7 @@ Enable or disable cloud remediation.
 <!-- Device-CloudRemediationSettings-NetworkSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-CloudRemediationSettings-NetworkSettings-Applicability-End -->
 
 <!-- Device-CloudRemediationSettings-NetworkSettings-OmaUri-Begin -->
@@ -335,7 +335,7 @@ Interior node containing settings related to network.
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-Applicability-End -->
 
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-OmaUri-Begin -->
@@ -374,7 +374,7 @@ Interior node containing settings related to network credentials.
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPassword-Applicability-End -->
 
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPassword-OmaUri-Begin -->
@@ -414,7 +414,7 @@ Get/Set the password for the wifi network that cloud remediation will attempt to
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPasswordEncryptionStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPasswordEncryptionStore-Applicability-End -->
 
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPasswordEncryptionStore-OmaUri-Begin -->
@@ -454,7 +454,7 @@ The encryption store that's specified if we are using a custom certificate for p
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPasswordEncryptionType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPasswordEncryptionType-Applicability-End -->
 
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPasswordEncryptionType-OmaUri-Begin -->
@@ -504,7 +504,7 @@ The type of encryption that might be used for the network password.
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkSSID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkSSID-Applicability-End -->
 
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkSSID-OmaUri-Begin -->
