@@ -19,11 +19,11 @@ appliesto:
 
 # Resources for deprecated features
 
-This article provides additional resources about [deprecated features for Windows client](deprecated-features.md) that may be needed by IT professionals. The following information is provided to help IT professionals plan for the removal of deprecated features:
+This article provides more information about some [deprecated features for Windows client](deprecated-features.md) that's needed by IT professionals. The following information is provided to help IT professionals plan for the removal of deprecated features:
 
 ## Maps app
 
-Maps is deprecated and will be removed from the Microsoft Store by **[DATE TBD]**. At this time, there will also be a final update to the app from the Store that makes it nonfunctional. If you remove the app prior to **[DATE TBD]**, you can still reinstall it from the Store, but past **[DATE TBD]** you will not be able to reinstall it. You will be able to uninstall the app at any time. Any personal data or files you have saved, such as guided navigation or URLs to maps, will not be removed, but they will no longer function in the Maps app past **[DATE TBD]**. If you wish to still use maps powered by the Bing service, please visit [https://www.bing.com/maps](https://www.bing.com/maps). Maps is no longer preinstalled with Windows starting with the Windows 11 24H2 release. 
+Maps is deprecated and will be removed from the Microsoft Store by **[DATE TBD]**. At this time, there will also be a final update to the app from the Store that makes it nonfunctional. If you remove the app before **[DATE TBD]**, you can still reinstall it from the Store, but past **[DATE TBD]** you won't be able to reinstall it. You'll be able to uninstall the app at any time. Any personal data or files you have saved, such as guided navigation or URLs to maps, won't be removed, but they'll no longer function in the Maps app past **[DATE TBD]**. If you wish to still use maps powered by the Bing service, please visit [https://www.bing.com/maps](https://www.bing.com/maps). Maps is no longer preinstalled with Windows starting with the Windows 11, version 24H2 release. 
 
 ## Paint 3D
 
@@ -36,11 +36,11 @@ Paint 3D is deprecated and will be removed from the Microsoft Store on November 
 
 Customers concerned about NTLM usage in their environments are encouraged to utilize [NTLM auditing](/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-audit-ntlm-authentication-in-this-domain) to [investigate how NTLM is being used](https://techcommunity.microsoft.com/t5/ask-the-directory-services-team/ntlm-blocking-and-you-application-analysis-and-auditing/ba-p/397191).  
 
-In many cases, applications should be able to replace NTLM with Negotiate using a one-line change in their `AcquireCredentialsHandle` request to the SSPI. One known exception is for applications that have made hard assumptions about the maximum number of round trips needed to complete authentication. In most cases, Negotiate will add at least one additional round trip. Some scenarios may require additional configuration. For more information, see [Kerberos authentication troubleshooting guidance](/troubleshoot/windows-server/windows-security/kerberos-authentication-troubleshooting-guidance).
+In many cases, applications should be able to replace NTLM with Negotiate using a one-line change in their `AcquireCredentialsHandle` request to the SSPI. One known exception is for applications that make hard assumptions about the maximum number of round trips needed to complete authentication. In most cases, Negotiate will add at least one additional round trip. Some scenarios might require additional configuration. For more information, see [Kerberos authentication troubleshooting guidance](/troubleshoot/windows-server/windows-security/kerberos-authentication-troubleshooting-guidance).
 
 Negotiate's built-in fallback to NTLM is preserved to mitigate compatibility issues during this transition. For updates on NTLM deprecation, see [https://aka.ms/ntlm](https://aka.ms/ntlm). 
 
-NTLM v1 is removed starting in Windows 11, version 24H2 and Windows Server 2025. Some situations still use NTLMv1 primitives for legacy reasons. MSCHAPv2 uses the same response function as NTLMv1 and is vulnerable to the same attacks against the weak crypto.  MSCHAPv2 is only disabled by enabling Credential Guard.
+NTLM v1 is removed starting in Windows 11, version 24H2 and Windows Server 2025. Some situations still use NTLMv1 primitives for legacy reasons. MSCHAPv2 uses the same response function as NTLMv1 and is vulnerable to the same attacks against the weak crypto. MSCHAPv2 is only disabled by enabling Credential Guard.
 
 ## WordPad
 
@@ -69,7 +69,7 @@ For developer guidance and for a list of common applications known to rely on TL
 
 ### TLS diagnostic events
 
-Applications that fail when TLS 1.0 and 1.1 are disabled can be identified by reviewing the event logs. In the System Event Log, SChannel EventID 36871 may be logged with the following description:
+Applications that fail when TLS 1.0 and 1.1 are disabled can be identified by reviewing the event logs. In the System Event Log, SChannel EventID 36871 might be logged with the following description:
 
 `A fatal error occurred while creating a TLS <client/server> credential. The internal error state is 10013. The SSPI client process is <process ID>.`
 
