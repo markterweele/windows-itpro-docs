@@ -363,14 +363,11 @@ This policy setting allows you to control whether Image Creator functionality is
 <!-- Description-Source-ADMX -->
 This policy setting determines which app opens when the user presses the Copilot key on their keyboard.
 
-- If the policy is enabled, the specified app will open when the user presses the Copilot key.
-Users can change the key assignment in Settings, but cannot select a different custom app.
+- If the policy is enabled, the specified app will open when the user presses the Copilot key. Users can change the key assignment in Settings, but cannot select a different custom app.
 
 - If the policy isn't configured, Copilot or Microsoft 365 Copilot will open if it's available in that country or region.
 
-The property value is the Application User Model ID (AUMID) for the target application. For example: Notepad `Microsoft.WindowsNotepad_8wekyb3d8bbwe!App`.
-
-To help you retrieve AUMIDs, you can refer to this article: [Find the Application User Model ID of an installed app | Microsoft Learn](https://learn.microsoft.com/en-us/windows/configuration/store/find-aumid?tabs=ps%2Cexplorer&pivots=windows-11).
+The property value is the Application User Model ID (AUMID) for the target application. For example: Notepad is `Microsoft.WindowsNotepad_8wekyb3d8bbwe!App`. To help you retrieve AUMIDs, you can refer to this article: [Find the Application User Model ID of an installed app | Microsoft Learn](https://learn.microsoft.com/en-us/windows/configuration/store/find-aumid?tabs=ps%2Cexplorer&pivots=windows-11).
 
 <!-- SetCopilotHardwareKey-Description-End -->
 
