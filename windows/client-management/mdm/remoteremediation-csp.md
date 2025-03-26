@@ -85,7 +85,7 @@ Interior node containing settings related to cloud remediation. Delete on this n
 
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-OmaUri-Begin -->
 ```Device
-./Vendor/MSFT/RemoteRemediation/CloudRemediationSettings//AutoRemediationSettings
+./Vendor/MSFT/RemoteRemediation/CloudRemediationSettings/AutoRemediationSettings
 ```
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-OmaUri-End -->
 
@@ -124,7 +124,7 @@ Interior node containing settings related to auto remediation. Delete on this no
 
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-EnableAutoRemediation-OmaUri-Begin -->
 ```Device
-./Vendor/MSFT/RemoteRemediation/CloudRemediationSettings//AutoRemediationSettings/EnableAutoRemediation
+./Vendor/MSFT/RemoteRemediation/CloudRemediationSettings/AutoRemediationSettings/EnableAutoRemediation
 ```
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-EnableAutoRemediation-OmaUri-End -->
 
@@ -194,7 +194,7 @@ Get/set the retry interval (in minutes) during auto cloud remediation. The retry
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1,4320]` |
-| Dependency [EnableAutoRemediation] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/RemoteRemediation/CloudRemediationSettings//AutoRemediationSettings/EnableAutoRemediation` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
+| Dependency [EnableAutoRemediation] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/RemoteRemediation/CloudRemediationSettings/AutoRemediationSettings/EnableAutoRemediation` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-SetRetryInterval-DFProperties-End -->
 
 <!-- Device-CloudRemediationSettings-AutoRemediationSettings-SetRetryInterval-Examples-Begin -->
@@ -401,7 +401,7 @@ Get/Set the password for the wifi network that cloud remediation will attempt to
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Dependency [EnableCloudRemediation] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/RemoteRemediation/CloudRemediationSettings//AutoRemediationSettings/EnableAutoRemediation` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
+| Dependency [EnableCloudRemediation] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/RemoteRemediation/CloudRemediationSettings/AutoRemediationSettings/EnableAutoRemediation` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPassword-DFProperties-End -->
 
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPassword-Examples-Begin -->
@@ -531,7 +531,7 @@ Get/Set the network SSID that cloud remediation will attempt to connect to durin
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Dependency [EnableCloudRemediation] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/RemoteRemediation/CloudRemediationSettings//AutoRemediationSettings/EnableAutoRemediation` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
+| Dependency [EnableCloudRemediation] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/RemoteRemediation/CloudRemediationSettings/AutoRemediationSettings/EnableAutoRemediation` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkSSID-DFProperties-End -->
 
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkSSID-Examples-Begin -->
