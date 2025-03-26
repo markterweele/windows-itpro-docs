@@ -214,7 +214,9 @@ To simulate the quick machine recovery experience, use the following commands fr
     reagentc.exe /BootToRe
     ```
 1. Reboot your device. The system goes through autoremediation of a simulated crash and reboots back to Windows
-1. To verify the quick machine recovery remediation, go to **Settings** > **Windows Update** > **[Update history](ms-settings:windowsupdate-history)**. The remediation should be listed under **Quality updates**
+
+<!--
+1. To verify the quick machine recovery remediation, go to **Settings** > **Windows Update** > **[Update history](ms-settings:windowsupdate-history)**. The remediation should be listed under **Quality updates**-->
 
 ### :::image type="icon" source="../images/icons/feedback.svg" border="false"::: Provide feedback
 
@@ -225,5 +227,5 @@ To provide feedback for quick machine recovery, open [**Feedback Hub**][FHUB] an
 [SMC-1]: https://support.microsoft.com/topic/85deb0b9-fa3d-44a3-a3d0-d0f1515c2c9b
 [SMC-2]: https://support.microsoft.com/topic/0eb14733-6301-41cb-8d26-06a12b42770b
 [FHUB]: feedback-hub://?tabid=2&newFeedback=true&feedbackType=1
-[CSP-1]: /windows/client-management/mdm/
+[CSP-1]: /windows/client-management/mdm/remoteremediation-csp
 [INT-1]: /mem/intune/configuration/settings-catalog
