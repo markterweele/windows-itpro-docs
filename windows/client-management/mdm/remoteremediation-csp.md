@@ -441,7 +441,7 @@ The encryption store that's specified if we are using a custom certificate for p
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-| Dependency [EnableCloudRemediation] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/RemoteRemediation/CloudRemediationSettings//AutoRemediationSettings/EnableAutoRemediation` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
+| Dependency [EnableCloudRemediation] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/RemoteRemediation/CloudRemediationSettings/AutoRemediationSettings/EnableAutoRemediation` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPasswordEncryptionStore-DFProperties-End -->
 
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPasswordEncryptionStore-Examples-Begin -->
@@ -481,7 +481,7 @@ The type of encryption that might be used for the network password.
 |:--|:--|
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Dependency [EnableCloudRemediation] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/RemoteRemediation/CloudRemediationSettings//AutoRemediationSettings/EnableAutoRemediation` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
+| Dependency [EnableCloudRemediation] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/RemoteRemediation/CloudRemediationSettings/AutoRemediationSettings/EnableAutoRemediation` <br> Dependency Allowed Value: `true` <br> Dependency Allowed Value Type: `ENUM` <br>  |
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPasswordEncryptionType-DFProperties-End -->
 
 <!-- Device-CloudRemediationSettings-NetworkSettings-NetworkCredentials-NetworkPasswordEncryptionType-AllowedValues-Begin -->
