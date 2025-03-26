@@ -49,7 +49,7 @@ Figuring out device health can be challenging and disruptive to the end user whe
 - Obtain proactive data sent by the device to the service, or
 - Proactively detect and remediate issues
 
-Windows Autopatch has devices readiness states within its [**Autopatch group membership report**](../deploy/windows-autopatch-register-devices.md#autopatch-group-membership-report). Each state provides IT admins monitoring information on which devices might have potential device health issues.
+Windows Autopatch has devices readiness states within its [**Autopatch group membership report**](../deploy/windows-autopatch-register-devices.md#autopatch-groups-membership-report). Each state provides IT admins monitoring information on which devices might have potential device health issues.
 
 | Tab | Description |
 | ----- | ----- |

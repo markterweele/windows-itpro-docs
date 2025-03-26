@@ -51,7 +51,7 @@ Before you start managing Autopatch groups, ensure you meet the following prereq
 
 ## Register devices into Autopatch groups
 
-Autopatch groups register devices with the Windows Autopatch service when you either [create](../manage/windows-autopatch-manage-autopatch-groups.md#create-an-autopatch-group) or [edit an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#edit-an-autopatch-group). For more information, see [Register devices into Autopatch groups](../deploy/windows-autopatch-register-devices.md#register-devices-into-autopatch-groups).
+Autopatch groups register devices with the Windows Autopatch service when you either [create](../manage/windows-autopatch-manage-autopatch-groups.md#create-an-autopatch-group) or [edit an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#edit-an-autopatch-group). For more information, see [Register devices into Autopatch groups](../deploy/windows-autopatch-register-devices.md#register-devices-with-autopatch-groups).
 
 ## High-level architecture diagram overview
 
