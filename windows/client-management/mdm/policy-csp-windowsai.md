@@ -366,7 +366,6 @@ This policy setting determines which app opens when the user presses the Copilot
 - If the policy is enabled, the specified app will open when the user presses the Copilot key. Users can change the key assignment in Settings.
 
 - If the policy isn't configured, Copilot will open if it's available in that country or region.
-
 <!-- SetCopilotHardwareKey-Description-End -->
 
 <!-- SetCopilotHardwareKey-Editable-Begin -->
