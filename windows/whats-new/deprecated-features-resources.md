@@ -21,6 +21,10 @@ appliesto:
 
 This article provides additional resources about [deprecated features for Windows client](deprecated-features.md) that may be needed by IT professionals. The following information is provided to help IT professionals plan for the removal of deprecated features:
 
+## Maps app
+
+Maps is deprecated and will be removed from the Microsoft Store by **[DATE TBD]**. At this time, there will also be a final update to the app from the Store that makes it nonfunctional. If you remove the app prior to **[DATE TBD]**, you can still reinstall it from the Store, but past **[DATE TBD]** you will not be able to reinstall it. You will be able to uninstall the app at any time. Any personal data or files you have saved, such as guided navigation or URLs to maps, will not be removed, but they will no longer function in the Maps app past **[DATE TBD]**. If you wish to still use maps powered by the Bing service, please visit [https://www.bing.com/maps](https://www.bing.com/maps). Maps is no longer preinstalled with Windows starting with the Windows 11 24H2 release. 
+
 ## Paint 3D
 
 Paint 3D is deprecated and will be removed from the Microsoft Store on November 4, 2024. Existing installations of Paint 3D will continue to work, but the app will no longer be available for download from the Microsoft Store. If you remove the app, you can reinstall it from the Microsoft Store until November 4, 2024. After that date, Paint 3D will no longer be available for download. Paint 3D was preinstalled on some Windows 10 devices, but wasn't preinstalled on Windows 11 devices. Some alternatives to Paint 3D include:
