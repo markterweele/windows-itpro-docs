@@ -1,7 +1,7 @@
 ---
 title: RemoteRemediation DDF file
 description: View the XML file containing the device description framework (DDF) for the RemoteRemediation configuration service provider.
-ms.date: 03/24/2025
+ms.date: 03/26/2025
 ms.topic: generated-reference
 ---
 
@@ -39,7 +39,7 @@ The following XML file contains the device description framework (DDF) for the R
         <DDFName />
       </DFType>
       <MSFT:Applicability>
-        <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+        <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
         <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x87;0x88;0x88*;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xB4;0xBC;0xBD;0xBF;0xCA;0xCB;</MSFT:EditionAllowList>
       </MSFT:Applicability>
@@ -134,7 +134,7 @@ The following XML file contains the device description framework (DDF) for the R
               <Get />
               <Replace />
             </AccessType>
-            <Description>Enabled or disable auto remediation.</Description>
+            <Description>Enable or disable auto remediation.</Description>
             <DFFormat>
               <bool />
             </DFFormat>
