@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams
 description: This article explains how Microsoft Teams updates are managed in Windows Autopatch
-ms.date: 09/16/2024
+ms.date: 03/31/2025
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -16,8 +16,6 @@ ms.collection:
 ---
 
 # Microsoft Teams
-
-[!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
 Windows Autopatch uses the [standard automatic update channel](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating) for Microsoft Teams.
 

@@ -1,7 +1,7 @@
 ---
 title: Device alerts
 description: Provide notifications and information about the necessary steps to keep your devices up to date.
-ms.date: 09/16/2024
+ms.date: 03/31/2025
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -16,8 +16,6 @@ ms.collection:
 ---
 
 # Device alerts
-
-[!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
 Windows Autopatch and Windows Updates use Device alerts to provide notifications and information about the necessary steps to keep your devices up to date. In Windows Autopatch reporting, every device is provided with a section for alerts. If no alerts are listed, no action is needed. Navigate to **Reports** > **Quality update status** or **Feature update status** > **Device** > select the **Device alerts** column. The provided information helps you understand:
 

@@ -1,7 +1,7 @@
 ---
 title: Hotpatch updates
 description: Use Hotpatch updates to receive security updates without restarting your device
-ms.date: 02/03/2025
+ms.date: 03/31/2025
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -16,8 +16,6 @@ ms.collection:
 ---
 
 # Hotpatch updates (public preview)
-
-[!INCLUDE [windows-autopatch-applies-to-all-licenses](../includes/windows-autopatch-applies-to-all-licenses.md)]
 
 > [!IMPORTANT]
 > This feature is in public preview. It's being actively developed and might not be complete. They're made available on a "Preview" basis. You can test and use these features in production environments and scenarios and provide feedback.

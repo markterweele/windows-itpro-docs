@@ -1,7 +1,7 @@
 ---
 title: Windows quality update end user experience
 description: This article explains the Windows quality update end user experience
-ms.date: 11/04/2024
+ms.date: 03/31/2025
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: article
@@ -16,8 +16,6 @@ ms.collection:
 ---
 
 # Windows quality update end user experience
-
-[!INCLUDE [windows-autopatch-applies-to-all-licenses](../includes/windows-autopatch-applies-to-all-licenses.md)]
 
 ## User notifications
 
