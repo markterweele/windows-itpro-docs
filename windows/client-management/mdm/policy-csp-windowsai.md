@@ -367,12 +367,12 @@ This policy setting determines which app opens when the user presses the Copilot
 
 - If the policy isn't configured, Microsoft 365 Copilot or Copilot will open if it's available for that user's account in that country or region. Users can change the key assignment in Settings including selecting a different custom app.
 
-The property value is the Application User Model ID (AUMID) for the target application. For example: the Microsoft 365 Copilot app is `Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe!Microsoft.MicrosoftOfficeHub`. To help you retrieve AUMIDs, you can refer to this article: [Find the Application User Model ID of an installed app | Microsoft Learn](https://learn.microsoft.com/en-us/windows/configuration/store/find-aumid?tabs=ps%2Cexplorer&pivots=windows-11).
-
 <!-- SetCopilotHardwareKey-Description-End -->
 
 <!-- SetCopilotHardwareKey-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The property value is the Application User Model ID (AUMID) for the target application. For example: the Microsoft 365 Copilot app is `Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe!Microsoft.MicrosoftOfficeHub`. To help you retrieve AUMIDs, you can refer to this article: [Find the Application User Model ID of an installed app | Microsoft Learn](https://learn.microsoft.com/en-us/windows/configuration/store/find-aumid?tabs=ps%2Cexplorer&pivots=windows-11).
+
 <!-- SetCopilotHardwareKey-Editable-End -->
 
 <!-- SetCopilotHardwareKey-DFProperties-Begin -->
