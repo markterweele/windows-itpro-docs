@@ -12,7 +12,7 @@ ms.topic: troubleshooting
 ms.collection:
   - highpri
   - tier2
-ms.date: 01/29/2025
+ms.date: 03/27/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -77,6 +77,8 @@ If the upgrade process proceeds normally, the **Sources** directory including **
 
     As long as at least the required version of .NET is installed, no additional action is required, including if a newer version is installed.
 
+1. **Setupdiag.exe** should be run from an elevated command prompt for it to work properly.
+
 ## Using SetupDiag
 
 To quickly use SetupDiag on the current computer:
@@ -126,7 +128,11 @@ For instructions on how to run the tool in offline mode and with more advanced o
 
 ### Examples
 
-- In the following example, SetupDiag is run with default parameters in online mode. The results file is **SetupDiagResults.log** in the same folder where SetupDiag is run.
+> [!IMPORTANT]
+>
+> **SetupDiage.exe** should be run from an elevated command prompt for it to work properly.
+
+- In the following example, SetupDiag is run without parameters and it displays interactive help.
 
   ```cmd
   SetupDiag.exe
