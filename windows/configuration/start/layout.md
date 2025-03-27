@@ -466,8 +466,6 @@ You can configure devices using the [Start CSP][WIN-1]. Use one of the following
 | - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-Start#startlayout)<br>- **Data type:** String <br>- **Value:** content of the XML file |
 | - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-Start#startlayout)<br>- **Data type:** String <br>- **Value:** content of the XML file |
 
-[!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
-
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg-10)
 
 [!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
@@ -593,8 +591,6 @@ You can configure devices using the [Start CSP][WIN-1]. Use one of the following
 |--|
 | - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start#configurestartpins)<br>- **Data type:** String <br>- **Value:** content of the JSON file |
 | - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start#configurestartpins)<br>- **Data type:** String <br>- **Value:** content of the JSON file |
-
-[!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
 
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg-11)
 
