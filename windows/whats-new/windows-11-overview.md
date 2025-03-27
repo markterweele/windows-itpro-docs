@@ -5,7 +5,7 @@ manager: aaroncz
 author: mestew
 ms.author: mstewart
 ms.service: windows-client
-ms.date: 01/31/2024
+ms.date: 03/27/2025
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
 ms.topic: overview
