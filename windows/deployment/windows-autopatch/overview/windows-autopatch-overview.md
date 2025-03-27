@@ -54,7 +54,6 @@ The goal of Windows Autopatch is to deliver software updates to registered devic
 | [Microsoft Teams updates](../manage/windows-autopatch-teams.md) | Windows Autopatch allows eligible devices to benefit from the standard automatic update channel. |
 | [Intune reports](/mem/intune/fundamentals/reports) | Use Intune reports to monitor the health and activity of endpoints in your organization.|
 | [Hotpatch quality update report](../monitor/windows-autopatch-hotpatch-quality-update-report.md) | Hotpatch quality update report provides a per policy level view of the current update statuses for all devices that receive Hotpatch updates. |
-| [Policy health and remediation](../monitor/windows-autopatch-policy-health-and-remediation.md) | When Windows Autopatch detects policies in the tenant are either missing or modified that affects the service, Windows Autopatch raises alerts and detailed recommended actions to ensure healthy operation of the service. |
 | Enhanced [Windows quality and feature update reports](../monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview.md) and [device alerts](../monitor/windows-autopatch-device-alerts.md) | Using Windows quality and feature update reports, you can monitor and remediate managed devices that are Not up to Date and resolve any device alerts to bring managed devices back into compliance. |
 
 ### Features included with E3+ and F3 licenses only

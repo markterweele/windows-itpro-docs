@@ -110,8 +110,6 @@ For Data Subject Requests from other products related to the service, see the fo
 - [Microsoft Intune data](/compliance/regulatory/gdpr-dsr-intune)
 - [Microsoft Entra data](/compliance/regulatory/gdpr-dsr-azure)
 
-### [Windows Enterprise E3+ and F3](#tab/windows-enterprise-e3-f3-data-subjects)
-
 ## Legal
 
 The following is Microsoft's privacy notice to end users of products provided by organizational customers.

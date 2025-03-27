@@ -28,7 +28,7 @@
           items:
             - name: Autopatch groups overview
               href: deploy/windows-autopatch-groups-overview.md
-            - name: Autopatch group registration overview
+            - name: Autopatch groups registration overview
               href: deploy/windows-autopatch-device-registration-overview.md
             - name: Register devices with Autopatch groups
               href: deploy/windows-autopatch-register-devices.md

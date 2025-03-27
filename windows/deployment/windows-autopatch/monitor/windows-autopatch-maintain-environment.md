@@ -22,10 +22,6 @@ If any of the following items apply to your environment, make the adjustments as
 > [!NOTE]
 > If you make changes to policies in Microsoft Intune, Microsoft Entra ID, or Microsoft 365 that affect Windows Autopatch, it's possible that Windows Autopatch could stop operating properly.
 
-## Windows Autopatch configurations
-
-Windows Autopatch deploys, manages, and maintains all configurations related to the operation of the service. Don't make any changes to any of the Windows Autopatch configurations.
-
 ## Windows Autopatch tenant management
 
 ### Windows Autopatch tenant actions

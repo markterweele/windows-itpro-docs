@@ -42,13 +42,3 @@ To achieve this outcome, the feature update policy is configured for immediate s
 
 > [!IMPORTANT]
 > To safely deploy a new feature update, Autopatch recommends using a custom Windows feature update release. The custom release allows you to choose how and when different deployment rings receive the update. Autopatch doesn't recommend updating the minimum version within an Autopatch group until your rollout is complete. Doing so initiates a rollout which starts immediately for all members of that group.<p>Once you create a custom Windows feature update release, the Autopatch group's deployment rings are unassigned from that group’s feature update policy.</p>
-
-Autopatch groups set up the [feature updates for Windows 10 and later policies](/mem/intune/protect/windows-10-feature-updates) for each of its deployment rings in the Default Autopatch group, see the following default policy values:
-
-| Policy name |Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Autopatch group name - DSS Policy [Test]| Windows 10 21H2 | Make update available as soon as possible | N/A | N/A | N/A | June 11, 2024 |
-| Autopatch group name - DSS Policy [Ring1] | Windows 10 21H2 | Make update available as soon as possible | N/A | N/A | N/A | June 11, 2024 |
-| Autopatch group name - DSS Policy [Ring2] | Windows 10 21H2 | Make update available as soon as possible | December 14, 2022 | December 21, 2022 | 1 | June 11, 2024 |
-| Autopatch group name - DSS Policy [Ring3] | Windows 10 21H2 | Make update available as soon as possible | December 15, 2022 | December 29, 2022 | 1 | June 11, 2024 |
-| Autopatch group name - DSS Policy [Last] | Windows 10 21H2 | Make update available as soon as possible | December 15, 2022 | December 29, 2022 | 1 | June 11, 2024 |

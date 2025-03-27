@@ -28,7 +28,7 @@ sections:
           Windows Autopatch isn't currently supported for government cloud (GCC) customers. Although Windows 365 Enterprise is in the Azure Commercial cloud, when Windows 365 Enterprise is used with a GCC customer tenant, Autopatch is not supported.
       - question: How do I access Windows Autopatch?
         answer: | 
-          You can access Windows Autopatch through Intune. For more information, see [Start using Windows Autopatch](../prepare/windows-autopatch-feature-activation.md#use-microsoft-intune-for-windows-autopatch) and [Prerequisites](../prepare/windows-autopatch-prerequisites.md) to ensure you meet the licensing requirements. 
+          You can access Windows Autopatch through Intune. For more information, see [Start using Windows Autopatch](../prepare/windows-autopatch-start-using-autopatch.md#use-microsoft-intune-for-windows-autopatch) and [Prerequisites](../prepare/windows-autopatch-prerequisites.md) to ensure you meet the licensing requirements. 
   - name: Requirements
     questions:
       - question: What are the licensing requirements for Windows Autopatch?

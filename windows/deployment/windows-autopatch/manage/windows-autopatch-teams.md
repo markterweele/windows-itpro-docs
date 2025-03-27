@@ -53,4 +53,4 @@ Windows Autopatch can't pause or resume Teams updates.
 
 ## Incidents and outages
 
-If you're experiencing issues related to Teams updates, [submit a support request](../operate/windows-autopatch-support-request.md).
+If you're experiencing issues related to Teams updates, [submit a support request](../operate/windows-autopatch-support-request.md). You can only submit a support request if you have E3+ or F licenses. For more information, see [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities).

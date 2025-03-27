@@ -74,7 +74,7 @@ To ensure that users are receiving automatic updates, Windows Autopatch prevents
 
 With the expanded Autopatch group capabilities, you can choose to turn on Microsoft 365 Apps updates on a per Autopatch group level. Depending on your tenant settings, one of the following scenarios occurs:
 
-- Tenants that previously turned on Autopatch Microsoft 365 Apps update, has the Microsoft 365 Apps updates Update Type checkbox selected and have the updated policies applied to each Autopatch group.  
+- Tenants that previously turned on Autopatch Microsoft 365 Apps update, has the Microsoft 365 Apps updates Update Type checkbox selected and the updated policies applied to each Autopatch group.  
 - Tenants that previously turned off Autopatch Microsoft 365 Apps updates, or are new to Windows Autopatch, Autopatch Microsoft 365 Apps updates remain turned off.
 
 If you [created an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#create-an-autopatch-group) and selected Microsoft 365 apps updates as a content type, the **Update Type** checkbox is **selected**, with new policies created, and any available old policies are removed. If you didn’t select Microsoft 365 apps updates as a content type upon creating an Autopatch group, the **Update Type** checkbox is **unselected**. Any available customized policies are retained and appear in the **Policies** tab.
@@ -151,4 +151,4 @@ A [service profile](/deployoffice/admincenter/servicing-profile#compatibility-wi
 
 ## Incidents and outages
 
-If you're experiencing issues related to Microsoft 365 Apps for enterprise updates, [submit a support request](../manage/windows-autopatch-support-request.md). You can only submit a support request if you have E3+ or F licenses. For more information, see [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities)
+If you're experiencing issues related to Microsoft 365 Apps for enterprise updates, [submit a support request](../manage/windows-autopatch-support-request.md). You can only submit a support request if you have E3+ or F licenses. For more information, see [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities).

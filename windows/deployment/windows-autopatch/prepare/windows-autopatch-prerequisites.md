@@ -21,7 +21,7 @@ ms.collection:
 
 Windows Autopatch is available to the following licenses:
 
-- Microsoft 365 Business Premium (for more information on available licenses, see Microsoft 365 licensing)
+- Microsoft 365 Business Premium (for more information on available licenses, see [Microsoft 365 licensing](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products-b))
 - Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5)
 - Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
 - Windows 10/11 Enterprise E3 or E5 VDA
@@ -53,7 +53,6 @@ For more information about feature entitlement, see [Features and capabilities](
 | New feature and change management communications | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:|
 | Release schedule and status communications | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:|
 | Support requests | :x: | :x: | :heavy_check_mark: | :heavy_check_mark:|
-| Policy health | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:|
 
 #### Reporting
 
@@ -76,8 +75,10 @@ For more information about feature entitlement, see [Features and capabilities](
 
 ## Windows editions, build version, and architecture
 
-> [!IMPORTANT]
-> The following Windows editions, build version, and architecture **applies if you have**:<ul><li>Business Premium, A3+, E3+ and F3 licenses</li><li>[Registered devices with Windows Autopatch](../deploy/windows-autopatch-register-devices.md)</li></ul>
+The following Windows editions, build version, and architecture **applies if you have**:
+
+- Business Premium, A3+, E3+ or F3 licenses
+- [Registered devices with Windows Autopatch](../deploy/windows-autopatch-register-devices.md)
 
 The following Windows 10/11 editions, build version, and architecture are supported when [devices are registered with Windows Autopatch](../deploy/windows-autopatch-register-devices.md):
 
@@ -89,18 +90,20 @@ The following Windows 10/11 editions, build version, and architecture are suppor
 Windows Autopatch service supports Windows client devices on the **General Availability Channel**.
 
 > [!IMPORTANT]
-> Windows Autopatch supports registering [Windows 10 and Windows 11 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/overview) devices that are being currently serviced by the [Windows 10 LTSC](/windows/release-health/release-information) or [Windows 11 LTSC](/windows/release-health/windows11-release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
+> Windows Autopatch supports registering [Windows 10 and Windows 11 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/overview) devices that are being currently serviced by the [Windows 10 LTSC](/windows/release-health/release-information) or [Windows 11 LTSC](/windows/release-health/windows11-release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update client policies and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
 
 ## Configuration Manager co-management requirements
 
-> [!IMPORTANT]
-> The following Windows editions, build version, and architecture **applies if you have**:<ul><li>Business Premium, A3+, E3+ and F3 licenses</li><li>[Registered devices with Windows Autopatch](../deploy/windows-autopatch-register-devices.md)</li></ul>
+The following Windows editions, build version, and architecture **applies if you have**:
+
+- Business Premium, A3+, E3+ or F3 licenses
+- [Registered devices with Windows Autopatch](../deploy/windows-autopatch-register-devices.md)
 
 | Requirement | Description |
 | --- | --- |
 | Supported Configuration Manager version | Use a currently supported [Configuration Manager version](/mem/configmgr/core/servers/manage/updates#supported-versions). |
 | Configuration Manager must be [cloud-attached with Intune (co-management)](/mem/configmgr/cloud-attach/overview) | Must have the following co-management workloads enabled and set to either **Intune** or **Pilot Intune**:<ul><li>Windows Update policies workload</li><li>Device configuration workload</li><li>Office Click-to-Run apps workload</li></ul><p>If you’re using **Pilot Intune**, in the **Staging** tab, the device must be in the collections that correspond to the three workloads that Windows Autopatch requires.<ul><li>If you selected Intune for one workload and Pilot Intune for the other two workloads, your devices only need to be in the two Pilot Intune collections.</li><li>If you have different collection names for each workload, your devices must be in CoMgmtPilot.</li></ul><p>**You or your Configuration Manager administrator are responsible for adding your Autopatch devices to these collections. Windows Autopatch doesn’t change or add to these collections.**</p><p>For more information, see [paths to co-management](/mem/configmgr/comanage/quickstart-paths).</p> |
-| Create a Custom client setting |Create a Custom client setting in Configuration Manager to disable the Software Updates agent for Intune/Pilot Intune co-managed devices.<ol><li>Under **Disable Software Updates > Device Settings > Enable software updates on clients**, select **No**.</li><li>Under **CoMgmtSettingsProd Properties > Staging tab > Office Click-to-Run apps, set to Co-Management – O365 Workload**.</li><li>Under **CoMgmtSettingsProd Properties > Staging tab > Windows Update policies, set to Co-Management – WUfB Workload**.</li><li>Ensure the **Disable Software Updates** setting has a lower priority than your default client settings and target your co-management collection.<ol><li>If the co-management workload is set to Intune, deploy the Client Setting to a collection that includes all co-management devices, for example, Co-management Eligible Devices.</li></ol><li>Configuration Manager **disables** the Software Updates agent in the next policy cycle. However, because the Software Updates Scan Cycle is **removed**, Configuration Manager might not remove the Windows Server Update Service (WSUS) registry keys.</li><ol><li>Remove the registry values under **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate** because Windows Update for Business (WUfB) policies control the process.</li></ol></ol> |
+| Create a Custom client setting |Create a Custom client setting in Configuration Manager to disable the Software Updates agent for Intune/Pilot Intune co-managed devices.<ol><li>Under **Disable Software Updates > Device Settings > Enable software updates on clients**, select **No**.</li><li>Under **CoMgmtSettingsProd Properties > Staging tab > Office Click-to-Run apps, set to Co-Management – O365 Workload**.</li><li>Under **CoMgmtSettingsProd Properties > Staging tab > Windows Update policies, set to Co-Management – WUfB Workload**.</li><li>Ensure the **Disable Software Updates** setting has a lower priority than your default client settings and target your co-management collection.<ol><li>If the co-management workload is set to Intune, deploy the Client Setting to a collection that includes all co-management devices, for example, Co-management Eligible Devices.</li></ol><li>Configuration Manager **disables** the Software Updates agent in the next policy cycle. However, because the Software Updates Scan Cycle is **removed**, Configuration Manager might not remove the Windows Server Update Service (WSUS) registry keys.</li><ol><li>Remove the registry values under **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate** because Windows Update client policies control the process.</li></ol></ol> |
 
 ## Required Intune permissions
 

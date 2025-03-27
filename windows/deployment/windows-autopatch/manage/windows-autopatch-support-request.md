@@ -17,6 +17,9 @@ ms.collection:
 
 # Submit a support request
 
+> [!IMPORTANT]
+> You can only submit a support request if you have E3+ or F licenses. For more information, see [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities).
+
 Support requests are triaged and responded to as they're received.
 
 **To submit a new support request:**

@@ -60,10 +60,10 @@ Before you start managing Autopatch groups, ensure you meet the [Windows Autopat
     1. The approval method for driver updates
     1. The channel for Microsoft Edge updates
 1. Select **Next: Release schedules**. In this page, select one of the following release schedule presets from the **Select a release schedule preset** dropdown menu:
-    1. Information worker: Single-user devices that are used in most workplaces
-    1. Shared device: Devices that are used by multiple users over a period of time
-    1. Kiosks and billboards: High uptime devices used to accomplish a specific task that hides notifications and restart at specific times
-    1. Reboot-sensitive devices: Devices that can’t be interrupted in the middle of a task and only update at a scheduled time
+    1. **Information worker**: Single-user devices that are used in most workplaces
+    1. **Shared device**: Devices that are used by multiple users over a period of time
+    1. **Kiosks and billboards**: High uptime devices used to accomplish a specific task that hides notifications and restart at specific times
+    1. **Reboot-sensitive devices**: Devices that can’t be interrupted in the middle of a task and only update at a scheduled time
 1. The Windows update installation, reboot, and notification behavior setting is based on the selected release schedule preset (in step 11). The setting determines how the Windows Update client behaves for all update types that you selected in Step 9. You can:
     1. Edit the deferrals, deadlines, grace periods as needed
     1. Edit the deployment rings as necessary
@@ -98,7 +98,7 @@ Before you start managing Autopatch groups, ensure you meet the [Windows Autopat
 > Windows Autopatch creates the device-based Microsoft Entra ID assigned groups based on the choices made in the deployment ring composition page. Additionally, the service assigns the update ring policies for each deployment ring created in the Autopatch group based on the choices made in the Windows Update settings page as part of the Autopatch group guided end-user experience.
 
 > [!CAUTION]
-> If a device that was previously added to an Autopatch group uses a Microsoft Entra group (via Assigned groups or Dynamic distribution method) is removed from the Microsoft Entra group, the device is removed and deregistered from the Autopatch service. The removed device no longer has any Autopatch service-created policies applied to it and the device doesn't appear in the Autopatch groups membership report.
+> If a device that was previously added to an Autopatch group uses a Microsoft Entra group (via Assigned groups or Dynamic distribution method) is removed from the Microsoft Entra group, the device is removed and deregistered from the Autopatch service. The removed device no longer has any Autopatch service-created policies applied to it and the device doesn't appear in the [Autopatch groups membership report](../deploy/windows-autopatch-register-devices.md#autopatch-groups-membership-report).
 
 ## Rename an Autopatch group
 
@@ -124,7 +124,7 @@ Before you start managing Autopatch groups, ensure you meet the [Windows Autopat
 
 Overlap in device membership is a common scenario when working with device-based Microsoft Entra groups. Sometimes dynamic queries can be large in scope or the same assigned device membership can be used across different Microsoft Entra groups.
 
-Since Autopatch groups allow you to use your existing Microsoft Entra groups to create your own deployment ring composition, the service takes on the responsibility of monitoring and automatically solving some of the device conflict scenarios that might occur.
+Since Autopatch groups uses your existing Microsoft Entra groups to create your own deployment ring composition, the service takes on the responsibility of monitoring and automatically solving some of the device conflict scenarios that might occur.
 
 > [!CAUTION]
 > A device-based Microsoft Entra group can only be used with one deployment ring in an Autopatch group at a time. This applies to deployment rings within the same Autopatch group and across different deployment rings across different Autopatch groups. If you try to create or edit an Autopatch group to use a device-based Microsoft Entra group that is already used, an error occurs that prevents you from creating or editing the Autopatch group.

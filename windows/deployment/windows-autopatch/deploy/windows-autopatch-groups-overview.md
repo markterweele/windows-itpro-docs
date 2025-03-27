@@ -62,8 +62,8 @@ An Autopatch group is a function app that is part of the device registration mic
 | Step | Description |
 | ----- | ----- |
 | Step 1: Create an Autopatch group | Create an Autopatch group. Autopatch groups register devices with the Windows Autopatch service when you either [create](../manage/windows-autopatch-manage-autopatch-groups.md#create-an-autopatch-group) or [edit an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#edit-an-autopatch-group). |
-| Step 2: Windows Autopatch uses Microsoft Graph to create Microsoft Entra ID and policy assignments | Windows Autopatch service uses Microsoft Graph to coordinate the creation of:<ul><li>Microsoft Entra groups</li><li>Software update policy assignments with other Microsoft services, such as Microsoft Entra ID, and Intune, and or Windows Update for Business (WUfB) based on IT admin choices when you [create](../manage/windows-autopatch-manage-autopatch-groups.md#create-an-autopatch-group) or [edit an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#edit-an-autopatch-group).</li></ul> |
-| Step 3: Intune assigns software update policies | Once Microsoft Entra groups are created in the Microsoft Entra service, Intune is used to assign the software update policies to these groups and provide the number of devices that need the software update policies to the Windows Update for Business (WUfB) service. |
+| Step 2: Windows Autopatch uses Microsoft Graph to create Microsoft Entra ID and policy assignments | Windows Autopatch service uses Microsoft Graph to coordinate the creation of:<ul><li>Microsoft Entra groups</li><li>Software update policy assignments with other Microsoft services, such as Microsoft Entra ID, Intune, or Windows Update client policies based on IT admin choices when you [create](../manage/windows-autopatch-manage-autopatch-groups.md#create-an-autopatch-group) or [edit an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#edit-an-autopatch-group).</li></ul> |
+| Step 3: Intune assigns software update policies | Once Microsoft Entra groups are created in the Microsoft Entra service, Intune is used to assign the software update policies to these groups and provide the number of devices that need the software update policies. |
 | Step 4: Windows Autopatch responsibilities | Windows Autopatch service is responsible for:<ul><li>Delivering those update policies</li><li>Retrieving update deployment statuses back from devices</li></ul> |
 
 ## Autopatch group deployment rings
@@ -135,6 +135,6 @@ Autopatch groups work with the following software update workloads:
 Windows Autopatch supports up to 300 Autopatch groups in your tenant. Each Autopatch group supports up to 15 deployment rings.
 
 > [!NOTE]
-> If you reach the maximum number of Autopatch groups supported (50), and try to create more Autopatch groups, the "Create" option in the Autopatch groups blade is greyed out.
+> If you reach the maximum number of Autopatch groups supported (300), and try to create more Autopatch groups, the "Create" option in the Autopatch groups blade is greyed out.
 
 To manage your Autopatch groups, see [Manage Windows Autopatch groups](../manage/windows-autopatch-manage-autopatch-groups.md).
