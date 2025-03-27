@@ -214,7 +214,9 @@ The GPO applies the Start and taskbar layout at the next user sign-in. Each time
 
 ## User experience
 
-After the taskbar layout is applied, the users must sign out and sign in again to see the new layout. Unless prohibited via policy settings, users can pin more apps, change the order, and unpin apps from the taskbar.
+After the taskbar layout is applied, users must sign out and sign in again to see the new layout. Unless prohibited via policy settings, users can pin more apps, change the order, and unpin apps from the taskbar.
+
+Any pins provisioned via policy settings are restored upon the next policy refresh, even when users unpin them.
 
 ### OS install and upgrade experience
 
