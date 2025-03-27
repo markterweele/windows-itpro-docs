@@ -2,7 +2,7 @@
 title: Test and update an AppLocker policy
 description: This article discusses the steps required to test an AppLocker policy prior to deployment.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2024
 ---
 

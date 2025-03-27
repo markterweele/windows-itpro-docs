@@ -4,7 +4,7 @@ manager: aaroncz
 description: Overview of the security for Windows Update including security for the metadata exchange and content download.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
 appliesto: 

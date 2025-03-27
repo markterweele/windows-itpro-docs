@@ -11,7 +11,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ Supported Linux distributions
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise</a>	
-ms.date: 01/15/2025
+ms.date: 02/28/2025
 ---
 
 
@@ -38,7 +38,7 @@ As a temporary workaround, the above error doesn't occur by changing the languag
 
 [Connected Cache Azure resource creation](mcc-ent-create-resource-and-cache.md) can be initiated using either the Azure portal user interface or the Azure CLI command set.
 
-If you're encountering an error during resource creation, check that you have the necessary permissions to create Azure resources under your subscription and have filled out all required fields during the resource creation process.
+If you're encountering an error during resource creation, [check that you have the necessary permissions to create Azure resources under your subscription](/azure/role-based-access-control/check-access) and have filled out all required fields during the resource creation process.
 
 ## Troubleshooting cache node configuration
 
@@ -97,7 +97,7 @@ If the Connected Cache installation is failing due to WSL-related issues, try ru
 Once the Connected Cache software has been successfully deployed to the Windows host machine, you can check if the cache node is running properly by doing the following on the Windows host machine:
 
 1. Launch a PowerShell process as the account specified as the runtime account during the Connected Cache install
-1. Run `wsl -d Ubuntu-22.04-Mcc-Base` to access the Linux distribution that hosts the Connected Cache container
+1. Run `wsl -d Ubuntu-24.04-Mcc-Base` to access the Linux distribution that hosts the Connected Cache container
 1. Run `sudo iotedge list` to show which containers are running within the IoT Edge runtime
 
 If it shows the **edgeAgent** and **edgeHub** containers but doesn't show **MCC**, you can view the status of the IoT Edge security manager using `sudo iotedge system logs -- -f`.

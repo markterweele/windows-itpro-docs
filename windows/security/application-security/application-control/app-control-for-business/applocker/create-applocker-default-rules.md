@@ -2,7 +2,7 @@
 title: Create AppLocker default rules
 description: This article for IT professionals describes the steps to create a standard set of AppLocker rules that allow Windows system files to run.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2024
 ---
 

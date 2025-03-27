@@ -3,7 +3,7 @@ title: Update release cycle for Windows clients
 description: Learn about the release cycle for updates so Windows clients in your organization stay productive and protected.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
 manager: aaroncz
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 01/31/2025
+ms.date: 03/27/2025
 ---
 
 # Update release cycle for Windows clients
@@ -20,6 +20,8 @@ ms.date: 01/31/2025
 Windows updates help you to stay productive and protected. They provide your users and IT administrators with the security fixes they need, and protect devices so that unpatched vulnerabilities can't be exploited. Updates for the Windows client OS are typically cumulative. They include all previously released fixes to guard against fragmentation of the operating system. Reliability and vulnerability issues can occur when only a subset of fixes is installed.
 
 This article provides details on the types of updates that Microsoft provides, and how they help make the overall user experience simple and consistent.
+
+[!INCLUDE [Windows roadmap](../../whats-new/includes/windows-roadmap.md)]
 
 ## Types of update releases
 

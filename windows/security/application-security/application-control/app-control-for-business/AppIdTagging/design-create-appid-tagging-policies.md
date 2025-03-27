@@ -3,7 +3,7 @@ title: Create your App Control for Business AppId Tagging Policies
 description: Create your App Control for Business AppId tagging policies for Windows devices.
 ms.localizationpriority: medium
 ms.date: 09/23/2024
-ms.topic: conceptual
+ms.topic: how-to
 ---
 
 # Creating your App Control AppId Tagging Policies
@@ -21,7 +21,7 @@ You can use the App Control for Business Wizard and the PowerShell commands to c
     :::image type="content" alt-text="Configuring the policy base and template." source="../images/appid-appcontrol-wizard-1.png" lightbox="../images/appid-appcontrol-wizard-1.png":::
 
     > [!NOTE]
-    > If your AppId Tagging Policy does build off the base templates or does not allow Windows in-box processes, you will notice significant performance regressions, especially during boot. For this reason, it is strongly recommended to build off the base templates. For more information on the issue, see the [AppId Tagging Known Issue](../operations/known-issues.md#slow-boot-and-performance-with-custom-policies).
+    > If your AppId Tagging Policy does not build off the base templates or does not allow Windows in-box processes, you will notice significant performance regressions, especially during boot. For this reason, it is strongly recommended to build off the base templates. For more information on the issue, see the [AppId Tagging Known Issue](../operations/known-issues.md#slow-boot-and-performance-with-custom-policies).
 
 2. Set the following rule-options using the Wizard toggles:
 

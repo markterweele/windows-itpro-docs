@@ -4,7 +4,7 @@ description: Walk through of how to configure Windows Update for Business settin
 ms.service: windows-client
 ms.subservice: itpro-updates
 manager: aaroncz
-ms.topic: conceptual
+ms.topic: how-to
 author: mestew
 ms.localizationpriority: medium
 ms.author: mstewart
@@ -17,7 +17,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
-ms.date: 05/16/2024
+ms.date: 03/18/2025
 ---
 
 # Walkthrough: Use Group Policy to configure Windows Update for Business
@@ -128,9 +128,9 @@ If you need a device to stay on a version beyond the point when deferrals on the
 
 When you set the target version policy, if you specify a feature update version that is older than your current version or set a value that isn't valid, the device won't receive any feature updates until the policy is updated. When you specify target version policy, feature update deferrals won't be in effect.
 
-### Manage how users experience updates
+## Manage how users experience updates
 
-#### I want to manage when devices download, install, and restart after updates
+### I want to manage when devices download, install, and restart after updates
 
 We recommend that you allow to update automatically--this is the default behavior. If you don't set an automatic update policy, the device will attempt to download, install, and restart at the best times for the user by using built-in intelligence such as intelligent active hours.
 
@@ -142,40 +142,14 @@ To update outside of the active hours, you don't need to set any additional sett
 
 When you set these policies, installation happens automatically at the specified time and the device will restart 15 minutes after installation is complete (unless it's interrupted by the user).
 
-#### I want to keep devices secure and compliant with update deadlines
+### I want to keep devices secure and compliant with update deadlines
 
 We recommend that you use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadline for automatic updates and restarts** for feature and quality updates to ensure that devices stay secure on Windows 10, version 1709 and later. This works by enabling you to specify the number of days that can elapse after an update is offered to a device before it must be installed. Also you can set the number of days that can elapse after a pending restart before the user is forced to restart.
 
-This policy also offers an option to opt out of automatic restarts until a deadline is reached by presenting an "engaged restart experience" until the deadline has actually expired. At that point the device will automatically schedule a restart regardless of active hours.
-
-These notifications are what the user sees depending on the settings you choose:
-
-When **Specify deadlines for automatic updates and restarts** is set (For Windows 10, version 1709 and later):
-
- - **While restart is pending, before the deadline occurs:**
-
-   - For the first few days, the user receives a toast notification
-
-   - After this period, the user receives this dialog:
-
-     ![The notification users get for an impending restart prior to deadline.](images/wufb-update-deadline-warning.png)
-
-   - If the user scheduled a restart, or if an auto restart is scheduled, 15 minutes before the scheduled time the user receives this notification that the restart is about to occur:
-
-     ![The notification users get for an impending restart 15 minutes prior to restart.](images/wufb-restart-imminent-warning.png)
-
- - **If the restart is still pending after the deadline passes:**
- 
-   - Within 12 hours before the deadline passes, the user receives this notification that the deadline is approaching:
-
-     ![The notification users get for an approaching restart deadline.](images/wufb-pastdeadline-restart-warning.png)
-
-   - Once the deadline has passed, the user is forced to restart to keep their devices in compliance and receives this notification:
-
-     ![The notification users get for an imminent restart after the deadline.](images/wufb-pastdeadline-restartnow.png)
+For more information, see [Enforcing compliance deadlines for updates](wufb-compliancedeadlines.md).
 
 
-#### <a name="user-settings-for-notifications"></a> End user settings for notifications
+### <a name="user-settings-for-notifications"></a> End user settings for notifications
 <!--8936877-->
 *Applies to:*
 - Windows 11, version 23H2 with [KB5037771](https://support.microsoft.com/help/5037771) or later
@@ -194,9 +168,9 @@ Users have the following options for the **Notify me when a restart is required 
 When a deadline is set for 0 days, no matter which option is selected, the only notification users receive is a final nondismissable notification 15 minutes before a forced restart.
 
 The user preference for notifications applies when [compliance deadlines](wufb-compliancedeadlines.md) are used. The policy for compliance deadlines is under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Specify deadlines for automatic updates and restarts**.
+- In Windows version 22H2 and later, the **Specify deadlines for automatic updates and restarts** policy is split in to two policies: **Specify deadline for automatic updates and restarts for quality update** and **Specify deadline for automatic updates and restarts for feature update**. 
 
-
-#### I want to manage the notifications a user sees
+### I want to manage the notifications a user sees
 
 There are additional settings that affect the notifications.
 
@@ -213,7 +187,7 @@ Option **2** creates a poor experience for personal devices; it's only recommend
 
 Still more options are available in **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure auto-restart restart warning notifications schedule for updates**. This setting allows you to specify the period for auto-restart warning reminder notifications (from 2-24 hours; 4 hours is the default) before the update and to specify the period for auto-restart imminent warning notifications (15-60 minutes is the default). We recommend using the default notifications.
 
-#### I want to manage the update settings a user can access
+### I want to manage the update settings a user can access
 
 Every Windows device provides users with various controls they can use to manage Windows Updates. They can access these controls by Search to find Windows Updates or by going selecting **Updates and Security** in **Settings**. We provide the ability to disable a variety of these controls that are accessible to users.
  
@@ -222,8 +196,8 @@ When you disable this setting, users will see **Some settings are managed by you
 
 If you use Windows Server Update Server (WSUS), you can prevent users from scanning Windows Update. To do this, use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Remove access to use all Windows Update features**.
 
-#### I want to enable optional updates
-<!--7991583-->
+### I want to enable optional updates
+<!--7991583--> 
 *Applies to:* 
 - Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later <!--7991583-->
 - Windows 10, version 22H2 with [KB5032278](https://support.microsoft.com/help/5032278), or a later cumulative update installed <!--8503602-->
@@ -255,7 +229,7 @@ The following options are available for the policy:
   - Optional updates aren't installed on the device and the **Get the latest updates as soon as they're available** option is disabled.
 
 
-#### I want to enable features introduced via servicing that are off by default
+### I want to enable features introduced via servicing that are off by default
 <!--6544872-->
 (*Starting in Windows 11, version 22H2 or later*)
 

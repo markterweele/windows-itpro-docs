@@ -2,7 +2,7 @@
 title: Start policy settings
 description: Learn about the policy settings to configure the Windows Start menu.
 ms.topic: reference
-ms.date: 07/10/2024
+ms.date: 02/25/2025
 appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
@@ -190,7 +190,6 @@ Select one of the tabs to see the list of available settings:
 [!INCLUDE [allow-pinned-folder-videos](includes/allow-pinned-folder-videos.md)]
 
 #### [:::image type="icon" source="../images/icons/power.svg"::: **Power options**](#tab/power)
-
 
 ::: zone pivot="windows-11"
 |Policy name| CSP | GPO |

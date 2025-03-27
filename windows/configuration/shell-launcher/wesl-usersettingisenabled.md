@@ -1,7 +1,7 @@
 ---
 title: WESL_UserSetting.IsEnabled
 description: WESL_UserSetting.IsEnabled
-ms.date: 05/20/2024
+ms.date: 3/7/2025
 ms.topic: reference
 ---
 
@@ -9,9 +9,11 @@ ms.topic: reference
 
 This method retrieves a value that indicates if Shell Launcher is enabled or disabled.
 
+[!INCLUDE [shell-launcher](../../../includes/licensing/shell-launcher.md)]
+
 ## Syntax
 
-```powershell
+```mof
 [Static] uint32 IsEnabled(
     [Out, Required] boolean Enabled
 );
@@ -19,23 +21,8 @@ This method retrieves a value that indicates if Shell Launcher is enabled or dis
 
 ## Parameters
 
-**Enabled**</br>\[out, required\] A Boolean value that indicates if Shell Launcher is enabled.
+**Enabled**<br/>\[out, required\] A Boolean value that indicates if Shell Launcher is enabled.
 
 ## Return Value
 
 Returns an HRESULT value that indicates [WMI status](/windows/win32/wmisdk/wmi-non-error-constants) or a [WMI error](/windows/win32/wmisdk/wmi-error-constants).
-
-## Requirements
-
-| Windows Edition        | Supported |
-|:-----------------------|:---------:|
-| Windows Home           | No        |
-| Windows Pro            | No        |
-| Windows Enterprise     | Yes       |
-| Windows Education      | Yes       |
-| Windows IoT Enterprise | Yes       |
-
-## Related topics
-
-- [WESL_UserSetting](wesl-usersetting.md)
-- [Shell Launcher](index.md)
