@@ -34,7 +34,7 @@ There are URLs from several Microsoft products that must be in the allowed list 
 | ----- | ----- |
 | Microsoft Entra ID | [Hybrid identity required ports and protocols](/azure/active-directory/hybrid/reference-connect-ports)<p><p>[Active Directory and Active Directory Domain Services Port Requirements](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772723(v=ws.10))</p> |
 | Microsoft Intune | [Intune network configuration requirements](/mem/intune/fundamentals/network-bandwidth-use)<p><p>[Network endpoints for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)</p> |
-| Windows Update client policies | [Windows Update client policies firewall and proxy requirements](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p) |
+| Windows Update client policies | [Windows Update client policies firewall and proxy requirements](/troubleshoot/windows-client/installing-updates-features-roles/windows-update-issues-troubleshooting#device-cant-access-update-files) |
 
 #### [Windows Enterprise E3+ and F3](#tab/windows-enterprise-e3-and-f3-licenses-required-microsoft-endpoints)
 

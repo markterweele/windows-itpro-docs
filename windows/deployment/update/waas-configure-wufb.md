@@ -20,18 +20,18 @@ ms.date: 02/27/2024
 ---
 
 # Configure Windows Update client policies
-<a name="configure-windows-update-for-business"></a>
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/windows/windows-update-faq-8a903416-6f45-0718-f5c7-375e92dddeb2).
+
+You can use Group Policy or your mobile device management (MDM) service to configure Windows Update client policies for your devices. The sections in this article provide the Group Policy and MDM policies for Windows 10, version 1511 and later, including Windows 11. The MDM policies use the OMA-URI setting from the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider).
 
 > [!NOTE]
 > Windows Server _doesn't_ get feature updates from Windows Update, so only the quality update policies apply. This behavior doesn't apply to [Azure Stack hyperconverged infrastructure (HCI)](/azure-stack/hci/).
 
-You can use Group Policy or your mobile device management (MDM) service to configure Windows Update client policies for your devices. The sections in this article provide the Group Policy and MDM policies for Windows 10, version 1511 and later, including Windows 11. The MDM policies use the OMA-URI setting from the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider).
+You can use Windows Update client policies regardless of the diagnostic data level that you chose. If the diagnostic data level is set to **0 (Security)**, Windows Update client policies are still honored. For more information, see [Configure the operating system diagnostic data level](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels).
 
-> [!IMPORTANT]
-> Beginning with Windows 10, version 1903, organizations can use Windows Update client policies, regardless of the diagnostic data level chosen. If the diagnostic data level is set to **0 (Security)**, Windows Update client policies will still be honored. For instructions, see [Configure the operating system diagnostic data level](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels).
-
+> [!TIP]
+> This feature was formerly known as _Windows Update for Business_.
 
 ## Start by grouping devices
 
@@ -188,7 +188,7 @@ Starting with Windows 10, version 1709, you can set policies to manage preview b
 The **Manage preview builds** setting gives administrators control over enabling or disabling preview build installation on a device. You can also decide to stop preview builds once the release is public.
 * Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/Windows Update for Business** - *Manage preview builds*
 * MDM: **Update/ManagePreviewBuilds**
-* Microsoft Configuration Manager: **Enable dual scan, manage through Windows Update client policies**
+* Microsoft Configuration Manager: **Enable dual scan, manage through Windows Update for Business policy**
 
 >[!IMPORTANT]
 >This policy replaces the "Toggle user control over Insider builds" policy under that is only supported up to Windows 10, version 1703. You can find the older policy here:

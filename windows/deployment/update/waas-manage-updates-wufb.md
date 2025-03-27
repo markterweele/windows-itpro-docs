@@ -19,7 +19,7 @@ ms.date: 05/16/2024
 
 # What are Windows Update client policies?
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/windows/windows-update-faq-8a903416-6f45-0718-f5c7-375e92dddeb2).
 
 Windows Update client policies are a free service that is available for the following editions of Windows 10 and Windows 11:
 
@@ -28,6 +28,9 @@ Windows Update client policies are a free service that is available for the foll
 - Enterprise, including Enterprise LTSC, IoT Enterprise, and IoT Enterprise LTSC
 
 Windows Update client policies enable IT administrators to keep their organization's Windows client devices always up to date with the latest security updates  and Windows features by directly connecting these systems to the Windows Update service. You can use Group Policy or Mobile Device Management (MDM) solutions, such as Microsoft Intune, to configure the Windows Update client policies that control how and when devices are updated.
+
+> [!TIP]
+> This feature was formerly known as _Windows Update for Business_.
 
 Specifically, Windows Update client policies let you control update offerings and experiences to allow for reliability and performance testing on a subset of devices before deploying updates across the organization. It also provides a positive update experience for people in your organization.
 

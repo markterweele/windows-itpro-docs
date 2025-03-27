@@ -8,7 +8,7 @@ author: mestew
 ms.author: mstewart
 manager: aaroncz
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 01/31/2025
@@ -69,7 +69,7 @@ Many update management tools, such as [Microsoft Configuration Manager](/mem/con
 - LCU preview
 
 To access the optional nonsecurity preview release:
-- Navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**. 
+- Navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**.
 - Use [Windows Insider Program for Business](https://insider.windows.com/for-business)
 - Use the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx).
 
@@ -83,14 +83,14 @@ To access the optional nonsecurity preview release:
 
 Some key considerations about OOB releases include:
 
-- OOB releases are always cumulative. 
-  - OOB releases supersede any prior monthly security update and optional nonsecurity preview release. 
-- OOB releases generally require IT admins to deploy off-cycle.  
+- OOB releases are always cumulative.
+  - OOB releases supersede any prior monthly security update and optional nonsecurity preview release.
+- OOB releases generally require IT admins to deploy off-cycle.
 - Some OOB releases are classified as critical.
-  - Critical OOB releases are automatically available to WSUS and Windows Update client policies, just like the monthly security update releases.  
+  - Critical OOB releases are automatically available to WSUS and Windows Update client policies, just like the monthly security update releases.
 - Some OOB releases are classified as noncritical.
   - Noncritical releases only go to the Microsoft Update Catalog for users or organizations to voluntarily obtain the update.
-  
+
 <!--Using include for checkpoint cumulative updates-->
 [!INCLUDE [Checkpoint cumulative updates](./includes/checkpoint-cumulative-updates.md)]
 
@@ -101,7 +101,7 @@ Starting with Windows 11, version 22H2, new features and enhancements are introd
 Some of the new features may be disruptive to organizations. By default, these select features are turned off temporarily for all managed devices until the next annual feature update is installed. In this scenario, a device is considered managed if it uses one of the following to determine which updates to install:
 
 - Windows Update client policies
-  - Devices that have updates managed Microsoft Intune use Windows Update client policies
+  - Devices that have updates managed by Microsoft Intune use Windows Update client policies
 - WSUS
   - Devices that have updates managed by Configuration Manager use WSUS
 

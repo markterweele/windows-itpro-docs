@@ -8,17 +8,20 @@ author: mestew
 ms.author: mstewart
 manager: aaroncz
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 02/27/2024
 ---
 
 # Integrate Windows Update client policies with management solutions
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/windows/windows-update-faq-8a903416-6f45-0718-f5c7-375e92dddeb2).
 
 You can integrate Windows Update client policy deployments with existing management tools such as Windows Server Update Services (WSUS) and Microsoft Configuration Manager.
+
+> [!TIP]
+> This feature was formerly known as _Windows Update for Business_.
 
 ## Integrate Windows Update client policies with Windows Server Update Services
 <a name="integrate-windows-update-for-business-with-windows-server-update-services"></a>
@@ -47,7 +50,7 @@ For Windows 10, version 1607 and later, devices can be configured to receive upd
 
 ![diagram of content flow](images/wufb-config1a.png)
 
-### Configuration example \#2: Excluding drivers from Windows quality updates using Windows Update client policies 
+### Configuration example \#2: Excluding drivers from Windows quality updates using Windows Update client policies
 <a name="configuration-example-2-excluding-drivers-from-windows-quality-updates-using-windows-update-for-business"></a>
 
 **Configuration:**
@@ -64,7 +67,7 @@ For Windows 10, version 1607 and later, devices can be configured to receive upd
 
 ![diagram of content flow 2](images/wufb-config2.png)
 
-### Configuration example \#3: Device configured to receive Microsoft updates 
+### Configuration example \#3: Device configured to receive Microsoft updates
 
 **Configuration:**
 
@@ -73,9 +76,9 @@ For Windows 10, version 1607 and later, devices can be configured to receive upd
    - For a list of other Microsoft products that might be updated, see [Update other Microsoft products](update-other-microsoft-products.md).
 - Admin has also placed Microsoft Update, non-Microsoft, and locally published update content on the WSUS server
 
-In this example, the deferral behavior for updates to Office and other non-Windows products is slightly different than if WSUS weren't enabled. 
-- In a non-WSUS case, these updates would be deferred just as any update to Windows would be.  
-- However, with WSUS also configured, these updates are sourced from Microsoft but deferral policies aren't applied.  
+In this example, the deferral behavior for updates to Office and other non-Windows products is slightly different than if WSUS weren't enabled.
+- In a non-WSUS case, these updates would be deferred just as any update to Windows would be.
+- However, with WSUS also configured, these updates are sourced from Microsoft but deferral policies aren't applied.
 
 |Content|Metadata source|Payload source|Deferred?|
 |--- |--- |--- |--- |
@@ -95,5 +98,4 @@ For Windows 10, version 1607, organizations already managing their systems with 
 
 :::image type="content" alt-text="Example of unknown devices." source="images/wufb-sccm.png" lightbox="images/wufb-sccm.png":::
 
-For more information, see [Integration with Windows Update client policies in Windows 10](/mem/configmgr/sum/deploy-use/integrate-windows-update-for-business-windows-10).
-
+For more information, see [Integration with Windows Update client policies](/mem/configmgr/sum/deploy-use/integrate-windows-update-for-business-windows-10).
