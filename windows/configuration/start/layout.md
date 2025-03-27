@@ -446,7 +446,7 @@ Learn how to [Find the Application User Model ID of an installed app](../store/f
 
 ::: zone pivot="windows-10"
 
-#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune-10)
+#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune**](#tab/intune-10)
 
 To configure devices with Microsoft Intune, [create a Settings catalog policy](/mem/intune/configuration/settings-catalog) and use one of the following settings:
 
@@ -457,12 +457,14 @@ To configure devices with Microsoft Intune, [create a Settings catalog policy](/
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][MEM-1] with the [Start CSP][WIN-1]. Use one of the following settings:
+#### [:::image type="icon" source="../images/icons/csp.svg"::: **CSP**](#tab/csp-10)
+
+You can configure devices using the [Start CSP][WIN-1]. Use one of the following settings:
 
 | Setting |
 |--|
-| - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-Start#startlayout)<br>- **String:** <br>- **Value:** content of the XML file |
-| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-Start#startlayout)<br>- **Data type:** <br>- **Value:** content of the XML file |
+| - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-Start#startlayout)<br>- **Data type:** String <br>- **Value:** content of the XML file |
+| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-Start#startlayout)<br>- **Data type:** String <br>- **Value:** content of the XML file |
 
 [!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
 
@@ -572,7 +574,7 @@ The GPO applies the Start and taskbar layout at the next user sign-in. Each time
 > [!IMPORTANT]
 > The JSON file can be applied to devices using the [Start policy CSP][WIN-1] only. It's not possible to apply the JSON file using group policy.
 
-#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune-11)
+#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune**](#tab/intune-11)
 
 To configure devices with Microsoft Intune, [create a Settings catalog policy](/mem/intune/configuration/settings-catalog) and use one of the following settings:
 
@@ -583,12 +585,14 @@ To configure devices with Microsoft Intune, [create a Settings catalog policy](/
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][MEM-1] with the [Start CSP][WIN-1]. Use one of the following settings:
+#### [:::image type="icon" source="../images/icons/csp.svg"::: **CSP**](#tab/csp-11)
+
+You can configure devices using the [Start CSP][WIN-1]. Use one of the following settings:
 
 | Setting |
 |--|
-| - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start#configurestartpins)<br>- **String:** <br>- **Value:** content of the JSON file |
-| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start#configurestartpins)<br>- **Data type:** <br>- **Value:** content of the JSON file |
+| - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start#configurestartpins)<br>- **Data type:** String <br>- **Value:** content of the JSON file |
+| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[ConfigureStartPins](/windows/client-management/mdm/policy-csp-Start#configurestartpins)<br>- **Data type:** String <br>- **Value:** content of the JSON file |
 
 [!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
 
