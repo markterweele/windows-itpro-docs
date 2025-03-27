@@ -12,7 +12,7 @@ ms.collection:
   - tier1
   - essentials-get-started
 ms.subservice: itpro-fundamentals
-ms.date: 07/12/2024
+ms.date: 03/27/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
@@ -103,6 +103,8 @@ Along with user experience and security improvements, Windows 11 introduces enha
 A consolidated [Windows 11 update history](https://support.microsoft.com/topic/59875222-b990-4bd9-932f-91a5954de434) is available. Similarly, the [Windows release health](/windows/release-health/) hub offers quick access to Windows 11 servicing announcements, known issues, and safeguard holds.
 
 It's important that organizations have adequate time to plan for Windows 11. Microsoft also recognizes that many organizations have a mix of Windows 11 and Windows 10 devices across their ecosystem. Devices on in-service versions of Windows 10 continue to receive monthly Windows 10 security updates, and incremental improvements to Windows 10 to support ongoing Microsoft 365 deployments. For more information, see the [Windows 10 release information](/windows/release-health/release-information) page.
+
+[!INCLUDE [Windows roadmap](./includes/windows-roadmap.md)]
 
 ## Application compatibility
 
