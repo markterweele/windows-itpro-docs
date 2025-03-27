@@ -33,7 +33,7 @@ The Windows Autopatch device registration process is transparent for end-users b
 
 The overall Autopatch group registration process is as follows:
 
-:::image type="content" source="../media/windows-autopatch-device-registration-overview.png" alt-text="Overview of the device registration process" lightbox="../media/windows-autopatch-device-registration-overview.png":::
+:::image type="content" source="../media/windows-autopatch-device-registration-overview.png" alt-text="Screenshot showing an overview of the device registration process." lightbox="../media/windows-autopatch-device-registration-overview.png":::
 
 1. IT admin identifies and adds devices, or nests other Microsoft Entra device groups when you [create an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#create-an-autopatch-group), or [edit an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#edit-an-autopatch-group).
 2. Windows Autopatch then:
