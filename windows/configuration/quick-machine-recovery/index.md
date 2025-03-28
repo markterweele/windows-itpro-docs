@@ -215,6 +215,15 @@ To simulate the quick machine recovery experience, use the following commands fr
     ```
 1. Reboot your device. The system goes through autoremediation of a simulated crash and reboots back to Windows
 
+> [!NOTE]
+> If during reboot the device goes into Windows RE instead of starting autoremediation, follow these steps:
+>
+>   1. In Windows RE, select **Continue** to boot Windows normally
+>   1. In Windows, execute the two commands:
+>     - `reagentc.exe /Disable`
+>     -  `reagentc.exe /Enable`
+>   1. Retry the quick machine recovery simulation starting from step 1
+
 <!--
 1. To verify the quick machine recovery remediation, go to **Settings** > **Windows Update** > **[Update history](ms-settings:windowsupdate-history)**. The remediation should be listed under **Quality updates**-->
 
