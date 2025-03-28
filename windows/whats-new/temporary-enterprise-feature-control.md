@@ -8,7 +8,7 @@ author: mestew
 manager: aaroncz
 ms.localizationpriority: medium
 ms.topic: reference
-ms.date: 11/01/2023
+ms.date: 03/27/2025
 ms.collection:
   - highpri
   - tier2
@@ -24,6 +24,9 @@ New features and enhancements are introduced through the monthly cumulative upda
 - Controlled by a policy that allows for [permanent enterprise feature control](#permanent-enterprise-feature-control)
 
 Features that are turned off by default are listed in the KB article for the monthly cumulative update. Typically, a feature is selected to be off by default because it either impacts the user experience or IT administrators significantly. For example, a feature might be turned off by default if it requires a change in user behavior or if it requires IT administrators to take action before the feature can be used.
+
+
+[!INCLUDE [Windows roadmap](./includes/windows-roadmap.md)]
 
 ## Temporary enterprise feature control
 

@@ -191,7 +191,6 @@ Select one of the tabs to see the list of available settings:
 
 #### [:::image type="icon" source="../images/icons/power.svg"::: **Power options**](#tab/power)
 
-
 ::: zone pivot="windows-11"
 |Policy name| CSP | GPO |
 |-|-|-|

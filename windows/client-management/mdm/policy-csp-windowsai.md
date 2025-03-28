@@ -1,7 +1,7 @@
 ---
 title: WindowsAI Policy CSP
 description: Learn more about the WindowsAI Area in Policy CSP.
-ms.date: 03/12/2025
+ms.date: 03/26/2025
 ms.topic: generated-reference
 ---
 
@@ -370,6 +370,8 @@ This policy setting determines which app opens when the user presses the Copilot
 
 <!-- SetCopilotHardwareKey-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The property value is the Application User Model ID (AUMID) for the target application. For example: the Microsoft 365 Copilot app is `Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe!Microsoft.MicrosoftOfficeHub`. For more information, see [Find the application user model ID of an installed app](/windows/configuration/store/find-aumid?tabs=ps%2Cexplorer&pivots=windows-11).
+
 <!-- SetCopilotHardwareKey-Editable-End -->
 
 <!-- SetCopilotHardwareKey-DFProperties-Begin -->
