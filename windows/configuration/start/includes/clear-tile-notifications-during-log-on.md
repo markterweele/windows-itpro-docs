@@ -11,5 +11,5 @@ If you enable this policy setting, the system deletes tile notifications when th
 
 |  | Path |
 |--|--|
-| **CSP** | ./Device/Vendor/MSFT/[Setting]() |
+| **CSP** | Not available. |
 | **GPO** | **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
