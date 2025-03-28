@@ -220,8 +220,10 @@ To simulate the quick machine recovery experience, use the following commands fr
 >
 >   1. In Windows RE, select **Continue** to boot Windows normally
 >   1. In Windows, execute the two commands:
->     - `reagentc.exe /Disable`
->     -  `reagentc.exe /Enable`
+>
+>       - `reagentc.exe /Disable`
+>       -  `reagentc.exe /Enable`
+>
 >   1. Retry the quick machine recovery simulation starting from step 1
 
 <!--
