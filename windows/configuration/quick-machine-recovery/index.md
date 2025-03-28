@@ -2,7 +2,7 @@
 title: Quick Machine Recovery
 description: Learn about quick machine recovery and how to configure it with the RemoteRemediation configuration service provider (CSP).
 ms.topic: how-to
-ms.date: 03/14/2025
+ms.date: 03/28/2025
 ms.author: paoloma
 author: paolomatarazzo
 appliesto:
@@ -28,10 +28,10 @@ There are two main settings of quick machine recovery: cloud remediation and aut
 Cloud remediation is the process of using Windows Update to find remediations and fix issues on devices:
 
 - When enabled, devices connect to the network and utilize Windows Update during recovery scenarios
-- When disabled, Windows uses Statup Repair as a local recovery option
+- When disabled, Windows uses Startup Repair as a local recovery option
     :::column-end:::
     :::column span="1":::
-:::image type="content" source="images/quick-machine-recovery-network.png" alt-text="Screnshot of quick machine recovery boot while attempting to connect to the network." border = "false" lightbox="images/quick-machine-recovery-network.png":::
+:::image type="content" source="images/quick-machine-recovery-network.png" alt-text="Screenshot of quick machine recovery boot while attempting to connect to the network." border="false" lightbox="images/quick-machine-recovery-network.png":::
     :::column-end:::
 :::row-end:::
 
@@ -48,7 +48,7 @@ Auto remediation allows you to automate the recovery process:
   - When enabled, the device connects automatically to Windows Update and tries to find a remediation. If a solution isn't found on the first attempt, the device retries without requiring manual intervention
     :::column-end:::
     :::column span="1":::
-:::image type="content" source="images/auto-remediation.png" alt-text="Screnshot of the Windows Recovery Environment in the auto remediation screen, showing that the device retries to find a solution." border = "false" lightbox="images/auto-remediation.png":::
+:::image type="content" source="images/auto-remediation.png" alt-text="Screnshot of the Windows Recovery Environment in the auto remediation screen, showing that the device retries to find a solution." border="false" lightbox="images/auto-remediation.png":::
 :::row-end:::
 :::row:::
     :::column span="3":::
@@ -56,7 +56,7 @@ Auto remediation allows you to automate the recovery process:
 
     :::column-end:::
     :::column span="1":::
-:::image type="content" source="images/quick-machine-recovery-winre.png" alt-text="Screnshot of Windows Recovery Environment showing the quick machine recovery option." border = "false"lightbox="images/quick-machine-recovery-winre.png":::
+:::image type="content" source="images/quick-machine-recovery-winre.png" alt-text="Screnshot of Windows Recovery Environment showing the quick machine recovery option." border="false" lightbox="images/quick-machine-recovery-winre.png":::
 
 :::row-end:::
 
@@ -74,7 +74,7 @@ Here are the phases of the quick machine recovery process:
     - If the solution is successful, the device boots into Windows
     - If the solution fails, the device reboots into the recovery environment again and the process repeats from step 2
 
-:::image type="content" source="images/diagram.png" alt-text="Quick machine recovery diagram showing the five phases of recovery." border="false" lightbox="images/diagram.png":::
+:::image type="content" source="images/diagram.png" alt-text="Diagram of quick machine recovery showing the five phases of recovery." border="false" lightbox="images/diagram.png":::
 
 ## Configuration
 
