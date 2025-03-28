@@ -216,7 +216,7 @@ To simulate the quick machine recovery experience, use the following commands fr
 1. Reboot your device. The system goes through autoremediation of a simulated crash and reboots back to Windows
 
 > [!NOTE]
-> If during reboot the device goes into Windows RE instead of starting autoremediation, follow these steps:
+> If after reboot the device goes into Windows RE instead of starting autoremediation, follow these steps:
 >
 >   1. In Windows RE, select **Continue** to boot Windows normally
 >   1. In Windows, execute the two commands:
