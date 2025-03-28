@@ -52,7 +52,7 @@ The goal of Windows Autopatch is to deliver software updates to registered devic
 | [Microsoft 365 Apps for enterprise updates](../manage/windows-autopatch-microsoft-365-apps-enterprise.md) | Windows Autopatch aims to keep at least 90% of eligible devices on a supported version of the Monthly Enterprise Channel (MEC). |
 | [Microsoft Edge updates](../manage/windows-autopatch-edge.md) | Windows Autopatch configures eligible devices to benefit from Microsoft Edge's progressive rollouts on the Stable channel. |
 | [Microsoft Teams updates](../manage/windows-autopatch-teams.md) | Windows Autopatch allows eligible devices to benefit from the standard automatic update channel. |
-| [Intune reports](/mem/intune/fundamentals/reports) | Use Intune reports to monitor the health and activity of endpoints in your organization.|
+| [Intune reports](/intune/intune-service/fundamentals/reports) | Use Intune reports to monitor the health and activity of endpoints in your organization.|
 | [Hotpatch quality update report](../monitor/windows-autopatch-hotpatch-quality-update-report.md) | Hotpatch quality update report provides a per policy level view of the current update statuses for all devices that receive Hotpatch updates. |
 | Enhanced [Windows quality and feature update reports](../monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview.md) and [device alerts](../monitor/windows-autopatch-device-alerts.md) | Using Windows quality and feature update reports, you can monitor and remediate managed devices that are Not up to Date and resolve any device alerts to bring managed devices back into compliance. |
 
