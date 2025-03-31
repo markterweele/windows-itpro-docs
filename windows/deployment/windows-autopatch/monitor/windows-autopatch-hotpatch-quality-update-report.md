@@ -1,7 +1,7 @@
 ---
 title: Hotpatch quality update report
 description: Use the Hotpatch quality update report to view the current update statuses for all devices that receive Hotpatch updates
-ms.date: 11/19/2024
+ms.date: 03/31/2025
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -16,8 +16,6 @@ ms.collection:
 ---
 
 # Hotpatch quality update report (public preview)
-
-[!INCLUDE [windows-autopatch-applies-to-all-licenses](../includes/windows-autopatch-applies-to-all-licenses.md)]
 
 > [!IMPORTANT]
 > This feature is in public preview. It is being actively developed and might not be complete. They're made available on a "Preview" basis. You can test and use these features in production environments and scenarios and provide feedback.
@@ -40,9 +38,6 @@ The Hotpatch quality update report provides a visual representation of the updat
 
 ### Default columns
 
-> [!IMPORTANT]
-> **Due to a recent change, we have identified an issue that prevents the Paused column from being displayed**. Until a fix is deployed, **you must keep track of your paused releases so you can resume them at a later date**. The team is actively working on resolving this issue and we'll provide an update when a fix is deployed.
-
 The following information is available as default columns in the Hotpatch quality update report:
 
 | Column name | Description |
@@ -55,7 +50,7 @@ The following information is available as default columns in the Hotpatch qualit
 | In progress | Total device counts reporting the In progress status. For more information, see [In progress](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#up-to-date-sub-statuses). |
 | % with the latest quality update | Percent of [Up to Date](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#up-to-date-devices) devices on the most current Windows release and its build number |
 | Not ready | Total device count reporting the Not ready status. For more information, see [Not ready](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#not-up-to-date-devices). |
-| Paused | Total device count reporting the status of the pause whether it's Service or Customer initiated. For more information, see [Up to Date](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#up-to-date-devices). |
+| Paused | Total device count reporting the Paused status. For more information, see [Up to Date](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#up-to-date-devices). |
 
 ## Report options
 
