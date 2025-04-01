@@ -51,6 +51,9 @@ VBS must be turned on for a device to be offered Hotpatch updates. For informati
 
 ### Arm 64 devices must disable compiled hybrid PE usage (CHPE) (Arm 64 CPU Only)
 
+> [!IMPORTANT]
+> Arm 64 devices are in public preview. It's being actively developed and might not be complete. They're made available on a "Preview" basis. You can test and use these features in production environments and scenarios and provide feedback.
+
 This requirement only applies to Arm 64 CPU devices when using Hotpatch updates. Hotpatch updates aren't compatible with servicing CHPE OS binaries located in the `%SystemRoot%\SyChpe32` folder. To ensure all the Hotpatch updates are applied, you must set the CHPE disable flag and restart the device to disable CHPE usage. You only need to set this flag one time. The registry setting remains applied through updates. To disable CHPE, create and/or set the following DWORD registry key:
 Path: `HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management`
 DWORD key value: HotPatchRestrictions=1
