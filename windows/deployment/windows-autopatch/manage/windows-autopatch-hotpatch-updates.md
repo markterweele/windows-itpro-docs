@@ -1,7 +1,7 @@
 ---
 title: Hotpatch updates
 description: Use Hotpatch updates to receive security updates without restarting your device
-ms.date: 03/31/2025
+ms.date: 04/02/2025
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -15,10 +15,7 @@ ms.collection:
   - tier1
 ---
 
-# Hotpatch updates (public preview)
-
-> [!IMPORTANT]
-> This feature is in public preview. It's being actively developed and might not be complete. They're made available on a "Preview" basis. You can test and use these features in production environments and scenarios and provide feedback.
+# Hotpatch updates
 
 Hotpatch updates are designed to reduce downtime and disruptions. Hotpatch updates are [Monthly B release security updates](/windows/deployment/update/release-cycle#monthly-security-update-release) that install and take effect without requiring you to restart the device. By minimizing the need to restart, these updates help ensure faster compliance, making it easier for organizations to maintain security while keeping workflows uninterrupted.
 
