@@ -23,8 +23,9 @@ The Windows update scan source policy enables you to choose what types of update
 We added the scan source policy starting with the [September 1, 2021—KB5005101 (OS Builds 19041.1202, 19042.1202, and 19043.1202) Preview](https://support.microsoft.com/help/5005101) update and it applies to Window 10, version 2004 and above and Windows 11. This policy changes the way devices determine whether to scan against a local WSUS server or Windows Update service.
 
 > [!IMPORTANT]
-> - The policy **Do not allow update deferral policies to cause scans against Windows Update**, also known as Dual Scan, is no longer supported on Windows 11 and on Windows 10 it's replaced by the new Windows scan source policy and isn't recommended for use. If you configure both on Windows 10, you won't get updates from Windows Update.
 > - If you use Configuration Manager and have co-managed devices, see [Integrate with Windows Update client policies](/intune/configmgr/sum/deploy-use/integrate-windows-update-for-business-windows-10) for more information about configuring clients.
+> - The policy **Do not allow update deferral policies to cause scans against Windows Update**, also known as Dual Scan, is no longer supported on Windows 11 and on Windows 10 it's replaced by the new Windows scan source policy and isn't recommended for use. If you configure both on Windows 10, you won't get updates from Windows Update.
+
 
 ## About the scan source policy
 
