@@ -16,11 +16,11 @@ ms.topic: include
   <CustomTaskbarLayoutCollection PinListPlacement="Replace">
     <defaultlayout:TaskbarLayout>
       <taskbar:TaskbarPinList>
-        <taskbar:UWA AppUserModelID="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
+        <taskbar:UWA AppUserModelID="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" PinGeneration="1"/>
+        <taskbar:DesktopApp DesktopApplicationID="MSEdge"/>
         <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer"/>
-        <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!App" />
-        <taskbar:UWA AppUserModelID="Microsoft.M365Companions_8wekyb3d8bbwe!People" pingeneration="1"/>
-        <taskbar:UWA AppUserModelID="Microsoft.M365Companions_8wekyb3d8bbwe!Files" pingeneration"1"/>
+        <taskbar:UWA AppUserModelID="Microsoft.M365Companions_8wekyb3d8bbwe!People" PinGeneration="1"/>
+        <taskbar:UWA AppUserModelID="Microsoft.M365Companions_8wekyb3d8bbwe!Files" PinGeneration="1"/>
       </taskbar:TaskbarPinList>
     </defaultlayout:TaskbarLayout>
   </CustomTaskbarLayoutCollection>
