@@ -6,7 +6,7 @@ ms.date: 04/02/2025
 ms.author: paoloma
 author: paolomatarazzo
 appliesto:
-  - "✅ <a href=\"https://learn.microsoft.com/windows-insider/flight-hub\" target=\"_blank\">Windows Insider</a>"
+  - "✅ <a href=\"https://learn.microsoft.com/windows-insider/flight-hub\" target=\"_blank\">Windows Insider (Beta Channel)</a>"
 ---
 
 # Quick machine recovery
