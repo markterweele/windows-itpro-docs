@@ -17,6 +17,9 @@ ms.collection:
 
 # Register devices with Autopatch groups
 
+> [!IMPORTANT]
+> Device registration might take up to 48 hours to reflect in the system. During this period, devices undergo the necessary onboarding processes before appearing as registered.
+
 An Autopatch group is a logical container or unit that groups several [Microsoft Entra groups](/entra/fundamentals/groups-view-azure-portal), and software update policies. For more information, see [Windows Autopatch groups](../deploy/windows-autopatch-groups-overview.md).
 
 When you [create an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#create-an-autopatch-group) or [edit an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#edit-an-autopatch-group), the device-based Microsoft Entra groups you use are scanned on an ongoing basis to see if new devices need to be added to the Autopatch group.
