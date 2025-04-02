@@ -12,7 +12,7 @@ zone_pivot_groups: windows-versions-11-10
 The configuration of the applications pinned to the taskbar is done with the use of an XML file. This article describes how to create and deploy the XML configuration file.
 
 > [!NOTE]
-> If you are looking for OEM information, see the article [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar).
+> If you're looking for OEM information, see the article [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar).
 
 To learn about all the policy settings to customize the taskbar layout and configure the taskbar behaviors, see [Taskbar policy settings](policy-settings.md).
 
@@ -27,10 +27,10 @@ Here are some considerations before you start configuring the taskbar pinned app
 - The order of applications in the XML file dictates the order of pinned apps on the taskbar, from left to right. If the OS is configured to use a right-to-left language, then the taskbar order is reversed
 - Applications can be pinned using the following methods:
   - Default Windows apps, pinned during the OS installation. For example: Microsoft Edge, File Explorer, and Store. These applications are pinned first (blue square)
-  - Pinned manually by the user. These applications are usually pinned next to the default pinned apps (red circle)
+  - Pinned manually by the user. These applications are pinned next to the default pinned apps (red circle)
   - Pinned via policy settings. These applications are pinned after the apps pinned manually by the user (green triangle)
-- By default ,any pins provisioned via policy settings are restored upon the next policy update cycle, even when users unpin them
-  - On devices with [KB####](/windows/) or later, users can unpin apps pinned via policy settings, if the policy setting allow it. The pins won't be re-pinned during the next policy update cycle
+- By default, any pins provisioned via policy settings are restored upon the next policy update cycle, even when users unpin them
+  - On devices with [KB####](/windows/) or later, users can unpin apps pinned via policy settings, if the policy settings allow it. The pins won't be repinned during the next policy update cycle
 
 ::: zone pivot="windows-10"
 
@@ -60,7 +60,7 @@ Depending on the method you use to configure the taskbar, the configuration is r
 |--|--|
 | Configuration service provider (CSP) | Every 8 hours or based on the [ConfigRefresh](/windows/client-management/mdm/dmclient-csp#deviceproviderprovideridconfigrefresh) interval. |
 | Provisioning package (PPKG) | Each time the `explorer.exe` process restarts. |
-| Group policy (GPO) | In case of a group policy change. |
+| Group policy (GPO) | If a group policy changes. |
 
 > [!CAUTION]
 > The use of the `Import-StartLayout` PowerShell cmdlet to provision the Taskbar layout is no longer supported in Windows 11.
@@ -212,7 +212,7 @@ You can configure devices using the [Start CSP][WIN-1]. Use one of the following
 - **Value:** content of the XML file
 
 > [!NOTE]
-> The content of the file must be entered as a single line in the `Value` field. Use a text editor to remove any line breaks from the XML file, usually with a function called *join lines* or *linearize*. If customizations.xml is being modified directly instead of using the WCD editor, the XML brackets need to be escaped / replaced with \&lt; and \&gt; entity encodings. Single and double quote characters do not need to be escaped.
+> The content of the file must be entered as a single line in the `Value` field. Use a text editor to remove any line breaks from the XML file, usually with a function called *join lines* or *linearize*. If customizations.xml is being modified directly instead of using the WCD editor, the XML brackets need to be escaped / replaced with \&lt; and \&gt; entity encodings. Single and double quote characters don't need to be escaped.
 
 [!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
@@ -244,12 +244,12 @@ By default, any pins provisioned via policy settings are restored upon the next 
 
 This allows admins more granular controls over items pinned to the taskbar by IT admins.
 
-By default, pinned items can be unpinned by users, but they are re-pinned during the next policy update cycle.
-With `PinGeneration`, you can define that specific items pinned to the taskbar can be unpinned by users. The pins won't be re-pinned during the next policy update cycle.
+By default, pinned items can be unpinned by users, but they're repinned during the next policy update cycle.
+With `PinGeneration`, you can define that specific items pinned to the taskbar can be unpinned by users. The pins won't be repinned during the next policy update cycle.
 
-- when `PinGeneration` is defined, a user can unpin that element. The pin won't be re-pinned during the next policy update cycle
-- when `PinGeneration` is not defined, a user can unpin that element. However, the pin will be re-pinned during the next policy update cycle
-- If the `PinGeneration` value changes, for example from "1" to "2", the element will be pinned, even if the user unpinned it previously.
+- when `PinGeneration` is defined, a user can unpin that element. The pin won't be repinned during the next policy update cycle
+- when `PinGeneration` isn't defined, a user can unpin that element. However, the pin will be repinned during the next policy update cycle
+- If the `PinGeneration` value changes, for example from `1` to `2`, the element is pinned, even if the user unpinned it previously
 
 ::: zone-end
 
