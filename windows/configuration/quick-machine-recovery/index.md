@@ -2,7 +2,7 @@
 title: Quick Machine Recovery
 description: Learn about quick machine recovery and how to configure it with the RemoteRemediation configuration service provider (CSP).
 ms.topic: how-to
-ms.date: 03/28/2025
+ms.date: 04/02/2025
 ms.author: paoloma
 author: paolomatarazzo
 appliesto:
