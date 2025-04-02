@@ -17,6 +17,9 @@ ms.collection:
 
 # Autopatch group registration overview
 
+> [!IMPORTANT]
+> Device registration might take up to 48 hours to reflect in the system. During this period, devices undergo the necessary onboarding processes before appearing as registered.
+
 When you assign a Microsoft Entra Group to an Autopatch policy or [create an Autopatch group](../manage/windows-autopatch-manage-autopatch-groups.md#create-an-autopatch-group), the device is registered with the Autopatch Service.
 
 ## Prerequisites for device registration
