@@ -18,7 +18,7 @@ ms.collection:
 # Register devices with Autopatch groups
 
 > [!IMPORTANT]
-> Device registration might take up to 48 hours to reflect in the system. During this period, devices undergo the necessary onboarding processes before appearing as registered.
+> If you're new to Autopatch, it might take up to 48 hours for devices to appear as Registered in the [Autopatch groups membership report](../deploy/windows-autopatch-register-devices.md#autopatch-groups-membership-report). During this 48 hour period, devices undergo the necessary onboarding processes before appearing as registered
 
 An Autopatch group is a logical container or unit that groups several [Microsoft Entra groups](/entra/fundamentals/groups-view-azure-portal), and software update policies. For more information, see [Windows Autopatch groups](../deploy/windows-autopatch-groups-overview.md).
 
