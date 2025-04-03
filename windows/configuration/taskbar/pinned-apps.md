@@ -29,8 +29,10 @@ Here are some considerations before you start configuring the taskbar pinned app
   - Default Windows apps, pinned during the OS installation. For example: Microsoft Edge, File Explorer, and Store. These applications are pinned first (blue square)
   - Pinned manually by the user. These applications are pinned next to the default pinned apps (red circle)
   - Pinned via policy settings. These applications are pinned after the apps pinned manually by the user (green triangle)
+::: zone pivot="windows-11"
 - By default, any pins provisioned via policy settings are restored upon the next policy update cycle, even when users unpin them
   - On devices with [KB####](/windows/) or later, users can unpin apps pinned via policy settings, if the policy settings allow it. The pins won't be repinned during the next policy update cycle
+::: zone-end
 
 ::: zone pivot="windows-10"
 
@@ -101,6 +103,7 @@ For practical examples of how to add, remove, or replace pinned apps, see the fo
 - [Add pins](#example-add-pins)
 - [Remove default pins](#example-remove-pins)
 - [Replace default pins](#example-replace-pins)
+- [Replace default pins and allow users to unpin certain apps](#example-replace-pins-and-allow-users-to-unpin-certain-apps)
 - [Configure the taskbar by country or region](#example-configure-the-taskbar-by-country-or-region)
 
 #### Example: add pins
@@ -153,12 +156,14 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
 
 ::: zone pivot="windows-11"
 
-#### Example: replace pins and allow users to unpin apps
+#### Example: replace default pins and allow users to unpin certain apps
 
 > [!NOTE]
-> The option to allow users to unpin apps is only available on devices with [KB####](/windows/) or later.
+> The option to allow users to unpin apps is only available on devices with [KB####](/windows/) or later. When targeting this policy, only target devices that are patched, otherwise the pins won't apply. If you use Microsoft Intune, you can use [filters](intune/intune-service/fundamentals/filters) to target only devices with the required patch.
 
-In the following example, all default pins are replaced and two of the apps are pinned with the option `pingeneration`. With `pingeneration`, users can unpin the apps and the pins won't be repinned during the next policy update cycle.
+To use this option, add `PinGeneration="1"` to the pins you want to allow users to unpin. The value of `PinGeneration` can be any number. The value is used to identify the version of the pin. If the value changes, the app is pinned again during the next policy update cycle. This allows IT admins to repin the app if needed.
+
+In the following example, the default pins are replaced and three of the apps are pinned with the option `PinGeneration`. Pinned elements specified with `PinGeneration` can be unpinned by the users, and they won't be repinned during the next policy update cycle. If in the future a value of `PinGeneration` changes, for example from `1` to `2`, the element is pinned again, even if the user unpinned it previously.
 
 [!INCLUDE [example-replace-pins](includes/example-replace-pins-pingeneration.md)]
 
