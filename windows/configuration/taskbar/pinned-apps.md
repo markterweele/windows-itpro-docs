@@ -2,7 +2,7 @@
 title: Configure the Windows Taskbar Pinned Apps with Policy Settings
 description: Learn how to configure the applications pinned to the Windows taskbar.
 ms.topic: how-to
-ms.date: 11/07/2024
+ms.date: 04/03/2025
 appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
@@ -12,7 +12,7 @@ zone_pivot_groups: windows-versions-11-10
 The configuration of the applications pinned to the taskbar is done with the use of an XML file. This article describes how to create and deploy the XML configuration file.
 
 > [!NOTE]
-> If you're looking for OEM information, see the article [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar).
+> If you're looking for OEM information, see the article [Customize the Taskbar][OEM-1].
 
 To learn about all the policy settings to customize the taskbar layout and configure the taskbar behaviors, see [Taskbar policy settings](policy-settings.md).
 
@@ -179,8 +179,8 @@ In the following XML example, two regions are added: `US|UK` and `DE|FR|IT`:
 
 [!INCLUDE [example](includes/example-region.md)]
 
-- If the `<TaskbarPinList>` node has region matching the one configured on the device, then the configuration applies.
-- If the `<TaskbarPinList>` node doesn't have a region matching the one configured on the device, then the first `<TaskbarPinList>` node without region applies.
+- If the `<TaskbarPinList>` node has region matching the one configured on the device, then the configuration applies
+- If the `<TaskbarPinList>` node doesn't have a region matching the one configured on the device, then the first `<TaskbarPinList>` node without region applies
 
 > [!NOTE]
 > [Look up country and region codes (use the ISO Short column)](/previous-versions/commerce-server/ee799297(v=cs.20))
@@ -261,8 +261,8 @@ If your devices are patched with [KB####](/windows/) or later, you can define th
 
 On a clean install of Windows, if you apply a taskbar layout, the following apps are pinned to the taskbar:
 
-- Any default apps you don't remove.
-- Apps that you specifically pin in the XML file.
+- Any default apps you don't remove
+- Apps that you specifically pin in the XML file
 
 On a Windows OS upgrade, apps are already pinned to the taskbar. The taskbar layout applies the following logic:
 
@@ -283,6 +283,8 @@ Learn more about the options available to configure Start menu settings using th
 
 - [Taskbar policy settings](policy-settings.md)
 
----
+<!--links-->
+
+[OEM-1]: /windows-hardware/customize/desktop/customize-the-windows-11-taskbar
 [WIN-1]: /windows/client-management/mdm/policy-csp-start
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
