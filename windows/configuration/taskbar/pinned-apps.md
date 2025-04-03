@@ -103,7 +103,7 @@ For practical examples of how to add, remove, or replace pinned apps, see the fo
 - [Add pins](#example-add-pins)
 - [Remove default pins](#example-remove-pins)
 - [Replace default pins](#example-replace-pins)
-- [Replace default pins and allow users to unpin certain apps](#example-replace-pins-and-allow-users-to-unpin-certain-apps)
+- [Replace default pins and allow unpinning of specific apps](#example-replace-default-pins-and-allow-unpinning-of-specific-apps)
 - [Configure the taskbar by country or region](#example-configure-the-taskbar-by-country-or-region)
 
 #### Example: add pins
@@ -156,7 +156,7 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
 
 ::: zone pivot="windows-11"
 
-#### Example: replace default pins and allow users to unpin certain apps
+#### Example: replace default pins and allow unpinning of specific apps
 
 > [!NOTE]
 > The option to allow users to unpin apps is only available on devices with [KB####](/windows/) or later. When targeting this policy, only target devices that are patched, otherwise the pins don't apply.
