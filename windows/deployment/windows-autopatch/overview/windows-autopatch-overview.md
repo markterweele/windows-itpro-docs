@@ -18,7 +18,7 @@ ms.reviewer: hathind
 # What is Windows Autopatch?
 
 > [!IMPORTANT]
-> In April 2025, Windows Autopatch removed feature activation and made Windows Autopatch features available support to Business Premium and A3+ licenses. These changes are rolling out over the next several weeks. If your experience looks different from the documentation, you didn’t receive the changes yet. Review [Prerequisites](../prepare/windows-autopatch-prerequisites.md) and [Features and capabilities](#features-and-capabilities) to understand licensing and feature entitlement.
+> In April 2025, Windows Autopatch removed feature activation and made Windows Autopatch features available to Business Premium and A3+ licenses. These changes are rolling out over the next several weeks. If your experience looks different from the documentation, you didn’t receive the changes yet. Review [Prerequisites](../prepare/windows-autopatch-prerequisites.md) and [Features and capabilities](#features-and-capabilities) to understand licensing and feature entitlement.
 
 Windows Autopatch is a cloud service that automates Windows, Microsoft 365 Apps for enterprise, Microsoft Edge, and Microsoft Teams updates to improve security and productivity across your organization.
 
