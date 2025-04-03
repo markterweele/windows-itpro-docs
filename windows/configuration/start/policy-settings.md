@@ -70,7 +70,7 @@ Select one of the tabs to see the list of available settings:
 |-|-|-|
 |[Clear history of recently opened documents on exit](#clear-history-of-recently-opened-documents-on-exit)|❌|✅|
 |[Clear tile notifications during log on](#clear-tile-notifications-during-log-on)|❌|✅|
-|[Configure Start layout](#configure-start-layout)|✅|✅|
+|[Start layout](#start-layout)|✅|✅|
 |[Disable context menus](#disable-context-menus)|✅|✅|
 |[Don't use the search-based method when resolving shell shortcuts](#dont-use-the-search-based-method-when-resolving-shell-shortcuts)|❌|✅|
 |[Don't use the tracking-based method when resolving shell shortcuts](#dont-use-the-tracking-based-method-when-resolving-shell-shortcuts)|❌|✅|
@@ -87,7 +87,7 @@ Select one of the tabs to see the list of available settings:
 [!INCLUDE [clear-history-of-recently-opened-documents-on-exit](includes/clear-history-of-recently-opened-documents-on-exit.md)]
 ::: zone pivot="windows-10"
 [!INCLUDE [clear-tile-notifications-during-log-on](includes/clear-tile-notifications-during-log-on.md)]
-[!INCLUDE [configure-start-layout](includes/configure-start-layout.md)]
+[!INCLUDE [start-layout](includes/start-layout.md)]
 ::: zone-end
 ::: zone pivot="windows-11"
 [!INCLUDE [configure-start-pins](includes/configure-start-pins.md)]
