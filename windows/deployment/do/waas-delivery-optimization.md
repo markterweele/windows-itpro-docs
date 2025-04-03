@@ -47,9 +47,6 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 
 #### Windows Client
 
-> [!NOTE]
-> Starting March 4, 2025, Edge Browser updates will temporarily not utilize Delivery Optimization for downloads. We are actively working to resolve this issue.
-
 | Windows Client | Minimum Windows version | HTTP Downloader | Peer to Peer | Microsoft Connected Cache |
 |------------------|---------------|----------------|----------|----------------|
 | Windows Update ([feature updates quality updates, language packs, drivers](../update/get-started-updates-channels-tools.md#types-of-updates)) | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
