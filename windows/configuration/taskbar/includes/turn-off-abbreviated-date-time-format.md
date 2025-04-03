@@ -5,7 +5,7 @@ ms.date: 02/25/2025
 ms.topic: include
 ---
 
-### Turn off abbreviated time and date format
+### Turn off abbreviated date and time format
 
 This policy setting allows you to show the longer time and date format in the system tray:
 

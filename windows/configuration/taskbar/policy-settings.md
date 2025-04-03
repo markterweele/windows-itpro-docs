@@ -34,8 +34,10 @@ Select one of the tabs to see the list of available settings:
 |[Remove pinned programs from the Taskbar](#remove-pinned-programs-from-the-taskbar)|❌|✅|
 |[Remove Quick Settings](#remove-quick-settings)|✅|✅|
 |[Show additional calendar](#show-additional-calendar)|❌|✅|
+|[Show notification bell icon](#show-notification-bell-icon)|✅|✅|
 |[Simplify Quick Settings Layout](#simplify-quick-settings-layout)|✅|✅|
 |[Start layout](#start-layout)|✅|✅|
+|[Turn off abbreviated date and time format](#turn-off-abbreviated-date-and-time-format)|✅|✅|
 |[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
 
 ::: zone-end
@@ -58,9 +60,7 @@ Select one of the tabs to see the list of available settings:
 |[Remove the People Bar from the taskbar](#remove-the-people-bar-from-the-taskbar)|✅|✅|
 |[Remove the volume control icon](#remove-the-volume-control-icon)|❌|✅|
 |[Show additional calendar](#show-additional-calendar)|❌|✅|
-|[Show notification bell icon](#show-notification-bell-icon)|✅|✅|
 |[Start layout](#start-layout)|✅|✅|
-|[Turn off abbreviated time and date format](#turn-off-abbreviated-date-time-format)|✅|✅|
 |[Turn off automatic promotion of notification icons to the taskbar](#turn-off-automatic-promotion-of-notification-icons-to-the-taskbar)|❌|✅|
 |[Turn off notification area cleanup](#turn-off-notification-area-cleanup)|❌|✅|
 
