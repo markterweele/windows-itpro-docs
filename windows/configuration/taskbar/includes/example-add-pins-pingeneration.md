@@ -13,12 +13,10 @@ ms.topic: include
     xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
     xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
     Version="1">
-  <CustomTaskbarLayoutCollection PinListPlacement="Replace">
+  <CustomTaskbarLayoutCollection>
     <defaultlayout:TaskbarLayout>
       <taskbar:TaskbarPinList>
-        <taskbar:UWA AppUserModelID="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" PinGeneration="1"/>
-        <taskbar:DesktopApp DesktopApplicationID="MSEdge"/>
-        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer"/>
+        <taskbar:UWA AppUserModelID="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
         <taskbar:UWA AppUserModelID="Microsoft.M365Companions_8wekyb3d8bbwe!People" PinGeneration="1"/>
         <taskbar:UWA AppUserModelID="Microsoft.M365Companions_8wekyb3d8bbwe!Files" PinGeneration="1"/>
       </taskbar:TaskbarPinList>

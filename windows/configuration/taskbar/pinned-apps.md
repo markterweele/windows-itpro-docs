@@ -169,7 +169,7 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
 
 ::: zone pivot="windows-11"
 
-#### Example: replace default pins and allow unpinning of specific apps
+#### Example: allow unpinning of specific apps
 
 > [!NOTE]
 > The option to allow users to unpin apps is only available on devices with [KB####](/windows/) or later. When targeting this policy, only target devices that are patched, otherwise the pins don't apply.
@@ -179,13 +179,13 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
 
 To use this option, add `PinGeneration="1"` to the pins you want to allow users to unpin. The value of `PinGeneration` can be any number. The value is used to identify the pin version. If the value changes, the app is pinned again during the next policy update cycle. This allows IT admins to repin the app if needed.
 
-In the following example, the default pins are replaced and three of the apps are pinned with the option `PinGeneration`. Pinned elements specified with `PinGeneration` can be unpinned by the users, and they won't be repinned during the next policy update cycle. If in the future a value of `PinGeneration` changes, for example from `1` to `2`, the element is pinned again, even if the user unpinned it previously.
+In the following example, we pin three of the apps, two of which have the `PinGeneration` option. Pinned elements specified with `PinGeneration` can be unpinned by the users, and they won't be repinned during the next policy update cycle. If in the future a value of `PinGeneration` changes, for example from `1` to `2`, the element is pinned again, even if the user unpinned it previously.
 
-[!INCLUDE [example-replace-pins](includes/example-replace-pins-pingeneration.md)]
+[!INCLUDE [example-replace-pins](includes/example-add-pins-pingeneration.md)]
 
 **Before and after:**
 
-:::image type="content" source="images/pin-replace-pingeneration11.png" alt-text="Screenshot of the Windows 11 taskbar, before and after replacing pins with the M365 companion apps." border="false" lightbox="images/pin-replace-pingeneration11.png":::
+:::image type="content" source="images/pin-add-pingeneration-11.png" alt-text="Screenshot of the Windows 11 taskbar, before and after adding pins with the M365 companion apps." border="false" lightbox="images/pin-add-pingeneration-11.png":::
 
 ::: zone-end
 
