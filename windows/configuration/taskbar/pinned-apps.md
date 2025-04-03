@@ -20,6 +20,24 @@ To learn about all the policy settings to customize the taskbar layout and confi
 
 Here are some considerations before you start configuring the taskbar pinned applications:
 
+::: zone pivot="windows-11"
+- There's no limit to the number of apps that you can pin
+- In the XML file, add apps using the Application User Model ID (AUMID), the Desktop Application ID, or the Desktop Application Link Path
+- Some classic Windows applications are packaged differently than they were in previous versions of Windows, including Notepad and File Explorer. Make sure to enter the correct Application ID. To learn more, see [Find the Application User Model ID of an installed app](../store/find-aumid.md)
+- If you specify an app to be pinned that isn't provisioned for the user on the device, the pinned icon doesn't appear on the taskbar
+- By default, any pins provisioned via policy settings are restored upon the next policy update cycle, even when users unpin them
+  - On devices with [KB####](/windows/) or later, users can unpin apps pinned via policy settings, if the policy settings allow it. The pins won't be repinned during the next policy update cycle
+- Applications can be pinned using the following methods:
+  - Default Windows apps, pinned during the OS installation. For example: Microsoft Edge, File Explorer, and Store. These applications are pinned first (blue square)
+  - Pinned manually by the user. These applications are pinned next to the default pinned apps (red circle)
+  - Pinned via policy settings. These applications are pinned after the apps pinned manually by the user (green triangle)
+
+:::image type="content" source="images/pin-layout-11.png" border="false" lightbox="images/pin-layout-11.png" alt-text="Screenshot of the taskbar with Windows default pinned apps, user pinned apps, and policy-pinned apps.":::
+
+::: zone-end
+
+::: zone pivot="windows-10"
+
 - There's no limit to the number of apps that you can pin
 - In the XML file, add apps using the Application User Model ID (AUMID), the Desktop Application ID, or the Desktop Application Link Path
 - Some classic Windows applications are packaged differently than they were in previous versions of Windows, including Notepad and File Explorer. Make sure to enter the correct Application ID. To learn more, see [Find the Application User Model ID of an installed app](../store/find-aumid.md)
@@ -29,22 +47,11 @@ Here are some considerations before you start configuring the taskbar pinned app
   - Default Windows apps, pinned during the OS installation. For example: Microsoft Edge, File Explorer, and Store. These applications are pinned first (blue square)
   - Pinned manually by the user. These applications are pinned next to the default pinned apps (red circle)
   - Pinned via policy settings. These applications are pinned after the apps pinned manually by the user (green triangle)
-::: zone pivot="windows-11"
-- By default, any pins provisioned via policy settings are restored upon the next policy update cycle, even when users unpin them
-  - On devices with [KB####](/windows/) or later, users can unpin apps pinned via policy settings, if the policy settings allow it. The pins won't be repinned during the next policy update cycle
-::: zone-end
-
-::: zone pivot="windows-10"
 
 :::image type="content" source="images/pin-layout-10.png" border="false" lightbox="images/pin-layout-10.png" alt-text="Screenshot of the taskbar with Windows default pinned apps, user pinned apps, and policy-pinned apps.":::
 
 ::: zone-end
 
-::: zone pivot="windows-11"
-
-:::image type="content" source="images/pin-layout-11.png" border="false" lightbox="images/pin-layout-11.png" alt-text="Screenshot of the taskbar with Windows default pinned apps, user pinned apps, and policy-pinned apps.":::
-
-::: zone-end
 
 ## Configuration steps
 
