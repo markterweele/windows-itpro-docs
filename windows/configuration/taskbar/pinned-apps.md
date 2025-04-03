@@ -186,7 +186,7 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
 
 To use this option, add `PinGeneration="1"` to the pins you want to allow users to unpin. The value of `PinGeneration` can be any number. The value is used to identify the pin version. If the value changes, the app is pinned again during the next policy update cycle. This allows IT admins to repin the app if needed.
 
-In the following example, three apps are pinned, two of which have the `PinGeneration` option. Pinned elements specified with `PinGeneration` can be unpinned by the users, and they won't be repinned during the next policy update cycle. If in the future a value of `PinGeneration` changes, for example from `1` to `2`, the element is pinned again, even if the user unpinned it previously.
+In the following example, three apps are pinned, two of which have the `PinGeneration` option. Pinned elements specified with `PinGeneration` can be unpinned by the users, and they won't be repinned during the next policy update cycle. If in the future the value of `PinGeneration` changes, for example from `1` to `2`, the element is pinned again, even if the user unpinned it previously.
 
 [!INCLUDE [example-replace-pins](includes/example-add-pins-pingeneration.md)]
 
