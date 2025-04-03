@@ -114,7 +114,7 @@ For practical examples of how to add, remove, or replace pinned apps, see the fo
 - [Add pins](#example-add-pins)
 - [Remove default pins](#example-remove-pins)
 - [Replace default pins](#example-replace-pins)
-- [Replace default pins and allow unpinning of specific apps](#example-allow-unpinning-of-specific-apps)
+- [Allow unpinning of specific apps](#example-allow-unpinning-of-specific-apps)
 - [Configure the taskbar by country or region](#example-configure-the-taskbar-by-country-or-region)
 
 ::: zone-end
