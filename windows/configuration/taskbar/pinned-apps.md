@@ -175,7 +175,7 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
 > The option to allow users to unpin apps is only available on devices with [KB####](/windows/) or later. When targeting this policy, only target devices that are patched, otherwise the pins don't apply.
 >
 >- If you use Microsoft Intune, you can use [filters](/intune/intune-service/fundamentals/filters) to target only devices with the required patch
->- If you use GPO, you can use [WMI filters](//previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc732796(v=ws.11)) to target only devices with the required patch
+>- If you use GPO, you can use [WMI filters](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc732796(v=ws.11)) to target only devices with the required patch
 
 To use this option, add `PinGeneration="1"` to the pins you want to allow users to unpin. The value of `PinGeneration` can be any number. The value is used to identify the pin version. If the value changes, the app is pinned again during the next policy update cycle. This allows IT admins to repin the app if needed.
 
