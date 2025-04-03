@@ -70,7 +70,7 @@ Depending on the method you use to configure the taskbar, the configuration is r
 ::: zone pivot="windows-10"
 
 >[!NOTE]
->If you use GPO and your configuration only contains a taskbar layout, the default Windows tile layout will be applied and cannot be changed by users. If you use GPO and your configuration includes taskbar and a full Start layout, users can only make changes to the taskbar. If you use Group Policy and your configuration includes taskbar and a partial Start layout, users can make changes to the taskbar and to tile groups not defined in the partial Start layout.
+>If you use GPO and your configuration only contains a taskbar layout, the default Windows tile layout is applied and can't be changed by users. If you use GPO and your configuration includes taskbar and a full Start layout, users can only make changes to the taskbar. If you use Group Policy and your configuration includes taskbar and a partial Start layout, users can make changes to the taskbar and to tile groups not defined in the partial Start layout.
 >
 > For more information, see [Configure the Start menu](../start/index.md).
 
@@ -159,9 +159,9 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
 #### Example: replace default pins and allow users to unpin certain apps
 
 > [!NOTE]
-> The option to allow users to unpin apps is only available on devices with [KB####](/windows/) or later. When targeting this policy, only target devices that are patched, otherwise the pins won't apply. If you use Microsoft Intune, you can use [filters](intune/intune-service/fundamentals/filters) to target only devices with the required patch.
+> The option to allow users to unpin apps is only available on devices with [KB####](/windows/) or later. When targeting this policy, only target devices that are patched, otherwise the pins don't apply. If you use Microsoft Intune, you can use [filters](intune/intune-service/fundamentals/filters) to target only devices with the required patch.
 
-To use this option, add `PinGeneration="1"` to the pins you want to allow users to unpin. The value of `PinGeneration` can be any number. The value is used to identify the version of the pin. If the value changes, the app is pinned again during the next policy update cycle. This allows IT admins to repin the app if needed.
+To use this option, add `PinGeneration="1"` to the pins you want to allow users to unpin. The value of `PinGeneration` can be any number. The value is used to identify the pin version. If the value changes, the app is pinned again during the next policy update cycle. This allows IT admins to repin the app if needed.
 
 In the following example, the default pins are replaced and three of the apps are pinned with the option `PinGeneration`. Pinned elements specified with `PinGeneration` can be unpinned by the users, and they won't be repinned during the next policy update cycle. If in the future a value of `PinGeneration` changes, for example from `1` to `2`, the element is pinned again, even if the user unpinned it previously.
 
@@ -247,14 +247,13 @@ Any pins provisioned via policy settings are restored upon the next policy refre
 ::: zone pivot="windows-11"
 By default, any pins provisioned via policy settings are restored upon the next policy refresh, even when users unpin them.
 
-This allows admins more granular controls over items pinned to the taskbar by IT admins.
+If your devices are patched with [KB####](/windows/) or later, you can define the `PinGeneration` attribute in the XML file. This allows users to unpin specific items pinned to the taskbar. The pins won't be repinned during the next policy update cycle.
 
-By default, pinned items can be unpinned by users, but they're repinned during the next policy update cycle.
-With `PinGeneration`, you can define that specific items pinned to the taskbar can be unpinned by users. The pins won't be repinned during the next policy update cycle.
+### PinGeneration details
 
-- when `PinGeneration` is defined, a user can unpin that element. The pin won't be repinned during the next policy update cycle
-- when `PinGeneration` isn't defined, a user can unpin that element. However, the pin will be repinned during the next policy update cycle
-- If the `PinGeneration` value changes, for example from `1` to `2`, the element is pinned, even if the user unpinned it previously
+- When `PinGeneration` is defined, users can unpin that element, and the pin won't be repinned during the next policy update cycle
+- When `PinGeneration` isn't defined, users can unpin that element, but the pin will be repinned during the next policy update cycle
+- If the `PinGeneration` value changes, for example from `1` to `2`, the element is pinned again, even if the user unpinned it previously
 
 ::: zone-end
 
