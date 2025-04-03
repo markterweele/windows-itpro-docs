@@ -17,6 +17,4 @@ This policy setting allows you to show the longer time and date format in the sy
 |  | Path |
 |--|--|
 | **CSP** |- `./User/Vendor/MSFT/Policy/Config/Start/`[TurnOffAbbreviatedDateTimeFormat](/windows/client-management/mdm/policy-csp-start#TurnOffAbbreviatedDateTimeFormat) |
-| **GPO** |- **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** |
-
-<!-- not linked yet as it's in Insider>
+| **GPO** |- **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Turn off abbreviated time and date format**|

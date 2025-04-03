@@ -2,7 +2,7 @@
 title: Start policy settings
 description: Learn about the policy settings to configure the Windows Start menu.
 ms.topic: reference
-ms.date: 02/25/2025
+ms.date: 04/03/2025
 appliesto:
 zone_pivot_groups: windows-versions-11-10
 ---
