@@ -14,7 +14,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
-ms.date: 10/15/2024
+ms.date: 04/03/2025
 ---
 
 # Delivery Optimization reference
@@ -335,6 +335,8 @@ Configure this policy to designate Delivery Optimization in Network Cache server
 
 > [!NOTE]
 > If you format the DHCP Option ID incorrectly, the client will fall back to the Cache Server Hostname policy value if that value has been configured.
+> 
+> If the [LocalPolicyMerge](/windows/security/operating-system-security/network-security/windows-firewall/rules#local-policy-merge-and-application-rules) setting is configured, such as part of security baselines, it can impact DHCP client and prevent it from retrieving this DHCP option, especially in Autopilot scenarios.
 
 ### Maximum foreground download bandwidth (in KB/s)
 

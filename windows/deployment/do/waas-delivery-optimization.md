@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 05/23/2024
+ms.date: 04/03/2025
 ---
 
 # What is Delivery Optimization?
@@ -46,9 +46,6 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 ### Types of download content supported by Delivery Optimization
 
 #### Windows Client
-
-> [!NOTE]
-> Starting March 4, 2025, Edge Browser updates will temporarily not utilize Delivery Optimization for downloads. We are actively working to resolve this issue.
 
 | Windows Client | Minimum Windows version | HTTP Downloader | Peer to Peer | Microsoft Connected Cache |
 |------------------|---------------|----------------|----------|----------------|
