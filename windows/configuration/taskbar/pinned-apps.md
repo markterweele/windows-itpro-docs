@@ -100,11 +100,24 @@ You can change the apps pinned to the taskbar by modifying the `<TaskbarLayout>`
 
 For practical examples of how to add, remove, or replace pinned apps, see the following sections:
 
+::: zone pivot="windows-10"
+
+- [Add pins](#example-add-pins)
+- [Remove default pins](#example-remove-pins)
+- [Replace default pins](#example-replace-pins)
+- [Configure the taskbar by country or region](#example-configure-the-taskbar-by-country-or-region)
+
+::: zone-end
+
+::: zone pivot="windows-11"
+
 - [Add pins](#example-add-pins)
 - [Remove default pins](#example-remove-pins)
 - [Replace default pins](#example-replace-pins)
 - [Replace default pins and allow unpinning of specific apps](#example-replace-default-pins-and-allow-unpinning-of-specific-apps)
 - [Configure the taskbar by country or region](#example-configure-the-taskbar-by-country-or-region)
+
+::: zone-end
 
 #### Example: add pins
 
