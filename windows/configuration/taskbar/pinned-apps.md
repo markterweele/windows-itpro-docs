@@ -72,7 +72,7 @@ Depending on the method you use to configure the taskbar, the configuration is r
 | Provisioning package (PPKG) | Each time the `explorer.exe` process restarts. |
 | Group policy (GPO) | If a group policy changes. |
 
-> [!CAUTION]
+> [!NOTE]
 > The use of the `Import-StartLayout` PowerShell cmdlet to provision the Taskbar layout is no longer supported in Windows 11.
 
 ::: zone pivot="windows-10"
@@ -92,7 +92,7 @@ Here you can find an example of taskbar layout that you can use as a reference:
 
 ### Modify the configuration file
 
-> [!CAUTION]
+> [!IMPORTANT]
 > The XML format must adhere to the [XML schema definition (XSD)](xsd.md).
 
 You can change the apps pinned to the taskbar by modifying the `<TaskbarLayout>` node.
