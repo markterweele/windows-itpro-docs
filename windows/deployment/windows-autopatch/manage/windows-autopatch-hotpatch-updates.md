@@ -1,7 +1,7 @@
 ---
 title: Hotpatch updates
 description: Use Hotpatch updates to receive security updates without restarting your device
-ms.date: 04/02/2025
+ms.date: 04/04/2025
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -91,7 +91,7 @@ LCUs requires you to restart the device, but the LCU ensures that the device rem
 1. Select **Devices** from the left navigation menu.
 1. Under the **Manage updates** section, select **Windows updates**.
 1. Go to the **Quality updates** tab.
-1. Select **Create**, and select **Windows quality update policy (preview)**.
+1. Select **Create**, and select **Windows quality update policy**.
 1. Under the **Basics** section, enter a name for your new policy and select Next.
 1. Under the **Settings** section, set **"When available, apply without restarting the device ("Hotpatch")** to **Allow**. Then, select **Next**.
 1. Select the appropriate Scope tags or leave as Default and select **Next**.
