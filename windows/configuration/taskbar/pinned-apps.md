@@ -116,16 +116,16 @@ To use this option, add `PinGeneration="1"` to the pins you want to allow users 
 
 Here are some details to better understand and use `PinGeneration`:
 
-- When `PinGeneration` is defined, users can unpin that element, and the pin won't be repinned during the next policy update cycle
 - When `PinGeneration` isn't defined, users can unpin that element, but the pin will be repinned during the next policy update cycle
-- If the `PinGeneration` value changes, for example from `1` to `2`, the element is pinned again, even if the user unpinned it previously
-- Every `PinGeneration` number is specific to the app. You can have a value of `1` for one app, and a value of `2` for another app
+- When `PinGeneration` is defined, users can unpin that element, and the pin won't be repinned during the next policy update cycle
+- When the `PinGeneration` value changes, for example from `1` to `2`, the element is pinned again, even if the user unpinned it previously
+- Every `PinGeneration` number is specific to an app. You can define a value of `1` for one app, and a value of `2` for another app
 - Start `PinGeneration` with a value of `1` and increment the number each time you want to repin the app. This way, if the user unpins the app, it won't be repinned until you change the number again
-- For simple management, always increment the `pingeneration` number and don't reuse numbers
-- If you remove the `pingeneration` attribute, the app will be repinned during the next policy update cycle even if the user unpinned it previously. This is the default behavior
+- For simple management, always increment the `PinGeneration` number and don't reuse numbers
+- If you remove the `PinGeneration` attribute, the app will be repinned during the next policy update cycle even if the user unpinned it previously. This is the default behavior
 
 > [!CAUTION]
-> The option to allow users to unpin apps is only available on devices with [KBXYZ][KB-1] or later. When assigning this policy, target devices that are patched, otherwise the taskbar layout doesn't apply.
+> The `PinGeneration` option is only available on devices with [KBXYZ][KB-1] or later. When assigning this policy, target devices that are patched, otherwise the taskbar pins don't apply.
 >
 >- If you use Microsoft Intune, you can use [filters](/intune/intune-service/fundamentals/filters) to target only devices with the required patch
 >- If you use GPO, you can use [WMI filters](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc732796(v=ws.11)) to target only devices with the required patch
