@@ -58,7 +58,7 @@ Here are some considerations before you start configuring the taskbar pinned app
 
 The following steps describe how to configure the taskbar pinned applications using policy settings:
 
-1. Create the XML file. You can start with the [XML example](#taskbar-layout-example)
+1. Create the XML file. You can start with the [XML example](#taskbar-layout) and modify it to meet your requirements
 1. Edit the XML file to meet your requirements and save it
 1. Deploy the XML file to devices using configuration service provider (CSP), provisioning packages (PPKG), or group policy (GPO)
 
