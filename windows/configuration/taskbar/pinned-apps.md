@@ -213,7 +213,7 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
 > [!NOTE]
 > The option to allow users to unpin apps is only available on devices with [KBXYZ][KB-1] or later.
 
-"In the following XML example, three apps are pinned to the taskbar. Two apps are pinned with the `PinGeneration` attribute, allowing users to unpin them and preventing repinning during the next policy update cycle.
+In the following XML example, three apps are pinned to the taskbar. Two apps are pinned with the `PinGeneration` attribute, allowing users to unpin them and preventing repinning during the next policy update cycle.
 
 [!INCLUDE [example-replace-pins](includes/example-add-pins-pingeneration.md)]
 
