@@ -1,7 +1,7 @@
 ---
 title: Hotpatch quality update report
 description: Use the Hotpatch quality update report to view the current update statuses for all devices that receive Hotpatch updates
-ms.date: 03/31/2025
+ms.date: 04/04/2025
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -15,10 +15,7 @@ ms.collection:
   - tier1
 ---
 
-# Hotpatch quality update report (public preview)
-
-> [!IMPORTANT]
-> This feature is in public preview. It is being actively developed and might not be complete. They're made available on a "Preview" basis. You can test and use these features in production environments and scenarios and provide feedback.
+# Hotpatch quality update report
 
 The Hotpatch quality update report provides a per policy level view of the current update statuses for all devices that receive Hotpatch updates. For more information about Hotpatching, see [Hotpatch updates](../manage/windows-autopatch-hotpatch-updates.md).
 
@@ -27,7 +24,7 @@ The Hotpatch quality update report provides a per policy level view of the curre
 1. Go to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Navigate to **Reports** > **Windows Autopatch** > **Windows quality updates**.
 1. Select the **Reports** tab.
-1. Select **Hotpatch quality updates (preview)**.
+1. Select **Hotpatch quality updates**.
 
 > [!NOTE]
 > The data in this report is refreshed every four hours with data received by your Windows Autopatch managed devices. The last refreshed on date/time can be seen at the top of the page. For more information about how often Windows Autopatch receives data from your managed devices, see [Data latency](../monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview.md#about-data-latency).
