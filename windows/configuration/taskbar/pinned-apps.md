@@ -25,8 +25,9 @@ Here are some considerations before you start configuring the taskbar pinned app
 - In the XML file, add apps using the Application User Model ID (AUMID), the Desktop Application ID, or the Desktop Application Link Path
 - Some classic Windows applications are packaged differently than they were in previous versions of Windows, including Notepad and File Explorer. Make sure to enter the correct Application ID. To learn more, see [Find the Application User Model ID of an installed app](../store/find-aumid.md)
 - If you specify an app to be pinned that isn't provisioned for the user on the device, the pinned icon doesn't appear on the taskbar
+- The order of applications in the XML file dictates the order of pinned apps on the taskbar, from left to right. If the OS is configured to use a right-to-left language, then the taskbar order is reversed
 - By default, any pins provisioned via policy settings are restored upon the next policy update cycle, even when users unpin them
-  - On devices with [KB####](/windows/) or later, users can unpin apps pinned via policy settings, if the policy settings allow it. The pins won't be repinned during the next policy update cycle
+  - On devices with [KBXYZ][KB-1] or later, users can unpin apps pinned via policy settings, if allowed by the policy. The pins won't be repinned during the next policy update cycle
 - Applications can be pinned using the following methods:
   - Default Windows apps, pinned during the OS installation. For example: Microsoft Edge, File Explorer, and Store. These applications are pinned first (blue square)
   - Pinned manually by the user. These applications are pinned next to the default pinned apps (red circle)
@@ -57,9 +58,9 @@ Here are some considerations before you start configuring the taskbar pinned app
 
 The following steps describe how to configure the taskbar pinned applications using policy settings:
 
-1. Create the XML file. You can start with the [XML example](#taskbar-layout-example).
-1. Edit the XML file to meet your requirements and save it.
-1. Deploy the XML file to devices using configuration service provider (CSP), provisioning packages (PPKG), or group policy (GPO).
+1. Create the XML file. You can start with the [XML example](#taskbar-layout-example)
+1. Edit the XML file to meet your requirements and save it
+1. Deploy the XML file to devices using configuration service provider (CSP), provisioning packages (PPKG), or group policy (GPO)
 
 ### Taskbar configuration and policy refresh
 
@@ -83,7 +84,7 @@ Depending on the method you use to configure the taskbar, the configuration is r
 
 ::: zone-end
 
-## Taskbar layout example
+## Taskbar layout
 
 Here you can find an example of taskbar layout that you can use as a reference:
 
@@ -104,6 +105,34 @@ You can change the apps pinned to the taskbar by modifying the `<TaskbarLayout>`
     - `<CustomTaskbarLayoutCollection PinListPlacement="Replace">`: Unpins the default apps. Only the apps you add are pinned. If you want to remove some of the default pinned apps, then add `PinListPlacement="Replace"`. When you add your apps to `<taskbar:TaskbarPinList>`, include the default apps you still want pinned
 1. In the `<defaultlayout:TaskbarLayout>` node, use `region=" | "` to use different taskbar configurations based on the device locale and region
 1. Save the file
+
+::: zone pivot="windows-11"
+
+#### PinGeneration
+
+On devices with [KBXYZ][KB-1] or later, you can allow specific pinned apps to be unpinnable by users. This is useful when you want to allow users to unpin apps that are pinned via policy settings, but you don't want the pins to be repinned during the next policy update cycle.
+
+To use this option, add `PinGeneration="1"` to the pins you want to allow users to unpin. The value of `PinGeneration` can be any number, and it's used to identify the pin version. If the value changes, the app is pinned again during the next policy update cycle. This allows IT admins to repin an app, if needed.
+
+Here are some details to better understand and use `PinGeneration`:
+
+- When `PinGeneration` is defined, users can unpin that element, and the pin won't be repinned during the next policy update cycle
+- When `PinGeneration` isn't defined, users can unpin that element, but the pin will be repinned during the next policy update cycle
+- If the `PinGeneration` value changes, for example from `1` to `2`, the element is pinned again, even if the user unpinned it previously
+- Every `PinGeneration` number is specific to the app. You can have a value of `1` for one app, and a value of `2` for another app
+- Start `PinGeneration` with a value of `1` and increment the number each time you want to repin the app. This way, if the user unpins the app, it won't be repinned until you change the number again
+- For simple management, always increment the `pingeneration` number and don't reuse numbers
+- If you remove the `pingeneration` attribute, the app will be repinned during the next policy update cycle even if the user unpinned it previously. This is the default behavior
+
+> [!CAUTION]
+> The option to allow users to unpin apps is only available on devices with [KBXYZ][KB-1] or later. When assigning this policy, target devices that are patched, otherwise the taskbar layout doesn't apply.
+>
+>- If you use Microsoft Intune, you can use [filters](/intune/intune-service/fundamentals/filters) to target only devices with the required patch
+>- If you use GPO, you can use [WMI filters](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc732796(v=ws.11)) to target only devices with the required patch
+
+::: zone-end
+
+## Examples
 
 For practical examples of how to add, remove, or replace pinned apps, see the following sections:
 
@@ -179,14 +208,7 @@ To replace all default pins and add your own pins, add `PinListPlacement="Replac
 #### Example: allow unpinning of specific apps
 
 > [!NOTE]
-> The option to allow users to unpin apps is only available on devices with [KB####](/windows/) or later. When targeting this policy, only target devices that are patched, otherwise the pins don't apply.
->
->- If you use Microsoft Intune, you can use [filters](/intune/intune-service/fundamentals/filters) to target only devices with the required patch
->- If you use GPO, you can use [WMI filters](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc732796(v=ws.11)) to target only devices with the required patch
-
-To use this option, add `PinGeneration="1"` to the pins you want to allow users to unpin. The value of `PinGeneration` can be any number. The value is used to identify the pin version. If the value changes, the app is pinned again during the next policy update cycle. This allows IT admins to repin the app if needed.
-
-In the following example, three apps are pinned, two of which have the `PinGeneration` option. Pinned elements specified with `PinGeneration` can be unpinned by the users, and they won't be repinned during the next policy update cycle. If in the future the value of `PinGeneration` changes, for example from `1` to `2`, the element is pinned again, even if the user unpinned it previously.
+> The option to allow users to unpin apps is only available on devices with [KBXYZ][KB-1] or later.
 
 [!INCLUDE [example-replace-pins](includes/example-add-pins-pingeneration.md)]
 
@@ -261,22 +283,17 @@ The GPO applies the Start and taskbar layout at the next user sign-in. Each time
 
 ## User experience
 
-After the taskbar layout is applied, users must sign out and sign in again to see the new layout. Unless prohibited via policy settings, users can pin more apps, change the order, and unpin apps from the taskbar.
-
 ::: zone pivot="windows-10"
+After the taskbar layout is applied, users must sign out and sign in again to get the new layout. Unless prohibited via policy settings, users can add pins, remove pins, and change their order.
+
 Any pins provisioned via policy settings are restored upon the next policy refresh, even when users unpin them.
 ::: zone-end
 
 ::: zone pivot="windows-11"
-By default, any pins provisioned via policy settings are restored upon the next policy refresh, even when users unpin them.
+After the taskbar layout is applied, users must sign out and sign in again to get the new layout. Unless prohibited via policy settings, users can add pins, remove pins, and change their order.
 
-If your devices are patched with [KB####](/windows/) or later, you can define the `PinGeneration` attribute in the XML file. This allows users to unpin specific items pinned to the taskbar. The pins won't be repinned during the next policy update cycle.
-
-### PinGeneration details
-
-- When `PinGeneration` is defined, users can unpin that element, and the pin won't be repinned during the next policy update cycle
-- When `PinGeneration` isn't defined, users can unpin that element, but the pin will be repinned during the next policy update cycle
-- If the `PinGeneration` value changes, for example from `1` to `2`, the element is pinned again, even if the user unpinned it previously
+- By default, any pins provisioned via policy settings are restored upon the next policy update cycle, even when users unpin them
+- Pins defined with the `PinGeneration` attribute can be unpinned from the taskbar, and aren't repinned during the next policy update cycle
 
 ::: zone-end
 
@@ -311,3 +328,4 @@ Learn more about the options available to configure Start menu settings using th
 [OEM-1]: /windows-hardware/customize/desktop/customize-the-windows-11-taskbar
 [WIN-1]: /windows/client-management/mdm/policy-csp-start
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
+[KB-1]: /windows/

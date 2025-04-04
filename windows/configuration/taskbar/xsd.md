@@ -32,7 +32,6 @@ This reference article contains the Taskbar XML schema definition (XSD).
             <xsd:choice minOccurs="0" maxOccurs="unbounded">
                 <xsd:element name="UWA" type="local:ct_PinnedUWA" />
                 <xsd:element name="DesktopApp" type="local:ct_PinnedDesktopApp" />
-                <xsd:element name="SecondaryTile" type="local:ct_TaskbarSecondaryTile" />
             </xsd:choice>
         </xsd:sequence>
         <xsd:attribute name="Region" type="xsd:string" use="optional" />
