@@ -4,7 +4,7 @@ description: Application Control restricts which applications users are allowed 
 ms.localizationpriority: medium
 ms.collection:
 - tier3
-ms.date: 10/25/2024
+ms.date: 03/09/2025
 ms.topic: overview
 ---
 
@@ -12,27 +12,27 @@ ms.topic: overview
 
 [!INCLUDE [Feature availability note](includes/feature-availability-note.md)]
 
-With thousands of new malicious files created every day, using traditional methods like antivirus solutions-signature-based detection to fight against malware-provides an inadequate defense against new attacks.
+Your organization's data is one of its most valuable assets... and adversaries want it. No matter what security controls you apply over your data, there are no controls to fully protect your most vulnerable target: the trusted user sitting at the keyboard. When a user runs a process, that process shares the same access to your data that the user has. So your sensitive information is easily transmitted, modified, deleted, or encrypted when a user, intentionally or not, runs malicious software. And with thousands of new malicious files created every day, relying solely on traditional methods like antivirus (AV) solutions gives you an inadequate defense against new attacks.
 
-In most organizations, information is the most valuable asset, and ensuring that only approved users have access to that information is imperative. However, when a user runs a process, that process has the same level of access to data that the user has. As a result, sensitive information could easily be deleted or transmitted out of the organization if a user knowingly or unknowingly runs malicious software.
+Application control changes Windows from a place where all code runs unless your AV solution confidently predicts it's bad, to one where code runs only if your policy says so. The cyber threats you face change rapidly, and your defenses need to change too. Government and security organizations, like the Australian Signals Directorate, frequently cite application control as one of the most effective ways to address the threat of executable file-based malware (.exe, .dll, etc.). It works alongside your AV solution to help mitigate security threats by restricting the apps that users can run and even what code runs in the System Core (kernel).
 
-Application control can help mitigate these types of security threats by restricting the applications that users are allowed to run and the code that runs in the System Core (kernel). Application control policies can also block unsigned scripts and MSIs, and restrict Windows PowerShell to run in [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes).
+> [!IMPORTANT]
+> Although application control can significantly harden your computers against malicious code, it's not a replacement for antivirus. You should continue to maintain an active antivirus solution alongside App Control for a well-rounded enterprise security portfolio.
 
-Application control is a crucial line of defense for protecting enterprises given today's threat landscape, and it has an inherent advantage over traditional antivirus solutions. Specifically, application control moves away from an application trust model where all applications are assumed trustworthy to one where applications must earn trust in order to run. Many organizations, like the Australian Signals Directorate, understand the significance of application control and frequently cite application control as one of the most effective means for addressing the threat of executable file-based malware (.exe, .dll, etc.).
+Although we call it application control, the code running on your system isn't always an app. Application control extends beyond apps to also cover scripts and Microsoft installers (MSI), command-line batch files, and even interactive sessions of Windows PowerShell, which run in [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes).
 
-> [!NOTE]
-> Although application control can significantly harden your computers against malicious code, we recommend that you continue to maintain an enterprise antivirus solution for a well-rounded enterprise security portfolio.
+Windows includes two application control technologies you can use depending on your organization's specific scenarios and requirements:
 
-Windows 10 and Windows 11 include two technologies that can be used for application control depending on your organization's specific scenarios and requirements:
-
-- **App Control for Business**; and
+- **App Control for Business (app control)**; and
 - **AppLocker**
 
 ## App Control and Smart App Control
 
-Starting in Windows 11 version 22H2, [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) provides application control for consumers. Smart App Control is based on App Control. App control enables enterprise customers to create a policy that offers the same security and compatibility as Smart App Control with the capability to customize policies to run line-of-business (LOB) apps. To make it easier to implement policy, an [example policy](design/example-appcontrol-base-policies.md) is provided. The example policy includes **Enabled:Conditional Windows Lockdown Policy** option that isn't supported for App Control enterprise policies. This rule must be removed before you use the example policy. To use this example policy as a starting point for creating your own policy, see [Create a custom base policy using an example App Control base policy](design/create-appcontrol-policy-for-lightly-managed-devices.md#create-a-custom-base-policy-using-an-example-app-control-base-policy).
+Starting in Windows 11 version 22H2, [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) brings robust application control to consumers and to some small businesses with simpler app portfolios. Smart App Control ensures only signed code runs or code predicted to be safe by our intelligent cloud-powered security service. When code is unsigned and the service is unable to predict with confidence that it's safe to run, then we block it. Over time, the code's reputation might change as the service processes new signals it receives. Meanwhile, code determined to be unsafe is always blocked.
 
-Smart App Control is only available on clean installation of Windows 11 version 22H2 or later, and starts in evaluation mode. Smart App Control is automatically turned off for enterprise managed devices unless the user has turned it on first. To turn off Smart App Control across your organization's endpoints, you can set the **VerifiedAndReputablePolicyState** (DWORD) registry value under `HKLM\SYSTEM\CurrentControlSet\Control\CI\Policy` as shown in the following table. After you change the registry value, you must use [CiTool.exe -r](operations/citool-commands.md#refresh-the-app-control-policies-on-the-system) for the change to take effect.
+While Smart App Control is designed for consumers, we believe it's the ideal starting point for most organizations. And since we built it entirely upon App Control for Business, you can create a policy with the same security and compatibility as Smart App Control that also trusts the line-of-business (LOB) apps your organization needs. The service Smart App Control uses to predict what code is safe to run is also available in App Control for Business and called the Intelligent Security Graph (ISG).
+
+Smart App Control starts in evaluation mode and switches off within 48 hours for enterprise managed devices unless the user turns it on first. If you want to proactively turn off Smart App Control across your organization's endpoints, set the **VerifiedAndReputablePolicyState** (DWORD) registry value under `HKLM\SYSTEM\CurrentControlSet\Control\CI\Policy` as shown in the following table. After you change the registry value, you must run [CiTool.exe -r](operations/citool-commands.md#refresh-the-app-control-policies-on-the-system) for the change to take effect.
 
 | Value | Description |
 |-------|-------------|
@@ -43,11 +43,12 @@ Smart App Control is only available on clean installation of Windows 11 version 
 > [!IMPORTANT]
 > Once you turn Smart App Control off, it can't be turned on without resetting or reinstalling Windows.
 
+The App Control policy used for Smart App Control comes bundled with the [App Control Wizard](design/appcontrol-wizard.md) policy authoring tool and is also found as an [example policy](design/example-appcontrol-base-policies.md) at *%windir%/schemas/CodeIntegrity/ExamplePolicies/SmartAppControl.xml*. To use this example policy as a starting point for your own policy, see [Use the Smart App Control Policy to build your own base policy](design/create-appcontrol-policy-for-lightly-managed-devices.md#use-the-smart-app-control-policy-to-build-your-starter-policy). When using the Smart App Control example policy as the basis for your own custom policy, you must remove the option **Enabled:Conditional Windows Lockdown Policy** so it's ready for use as an App Control for Business policy.
+
 [!INCLUDE [windows-defender-application-control-wdac](../../../../../includes/licensing/windows-defender-application-control-wdac.md)]
 
-## Related articles
+## What you should read next
 
-- [App Control design guide](design/appcontrol-design-guide.md)
-- [App Control deployment guide](deployment/appcontrol-deployment-guide.md)
-- [App Control operational guide](operations/appcontrol-operational-guide.md)
-- [AppLocker overview](applocker/applocker-overview.md)
+- To learn more about the two application control technologies available in Windows, read [App Control for Business and AppLocker Overview](./appcontrol-and-applocker-overview.md).
+
+- To jump right in and get started creating policies, go revisit Smart App Control and [Use the Smart App Control policy to build your own starter policy](design/create-appcontrol-policy-for-lightly-managed-devices.md).

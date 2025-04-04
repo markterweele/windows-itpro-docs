@@ -1,7 +1,8 @@
 ---
 title: FileSystem Policy CSP
 description: Learn more about the FileSystem Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -23,7 +24,7 @@ ms.date: 01/18/2024
 <!-- DevDriveAttachPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2338] and later <br> ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2338] and later <br> ✅ Windows Insider Preview |
 <!-- DevDriveAttachPolicy-Applicability-End -->
 
 <!-- DevDriveAttachPolicy-OmaUri-Begin -->
@@ -79,7 +80,7 @@ A reboot is required for this setting to take effect.
 <!-- EnableDevDrive-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2338] and later <br> ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2338] and later <br> ✅ Windows Insider Preview |
 <!-- EnableDevDrive-Applicability-End -->
 
 <!-- EnableDevDrive-OmaUri-Begin -->

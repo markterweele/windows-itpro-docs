@@ -1,7 +1,7 @@
 ---
 title: Microsoft Pluton security processor
 description: Learn more about Microsoft Pluton security processor
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/10/2024
 ---
 

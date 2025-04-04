@@ -3,7 +3,6 @@ author: paolomatarazzo
 ms.author: paoloma
 ms.date: 12/11/2024
 ms.topic: include
-ms.service: windows-client
 ---
 
 ## Windows Sandbox
@@ -14,4 +13,4 @@ Once Windows Sandbox is closed, nothing persists on the device. All the software
 
 [!INCLUDE [learn-more](learn-more.md)]
 
-- [Windows Sandbox](/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview)
+- [Windows Sandbox](/windows/security/application-security/application-isolation/windows-sandbox)

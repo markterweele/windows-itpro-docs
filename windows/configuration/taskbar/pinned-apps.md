@@ -165,7 +165,7 @@ In the following XML example, two regions are added: `US|UK` and `DE|FR|IT`:
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
-#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
+#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune**](#tab/intune)
 
 To configure devices with Microsoft Intune, [create a Settings catalog policy](/mem/intune/configuration/settings-catalog) and use one of the following settings:
 
@@ -176,14 +176,14 @@ To configure devices with Microsoft Intune, [create a Settings catalog policy](/
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][MEM-1] with the [Start CSP][WIN-1]. Use one of the following settings:
+#### [:::image type="icon" source="../images/icons/csp.svg"::: **CSP**](#tab/csp)
+
+You can configure devices using the [Start CSP][WIN-1]. Use one of the following settings:
 
 | Setting |
 |--|
-| - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-Start#startlayout)<br>- **String:** <br>- **Value:** content of the XML file |
-| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-Start#startlayout)<br>- **Data type:** <br>- **Value:** content of the XML file |
-
-[!INCLUDE [intune-custom-settings-2](../../../includes/configure/intune-custom-settings-2.md)]
+| - **OMA-URI:** `./User/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-Start#startlayout)<br>- **Data type:** String <br>- **Value:** content of the XML file |
+| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-Start#startlayout)<br>- **Data type:** String <br>- **Value:** content of the XML file |
 
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -193,7 +193,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 - **Value:** content of the XML file
 
 > [!NOTE]
-> The content of the file must be entered as a single line in the `Value` field. Use a text editor to remove any line breaks from the XML file, usually with a function called *join lines*.
+> The content of the file must be entered as a single line in the `Value` field. Use a text editor to remove any line breaks from the XML file, usually with a function called *join lines* or *linearize*. If customizations.xml is being modified directly instead of using the WCD editor, the XML brackets need to be escaped / replaced with \&lt; and \&gt; entity encodings. Single and double quote characters do not need to be escaped.
 
 [!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
@@ -214,7 +214,9 @@ The GPO applies the Start and taskbar layout at the next user sign-in. Each time
 
 ## User experience
 
-After the taskbar layout is applied, the users must sign out and sign in again to see the new layout. Unless prohibited via policy settings, users can pin more apps, change the order, and unpin apps from the taskbar.
+After the taskbar layout is applied, users must sign out and sign in again to see the new layout. Unless prohibited via policy settings, users can pin more apps, change the order, and unpin apps from the taskbar.
+
+Any pins provisioned via policy settings are restored upon the next policy refresh, even when users unpin them.
 
 ### OS install and upgrade experience
 

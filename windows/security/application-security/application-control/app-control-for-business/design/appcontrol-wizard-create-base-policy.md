@@ -2,7 +2,7 @@
 title: App Control for Business Wizard Base Policy Creation
 description: Creating new base App Control policies with the App Control Wizard.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 

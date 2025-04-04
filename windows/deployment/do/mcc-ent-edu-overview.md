@@ -3,7 +3,7 @@ title: Microsoft Connected Cache for Enterprise and Education Overview
 description: Overview, supported scenarios, and content types for Microsoft Connected Cache for Enterprise and Education.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 ms.author: andyriv
 author: chrisjlin
 manager: naengler
@@ -13,7 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>	
-ms.date: 10/30/2024
+ms.date: 02/28/2025
 ---
 
 # Microsoft Connected Cache for Enterprise and Education Overview
@@ -57,7 +57,7 @@ Customers may have office spaces, data centers, or Azure deployments that meet s
 - Have Azure VMs and/or Azure Virtual Desktop deployed
 - Have limited internet bandwidth (T1 or T3 lines)
 
-To support the large enterprise scenario, customers can deploy a Connected Cache node to a server running Windows Server 2022 or Ubuntu 22.04.
+To support the large enterprise scenario, customers can deploy a Connected Cache node to a server running Windows Server 2022 (or later) or Ubuntu 24.04.
 
 See [Connected Cache node host machine requirements](mcc-ent-prerequisites.md) for recommended host machine specifications in each configuration.
 

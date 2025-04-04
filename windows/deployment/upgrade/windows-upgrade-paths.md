@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 author: frankroj
 manager: aaroncz
 ms.author: frankroj
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.collection:
   - highpri
   - tier2
 ms.subservice: itpro-deploy
-ms.date: 02/13/2024
+ms.date: 01/29/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

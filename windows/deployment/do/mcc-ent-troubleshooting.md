@@ -11,7 +11,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ Supported Linux distributions
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise</a>	
-ms.date: 01/15/2025
+ms.date: 02/28/2025
 ---
 
 
@@ -22,8 +22,6 @@ This article contains instructions on how to troubleshoot different issues you m
 ## Known issues
 
 This section describes known issues with the latest release of Microsoft Connected Cache for Enterprise and Education. See the [Release Notes page](mcc-ent-release-notes.md) for more details on the fixes included in the latest release.
-
-### Cache node monitoring chart in the Azure portal user interface displays incorrect information
 
 ### Script provisionmcconwsl.ps1 fails when executed on a Windows 11 host machine configured to use Japanese language
 
@@ -40,7 +38,7 @@ As a temporary workaround, the above error doesn't occur by changing the languag
 
 [Connected Cache Azure resource creation](mcc-ent-create-resource-and-cache.md) can be initiated using either the Azure portal user interface or the Azure CLI command set.
 
-If you're encountering an error during resource creation, check that you have the necessary permissions to create Azure resources under your subscription and have filled out all required fields during the resource creation process.
+If you're encountering an error during resource creation, [check that you have the necessary permissions to create Azure resources under your subscription](/azure/role-based-access-control/check-access) and have filled out all required fields during the resource creation process.
 
 ## Troubleshooting cache node configuration
 
@@ -82,6 +80,10 @@ You can expect to see the following types of log files:
 1. **WSL_Mcc_UserUninstall_Transcript**: This log file records the output of the "uninstallmcconwsl.ps1" script that the user can run to uninstall MCC software from the host machine.
 1. **WSL_Mcc_Uninstall_FromRegisteredTask_Transcript**: This log file records the output of the "MCC_Uninstall_Task" scheduled task that is responsible for uninstalling the MCC software from the host machine when called by the "uninstallmcconwsl.ps1" script.
 
+### Group Policy Object conflicts with Scheduled Task registration
+
+Enabling the Group Policy Object: [Network access: Do not allow storage of passwords and credentials for network authentication](/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/network-access-do-not-allow-storage-of-passwords-and-credentials-for-network-authentication) will prevent the Connected Cache software from registering the scheduled tasks necessary for successful cache node registration and operation.
+
 ### WSL2 fails to install with message "A specified logon session doesn't exist"
 
 If you're encountering this failure message when attempting to run the PowerShell command `wsl.exe --install --no-distribution` on your Windows host machine, verify that you're logged on as a local administrator and running the command from an elevated PowerShell window.
@@ -95,7 +97,7 @@ If the Connected Cache installation is failing due to WSL-related issues, try ru
 Once the Connected Cache software has been successfully deployed to the Windows host machine, you can check if the cache node is running properly by doing the following on the Windows host machine:
 
 1. Launch a PowerShell process as the account specified as the runtime account during the Connected Cache install
-1. Run `wsl -d Ubuntu-22.04-Mcc-Base` to access the Linux distribution that hosts the Connected Cache container
+1. Run `wsl -d Ubuntu-24.04-Mcc-Base` to access the Linux distribution that hosts the Connected Cache container
 1. Run `sudo iotedge list` to show which containers are running within the IoT Edge runtime
 
 If it shows the **edgeAgent** and **edgeHub** containers but doesn't show **MCC**, you can view the status of the IoT Edge security manager using `sudo iotedge system logs -- -f`.

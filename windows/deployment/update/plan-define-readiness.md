@@ -3,7 +3,7 @@ title: Define readiness criteria
 description: Identify important roles and figure out how to classify apps so you can plan and manage your deployment
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
 manager: aaroncz

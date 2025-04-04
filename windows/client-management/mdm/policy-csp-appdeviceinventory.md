@@ -1,7 +1,8 @@
 ---
 title: AppDeviceInventory Policy CSP
 description: Learn more about the AppDeviceInventory Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -23,7 +24,7 @@ ms.date: 09/27/2024
 <!-- TurnOffAPISamping-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- TurnOffAPISamping-Applicability-End -->
 
 <!-- TurnOffAPISamping-OmaUri-Begin -->
@@ -82,7 +83,7 @@ This policy controls the state of API Sampling. API Sampling monitors the sample
 <!-- TurnOffApplicationFootprint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- TurnOffApplicationFootprint-Applicability-End -->
 
 <!-- TurnOffApplicationFootprint-OmaUri-Begin -->
@@ -141,7 +142,7 @@ This policy controls the state of Application Footprint. Application Footprint m
 <!-- TurnOffInstallTracing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- TurnOffInstallTracing-Applicability-End -->
 
 <!-- TurnOffInstallTracing-OmaUri-Begin -->
@@ -200,7 +201,7 @@ This policy controls the state of Install Tracing. Install Tracing is a mechanis
 <!-- TurnOffWin32AppBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- TurnOffWin32AppBackup-Applicability-End -->
 
 <!-- TurnOffWin32AppBackup-OmaUri-Begin -->

@@ -6,7 +6,7 @@ ms.author: frankroj
 ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.collection:
   - highpri
   - tier2

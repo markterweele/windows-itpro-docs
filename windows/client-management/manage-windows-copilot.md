@@ -3,7 +3,7 @@ title: Updated Windows and Microsoft 365 Copilot Chat experience
 description: Learn about changes to the Copilot in Windows experience for commercial environments and how to configure it for your organization.
 ms.topic: overview
 ms.subservice: windows-copilot
-ms.date: 01/15/2025
+ms.date: 01/28/2025
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -16,7 +16,7 @@ appliesto:
 # Updated Windows and Microsoft 365 Copilot Chat experience
 <!--8445848, 9294806-->
 
->**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/topic/675708af-8c16-4675-afeb-85a5a476ccb0). **Looking for more information on Microsoft 365 Copilot Chat experiences?** See [Understanding the different Microsoft 365 Copilot Chat experiences](https://support.microsoft.com/topic/cfff4791-694a-4d90-9c9c-1eb3fb28e842).
+>**Looking for consumer information?** See [Welcome to Copilot on Windows](https://support.microsoft.com/topic/675708af-8c16-4675-afeb-85a5a476ccb0). **Looking for more information on Microsoft 365 Copilot Chat experiences?** See [Understanding the different Microsoft 365 Copilot Chat experiences](https://support.microsoft.com/topic/cfff4791-694a-4d90-9c9c-1eb3fb28e842).
 
 ## Enhanced data protection with enterprise data protection
 
@@ -59,9 +59,9 @@ For users signing in to new PCs with work or school accounts, the following expe
 The update to Microsoft 365 Copilot Chat to offer enterprise data protection is rolling out now.
 The shift to Microsoft 365 Copilot Chat is coming soon. Changes will be rolled out to managed PCs starting with the September 2024 optional nonsecurity preview release, and following with the October 2024 monthly security update for all supported versions of Windows 11. These changes will be applied to Windows 10 PCs the month after. This update is replacing the current Copilot in Windows experience.
  
-The Microsoft 365 Copilot app will be automatically enabled after you install the Windows updates listed above if you haven't previously enabled a group policy to prevent the installation of Copilot. The [AppLocker policy](/windows/security/application-security/application-control/app-control-for-business/applocker/applocker-overview) is available to control this Copilot experience before installing these Windows updates mentioned above or any subsequent Windows updates. 
+The Copilot app will be automatically enabled after you install the Windows updates listed above if you haven't previously enabled a group policy to prevent the installation of Copilot. The [AppLocker policy](/windows/security/application-security/application-control/app-control-for-business/applocker/applocker-overview) is available to control this Copilot experience before installing these Windows updates mentioned above or any subsequent Windows updates. 
  
-Note that the Microsoft 365 Copilot app doesn't support Microsoft Entra authentication and users trying to sign in to the app using a Microsoft Entra account will be redirected to https://copilot.cloud.microsoft/ in their default browser. For users authenticating with a Microsoft Entra account, they should access Copilot through the Microsoft 365 Copilot app as the entry point. We recommend you pin Copilot to the navigation bar of the Microsoft 365 Copilot app to enable easy access.
+Note that the Copilot app, which is a consumer experience, doesn't support Microsoft Entra authentication and users trying to sign in to the app using a Microsoft Entra account will be redirected to https://copilot.cloud.microsoft/ in their default browser. For users authenticating with a Microsoft Entra account, they should access Copilot through the Microsoft 365 Copilot app as the entry point. We recommend you pin Copilot to the navigation bar of the Microsoft 365 Copilot app to enable easy access.
 
 
 ## Policy information for previous Copilot in Windows (preview) experience
@@ -80,7 +80,7 @@ The following policy to manage Copilot in Windows (preview) will be removed in t
 
 You can remove or uninstall the Copilot app from your device by using one of the following methods:
 
-1. Enterprise users  can uninstall the Copilot app by going to **Settings** > **Apps** >**Installed Apps**. Select the three dots appearing on the right side of the app and select **Uninstall** from the dropdown list.
+1. Enterprise users can uninstall the [Copilot app](https://apps.microsoft.com/detail/9NHT9RB2F4HD), which is a consumer experience, by going to **Settings** > **Apps** >**Installed Apps**. Select the three dots appearing on the right side of the app and select **Uninstall** from the dropdown list.
 
 1. If you are an IT administrator, you can prevent installation of the app or remove the Copilot app using one of the following methods:
    1. Prevent installation of the Copilot app:
@@ -94,9 +94,9 @@ You can remove or uninstall the Copilot app from your device by using one of the
       1. Open a Windows PowerShell window. You can do this by opening the Start menu, typing `PowerShell`, and selecting **Windows PowerShell** from the results.
       1. Once the PowerShell window is open, enter the following commands:
        ```powershell
-       # Get the package full name of the Microsoft 365 Copilot app
+       # Get the package full name of the Copilot app
        $packageFullName = Get-AppxPackage -Name "Microsoft.Copilot" | Select-Object -ExpandProperty PackageFullName
-       # Remove the Microsoft 365 Copilot app
+       # Remove the Copilot app
        Remove-AppxPackage -Package $packageFullName
        ```
 

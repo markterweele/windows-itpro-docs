@@ -2,8 +2,8 @@
 title: App Control and AppLocker Overview
 description: Compare Windows application control technologies.
 ms.localizationpriority: medium
-ms.date: 09/11/2024
-ms.topic: conceptual
+ms.date: 03/09/2025
+ms.topic: concept-article
 ---
 
 # App Control for Business and AppLocker Overview
@@ -18,21 +18,21 @@ App Control was introduced with Windows 10 and allows organizations to control w
 
 App Control policies apply to the managed computer as a whole and affects all users of the device. App Control rules can be defined based on:
 
-- Attributes of the codesigning certificate(s) used to sign an app and its binaries
+- Attributes of the codesigning certificate used to sign an app and its binaries
 - Attributes of the app's binaries that come from the signed metadata for the files, such as Original Filename and version, or the hash of the file
 - The reputation of the app as determined by Microsoft's [Intelligent Security Graph](design/use-appcontrol-with-intelligent-security-graph.md)
 - The identity of the process that initiated the installation of the app and its binaries ([managed installer](design/configure-authorized-apps-deployed-with-a-managed-installer.md))
-- The [path from which the app or file is launched](design/select-types-of-rules-to-create.md#more-information-about-filepath-rules) (beginning with Windows 10 version 1903)
+- The [path where the app or file exists on disk](design/select-types-of-rules-to-create.md#more-information-about-filepath-rules) (beginning with Windows 10 version 1903)
 - The process that launched the app or binary
 
 > [!NOTE]
-> App Control was originally released as part of Device Guard and called configurable code integrity. Device Guard and configurable code integrity are no longer used except to find where to deploy App Control policy via Group Policy.
+> App Control for Business was originally released as part of Device Guard and called configurable code integrity. The terms "Device Guard" and "configurable code integrity" are no longer used with App Control except when deploying policies through Group Policy.
 
 ### App Control System Requirements
 
 App Control policies can be created and applied on any client edition of Windows 10 or Windows 11, or on Windows Server 2016 and higher. App Control policies can be deployed via a Mobile Device Management (MDM) solution, for example, Intune; a management interface such as Configuration Manager; or a script host such as PowerShell. Group Policy can also be used to deploy App Control policies, but is limited to single-policy format policies that work on Windows Server 2016 and 2019.
 
-For more information on which individual App Control features are available on specific App Control builds, see [App Control feature availability](feature-availability.md).
+For more information on which individual App Control features are available on your version of Windows, see [App Control feature availability](feature-availability.md).
 
 ## AppLocker
 
@@ -40,9 +40,9 @@ AppLocker was introduced with Windows 7, and allows organizations to control whi
 
 AppLocker policies can apply to all users on a computer, or to individual users and groups. AppLocker rules can be defined based on:
 
-- Attributes of the codesigning certificate(s) used to sign an app and its binaries.
+- Attributes of the codesigning certificate used to sign an app and its binaries.
 - Attributes of the app's binaries that come from the signed metadata for the files, such as Original Filename and version, or the hash of the file.
-- The path from which the app or file is launched.
+- The path where the app or file exists on disk.
 
 AppLocker is also used by some features of App Control, including [managed installer](design/configure-authorized-apps-deployed-with-a-managed-installer.md) and the [Intelligent Security Graph](design/use-appcontrol-with-intelligent-security-graph.md).
 
@@ -59,6 +59,11 @@ However, in some cases, AppLocker might be the more appropriate technology for y
 
 - You have a mixed Windows operating system (OS) environment and need to apply the same policy controls to Windows 10 and earlier versions of the OS.
 - You need to apply different policies for different users or groups on shared computers.
-- You don't want to enforce application control on application files such as DLLs or drivers.
 
 AppLocker can also be deployed as a complement to App Control to add user or group-specific rules for shared device scenarios, where it's important to prevent some users from running specific apps. As a best practice, you should enforce App Control at the most restrictive level possible for your organization, and then you can use AppLocker to further fine-tune the restrictions.
+
+## What you should read next
+
+- If you want to use App control, one of the most powerful security features in Windows, you must plan and prepare if you want to succeed. Start that by exploring the [App Control for Business Design Guide](design/appcontrol-design-guide.md).
+
+- If you're ready to jump in and start creating policies, revisit Smart App Control and [Use the Smart App Control policy to build your own starter policy](design/create-appcontrol-policy-for-lightly-managed-devices.md).

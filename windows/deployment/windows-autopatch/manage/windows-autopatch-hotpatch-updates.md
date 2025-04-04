@@ -1,7 +1,7 @@
 ---
 title: Hotpatch updates
 description: Use Hotpatch updates to receive security updates without restarting your device
-ms.date: 11/19/2024
+ms.date: 04/04/2025
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -15,14 +15,14 @@ ms.collection:
   - tier1
 ---
 
-# Hotpatch updates (public preview)
+# Hotpatch updates
 
-[!INCLUDE [windows-autopatch-applies-to-all-licenses](../includes/windows-autopatch-applies-to-all-licenses.md)]
+Hotpatch updates are designed to reduce downtime and disruptions. Hotpatch updates are [Monthly B release security updates](/windows/deployment/update/release-cycle#monthly-security-update-release) that install and take effect without requiring you to restart the device. By minimizing the need to restart, these updates help ensure faster compliance, making it easier for organizations to maintain security while keeping workflows uninterrupted.
 
-> [!IMPORTANT]
-> This feature is in public preview. It's being actively developed and might not be complete. They're made available on a "Preview" basis. You can test and use these features in production environments and scenarios and provide feedback.
+Hotpatch is an extension of Windows Update and requires Autopatch to create and deploy hotpatches to devices enrolled in the Autopatch quality update policy.
 
-Hotpatch updates are [Monthly B release security updates](/windows/deployment/update/release-cycle#monthly-security-update-release) that can be installed without requiring you to restart the device. Hotpatch updates are designed to reduce downtime and disruptions. By minimizing the need to restart, these updates help ensure faster compliance, making it easier for organizations to maintain security while keeping workflows uninterrupted.
+> [!NOTE]
+> Hotpatch is also available on Windows Server and Windows 365. For more information, see [Hotpatch for Windows Server Azure Edition](/windows-server/get-started/enable-hotpatch-azure-edition).
 
 ## Key benefits
 
@@ -30,7 +30,18 @@ Hotpatch updates are [Monthly B release security updates](/windows/deployment/up
 - No changes are required to your existing update ring configurations. Your existing ring configurations are honored alongside Hotpatch policies.
 - The [Hotpatch quality update report](../monitor/windows-autopatch-hotpatch-quality-update-report.md) provides a per policy level view of the current update statuses for all devices that receive Hotpatch updates.
 
-## Operating system configuration prerequisites 
+## Release cycles
+
+For more information about the release calendar for Hotpatch updates, see [Release notes for Hotpatch](https://support.microsoft.com/topic/release-notes-for-hotpatch-public-preview-on-windows-11-version-24h2-enterprise-clients-c117ee02-fd35-4612-8ea9-949c5d0ba6d1).
+
+| Quarter | Baseline updates (requires restart) | Hotpatch (no restart required) |
+| ----- | ----- | ----- |
+| 1 | January | February and March |
+| 2 | April | May and June |
+| 3 | July | August and September |
+| 4 | October | November and December |
+
+## Operating system configuration prerequisites
 
 To prepare a device to receive Hotpatch updates, configure the following operating system settings on the device. You must configure these settings for the device to be offered the Hotpatch update and to apply all Hotpatch updates.
 
@@ -38,11 +49,14 @@ To prepare a device to receive Hotpatch updates, configure the following operati
 
 VBS must be turned on for a device to be offered Hotpatch updates. For information on how to set and detect if VBS is enabled, see [Virtualization-based Security (VBS)](/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity?tabs=security).
 
-### Arm 64 devices must disable compiled hybrid PE usage (CHPE) (Arm 64 CPU Only)
+### Arm 64 devices must disable compiled hybrid PE usage (CHPE) (Arm 64 CPU Only) (Public preview)
 
-This requirement only applies to Arm 64 CPU devices when using Hotpatch updates. Hotpatch updates aren't compatible with servicing CHPE OS binaries located in the `%SystemRoot%\SyChpe32` folder. To ensure all the Hotpatch updates are applied, you must set the CHPE disable flag and restart the device to disable CHPE usage. You only need to set this flag one time. The registry setting remains applied through updates. To disable CHPE, set the following registry key:
-Path: `**HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management**`
-Key value: `**HotPatchRestrictions=1**`
+> [!IMPORTANT]
+> **Arm 64 devices are in public preview**. It's being actively developed and might not be complete. They're made available on a "Preview" basis. You can test and use these features in production environments and scenarios and provide feedback.
+
+This requirement only applies to Arm 64 CPU devices when using Hotpatch updates. Hotpatch updates aren't compatible with servicing CHPE OS binaries located in the `%SystemRoot%\SyChpe32` folder. To ensure all the Hotpatch updates are applied, you must set the CHPE disable flag and restart the device to disable CHPE usage. You only need to set this flag one time. The registry setting remains applied through updates. To disable CHPE, create and/or set the following DWORD registry key:
+Path: `HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management`
+DWORD key value: HotPatchRestrictions=1
 
 > [!IMPORTANT]
 > This setting is required because it forces the operating system to use the emulation x86-only binaries instead of CHPE binaries on Arm 64 devices. CHPE binaries include native Arm 64 code to improve performance, excluding the CHPE binaries might affect performance or compatibility. Be sure to test application compatibility and performance before rolling out Hotpatch updates widely on Arm 64 CPU based devices.
@@ -66,13 +80,6 @@ LCUs requires you to restart the device, but the LCU ensures that the device rem
 > [!NOTE]
 > If devices aren't eligible for Hotpatch updates, these devices are offered the LCU. The LCU keeps your configured Update ring settings, it doesn't change the settings.
 
-## Release cycles
-
-For more information about the release calendar for Hotpatch updates, see [Release notes for Hotpatch](https://support.microsoft.com/topic/release-notes-for-hotpatch-in-azure-automanage-for-windows-server-2022-4e234525-5bd5-4171-9886-b475dabe0ce8?preview=true).  
-
-- Baseline Release Months: January, April, July, October
-- Hotpatch Release Months: February, March, May, June, August, September, November, December
-
 ## Enroll devices to receive Hotpatch updates
 
 > [!NOTE]
@@ -84,7 +91,7 @@ For more information about the release calendar for Hotpatch updates, see [Relea
 1. Select **Devices** from the left navigation menu.
 1. Under the **Manage updates** section, select **Windows updates**.
 1. Go to the **Quality updates** tab.
-1. Select **Create**, and select **Windows quality update policy (preview)**.
+1. Select **Create**, and select **Windows quality update policy**.
 1. Under the **Basics** section, enter a name for your new policy and select Next.
 1. Under the **Settings** section, set **"When available, apply without restarting the device ("Hotpatch")** to **Allow**. Then, select **Next**.
 1. Select the appropriate Scope tags or leave as Default and select **Next**.
@@ -95,3 +102,7 @@ These steps ensure that targeted devices, which are [eligible](#eligible-devices
 
 > [!NOTE]
 > Turning on Hotpatch updates doesn't change the existing deadline-driven or scheduled install configurations on your managed devices. Deferral and active hour settings still apply.
+
+## Roll back a hotpatch update
+
+Automatic rollback of a Hotpatch update isn’t supported but you can uninstall them. If you experience an unexpected issue with hotpatch updates, you can investigate by uninstalling the hotpatch update and installing the latest standard cumulative update (LCU) and restart. Uninstalling a hotpatch update is quick, however, it does require a device restart.

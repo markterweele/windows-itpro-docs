@@ -3,7 +3,7 @@ title: Windows client updates, channels, and tools
 description: Brief summary of the kinds of Windows updates, the channels they're served through, and the tools for managing them
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
 manager: aaroncz
@@ -49,7 +49,7 @@ The first step of controlling when and how devices install updates is assigning 
 
 ### General Availability Channel
 
-In the General Availability Channel, feature updates are released annually. As long as a device isn't set to defer feature updates, any device in this channel installs a feature update as soon as it's released. If you use Windows Update for Business, the channel provides three months of additional total deployment time before being required to update to the next release.
+In the General Availability Channel, feature updates are released annually. As long as a device isn't set to defer feature updates, any device in this channel installs a feature update as soon as it's released. If you use Windows Update client policies, the channel provides three months of additional total deployment time before being required to update to the next release.
 
 
 ### Windows Insider Program for Business

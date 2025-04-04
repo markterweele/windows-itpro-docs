@@ -1,7 +1,8 @@
 ---
 title: System Policy CSP
 description: Learn more about the System Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 04/04/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -10,6 +11,8 @@ ms.date: 09/27/2024
 # Policy CSP - System
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- System-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -21,7 +24,7 @@ ms.date: 09/27/2024
 <!-- AllowBuildPreview-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowBuildPreview-Applicability-End -->
 
 <!-- AllowBuildPreview-OmaUri-Begin -->
@@ -91,7 +94,7 @@ This policy is only supported up to Windows 10, Version 1703. Please use 'Manage
 <!-- AllowCommercialDataPipeline-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowCommercialDataPipeline-Applicability-End -->
 
 <!-- AllowCommercialDataPipeline-OmaUri-Begin -->
@@ -171,7 +174,7 @@ See the documentation at <https://go.microsoft.com/fwlink/?linkid=2011107> for i
 <!-- AllowDesktopAnalyticsProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 with [KB4551853](https://support.microsoft.com/help/4551853) [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 with [KB4556799](https://support.microsoft.com/help/4556799) [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 with [KB4551853](https://support.microsoft.com/help/4551853) [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 with [KB4556799](https://support.microsoft.com/help/4556799) [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowDesktopAnalyticsProcessing-Applicability-End -->
 
 <!-- AllowDesktopAnalyticsProcessing-OmaUri-Begin -->
@@ -249,7 +252,7 @@ This setting has no effect on devices unless they're properly enrolled in Deskto
 <!-- AllowDeviceNameInDiagnosticData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowDeviceNameInDiagnosticData-Applicability-End -->
 
 <!-- AllowDeviceNameInDiagnosticData-OmaUri-Begin -->
@@ -313,7 +316,7 @@ If you disable or don't configure this policy setting, then device name won't be
 <!-- AllowEmbeddedMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowEmbeddedMode-Applicability-End -->
 
 <!-- AllowEmbeddedMode-OmaUri-Begin -->
@@ -362,7 +365,7 @@ Specifies whether set general purpose device to be in embedded mode. Most restri
 <!-- AllowExperimentation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowExperimentation-Applicability-End -->
 
 <!-- AllowExperimentation-OmaUri-Begin -->
@@ -414,7 +417,7 @@ Specifies whether set general purpose device to be in embedded mode. Most restri
 <!-- AllowFontProviders-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowFontProviders-Applicability-End -->
 
 <!-- AllowFontProviders-OmaUri-Begin -->
@@ -489,7 +492,7 @@ This setting is used by lower-level components for text display and fond handlin
 <!-- AllowLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowLocation-Applicability-End -->
 
 <!-- AllowLocation-OmaUri-Begin -->
@@ -553,7 +556,7 @@ Specifies whether to allow app access to the Location service. Most restricted v
 <!-- AllowMicrosoftManagedDesktopProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 with [KB4551853](https://support.microsoft.com/help/4551853) [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 with [KB4556799](https://support.microsoft.com/help/4556799) [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 with [KB4551853](https://support.microsoft.com/help/4551853) [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 with [KB4556799](https://support.microsoft.com/help/4556799) [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowMicrosoftManagedDesktopProcessing-Applicability-End -->
 
 <!-- AllowMicrosoftManagedDesktopProcessing-OmaUri-Begin -->
@@ -608,7 +611,7 @@ This setting has no effect on devices unless they're properly enrolled in Micros
 <!-- AllowStorageCard-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowStorageCard-Applicability-End -->
 
 <!-- AllowStorageCard-OmaUri-Begin -->
@@ -657,7 +660,7 @@ Controls whether the user is allowed to use the storage card for device storage.
 <!-- AllowTelemetry-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowTelemetry-Applicability-End -->
 
 <!-- AllowTelemetry-OmaUri-Begin -->
@@ -735,7 +738,7 @@ If you disable or don't configure this policy setting, the device will send requ
 <!-- AllowUpdateComplianceProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 with [KB4551853](https://support.microsoft.com/help/4551853) [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 with [KB4556799](https://support.microsoft.com/help/4556799) [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 with [KB4551853](https://support.microsoft.com/help/4551853) [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 with [KB4556799](https://support.microsoft.com/help/4556799) [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowUpdateComplianceProcessing-Applicability-End -->
 
 <!-- AllowUpdateComplianceProcessing-OmaUri-Begin -->
@@ -813,7 +816,7 @@ If you disable or don't configure this policy setting, devices won't appear in U
 <!-- AllowUserToResetPhone-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowUserToResetPhone-Applicability-End -->
 
 <!-- AllowUserToResetPhone-OmaUri-Begin -->
@@ -862,7 +865,7 @@ Specifies whether to allow the user to factory reset the device by using control
 <!-- AllowWUfBCloudProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 with [KB4551853](https://support.microsoft.com/help/4551853) [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 with [KB4556799](https://support.microsoft.com/help/4556799) [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 with [KB4551853](https://support.microsoft.com/help/4551853) [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 with [KB4556799](https://support.microsoft.com/help/4556799) [10.0.18362.836] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowWUfBCloudProcessing-Applicability-End -->
 
 <!-- AllowWUfBCloudProcessing-OmaUri-Begin -->
@@ -939,7 +942,7 @@ If you disable or don't configure this policy setting, devices enrolled to the W
 <!-- BootStartDriverInitialization-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- BootStartDriverInitialization-Applicability-End -->
 
 <!-- BootStartDriverInitialization-OmaUri-Begin -->
@@ -1008,7 +1011,7 @@ If your malware detection application doesn't include an Early Launch Antimalwar
 <!-- ConfigureMicrosoft365UploadEndpoint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureMicrosoft365UploadEndpoint-Applicability-End -->
 
 <!-- ConfigureMicrosoft365UploadEndpoint-OmaUri-Begin -->
@@ -1065,7 +1068,7 @@ The value for this setting will be provided by Microsoft as part of the onboardi
 <!-- ConfigureTelemetryOptInChangeNotification-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureTelemetryOptInChangeNotification-Applicability-End -->
 
 <!-- ConfigureTelemetryOptInChangeNotification-OmaUri-Begin -->
@@ -1131,7 +1134,7 @@ If you set this policy setting to "Enable diagnostic data change notifications" 
 <!-- ConfigureTelemetryOptInSettingsUx-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureTelemetryOptInSettingsUx-Applicability-End -->
 
 <!-- ConfigureTelemetryOptInSettingsUx-OmaUri-Begin -->
@@ -1194,13 +1197,66 @@ If you don't configure this policy setting, or you set it to "Enable diagnostic 
 
 <!-- ConfigureTelemetryOptInSettingsUx-End -->
 
+<!-- DisableCHPE-Begin -->
+## DisableCHPE
+
+<!-- DisableCHPE-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisableCHPE-Applicability-End -->
+
+<!-- DisableCHPE-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/System/DisableCHPE
+```
+<!-- DisableCHPE-OmaUri-End -->
+
+<!-- DisableCHPE-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting controls whether loading CHPE binaries is disabled on the ARM64 device. This policy has no effect on x64 devices.
+
+- If you enable this policy setting, ARM64 devices won't load CHPE binaries. This setting is required for hotpatching on ARM64 devices.
+
+- If you disable or don't configure this policy setting, ARM64 devices will load CHPE binaries.
+<!-- DisableCHPE-Description-End -->
+
+<!-- DisableCHPE-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableCHPE-Editable-End -->
+
+<!-- DisableCHPE-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableCHPE-DFProperties-End -->
+
+<!-- DisableCHPE-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | CHPE Binaries Enabled (Default). |
+| 1 | CHPE Binaries Disabled. |
+<!-- DisableCHPE-AllowedValues-End -->
+
+<!-- DisableCHPE-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableCHPE-Examples-End -->
+
+<!-- DisableCHPE-End -->
+
 <!-- DisableDeviceDelete-Begin -->
 ## DisableDeviceDelete
 
 <!-- DisableDeviceDelete-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DisableDeviceDelete-Applicability-End -->
 
 <!-- DisableDeviceDelete-OmaUri-Begin -->
@@ -1266,7 +1322,7 @@ This policy setting controls whether the Delete diagnostic data button is enable
 <!-- DisableDiagnosticDataViewer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DisableDiagnosticDataViewer-Applicability-End -->
 
 <!-- DisableDiagnosticDataViewer-OmaUri-Begin -->
@@ -1332,7 +1388,7 @@ This policy setting controls whether users can enable and launch the Diagnostic 
 <!-- DisableDirectXDatabaseUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- DisableDirectXDatabaseUpdate-Applicability-End -->
 
 <!-- DisableDirectXDatabaseUpdate-OmaUri-Begin -->
@@ -1390,7 +1446,7 @@ This group policy allows control over whether the DirectX Database Updater task 
 <!-- DisableEnterpriseAuthProxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableEnterpriseAuthProxy-Applicability-End -->
 
 <!-- DisableEnterpriseAuthProxy-OmaUri-Begin -->
@@ -1452,7 +1508,7 @@ This policy setting blocks the Connected User Experience and Telemetry service f
 <!-- DisableOneDriveFileSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableOneDriveFileSync-Applicability-End -->
 
 <!-- DisableOneDriveFileSync-OmaUri-Begin -->
@@ -1529,7 +1585,7 @@ This policy setting lets you prevent apps and features from working with files o
 <!-- DisableOneSettingsDownloads-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableOneSettingsDownloads-Applicability-End -->
 
 <!-- DisableOneSettingsDownloads-OmaUri-Begin -->
@@ -1595,7 +1651,7 @@ This policy setting controls whether Windows attempts to connect with the OneSet
 <!-- DisableSystemRestore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisableSystemRestore-Applicability-End -->
 
 <!-- DisableSystemRestore-OmaUri-Begin -->
@@ -1660,7 +1716,7 @@ Also, see the "Turn off System Restore configuration" policy setting. If the "Tu
 <!-- EnableOneSettingsAuditing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableOneSettingsAuditing-Applicability-End -->
 
 <!-- EnableOneSettingsAuditing-OmaUri-Begin -->
@@ -1726,7 +1782,7 @@ This policy setting controls whether Windows records attempts to connect with th
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-Applicability-End -->
 
 <!-- FeedbackHubAlwaysSaveDiagnosticsLocally-OmaUri-Begin -->
@@ -1775,7 +1831,7 @@ Diagnostic files created when a feedback is filed in the Feedback Hub app will a
 <!-- HideUnsupportedHardwareNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- HideUnsupportedHardwareNotifications-Applicability-End -->
 
 <!-- HideUnsupportedHardwareNotifications-OmaUri-Begin -->
@@ -1842,7 +1898,7 @@ This policy controls messages which are shown when Windows is running on a devic
 <!-- LimitDiagnosticLogCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LimitDiagnosticLogCollection-Applicability-End -->
 
 <!-- LimitDiagnosticLogCollection-OmaUri-Begin -->
@@ -1908,7 +1964,7 @@ If you disable or don't configure this policy setting, we may occasionally colle
 <!-- LimitDumpCollection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LimitDumpCollection-Applicability-End -->
 
 <!-- LimitDumpCollection-OmaUri-Begin -->
@@ -1974,7 +2030,7 @@ If you disable or don't configure this policy setting, we may occasionally colle
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-Applicability-End -->
 
 <!-- LimitEnhancedDiagnosticDataWindowsAnalytics-OmaUri-Begin -->
@@ -2048,7 +2104,7 @@ If you disable or don't configure this policy setting, diagnostic data collectio
 <!-- TelemetryProxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- TelemetryProxy-Applicability-End -->
 
 <!-- TelemetryProxy-OmaUri-Begin -->
@@ -2105,7 +2161,7 @@ The format for this setting is `<server>`:`<port>`
 <!-- TurnOffFileHistory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- TurnOffFileHistory-Applicability-End -->
 
 <!-- TurnOffFileHistory-OmaUri-Begin -->

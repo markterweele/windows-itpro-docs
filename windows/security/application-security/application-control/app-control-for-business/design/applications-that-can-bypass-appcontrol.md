@@ -2,7 +2,7 @@
 title: Applications that can bypass App Control and how to block them
 description: View a list of recommended block rules, based on knowledge shared between Microsoft and the wider security community.
 ms.localizationpriority: medium
-ms.date: 09/11/2024
+ms.date: 02/23/2025
 ms.topic: reference
 ---
 
@@ -36,7 +36,6 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - lxssmanager.dll
 - lxrun.exe
 - Microsoft.Build.dll
-- Microsoft.Build.Framework.dll
 - Microsoft.Workflow.Compiler.exe
 - msbuild.exe<sup>2</sup>
 - msbuild.dll
@@ -49,7 +48,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - texttransform.exe
 - visualuiaverifynative.exe
 - system.management.automation.dll
-- webclnt.dll/davsvc.dll
+- webclnt.dll/davsvc.dll<sup>3</sup>
 - wfc.exe
 - windbg.exe
 - wmic.exe
@@ -61,6 +60,8 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 <sup>1</sup> A vulnerability in bginfo.exe was fixed in version 4.22. If you use BGInfo, for security, make sure to download and run the latest version of [BGInfo](/sysinternals/downloads/bginfo). BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
 
 <sup>2</sup> If you're using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. Otherwise, we recommend that you block msbuild.exe.
+
+<sup>3</sup> If you block WebDAV DLLs, we recommend that you also disable the **WebClient** service using a group policy or MDM policies.
 
 <sup>*</sup> Microsoft recognizes the efforts of people in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
 
@@ -99,7 +100,7 @@ If you wish to use this blocklist policy on Windows Server 2016, locate the deny
 - msxml6.dll
 - jscript9.dll
 
-The blocklist policy that follows includes "Allow all" rules for both kernel and user mode that make it safe to deploy as a standalone App Control policy. On Windows versions 1903 and above, Microsoft recommends converting this policy to multiple policy format using the *Set-CiPolicyIdInfo* cmdlet with the *-ResetPolicyId* switch. Then, you can deploy it as a Base policy side-by-side with any other policies in your environment. To instead add these rules to an existing Base policy, you can merge the policy that follows using the *Merge-CIPolicy* cmdlet. If merging into an existing policy that includes an explicit allowlist, you should first remove the two "Allow all" rules and their corresponding FileRuleRefs from the blocklist policy.
+The blocklist policy that follows includes "Allow all" rules for both kernel and user mode that make it safe to deploy as a standalone App Control policy. On Windows versions 1903 and above, Microsoft recommends converting this policy to multiple policy formats using the *Set-CiPolicyIdInfo* cmdlet with the *-ResetPolicyId* switch. Then, you can deploy it as a Base policy side-by-side with any other policies in your environment. To instead add these rules to an existing Base policy, you can merge the policy that follows using the *Merge-CIPolicy* cmdlet. If merging into an existing policy that includes an explicit allowlist, you should first remove the two "Allow all" rules and their corresponding FileRuleRefs from the blocklist policy.
 
 **App Control policy XML**:
 
@@ -166,7 +167,6 @@ The blocklist policy that follows includes "Allow all" rules for both kernel and
     <Deny ID="ID_DENY_INTUNE_AGENT" FriendlyName="IntuneWindowsAgent.exe" FileName="Microsoft.Management.Services.IntuneWindowsAgent.exe" MinimumFileVersion="1.46.204.0" />
     <Deny ID="ID_DENY_MFC40" FriendlyName="mfc40.dll" FileName="mfc40.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
-    <Deny ID="ID_DENY_MS_BUILD_FMWK" FriendlyName="Microsoft.Build.Framework.dll" FileName="Microsoft.Build.Framework.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_MWFC" FriendlyName="Microsoft.Workflow.Compiler.exe" FileName="Microsoft.Workflow.Compiler.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_MSBUILD" FriendlyName="MSBuild.exe" FileName="MSBuild.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_MSBUILD_DLL" FriendlyName="MSBuild.dll" FileName="MSBuild.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
@@ -869,7 +869,6 @@ The blocklist policy that follows includes "Allow all" rules for both kernel and
           <FileRuleRef RuleID="ID_DENY_INTUNE_AGENT" />
           <FileRuleRef RuleID="ID_DENY_MFC40" />
           <FileRuleRef RuleID="ID_DENY_MS_BUILD" />
-          <FileRuleRef RuleID="ID_DENY_MS_BUILD_FMWK" />
           <FileRuleRef RuleID="ID_DENY_MWFC" />
           <FileRuleRef RuleID="ID_DENY_MSBUILD" />
           <FileRuleRef RuleID="ID_DENY_MSBUILD_DLL" />

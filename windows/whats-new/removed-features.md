@@ -7,8 +7,8 @@ author: mestew
 ms.author: mstewart
 manager: aaroncz
 ms.topic: reference
-ms.subservice: itpro-fundamentals
-ms.date: 12/09/2024
+ms.subservice: itpro-fundamentals 
+ms.date: 03/11/2025
 ms.collection:
   - highpri
   - tier1
@@ -19,7 +19,7 @@ appliesto:
 
 # Features and functionality removed in Windows client
 
-Each version of Windows client adds new features and functionality. Occasionally, new versions also remove features and functionality, often because they've added a newer option. This article provides details about the features and functionality that have been removed in Windows client.
+Each version of Windows client adds new features and functionality. Occasionally, new versions also remove features and functionality, often because they've added a newer option. This article provides details about the features and functionality that have been removed in Windows client. 
 
 For more information about features that might be removed in a future release, see [Deprecated features for Windows client](deprecated-features.md).
 
@@ -38,6 +38,8 @@ The following features and functionalities have been removed from the installed 
 
 |Feature    |  Details and mitigation  | Support removed |
 | ----------- | --------------------- | ------ |
+| Location History <!--9798092, 9798104--> | We are removing the Location History feature, an [API](/uwp/api/windows.devices.geolocation.geolocator.getgeopositionhistoryasync) that allowed Cortana to access 24 hours of device history when location was enabled. With the removal of the Location History feature, location data will no longer be saved locally and the corresponding settings will also be removed from the **Privacy & Security** > **Location** page in **Settings**. This feature is being gradually removed from devices using a controlled feature rollout (CFR). | March 25, 2025  |
+| Data Encryption Standard (DES) <!--9720338-->| DES, the symmetric-key block encryption cipher, is considered nonsecure against modern cryptographic attacks, and replaced by more robust encryption algorithms. DES was disabled by default starting with Windows 7 and Windows Server 2008 R2. It's removed from Windows 11, version 24H2 and later, and [Windows Server 2025](/windows-server/get-started/removed-deprecated-features-windows-server-2025) and later.| September 2025 | 
 | NTLMv1 <!--9544861--> | NTLMv1 is removed starting in Windows 11, version 24H2 and Windows Server 2025. | 24H2 |
 | Windows Information Protection | Windows Information Protection is removed starting in Windows 11, version 24H2. <!--9561151--> | 24H2 |
 | Microsoft Defender Application Guard for Edge | [Microsoft Defender Application Guard](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview), including the [Windows Isolated App Launcher APIs](/windows/win32/api/isolatedapplauncher/), is deprecated for Microsoft Edge for Business and is no longer available starting with Windows 11, version 24H2. | 24H2 |

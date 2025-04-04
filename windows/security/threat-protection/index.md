@@ -4,7 +4,7 @@ description: Describes the security capabilities in Windows client focused on th
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.topic: conceptual
+ms.topic: article
 ms.date: 12/31/2017
 ---
 
@@ -25,7 +25,7 @@ See the following articles to learn more about the different areas of Windows th
 - [Virtualization-Based Protection of Code Integrity](../hardware-security/enable-virtualization-based-protection-of-code-integrity.md)
 - [Web Protection](/microsoft-365/security/defender-endpoint/web-protection-overview)
 - [Windows Firewall](../operating-system-security/network-security/windows-firewall/index.md)
-- [Windows Sandbox](../application-security/application-isolation/windows-sandbox/windows-sandbox-overview.md)
+- [Windows Sandbox](../application-security/application-isolation/windows-sandbox/index.md)
 
 ## Next-generation protection
 
