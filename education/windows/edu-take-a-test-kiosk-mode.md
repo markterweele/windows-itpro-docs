@@ -27,7 +27,7 @@ The other options allow you to configure Take a Test in kiosk mode using a local
 
 Follow the instructions below to configure your devices, selecting the option that best suits your needs.
 
-# [:::image type="icon" source="images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
+# [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
 To configure devices using Intune for Education, follow these steps:
 
@@ -46,13 +46,13 @@ To configure devices using configuration service providers, use the following se
 
 | Setting |
 |--------|
-| <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayLastSignedIn`** </li><li> Data type: **Integer** </li><li>Value: **1**</li>|
-| <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/WindowsLogon/HideFastUserSwitching`** </li><li> Data type: **Integer**</li><li>Value: **1**</li>|
-| <li> OMA-URI: **`./Vendor/MSFT/SharedPC/AccountModel`**</li><li>Data type: **Integer** </li><li> Value: **1**</li>|
-| <li> OMA-URI: **`./Vendor/MSFT/SharedPC/EnableAccountManager`**</li><li>Data type: **Boolean** </li><li> Value: **True**</li>|
-| <li> OMA-URI: **`./Vendor/MSFT/SharedPC/KioskModeAUMID`**</li><li>Data type: **String** </li><li> Value: **Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App**</li>|
-| <li> OMA-URI: **`./Vendor/MSFT/SharedPC/KioskModeUserTileDisplayText`** </li><li>Data type: **String** </li><li> Value: **Take a Test** (or a string of your choice to display in the sing-in screen)</li>|
-| <li> OMA-URI: **`./Vendor/MSFT/SecureAssessment/LaunchURI`** </li><li>Data type: **String** </li><li> Value: **\<provide testing URL>**</li>|
+| - **OMA-URI:** `./Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayLastSignedIn` <br>- **Data type:** Integer <br>- **Value:** `1`|
+| - **OMA-URI:** `./Vendor/MSFT/Policy/Config/WindowsLogon/HideFastUserSwitching` <br>- **Data type:** Integer<br>- **Value:** `1`|
+| - **OMA-URI:** `./Vendor/MSFT/SharedPC/AccountModel`<br>- **Data type:** Integer <br>- **Value:** `1`|
+| - **OMA-URI:** `./Vendor/MSFT/SharedPC/EnableAccountManager`<br>- **Data type:** Boolean <br>- **Value:** `True`|
+| - **OMA-URI:** `./Vendor/MSFT/SharedPC/KioskModeAUMID`<br>- **Data type:** String <br>- **Value:** `Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App`|
+| - **OMA-URI:** `./Vendor/MSFT/SharedPC/KioskModeUserTileDisplayText` <br>- **Data type:** String <br>- **Value:** **Take a Test** (or a string of your choice to display in the sing-in screen)|
+| - **OMA-URI:** `./Vendor/MSFT/SecureAssessment/LaunchURI` <br>- **Data type:** String <br>- **Value:** <provide testing URL>|
 
 # [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -73,13 +73,13 @@ Create a provisioning package using the Set up School PCs app, configuring the s
 
 | Setting |
 |--------|
-| <li> Path: **`Policies/LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayLastSignedIn`** </li><li>Value: **Enabled**</li>|
-| <li> Path: **`Policies/WindowsLogon/HideFastUserSwitching`** </li><li>Value: **True**</li>|
-| <li> Path: **`SharedPC/AccountManagement/AccountModel`** </li><li>Value: **Domain-joined only**</li>|
-| <li> Path: **`SharedPC/AccountManagement/EnableAccountManager`** </li><li>Value: **True**</li>|
-| <li> Path: **`SharedPC/AccountManagement/KioskModeAUMID`** </li><li>Value: **Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App**</li>|
-| <li> Path: **`SharedPC/AccountManagement/KioskModeUserTileDisplayText`** </li><li>Value: **Take a Test** (or a string of your choice to display in the sing-in screen)</li>|
-| <li> Path: **`TakeATest/LaunchURI/`** </li><li>Value: **\<provide testing URL>**</li>|
+| - Path: `Policies/LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayLastSignedIn` <br>- **Value:** `Enabled`|
+| - Path: `Policies/WindowsLogon/HideFastUserSwitching` <br>- **Value:** True|
+| - Path: `SharedPC/AccountManagement/AccountModel` <br>- **Value:** Domain-joined only|
+| - Path: `SharedPC/AccountManagement/EnableAccountManager` <br>- **Value:** True|
+| - Path: `SharedPC/AccountManagement/KioskModeAUMID` <br>- **Value:** **Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App**|
+| - Path: `SharedPC/AccountManagement/KioskModeUserTileDisplayText` <br>- **Value:** Take a Test (or a string of your choice to display in the sing-in screen)|
+| - Path: `TakeATest/LaunchURI/` <br>- **Value:** <testing URL>|
 
 :::image type="content" source="./images/takeatest/wcd-take-a-test.png" alt-text="Windows Configuration Designer - configuration of policies to enable Take a Test to run in kiosk mode" lightbox="./images/takeatest/wcd-take-a-test.png" border="true":::
 
