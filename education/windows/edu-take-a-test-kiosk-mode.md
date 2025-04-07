@@ -1,7 +1,7 @@
 ---
-title: Configure Take a Test in kiosk mode
-description: Learn how to configure Windows to execute the Take a Test app in kiosk mode, using Intune and provisioning packages.
-ms.date: 09/06/2024
+title: Configure Take a Test in Kiosk Mode
+description: Learn how to configure Windows to execute the Take a Test app in kiosk mode using different methods.
+ms.date: 04/07/2025
 ms.topic: how-to
 ---
 
@@ -11,10 +11,11 @@ Executing Take a Test in kiosk mode is the recommended option for high stakes as
 
 The configuration of Take a Test in kiosk mode can be done using:
 
-- Microsoft Intune/MDM
-- a provisioning package (PPKG)
+- Microsoft Intune
+- Configuration service provider (CSP)
+- A provisioning package (PPKG)
 - PowerShell
-- the Settings app
+- The Settings app
 
 When using the Settings app, you can configure Take a Test in kiosk mode using a local account only. This option is recommended for devices that aren't managed.
 The other options allow you to configure Take a Test in kiosk mode using a local account, an account defined in the directory, or a guest account.
@@ -28,18 +29,6 @@ Follow the instructions below to configure your devices, selecting the option th
 
 # [:::image type="icon" source="images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
 
-You can use Intune for Education or a custom profile in Microsoft Intune:
-
-- Intune for Education provides a simpler experience
-- A custom profile provides more flexibility and controls over the configuration
-
-> [!IMPORTANT]
-> Currently, the policy created in Intune for Education is applicable to Windows 10 and Windows 11 only. **It will not apply to Windows 11 SE devices.**
->
-> If you want to configure Take a Test for Windows 11 SE devices, you must use a custom policy.
-
-### Configure Take a Test from Intune for Education
-
 To configure devices using Intune for Education, follow these steps:
 
 1. Sign in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank"><b>Intune for Education portal</b></a>
@@ -51,9 +40,9 @@ To configure devices using Intune for Education, follow these steps:
 
 :::image type="content" source="./images/takeatest/intune-education-take-a-test-profile.png" alt-text="Intune for Education - creation of a Take a Test profile." lightbox="./images/takeatest/intune-education-take-a-test-profile.png" border="true":::
 
-### Configure Take a Test with a custom policy
+# [:::image type="icon" source="images/icons/csp.svg"::: **CSP**](#tab/csp)
 
-[!INCLUDE [intune-custom-settings-1](../../includes/configure/intune-custom-settings-1.md)]
+To configure devices using configuration service providers, use the following settings:
 
 | Setting |
 |--------|
@@ -64,10 +53,6 @@ To configure devices using Intune for Education, follow these steps:
 | <li> OMA-URI: **`./Vendor/MSFT/SharedPC/KioskModeAUMID`**</li><li>Data type: **String** </li><li> Value: **Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App**</li>|
 | <li> OMA-URI: **`./Vendor/MSFT/SharedPC/KioskModeUserTileDisplayText`** </li><li>Data type: **String** </li><li> Value: **Take a Test** (or a string of your choice to display in the sing-in screen)</li>|
 | <li> OMA-URI: **`./Vendor/MSFT/SecureAssessment/LaunchURI`** </li><li>Data type: **String** </li><li> Value: **\<provide testing URL>**</li>|
-
-:::image type="content" source="./images/takeatest/intune-take-a-test-custom-profile.png" alt-text="Intune portal - creation of a custom policy to configure Take a Test." lightbox="./images/takeatest/intune-take-a-test-custom-profile.png" border="true":::
-
-[!INCLUDE [intune-custom-settings-2](../../includes/configure/intune-custom-settings-2.md)]
 
 # [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
