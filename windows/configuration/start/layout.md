@@ -470,7 +470,7 @@ You can configure devices using the [Start CSP][WIN-1]. Use one of the following
 
 [!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
 
-- **Path:** `Policies/Start/StartLayout`
+- **Path:** Policies > Start > StartLayout
 - **Value:** content of the XML file
 
 > [!NOTE]
