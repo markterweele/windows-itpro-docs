@@ -46,13 +46,13 @@ To configure devices using configuration service providers, use the following se
 
 | Setting |
 |--------|
-| - **OMA-URI:** `./Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayLastSignedIn` <br>- **Data type:** Integer <br>- **Value:** `1`|
-| - **OMA-URI:** `./Vendor/MSFT/Policy/Config/WindowsLogon/HideFastUserSwitching` <br>- **Data type:** Integer<br>- **Value:** `1`|
-| - **OMA-URI:** `./Vendor/MSFT/SharedPC/AccountModel`<br>- **Data type:** Integer <br>- **Value:** `1`|
-| - **OMA-URI:** `./Vendor/MSFT/SharedPC/EnableAccountManager`<br>- **Data type:** Boolean <br>- **Value:** `True`|
-| - **OMA-URI:** `./Vendor/MSFT/SharedPC/KioskModeAUMID`<br>- **Data type:** String <br>- **Value:** `Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App`|
-| - **OMA-URI:** `./Vendor/MSFT/SharedPC/KioskModeUserTileDisplayText` <br>- **Data type:** String <br>- **Value:** **Take a Test** (or a string of your choice to display in the sing-in screen)|
-| - **OMA-URI:** `./Vendor/MSFT/SecureAssessment/LaunchURI` <br>- **Data type:** String <br>- **Value:** <provide testing URL>|
+| - **OMA-URI:** `./Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/`[InteractiveLogon_DoNotDisplayLastSignedIn](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#interactivelogon_donotdisplaylastsignedin) <br>- **Data type:** Integer <br>- **Value:** `1`|
+| - **OMA-URI:** `./Vendor/MSFT/Policy/Config/WindowsLogon/`[HideFastUserSwitching](/windows/client-management/mdm/policy-csp-windowslogon#hidefastuserswitching) <br>- **Data type:** Integer<br>- **Value:** `1`|
+| - **OMA-URI:** `./Vendor/MSFT/SharedPC/`[AccountModel](/windows/client-management/mdm/sharedpc-csp#accountmodel)<br>- **Data type:** Integer <br>- **Value:** `1`|
+| - **OMA-URI:** `./Vendor/MSFT/SharedPC/`[EnableAccountManager](/windows/client-management/mdm/sharedpc-csp#enableaccountmanager)<br>- **Data type:** Boolean <br>- **Value:** `True`|
+| - **OMA-URI:** `./Vendor/MSFT/SharedPC/`[KioskModeAUMID](/windows/client-management/mdm/sharedpc-csp#kioskmodeaumid)<br>- **Data type:** String <br>- **Value:** `Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App`|
+| - **OMA-URI:** `./Vendor/MSFT/SharedPC/`[KioskModeUserTileDisplayText](/windows/client-management/mdm/sharedpc-csp#KioskModeUserTileDisplayText) <br>- **Data type:** String <br>- **Value:** **Take a Test** (or a string of your choice to display in the sing-in screen)|
+| - **OMA-URI:** `./Vendor/MSFT/SecureAssessment/`[LaunchURI](/windows/client-management/mdm/sharedpc-csp#LaunchURI) <br>- **Data type:** String <br>- **Value:** \<testing URL>|
 
 # [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -79,7 +79,7 @@ Create a provisioning package using the Set up School PCs app, configuring the s
 | - Path: `SharedPC/AccountManagement/EnableAccountManager` <br>- **Value:** True|
 | - Path: `SharedPC/AccountManagement/KioskModeAUMID` <br>- **Value:** **Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App**|
 | - Path: `SharedPC/AccountManagement/KioskModeUserTileDisplayText` <br>- **Value:** Take a Test (or a string of your choice to display in the sing-in screen)|
-| - Path: `TakeATest/LaunchURI/` <br>- **Value:** <testing URL>|
+| - Path: `TakeATest/LaunchURI/` <br>- **Value:** \<testing URL>|
 
 :::image type="content" source="./images/takeatest/wcd-take-a-test.png" alt-text="Windows Configuration Designer - configuration of policies to enable Take a Test to run in kiosk mode" lightbox="./images/takeatest/wcd-take-a-test.png" border="true":::
 
