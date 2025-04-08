@@ -4,7 +4,7 @@ description: Use MBR2GPT.EXE to convert a disk from the Master Boot Record (MBR)
 ms.service: windows-client
 author: frankroj
 ms.author: frankroj
-ms.date: 11/26/2024
+ms.date: 04/08/2024
 manager: aaroncz
 ms.localizationpriority: high
 ms.topic: how-to
@@ -19,9 +19,11 @@ appliesto:
 
 # MBR2GPT.EXE
 
-**MBR2GPT.EXE** converts a disk from the Master Boot Record (MBR) to the GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool runs from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows operating system (OS) by using the **`/allowFullOS`** option.
+> [!IMPORTANT]
+>
+> **MBR2GPT.EXE** is located in the **`Windows\System32`** directory on any device running a [currently supported version of Windows](/windows/release-health/supported-versions-windows-client).
 
-**MBR2GPT.EXE** is located in the **`Windows\System32`** directory on a computer running Windows.
+**MBR2GPT.EXE** converts a disk from the Master Boot Record (MBR) to the GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool runs from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows operating system (OS) by using the **`/allowFullOS`** option.
 
 The tool is available in both the full OS environment and Windows PE.
 
