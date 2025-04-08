@@ -94,7 +94,7 @@ To use SetupDiag:
 
 1. If the web browser asks what to do with the file, choose **Save**. By default, the file is saved to the **Downloads** folder, which is displayed in File Explorer under **Quick access** in the left navigation pane. If desired, the file can also be saved to a different location by using **Save As**.
 
-1. Once SetupDiag finishes downloading, open an elevated command prompt and navigate to the director where `setupdiag.exe` was downloaded and saved to.
+1. Once SetupDiag finishes downloading, open an elevated command prompt and navigate to the directory where `setupdiag.exe` was downloaded and saved to.
 
 1. In the elevated command prompt, run `setupdiage.exe` in online mode using the desired parameters as documented in the [Parameters](#parameters) and [Examples](#examples) sections.
 
@@ -163,7 +163,7 @@ To use SetupDiag:
   SetupDiag.exe /Output:C:\SetupDiag\Results.log /LogsPath:D:\Temp\Logs\LogSet1
   ```
 
-- The following example is an example of Reset/Recovery Offline Mode. SetupDiag is instructed to look for reset/recovery logs in the specified LogsPath location. It then outputs the results to the directory specified by the **/Output** parameter.
+- The following is an example of Reset/Recovery Offline Mode. SetupDiag is instructed to look for reset/recovery logs in the specified LogsPath location. It then outputs the results to the directory specified by the **/Output** parameter.
 
   ```cmd
   SetupDiag.exe /Output:C:\SetupDiag\RecoveryResults.log /LogsPath:D:\Temp\Cabs\PBR_Log /Scenario:Recovery
