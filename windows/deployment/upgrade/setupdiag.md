@@ -12,7 +12,7 @@ ms.topic: troubleshooting
 ms.collection:
   - highpri
   - tier2
-ms.date: 04/08/2024
+ms.date: 04/08/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -264,7 +264,7 @@ Logs ZipFile created at: c:\setupdiag\Logs_14.zip
 
 When SetupDiag searches log files, it uses a set of rules to match known issues. These rules are contained in an xml file. The xml file might be updated with new and updated rules as new versions of SetupDiag are made available.
 
-Each rule name and its associated unique rule identifier are listed with a description of the known upgrade-blocking issue. In the rule descriptions, the term **down-level** refers to the first phase of the upgrade process, which runs under the original OS.
+Each rule name and its associated unique rule identifier are listed with a description of the known upgrade-blocking issue. In the rule descriptions, the term **downlevel** refers to the first phase of the upgrade process, which runs under the original OS.
 
 | Rule Name | GUID | Description |
 | --- | --- |
@@ -285,7 +285,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 | **HardblockDeviceOrDriver** | ED3AEFA1-F3E2-4F33-8A21-184ADF215B1B | This error indicates a device driver that is loaded on the host OS isn't compatible with the newer OS version. The device driver needs to be removed before the upgrade. |
 | **HardblockMismatchedLanguage** | 60BA8449-CF23-4D92-A108-D6FCEFB95B45 | This rule indicates the host OS and the target OS language editions don't match. |
 | **HardblockFlightSigning** | 598F2802-3E7F-4697-BD18-7A6371C8B2F8 | This rule indicates the target OS is a pre-release, Windows Insider build, and the target machine has Secure Boot enabled. This rule blocks the pre-release signed build from booting if installed on the machine. |
-| **DiskSpaceBlockInDownLevel** | 6080AFAC-892E-4903-94EA-7A17E69E549E | This failure indicates the system ran out of disk space during the down-level operations of upgrade. |
+| **DiskSpaceBlockInDownLevel** | 6080AFAC-892E-4903-94EA-7A17E69E549E | This failure indicates the system ran out of disk space during the downlevel operations of upgrade. |
 | **DiskSpaceFailure** | 981DCBA5-B8D0-4BA7-A8AB-4030F7A10191 | This failure indicates the system drive ran out of available disk space at some point after the first reboot into the upgrade. |
 | **PreReleaseWimMountDriverFound** | 31EC76CC-27EC-4ADC-9869-66AABEDB56F0 | Captures failures due to having an unrecognized `wimmount.sys` driver registered on the system. |
 | **DebugSetupMemoryDump** | C7C63D8A-C5F6-4255-8031-74597773C3C6 | This offline only rule indicates a bug check occurred during setup. If the debugger tools are available on the system, SetupDiag debugs the memory dump and provide details. |
@@ -305,7 +305,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 | **FindMigGatherApplyFailure** | A9964E6C-A2A8-45FF-B6B5-25E0BD71428E | Shows errors when the migration Engine fails out on a gather or apply operation. Indicates the Migration Object (file or registry path), the Migration |
 | **OptionalComponentFailedToGetOCsFromPackage** | D012E2A2-99D8-4A8C-BBB2-088B92083D78 | This rule matches a specific Optional Component failure when attempting to enumerate components in a package. Indicates the optional component (OC) migration operation failed to enumerate optional components from an OC Package. It outputs the package name and error code. This rule replaces the OptionalComponentInstallFailure rule present. |
 | **OptionalComponentOpenPackageFailed** | 22952520-EC89-4FBD-94E0-B67DF88347F6 | Matches a specific Optional Component failure when attempting to open an OC package. It outputs the package name and error code. Indicates the optional component migration operation failed to open an optional component Package. Outputs the package name and error code. |
-| **OptionalComponentInitCBSSessionFailed** | 63340812-9252-45F3-A0F2-B2A4CA5E9317 |  Matches a specific failure where the advanced installer service or components aren't operating or started on the system. Indicates corruption in the servicing stack on the down-level system. Outputs the error code encountered while trying to initialize the servicing component on the existing OS. |
+| **OptionalComponentInitCBSSessionFailed** | 63340812-9252-45F3-A0F2-B2A4CA5E9317 |  Matches a specific failure where the advanced installer service or components aren't operating or started on the system. Indicates corruption in the servicing stack on the downlevel system. Outputs the error code encountered while trying to initialize the servicing component on the existing OS. |
 | **CriticalSafeOSDUFailure** | 73566DF2-CA26-4073-B34C-C9BC70DBF043 | This rule indicates a failure occurred while updating the SafeOS image with a critical dynamic update. It indicates the phase and error code that occurred while attempting to update the SafeOS image for diagnostic purposes. |
 | **UserProfileCreationFailureDuringOnlineApply** | 678117CE-F6A9-40C5-BC9F-A22575C78B14 | Indicates there was a critical failure while creating or modifying a User Profile during the online apply phase of the update. It indicates the operation and error code associated with the failure for diagnostic purposes. |
 | **UserProfileCreationFailureDuringFinalize** | C6677BA6-2E53-4A88-B528-336D15ED1A64 | Matches a specific User Profile creation error during the finalize phase of setup. It outputs the failure code. |
@@ -314,7 +314,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 | **WimMountFailure** | BE6DF2F1-19A6-48C6-AEF8-D3B0CE3D4549 | This rule indicates the update failed to mount a WIM file. It shows the name of the WIM file and the error message and error code associated with the failure for diagnostic purposes. |
 | **WimMountDriverIssue** | 565B60DD-5403-4797-AE3E-BC5CB972FBAE | Detects failures in `WimMount.sys` registration on the system. |
 | **WimApplyExtractFailure** | 746879E9-C9C5-488C-8D4B-0C811FF3A9A8 | Matches a WIM apply failure during WIM extraction phases of setup. It outputs the extension, path, and error code. |
-| **UpdateAgentExpanderFailure** | 66E496B3-7D19-47FA-B19B-4040B9FD17E2 | Matches DPX expander failures in the down-level phase of update from Windows Update. It outputs the package name, function, expression, and error code. |
+| **UpdateAgentExpanderFailure** | 66E496B3-7D19-47FA-B19B-4040B9FD17E2 | Matches DPX expander failures in the downlevel phase of update from Windows Update. It outputs the package name, function, expression, and error code. |
 | **FindFatalPluginFailure** | E48E3F1C-26F6-4AFB-859B-BF637DA49636 | Matches any plug-in failure that setupplatform decides is fatal to setup. It outputs the plugin name, operation, and error code. |
 | **MigrationAbortedDueToPluginFailure** | D07A24F6-5B25-474E-B516-A730085940C9 | Indicates a critical failure in a migration plugin that causes setup to abort the migration. Provides the setup operation, plug-in name, plug-in action and error code. |
 | **DISMAddPackageFailed** | 6196FF5B-E69E-4117-9EC6-9C1EAB20A3B9 | Indicates a critical failure during a DISM add package operation. Specifies the Package Name, DISM error and add package error code. |
@@ -327,9 +327,9 @@ Each rule name and its associated unique rule identifier are listed with a descr
 | | |
 | **FindSuccessfulUpgrade** | 8A0824C8-A56D-4C55-95A0-22751AB62F3E | Determines if the given setup was a success or not based off the logs. |
 | **FindSetupHostReportedFailure** | 6253C04F-2E4E-4F7A-B88E-95A69702F7EC | Gives information about failures surfaced early in the upgrade process by `setuphost.exe` |
-| **FindDownlevelFailure** | 716334B7-F46A-4BAA-94F2-3E31BC9EFA55 | Gives failure information surfaced by SetupPlatform, later in the down-level phase. |
-| **FindAbruptDownlevelFailure** | 55882B1A-DA3E-408A-9076-23B22A0472BD | Gives last operation failure information when the system fails in the down-level, but the log just ends abruptly. |
-| **FindEarlyDownlevelError** | A4CE4FC9-5E10-4BB1-8ECE-3B29EB9D7C52 | Detects failures in down-level phase before setup platform is invoked. |
+| **FindDownlevelFailure** | 716334B7-F46A-4BAA-94F2-3E31BC9EFA55 | Gives failure information surfaced by SetupPlatform, later in the downlevel phase. |
+| **FindAbruptDownlevelFailure** | 55882B1A-DA3E-408A-9076-23B22A0472BD | Gives last operation failure information when the system fails in the downlevel, but the log just ends abruptly. |
+| **FindEarlyDownlevelError** | A4CE4FC9-5E10-4BB1-8ECE-3B29EB9D7C52 | Detects failures in downlevel phase before setup platform is invoked. |
 | **FindSPFatalError** | A4028172-1B09-48F8-AD3B-86CDD7D55852 | Captures failure information when setup platform encounters a fatal error. |
 | **FindSetupPlatformFailedOperationInfo** | 307A0133-F06B-4B75-AEA8-116C3B53C2D1 | Gives last phase and error information when SetupPlatform indicates a critical failure. This rule indicates the operation and error associated with the failure for diagnostic purposes. |
 | **FindRollbackFailure** | 3A43C9B5-05B3-4F7C-A955-88F991BB5A48 | Gives last operation, failure phase, and error information when a rollback occurs. |
@@ -363,7 +363,7 @@ System Information:
 
 Error: SetupDiag reports Optional Component installation failed to open OC Package. Package Name: Foundation, Error: 0x8007001F
 Recommend you check the "Windows Modules Installer" service (Trusted Installer) is started on the system and set to automatic start, reboot and try the update again. Optionally, you can check the status of optional components on the system (search for Windows Features), uninstall any unneeded optional components, reboot and try the update again.
-Error: SetupDiag reports down-level failure, Operation: Finalize, Error: 0x8007001F - 0x50015
+Error: SetupDiag reports downlevel failure, Operation: Finalize, Error: 0x8007001F - 0x50015
 Refer to https://learn.microsoft.com/windows/deployment/upgrade/upgrade-error-codes for error information.
 ```
 
