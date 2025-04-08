@@ -1,7 +1,7 @@
 ---
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer actively developing in Windows 10 and Windows 11.
-ms.date: 02/19/2025
+ms.date: 04/08/2025
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
@@ -48,6 +48,7 @@ The features in this article are no longer being actively developed, and might b
 | Feature | Details and mitigation  | Deprecation announced |
 |---|---|---|
 | VBS enclaves for Windows 11, version 23H2 and earlier <!--9693593-->| [VBS enclaves](/windows/win32/trusted-execution/vbs-enclaves) are being deprecated on Windows 11, version 23H2 and earlier versions of Windows. Support for VBS enclaves will continue for Windows 11, version 24H2 and later. </br> </br> VBS enclaves are being [deprecated on Windows Server 2022](/windows-server/get-started/removed-deprecated-features-windows-server) and earlier versions of Windows Server. Support for VBS enclaves will continue for Windows Server 2025 and later. | April 2025 |
+| Windows UWP Map control and Windows Maps platform APIs <!--9853556--> | The [Windows UWP Map control](/uwp/api/windows.ui.xaml.controls.maps) and [Windows Maps platform APIs](/uwp/api/windows.services.maps) within Windows have been deprecated as of April 8, 2025. The Maps UWP Control and Maps platform support within Windows will continue to function but will not be updated. For more information, see [Resources for deprecated features](deprecated-features-resources.md#windows-uwp-map-control-and-windows-maps-platform-apis). | April 8, 2025 |
 | Line printer daemon (LPR/LPD) <!--9787121--> | Deprecation reminder: [The line printer daemon protocol (LPR/LPD) was deprecated](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831568(v=ws.11)#printing) starting in Windows Server 2012. As removal of the line printer daemon protocol nears, we'd like to remind customers to ensure their environments are prepared for removal. When these features are eventually removed, clients that print to a server using this protocol, such as UNIX clients, will not be able to connect or print. Instead, UNIX clients should use IPP. Windows clients can connect to UNIX shared printers using the [Windows Standard Port Monitor](/troubleshoot/windows-server/printing/standard-port-monitor-for-tcpip).  | [Original announcement: Windows Server 2012](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831568(v=ws.11)#printing) </br> <br> Courtesy reminder: February 2025 |
 | Location History <!--9798092--> | We are deprecating and removing the Location History feature, an [API](/uwp/api/windows.devices.geolocation.geolocator.getgeopositionhistoryasync) that allowed Cortana to access 24 hours of device history when location was enabled. With the removal of the Location History feature, location data will no longer be saved locally and the corresponding settings will also be removed from the **Privacy & Security** > **Location** page in **Settings**. | February 2025 |
 | Suggested actions <!--9614241-->| Suggested actions that appear when you copy a phone number or future date in Windows 11 are deprecated and will be removed in a future Windows 11 update. | December 2024 |
