@@ -24,14 +24,16 @@ appliesto:
 >
 > This article is a 300 level article (moderate advanced). See [Resolve Windows upgrade errors](resolve-windows-upgrade-errors.md) for a full list of articles in this section.
 
-> [!div class="nextstepaction"]
-> [Download the latest version of SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142)
-
 ## About SetupDiag
 
 > [!IMPORTANT]
 >
-> When SetupDiag is run manually, Microsoft recommends running the latest version of SetupDiag. The latest version is available via the following [download link](https://go.microsoft.com/fwlink/?linkid=870142). Running the latest version ensures the latest functionality and fixes known issues.
+> When SetupDiag is run manually, Microsoft recommends running the latest version of SetupDiag. The latest version is available via the following shortcut:
+>
+> [!div class="nextstepaction"]
+> [Download the latest version of SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142)
+>
+> Running the latest version ensures the latest functionality and fixes known issues.
 
 SetupDiag is a diagnostic tool that can be used to obtain details about why a Windows upgrade was unsuccessful.
 
