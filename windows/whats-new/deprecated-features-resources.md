@@ -23,7 +23,7 @@ This article provides additional resources about [deprecated features for Window
 
 ## Windows UWP Map control and Windows Maps platform APIs
 
-In May 2024, we announced the unification of [Bing Maps for Enterprise](https://www.microsoft.com/maps/bing-maps/discontinued-services) with [Azure Maps](https://azure.microsoft.com/products/azure-maps). This means that going forward, Azure Maps will combine the best of Bing Maps for Enterprise and Azure Maps. If your solution uses the Windows UWP Map control, look to move to an Azure Maps based replacement within one year of this deprecation notice rather than the end date for the entire Bing Maps for Enterprise platform. The following resources can help you with this transition:
+In May 2024, we announced the unification of [Bing Maps for Enterprise](https://blogs.bing.com/maps/2024-05/Microsoft-Announces-Vision-for-Next-Generation-of-Enterprise-Maps) with [Azure Maps](https://azure.microsoft.com/products/azure-maps). This means that going forward, Azure Maps will combine the best of Bing Maps for Enterprise and Azure Maps. If your solution uses the Windows UWP Map control, look to move to an Azure Maps based replacement within one year of this deprecation notice rather than the end date for the entire Bing Maps for Enterprise platform. The following resources can help you with this transition:
 - [Migrate from Bing Maps to Azure Maps](/azure/azure-maps/migrate-bing-maps-overview)
 - [Use the Azure Maps map control](/azure/azure-maps/how-to-use-map-control)
 - [Azure Maps code samples](https://samples.azuremaps.com/)
