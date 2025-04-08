@@ -48,63 +48,69 @@ BCDEdit is the primary tool for editing the Boot Configuration Database (BCD) of
 1. Select **OK**. The **Windows Features** window indicates that Windows is searching for required files and displays a progress bar. Once found, the window indicates that Windows is applying the changes. When completed, the window indicates the requested changes are completed.
 1. Restart your device to apply the changes.
 
-## Configure Unbranded Boot settings at runtime using BCDEdit
+#### [:::image type="icon" source="../images/icons/cmd.svg"::: **Command prompt**](#tab/cmd)
 
-1. Open a command prompt as an administrator.
-1. Run the following command to disable the F8 key during startup to prevent access to the **Advanced startup options** menu.
+You can use the BCDEdit.exe command to configure Unbranded Boot settings at runtime.
+
+1. Open a command prompt as an administrator
+1. Run the following command to disable the F8 key during startup to prevent access to the **Advanced startup options** menu
 
    ```cmd
    bcdedit.exe -set {globalsettings} advancedoptions false
    ```
 
-1. Run the following command to disable the F10 key during startup to prevent access to the **Advanced startup options** menu.
+1. Run the following command to disable the F10 key during startup to prevent access to the **Advanced startup options** menu
 
    ```cmd
    bcdedit.exe -set {globalsettings} optionsedit false
    ```
 
-1. Run the following command to suppress all Windows UI elements (logo, status indicator, and status message) during startup.
+1. Run the following command to suppress all Windows UI elements (logo, status indicator, and status message) during startup
 
    ```cmd
    bcdedit.exe -set {globalsettings} bootuxdisabled on
    ```
 
-1. Run the following command to suppress any error screens that are displayed during boot. If **noerrordisplay** is on and the boot manager hits a *WinLoad Error* or *Bad Disk Error*, the system displays a black screen.
+1. Run the following command to suppress any error screens that are displayed during boot. If **noerrordisplay** is on and the boot manager hits a *WinLoad Error* or *Bad Disk Error*, the system displays a black screen
 
    ```cmd
    bcdedit.exe -set {bootmgr} noerrordisplay on
    ```
 
-## Configure Unbranded Boot using Unattend
+#### [:::image type="icon" source="../images/icons/xml.svg"::: **Unattend**](#tab/unattend)
 
-You can also configure the Unattend settings in the [Microsoft-Windows-Embedded-BootExp](/windows-hardware/customize/desktop/unattend/microsoft-windows-embedded-bootexp) component to add Unbranded Boot features to your image during the design or imaging phase. You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file. For more information about the Unbranded Boot settings and XML examples, see the settings in Microsoft-Windows-Embedded-BootExp.
+You can configure the Unattend settings in the `Microsoft-Windows-Embedded-BootExp` component to add Unbranded Boot features to your image during the design or imaging phase. You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file. For more information about the Unbranded Boot settings and XML examples, see the settings in [Microsoft-Windows-Embedded-BootExp](/windows-hardware/customize/desktop/unattend/microsoft-windows-embedded-bootexp).
 
 ### Unbranded Boot settings
 
-The following table shows Unbranded Boot settings and their values.
+The following table lists Unbranded Boot settings and their values.
 
 | Setting | Description | Value |
 |---------|-------------|-------|
-| DisableBootMenu | Contains an integer that disables the F8 and F10 keys during startup to prevent access to the Advanced startup options menu. | Set to 1 to disable the menu; otherwise; set to 0 (zero). The default value is 0. |
+| `DisableBootMenu` | Contains an integer that disables the F8 and F10 keys during startup to prevent access to the Advanced startup options menu. | Set to 1 to disable the menu; otherwise; set to 0 (zero). The default value is 0. |
 | DisplayDisabled | Contains an integer that configures the device to display a blank screen when Windows encounters an error that it can't recover from. | Set to 1 to display a blank screen on error; otherwise; set to 0 (zero). The default value is 0. |
-| HideAllBootUI | Contains an integer that suppresses all Windows UI elements (logo, status indicator, and status message) during startup. | Set to 1 to suppress all Windows UI elements during startup; otherwise; set to 0 (zero). The default value is 0. |
-| HideBootLogo | Contains an integer that suppresses the default Windows logo that displays during the OS loading phase. | Set to 1 to suppress the default Windows logo; otherwise; set to 0 (zero). The default value is 0. |
-| HideBootStatusIndicator | Contains an integer that suppresses the status indicator that displays during the OS loading phase. | Set to 1 to suppress the status indicator; otherwise; set to 0 (zero). The default value is 0. |
-| HideBootStatusMessage | Contains an integer that suppresses the startup status text that displays during the OS loading phase. | Set to 1 to suppress the startup status text; otherwise; set to 0 (zero). The default value is 0. |
+| `HideAllBootUI` | Contains an integer that suppresses all Windows UI elements (logo, status indicator, and status message) during startup. | Set to 1 to suppress all Windows UI elements during startup; otherwise; set to 0 (zero). The default value is 0. |
+| `HideBootLogo` | Contains an integer that suppresses the default Windows logo that displays during the OS loading phase. | Set to 1 to suppress the default Windows logo; otherwise; set to 0 (zero). The default value is 0. |
+| `HideBootStatusIndicator` | Contains an integer that suppresses the status indicator that displays during the OS loading phase. | Set to 1 to suppress the status indicator; otherwise; set to 0 (zero). The default value is 0. |
+| `HideBootStatusMessage` | Contains an integer that suppresses the startup status text that displays during the OS loading phase. | Set to 1 to suppress the startup status text; otherwise; set to 0 (zero). The default value is 0. |
 
-## Customize the boot screen using Windows Configuration Designer and Deployment Image Servicing and Management (DISM)
+#### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+
+Customize the boot screen using Windows Configuration Designer and Deployment Image Servicing and Management (DISM)
 
 You must enable Unbranded boot on the installation media with DISM before you can apply settings for Unbranded boot using either Windows Configuration Designer or applying a provisioning package during setup.
 
-1. Create a provisioning package or create a new Windows image in Windows Configuration Designer by following the instructions in [Create a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package).
+[!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
 
-1. In the Available customizations page, select **Runtime settings** &gt; **SMISettings** and then set the value for the boot screen settings. The following values are just examples.
+|Path|Value|
+|---|---|
+|`Runtime settings/SMISettings/HideAllBootUI`| `TRUE` or `FALSE`|
+|`Runtime settings/SMISettings/HideBootLogo`| `TRUE` or `FALSE`|
+|`Runtime settings/SMISettings/HideBootStatusIndicator`| `TRUE` or `FALSE`|
+|`Runtime settings/SMISettings/HideBootStatusMessage`| `TRUE` or `FALSE`|
+|`Runtime settings/SMISettings/CrashDumpEnabled`| `Full dump`|
 
-   - **HideAllBootUI**=FALSE
-   - **HideBootLogo**=FALSE
-   - **HideBootStatusIndicator**=TRUE
-   - **HideBootStatusMessage**=TRUE
-   - **CrashDumpEnabled**=Full dump
+[!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
    > [!TIP]
    > For more information, see [SMISettings](/windows/configuration/wcd/wcd-smisettings) in the Windows Configuration Designer reference.
@@ -137,6 +143,8 @@ You must enable Unbranded boot on the installation media with DISM before you ca
       ```
 
 In the following image, the BootLogo is outlined in green, the BootStatusIndicator is outlined in red, and the BootStatusMessage is outlined in blue.
+
+---
 
 ![unbranded boot screen](images/boot.jpg)
 
