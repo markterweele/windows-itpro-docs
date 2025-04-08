@@ -59,7 +59,7 @@ Ten parameters are listed in the event:
 | P7 | Source OS build | 9600 |
 | P8 | Source OS branch | Not typically available |
 | P9 | New OS build | 16299 |
-| P10 | New OS branch | rs3_release) |
+| P10 | New OS branch | rs3_release |
 
 The event also contains links to log files that can be used to perform a detailed diagnosis of the error. The following example is an example of this event from a successful upgrade:
 
