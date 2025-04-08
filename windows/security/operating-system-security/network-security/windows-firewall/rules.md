@@ -1,7 +1,7 @@
 ---
-title: Windows Firewall rules
+title: Windows Firewall Rules
 description: Learn about Windows Firewall rules and design recommendations.
-ms.date: 09/06/2024
+ms.date: 04/07/2025
 ms.topic: concept-article
 ---
 
@@ -21,7 +21,7 @@ In many cases, allowing specific types of inbound traffic is required for applic
 
 Because of 1 and 2, when designing a set of policies, you should make sure that there are no other explicit block rules that could inadvertently overlap, thus preventing the traffic flow you wish to allow.
 
-Outbound rules follow the same precedence behaviors. 
+Outbound rules follow the same precedence behaviors.
 
 > [!NOTE]
 > Windows Firewall doesn't support weighted, administrator-assigned rule ordering. An effective policy set with expected behaviors can be created by keeping in mind the few, consistent, and logical rule behaviors as described.
@@ -33,12 +33,12 @@ When first installed, network applications and services issue a *listen call* sp
 :::row:::
   :::column span="2":::
   If there's no active application or administrator-defined allow rule(s), a dialog box prompts the user to either allow or block an application's packets the first time the app is launched or tries to communicate in the network:
-  
+
 - If the user has admin permissions, they're prompted. If they respond *No* or cancel the prompt, block rules are created. Two rules are typically created, one each for TCP and UDP traffic
 - If the user isn't a local admin and they are prompted, block rules are created. It doesn't matter what option is selected
 
 To disable the notification prompt, you can use the [command line](/windows/security/operating-system-security/network-security/windows-firewall/configure-with-command-line) or the **Windows Firewall with Advanced Security** console
-  
+
   :::column-end:::
   :::column span="2":::
     :::image type="content" source="images/uac.png" alt-text="Screenshot showing the User Account Control (UAC) prompt to allow Microsoft Teams." border="false":::

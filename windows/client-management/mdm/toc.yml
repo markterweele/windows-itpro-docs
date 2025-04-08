@@ -866,6 +866,11 @@ items:
       items:
       - name: RemoteFind DDF file
         href: remotefind-ddf-file.md
+    - name: RemoteRemediation
+      href: remoteremediation-csp.md
+      items:
+      - name: RemoteRemediation DDF file
+        href: remoteremediation-ddf-file.md
     - name: RemoteWipe
       href: remotewipe-csp.md
       items:

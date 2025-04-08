@@ -1,6 +1,6 @@
 ---
-title: Configure Windows Update for Business by using CSPs and MDM
-description: Walk through demonstration of how to configure Windows Update for Business settings using Configuration Service Providers and MDM.
+title: Configure Windows Update client policies by using CSPs and MDM
+description: Walk through demonstration of how to configure Windows Update client policies using Configuration Service Providers and MDM.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: how-to
@@ -8,24 +8,26 @@ author: mestew
 ms.author: mstewart
 manager: aaroncz
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 03/18/2025
 ---
 
-# Walkthrough: Use CSPs and MDMs to configure Windows Update for Business
+# Walkthrough: Use CSPs and MDMs to configure Windows Update client policies
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/windows/windows-update-faq-8a903416-6f45-0718-f5c7-375e92dddeb2).
 
+## Overview
 
-## Overview 
+You can use Configuration Service Provider (CSP) policies to control how Windows Update client policies work by using a Mobile Device Management (MDM) tool. You should consider and devise a deployment strategy for updates before you make changes to the Windows Update client policies.
 
-You can use Configuration Service Provider (CSP) policies to control how Windows Update for Business works by using a Mobile Device Management (MDM) tool. You should consider and devise a deployment strategy for updates before you make changes to the Windows Update for Business settings.
- 
-An IT administrator can set policies for Windows Update for Business by using Microsoft Intune or a non-Microsoft MDM tool.
+> [!TIP]
+> This feature was formerly known as _Windows Update for Business_.
 
-To manage updates with Windows Update for Business, you should prepare with these steps, if you haven't already:
+An IT administrator can configure Windows Update client policies by using Microsoft Intune or a non-Microsoft MDM tool.
+
+To manage updates with Windows Update client policies, you should prepare with these steps, if you haven't already:
 
 - Create Active Directory security groups that align with the deployment rings you use to phase deployment of updates. See [Build deployment rings for Windows client updates](waas-deployment-rings-windows-10-updates.md) to learn more about deployment rings in Windows client.
 - Allow access to the Windows Update service.
@@ -37,7 +39,7 @@ You can control when updates are applied, for example by deferring when an updat
 
 ### Determine which updates you want offered to your devices
 
-Both feature and quality updates are automatically offered to devices that are connected to Windows Update using Windows Update for Business policies. However, you can choose whether you want the devices to additionally receive other Microsoft Updates or drivers that are applicable to that device.
+Both feature and quality updates are automatically offered to devices that are connected to Windows Update using Windows Update client policies. However, you can choose whether you want the devices to additionally receive other Microsoft Updates or drivers that are applicable to that device.
 
 To enable Microsoft Updates, use [Update/AllowMUUpdateService](/windows/client-management/mdm/policy-csp-update#allowmuupdateservice).
 
@@ -49,7 +51,7 @@ Drivers are automatically enabled because they're beneficial to device systems. 
 
 #### I want to receive prerelease versions of the next feature update
 
-1. Ensure that you're enrolled in the Windows Insider Program for Business. Windows Insider is a free program available to commercial customers to aid them in their validation of feature updates before they're released. Joining the program enables you to receive updates prior to their release as well as receive emails and content related to what is coming in the next updates. 
+1. Ensure that you're enrolled in the Windows Insider Program for Business. Windows Insider is a free program available to commercial customers to aid them in their validation of feature updates before they're released. Joining the program enables you to receive updates prior to their release as well as receive emails and content related to what is coming in the next updates.
 
 1. For any of test devices you want to install prerelease builds, use [Update/ManagePreviewBuilds](/windows/client-management/mdm/policy-csp-update#managepreviewbuilds). Set the option to **Enable preview builds**.
 
@@ -59,7 +61,7 @@ Drivers are automatically enabled because they're beneficial to device systems. 
 
 #### I want to manage which released feature update my devices receive
 
-A Windows Update for Business administrator can defer or pause updates. You can defer feature updates for up to 365 days and defer quality updates for up to 30 days. Deferring simply means that you don't receive the update until it has been released for at least the number of deferral days you specified (offer date = release date + deferral date). You can pause feature or quality updates for up to 35 days from a given start date that you specify.
+A Windows Update administrator can defer or pause updates. You can defer feature updates for up to 365 days and defer quality updates for up to 30 days. Deferring simply means that you don't receive the update until it has been released for at least the number of deferral days you specified (offer date = release date + deferral date). You can pause feature or quality updates for up to 35 days from a given start date that you specify.
 
 - To defer a feature update: [Update/DeferFeatureUpdatesPeriodInDays](/windows/client-management/mdm/policy-csp-update#deferfeatureupdatesperiodindays)
 - To pause a feature update: [Update/PauseFeatureUpdatesStartTime](/windows/client-management/mdm/policy-csp-update#pausefeatureupdatesstarttime)
@@ -117,12 +119,12 @@ It's best to refrain from setting the active hours policy because it's enabled b
 
 To update outside of the active hours, use [Update/AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#allowautoupdate) with Option 2 (which is the default setting). For even more granular control, consider using automatic updates to schedule the install time, day, or week. To use a schedule, use Option 3, and then set the following policies as appropriate for your plan:
 
-- [Update/ScheduledInstallDay](/windows/client-management/mdm/policy-csp-update#scheduledinstallday) 
-- [Update/ScheduledInstallEveryWeek](/windows/client-management/mdm/policy-csp-update#scheduledinstalleveryweek) 
-- [Update/ScheduledInstallFirstWeek](/windows/client-management/mdm/policy-csp-update#scheduledinstallfirstweek) 
-- [Update/ScheduledInstallFourthWeek](/windows/client-management/mdm/policy-csp-update#scheduledinstallfourthweek) 
-- [Update/ScheduledInstallSecondWeek](/windows/client-management/mdm/policy-csp-update#scheduledinstallsecondweek) 
-- [Update/ScheduledInstallThirdWeek](/windows/client-management/mdm/policy-csp-update#scheduledinstallthirdweek) 
+- [Update/ScheduledInstallDay](/windows/client-management/mdm/policy-csp-update#scheduledinstallday)
+- [Update/ScheduledInstallEveryWeek](/windows/client-management/mdm/policy-csp-update#scheduledinstalleveryweek)
+- [Update/ScheduledInstallFirstWeek](/windows/client-management/mdm/policy-csp-update#scheduledinstallfirstweek)
+- [Update/ScheduledInstallFourthWeek](/windows/client-management/mdm/policy-csp-update#scheduledinstallfourthweek)
+- [Update/ScheduledInstallSecondWeek](/windows/client-management/mdm/policy-csp-update#scheduledinstallsecondweek)
+- [Update/ScheduledInstallThirdWeek](/windows/client-management/mdm/policy-csp-update#scheduledinstallthirdweek)
 - [Update/ScheduledInstallTime](/windows/client-management/mdm/policy-csp-update#scheduledinstalltime)
 
 
@@ -136,15 +138,15 @@ We recommend that you use set specific deadlines for feature and quality updates
 
 For Windows 10, version 22H2:
 
-- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates) 
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
 - [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 - [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
 - [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates)
-- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautoreboot) 
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautoreboot)
 
 For Windows 11, version 22H2 and later:
 
-- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates) 
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
 - [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 - [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod) (for quality updates)
 - [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates) <!--Windows 11, version 22H2 and later-->
@@ -153,7 +155,7 @@ For Windows 11, version 22H2 and later:
 
 > [!NOTE]
 > - When these policies are used, [user settings for notifications](#user-settings-for-notifications) are also used on clients running Windows 11, version 22H2 and later.
-> - When **Specify deadlines for automatic updates and restarts** for either quality updates or feature updates is used, updates will be downloaded and installed as soon as they are offered. 
+> - When **Specify deadlines for automatic updates and restarts** for either quality updates or feature updates is used, updates will be downloaded and installed as soon as they are offered.
 > - When **Specify deadlines for automatic updates and restarts** for either quality updates or feature updates is used, download, installation, and reboot settings stemming from the [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are ignored.
 >    - Starting with the December 10, 2024 update for Windows 11, version 22H2 and later clients, [Configure Automatic Updates](waas-restart.md#schedule-update-installation) are respected before the deadline occurs, and ignored once the deadline passes.
 
@@ -168,10 +170,10 @@ Users can set a preference for notifications about pending restarts for updates 
 
 Users have the following options for the **Notify me when a restart is required to finish updating** setting:
 
-- **Off** (default): Once the device enters a pending reboot state for updates, restart notifications are suppressed for 24 hours. During the first 24 hours, automatic restarts can still occur outside of active hours. Typically, users receive fewer notifications about upcoming restarts while the deadline is approaching. 
+- **Off** (default): Once the device enters a pending reboot state for updates, restart notifications are suppressed for 24 hours. During the first 24 hours, automatic restarts can still occur outside of active hours. Typically, users receive fewer notifications about upcoming restarts while the deadline is approaching.
     - When the deadline is set for 1 day, users only receive a notification about the deadline and a final nondismissable notification 15 minutes before a forced restart.
 
-- **On**: Users immediately receive a toast notification when the device enters a reboot pending state for updates. Automatic restarts for updates are blocked for 24 hours after the initial notification to give these users time to prepare for a restart. After 24 hours have passed, automatic restarts can occur. This setting is recommended for users who want to be notified about upcoming restarts. 
+- **On**: Users immediately receive a toast notification when the device enters a reboot pending state for updates. Automatic restarts for updates are blocked for 24 hours after the initial notification to give these users time to prepare for a restart. After 24 hours have passed, automatic restarts can occur. This setting is recommended for users who want to be notified about upcoming restarts.
    - When the deadline is set for 1 day, an initial notification occurs, automatic restart is blocked for 24 hours, and users receive another notification before the deadline and a final nondismissable notification 15 minutes before a forced restart.
 
 When a deadline is set for 0 days, no matter which option is selected, the only notification users receive is a final nondismissable notification 15 minutes before a forced restart.
@@ -180,15 +182,15 @@ The user preference for notifications applies when the following policies for [c
 
 For Windows 10, version 22H2:
 
-- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates) 
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
 - [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 - [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
 - [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates)
-- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautoreboot) 
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#configuredeadlinenoautoreboot)
 
 For Windows 11, version 22H2 and later:
 
-- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates) 
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
 - [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 - [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod) (for quality updates)
 - [Update/ConfigureDeadlineGracePeriodForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#configuredeadlinegraceperiodforfeatureupdates) <!--Windows 11, version 22H2 and later-->
@@ -214,7 +216,7 @@ Still more options are available in [Update/ScheduleRestartWarning](/windows/cli
 ### I want to manage the update settings a user can access
 
 Every Windows device provides users with various controls they can use to manage Windows Updates. They can access these controls by Search to find Windows Updates or by going selecting **Updates and Security** in **Settings**. We provide the ability to disable a variety of these controls that are accessible to users.
- 
+
 Users with access to update pause settings can prevent both feature and quality updates for 7 days. You can prevent users from pausing updates through the Windows Update settings page by using [Update/SetDisablePauseUXAccess](/windows/client-management/mdm/policy-csp-update#setdisablepauseuxaccess).
 When you disable this setting, users see **Some settings are managed by your organization** and the update pause settings are greyed out.
 
@@ -238,8 +240,8 @@ The features that are turned off by default from servicing updates will be enabl
 
 ### I want to enable optional updates
 <!--7991583-->
-*Applies to:* 
+*Applies to:*
 - Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later <!--7991583-->
 - Windows 10, version 22H2 with [KB5032278](https://support.microsoft.com/help/5032278), or a later cumulative update installed <!--8503602-->
 
-In addition to the monthly cumulative update, optional updates are available to provide new features and nonsecurity changes. Most optional updates are released on the fourth Tuesday of the month, known as optional nonsecurity preview releases. Optional updates can also include features that are gradually rolled out, known as controlled feature rollouts (CFRs). Installation of optional updates isn't enabled by default for devices that receive updates using Windows Update for Business. However, you can enable optional updates for devices by using [AllowOptionalContent](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowoptionalcontent). For more information about optional content, see [Enable optional updates](waas-configure-wufb.md#enable-optional-updates).
+In addition to the monthly cumulative update, optional updates are available to provide new features and nonsecurity changes. Most optional updates are released on the fourth Tuesday of the month, known as optional nonsecurity preview releases. Optional updates can also include features that are gradually rolled out, known as controlled feature rollouts (CFRs). Installation of optional updates isn't enabled by default for devices that receive updates using Windows Update client policies. However, you can enable optional updates for devices by using [AllowOptionalContent](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowoptionalcontent). For more information about optional content, see [Enable optional updates](waas-configure-wufb.md#enable-optional-updates).
