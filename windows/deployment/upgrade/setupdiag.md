@@ -28,9 +28,8 @@ appliesto:
 
 > [!IMPORTANT]
 >
-> When SetupDiag is run manually, Microsoft recommends running the latest version of SetupDiag. The latest version is available via the following shortcut:
+> When SetupDiag is run manually, Microsoft recommends running the latest version of SetupDiag. The latest version is available via the following link:
 >
-> [!div class="nextstepaction"]
 > [Download the latest version of SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142)
 >
 > Running the latest version ensures the latest functionality and fixes known issues.
