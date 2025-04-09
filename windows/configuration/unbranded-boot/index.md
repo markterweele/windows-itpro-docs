@@ -132,7 +132,7 @@ In the following image, the BootLogo is outlined in green, the BootStatusIndicat
 
 ---
 
-![Unbranded Boot screen](images/boot.jpg)
+:::image type="content" source="images/boot.png" alt-text="Screenshot of the boot screen showing the areas that can be configured with Unbranded Boot. ":::
 
 ## Replace the startup logo
 
