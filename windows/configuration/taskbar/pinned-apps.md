@@ -110,7 +110,7 @@ You can change the apps pinned to the taskbar by modifying the `<TaskbarLayout>`
 
 #### PinGeneration
 
-[!INCLUDE [insider-note](../includes/insider-feature.md)]
+[!INCLUDE [insider-setting](../includes/insider-setting.md)]
 
 On devices with [KBXYZ][KB-1] or later, you can allow specific pinned apps to be unpinnable by users. This is useful when you want to allow users to unpin apps that are pinned via policy settings, but you don't want the pins to be repinned during the next policy update cycle.
 
@@ -336,6 +336,7 @@ To provide feedback, open [**Feedback Hub**][FHUB] and use the category **Deskto
 
 <!--links-->
 
+[FHUB]: feedback-hub://?tabid=2&newFeedback=true&feedbackType=1
 [OEM-1]: /windows-hardware/customize/desktop/customize-the-windows-11-taskbar
 [WIN-1]: /windows/client-management/mdm/policy-csp-start
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
