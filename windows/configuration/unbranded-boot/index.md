@@ -1,28 +1,29 @@
 ---
 title: Unbranded Boot
-description: Unbranded Boot
+description: Learn about unbranded boot, a feature that suppresses Windows elements that appear when Windows starts or resumes. Unbranded boot can also suppress the crash screen when Windows encounters an error that it can't recover from.
 ms.date: 04/09/2025
 ms.topic: overview
 ---
 
-# Unbranded Boot
+# Unbranded boot
 
-You can suppress Windows elements that appear when Windows starts or resumes and can suppress the crash screen when Windows encounters an error that it can't recover from. This feature is known as Unbranded Boot.
+Unbranded boot is a Windows feature that allows you to suppress Windows elements that appear when Windows starts or resumes. It can also suppress the crash screen when Windows encounters an error that it can't recover from. This feature is particularly useful for devices that are used in public spaces, such as kiosks and digital signs, where a clean and professional appearance is important.
+
+[!INCLUDE [unbranded-boot](../../../includes/licensing/unbranded-boot.md)]
+
+## Enable unbranded boot
 
 > [!IMPORTANT]
 > The first user to sign in to the device must be an administrator. This ensures that the **RunOnce** registry settings correctly apply the settings. Also, when using auto sign-in, you must not configure auto sign-in on your device at design time. Instead, auto sign-in should be configured manually after first signing in as an administrator.
 
-[!INCLUDE [unbranded-boot](../../../includes/licensing/unbranded-boot.md)]
+Unbranded boot is an optional component and isn't enabled by default in Windows. It must be enabled prior to configuring.
 
-## Turn on Unbranded Boot settings
+If Windows is already installed, you can't apply a provisioning package to configure unbranded boot. You must use the Boot Configuration Data Editor (`bcdedit.exe`) to configure Unbranded boot if Windows is installed.
 
-Unbranded Boot is an optional component and isn't enabled by default in Windows. It must be enabled prior to configuring.
+> [!NOTE]
+> `Bcdedit.exe` is a command-line tool for editing the Boot Configuration Data (BCD) of Windows. Administrator privileges are required to use BCDEdit to modify the BCD.
 
-If Windows has already been installed, you can't apply a provisioning package to configure Unbranded Boot; instead you must use BDCEdit to configure Unbranded boot if Windows is installed.
-
-BCDEdit is the primary tool for editing the Boot Configuration Database (BCD) of Windows and is included in Windows in the `%WINDIR%\System32` folder. Administrator privileges are required to use BCDEdit to modify the BCD.
-
-### Turn on Unbranded Boot by using Control Panel
+### Turn on unbranded boot by using Control Panel
 
 1. In the Windows search bar, type **Turn Windows features on or off** and either press **Enter** or tap or select **Turn Windows features on or off** to open the **Windows Features** window
 1. In the **Windows Features** window, expand the **Device Lockdown** node, and select (to turn on) or clear (to turn off) the checkbox for **Unbranded Boot**
@@ -31,7 +32,7 @@ BCDEdit is the primary tool for editing the Boot Configuration Database (BCD) of
 
 #### [:::image type="icon" source="../images/icons/cmd.svg"::: **Command prompt**](#tab/cmd)
 
-You can use the BCDEdit.exe command to configure Unbranded Boot settings at runtime.
+You can use the `bcdedit.exe` command to configure unbranded boot settings at runtime.
 
 1. Open a command prompt as an administrator
 1. Run the following command to disable the F8 key during startup to prevent access to the **Advanced startup options** menu
@@ -60,24 +61,24 @@ You can use the BCDEdit.exe command to configure Unbranded Boot settings at runt
 
 #### [:::image type="icon" source="../images/icons/xml.svg"::: **Unattend**](#tab/unattend)
 
-You can configure the Unattend settings in the `Microsoft-Windows-Embedded-BootExp` component to add Unbranded Boot features to your image during the design or imaging phase. You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file. For more information about the Unbranded Boot settings and XML examples, see the settings in [Microsoft-Windows-Embedded-BootExp](/windows-hardware/customize/desktop/unattend/microsoft-windows-embedded-bootexp).
+You can configure the Unattend settings in the `Microsoft-Windows-Embedded-BootExp` component to add unbranded boot features to your image during the design or imaging phase. You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file. For more information about the unbranded boot settings and XML examples, see the settings in [Microsoft-Windows-Embedded-BootExp](/windows-hardware/customize/desktop/unattend/microsoft-windows-embedded-bootexp).
 
-### Unbranded Boot settings
+### Unbranded boot settings
 
-The following table lists Unbranded Boot settings and their values.
+The following table lists unbranded boot settings and their values.
 
 | Setting | Description | Value |
 |---------|-------------|-------|
-| `DisableBootMenu` | Contains an integer that disables the F8 and F10 keys during startup to prevent access to the Advanced startup options menu. | Set to 1 to disable the menu; otherwise; set to 0 (zero). The default value is 0. |
-| DisplayDisabled | Contains an integer that configures the device to display a blank screen when Windows encounters an error that it can't recover from. | Set to 1 to display a blank screen on error; otherwise; set to 0 (zero). The default value is 0. |
-| `HideAllBootUI` | Contains an integer that suppresses all Windows UI elements (logo, status indicator, and status message) during startup. | Set to 1 to suppress all Windows UI elements during startup; otherwise; set to 0 (zero). The default value is 0. |
-| `HideBootLogo` | Contains an integer that suppresses the default Windows logo that displays during the OS loading phase. | Set to 1 to suppress the default Windows logo; otherwise; set to 0 (zero). The default value is 0. |
-| `HideBootStatusIndicator` | Contains an integer that suppresses the status indicator that displays during the OS loading phase. | Set to 1 to suppress the status indicator; otherwise; set to 0 (zero). The default value is 0. |
-| `HideBootStatusMessage` | Contains an integer that suppresses the startup status text that displays during the OS loading phase. | Set to 1 to suppress the startup status text; otherwise; set to 0 (zero). The default value is 0. |
+| `DisableBootMenu` | Contains an integer that disables the F8 and F10 keys during startup to prevent access to the *Advanced startup options* menu. | - Set to `1` to disable the menu<br>- The default value is `0`|
+| `DisplayDisabled` | Contains an integer that configures the device to display a blank screen when Windows encounters an error that it can't recover from. | - Set to `1` to display a blank screen on error<br>- The default value is `0`|
+| `HideAllBootUI` | Contains an integer that suppresses all Windows UI elements (logo, status indicator, and status message) during startup. | - Set to `1` to suppress all Windows UI elements during startup<br>- The default value is `0`|
+| `HideBootLogo` | Contains an integer that suppresses the default Windows logo that displays during the OS loading phase. | - Set to `1` to suppress the default Windows logo<br>- The default value is `0`|
+| `HideBootStatusIndicator` | Contains an integer that suppresses the status indicator that displays during the OS loading phase. | - Set to `1` to suppress the status indicator<br>- The default value is `0`|
+| `HideBootStatusMessage` | Contains an integer that suppresses the startup status text that displays during the OS loading phase. | - Set to `1` to suppress the startup status text<br>- The default value is `0`|
 
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
-Customize the boot screen using Windows Configuration Designer and Deployment Image Servicing and Management (DISM)
+Customize the boot screen using Windows Configuration Designer and Deployment Image Servicing and Management (DISM).
 
 You must enable Unbranded boot on the installation media with DISM before you can apply settings for Unbranded boot using either Windows Configuration Designer or applying a provisioning package during setup.
 
