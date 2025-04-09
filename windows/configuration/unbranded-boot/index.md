@@ -1,7 +1,7 @@
 ---
 title: Unbranded Boot
 description: Unbranded Boot
-ms.date: 09/10/2024
+ms.date: 04/09/2025
 ms.topic: overview
 ---
 
@@ -12,26 +12,7 @@ You can suppress Windows elements that appear when Windows starts or resumes and
 > [!IMPORTANT]
 > The first user to sign in to the device must be an administrator. This ensures that the **RunOnce** registry settings correctly apply the settings. Also, when using auto sign-in, you must not configure auto sign-in on your device at design time. Instead, auto sign-in should be configured manually after first signing in as an administrator.
 
-## Requirements
-
-Unbranded Boot can be enabled on:
-
-- Windows 10 Enterprise
-- Windows 10 IoT Enterprise
-- Windows 10 Education
-- Windows 11 Enterprise
-- Windows 11 IoT Enterprise
-- Windows 11 Education
-
-## Terminology
-
-- **Turn on, Enable:** To make the setting available to the device and optionally apply the settings to the device. Generally "turn on" is used in the user interface or control panel, whereas "enable" is used for command line.
-
-- **Configure:** To customize the setting or subsettings.
-
-- **Embedded Boot Experience:** this feature is called "Embedded Boot Experience" in Windows 10, build 1511.
-
-- **Custom Boot Experience:** this feature is called "Custom Boot Experience" in Windows 10, build 1607 and later.
+[!INCLUDE [unbranded-boot](../../../includes/licensing/unbranded-boot.md)]
 
 ## Turn on Unbranded Boot settings
 
@@ -39,14 +20,14 @@ Unbranded Boot is an optional component and isn't enabled by default in Windows.
 
 If Windows has already been installed, you can't apply a provisioning package to configure Unbranded Boot; instead you must use BDCEdit to configure Unbranded boot if Windows is installed.
 
-BCDEdit is the primary tool for editing the Boot Configuration Database (BCD) of Windows and is included in Windows in the %WINDIR%\\System32 folder. Administrator privileges are required to use BCDEdit to modify the BCD.
+BCDEdit is the primary tool for editing the Boot Configuration Database (BCD) of Windows and is included in Windows in the `%WINDIR%\System32` folder. Administrator privileges are required to use BCDEdit to modify the BCD.
 
 ### Turn on Unbranded Boot by using Control Panel
 
-1. In the Windows search bar, type **Turn Windows features on or off** and either press **Enter** or tap or select **Turn Windows features on or off** to open the **Windows Features** window.
-1. In the **Windows Features** window, expand the **Device Lockdown** node, and select (to turn on) or clear (to turn off) the checkbox for **Unbranded Boot**.
-1. Select **OK**. The **Windows Features** window indicates that Windows is searching for required files and displays a progress bar. Once found, the window indicates that Windows is applying the changes. When completed, the window indicates the requested changes are completed.
-1. Restart your device to apply the changes.
+1. In the Windows search bar, type **Turn Windows features on or off** and either press **Enter** or tap or select **Turn Windows features on or off** to open the **Windows Features** window
+1. In the **Windows Features** window, expand the **Device Lockdown** node, and select (to turn on) or clear (to turn off) the checkbox for **Unbranded Boot**
+1. Select **OK**. The **Windows Features** window indicates that Windows is searching for required files and displays a progress bar. Once found, the window indicates that Windows is applying the changes. When completed, the window indicates the requested changes are completed
+1. Restart your device to apply the changes
 
 #### [:::image type="icon" source="../images/icons/cmd.svg"::: **Command prompt**](#tab/cmd)
 
@@ -152,17 +133,3 @@ In the following image, the BootLogo is outlined in green, the BootStatusIndicat
 
 The only supported way to replace the startup logo with a custom logo is to modify the Boot Graphics Resource Table (BGRT) on a device that uses UEFI as the firmware interface. If your device uses the BGRT to include a custom logo, it's always displayed and you can't suppress the custom logo.
 
-## Suppress Errors During Boot
-
-Errors that occur during early Windows Boot are typically a sign of bad device configuration or failing hardware and require user intervention to recover. You can suppress all error screens during early boot by enabling the **noerrordisplay** BCD setting.
-
-1. Open a command prompt as an administrator.
-1. Run the following command to suppress error screens during boot.
-
-   ```cmd
-   bcdedit.exe -set {bootmgr} noerrordisplay on
-   ```
-
-## Related articles
-
-- [Custom Logon](../custom-logon/index.md)
