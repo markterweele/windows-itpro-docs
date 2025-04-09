@@ -110,6 +110,8 @@ You can change the apps pinned to the taskbar by modifying the `<TaskbarLayout>`
 
 #### PinGeneration
 
+[!INCLUDE [insider-note](../includes/insider-feature.md)]
+
 On devices with [KBXYZ][KB-1] or later, you can allow specific pinned apps to be unpinnable by users. This is useful when you want to allow users to unpin apps that are pinned via policy settings, but you don't want the pins to be repinned during the next policy update cycle.
 
 To use this option, add `PinGeneration="1"` to the pins you want to allow users to unpin. The value of `PinGeneration` can be any number, and it's used to identify the pin version. If the value changes, the app is pinned again during the next policy update cycle. This allows IT admins to repin an app, if needed.
@@ -327,6 +329,10 @@ If you apply the taskbar configuration to a clean install or an update, users ca
 Learn more about the options available to configure Start menu settings using the Configuration Service Provider (CSP) and Group Policy (GPO):
 
 - [Taskbar policy settings](policy-settings.md)
+
+### :::image type="icon" source="../images/icons/feedback.svg" border="false"::: Provide feedback
+
+To provide feedback, open [**Feedback Hub**][FHUB] and use the category **Desktop Environment** > **Taskbar**.
 
 <!--links-->
 

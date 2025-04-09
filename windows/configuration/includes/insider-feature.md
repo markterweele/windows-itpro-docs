@@ -11,6 +11,6 @@ ms.date: 01/11/2024
 :::column-end:::
 :::column span="3":::
 > [!IMPORTANT]
->This article describes features or settings that are under development and only applicable to [Windows Insider Preview builds](/windows-insider/). The content is subject to change and may have dependencies on other features or services in preview.
+> This article describes a feature that is under development and only applicable to [Windows Insider Preview builds](/windows-insider/). The content is subject to change and might have dependencies on other features or services in preview.
 :::column-end:::
 :::row-end:::

@@ -11,7 +11,7 @@ appliesto:
 
 # Quick machine recovery
 
-[!INCLUDE [insider-note](../includes/insider-note.md)]
+[!INCLUDE [insider-note](../includes/insider-feature.md)]
 
 Quick machine recovery is a feature that enables the recovery of Windows devices when they encounter critical errors that prevent them from booting. This feature can automatically search for remediations in the cloud and recover from widespread boot failures, significantly reducing the burden on IT administrators when multiple devices are affected.
 
