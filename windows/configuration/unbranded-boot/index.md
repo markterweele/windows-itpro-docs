@@ -101,7 +101,7 @@ Customize the boot screen using Windows Configuration Designer and Deployment Im
 
 You must enable Unbranded Boot on the installation media with DISM before you can apply settings for Unbranded Boot using either Windows Configuration Designer or applying a provisioning package during setup.
 
-If Windows is already installed, you can't apply a provisioning package to configure Unbranded Boot. You must use the [command prompt](#tab/cmd) to configure Unbranded Boot if Windows is installed.
+If Windows is already installed, you can't apply a provisioning package to configure Unbranded Boot. You must use the command prompt to configure Unbranded Boot if Windows is installed.
 
 [!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
 
