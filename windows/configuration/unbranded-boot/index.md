@@ -146,7 +146,11 @@ If Windows is already installed, you can't apply a provisioning package to confi
 
 ---
 
-In the following image, the BootLogo is outlined in green, the BootStatusIndicator is outlined in red, and the BootStatusMessage is outlined in blue.
+In the following image:
+
+1. `BootLogo` is outlined in green, the
+1. `BootStatusIndicator` is outlined in red
+1. `BootStatusMessage` is outlined in blue
 
 :::image type="content" source="images/boot.png" alt-text="Screenshot of the boot screen showing the areas that can be configured with Unbranded Boot. ":::
 
