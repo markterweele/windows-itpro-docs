@@ -13,22 +13,39 @@ Unbranded Boot is a Windows feature that allows you to suppress Windows elements
 
 ## Enable Unbranded Boot
 
-> [!IMPORTANT]
-> The first user to sign in to the device must be an administrator. This ensures that the **RunOnce** registry settings correctly apply the settings. Also, when using auto sign-in, you must not configure auto sign-in on your device at design time. Instead, auto sign-in should be configured manually after first signing in as an administrator.
-
-Unbranded Boot is an optional component and isn't enabled by default in Windows. It must be enabled prior to configuring.
+Unbranded Boot is an optional component and isn't enabled by default in Windows. To configure it, you must first enable it.
 
 If Windows is already installed, you can't apply a provisioning package to configure Unbranded Boot. You must use the Boot Configuration Data Editor (`bcdedit.exe`) to configure Unbranded Boot if Windows is installed.
 
 > [!NOTE]
 > `Bcdedit.exe` is a command-line tool for editing the Boot Configuration Data (BCD) of Windows. Administrator privileges are required to use BCDEdit to modify the BCD.
 
-### Turn on Unbranded Boot by using Control Panel
+There are different ways to enable Unbranded Boot, select the method that best fits your needs to learn more.
 
-1. In the Windows search bar, type **Turn Windows features on or off** and either press **Enter** or tap or select **Turn Windows features on or off** to open the **Windows Features** window
-1. In the **Windows Features** window, expand the **Device Lockdown** node, and select (to turn on) or clear (to turn off) the checkbox for **Unbranded Boot**
-1. Select **OK**. The **Windows Features** window indicates that Windows is searching for required files and displays a progress bar. Once found, the window indicates that Windows is applying the changes. When completed, the window indicates the requested changes are completed
+#### [:::image type="icon" source="../images/icons/control-panel.svg"::: **Control Panel**](#tab/control-panel1)
+
+To enable Unbranded Boot using Control Panel, follow these steps:
+
+1. Open **Control Panel** > **Programs** > **Turn Windows features on or off** or use the command `optionalfeatures.exe`
+1. Expand **Device Lockdown** and select **Unbranded Boot**
+1. Select **OK** to enable Unbranded Boot
 1. Restart your device to apply the changes
+
+#### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/powershell1)
+
+To enable Unbranded Boot using PowerShell, follow these steps:
+
+1. Open a PowerShell window with administrator privileges
+1. Run the following command:
+    ```powershell
+    Enable-WindowsOptionalFeature -FeatureName Client-DeviceLockdown,Client-EmbeddedBootExp -Online
+    ```
+1. Restart your device to apply the changes
+
+---
+
+> [!IMPORTANT]
+> The first user to sign in to the device must be an administrator. This ensures that the **RunOnce** registry settings correctly apply the settings. Also, when using auto sign-in, you must not configure auto sign-in on your device at design time. Instead, auto sign-in should be configured manually after first signing in as an administrator.
 
 ## Configure Unbranded Boot
 
@@ -94,7 +111,6 @@ You must enable Unbranded Boot on the installation media with DISM before you ca
 |`Runtime settings/SMISettings/HideBootLogo`| `TRUE` or `FALSE`|
 |`Runtime settings/SMISettings/HideBootStatusIndicator`| `TRUE` or `FALSE`|
 |`Runtime settings/SMISettings/HideBootStatusMessage`| `TRUE` or `FALSE`|
-|`Runtime settings/SMISettings/CrashDumpEnabled`| `Full dump`|
 
 [!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
