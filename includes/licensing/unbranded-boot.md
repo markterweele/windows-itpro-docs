@@ -7,7 +7,7 @@ ms.topic: include
 
 ### Windows edition requirements
 
-The following list contains the Windows editions that support unbranded boot:
+The following list contains the Windows editions that support Unbranded Boot:
 
 ✅ Enterprise / Enterprise LTSC\
 ✅ Education\
