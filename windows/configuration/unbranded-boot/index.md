@@ -19,7 +19,7 @@ There are different ways to enable Unbranded Boot, select the method that best f
 
 #### [:::image type="icon" source="../images/icons/control-panel.svg"::: **Control Panel**](#tab/control-panel1)
 
-To enable Unbranded Boot using Control Panel, follow these steps:
+To enable Unbranded Boot using the Control Panel, follow these steps:
 
 1. Open **Control Panel** > **Programs** > **Turn Windows features on or off** or use the command `optionalfeatures.exe`
 1. Expand **Device Lockdown** and select **Unbranded Boot**
@@ -144,9 +144,9 @@ If Windows is already installed, you can't apply a provisioning package to confi
       dism /unmount-wim /MountDir:c:\wim /Commit
       ```
 
-In the following image, the BootLogo is outlined in green, the BootStatusIndicator is outlined in red, and the BootStatusMessage is outlined in blue.
-
 ---
+
+In the following image, the BootLogo is outlined in green, the BootStatusIndicator is outlined in red, and the BootStatusMessage is outlined in blue.
 
 :::image type="content" source="images/boot.png" alt-text="Screenshot of the boot screen showing the areas that can be configured with Unbranded Boot. ":::
 
