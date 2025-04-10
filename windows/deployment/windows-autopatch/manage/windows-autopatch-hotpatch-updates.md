@@ -1,7 +1,7 @@
 ---
 title: Hotpatch updates
 description: Use Hotpatch updates to receive security updates without restarting your device
-ms.date: 04/10/2025
+ms.date: 04/11/2025
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to

@@ -1,7 +1,7 @@
 ---
 title: What's new 2025
 description: This article lists the 2025 feature releases and any corresponding Message center post numbers.
-ms.date: 03/31/2025
+ms.date: 04/11/2025
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: whats-new
