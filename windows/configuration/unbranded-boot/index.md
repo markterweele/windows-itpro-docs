@@ -15,11 +15,6 @@ Unbranded Boot is a Windows feature that allows you to suppress Windows elements
 
 Unbranded Boot is an optional component and isn't enabled by default in Windows. To configure it, you must first enable it.
 
-If Windows is already installed, you can't apply a provisioning package to configure Unbranded Boot. You must use the Boot Configuration Data Editor (`bcdedit.exe`) to configure Unbranded Boot if Windows is installed.
-
-> [!NOTE]
-> `Bcdedit.exe` is a command-line tool for editing the Boot Configuration Data (BCD) of Windows. Administrator privileges are required to use BCDEdit to modify the BCD.
-
 There are different ways to enable Unbranded Boot, select the method that best fits your needs to learn more.
 
 #### [:::image type="icon" source="../images/icons/control-panel.svg"::: **Control Panel**](#tab/control-panel1)
@@ -54,6 +49,9 @@ The following instructions provide details about how to configure your devices. 
 #### [:::image type="icon" source="../images/icons/cmd.svg"::: **Command prompt**](#tab/cmd)
 
 You can use the `bcdedit.exe` command to configure Unbranded Boot settings at runtime.
+
+> [!NOTE]
+> `Bcdedit.exe` is a command-line tool for editing the Boot Configuration Data (BCD) of Windows. Administrator privileges are required to use BCDEdit to modify the BCD.
 
 1. Open a command prompt as an administrator
 1. Run the following command to disable the F8 key during startup to prevent access to the **Advanced startup options** menu
@@ -102,6 +100,8 @@ The following table lists Unbranded Boot settings and their values.
 Customize the boot screen using Windows Configuration Designer and Deployment Image Servicing and Management (DISM).
 
 You must enable Unbranded Boot on the installation media with DISM before you can apply settings for Unbranded Boot using either Windows Configuration Designer or applying a provisioning package during setup.
+
+If Windows is already installed, you can't apply a provisioning package to configure Unbranded Boot. You must use the [command prompt](#tab/cmd) to configure Unbranded Boot if Windows is installed.
 
 [!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
 
