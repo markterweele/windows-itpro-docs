@@ -21,6 +21,15 @@ This article lists new and updated feature releases, and service releases, with 
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
 
+## April 2025
+
+### April feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Hotpatch updates](../manage/windows-autopatch-hotpatch-updates.md) | Added [troubleshooting](../manage/windows-autopatch-hotpatch-updates.md#troubleshoot-hotpatch-updates) section |
+| [FAQ](../overview/windows-autopatch-faq.yml) | Added [hotpatch updates](../overview/windows-autopatch-faq.yml#hotpatch-updates) section to the FAQ. |
+
 ## March 2025
 
 ### March feature releases or updates
