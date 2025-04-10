@@ -112,10 +112,8 @@ If Windows is already installed, you can't apply a provisioning package to confi
 |`Runtime settings/SMISettings/HideBootStatusIndicator`| `TRUE` or `FALSE`|
 |`Runtime settings/SMISettings/HideBootStatusMessage`| `TRUE` or `FALSE`|
 
-[!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
-
-   > [!TIP]
-   > For more information, see [SMISettings](/windows/configuration/wcd/wcd-smisettings) in the Windows Configuration Designer reference.
+> [!TIP]
+> For more information, see [SMISettings](/windows/configuration/wcd/wcd-smisettings) in the Windows Configuration Designer reference.
 
 1. Once you have finished configuring the settings and building the package or image, you use DISM to apply the settings.
    1. Open a command prompt with administrator privileges.
