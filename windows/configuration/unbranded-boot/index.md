@@ -152,7 +152,7 @@ In the following image:
 1. `BootStatusIndicator` is outlined in red
 1. `BootStatusMessage` is outlined in blue
 
-:::image type="content" source="images/boot.png" alt-text="Screenshot of the boot screen showing the areas that can be configured with Unbranded Boot. ":::
+:::image type="content" source="images/boot.png" alt-text="Screenshot of the boot screen showing the areas that can be configured with Unbranded Boot." border="false":::
 
 ## Replace the startup logo
 
