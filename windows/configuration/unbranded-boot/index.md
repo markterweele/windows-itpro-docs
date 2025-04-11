@@ -1,7 +1,7 @@
 ---
 title: Unbranded Boot
 description: Learn about Unbranded Boot, a feature that suppresses Windows elements that appear when Windows starts. Unbranded Boot can also suppress the crash screen when Windows encounters an error that it can't recover from.
-ms.date: 04/09/2025
+ms.date: 04/11/2025
 ms.topic: how-to
 ---
 
@@ -115,38 +115,33 @@ If Windows is already installed, you can't apply a provisioning package to confi
 > [!TIP]
 > For more information, see [SMISettings](/windows/configuration/wcd/wcd-smisettings) in the Windows Configuration Designer reference.
 
-1. Once you have finished configuring the settings and building the package or image, you use DISM to apply the settings.
-   1. Open a command prompt with administrator privileges.
-   1. Copy install.wim to a temporary folder on hard drive (in the following steps, it assumes it's called c:\\wim).
-   1. Create a new directory.
+Once you finish to configure the settings and building the package or image, use DISM to apply the settings:
 
-      ```cmd
-      md c:\wim
-      ```
+1. Open a command prompt with administrator privileges
+1. Copy `install.wim` to a temporary folder on the hard drive (for example, `c:\wim`)
+1. Create a new directory to mount the image:
 
-   1. Mount the image.
-
-      ```cmd
-      dism /mount-wim /wimfile:c:\bootmedia\sources\install.wim /index:1 /MountDir:c:\wim
-      ```
-
-   1. Enable the feature.
-
-      ```cmd
-      dism /image:c:\wim /enable-feature /featureName:Client-EmbeddedBootExp
-      ```
-
-   1. Commit the change.
-
-      ```cmd
-      dism /unmount-wim /MountDir:c:\wim /Commit
-      ```
+    ```cmd
+    md c:\wim
+    ```
+1. Mount the image:
+    ```cmd
+    dism /mount-wim /wimfile:c:\bootmedia\sources\install.wim /index:1 /MountDir:c:\wim
+    ```
+1. Enable the feature:
+    ```cmd
+    dism /image:c:\wim /enable-feature /featureName:Client-EmbeddedBootExp
+    ```
+1. Commit the change:
+    ```cmd
+    dism /unmount-wim /MountDir:c:\wim /Commit
+    ```
 
 ---
 
 In the following image:
 
-1. `BootLogo` is outlined in green, the
+1. `BootLogo` is outlined in green
 1. `BootStatusIndicator` is outlined in red
 1. `BootStatusMessage` is outlined in blue
 
