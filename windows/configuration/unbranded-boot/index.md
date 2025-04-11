@@ -46,6 +46,9 @@ To enable Unbranded Boot using PowerShell, follow these steps:
 
 The following instructions provide details about how to configure your devices. Select the option that best suits your needs.
 
+> [!NOTE]
+> If Windows is already installed, you can't apply a provisioning package to configure Unbranded Boot. Instead, you must use the command prompt to configure Unbranded Boot.
+
 #### [:::image type="icon" source="../images/icons/cmd.svg"::: **Command prompt**](#tab/cmd)
 
 You can use the `bcdedit.exe` command to configure Unbranded Boot settings at runtime.
@@ -72,7 +75,7 @@ You can use the `bcdedit.exe` command to configure Unbranded Boot settings at ru
    bcdedit.exe -set {globalsettings} bootuxdisabled on
    ```
 
-1. Run the following command to suppress any error screens that are displayed during boot. If **noerrordisplay** is on and the boot manager hits a *WinLoad Error* or *Bad Disk Error*, the system displays a black screen
+1. Run the following command to suppress any error screens that are displayed during boot. If `noerrordisplay` is set to `on` and the boot manager hits a *WinLoad Error* or *Bad Disk Error*, the system displays a black screen
 
    ```cmd
    bcdedit.exe -set {bootmgr} noerrordisplay on
@@ -80,7 +83,7 @@ You can use the `bcdedit.exe` command to configure Unbranded Boot settings at ru
 
 #### [:::image type="icon" source="../images/icons/xml.svg"::: **Unattend**](#tab/unattend)
 
-You can configure the Unattend settings in the `Microsoft-Windows-Embedded-BootExp` component to add Unbranded Boot features to your image during the design or imaging phase. You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file. For more information about the Unbranded Boot settings and XML examples, see the settings in [Microsoft-Windows-Embedded-BootExp](/windows-hardware/customize/desktop/unattend/microsoft-windows-embedded-bootexp).
+You can configure the Unattend settings in the `Microsoft-Windows-Embedded-BootExp` component to add Unbranded Boot features to your image during the design or imaging phase. You can manually create an Unattend answer file or use Windows System Image Manager (Windows SIM) to add the appropriate settings to your answer file.
 
 ### Unbranded Boot settings
 
@@ -95,13 +98,13 @@ The following table lists Unbranded Boot settings and their values.
 | `HideBootStatusIndicator` | Contains an integer that suppresses the status indicator that displays during the OS loading phase. | - Set to `1` to suppress the status indicator<br>- The default value is `0`|
 | `HideBootStatusMessage` | Contains an integer that suppresses the startup status text that displays during the OS loading phase. | - Set to `1` to suppress the startup status text<br>- The default value is `0`|
 
+For more information about the Unbranded Boot settings and XML examples, see the settings in [Microsoft-Windows-Embedded-BootExp](/windows-hardware/customize/desktop/unattend/microsoft-windows-embedded-bootexp).
+
 #### [:::image type="icon" source="../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
 Customize the boot screen using Windows Configuration Designer and Deployment Image Servicing and Management (DISM).
 
 You must enable Unbranded Boot on the installation media with DISM before you can apply settings for Unbranded Boot using either Windows Configuration Designer or applying a provisioning package during setup.
-
-If Windows is already installed, you can't apply a provisioning package to configure Unbranded Boot. You must use the command prompt to configure Unbranded Boot if Windows is installed.
 
 [!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
 
