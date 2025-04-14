@@ -8,7 +8,7 @@ author: mestew
 manager: aaroncz
 ms.localizationpriority: medium
 ms.topic: article
-ms.date: 03/18/2025
+ms.date: 04/14/2025
 ms.collection:
   - highpri
   - tier2
@@ -23,6 +23,8 @@ The Windows 10 Extended Security Updates (ESU) program gives customers the optio
 
 Individuals or organizations who elect to continue using Windows 10 after support ends on October 14, 2025, will have the option of enrolling their PCs into a paid ESU subscription. The ESU program enables PCs to continue to receive critical and important security updates through an annual subscription service after support ends. The [Microsoft Security Response Center](https://msrc.microsoft.com/) defines the [severity rating for security updates](https://www.microsoft.com/msrc/security-update-severity-rating-system).
 
+> [!Note]
+> Looking for consumer information? For individuals or Windows 10 Home customers, more information about Extended Security Updates for Windows 10 is available in the frequently asked questions section of the [End of support for Windows 10](https://www.microsoft.com/windows/end-of-support) page. <!--10013381-->
 
 ## Device prerequisites
 
