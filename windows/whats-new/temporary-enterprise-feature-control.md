@@ -8,7 +8,7 @@ author: mestew
 manager: aaroncz
 ms.localizationpriority: medium
 ms.topic: reference
-ms.date: 11/01/2023
+ms.date: 03/27/2025
 ms.collection:
   - highpri
   - tier2
@@ -24,6 +24,9 @@ New features and enhancements are introduced through the monthly cumulative upda
 - Controlled by a policy that allows for [permanent enterprise feature control](#permanent-enterprise-feature-control)
 
 Features that are turned off by default are listed in the KB article for the monthly cumulative update. Typically, a feature is selected to be off by default because it either impacts the user experience or IT administrators significantly. For example, a feature might be turned off by default if it requires a change in user behavior or if it requires IT administrators to take action before the feature can be used.
+
+
+[!INCLUDE [Windows roadmap](./includes/windows-roadmap.md)]
 
 ## Temporary enterprise feature control
 
@@ -57,7 +60,7 @@ The following features are behind temporary enterprise control in Windows 11:
 | Windows Spotlight provides a minimized experience, opportunities to learn more about each image, and allows users to preview images at full screen.<!--8092554, WIP.23511 & WIP.25281, AllowWindowsSpotlight-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310) | [Feature Update to Windows 11, version 23H2](https://support.microsoft.com/kb/5027397) | This feature also has a permanent control: </br></br> **CSP**: ./User/Vendor/MSFT/Policy/Config/Experience/[AllowWindowsSpotlight](/windows/client-management/mdm/policy-csp-experience#allowwindowsspotlight)</br> </br>**Group Policy**: User Configuration\Administrative Templates\Windows Components\Cloud Content\\**Turn off all Windows spotlight features**|
 | Copilot in Windows <!--8092554, WIP.23493 -->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310) | [Feature Update to Windows 11, version 23H2](https://support.microsoft.com/kb/5027397) | This feature has a permanent control. For more information, see the [Windows 11 features with permanent enterprise feature control](#windows-11-features-with-permanent-enterprise-feature-control) section. |
 | Dev Home <!--8092554, WIP.23506-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310) | [Feature Update to Windows 11, version 23H2](https://support.microsoft.com/kb/5027397) | `Get-AppxPackage -Name Microsoft.Windows.DevHome` |
-| Dev Drive <!--8092554, WIP.23466-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310) | [Feature Update to Windows 11, version 23H2](https://support.microsoft.com/kb/5027397) | This feature has multiple permanent controls. For more information, see the [Windows 11 features with permanent enterprise feature control](#windows-11-features-with-permanent-enterprise-feature-control) section | 
+| Dev Drive <!--8092554, WIP.23466-->| [September 2023 - KB5030310](https://support.microsoft.com/kb/5030310) | [Feature Update to Windows 11, version 23H2](https://support.microsoft.com/kb/5027397) | This feature has multiple permanent controls. For more information, see the [Windows 11 features with permanent enterprise feature control](#windows-11-features-with-permanent-enterprise-feature-control) section |
 
 ## Permanent enterprise feature control
 
