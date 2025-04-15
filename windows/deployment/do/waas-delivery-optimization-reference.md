@@ -293,7 +293,7 @@ This setting determines whether a device will be allowed to participate in Peer 
 
 MDM Setting: **DOVpnKeywords**
 
-This policy allows you to configure one or more comma-separated keywords used to recognize VPN connections. **By default, this policy is not configured so if a VPN is detected, the device will not use peering.** Delivery Optimization automatically detects a VPN connection by looking at the network adapter's 'Description' and 'FriendlyName' strings using the default keyword list including: "VPN", "Secure", and "Virtual Private Network" (ex: "MSFTVPN" matches the "VPN" keyword). As the number of VPNs grow it's difficult to support an ever-changing list of VPN names. To address this, we've introduced this new setting to add unique VPN names to meet the needs of individual environments.
+This policy allows you to configure one or more comma-separated keywords used to recognize VPN connections. **By default, this policy is not configured so if a VPN is detected, the device will not use peering.** Delivery Optimization automatically detects a VPN connection by looking at the network adapter's 'Description' and 'FriendlyName' strings using the default keyword list including: "VPN", "Secure", and "Virtual Private Network" (ex: "MSFTVPN" matches the "VPN" keyword). As the number of VPNs grow it's difficult to support an ever-changing list of VPN names. To address this, we've introduced this new setting to add unique VPN names to meet the needs of individual environments. This policy is applied only when the network adapter identifies as ```IF_TYPE_ETHERNET_CSMACD``` or ```IF_TYPE_TUNNEL``` interface types.
 
 ### Disallow cache server downloads on VPN
 
@@ -329,7 +329,7 @@ This policy allows you to specify how your client(s) can discover Delivery Optim
 - 1 = DHCP Option 235.
 - 2 = DHCP Option 235 Force.
 
-With either option, the client queries DHCP Option ID 235 and use the returned value as the Cache Server Hostname. Option 2 overrides the Cache Server Hostname policy, if configured. **By default, this policy has no value.**
+With either option, the client queries DHCP Option ID 235 and uses the returned value as the Cache Server Hostname. If [DOCacheHost](#cache-server-hostname) policy is also configured, then DHCP Option 235 Force (2) is required to override it. **By default, this policy has no value.**
 
 Configure this policy to designate Delivery Optimization in Network Cache servers through a custom DHCP Option. Specify the custom DHCP option on your DHCP server as *text* type. You can add one or more values as either fully qualified domain names (FQDN) or IP addresses. To add multiple values, separate each FQDN or IP address with commas.
 
