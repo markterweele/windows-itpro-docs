@@ -30,8 +30,8 @@ summary: |
   - [Delivery Optimization is downloading Windows content on my devices directly from an IP Address, is it expected?](#delivery-optimization-is-downloading-windows-content-on-my-devices-directly-from-an-ip-address--is-it-expected)
   - [How do I turn off Delivery Optimization?](#how-do-i-turn-off-delivery-optimization)
   - [My download is failing with error code 0x80d03002, how do I fix it?](#my-download-is-failing-with-error-code-0x80d03002--how-do-i-fix-it)
-  - [What do the Delivery Optimization error codes mean?](#delivery-optimization-error-codes)
-  - [How does Delivery Optimization measure and throttle download bandwidth?](#how-does-delivery-optimization-calculate-the-allowed-bandwidth)
+  - [What do the Delivery Optimization error codes mean?](#what-do-the-delivery-optimization-error-codes-mean)
+  - [How does Delivery Optimization measure and throttle download bandwidth?](#how-does-delivery-optimization-measure-and-throttle-download-bandwidth)
 
   **Network related configuration questions**:
  
