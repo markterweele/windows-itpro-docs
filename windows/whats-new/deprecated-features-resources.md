@@ -1,7 +1,7 @@
 ---
 title: Resources for deprecated features in the Windows client
 description: Resources and details for deprecated features in the Windows client.
-ms.date: 08/14/2024
+ms.date: 04/08/2025
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
@@ -24,6 +24,15 @@ This article provides more information about some [deprecated features for Windo
 ## Maps app
 
 Maps is deprecated and will be removed from the Microsoft Store by **[DATE TBD]**. At this time, there will also be a final update to the app from the Store that makes it nonfunctional. If you remove the app before **[DATE TBD]**, you can still reinstall it from the Store, but past **[DATE TBD]** you won't be able to reinstall it. You'll be able to uninstall the app at any time. Any personal data or files you have saved, such as guided navigation or URLs to maps, won't be removed, but they'll no longer function in the Maps app past **[DATE TBD]**. If you wish to still use maps powered by the Bing service, please visit [https://www.bing.com/maps](https://www.bing.com/maps). Maps is no longer preinstalled with Windows starting with the Windows 11, version 24H2 release. 
+
+## Windows UWP Map control and Windows Maps platform APIs
+
+In May 2024, we announced the unification of [Bing Maps for Enterprise](https://blogs.bing.com/maps/2024-05/Microsoft-Announces-Vision-for-Next-Generation-of-Enterprise-Maps) with [Azure Maps](https://azure.microsoft.com/products/azure-maps). This means that going forward, Azure Maps will combine the best of Bing Maps for Enterprise and Azure Maps. If your solution uses the Windows UWP Map control, look to move to an Azure Maps based replacement within one year of this deprecation notice rather than the end date for the entire Bing Maps for Enterprise platform. The following resources can help you with this transition:
+- [Migrate from Bing Maps to Azure Maps](/azure/azure-maps/migrate-bing-maps-overview)
+- [Use the Azure Maps map control](/azure/azure-maps/how-to-use-map-control)
+- [Azure Maps code samples](https://samples.azuremaps.com/)
+- [Bing Maps Blog](https://blogs.bing.com/maps)
+- [Azure Maps Blog](https://techcommunity.microsoft.com/category/azure/blog/azuremapsblog)
 
 ## Paint 3D
 

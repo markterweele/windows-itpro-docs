@@ -1,7 +1,7 @@
 ---
 title: Configuration service provider preview policies
 description: Learn more about configuration service provider (CSP) policies that are available for Windows Insider Preview.
-ms.date: 02/13/2025
+ms.date: 04/04/2025
 ms.topic: generated-reference
 ---
 
@@ -23,6 +23,7 @@ This article lists the policies that are applicable for Windows Insider Preview 
 ## ApplicationManagement
 
 - [AllowedNonAdminPackageFamilyNameRules](policy-csp-applicationmanagement.md#allowednonadminpackagefamilynamerules)
+- [ConfigureMSIXAuthenticationAuthorizedDomains](policy-csp-applicationmanagement.md#configuremsixauthenticationauthorizeddomains)
 
 ## ClientCertificateInstall CSP
 
@@ -92,9 +93,8 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 ## HumanPresence
 
-- [ForcePrivacyScreen](policy-csp-humanpresence.md#forceprivacyscreen)
-- [ForcePrivacyScreenDim](policy-csp-humanpresence.md#forceprivacyscreendim)
-- [ForcePrivacyScreenNotification](policy-csp-humanpresence.md#forceprivacyscreennotification)
+- [ForceOnlookerDetection](policy-csp-humanpresence.md#forceonlookerdetection)
+- [ForceOnlookerDetectionAction](policy-csp-humanpresence.md#forceonlookerdetectionaction)
 
 ## InternetExplorer
 
@@ -110,6 +110,16 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [EnableLanguageFeatureInstallations](language-pack-management-csp.md#installlanguage-idenablelanguagefeatureinstallations)
 - [StartInstallation](language-pack-management-csp.md#installlanguage-idstartinstallation)
 - [SystemPreferredUILanguages](language-pack-management-csp.md#languagesettingssystempreferreduilanguages)
+
+## LanmanWorkstation
+
+- [AuditInsecureGuestLogon](policy-csp-lanmanworkstation.md#auditinsecureguestlogon)
+- [AuditServerDoesNotSupportEncryption](policy-csp-lanmanworkstation.md#auditserverdoesnotsupportencryption)
+- [AuditServerDoesNotSupportSigning](policy-csp-lanmanworkstation.md#auditserverdoesnotsupportsigning)
+- [EnableMailslots](policy-csp-lanmanworkstation.md#enablemailslots)
+- [MaxSmb2Dialect](policy-csp-lanmanworkstation.md#maxsmb2dialect)
+- [MinSmb2Dialect](policy-csp-lanmanworkstation.md#minsmb2dialect)
+- [RequireEncryption](policy-csp-lanmanworkstation.md#requireencryption)
 
 ## LocalPoliciesSecurityOptions
 
@@ -133,6 +143,10 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 - [DisablePostLogonProvisioning](passportforwork-csp.md#devicetenantidpoliciesdisablepostlogonprovisioning)
 
+## Power
+
+- [EnableEnergySaver](policy-csp-power.md#enableenergysaver)
+
 ## Printers
 
 - [ConfigureIppTlsCertificatePolicy](policy-csp-printers.md#configureipptlscertificatepolicy)
@@ -140,6 +154,17 @@ This article lists the policies that are applicable for Windows Insider Preview 
 ## RemoteDesktopServices
 
 - [TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME](policy-csp-remotedesktopservices.md#ts_server_remoteapp_use_shellappruntime)
+
+## RemoteRemediation CSP
+
+- [EnableCloudRemediation](remoteremediation-csp.md#cloudremediationsettingsenablecloudremediation)
+- [EnableAutoRemediation](remoteremediation-csp.md#cloudremediationsettingsautoremediationsettingsenableautoremediation)
+- [SetTimeToReboot](remoteremediation-csp.md#cloudremediationsettingsautoremediationsettingssettimetoreboot)
+- [SetRetryInterval](remoteremediation-csp.md#cloudremediationsettingsautoremediationsettingssetretryinterval)
+- [NetworkSSID](remoteremediation-csp.md#cloudremediationsettingsnetworksettingsnetworkcredentialsnetworkssid)
+- [NetworkPassword](remoteremediation-csp.md#cloudremediationsettingsnetworksettingsnetworkcredentialsnetworkpassword)
+- [NetworkPasswordEncryptionType](remoteremediation-csp.md#cloudremediationsettingsnetworksettingsnetworkcredentialsnetworkpasswordencryptiontype)
+- [NetworkPasswordEncryptionStore](remoteremediation-csp.md#cloudremediationsettingsnetworksettingsnetworkcredentialsnetworkpasswordencryptionstore)
 
 ## SettingsSync
 
@@ -153,6 +178,10 @@ This article lists the policies that are applicable for Windows Insider Preview 
 ## SurfaceHub CSP
 
 - [ExchangeModernAuthEnabled](surfacehub-csp.md#deviceaccountexchangemodernauthenabled)
+
+## System
+
+- [DisableCHPE](policy-csp-system.md#disablechpe)
 
 ## TextInput
 
@@ -169,10 +198,12 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 ## WindowsAI
 
+- [DisableAIDataAnalysis](policy-csp-windowsai.md#disableaidataanalysis)
 - [SetDenyAppListForRecall](policy-csp-windowsai.md#setdenyapplistforrecall)
 - [SetDenyUriListForRecall](policy-csp-windowsai.md#setdenyurilistforrecall)
 - [SetMaximumStorageSpaceForRecallSnapshots](policy-csp-windowsai.md#setmaximumstoragespaceforrecallsnapshots)
 - [SetMaximumStorageDurationForRecallSnapshots](policy-csp-windowsai.md#setmaximumstoragedurationforrecallsnapshots)
+- [DisableClickToDo](policy-csp-windowsai.md#disableclicktodo)
 - [DisableImageCreator](policy-csp-windowsai.md#disableimagecreator)
 - [DisableCocreator](policy-csp-windowsai.md#disablecocreator)
 - [DisableGenerativeFill](policy-csp-windowsai.md#disablegenerativefill)
