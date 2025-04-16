@@ -1,7 +1,7 @@
 ---
 title: Available Microsoft Defender SmartScreen settings
 description: A list of all available settings for Microsoft Defender SmartScreen using Group Policy and mobile device management (MDM) settings.
-ms.date: 10/10/2024
+ms.date: 04/15/2025
 ms.topic: reference
 ---
 
@@ -42,16 +42,16 @@ By default, Microsoft Defender SmartScreen lets users bypass warnings. Unfortuna
 
 To better help you protect your organization, we recommend turning on and using these specific Microsoft Defender SmartScreen Group Policy and MDM settings.
 
-|Group Policy setting|Recommendation|
-|--- |--- |
-|Administrative Templates > Windows Components > Microsoft Edge > Configure Windows Defender SmartScreen|**Enable.**  Turns on Microsoft Defender SmartScreen.|
-|Administrative Templates > Windows Components > Microsoft Edge > Prevent bypassing Windows Defender SmartScreen prompts for sites|**Enable.**  Stops users from ignoring warning messages and continuing to a potentially malicious website.|
-|Administrative Templates > Windows Components > Explorer > Configure Windows Defender SmartScreen|**Enable with the Warn and prevent bypass option.**  Stops users from ignoring warning messages about malicious files downloaded from the Internet.|
+| Group Policy setting | Recommendation |
+|--|--|
+| Administrative Templates > Windows Components > Microsoft Edge > Configure Windows Defender SmartScreen | **Enable.**  Turns on Microsoft Defender SmartScreen. |
+| Administrative Templates > Windows Components > Microsoft Edge > Prevent bypassing Windows Defender SmartScreen prompts for sites | **Enable.**  Stops users from ignoring warning messages and continuing to a potentially malicious website. |
+| Administrative Templates > Windows Components > Explorer > Configure Windows Defender SmartScreen | **Enable with the Warn and prevent bypass option.**  Stops users from ignoring warning messages about malicious files downloaded from the Internet. |
 
-|MDM setting|Recommendation|
-|--- |--- |
-|Browser/AllowSmartScreen|**1.**  Turns on Microsoft Defender SmartScreen.|
-|Browser/PreventSmartScreenPromptOverride|**1.**  Stops users from ignoring warning messages and continuing to a potentially malicious website.|
-|Browser/PreventSmartScreenPromptOverrideForFiles|**1.**  Stops users from ignoring warning messages and continuing to download potentially malicious files.|
-|SmartScreen/EnableSmartScreenInShell|**1.**  Turns on Microsoft Defender SmartScreen in Windows.<br/><br/>Requires at least Windows 10, version 1703.|
-|SmartScreen/PreventOverrideForFilesInShell|**1.**  Stops users from ignoring warning messages about malicious files downloaded from the Internet.<br/><br/>Requires at least Windows 10, version 1703.|
+| MDM setting | Recommendation |
+|--|--|
+| Browser/AllowSmartScreen | **1.**  Turns on Microsoft Defender SmartScreen. |
+| Browser/PreventSmartScreenPromptOverride | **1.**  Stops users from ignoring warning messages and continuing to a potentially malicious website. |
+| Browser/PreventSmartScreenPromptOverrideForFiles | **1.**  Stops users from ignoring warning messages and continuing to download potentially malicious files. |
+| SmartScreen/EnableSmartScreenInShell | **1.**  Turns on Microsoft Defender SmartScreen in Windows.<br/><br/>Requires at least Windows 10, version 1703. |
+| SmartScreen/PreventOverrideForFilesInShell | **1.**  Stops users from ignoring warning messages about malicious files downloaded from the Internet.<br/><br/>Requires at least Windows 10, version 1703. |
