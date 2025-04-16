@@ -23,7 +23,7 @@ This article provides more information about some [deprecated features for Windo
 
 ## Maps app
 
-Maps is deprecated and will be removed from the Microsoft Store by **[DATE TBD]**. At this time, there will also be a final update to the app from the Store that makes it nonfunctional. If you remove the app before **[DATE TBD]**, you can still reinstall it from the Store, but past **[DATE TBD]** you won't be able to reinstall it. You'll be able to uninstall the app at any time. Any personal data or files you have saved, such as guided navigation or URLs to maps, won't be removed, but they'll no longer function in the Maps app past **[DATE TBD]**. If you wish to still use maps powered by the Bing service, please visit [https://www.bing.com/maps](https://www.bing.com/maps). Maps is no longer preinstalled with Windows starting with the Windows 11, version 24H2 release. 
+Maps is deprecated and will be removed from the Microsoft Store by July 2025. At this time, there will also be a final update to the app from the Store that makes it nonfunctional. If you remove the app before July 2025, you can still reinstall it from the Store, but past July 2025 you won't be able to reinstall it. You'll be able to uninstall the app at any time. Any personal data or files you have saved, such as guided navigation or URLs to maps, won't be removed, but they'll no longer function in the Maps app past July 2025. If you wish to still use maps powered by the Bing service, please visit [https://www.bing.com/maps](https://www.bing.com/maps). Maps is no longer preinstalled with Windows starting with the Windows 11, version 24H2 release. 
 
 ## Windows UWP Map control and Windows Maps platform APIs
 
