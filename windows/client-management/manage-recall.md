@@ -203,7 +203,7 @@ If the client does not support screen capture protection, then it's an easy feat
 
 If you're a developer and want to launch Recall, you can call the `ms-recall` protocol URI. When you call this URI, Recall opens and takes a snapshot of the screen, which is the default behavior for when Recall is launched. For more information about using Recall in your Windows app, see [Recall overview](/windows/ai/apis/recall) in the Windows AI API documentation.
 
-If your remote desktop connection doesn't support screen capture protection, then it's an easy feature to add. Windows allows applications to exclude their window from being included in screenshot. This DRM flag is set by the application as a property on its window. It's a simple feature for application developers to implement using [SetWindowDisplayAffinity function (winuser.h)](/win32/api/winuser/nf-winuser-setwindowdisplayaffinity). By setting the flag `WDA_EXCLUDEFROMCAPTURE`, the window content won't show up in Recall or any other screenshot application. 
+If your remote desktop connection doesn't support screen capture protection, then it's an easy feature to add. Windows allows applications to exclude their window from being included in screenshot. This DRM flag is set by the application as a property on its window. It's a simple feature for application developers to implement using [SetWindowDisplayAffinity function (winuser.h)](/windows/win32/api/winuser/nf-winuser-setwindowdisplayaffinity). By setting the flag `WDA_EXCLUDEFROMCAPTURE`, the window content won't show up in Recall or any other screenshot application. 
 
 ## Microsoft's commitment to responsible AI
 
@@ -217,11 +217,12 @@ Searches using terms for items or text that appear in an image yield more accura
 
 Recall uses optical character recognition (OCR), local to the PC, to analyze snapshots and facilitate search. For more information about OCR, see [Transparency note and use cases for OCR](/legal/cognitive-services/computer-vision/ocr-transparency-note). For more information about privacy and security, see [Privacy and control over your Recall experience](https://support.microsoft.com/windows/privacy-and-control-over-your-recall-experience-d404f672-7647-41e5-886c-a3c59680af15).
 
-## Feedback
+## Providing feedback to Microsoft about Recall
 
 If there's something you like, and especially if there's something you don't like about Recall you can submit feedback to Microsoft by selecting **…** then the Feedback icon in Recall. Filing feedback will send data from Recall to Microsoft, including any screenshots that a user attaches to the feedback.
 
 ## Related links
+
 - [Policy CSP - WindowsAI](/windows/client-management/mdm/policy-csp-windowsai)
 - [Manage Click to Do](manage-click-to-do.md)
 - [Update on Recall security and privacy architecture](https://blogs.windows.com/windowsexperience/2024/09/27/update-on-recall-security-and-privacy-architecture/)
