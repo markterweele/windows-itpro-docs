@@ -46,15 +46,17 @@ Like any Windows feature, some diagnostic data may be provided based on the user
 
 ### Click to Do privacy considerations  
 
-Recall uses Click to Do, which allows the user to interact with the content in snapshots. Click to Do can run on top of:
+Recall uses Click to Do, which allows the user to interact with the content in snapshots.
+
+> [!IMPORTANT]
+> The policy to manage Click to Do doesn't affect Click to Do in Recall. For more information, see [Manage Click to Do](manage-click-to-do.md). 
+
+Click to Do can run on top of:
 
 - The current screen when the **Now** button is selected
 - Snapshots that have already been saved
 
 For snapshots that have already been saved, info from filtered apps and websites along with private browsing activity from supported browsers is removed. Click to Do can't access info that was removed by filters when it's analyzing saved snapshots. When the **Now** option is selected, a snapshot is taken without private browsing windows, filtered apps, and filtered websites. These snapshots are displayed and locally analyzed but only saved if you have [saving snapshots enabled](#allow-recall-and-snapshots-policies). When using the **Now** option, Click to Do analyzes only what's active on the screen. It doesn't analyze content that's inside minimized apps that aren't on screen. 
-
-> [!IMPORTANT]
-> The policy to manage Click to Do doesn't affect Click to Do in Recall. For more information, see [Manage Click to Do](manage-click-to-do.md).  
 
 [!Include [Click to Do privacy considerations](./includes/click-to-do-privacy.md)]
 
