@@ -36,7 +36,7 @@ When Recall opens a snapshot you selected, it enables Click to Do, which runs on
 
 ### Recall security and privacy architecture
 
-Privacy and security are built into Recall's design. With Copilot+ PCs, you get powerful AI that runs locally on the device. No internet or cloud connections are required or used to save and analyze snapshots. Snapshots aren't sent to Microsoft. Recall AI processing occurs locally, and snapshots are securely stored on the local device only. <!--9608247-->
+Privacy and security are built into Recall's design. With Copilot+ PCs, you get powerful AI that runs locally on the device. No internet or cloud connections are required or used to save and analyze snapshots. Snapshots aren't sent to Microsoft. Recall AI processing occurs locally, and snapshots are securely stored on the local device only. <!--9608247-->Any future options for the user to share data will require fully informed explicit action by the user.
 
 Recall doesn't share snapshots with other users that are signed into Windows on the same device and IT admins can't access or view the snapshots on end-user devices. Microsoft can't access or view the snapshots. Recall requires users to confirm their identity with [Windows Hello](https://support.microsoft.com/windows/configure-windows-hello-dae28983-8242-bb2a-d3d1-87c9d265a5f0) before it launches and before accessing snapshots. At least one biometric sign-in option must be enabled for Windows Hello, either facial recognition or a fingerprint, to launch and use Recall. Before snapshots start getting saved to the device, users need to open Recall and authenticate. Recall takes advantage of just in time decryption protected by [Hello Enhanced Sign-in Security (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security). Snapshots and any associated information in the vector database are always encrypted. Encryption keys are protected via Trusted Platform Module (TPM), which is tied to the user's Windows Hello ESS identity, and can be used by operations within a secure environment called a [Virtualization-based Security Enclave (VBS Enclave)](/windows/win32/trusted-execution/vbs-enclaves). This means that other users can't access these keys and thus can't decrypt this information. Device Encryption or BitLocker are enabled by default on Windows 11. For more information, see [Recall security and privacy architecture in the Windows Experience Blog](https://blogs.windows.com/windowsexperience/?p=179096).
 
@@ -56,7 +56,7 @@ For snapshots that have already been saved, info from filtered apps and websites
 > [!IMPORTANT]
 > The policy to manage Click to Do doesn't affect Click to Do in Recall. For more information, see [Manage Click to Do](manage-click-to-do.md).  
 
-[!Include [Click to Do privacy considerations](../includes/click-to-do-privacy.md)]
+[!Include [Click to Do privacy considerations](./includes/click-to-do-privacy.md)]
 
 
 ## System requirements
@@ -185,15 +185,16 @@ If you're using a virtual desktop setup to protect your data, make sure you test
 
 For managed devices, IT admins have control over if they want to allow users access to Recall. It's removed by default unless IT sets the policy to enable Recall. When organizations allow users to BYOD, they need to consider the following:
 
-- **Recall availability**: For unmanaged Copilot+ PC devices, Recall is available by default. Users can enable or disable Recall on their own. 
+- **Recall availability**: For unmanaged Copilot+ PC devices, Recall is available by default but a user has to opt in to save snapshots. Users can enable or disable Recall on their own. If multiple people sign in on a device with different accounts, each person needs to make the decision on if they would like to allow saving snapshots or not.
 
 - **Conditional access restrictions**: On unmanaged devices, there isn't a way to determine if Recall is running and saving snapshots. Currently, there aren't any built-in [Conditional Access policies in Microsoft Intune](/mem/intune-service/protect/create-conditional-access-intune) or in [Microsoft Entra](/entra/identity/conditional-access/overview) for Recall. 
 
-- **Security threat of screenshots**: Recall uses general Windows screenshot APIs. There are numerous applications available for screen recording and screenshots. Recall is only one. It's a general security risk to allow screenshots of content that you want to prevent from being exfiltrated. Determine whether your content is already at risk from these types of applications, or not.
+- **Security threat of screenshots**: Like numerous available applications for screen recording and snapshots, Recall uses general Windows screenshot APIs. It's a general security risk to allow screenshots of content that you want to prevent from being exfiltrated. Admins should ensure their sensitive content is protected from this type of risk. To help ensure your protected content stays protected, Recall will not store DRM content.
 
-- **Recall and virtual machines**: If you're using a virtual desktop setup to protect your data, make sure you test that your supported clients honor *screen capture protection*. For example, both [Azure Virtual Desktop](/azure/virtual-desktop/overview) and [Windows 365](/windows-365/overview) have policies that you can set to prevent your content from being saved in a screenshot. For instance, there's [screen capture protection in Azure Virtual Desktop](/azure/virtual-desktop/screen-capture-protection). Check with the provider of your remote client software to see if they have a similar policy. 
+- **Recall and virtual machines**: If you're using a virtual desktop setup to protect your data, make sure you test that your supported clients honor screen capture protection. For example, both [Azure Virtual Desktop](/azure/virtual-desktop/overview) and [Windows 365](/windows-365/overview) have policies that you can set to prevent your content from being saved in a screenshot. For instance, there's [screen capture protection in Azure Virtual Desktop](/azure/virtual-desktop/screen-capture-protection). Check with the provider of your remote client software to see if they have a similar policy. For information about adding screen capture protection to a client, see the [Information for developers](#information-for-developers) section. 
 
-   If the client does not support screen capture protection, then it's an easy feature to add. Windows allows applications to exclude their window from being included in screenshot. This DRM flag is set by the application as a property on its window. It's a simple feature for application developers to implement using [SetWindowDisplayAffinity function (winuser.h)](/win32/api/winuser/nf-winuser-setwindowdisplayaffinity). By setting the flag `WDA_EXCLUDEFROMCAPTURE`, the window content won't show up in Recall or any other screenshot application. 
+
+If the client does not support screen capture protection, then it's an easy feature to add. Windows allows applications to exclude their window from being included in screenshot. This DRM flag is set by the application as a property on its window. It's a simple feature for application developers to implement using [SetWindowDisplayAffinity function (winuser.h)](/windows/win32/api/winuser/nf-winuser-setwindowdisplayaffinity). By setting the flag `WDA_EXCLUDEFROMCAPTURE`, the window content won't show up in Recall or any other screenshot application. 
 
 - **Office content**: If Office content is only accessible inside the virtual desktop client, it can be protected from screen capture like all content on the virtual desktop. If Office content is accessible in the BYOD browser, you can try using protection with Purview, which is a Microsoft Data Loss Prevention tool. This allows you to create sensitivity classes that would prevent screenshots. You could, for example, set a policy such that all Office documents are excluded from screenshots. For more information, see [Protect Office documents with Microsoft Purview Information Protection](/deployedge/microsoft-edge-management-service-office-mip).
 
@@ -202,14 +203,27 @@ For managed devices, IT admins have control over if they want to allow users acc
 
 If you're a developer and want to launch Recall, you can call the `ms-recall` protocol URI. When you call this URI, Recall opens and takes a snapshot of the screen, which is the default behavior for when Recall is launched. For more information about using Recall in your Windows app, see [Recall overview](/windows/ai/apis/recall) in the Windows AI API documentation.
 
+If your remote desktop connection doesn't support screen capture protection, then it's an easy feature to add. Windows allows applications to exclude their window from being included in screenshot. This DRM flag is set by the application as a property on its window. It's a simple feature for application developers to implement using [SetWindowDisplayAffinity function (winuser.h)](/win32/api/winuser/nf-winuser-setwindowdisplayaffinity). By setting the flag `WDA_EXCLUDEFROMCAPTURE`, the window content won't show up in Recall or any other screenshot application. 
+
 ## Microsoft's commitment to responsible AI
 
 Microsoft has been on a responsible AI journey since 2017, when we defined our principles and approach to ensuring this technology is used in a way that is driven by ethical principles that put people first. For more about our responsible AI journey, the ethical principles that guide us, and the tooling and capabilities we've created to assure that we develop AI technology responsibly, see [Responsible AI](https://www.microsoft.com/ai/responsible-ai).
 
+Recall's models use contextual cues in the entire image, including people or entities in the background, which is how the models can still associate the image with an individual, or describe emotions. Biometric data and inferencing are not used. Any processing that returns results that identify an individual or infer an individual's emotion is not the result of processing of the face, such as facial recognition, generation and comparison of facial templates, or other facial inferencing. For example, if an image contains a photo of a popular athlete wearing their team's jersey and their specific number, the models may still return a result that might identify the individual based on those contextual cues.
+
+Recall can respond to questions related to perceived emotions of people in images. The processes underlying human emotion are complex, and there are cultural, geographical, and individual differences that influence how we may perceive, experience, and express emotions. Responses related to the emotions of people in images are based on how they appear and may not necessarily accurately indicate the internal state of individual people. 
+
+Searches using terms for items or text that appear in an image yield more accurate results over searches using terms that don't directly appear in images but might be perceived about an image. Using distinctive terms rather than ambiguous terms also yield more accurate results.
+
 Recall uses optical character recognition (OCR), local to the PC, to analyze snapshots and facilitate search. For more information about OCR, see [Transparency note and use cases for OCR](/legal/cognitive-services/computer-vision/ocr-transparency-note). For more information about privacy and security, see [Privacy and control over your Recall experience](https://support.microsoft.com/windows/privacy-and-control-over-your-recall-experience-d404f672-7647-41e5-886c-a3c59680af15).
+
+## Feedback
+
+If there's something you like, and especially if there's something you don't like about Recall you can submit feedback to Microsoft by selecting **…** then the Feedback icon in Recall. Filing feedback will send data from Recall to Microsoft, including any screenshots that a user attaches to the feedback.
 
 ## Related links
 - [Policy CSP - WindowsAI](/windows/client-management/mdm/policy-csp-windowsai)
+- [Manage Click to Do](manage-click-to-do.md)
 - [Update on Recall security and privacy architecture](https://blogs.windows.com/windowsexperience/2024/09/27/update-on-recall-security-and-privacy-architecture/)
 - [Retrace your steps with Recall](https://support.microsoft.com/windows/aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c)
 - [Privacy and control over your Recall experience](https://support.microsoft.com/windows/d404f672-7647-41e5-886c-a3c59680af15)
