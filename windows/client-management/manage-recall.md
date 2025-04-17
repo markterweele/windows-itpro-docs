@@ -3,7 +3,7 @@ title: Manage Recall for Windows clients
 description: Learn how to manage Recall for commercial environments and about Recall features.
 ms.topic: how-to
 ms.subservice: windows-copilot
-ms.date: 11/22/2024
+ms.date: 04/22/2025
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -15,7 +15,7 @@ appliesto:
 
 
 # Manage Recall
-<!--8908044-->
+<!--8908044, 9608247-->
 >**Looking for consumer information?** See [Retrace your steps with Recall](https://support.microsoft.com/windows/retrace-your-steps-with-recall-aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c).
 
 Recall (preview) allows users to search locally saved and locally analyzed snapshots of their screen using natural language. By default, Recall is disabled and removed on managed devices. IT admins can choose if they want to allow Recall to be used in their organizations and users, on their own, won't be able to enable it on their managed device if the Allow Recall policy is disabled. IT admins, on their own, can't start saving snapshots for end users. Recall is an opt-in experience that requires end user consent to save snapshots. Users can choose to enable or disable saving snapshots for themselves anytime. IT admins can only set policies that give users the option to enable saving snapshots and configure certain policies for Recall.
@@ -23,7 +23,6 @@ Recall (preview) allows users to search locally saved and locally analyzed snaps
 This article provides information about Recall and how to manage it in a commercial environment.
 
 > [!NOTE]
-> - Recall is now available in preview to Copilot+ PCs through the Windows Insider Program. For more information, see [Previewing Recall with Click to Do on Copilot+ PCs with Windows Insiders in the Dev Channel](https://blogs.windows.com/windows-insider/2024/11/22/previewing-recall-with-click-to-do-on-copilot-pcs-with-windows-insiders-in-the-dev-channel/).
 > - In-market commercial devices are defined as devices with an Enterprise (ENT) or Education (EDU) SKU or any premium SKU device that is managed by an IT administrator (whether via Microsoft Endpoint Manager or other endpoint management solution), has a volume license key, or is joined to a domain. Commercial devices during Out of Box Experience (OOBE) are defined as those with ENT or EDU SKU or any premium SKU device that has a volume license key or is Microsoft Entra joined. 
 > - Recall is optimized for select languages English, Chinese (simplified), French, German, Japanese, and Spanish. Content-based and storage limitations apply. For more information, see [https://aka.ms/copilotpluspcs](https://aka.ms/copilotpluspcs).
 
@@ -37,25 +36,28 @@ When Recall opens a snapshot you selected, it enables Click to Do, which runs on
 
 ### Recall security and privacy architecture
 
-Privacy and security are built into Recall's design. With Copilot+ PCs, you get powerful AI that runs locally on the device. No internet or cloud connections are required or used to save and analyze snapshots. Snapshots aren't sent to Microsoft. Recall AI processing occurs locally, and snapshots are securely stored on the local device only.
+Privacy and security are built into Recall's design. With Copilot+ PCs, you get powerful AI that runs locally on the device. No internet or cloud connections are required or used to save and analyze snapshots. Snapshots aren't sent to Microsoft. Recall AI processing occurs locally, and snapshots are securely stored on the local device only. <!--9608247-->
 
 Recall doesn't share snapshots with other users that are signed into Windows on the same device and IT admins can't access or view the snapshots on end-user devices. Microsoft can't access or view the snapshots. Recall requires users to confirm their identity with [Windows Hello](https://support.microsoft.com/windows/configure-windows-hello-dae28983-8242-bb2a-d3d1-87c9d265a5f0) before it launches and before accessing snapshots. At least one biometric sign-in option must be enabled for Windows Hello, either facial recognition or a fingerprint, to launch and use Recall. Before snapshots start getting saved to the device, users need to open Recall and authenticate. Recall takes advantage of just in time decryption protected by [Hello Enhanced Sign-in Security (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security). Snapshots and any associated information in the vector database are always encrypted. Encryption keys are protected via Trusted Platform Module (TPM), which is tied to the user's Windows Hello ESS identity, and can be used by operations within a secure environment called a [Virtualization-based Security Enclave (VBS Enclave)](/windows/win32/trusted-execution/vbs-enclaves). This means that other users can't access these keys and thus can't decrypt this information. Device Encryption or BitLocker are enabled by default on Windows 11. For more information, see [Recall security and privacy architecture in the Windows Experience Blog](https://blogs.windows.com/windowsexperience/?p=179096).
 
 When using Recall, the **Sensitive information filtering** setting is enabled by default to help ensure your data's confidentiality. This feature operates directly on your device, utilizing the NPU and the Microsoft Classification Engine (MCE) - the same technology leveraged by [Microsoft Purview](/purview/purview) for detecting and labeling sensitive information. When this setting is enabled, snapshots won't be saved when potentially sensitive information is detected. Most importantly, the sensitive information remains on the device at all times, regardless of whether the **Sensitive information filtering** setting is enabled or disabled. For more information about the types of potentially sensitive information, see [Reference for sensitive information filtering in Recall](recall-sensitive-information-filtering.md).
 
-In keeping with Microsoft's commitment to data privacy and security, all saved images and processed data are kept on the device and processed locally. However, Click to Do allows users to choose if they want to perform additional actions on their content.
+Like any Windows feature, some diagnostic data may be provided based on the user's privacy settings. For more information about diagnostic data, see [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization). Occasionally, Recall will get artifacts from the internet from the snapshot URL top-level domain. For example, it will get favicons (website icons) or other website metadata. Recall uses these items to give users a better experience when browsing the Recall timeline or search results.
 
-Click to Do allows users to choose to get more information about their selected content online. When users choose one of the following Click to Do actions, the selected content is sent to the online provider from the local device to complete the request:
+### Click to Do privacy considerations  
 
--	**Search the web**: Sends the selected content to the default search engine of the default browser
--	**Open website**: Opens the selected website in the default browser
--	**Visual search with Bing**: Sends the selected content to Bing visual search using the default browser. 
+Recall uses Click to Do, which allows the user to interact with the content in snapshots. Click to Do can run on top of:
 
-When you choose to send info from Click to Do to an app, like Paint, Click to Do will temporarily save this info in order to complete the transfer. Click to Do creates a temporary file in the following location: 
+- The current screen when the **Now** button is selected
+- Snapshots that have already been saved
 
-- `C:\Users\[username]\AppData\Local\Temp` 
+For snapshots that have already been saved, info from filtered apps and websites along with private browsing activity from supported browsers is removed. Click to Do can't access info that was removed by filters when it's analyzing saved snapshots. When the **Now** option is selected, a snapshot is taken without private browsing windows, filtered apps, and filtered websites. These snapshots are displayed and locally analyzed but only saved if you have [saving snapshots enabled](#allow-recall-and-snapshots-policies). When using the **Now** option, Click to Do analyzes only what's active on the screen. It doesn't analyze content that's inside minimized apps that aren't on screen. 
 
-Temporary files may also be saved when you choose send feedback. These temporary files aren't saved long term. Click to Do doesn't keep any content from your screen after completing the requested action, but some basic telemetry is gathered to keep Click to Do secure, up to date, and working.
+> [!IMPORTANT]
+> The policy to manage Click to Do doesn't affect Click to Do in Recall. For more information, see [Manage Click to Do](manage-click-to-do.md).  
+
+[!Include [Click to Do privacy considerations](../includes/click-to-do-privacy.md)]
+
 
 ## System requirements
 
@@ -88,12 +90,14 @@ By default, Recall is removed on commercially managed devices. If you want to al
 
 - [Allow Recall and snapshots policies](#allow-recall-and-snapshots-policies)
 - [Storage policies](#storage-policies)
+    - Storage policies apply only to Enterprise and Education editions of Windows
 - [App and website filtering policies](#app-and-website-filtering-policies)
+    - Storage policies apply only to Enterprise and Education editions of Windows
 
 
 ### Allow Recall and snapshots policies
 
-The **Allow Recall to be enabled** policy setting allows you to determine whether the Recall optional component is available for end users to enable on their device. By default, Recall is disabled and removed for managed devices. Recall isn't available on managed devices by default, and individual users can't enable Recall on their own. If you disable this policy, the Recall component will be in disabled state and the bits for Recall will be removed from the device. If snapshots were previously saved on the device, they'll be deleted when this policy is disabled. Removing Recall requires a device restart. If the policy is enabled, end users will have Recall available on their device. Depending on the state of the DisableAIDataAnalysis policy (Turn off saving snapshots for use with Recall), end users will be able to choose if they want to save snapshots of their screen and use Recall to find things they've seen on their device.
+The **Allow Recall to be enabled** policy setting allows you to determine whether the Recall optional component is available for end users to enable on their device. By default, Recall is disabled and removed for managed devices. Recall isn't available on managed devices by default, and individual users can't enable Recall on their own. If you disable this policy, the Recall component will be in disabled state and the bits for Recall will be removed from the device. If snapshots were previously saved on the device, they'll be deleted when this policy is disabled. Removing Recall requires a device restart. If the policy is enabled, end users will have Recall available on their device. Depending on the state of the DisableAIDataAnalysis policy (Turn off saving snapshots for use with Recall), end users will be able to choose if they want to save snapshots of their screen and use Recall to find things they've seen on their device. Some Recall policies apply only to Enterprise and Education editions of Windows.
 
 | &nbsp; | Setting  |
 |---|---|
@@ -110,7 +114,10 @@ The **Turn off saving snapshots for Windows** policy allows you to give the user
 
 ### Storage policies
 
-You can define how much disk space Recall can use by using the **Set maximum storage for snapshots used by Recall** policy. You can set the maximum amount of disk space for snapshots to be 10, 25, 50, 75, 100, or 150 GB. When the storage limit is reached, the oldest snapshots are deleted first. When this setting isn't configured, the OS configures the storage allocation for snapshots based on the device storage capacity. 25 GB is allocated when the device storage capacity is 256 GB. 75 GB is allocated when the device storage capacity is 512 GB. 150 GB is allocated when the device storage capacity is 1 TB or higher.	
+You can define how much disk space Recall can use by using the **Set maximum storage for snapshots used by Recall** policy. You can set the maximum amount of disk space for snapshots to be 10, 25, 50, 75, 100, or 150 GB. When the storage limit is reached, the oldest snapshots are deleted first. When this setting isn't configured, the OS configures the storage allocation for snapshots based on the device storage capacity. 25 GB is allocated when the device storage capacity is 256 GB. 75 GB is allocated when the device storage capacity is 512 GB. 150 GB is allocated when the device storage capacity is 1 TB or higher.
+
+> [!NOTE]
+> This setting applies only to Enterprise and Education editions of Windows.
 
 | &nbsp; | Setting  |
 |---|---|
@@ -118,6 +125,9 @@ You can define how much disk space Recall can use by using the **Set maximum sto
 | **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Set maximum storage for snapshots used by Recall** </br></br> User Configuration > Administrative Templates > Windows Components > Windows AI > **Set maximum storage for snapshots used by Recall** |
 
 You can define how long snapshots can be retained on the device by using the **Set maximum duration for storing snapshots used by Recall** policy. You can configure the maximum storage duration to be 30, 60, 90, or 180 days. If the policy isn't configured, snapshots aren't deleted until the maximum storage allocation is reached, and then the oldest snapshots are deleted first.
+
+> [!NOTE]
+> This setting applies only to Enterprise and Education editions of Windows.
 
 | &nbsp; | Setting  |
 |---|---|
@@ -132,6 +142,7 @@ You can filter both apps and websites from being saved in snapshots. Users are a
 To filter websites from being saved in snapshots, use the **Set a list of URIs to be filtered from snapshots for Recall** policy. Define the list using a semicolon to separate URIs. Make sure you include the URL scheme such as `http://`, `file://`, `https://www.`. Sites local to a supported browser like `edge://`, or `chrome://`, are filtered by default. For example: `https://www.Contoso.com;https://www.WoodgroveBank.com;https://www.Adatum.com`
 
 > [!NOTE]
+> - This setting applies only to Enterprise and Education editions of Windows.
 > - Private browsing activity is filtered by default when using [supported web browsers](#supported-browsers). 
 > - Be aware that websites are filtered when they are in the foreground or are in the currently opened tab of a supported browser. Parts of filtered websites can still appear in snapshots such as embedded content, the browser's history, or an opened tab that isn't in the foreground.
 > - Filtering doesn't prevent browsers, internet service providers (ISPs), websites, organizations, or others from knowing that the website was accessed and building a history.
@@ -146,7 +157,8 @@ To filter websites from being saved in snapshots, use the **Set a list of URIs t
 **Set a list of apps to be filtered from snapshots for Recall** policy allows you to filter apps from being saved in snapshots. Define the list using a semicolon to separate apps. The list can include Application User Model IDs (AUMID) or the name of the executable file. For example: `code.exe;Microsoft. WindowsNotepad_8wekyb3d8bbwe!App;ms-teams.exe`
 
 > [!Note]
-> -	Like other Windows apps, such as the Snipping Tool, Recall won't store [digital rights management (DRM)](/windows/win32/wmformat/digital-rights-management-features) content.
+> - This setting applies only to Enterprise and Education editions of Windows.
+> - Like other Windows apps, such as the Snipping Tool, Recall won't store [digital rights management (DRM)](/windows/win32/wmformat/digital-rights-management-features) content. Recall doesn't record audio or save continuous video. It also doesn't save game video when Game Mode is active on platforms that support it.
 > - Changes to this policy take effect after device restart.
 
 | &nbsp; | Setting  |
@@ -155,7 +167,7 @@ To filter websites from being saved in snapshots, use the **Set a list of URIs t
 | **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Set a list of apps to be filtered from snapshots for Recall** </br></br>User Configuration > Administrative Templates > Windows Components > Windows AI > **Set a list of apps to be filtered from snapshots for Recall**|
 
 
-#### Remote desktop connection clients filtered from snapshots
+## Remote desktop connection clients filtered from snapshots
 
 Snapshots won't be saved when remote desktop connection clients are used. The following remote desktop connection clients are filtered from snapshots:<!--9119193-->
 
@@ -166,6 +178,8 @@ Snapshots won't be saved when remote desktop connection clients are used. The fo
       - [Azure Virtual Desktop apps from the Microsoft Store](/azure/virtual-desktop/users/connect-remote-desktop-client) are saved in snapshots. To prevent these apps from being saved in snapshots, add them to the app filtering list.
   - [Remote applications integrated locally (RAIL)](/openspecs/windows_protocols/ms-rdperp/485e6f6d-2401-4a9c-9330-46454f0c5aba) windows
   - [Windows App from the Microsoft Store](/windows-app/get-started-connect-devices-desktops-apps) is saved in snapshots. To prevent the app from being saved in snapshots, add it to the app filtering list.
+
+If you're using a virtual desktop setup to protect your data, make sure you test that your supported clients honor screen capture protection. For example, both [Azure Virtual Desktop](/azure/virtual-desktop/overview) and [Windows 365](/windows-365/overview) have policies that you can set to prevent your content from being saved in a screenshot. For instance, there's screen capture protection in Azure Virtual Desktop. Check with the provider of your remote client software to see if they have a similar policy. For information about adding screen capture protection to a client, see the [Information for developers](#information-for-developers) section.
 
 ## Bring your own device (BYOD) considerations
 
