@@ -34,7 +34,7 @@ When Recall opens a snapshot you selected, it enables Click to Do, which runs on
 
 :::image type="content" border="true" source="images/8908044-recall-search.png" alt-text="Screenshot of Recall with search results displayed for a query for a presentation with a red barn." lightbox="images/8908044-recall-search.png":::
 
-### Recall security and privacy architecture
+## Recall security and privacy architecture
 
 Privacy and security are built into Recall's design. With Copilot+ PCs, you get powerful AI that runs locally on the device. No internet or cloud connections are required or used to save and analyze snapshots. Snapshots aren't sent to Microsoft. Recall AI processing occurs locally, and snapshots are securely stored on the local device only. <!--9608247-->Any future options for the user to share data will require fully informed explicit action by the user.
 
