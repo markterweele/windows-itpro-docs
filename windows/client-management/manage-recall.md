@@ -74,7 +74,7 @@ Users need a supported browser for Recall to [filter websites](#app-and-website-
 
 ## Configure policies for Recall
 
-By default, Recall is removed on commercially managed devices. If you want to allow Recall to be available for users in your organization and allow them to choose to save snapshots, you need to configure both the **Allow Recall to be enabled** and **Turn off saving snapshots for Windows** policies. Policies for Recall fall into the following general areas:
+By default, Recall is removed on commercially managed devices. If you want to allow Recall to be available for users in your organization and allow them to choose to save snapshots, you need to configure both the **Allow Recall to be enabled** and **Turn off saving snapshots for Recall** policies. Policies for Recall fall into the following general areas:
 
 - [Allow Recall and snapshots policies](#allow-recall-and-snapshots-policies)
 - [Storage policies](#storage-policies)
@@ -99,12 +99,12 @@ The **Allow Recall to be enabled** policy setting allows you to determine whethe
 | **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Allow Recall to be enabled** |
 
 
-The **Turn off saving snapshots for Windows** policy allows you to give the users the choice to save snapshots of their screen for use with Recall. Administrators can't enable saving snapshots on behalf of their users. The choice to enable saving snapshots requires individual user opt-in consent. By default, snapshots won't be saved for use with Recall. If snapshots were previously saved on a device, they'll be deleted when this policy is enabled. If you set this policy to disabled, end users will have a choice to save snapshots of their screen and use Recall to find things they've seen on their device.
+The **Turn off saving snapshots for Recall** policy allows you to give the users the choice to save snapshots of their screen for use with Recall. Administrators can't enable saving snapshots on behalf of their users. The choice to enable saving snapshots requires individual user opt-in consent. By default, snapshots won't be saved for use with Recall. If snapshots were previously saved on a device, they'll be deleted when this policy is enabled. If you set this policy to disabled, end users will have a choice to save snapshots of their screen and use Recall to find things they've seen on their device.
 
 | &nbsp; | Setting  |
 |---|---|
 | **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[DisableAIDataAnalysis](mdm/policy-csp-windowsai.md#disableaidataanalysis) </br> </br> ./User/Vendor/MSFT/Policy/Config/WindowsAI/[DisableAIDataAnalysis](mdm/policy-csp-windowsai.md#disableaidataanalysis)|
-| **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Turn off saving snapshots for Windows** </br></br>User Configuration > Administrative Templates > Windows Components > Windows AI > **Turn off saving snapshots for Windows** |
+| **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Turn off saving snapshots for Recall** </br></br>User Configuration > Administrative Templates > Windows Components > Windows AI > **Turn off saving snapshots for Recall** |
 
 ### Storage policies
 
