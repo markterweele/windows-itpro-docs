@@ -24,7 +24,7 @@ This article provides information about Recall and how to manage it in a commerc
 
 > [!NOTE]
 > - In-market commercial devices are defined as devices with an Enterprise (ENT) or Education (EDU) SKU or any premium SKU device that is managed by an IT administrator (whether via Microsoft Endpoint Manager or other endpoint management solution), has a volume license key, or is joined to a domain. Commercial devices during Out of Box Experience (OOBE) are defined as those with ENT or EDU SKU or any premium SKU device that has a volume license key or is Microsoft Entra joined. 
-> - Recall is optimized for select languages English, Chinese (simplified), French, German, Japanese, and Spanish. Content-based and storage limitations apply. For more information, see [https://aka.ms/copilotpluspcs](https://aka.ms/copilotpluspcs).
+> - Recall is optimized for select languages: English, Chinese (simplified), French, German, Japanese, and Spanish. Content-based and storage limitations apply. For more information, see [https://aka.ms/copilotpluspcs](https://aka.ms/copilotpluspcs).
 
 ## What is Recall?
 
@@ -44,21 +44,7 @@ When using Recall, the **Sensitive information filtering** setting is enabled by
 
 Like any Windows feature, some diagnostic data may be provided based on the user's privacy settings. For more information about diagnostic data, see [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization). Occasionally, Recall will get artifacts from the internet from the snapshot URL top-level domain. For example, it will get favicons (website icons) or other website metadata. Recall uses these items to give users a better experience when browsing the Recall timeline or search results.
 
-### Click to Do privacy considerations  
-
-Recall uses Click to Do, which allows the user to interact with the content in snapshots.
-
-> [!IMPORTANT]
-> The policy to manage Click to Do doesn't affect Click to Do in Recall. For more information, see [Manage Click to Do](manage-click-to-do.md). 
-
-Click to Do can run on top of:
-
-- The current screen when the **Now** button is selected
-- Snapshots that have already been saved
-
-For snapshots that have already been saved, info from filtered apps and websites along with private browsing activity from supported browsers is removed. Click to Do can't access info that was removed by filters when it's analyzing saved snapshots. When the **Now** option is selected, a snapshot is taken without private browsing windows, filtered apps, and filtered websites. These snapshots are displayed and locally analyzed but only saved if you have [saving snapshots enabled](#allow-recall-and-snapshots-policies). When using the **Now** option, Click to Do analyzes only what's active on the screen. It doesn't analyze content that's inside minimized apps that aren't on screen. 
-
-[!Include [Click to Do privacy considerations](./includes/click-to-do-privacy.md)]
+Recall uses Click to Do, which allows the user to interact with the content in snapshots. For more information about privacy in Click to Do in Recall, see [Click to Do in Recall: do more with what's on your screen](https://support.microsoft.com/windows/967304a8-32d1-4812-a904-fad59b5e6abf#bkmk_privacy). For more information about privacy in Recall, see [Privacy and control over your Recall experience](https://support.microsoft.com/windows/d404f672-7647-41e5-886c-a3c59680af15). <!--9608247-->
 
 
 ## System requirements
@@ -96,10 +82,16 @@ By default, Recall is removed on commercially managed devices. If you want to al
 - [App and website filtering policies](#app-and-website-filtering-policies)
     - Storage policies apply only to Enterprise and Education editions of Windows
 
+> [!IMPORTANT]
+> The policy to manage Click to Do doesn't affect Click to Do in Recall. For more information, see [Manage Click to Do](manage-click-to-do.md). 
 
 ### Allow Recall and snapshots policies
 
 The **Allow Recall to be enabled** policy setting allows you to determine whether the Recall optional component is available for end users to enable on their device. By default, Recall is disabled and removed for managed devices. Recall isn't available on managed devices by default, and individual users can't enable Recall on their own. If you disable this policy, the Recall component will be in disabled state and the bits for Recall will be removed from the device. If snapshots were previously saved on the device, they'll be deleted when this policy is disabled. Removing Recall requires a device restart. If the policy is enabled, end users will have Recall available on their device. Depending on the state of the DisableAIDataAnalysis policy (Turn off saving snapshots for use with Recall), end users will be able to choose if they want to save snapshots of their screen and use Recall to find things they've seen on their device. Some Recall policies apply only to Enterprise and Education editions of Windows.
+
+> [!Important]
+> For some commercial environments, the Recall package doesn't automatically deploy, so to deploy Recall you'll need to manually enable the package, using the following PowerShell command: `Enable-WindowsOptionalFeature -Online -FeatureName Recall` This will be fixed in a future update.
+ 
 
 | &nbsp; | Setting  |
 |---|---|
@@ -189,13 +181,12 @@ For managed devices, IT admins have control over if they want to allow users acc
 
 - **Recall availability**: For unmanaged Copilot+ PC devices, Recall is available by default but a user has to opt in to save snapshots. Users can enable or disable Recall on their own. If multiple people sign in on a device with different accounts, each person needs to make the decision on if they would like to allow saving snapshots or not.
 
-- **Conditional access restrictions**: On unmanaged devices, there isn't a way to determine if Recall is running and saving snapshots. Currently, there aren't any built-in [Conditional Access policies in Microsoft Intune](/mem/intune-service/protect/create-conditional-access-intune) or in [Microsoft Entra](/entra/identity/conditional-access/overview) for Recall. 
+- **Conditional access restrictions**: On unmanaged devices, currently, there aren't any built-in [Conditional Access policies in Microsoft Intune](/mem/intune-service/protect/create-conditional-access-intune) or in [Microsoft Entra](/entra/identity/conditional-access/overview) for Recall. 
 
 - **Security threat of screenshots**: Like numerous available applications for screen recording and snapshots, Recall uses general Windows screenshot APIs. It's a general security risk to allow screenshots of content that you want to prevent from being exfiltrated. Admins should ensure their sensitive content is protected from this type of risk. To help ensure your protected content stays protected, Recall will not store DRM content.
 
 - **Recall and virtual machines**: If you're using a virtual desktop setup to protect your data, make sure you test that your supported clients honor screen capture protection. For example, both [Azure Virtual Desktop](/azure/virtual-desktop/overview) and [Windows 365](/windows-365/overview) have policies that you can set to prevent your content from being saved in a screenshot. For instance, there's [screen capture protection in Azure Virtual Desktop](/azure/virtual-desktop/screen-capture-protection). Check with the provider of your remote client software to see if they have a similar policy. For information about adding screen capture protection to a client, see the [Information for developers](#information-for-developers) section. 
 
-- **Office content**: If Office content is only accessible inside the virtual desktop client, it can be protected from screen capture like all content on the virtual desktop. If Office content is accessible in the BYOD browser, you can try using protection with Purview, which is a Microsoft Data Loss Prevention tool. This allows you to create sensitivity classes that would prevent screenshots. You could, for example, set a policy such that all Office documents are excluded from screenshots. For more information, see [Protect Office documents with Microsoft Purview Information Protection](/deployedge/microsoft-edge-management-service-office-mip).
 
 
 ## Information for developers
@@ -208,11 +199,9 @@ If your remote desktop connection doesn't support screen capture protection, the
 
 Microsoft has been on a responsible AI journey since 2017, when we defined our principles and approach to ensuring this technology is used in a way that is driven by ethical principles that put people first. For more about our responsible AI journey, the ethical principles that guide us, and the tooling and capabilities we've created to assure that we develop AI technology responsibly, see [Responsible AI](https://www.microsoft.com/ai/responsible-ai).
 
-Recall's models use contextual cues in the entire image, including people or entities in the background, which is how the models can still associate the image with an individual, or describe emotions. Biometric data and inferencing are not used. Any processing that returns results that identify an individual or infer an individual's emotion is not the result of processing of the face, such as facial recognition, generation and comparison of facial templates, or other facial inferencing. For example, if an image contains a photo of a popular athlete wearing their team's jersey and their specific number, the models may still return a result that might identify the individual based on those contextual cues.
+<!--Recall can use contextual cues in the entire image, including people or entities in the background, which is how it can still associate the image with an individual, or describe emotions. Biometric data and inferencing aren't used. Any results that identify an individual or infer an individual's emotion aren't the result of processing of the face, such as facial recognition, or other facial inferencing. For example, if an image contains a photo of a popular athlete wearing their team's jersey and their specific number, Recall may still return a result that might identify the athlete based on those contextual cues. -->
 
-Recall can respond to questions related to perceived emotions of people in images. The processes underlying human emotion are complex, and there are cultural, geographical, and individual differences that influence how we may perceive, experience, and express emotions. Responses related to the emotions of people in images are based on how they appear and may not necessarily accurately indicate the internal state of individual people. 
-
-Searches using terms for items or text that appear in an image yield more accurate results over searches using terms that don't directly appear in images but might be perceived about an image. Using distinctive terms rather than ambiguous terms also yield more accurate results.
+Recall can show results related to perceived emotions of people in images. The processes underlying human emotion are complex, and there are cultural, geographical, and individual differences that influence how we may perceive, experience, and express emotions. Results related to the emotions of people in images are based on how they appear, and may not necessarily accurately indicate the internal state of individual people.
 
 Recall uses optical character recognition (OCR), local to the PC, to analyze snapshots and facilitate search. For more information about OCR, see [Transparency note and use cases for OCR](/legal/cognitive-services/computer-vision/ocr-transparency-note). For more information about privacy and security, see [Privacy and control over your Recall experience](https://support.microsoft.com/windows/privacy-and-control-over-your-recall-experience-d404f672-7647-41e5-886c-a3c59680af15).
 
