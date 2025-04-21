@@ -1,7 +1,7 @@
 ---
 title: Configuration service provider preview policies
 description: Learn more about configuration service provider (CSP) policies that are available for Windows Insider Preview.
-ms.date: 04/04/2025
+ms.date: 04/21/2025
 ms.topic: generated-reference
 ---
 
@@ -111,6 +111,17 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [StartInstallation](language-pack-management-csp.md#installlanguage-idstartinstallation)
 - [SystemPreferredUILanguages](language-pack-management-csp.md#languagesettingssystempreferreduilanguages)
 
+## LanmanServer
+
+- [AuditClientDoesNotSupportEncryption](policy-csp-lanmanserver.md#auditclientdoesnotsupportencryption)
+- [AuditClientDoesNotSupportSigning](policy-csp-lanmanserver.md#auditclientdoesnotsupportsigning)
+- [AuditInsecureGuestLogon](policy-csp-lanmanserver.md#auditinsecureguestlogon)
+- [AuthRateLimiterDelayInMs](policy-csp-lanmanserver.md#authratelimiterdelayinms)
+- [EnableAuthRateLimiter](policy-csp-lanmanserver.md#enableauthratelimiter)
+- [EnableMailslots](policy-csp-lanmanserver.md#enablemailslots)
+- [MaxSmb2Dialect](policy-csp-lanmanserver.md#maxsmb2dialect)
+- [MinSmb2Dialect](policy-csp-lanmanserver.md#minsmb2dialect)
+
 ## LanmanWorkstation
 
 - [AuditInsecureGuestLogon](policy-csp-lanmanworkstation.md#auditinsecureguestlogon)
@@ -217,6 +228,22 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [SubscriptionLastErrorDescription](windowslicensing-csp.md#subscriptionssubscriptionlasterrordescription)
 - [DisableSubscription](windowslicensing-csp.md#subscriptionsdisablesubscription)
 - [RemoveSubscription](windowslicensing-csp.md#subscriptionsremovesubscription)
+
+## WirelessNetworkPreference CSP
+
+- [IsEnabled](wirelessnetworkpreference-csp.md#isenabled)
+- [PreferCellularOverWiFi](wirelessnetworkpreference-csp.md#prefercellularoverwifi)
+- [eSIMprofilesCount](wirelessnetworkpreference-csp.md#statusesimprofilescount)
+- [eSIMprofilesMatched](wirelessnetworkpreference-csp.md#statusesimprofilesmatched)
+- [eSIMpolicyStatus](wirelessnetworkpreference-csp.md#statusesimpolicystatus)
+- [NetworkDiscoveryOption](wirelessnetworkpreference-csp.md#parameterscellularparametersnetworkdiscoveryoption)
+- [MaxRescanIntervalInSeconds](wirelessnetworkpreference-csp.md#parameterscellularparametersmaxrescanintervalinseconds)
+- [PreferredProfileWakeConnectionTimerInSeconds](wirelessnetworkpreference-csp.md#parameterscellularparameterspreferredprofilewakeconnectiontimerinseconds)
+- [ProfileRegistrationTimerInSeconds](wirelessnetworkpreference-csp.md#parameterscellularparametersprofileregistrationtimerinseconds)
+- [ScreenOffDurationToTriggerNetworkDiscoveryInMinutes](wirelessnetworkpreference-csp.md#parameterscellularparametersscreenoffdurationtotriggernetworkdiscoveryinminutes)
+- [Priority](wirelessnetworkpreference-csp.md#connectionprofilesconnectionprofileidpriority)
+- [WirelessType](wirelessnetworkpreference-csp.md#connectionprofilesconnectionprofileidwirelesstype)
+- [PLMNID](wirelessnetworkpreference-csp.md#connectionprofilesconnectionprofileidcellularplmnid)
 
 ## Related articles
 
