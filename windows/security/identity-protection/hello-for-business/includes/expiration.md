@@ -15,3 +15,6 @@ The default value is 0.
 |--|--|
 | **CSP** | `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/PINComplexity/`[devicetenantidpoliciespincomplexityexpiration](/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciespincomplexityexpiration)<br><br>`./User/Vendor/MSFT/PassportForWork/{TenantId}/Policies/PINComplexity/`[usertenantidpoliciespincomplexityexpiration](/windows/client-management/mdm/passportforwork-csp#usertenantidpoliciespincomplexityexpiration) |
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **System** > **PIN Complexity**|
+
+> [!NOTE]
+> Starting with Windows 11, version 24H2, Windows Hello is further hardened by default to use Virtualization-based security (VBS) to isolate credentials. This enhancement is automatically applied on devices that support VBS and have it enabled. However, it's important to note that PIN expiration is not supported on such devices. This change aims to enhance security by ensuring that credentials are protected in a more secure environment.
