@@ -80,7 +80,7 @@ By default, Recall is removed on commercially managed devices. If you want to al
 - [Storage policies](#storage-policies)
     - Storage policies apply only to Enterprise and Education editions of Windows
 - [App and website filtering policies](#app-and-website-filtering-policies)
-    - Storage policies apply only to Enterprise and Education editions of Windows
+    - App and website filtering policies apply only to Enterprise and Education editions of Windows
 
 > [!IMPORTANT]
 > The policy to manage Click to Do doesn't affect Click to Do in Recall. For more information, see [Manage Click to Do](manage-click-to-do.md). 
