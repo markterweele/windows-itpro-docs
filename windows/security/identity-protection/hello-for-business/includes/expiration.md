@@ -17,9 +17,9 @@ The default value is 0.
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **System** > **PIN Complexity**|
 
 > [!NOTE]
->Starting with Windows 11, version 23H2, devices that support [Enhanced Security Settings (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security) isolate credentials using Virtualization-based security (VBS).
+> Starting with Windows 11, version 23H2, Windows Hello uses Virtualization-based security (VBS) to isolate credentials on devices that support [Enhanced Security Settings (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security).
 >
-> Starting with Windows 11, version 24H2, Windows Hello is enhanced to automatically use VBS to isolate credentials on all devices that support and have VBS enabled.
+> Starting with Windows 11, version 24H2, Windows Hello uses VBS to isolate credentials on all devices that have VBS enabled.
 >
 > On such devices, PIN expiration is not supported.
 
