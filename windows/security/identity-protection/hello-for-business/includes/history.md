@@ -20,4 +20,8 @@ The default value is 0.
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **System** > **PIN Complexity** |
 
 > [!NOTE]
-> Starting with Windows 11, version 24H2, Windows Hello is further hardened by default to use Virtualization-based security (VBS) to isolate credentials. This enhancement is automatically applied on devices that support VBS and have it enabled. However, it's important to note that PIN history is not supported on such devices. This change aims to enhance security by ensuring that credentials are protected in a more secure environment.
+>Starting with Windows 11, version 23H2, devices that support [Enhanced Security Settings (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security) isolate credentials using Virtualization-based security (VBS).
+>
+> Starting with Windows 11, version 24H2, Windows Hello is enhanced to automatically use VBS to isolate credentials on all devices that support and have VBS enabled.
+>
+> On such devices, PIN history is not supported.
