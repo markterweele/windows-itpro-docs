@@ -3,7 +3,7 @@ title: Manage Recall for Windows clients
 description: Learn how to manage Recall for commercial environments and about Recall features.
 ms.topic: how-to
 ms.subservice: windows-copilot
-ms.date: 04/22/2025
+ms.date: 04/24/2025
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -163,17 +163,15 @@ To filter websites from being saved in snapshots, use the **Set a list of URIs t
 
 ## Remote desktop connection clients filtered from snapshots
 
-Snapshots won't be saved when remote desktop connection clients are used. The following remote desktop connection clients are filtered from snapshots:<!--9119193-->
+Snapshots won't be saved when supported remote desktop clients are used. The remote desktop connection sessions from the following clients are filtered from snapshots: <!--9119193, 10049089-->
 
    - [Remote Desktop Connection (mstsc.exe)](/windows-server/administration/windows-commands/mstsc)
    - [VMConnect.exe](/windows-server/virtualization/hyper-v/learn-more/hyper-v-virtual-machine-connect) 
-      - [Microsoft Remote Desktop from the Microsoft Store](/windows-server/remote/remote-desktop-services/clients/windows) is saved in snapshots. To prevent the app from being saved in snapshots, add it to the app filtering list.
    - [Azure Virtual Desktop (MSI)](/azure/virtual-desktop/users/connect-windows) 
-      - [Azure Virtual Desktop apps from the Microsoft Store](/azure/virtual-desktop/users/connect-remote-desktop-client) are saved in snapshots. To prevent these apps from being saved in snapshots, add them to the app filtering list.
-  - [Remote applications integrated locally (RAIL)](/openspecs/windows_protocols/ms-rdperp/485e6f6d-2401-4a9c-9330-46454f0c5aba) windows
-  - [Windows App from the Microsoft Store](/windows-app/get-started-connect-devices-desktops-apps) is saved in snapshots. To prevent the app from being saved in snapshots, add it to the app filtering list.
+   - [Remote applications integrated locally (RAIL)](/openspecs/windows_protocols/ms-rdperp/485e6f6d-2401-4a9c-9330-46454f0c5aba)
 
-If you're using a virtual desktop setup to protect your data, make sure you test that your supported clients honor screen capture protection. For example, both [Azure Virtual Desktop](/azure/virtual-desktop/overview) and [Windows 365](/windows-365/overview) have policies that you can set to prevent your content from being saved in a screenshot. For instance, there's screen capture protection in Azure Virtual Desktop. Check with the provider of your remote client software to see if they have a similar policy. For information about adding screen capture protection to a client, see the [Information for developers](#information-for-developers) section.
+> [!Note]
+> Clients will be saved by Recall unless the client implements screen capture protection, for example [screen capture protection in Azure Virtual desktop](/azure/virtual-desktop/screen-capture-protection). Clients can control how screen capture protection is implemented and may allow some pages to be saved but not the remote session. Customers can always add filters for specific client apps. Check with the provider of your remote client software for details on their screen capture policy. For information about adding screen capture protection to a client, see the [Information for developers](#information-for-developers) section.
 
 ## Bring your own device (BYOD) considerations
 
@@ -186,6 +184,7 @@ For managed devices, IT admins have control over if they want to allow users acc
 - **Security threat of screenshots**: Like numerous available applications for screen recording and snapshots, Recall uses general Windows screenshot APIs. It's a general security risk to allow screenshots of content that you want to prevent from being exfiltrated. Admins should ensure their sensitive content is protected from this type of risk. To help ensure your protected content stays protected, Recall will not store DRM content.
 
 - **Recall and virtual machines**: If you're using a virtual desktop setup to protect your data, make sure you test that your supported clients honor screen capture protection. For example, both [Azure Virtual Desktop](/azure/virtual-desktop/overview) and [Windows 365](/windows-365/overview) have policies that you can set to prevent your content from being saved in a screenshot. For instance, there's [screen capture protection in Azure Virtual Desktop](/azure/virtual-desktop/screen-capture-protection). Check with the provider of your remote client software to see if they have a similar policy. For information about adding screen capture protection to a client, see the [Information for developers](#information-for-developers) section. 
+
 
 ## Information for developers
 
