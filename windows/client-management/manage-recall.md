@@ -164,7 +164,8 @@ Snapshots won't be saved when supported remote desktop clients are used. The rem
    - [Azure Virtual Desktop (MSI)](/azure/virtual-desktop/users/connect-windows) 
    - [Remote applications integrated locally (RAIL)](/openspecs/windows_protocols/ms-rdperp/485e6f6d-2401-4a9c-9330-46454f0c5aba)
 
-Note that clients will be saved by Recall unless the client implements screen capture protection, for example [screen capture protection in Azure Virtual desktop](/azure/virtual-desktop/screen-capture-protection). Clients can control how screen capture protection is implemented and may allow some pages to be saved but not the remote session. Customers can always add filters for specific client apps. Check with the provider of your remote client software for details on their screen capture policy.
+> [!Note]
+> Clients will be saved by Recall unless the client implements screen capture protection, for example [screen capture protection in Azure Virtual desktop](/azure/virtual-desktop/screen-capture-protection). Clients can control how screen capture protection is implemented and may allow some pages to be saved but not the remote session. Customers can always add filters for specific client apps. Check with the provider of your remote client software for details on their screen capture policy.
 
 ## Information for developers
 
