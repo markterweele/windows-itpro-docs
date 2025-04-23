@@ -471,6 +471,8 @@ items:
           href: policy-csp-kerberos.md
         - name: KioskBrowser
           href: policy-csp-kioskbrowser.md
+        - name: LanmanServer
+          href: policy-csp-lanmanserver.md
         - name: LanmanWorkstation
           href: policy-csp-lanmanworkstation.md
         - name: Licensing
@@ -999,3 +1001,8 @@ items:
       items:
       - name: WiredNetwork DDF file
         href: wirednetwork-ddf-file.md
+    - name: WirelessNetworkPreference
+      href: wirelessnetworkpreference-csp.md
+      items:
+      - name: WirelessNetworkPreference DDF file
+        href: wirelessnetworkpreference-ddf-file.md
