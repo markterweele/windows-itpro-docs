@@ -112,7 +112,7 @@ You can change the apps pinned to the taskbar by modifying the `<TaskbarLayout>`
 
 [!INCLUDE [insider-setting](../includes/insider-setting.md)]
 
-On devices with [KBXYZ][KB-1] or later, you can allow specific pinned apps to be unpinnable by users. This is useful when you want to allow users to unpin apps that are pinned via policy settings, but you don't want the pins to be repinned during the next policy update cycle.
+On devices with [KBXYZ][KB-1] or later, you can allow certain pinned apps to be unpinned by users. This is useful when you want to allow users to unpin apps that are pinned via policy settings, but you don't want the pins to be pinned again during the next policy update cycle.
 
 To use this option, add `PinGeneration="1"` to the pins you want to allow users to unpin. The value of `PinGeneration` can be any number, and it's used to identify the pin version. If the value changes, the app is pinned again during the next policy update cycle. This allows IT admins to repin an app, if needed.
 
