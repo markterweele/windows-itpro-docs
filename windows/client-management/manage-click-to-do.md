@@ -3,7 +3,7 @@ title: Manage Click to Do for Windows clients
 description: Learn how to manage Click to Do for commercial environments and about Click to Do features.
 ms.topic: how-to
 ms.subservice: windows-copilot
-ms.date: 04/22/2025
+ms.date: 04/24/2025
 ms.author: mstewart
 author: mestew
 ms.collection:
