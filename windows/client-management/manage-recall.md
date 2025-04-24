@@ -92,15 +92,13 @@ The **Allow Recall to be enabled** policy setting allows you to determine whethe
 > [!Important]
 > - For some commercial environments, the Recall package doesn't automatically deploy, so to deploy Recall you'll need to manually enable the package, using the following PowerShell command: `Enable-WindowsOptionalFeature -Online -FeatureName "Recall"` This will be fixed in a future update.
 > - If a user prefers to remove the Recall bits from their device after an IT admin has enabled **Allow Recall to be enabled**, they can use the following PowerShell command: `Disable-WindowsOptionalFeature -Online -FeatureName "Recall" -Remove`.
- 
 
 | &nbsp; | Setting  |
 |---|---|
 | **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[AllowRecallEnablement](mdm/policy-csp-windowsai.md#allowrecallenablement) |
 | **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Allow Recall to be enabled** |
 
-
-- The **Turn off saving snapshots for Recall** policy allows you to give the users the choice to save snapshots of their screen for use with Recall. Administrators can't enable saving snapshots on behalf of their users. The choice to enable saving snapshots requires individual user opt-in consent. By default, snapshots won't be saved for use with Recall. If snapshots were previously saved on a device, they'll be deleted when this policy is enabled. If you set this policy to disabled, end users will have a choice to save snapshots of their screen and use Recall to find things they've seen on their device.
+The **Turn off saving snapshots for Recall** policy allows you to give the users the choice to save snapshots of their screen for use with Recall. Administrators can't enable saving snapshots on behalf of their users. The choice to enable saving snapshots requires individual user opt-in consent. By default, snapshots won't be saved for use with Recall. If snapshots were previously saved on a device, they'll be deleted when this policy is enabled. If you set this policy to disabled, end users will have a choice to save snapshots of their screen and use Recall to find things they've seen on their device.
 
 | &nbsp; | Setting  |
 |---|---|
