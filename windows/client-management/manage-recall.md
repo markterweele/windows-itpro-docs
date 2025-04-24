@@ -91,7 +91,7 @@ The **Allow Recall to be enabled** policy setting allows you to determine whethe
 
 > [!Important]
 > - For some commercial environments, the Recall package doesn't automatically deploy, so to deploy Recall you'll need to manually enable the package, using the following PowerShell command: `Enable-WindowsOptionalFeature -Online -FeatureName "Recall"` This will be fixed in a future update.
-> - If a user prefers to remove the Recall bits from their device after an IT admin has enabled **Allow Recall to be enabled**, they can use the following PowerShell command: `Disable-WindowsOptionalFeature -Online -FeatureName "Recall" -Remove`. For parameter information, see [Disable-WindowsOptionalFeature](/powershell/module/dism/disable-windowsoptionalfeature).
+> - If a user prefers to remove the Recall bits from their device after an IT admin has enabled **Allow Recall to be enabled**, they can use the following PowerShell command: `Disable-WindowsOptionalFeature -Online -FeatureName "Recall" -Remove`.
  
 
 | &nbsp; | Setting  |
