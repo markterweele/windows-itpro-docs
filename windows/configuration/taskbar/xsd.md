@@ -110,3 +110,4 @@ This reference article contains the Taskbar XML schema definition (XSD).
         <xsd:attributeGroup ref="local:ag_SelectionAttributes"/>
     </xsd:complexType>
 </xsd:schema>
+```
