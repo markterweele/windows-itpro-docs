@@ -25,7 +25,7 @@ Click to Do (preview) helps users to get things done faster by identifying text 
 
 ## What is Click to Do?
 
-Click to Do (preview) analyzes what's on the screen and then allows users to choose the text or image they want to take action on. Users can open Click to Do by using **Windows key** + **Q** or with **Windows key** + **mouse click**. Other entry points for Click to Do include Snipping Tool, search results, and the Start menu.
+Click to Do (preview) analyzes what's on the screen and then allows users to choose the text or image they want to take action on. Users can open Click to Do by using **Windows key** + **Q** or with **Windows key** + **mouse click**. Other entry points for Click to Do include right swipe on touch enabled PCs, Snipping Tool, search results, and the Start menu.
 
 The analysis of screenshots is always performed locally on the device. Analysis only begins after users actively engage with Click to Do and ends when they exit Click to Do. Click to Do only identifies text and images, not the content of those text or images. It doesn't analyze any content in, for example, minimized applications that aren't on the screen.  
  
