@@ -11,7 +11,7 @@ ms.collection:
   - highpri
   - tier2
 ms.subservice: itpro-deploy
-ms.date: 01/29/2025
+ms.date: 04/24/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -55,6 +55,7 @@ This article provides a summary of available upgrade paths to currently supporte
 
 | Windows Edition | **Windows Home** | **Windows Pro** | **Windows Pro Education** | **Windows Education** | **Windows Enterprise** |
 |---|---|---|---|---|---|
+| 🔽 Upgrade From 🔽 | | | 🔼 Upgrade To 🔼 | | |
 | **Windows Home**  | ❌ | ✅  | ✅  | ✅  | ❌ |
 | **Windows Pro**   | ⬇️ | ❌ | ✅   | ✅  | ✅  |
 | **Windows Education**  | ❌ | ❌ | ❌ | ❌ | ⬇️  |
