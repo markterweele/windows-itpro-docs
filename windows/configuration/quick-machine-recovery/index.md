@@ -228,7 +228,7 @@ To simulate the quick machine recovery experience, use the following commands fr
 
 1. To verify the quick machine recovery remediation, go to **Settings** > **Windows Update** > **[Update history](ms-settings:windowsupdate-history)**. The remediation should be listed under **Quality updates**
 
-    :::image type="content" source="images/update-history.png" border="false" lightbox="images/update-history.png" alt-text="Screenshot of the Setting app - Windows Update - showing the installation of a quick machie recovery update.":::
+    :::image type="content" source="images/update-history.png" border="false" lightbox="images/update-history.png" alt-text="Screenshot of the Setting app - Windows Update - showing the installation of a quick machine recovery update.":::
 
 ### :::image type="icon" source="../images/icons/feedback.svg" border="false"::: Provide feedback
 
