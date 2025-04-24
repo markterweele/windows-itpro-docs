@@ -1,7 +1,7 @@
 ---
 title: Resources for deprecated features in the Windows client
 description: Resources and details for deprecated features in the Windows client.
-ms.date: 04/08/2025
+ms.date: 04/24/2025
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
