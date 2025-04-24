@@ -11,7 +11,7 @@ ms.collection:
   - highpri
   - tier2
 ms.subservice: itpro-deploy
-ms.date: 01/29/2025
+ms.date: 04/24/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -52,6 +52,115 @@ This article provides a summary of available upgrade paths to currently supporte
 - **Windows N/KN**: **Windows N** and **Windows KN** SKUs (editions without media-related functionality) follow the same upgrade paths shown in the following tables. If the pre-upgrade and post-upgrade editions aren't the same type, for example, Windows 10 Pro N to Windows 11 Pro, personal data is kept but applications and settings are removed during the upgrade process.
 
 ## Supported Windows upgrade paths
+
+:::row:::
+   :::column span="":::
+      Windows Edition
+   :::column-end:::
+   :::column span="":::
+      **Windows Home**
+   :::column-end:::
+   :::column span="":::
+      **Windows Pro**
+   :::column-end:::
+   :::column span="":::
+      **Windows Pro Education**
+   :::column-end:::
+   :::column span="":::
+      **Windows Education**
+   :::column-end:::
+   :::column span="":::
+      **Windows Enterprise**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Upgrade From
+   :::column-end:::
+   :::column span="5":::
+      Upgrade To
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      **Windows Home**
+   :::column-end:::
+   :::column span="":::
+      ❌
+   :::column-end:::
+   :::column span="":::
+      ✅
+   :::column-end:::
+   :::column span="":::
+      ✅
+   :::column-end:::
+   :::column span="":::
+      ✅
+   :::column-end:::
+   :::column span="":::
+      ❌
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      **Windows Pro**
+   :::column-end:::
+   :::column span="":::
+      ⬇️
+   :::column-end:::
+   :::column span="":::
+      ❌
+   :::column-end:::
+   :::column span="":::
+      ✅
+   :::column-end:::
+   :::column span="":::
+      ✅
+   :::column-end:::
+   :::column span="":::
+      ✅
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      **Windows Education**
+   :::column-end:::
+   :::column span="":::
+      ❌
+   :::column-end:::
+   :::column span="":::
+      ❌
+   :::column-end:::
+   :::column span="":::
+      ❌
+   :::column-end:::
+   :::column span="":::
+      ❌
+   :::column-end:::
+   :::column span="":::
+      ⬇️
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      **Windows Enterprise**
+   :::column-end:::
+   :::column span="":::
+      ❌
+   :::column-end:::
+   :::column span="":::
+      ❌
+   :::column-end:::
+   :::column span="":::
+      ❌
+   :::column-end:::
+   :::column span="":::
+      ✅
+   :::column-end:::
+   :::column span="":::
+      ❌
+   :::column-end:::
+:::row-end:::
 
 | Windows Edition | **Windows Home** | **Windows Pro** | **Windows Pro Education** | **Windows Education** | **Windows Enterprise** |
 |---|---|---|---|---|---|
