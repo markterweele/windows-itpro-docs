@@ -44,6 +44,8 @@ Click to Do has the following minimum requirements:
   - 8 logical processors
   - 256 GB storage capacity
 
+To display the Click to Do entry point from Snipping Tool, Snipping Tool version 11.2411.20.0, or later is required. 
+
 The more intelligent text actions are available only on Snapdragon-powered Copilot+ PCs today when your language is set to English with support for AMD and Intel-powered Copilot+ PCs coming soon. 
 
 
@@ -72,7 +74,7 @@ When you choose to send info from Click to Do to an app, like Paint, Click to Do
 
 Temporary files may also be saved when you choose send feedback. These temporary files aren't saved long term. Click to Do doesn't keep any content from your screen after completing the requested action, but some [diagnostic data](/windows/privacy/configure-windows-diagnostic-data-in-your-organization) is gathered to keep Click to Do secure, up to date, and working.
 
-Click to Do's more intelligent text actions, including **Summarize**, **Rewrite (Casual)**, **Rewrite (Formal)**,**Rewrite (Refine)**, and **Create a bulleted list** are powered by a state-of-the-art small language model called Phi Silica. Phi Silica leverages the NPU and the language model runs locally on Copilot+ PCs. Phi Silica ships inbox with Windows on Copilot+ PCs. 
+Click to Do's more intelligent text actions, including **Summarize**, **Rewrite (Casual)**, **Rewrite (Formal)**, **Rewrite (Refine)**, and **Create a bulleted list** are powered by a state-of-the-art small language model called Phi Silica. Phi Silica leverages the NPU and the language model runs locally on Copilot+ PCs. Phi Silica ships inbox with Windows on Copilot+ PCs. 
 
 When a user clicks on the Click to Do text actions, the selected text and the chosen action are sent to Phi Silica as part of a prompt. Phi Silica intelligently rewrites the selected text as per the user's request and streams back the response from the model. Phi Silica provides responses quickly and efficiently, using little power. For more information, see [Phi Silica, small but mighty on-device SLM](https://blogs.windows.com/windowsexperience/?p=179250). 
 
