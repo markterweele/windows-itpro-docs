@@ -340,4 +340,4 @@ To provide feedback, open [**Feedback Hub**][FHUB] and use the category **Deskto
 [OEM-1]: /windows-hardware/customize/desktop/customize-the-windows-11-taskbar
 [WIN-1]: /windows/client-management/mdm/policy-csp-start
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
-[KB-1]: https://learn.microsoft.com/windows-insider/flight-hub
+[KB-1]: /windows-insider/flight-hub
