@@ -4,7 +4,7 @@ metadata:
   description: Answers to frequently asked questions about Windows Autopatch.
   ms.service: windows-client
   ms.topic: faq
-  ms.date: 04/11/2025
+  ms.date: 04/21/2025
   audience: itpro
   ms.localizationpriority: medium
   manager: aaroncz
@@ -97,6 +97,18 @@ sections:
       - question: Can I configure when to move to the next ring or is it controlled by Windows Autopatch?
         answer: |
           You're in full control over when updates are deployed to their devices. Autopatch groups will recommend a set of intelligent defaults but those are fully customizable so that you can achieve your desired rollout.
+      - question: What is the expected behavior for turning on the Feature Update option for Autopatch groups?
+        answer: |
+          Starting in April 2025, default policies aren't created for new Autopatch customers. Existing customers will continue to receive support until Windows 10 reaches its End-of-Service (EOS). However, these policies won't transition to Windows 11.
+          
+          If you created an Autopatch group before April 2025:
+          - The Feature Update option is unselected by default.
+          - Selecting the Feature Update option creates a feature update policy for the newly created Autopatch group. This doesn't affect the Global DSS policy.
+          - The Feature Update option doesn't affect existing releases created before April 2025; these releases remain unchanged
+          
+          If you created an Autopatch group after April 2025:
+          - Selecting the Feature Update option creates a feature update policy and assigns it to all its deployment rings.
+          - Global DSS policy isn't affected.
   - name: Hotpatch updates
     questions:
       - question: What are the licensing requirements for hotpatch updates?

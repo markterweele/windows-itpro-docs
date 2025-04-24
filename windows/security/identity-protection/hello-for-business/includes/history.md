@@ -18,3 +18,10 @@ The default value is 0.
 |--|--|
 | **CSP** | `./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/PINComplexity/`[devicetenantidpoliciespincomplexityhistory](/windows/client-management/mdm/passportforwork-csp#devicetenantidpoliciespincomplexityhistory)<br><br>`./User/Vendor/MSFT/PassportForWork/{TenantId}/Policies/PINComplexity/`[usertenantidpoliciespincomplexityhistory](/windows/client-management/mdm/passportforwork-csp#usertenantidpoliciespincomplexityhistory) |
 | **GPO** | **Computer Configuration** > **Administrative Templates** > **System** > **PIN Complexity** |
+
+> [!NOTE]
+> Starting with Windows 11, version 23H2, Windows Hello uses Virtualization-based security (VBS) to isolate credentials on devices that support [Enhanced Security Settings (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security).
+>
+> Starting with Windows 11, version 24H2, Windows Hello uses VBS to isolate credentials on all devices that have VBS enabled.
+>
+> On such devices, PIN history is not supported.
