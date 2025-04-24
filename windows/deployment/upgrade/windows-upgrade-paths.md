@@ -53,9 +53,10 @@ This article provides a summary of available upgrade paths to currently supporte
 
 ## Supported Windows upgrade paths
 
-| Windows Edition | **Windows Home** | **Windows Pro** | **Windows Pro Education** | **Windows Education** | **Windows Enterprise** |
+| * | * | * | *Upgrade To* | * | * |
 |---|---|---|---|---|---|
-|*Upgrade From*| | |*Upgrade To*| | |
+| Windows Edition | **Windows Home** | **Windows Pro** | **Windows Pro Education** | **Windows Education** | **Windows Enterprise** |
+| *Upgrade From* | | | | | |
 | **Windows Home**  | ❌ | ✅  | ✅  | ✅  | ❌ |
 | **Windows Pro**   | ⬇️ | ❌ | ✅   | ✅  | ✅  |
 | **Windows Education**  | ❌ | ❌ | ❌ | ❌ | ⬇️  |
