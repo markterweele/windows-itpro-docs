@@ -55,11 +55,10 @@ This article provides a summary of available upgrade paths to currently supporte
 
 | Windows Edition | Upgrade to <br> **Windows Home** | Upgrade to <br> **Windows Pro** | Upgrade to <br> **Windows Pro Education** | Upgrade to <br> **Windows Education** | Upgrade to <br> **Windows Enterprise** |
 |---|---|---|---|---|---|
-| 🔽 Upgrade From 🔽 | | | 🔼 Upgrade To 🔼 | | |
-| Upgrade from <br> **Windows Home**  | ❌ | ✅  | ✅  | ✅  | ❌ |
-| Upgrade from <br> **Windows Pro**   | ⬇️ | ❌ | ✅   | ✅  | ✅  |
-| Upgrade from <br> **Windows Education**  | ❌ | ❌ | ❌ | ❌ | ⬇️  |
-| Upgrade from <br> **Windows Enterprise**  | ❌ | ❌ | ❌ | ✅ | ❌ |
+| **Upgrade from <br> Windows Home**  | ❌ | ✅  | ✅  | ✅  | ❌ |
+| **Upgrade from <br> Windows Pro**   | ⬇️ | ❌ | ✅   | ✅  | ✅  |
+| **Upgrade from <br> Windows Education**  | ❌ | ❌ | ❌ | ❌ | ⬇️  |
+| **Upgrade from <br> Windows Enterprise**  | ❌ | ❌ | ❌ | ✅ | ❌ |
 
 - ✅ = Full upgrade is supported including personal data, settings, and applications.
 - ❌ = Upgrade isn't supported or not applicable.
