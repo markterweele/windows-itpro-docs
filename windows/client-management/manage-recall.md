@@ -178,7 +178,7 @@ For managed devices, IT admins have control over if they want to allow users acc
 
 - **Recall availability**: For unmanaged Copilot+ PC devices, Recall is available by default but a user has to opt in to save snapshots. Users can enable or disable Recall on their own. If multiple people sign in on a device with different accounts, each person needs to make the decision on if they would like to allow saving snapshots or not.
 
-- **Conditional access restrictions**: On unmanaged devices, currently, there aren't any built-in [Conditional Access policies in Microsoft Intune](/mem/intune-service/protect/create-conditional-access-intune) or in [Microsoft Entra](/entra/identity/conditional-access/overview) for Recall. 
+- **Conditional access restrictions**: During sign in, websites and apps sometimes restrict access to information based on device attributes. On unmanaged devices, currently, there aren't any built-in [Conditional Access policies in Microsoft Intune](/mem/intune-service/protect/create-conditional-access-intune) or in [Microsoft Entra](/entra/identity/conditional-access/overview) for Recall. 
 
 - **Security threat of screenshots**: Like numerous available applications for screen recording and snapshots, Recall uses general Windows screenshot APIs. It's a general security risk to allow screenshots of content that you want to prevent from being exfiltrated. To help ensure your protected content stays protected, Recall will not store DRM content.
 
