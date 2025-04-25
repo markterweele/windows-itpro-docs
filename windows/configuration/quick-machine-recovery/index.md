@@ -11,7 +11,7 @@ appliesto:
 
 # Quick machine recovery
 
-[!INCLUDE [insider-note](../includes/insider-note.md)]
+[!INCLUDE [insider-feature](../includes/insider-feature.md)]
 
 Quick machine recovery is a feature that enables the recovery of Windows devices when they encounter critical errors that prevent them from booting. This feature can automatically search for remediations in the cloud and recover from widespread boot failures, significantly reducing the burden on IT administrators when multiple devices are affected.
 
@@ -228,7 +228,7 @@ To simulate the quick machine recovery experience, use the following commands fr
 
 1. To verify the quick machine recovery remediation, go to **Settings** > **Windows Update** > **[Update history](ms-settings:windowsupdate-history)**. The remediation should be listed under **Quality updates**
 
-    :::image type="content" source="images/update-history.png" border="false" lightbox="images/update-history.png" alt-text="Screenshot of the Setting app - Windows Update - showing the installation of a quick machie recovery update.":::
+    :::image type="content" source="images/update-history.png" border="false" lightbox="images/update-history.png" alt-text="Screenshot of the Setting app - Windows Update - showing the installation of a quick machine recovery update.":::
 
 ### :::image type="icon" source="../images/icons/feedback.svg" border="false"::: Provide feedback
 
