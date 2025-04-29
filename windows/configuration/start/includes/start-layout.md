@@ -11,7 +11,7 @@ This policy setting lets you specify the Start layout for users, preventing them
 
 |  | Path |
 |--|--|
-| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-start#configurestartpins)<br><br>`./User/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-start#configurestartpins)|
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-start#configurestartpins)<br>- `./User/Vendor/MSFT/Policy/Config/Start/`[StartLayout](/windows/client-management/mdm/policy-csp-start#configurestartpins)|
 | **GPO** | - **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Start Layout**<br> - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Start Layout** |
 
 For more information, see [Customize the Start layout](../layout.md).
