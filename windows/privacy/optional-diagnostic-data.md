@@ -15,6 +15,7 @@ ms.topic: reference
 # Optional diagnostic data for Windows 11 and Windows 10
 
 Applies to:
+- Windows 11, version 24H2
 - Windows 11, version 23H2
 - Windows 11, version 22H2
 - Windows 10, version 22H2
@@ -22,7 +23,7 @@ Applies to:
 - Windows 10, version 1809
 
 > [!NOTE]
-> The information in this article also applies to these versions of Windows 10: 21H1, 20H2, 2004, 1909, 1903, 1803, and 1709. But those versions have reached their end of servicing date. For more information, see [Microsoft Product Lifecycle](/lifecycle/products).
+> The information in this article also applies to Windows 11 (version 21H2) and these versions of Windows 10: 21H1, 20H2, 2004, 1909, 1903, 1803, and 1709. But those versions have reached their end of servicing date. For more information, see [Microsoft Product Lifecycle](/lifecycle/products).
 
 Microsoft uses Windows diagnostic data to keep Windows secure and up-to-date, troubleshoot problems, and make product improvements. For users who have turned on "Tailored experiences", it can also be used to offer you personalized tips, ads, and recommendations to enhance Microsoft products and services for your needs. This article describes all types of optional diagnostic data collected by Windows, with comprehensive examples of data we collect per each type.
 
