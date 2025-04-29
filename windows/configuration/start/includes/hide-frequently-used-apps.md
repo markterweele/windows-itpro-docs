@@ -13,5 +13,5 @@ If you disable this setting or don't configure it, the frequently used programs 
 
 |  | Path |
 |--|--|
-| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Start/`[HideFrequentlyUsedApps](/windows/client-management/mdm/policy-csp-start#hidefrequentlyusedapps)<br><br>`./User/Vendor/MSFT/Policy/Config/Start/`[HideFrequentlyUsedApps](/windows/client-management/mdm/policy-csp-start#hidefrequentlyusedapps) |
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Start/`[HideFrequentlyUsedApps](/windows/client-management/mdm/policy-csp-start#hidefrequentlyusedapps)<br>- `./User/Vendor/MSFT/Policy/Config/Start/`[HideFrequentlyUsedApps](/windows/client-management/mdm/policy-csp-start#hidefrequentlyusedapps) |
 | **GPO** | - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove frequent programs from the Start Menu** |
