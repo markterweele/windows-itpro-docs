@@ -18,16 +18,16 @@ This article provides information about managing AI features for Notepad in a co
 
 ## Download the Notepad administrative template (ADMX)
 
-The [Notepad Administrative Template (ADMX)](https://todo) can be downloaded from the Microsoft Download Center.
+The [Notepad Administrative Template (ADMX)](https://todo) can be downloaded from the Microsoft Download Center.
 
 ## Policy settings
 
 ### DisableAIFeaturesInNotepad
 
-This policy setting allows you to control whether AI features are disabled in the Windows Notepad app. 
+This policy setting allows you to control whether AI features are disabled in the Windows Notepad app. 
 
-- If this policy is enabled, AI features will not be accessible in the Notepad app. 
-- If this policy is disabled or not configured, users will be able to access AI features in the Notepad app.
+- If this policy is enabled, users can't access AI features in the Notepad app.
+- If this policy is disabled or not configured, users can access AI features in the Notepad app.
 
 **Supported versions**
 
@@ -54,10 +54,10 @@ The following instructions provide details how to configure your devices. Select
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
 
-To configure devices using Microsoft Intune, [import the Notepad administrative template (ADMX) files](/intune/intune-service/configuration/administrative-templates-import-custom#add-the-admx-and-adml-files) and then [create a custom **Configuration profile**](/intune/intune-service/configuration/administrative-templates-import-custom#create-a-profile-using-your-imported-files) based on the imported ADMX files. 
+To configure devices using Microsoft Intune, [import the Notepad administrative template (ADMX) files](/intune/intune-service/configuration/administrative-templates-import-custom#add-the-admx-and-adml-files) and then [create a custom **Configuration profile**](/intune/intune-service/configuration/administrative-templates-import-custom#create-a-profile-using-your-imported-files) based on the imported ADMX files. 
 
 > [!NOTE]
-> The Notepad administrative template (ADMX) depends on the Windows administrative template (`C:\Windows\PolicyDefinitions\Windows.admx`) file, so make sure you import it as well.
+> The Notepad administrative template (ADMX) depends on the Windows administrative template (`C:\Windows\PolicyDefinitions\Windows.admx`) file, so make sure you import it as well.
 
 <!-- 
 #### [:::image type="icon" source="images/icons/csp.svg"::: **CSP**](#tab/csp)
