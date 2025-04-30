@@ -33,7 +33,7 @@ highlightedContent:
 
 productDirectory:
   title: Understand Windows diagnostic data in Windows 11 and Windows 10
-  summary: Learn more about what Windows diagnostic data is collected under the different settings for the latest versions Windows 11 and Windows 10. 
+  summary: Learn more about what Windows diagnostic data is collected under the different settings for the latest versions of Windows 11 and Windows 10. 
   items:
     - title: Windows 11 required diagnostic data
       imageSrc: /media/common/i_extend.svg
