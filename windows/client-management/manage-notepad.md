@@ -16,30 +16,74 @@ Notepad in Windows includes AI features powered by Copilot that help refine and 
 
 This article provides information about managing AI features for Notepad in a commercial environment.
 
-## Configure policies for Notepad
+## Download the Notepad administrative template (ADMX)
+
+The [Notepad Administrative Template (ADMX)](https://todo) can be downloaded from the Microsoft Download Center.
+
+## Policy settings
+
+### DisableAIFeaturesInNotepad
+
+This policy setting allows you to control whether AI features are disabled in the Windows Notepad app. 
+
+- If this policy is enabled, AI features will not be accessible in the Notepad app. 
+- If this policy is disabled or not configured, users will be able to access AI features in the Notepad app.
+
+**Supported versions**
+
+- Windows 11, version 22H2 or later.
+- Notepad [TBD]
+
+**Allowed values**
+
+| Value       | Description               |
+|:----------- |:------------------------- |
+| 0 (Default) | AI features are enabled.  |
+| 1           | AI features are disabled. |
+
+## Configure policies
 
 To configure Notepad policies, you can use:
 
 - Microsoft Intune
-- CSP
 - Group policy
 - Registry
 
 The following instructions provide details how to configure your devices. Select the option that best suits your needs.
 
-#### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune**](#tab/intune)
-
-TODO
-
-#### [:::image type="icon" source="../../images/icons/csp.svg"::: **CSP**](#tab/csp)
-
-TODO
+#### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
 
-#### [:::image type="icon" source="../../images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
+To configure devices using Microsoft Intune, [import the Notepad administrative template (ADMX) files](/intune/intune-service/configuration/administrative-templates-import-custom#add-the-admx-and-adml-files) and then [create a custom **Configuration profile**](/intune/intune-service/configuration/administrative-templates-import-custom#create-a-profile-using-your-imported-files) based on the imported ADMX files. 
 
-TODO
+> [!NOTE]
+> The Notepad administrative template (ADMX) depends on the Windows administrative template (`C:\Windows\PolicyDefinitions\Windows.admx`) file, so make sure you import it as well.
 
-#### [:::image type="icon" source="../../images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
+<!-- 
+#### [:::image type="icon" source="images/icons/csp.svg"::: **CSP**](#tab/csp)
+TODO 
+-->
 
-TODO
+#### [:::image type="icon" source="images/icons/group-policy.svg" border="false"::: **GPO**](#tab/gpo)
+
+For machines within a corporate network, you can use Group Policy with Active Directory (AD) to deploy Notepad policies. Steps:
+
+1. Download the latest [Notepad administrative template (ADMX)](#download-the-notepad-administrative-template-admx).
+
+2. On your domain controllers, copy and paste the following files to the relevant location, depending if you store Group Policy templates in the local `PolicyDefinitions` folder or the [Group Policy Central Store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store). Replace `contoso.com` with your domain name, and `en-US` if you're using a different language.
+   
+   - **Filename**: `WindowsNotepad.admx`     
+     - **Local location**: `C:\Windows\PolicyDefinitions\`
+     - **Central Store**: `\\contoso.com\SYSVOL\contoso.com\Policies\PolicyDefinitions`
+   
+   - **Filename**: `en-US\WindowsNotepad.adml`     
+     - **Local location**: `C:\Windows\PolicyDefinitions\en-US\`
+     - **Central Store**: `\\contoso.com\SYSVOL\contoso.com\Policies\PolicyDefinitions\en-US`
+
+3. On a device you use to manage Group Policy, open the **Group Policy Management Console (GPMC)** and create or edit a policy that targets your devices.
+
+4. To verify that the Notepad administrative template is available, browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Notepad** . You should see policy settings for Notepad available for you to configure.
+
+#### [:::image type="icon" source="images/icons/registry.svg" border="false"::: **Registry**](#tab/reg)
+
+To disable AI features in Notepad, set the `DisableAIFeatures` registry value to `1` under `HKLM:\SOFTWARE\Policies\WindowsNotepad`.
