@@ -45,7 +45,7 @@ productDirectory:
       url: required-windows-diagnostic-data-events-and-fields-2004.md
     - title: Optional diagnostic data
       imageSrc: /media/common/i_get-started.svg
-      summary: Get examples of the types of optional diagnostic data collected from Windows
+      summary: Get examples of the types of optional diagnostic data collected from Windows.
       url: optional-diagnostic-data.md
 
 additionalContent:
@@ -60,7 +60,7 @@ additionalContent:
         - title: Additional resources
           links:
             - text: Microsoft Trust Center
-              url: https://www.microsoft.com/trustcenter
+              url: https://www.microsoft.com/trust-center/product-overview
             - text: General Data Protection Regulation Summary
               url: /compliance/regulatory/gdpr
             - text: Service Trust Portal
