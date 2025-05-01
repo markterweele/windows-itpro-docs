@@ -233,7 +233,11 @@ Depending on your configuration, you can have a user to automatically sign in to
 
 Here are the options to remove Shell Launcher, select the method that best fits your needs:
 
-#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune/CSP**](#tab/intune)
+#### [:::image type="icon" source="../images/icons/intune.svg"::: **Intune**](#tab/intune)
+
+Unassign or delete the policy that contains the configuration.
+
+#### [:::image type="icon" source="../images/icons/csp.svg"::: **CSP**](#tab/csp)
 
 Unassign or delete the policy that contains the configuration.
 
