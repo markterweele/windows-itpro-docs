@@ -43,7 +43,9 @@ You can configure devices using the [AssignedAccess CSP][WIN-3].
 
 | Setting |
 |--|
-|- **OMA-URI:** `./Vendor/MSFT/AssignedAccess/ShellLauncher` <br>- **Data type:** string<br>- **Value:** [!INCLUDE [quickstart-xml](includes/quickstart-xml.md)] |
+|- **OMA-URI:** `./Vendor/MSFT/AssignedAccess/ShellLauncher` <br>- **Data type:** string<br>- **Value:** content of the following XML |
+
+ [!INCLUDE [quickstart-xml](includes/quickstart-xml.md)]
 
 #### [:::image type="icon" source="../images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
 
