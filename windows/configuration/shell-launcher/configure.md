@@ -171,7 +171,7 @@ You can configure devices using the [AssignedAccess CSP][WIN-3].
 You can configure Shell Launcher by creating a provisioning package and then applying the provisioning package during image deployment time or at runtime:
 
 - If you're creating an installation media with settings for Shell Launcher included in the image, or you're applying a provisioning package during setup, you must enable Shell Launcher on the installation media with DISM for a provisioning package to successfully apply
-- If exectuing the provisioning package at runtime, ensure to [enable Shell Launcher](#enable-shell-launcher) before applying the provisioning package
+- If executing the provisioning package at runtime, ensure to [enable Shell Launcher](#enable-shell-launcher) before applying the provisioning package
 
 [!INCLUDE [provisioning-package-1](../../../includes/configure/provisioning-package-1.md)]
 
