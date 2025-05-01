@@ -27,7 +27,10 @@ You can use configuration service provider (CSP) or group policy (GPO) settings 
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][INT-1] with the [Policy CSP][CSP-1].
+
+#### [:::image type="icon" source="../images/icons/csp.svg"::: **CSP**](#tab/csp-11)
+
+You can configure devices using the [Policy CSP][CSP-1].
 
 | Setting |
 |--|
