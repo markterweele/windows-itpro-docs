@@ -11,5 +11,5 @@ This policy setting prevents the Start menu from displaying a list of recommende
 
 |  | Path |
 |--|--|
-| **CSP** | - `./User/Vendor/MSFT/Policy/Config/Start/`[HideRecommendedSection](/windows/client-management/mdm/policy-csp-start#hiderecommendedsection)<br><br `./Device/Vendor/MSFT/Policy/Config/Start/`[HideRecommendedSection](/windows/client-management/mdm/policy-csp-start#hiderecommendedsection) |
+| **CSP** | - `./User/Vendor/MSFT/Policy/Config/Start/`[HideRecommendedSection](/windows/client-management/mdm/policy-csp-start#hiderecommendedsection)<br>- `./Device/Vendor/MSFT/Policy/Config/Start/`[HideRecommendedSection](/windows/client-management/mdm/policy-csp-start#hiderecommendedsection) |
 | **GPO** | - **Computer Configuration** > **Administrative Templates** > **Start Menu and Taskbar**<br> - **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar** > **Remove Recommended section from Start Menu** |
