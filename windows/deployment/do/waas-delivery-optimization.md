@@ -85,8 +85,6 @@ In Windows client Enterprise, Professional, and Education editions, Delivery Opt
 
 At Microsoft, to help ensure that ongoing deployments weren't affecting our network and taking away bandwidth for other services, Microsoft IT used a couple of different bandwidth management strategies. Delivery Optimization, peer-to-peer caching enabled through Group Policy, was piloted and then deployed to all managed devices using Group Policy. Based on recommendations from the Delivery Optimization team, we used the "group" configuration to limit sharing of content to only the devices that are members of the same Active Directory domain. The content is cached for 24 hours. More than 76 percent of content came from peer devices versus the Internet.
 
-For more information, check out the [Adopting Windows as a Service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft) technical case study.
-
 ## Using a proxy with Delivery Optimization
 
 If a proxy is being used in your environment, see [Using a proxy with Delivery Optimization](delivery-optimization-proxy.md) to understand the proxy settings needed to properly using Delivery Optimization.
