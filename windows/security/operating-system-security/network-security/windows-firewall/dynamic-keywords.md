@@ -7,9 +7,6 @@ ms.date: 04/07/2025
 
 # Windows Firewall dynamic keywords
 
-> [!IMPORTANT]
->This article describes features or settings that are in preview. The content is subject to change and may have dependencies on other features or services in preview.
-
 Windows Firewall includes a functionality called *dynamic keywords*, which simplifies the configuration and management of Windows Firewall.
 
 With dynamic keywords, you can define a set of IP address ranges, fully qualified domain names (FQDNs), and **autoresolution** options, to which one or more Firewall rules can refer.
