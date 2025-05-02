@@ -273,6 +273,14 @@ Adjust memory quotas for a process - This privilege determines who can change th
 
 <!-- AdjustMemoryQuotasForProcess-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!CAUTION]
+> When you configure user rights, it replaces existing users or groups that were previously assigned to those user rights. The system requires that the **Local Service** account (SID `S-1-5-19`) and **Network Service** account (SID `S-1-5-20`) always has the AdjustMemoryQuotasForProcess right. Always specify **Local Service** and **Network Service**, in addition to any other accounts that you need to configure in this policy.
+>
+> If you don't include the **Local Service** account and **Network Service** account, the request fails with the following error:
+>
+> | Error code         | Symbolic name       | Error description            | Header     |
+> |--------------------|---------------------|------------------------------|------------|
+> | `0x80070032` (Hex) | ERROR_NOT_SUPPORTED | The request isn't supported. | winerror.h |
 <!-- AdjustMemoryQuotasForProcess-Editable-End -->
 
 <!-- AdjustMemoryQuotasForProcess-DFProperties-Begin -->
@@ -475,6 +483,14 @@ This user right determines which users can traverse directory trees even though 
 
 <!-- BypassTraverseChecking-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!CAUTION]
+> When you configure user rights, it replaces existing users or groups that were previously assigned to those user rights. The system requires that the **Local Service** account (SID `S-1-5-19`) and **Network Service** account (SID `S-1-5-20`) always has the BypassTraverseChecking right. Always specify **Local Service** and **Network Service**, in addition to any other accounts that you need to configure in this policy.
+>
+> If you don't include the **Local Service** account and **Network Service** account, the request fails with the following error:
+>
+> | Error code         | Symbolic name       | Error description            | Header     |
+> |--------------------|---------------------|------------------------------|------------|
+> | `0x80070032` (Hex) | ERROR_NOT_SUPPORTED | The request isn't supported. | winerror.h |
 <!-- BypassTraverseChecking-Editable-End -->
 
 <!-- BypassTraverseChecking-DFProperties-Begin -->
@@ -582,6 +598,14 @@ This user right determines which users and groups can change the time zone used 
 
 <!-- ChangeTimeZone-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!CAUTION]
+> When you configure user rights, it replaces existing users or groups that were previously assigned to those user rights. The system requires that the **Local Service** account (SID `S-1-5-19`) always has the ChangeTimeZone right. Always specify **Local Service**, in addition to any other accounts that you need to configure in this policy.
+>
+> If you don't include the **Local Service** account, the request fails with the following error:
+>
+> | Error code         | Symbolic name       | Error description            | Header     |
+> |--------------------|---------------------|------------------------------|------------|
+> | `0x80070032` (Hex) | ERROR_NOT_SUPPORTED | The request isn't supported. | winerror.h |
 <!-- ChangeTimeZone-Editable-End -->
 
 <!-- ChangeTimeZone-DFProperties-Begin -->
@@ -634,6 +658,14 @@ This security setting determines whether users can create global objects that ar
 
 <!-- CreateGlobalObjects-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!CAUTION]
+> When you configure user rights, it replaces existing users or groups that were previously assigned to those user rights. The system requires that the **Local Service** account (SID `S-1-5-19`) and **Network Service** account (SID `S-1-5-20`) always has the CreateGlobalObjects right. Always specify **Local Service** and **Network Service**, in addition to any other accounts that you need to configure in this policy.
+>
+> If you don't include the **Local Service** account and **Network Service** account, the request fails with the following error:
+>
+> | Error code         | Symbolic name       | Error description            | Header     |
+> |--------------------|---------------------|------------------------------|------------|
+> | `0x80070032` (Hex) | ERROR_NOT_SUPPORTED | The request isn't supported. | winerror.h |
 <!-- CreateGlobalObjects-Editable-End -->
 
 <!-- CreateGlobalObjects-DFProperties-Begin -->
@@ -1244,6 +1276,14 @@ This user right determines which accounts can be used by a process to add entrie
 
 <!-- GenerateSecurityAudits-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!CAUTION]
+> When you configure user rights, it replaces existing users or groups that were previously assigned to those user rights. The system requires that the **Local Service** account (SID `S-1-5-19`) and **Network Service** account (SID `S-1-5-20`) always has the GenerateSecurityAudits right. Always specify **Local Service** and **Network Service**, in addition to any other accounts that you need to configure in this policy.
+>
+> If you don't include the **Local Service** account and **Network Service** account, the request fails with the following error:
+>
+> | Error code         | Symbolic name       | Error description            | Header     |
+> |--------------------|---------------------|------------------------------|------------|
+> | `0x80070032` (Hex) | ERROR_NOT_SUPPORTED | The request isn't supported. | winerror.h |
 <!-- GenerateSecurityAudits-Editable-End -->
 
 <!-- GenerateSecurityAudits-DFProperties-Begin -->
@@ -1302,6 +1342,14 @@ Assigning this user right to a user allows programs running on behalf of that us
 
 <!-- ImpersonateClient-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!CAUTION]
+> When you configure user rights, it replaces existing users or groups that were previously assigned to those user rights. The system requires that the **Local Service** account (SID `S-1-5-19`) and **Network Service** account (SID `S-1-5-20`) always has the ImpersonateClient right. Always specify **Local Service** and **Network Service**, in addition to any other accounts that you need to configure in this policy.
+>
+> If you don't include the **Local Service** account and **Network Service** account, the request fails with the following error:
+>
+> | Error code         | Symbolic name       | Error description            | Header     |
+> |--------------------|---------------------|------------------------------|------------|
+> | `0x80070032` (Hex) | ERROR_NOT_SUPPORTED | The request isn't supported. | winerror.h |
 <!-- ImpersonateClient-Editable-End -->
 
 <!-- ImpersonateClient-DFProperties-Begin -->
@@ -2002,6 +2050,14 @@ This security setting determines which user accounts can call the CreateProcessA
 
 <!-- ReplaceProcessLevelToken-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!CAUTION]
+> When you configure user rights, it replaces existing users or groups that were previously assigned to those user rights. The system requires that the **Local Service** account (SID `S-1-5-19`) and **Network Service** account (SID `S-1-5-20`) always has the ReplaceProcessLevelToken right. Always specify **Local Service** and **Network Service**, in addition to any other accounts that you need to configure in this policy.
+>
+> If you don't include the **Local Service** account and **Network Service** account, the request fails with the following error:
+>
+> | Error code         | Symbolic name       | Error description            | Header     |
+> |--------------------|---------------------|------------------------------|------------|
+> | `0x80070032` (Hex) | ERROR_NOT_SUPPORTED | The request isn't supported. | winerror.h |
 <!-- ReplaceProcessLevelToken-Editable-End -->
 
 <!-- ReplaceProcessLevelToken-DFProperties-Begin -->

@@ -3,7 +3,7 @@ title: Manage Click to Do for Windows clients
 description: Learn how to manage Click to Do for commercial environments and about Click to Do features.
 ms.topic: how-to
 ms.subservice: windows-copilot
-ms.date: 03/28/2025
+ms.date: 04/24/2025
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -14,19 +14,18 @@ appliesto:
 ---
 
 # Manage Click to Do
-<!--9687427-->
+<!--9687427, 9608247-->
 >**Looking for consumer information?** See [Click to Do: do more with what's on your screen](https://support.microsoft.com/topic/6848b7d5-7fb0-4c43-b08a-443d6d3f5955).
 
 Click to Do (preview) helps users to get things done faster by identifying text and images that are currently on their screen so they can perform actions on them. This article provides information about Click to Do and how to manage it in a commercial environment.
 
 > [!NOTE]
-> - The policy to manage Click to Do is now available in preview to Copilot+ PCs through the Windows Insider Program. For more information, see the [Windows Insider blog](https://blogs.windows.com/windows-insider/2025/03/28/announcing-windows-11-insider-preview-build-26120-3653-beta-channel/).
 > - In-market commercial devices are defined as devices with an Enterprise (ENT) or Education (EDU) SKU or any premium SKU device that is managed by an IT administrator (whether via Microsoft Endpoint Manager or other endpoint management solution), has a volume license key, or is joined to a domain. Commercial devices during Out of Box Experience (OOBE) are defined as those with ENT or EDU SKU or any premium SKU device that has a volume license key or is Microsoft Entra joined. 
 > - Click to Do is optimized for select languages English, Chinese (simplified), French, German, Japanese, and Spanish. Content-based and storage limitations apply. For more information, see [https://aka.ms/copilotpluspcs](https://aka.ms/copilotpluspcs).
 
 ## What is Click to Do?
 
-Click to Do (preview) analyzes what's on the screen and then allows users to choose the text or image they want to take action on. Users can open Click to Do by using **Windows key** + **Q** or with **Windows key** + **mouse click**. Other entry points for Click to Do include Snipping Tool, search results, and the Start menu.
+Click to Do (preview) analyzes what's on the screen and then allows users to choose the text or image they want to take action on. Users can open Click to Do by using **Windows key** + **Q** or with **Windows key** + **mouse click**. Other entry points for Click to Do include right swipe on touch enabled PCs, Snipping Tool, search results, and the Start menu.
 
 The analysis of screenshots is always performed locally on the device. Analysis only begins after users actively engage with Click to Do and ends when they exit Click to Do. Click to Do only identifies text and images, not the content of those text or images. It doesn't analyze any content in, for example, minimized applications that aren't on the screen.  
  
@@ -44,6 +43,8 @@ Click to Do has the following minimum requirements:
   - 16 GB RAM
   - 8 logical processors
   - 256 GB storage capacity
+
+To display the Click to Do entry point from Snipping Tool, Snipping Tool version 11.2411.20.0, or later is required. 
 
 The more intelligent text actions are available only on Snapdragon-powered Copilot+ PCs today when your language is set to English with support for AMD and Intel-powered Copilot+ PCs coming soon. 
 
@@ -73,7 +74,7 @@ When you choose to send info from Click to Do to an app, like Paint, Click to Do
 
 Temporary files may also be saved when you choose send feedback. These temporary files aren't saved long term. Click to Do doesn't keep any content from your screen after completing the requested action, but some [diagnostic data](/windows/privacy/configure-windows-diagnostic-data-in-your-organization) is gathered to keep Click to Do secure, up to date, and working.
 
-Click to Do's more intelligent text actions, including **Summarize**, **Rewrite (Casual)**, **Rewrite (Formal)**,**Rewrite (Refine)**, and **Create a bulleted list** are powered by a state-of-the-art small language model called Phi Silica. Phi Silica leverages the NPU and the language model runs locally on Copilot+ PCs. Phi Silica ships inbox with Windows on Copilot+ PCs. 
+Click to Do's more intelligent text actions, including **Summarize**, **Rewrite (Casual)**, **Rewrite (Formal)**, **Rewrite (Refine)**, and **Create a bulleted list** are powered by a state-of-the-art small language model called Phi Silica. Phi Silica leverages the NPU and the language model runs locally on Copilot+ PCs. Phi Silica ships inbox with Windows on Copilot+ PCs. 
 
 When a user clicks on the Click to Do text actions, the selected text and the chosen action are sent to Phi Silica as part of a prompt. Phi Silica intelligently rewrites the selected text as per the user's request and streams back the response from the model. Phi Silica provides responses quickly and efficiently, using little power. For more information, see [Phi Silica, small but mighty on-device SLM](https://blogs.windows.com/windowsexperience/?p=179250). 
 
@@ -82,6 +83,7 @@ In keeping with Microsoft's commitment to data privacy and security, all saved i
 - **Search the web**: Sends the selected content to Bing using Microsoft Edge
 - **Open website**: Opens the selected website in your default browser
 -	**Visual search with Bing**: Sends the selected content to [Bing visual search](https://support.microsoft.com/topic/62771a0c-4daa-47e4-a9f7-e1bfa85f0d7c) using your default browser
+
 
 
 ## Microsoft's commitment to responsible AI and Privacy
