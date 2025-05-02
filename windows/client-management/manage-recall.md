@@ -82,6 +82,7 @@ By default, Recall is removed on commercially managed devices. If you want to al
 - [App and website filtering policies](#app-and-website-filtering-policies)
     - App and website filtering policies apply only to Enterprise and Education editions of Windows
 
+
 > [!IMPORTANT]
 > The policy to manage Click to Do doesn't affect Click to Do in Recall. For more information, see [Manage Click to Do](manage-click-to-do.md). 
 
@@ -171,6 +172,22 @@ Snapshots won't be saved when supported remote desktop clients are used. The rem
 
 > [!Note]
 > Clients will be saved by Recall unless the client implements screen capture protection, for example [screen capture protection in Azure Virtual desktop](/azure/virtual-desktop/screen-capture-protection). Clients can control how screen capture protection is implemented and may allow some pages to be saved but not the remote session. Customers can always add filters for specific client apps. Check with the provider of your remote client software for details on their screen capture policy. For information about adding screen capture protection to a client, see the [Information for developers](#information-for-developers) section.
+
+## Allow export of Recall and snapshot information
+<!--9257953-->
+This policy allows you to determine whether Recall and snapshot information can be exported. The files that are exported are encrypted since Recall and snapshot information may be sensitive. Users can export from **Settings** > **Privacy & Security** > **Recall & Snapshots** > **Advanced Settings** > **Export snapshots** -> **Export past snapshots** -> **Export**. From **Settings** > **Privacy & Security** > **Recall & Snapshots** > **Advanced Settings**, users can also choose to turn on the option to **Export snapshots from now on**, which continuously exports their snapshots.
+
+Before export, users are notified that their files are encrypted since they may contain sensitive information. The user is also notified that they'll need to provide an export code if they want to allow trusted apps or websites access to exported snapshots. Before starting an export, the user must authenticate with Windows Hello.
+
+When you set this policy to enabled, users will be able to export Recall and snapshot information.
+
+If the policy is set to disabled or not configured, users won't be able to export their Recall and snapshot information.
+
+| &nbsp; | Setting  |
+|---|---|
+| **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[AllowRecallExport](mdm/policy-csp-windowsai.md#allowrecallexport) |
+| **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Allow export of Recall and snapshot information** |
+
 
 ## Bring your own device (BYOD) considerations
 
