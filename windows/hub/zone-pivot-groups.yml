@@ -20,9 +20,9 @@ groups:
   title: Windows versions
   prompt: "Select the Windows version you want to learn about:"
   pivots:
-  - id: windows-insider
-    title: Windows Insider
   - id: windows-11
     title: Windows 11
   - id: windows-10
     title: Windows 10
+  - id: windows-insider
+    title: Windows Insider
