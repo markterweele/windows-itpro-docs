@@ -1,11 +1,11 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 04/11/2024
+ms.date: 04/03/2025
 ms.topic: include
 ---
 
-### Configures search on the taskbar
+### Configure search on the taskbar
 
 This policy setting allows you to configure search on the taskbar.
 
@@ -17,5 +17,5 @@ This policy setting allows you to configure search on the taskbar.
 
 |  | Path |
 |--|--|
-| **CSP** | `./Device/Vendor/MSFT/Policy/Config/Search/`[ConfigureSearchOnTaskbarMode](/windows/client-management/mdm/policy-csp-search#configuresearchontaskbarmode) |
-| **GPO** | - **Computer Configuration**  > **Windows Components** > **Search** |
+| **CSP** | - `./Device/Vendor/MSFT/Policy/Config/Search/`[ConfigureSearchOnTaskbarMode](/windows/client-management/mdm/policy-csp-search#configuresearchontaskbarmode) |
+| **GPO** | - **Computer Configuration**  > **Windows Components** > **Search** > **Configure search on the taskbar** |
