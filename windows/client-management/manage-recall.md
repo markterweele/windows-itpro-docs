@@ -82,6 +82,7 @@ By default, Recall is removed on commercially managed devices. If you want to al
 - [App and website filtering policies](#app-and-website-filtering-policies)
     - App and website filtering policies apply only to Enterprise and Education editions of Windows
 - [Allow export of Recall and snapshot information](#allow-export-of-recall-and-snapshot-information)
+    - The export of Recall and snapshot information feature and its policy applies only to devices in the European Economic Area (EEA)
 
 > [!IMPORTANT]
 > The policy to manage Click to Do doesn't affect Click to Do in Recall. For more information, see [Manage Click to Do](manage-click-to-do.md). 
@@ -182,6 +183,9 @@ Before export, users are notified that their files are encrypted since they may 
 When you set this policy to enabled, users will be able to export Recall and snapshot information.
 
 If the policy is set to disabled or not configured, users won't be able to export their Recall and snapshot information.
+
+> [!Important]
+> The export of Recall and snapshot information feature and its policy applies only to devices in the European Economic Area (EEA). The feature isn't available in other regions. The policy is available in all regions, but it won't have any effect outside of the EEA.
 
 | &nbsp; | Setting  |
 |---|---|
