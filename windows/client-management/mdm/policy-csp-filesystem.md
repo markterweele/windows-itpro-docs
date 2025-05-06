@@ -1,7 +1,7 @@
 ---
 title: FileSystem Policy CSP
 description: Learn more about the FileSystem Area in Policy CSP.
-ms.date: 04/30/2025
+ms.date: 05/06/2025
 ms.topic: generated-reference
 ---
 
@@ -145,7 +145,7 @@ Dev drive or developer volume is a volume optimized for performance of developer
 
 Disabling this setting will disallow creation of new developer volumes, existing developer volumes will mount as regular volumes.
 
-If this setting isn't configured the default policy is to enable developer volumes while allowing antivirus filter to attach on a deveveloper volume. Further, if not configured, a local administrator can choose to not have antivirus filter attached to a developer volume.
+If this setting isn't configured the default policy is to enable developer volumes while allowing antivirus filter to attach on a developer volume. Further, if not configured, a local administrator can choose to not have antivirus filter attached to a developer volume.
 
 A reboot is required for this setting to take effect.
 <!-- EnableDevDrive-Description-End -->
