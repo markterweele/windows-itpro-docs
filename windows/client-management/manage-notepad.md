@@ -20,7 +20,7 @@ This article provides information about managing AI features for Notepad in a co
 
 ## Download the Notepad administrative template (ADMX)
 
-The [Notepad Administrative Template (ADMX)](https://todo) can be downloaded from the Microsoft Download Center. The group policy settings contained in the ADMX file are machine-wide for all users.
+The [Notepad Administrative Template (ADMX)](https://download.microsoft.com/download/72ea16a9-4cc9-4032-945d-3a56a483d034/WindowsNotepadAdminTemplates.cab) can be downloaded from the Microsoft Download Center. The group policy settings contained in the ADMX file are machine-wide for all users.
 
 ## Policy settings
 
@@ -34,7 +34,7 @@ This policy setting allows you to control whether AI features are disabled in th
 **Supported versions**
 
 - Windows 11, version 22H2 or later.
-- Notepad [TBD]
+- Notepad version 11.2503.16.0 or later.
 
 ## Configure policies
 
