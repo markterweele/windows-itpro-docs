@@ -16,10 +16,9 @@ The WiFi configuration service provider provides the functionality to add or del
 
 Programming considerations:
 
-- If the authentication method needs a certificate, for example, EAP-TLS requires client certificates, you must configure it through the CertificateStore configuration service provider. The WiFi configuration service provider doesn't provide that functionality; instead, the Wi-Fi profile can specify characteristics of the certificate to be used for choosing the right certificate for that network. The server must successfully enroll the certificate first before deploying the Wi-Fi network configuration. For example, for an EAP-TLS profile, the server must successfully configure and enroll the required client certificate before deploying the Wi-Fi profile. Self-signed certificate works for EAP-TLS/PEAP-MSCHAPv2, but it isn't supported in EAP-TLS.
+- If the authentication method needs a certificate, (e.g. client certificates for EAP-TLS), you must configure it through the [CertificateStore](./certificatestore-csp) configuration service provider. The WiFi configuration service provider doesn't provide that functionality; instead, the Wi-Fi profile can specify characteristics of the certificate to be used for choosing the right certificate for that network. The server must successfully enroll the certificate first before deploying the Wi-Fi network configuration. For example, for an EAP-TLS profile, the server must successfully configure and enroll the required client certificate before deploying the Wi-Fi profile. Self-signed certificate works for EAP-TLS/PEAP-MSCHAPv2, but it isn't supported in EAP-TLS.
 - For WEP, WPA, and WPA2-based networks, include the passkey in the network configuration in plaintext. The passkey is encrypted automatically when it's stored on the device.
-- The SSID of the Wi-Fi network part of the LocURI node must be a valid URI based on RFC 2396. This condition requires that all non-ASCII characters must be escaped using a %-character. Unicode characters without the necessary escaping aren't supported.
-- The `<name>name_goes_here</name>\<SSIDConfig>` must match `<SSID><name>name_goes_here</name></SSID>`.
+- The `SSID` part of the LocURI node must be a valid URI based on RFC 2396. This condition requires that all non-excluded ASCII characters must be escaped using a %-character. This includes replacing the space character with `%20`. Characters (including Unicode) without the necessary escaping aren't supported.
 - For the WiFi CSP, you can't use the Replace command unless the node already exists.
 - Using ProxyPacUrl or ProxyWPAD in Windows 10 client editions (Home, Pro, Enterprise, and Education) will result in failure.
 <!-- WiFi-Editable-End -->
@@ -108,9 +107,13 @@ The Profile name of the Wi-Fi network. This is added when WlanXml node is added 
 
 <!-- Device-Profile-{SSID}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Specifies the name of the Wi-Fi network (32 bytes maximum) to create, configure, query, or delete. The name is case sensitive and can be represented in ASCII.
+Specifies the Profile Name of the Wi-Fi network (32 bytes maximum) to create, configure, query, or delete. The name is case sensitive and can be represented in ASCII. In the URI, it must be %-escaped, but the non-%-escaped value is what's used when applied to the system.
 
-SSID is the name of network you're connecting to, while Profile name is the name of the Profile that contains the WiFi settings information. If the Profile name isn't set right in the MDM SyncML, as per the information in the WiFi settings XML, it could lead to some unexpected errors. For example, `<LocURI>./Vendor/MSFT/WiFi/Profile/<MUST BE NAME OF PROFILE AS PER WIFI XML>/WlanXml</LocURI>`.
+> [!NOTE]
+> This field is the Profile Name that will appear as a "Friendly Name" to the user and contains the Wi-Fi settings information. The non-%-escaped value must correspond to `<name>` in `<WLANProfile> <name>`. This value MAY be different from the SSID of the actual network being broadcast (which is under `<WLANProfile> <SSIDConfig> <SSID> <name>`).
+
+> [!IMPORTANT]
+> If the Profile name isn't set correctly in the MDM SyncML, as per the information in the Wi-Fi settings XML (`<WLANProfile>`, it could lead to some unexpected errors. In other words, if the profile is `<WLANProfile><name>Contoso Wi-Fi</name>{...}`, the MDM SyncML must be `<LocURI>./Vendor/MSFT/WiFi/Profile/Contoso%20Wi-Fi/WlanXml</LocURI>`.
 <!-- Device-Profile-{SSID}-Editable-End -->
 
 <!-- Device-Profile-{SSID}-DFProperties-Begin -->
