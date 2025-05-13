@@ -1,7 +1,7 @@
 ---
 title: WiFi CSP
 description: Learn more about the WiFi CSP.
-ms.date: 03/12/2025
+ms.date: 05/13/2025
 ms.topic: generated-reference
 ---
 
@@ -16,11 +16,11 @@ The WiFi configuration service provider provides the functionality to add or del
 
 Programming considerations:
 
-- If the authentication method needs a certificate, (e.g. client certificates for EAP-TLS), you must configure it through the [CertificateStore](./certificatestore-csp) configuration service provider. The WiFi configuration service provider doesn't provide that functionality; instead, the Wi-Fi profile can specify characteristics of the certificate to be used for choosing the right certificate for that network. The server must successfully enroll the certificate first before deploying the Wi-Fi network configuration. For example, for an EAP-TLS profile, the server must successfully configure and enroll the required client certificate before deploying the Wi-Fi profile. Self-signed certificate works for EAP-TLS/PEAP-MSCHAPv2, but it isn't supported in EAP-TLS.
+- If the authentication method needs a certificate (for example, client certificates for EAP-TLS), you must configure it through the [CertificateStore](./certificatestore-csp) configuration service provider. The WiFi configuration service provider doesn't provide that functionality; instead, the Wi-Fi profile can specify characteristics of the certificate to be used for choosing the right certificate for that network. The server must successfully enroll the certificate first before deploying the Wi-Fi network configuration. For example, for an EAP-TLS profile, the server must successfully configure and enroll the required client certificate before deploying the Wi-Fi profile. Self-signed certificate works for EAP-TLS/PEAP-MSCHAPv2, but it isn't supported in EAP-TLS.
 - For WEP, WPA, and WPA2-based networks, include the passkey in the network configuration in plaintext. The passkey is encrypted automatically when it's stored on the device.
-- The `SSID` part of the LocURI node must be a valid URI based on RFC 2396. This condition requires that all non-excluded ASCII characters must be escaped using a %-character. This includes replacing the space character with `%20`. Characters (including Unicode) without the necessary escaping aren't supported.
+- The `SSID` part of the LocURI node must be a valid URI based on RFC 2396. This condition requires that all nonexcluded ASCII characters must be escaped using a %-character. This includes replacing the space character (` `) with `%20`. Characters (including Unicode) without the necessary escaping aren't supported.
 - For the WiFi CSP, you can't use the Replace command unless the node already exists.
-- Using ProxyPacUrl or ProxyWPAD in Windows 10 client editions (Home, Pro, Enterprise, and Education) will result in failure.
+- Using ProxyPacUrl or ProxyWPAD in Windows client editions (Home, Pro, Enterprise, and Education) will result in failure.
 <!-- WiFi-Editable-End -->
 
 <!-- WiFi-Tree-Begin -->
@@ -52,7 +52,7 @@ The following list shows the WiFi configuration service provider nodes:
 <!-- Device-Profile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Profile-Applicability-End -->
 
 <!-- Device-Profile-OmaUri-Begin -->
@@ -91,7 +91,7 @@ Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is 
 <!-- Device-Profile-{SSID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Profile-{SSID}-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-OmaUri-Begin -->
@@ -110,10 +110,10 @@ The Profile name of the Wi-Fi network. This is added when WlanXml node is added 
 Specifies the Profile Name of the Wi-Fi network (32 bytes maximum) to create, configure, query, or delete. The name is case sensitive and can be represented in ASCII. In the URI, it must be %-escaped, but the non-%-escaped value is what's used when applied to the system.
 
 > [!NOTE]
-> This field is the Profile Name that will appear as a "Friendly Name" to the user and contains the Wi-Fi settings information. The non-%-escaped value must correspond to `<name>` in `<WLANProfile> <name>`. This value MAY be different from the SSID of the actual network being broadcast (which is under `<WLANProfile> <SSIDConfig> <SSID> <name>`).
+> This field is the Profile Name that appears as a "Friendly Name" to the user and contains the Wi-Fi settings information. The non-%-escaped value must correspond to `<name>` in `<WLANProfile> <name>`. This value MAY be different from the SSID of the actual network being broadcast (which is under `<WLANProfile> <SSIDConfig> <SSID> <name>`).
 
 > [!IMPORTANT]
-> If the Profile name isn't set correctly in the MDM SyncML, as per the information in the Wi-Fi settings XML (`<WLANProfile>`, it could lead to some unexpected errors. In other words, if the profile is `<WLANProfile><name>Contoso Wi-Fi</name>{...}`, the MDM SyncML must be `<LocURI>./Vendor/MSFT/WiFi/Profile/Contoso%20Wi-Fi/WlanXml</LocURI>`.
+> If the Profile name isn't set correctly in the MDM SyncML, as per the information in the Wi-Fi settings XML (`<WLANProfile>`), it could lead to some unexpected errors. In other words, if the profile is `<WLANProfile><name>Contoso Wi-Fi</name>{...}`, the MDM SyncML must be `<LocURI>./Vendor/MSFT/WiFi/Profile/Contoso%20Wi-Fi/WlanXml</LocURI>`.
 <!-- Device-Profile-{SSID}-Editable-End -->
 
 <!-- Device-Profile-{SSID}-DFProperties-Begin -->
@@ -138,7 +138,7 @@ Specifies the Profile Name of the Wi-Fi network (32 bytes maximum) to create, co
 <!-- Device-Profile-{SSID}-ProfileSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Profile-{SSID}-ProfileSource-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-ProfileSource-OmaUri-Begin -->
@@ -187,7 +187,7 @@ Allows for defining which administrative entity is setting this Wi-Fi profile. T
 <!-- Device-Profile-{SSID}-Proxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Profile-{SSID}-Proxy-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-Proxy-OmaUri-Begin -->
@@ -226,7 +226,7 @@ Optional node. The format is url:port. Configuration of the network proxy (if an
 <!-- Device-Profile-{SSID}-ProxyPacUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Profile-{SSID}-ProxyPacUrl-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-ProxyPacUrl-OmaUri-Begin -->
@@ -243,7 +243,7 @@ Optional node. URL to the PAC file location.
 <!-- Device-Profile-{SSID}-ProxyPacUrl-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Don't use. Using this configuration in Windows 10 client editions will result in failure.
+> Don't use. Using this configuration in Windows client editions will result in failure.
 <!-- Device-Profile-{SSID}-ProxyPacUrl-Editable-End -->
 
 <!-- Device-Profile-{SSID}-ProxyPacUrl-DFProperties-Begin -->
@@ -267,7 +267,7 @@ Optional node. URL to the PAC file location.
 <!-- Device-Profile-{SSID}-ProxyWPAD-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Profile-{SSID}-ProxyWPAD-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-ProxyWPAD-OmaUri-Begin -->
@@ -284,7 +284,7 @@ Optional node. The presence of the field enables WPAD for proxy lookup.
 <!-- Device-Profile-{SSID}-ProxyWPAD-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Don't use. Using this configuration in Windows 10 client editions will result in failure.
+> Don't use. Using this configuration in Windows client editions will result in failure.
 <!-- Device-Profile-{SSID}-ProxyWPAD-Editable-End -->
 
 <!-- Device-Profile-{SSID}-ProxyWPAD-DFProperties-Begin -->
@@ -317,7 +317,7 @@ Optional node. The presence of the field enables WPAD for proxy lookup.
 <!-- Device-Profile-{SSID}-WiFiCost-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Profile-{SSID}-WiFiCost-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-WiFiCost-OmaUri-Begin -->
@@ -367,7 +367,7 @@ Optional node. If the policy is active selecting one of the values from the foll
 <!-- Device-Profile-{SSID}-WlanXml-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Profile-{SSID}-WlanXml-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-WlanXml-OmaUri-Begin -->
@@ -414,7 +414,7 @@ If it exists in the blob, the **keyType** and **protected** elements must come b
 <!-- User-Profile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-Profile-Applicability-End -->
 
 <!-- User-Profile-OmaUri-Begin -->
@@ -453,7 +453,7 @@ Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is 
 <!-- User-Profile-{SSID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-Profile-{SSID}-Applicability-End -->
 
 <!-- User-Profile-{SSID}-OmaUri-Begin -->
@@ -469,9 +469,7 @@ The Profile name of the Wi-Fi network. This is added when WlanXml node is added 
 
 <!-- User-Profile-{SSID}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Specifies the name of the Wi-Fi network (32 bytes maximum) to create, configure, query, or delete. The name is case sensitive and can be represented in ASCII.
-
-SSID is the name of network you're connecting to, while Profile name is the name of the Profile that contains the WiFi settings information. If the Profile name isn't set right in the MDM SyncML, as per the information in the WiFi settings XML, it could lead to some unexpected errors. For example, `<LocURI>./Vendor/MSFT/WiFi/Profile/<MUST BE NAME OF PROFILE AS PER WIFI XML>/WlanXml</LocURI>`.
+See [Device/Profile/{SSID}](#deviceprofilessid) for more information.
 <!-- User-Profile-{SSID}-Editable-End -->
 
 <!-- User-Profile-{SSID}-DFProperties-Begin -->
@@ -496,7 +494,7 @@ SSID is the name of network you're connecting to, while Profile name is the name
 <!-- User-Profile-{SSID}-ProfileSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-Profile-{SSID}-ProfileSource-Applicability-End -->
 
 <!-- User-Profile-{SSID}-ProfileSource-OmaUri-Begin -->
@@ -545,7 +543,7 @@ Allows for defining which administrative entity is setting this Wi-Fi profile. T
 <!-- User-Profile-{SSID}-Proxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-Profile-{SSID}-Proxy-Applicability-End -->
 
 <!-- User-Profile-{SSID}-Proxy-OmaUri-Begin -->
@@ -584,7 +582,7 @@ Optional node. The format is url:port. Configuration of the network proxy (if an
 <!-- User-Profile-{SSID}-ProxyPacUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-Profile-{SSID}-ProxyPacUrl-Applicability-End -->
 
 <!-- User-Profile-{SSID}-ProxyPacUrl-OmaUri-Begin -->
@@ -601,7 +599,7 @@ Optional node. URL to the PAC file location.
 <!-- User-Profile-{SSID}-ProxyPacUrl-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Don't use. Using this configuration in Windows 10 client editions will result in failure.
+> Don't use. Using this configuration in Windows client editions will result in failure.
 <!-- User-Profile-{SSID}-ProxyPacUrl-Editable-End -->
 
 <!-- User-Profile-{SSID}-ProxyPacUrl-DFProperties-Begin -->
@@ -625,7 +623,7 @@ Optional node. URL to the PAC file location.
 <!-- User-Profile-{SSID}-ProxyWPAD-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-Profile-{SSID}-ProxyWPAD-Applicability-End -->
 
 <!-- User-Profile-{SSID}-ProxyWPAD-OmaUri-Begin -->
@@ -642,7 +640,7 @@ Optional node. The presence of the field enables WPAD for proxy lookup.
 <!-- User-Profile-{SSID}-ProxyWPAD-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Don't use. Using this configuration in Windows 10 client editions will result in failure.
+> Don't use. Using this configuration in Windows client editions will result in failure.
 <!-- User-Profile-{SSID}-ProxyWPAD-Editable-End -->
 
 <!-- User-Profile-{SSID}-ProxyWPAD-DFProperties-Begin -->
@@ -675,7 +673,7 @@ Optional node. The presence of the field enables WPAD for proxy lookup.
 <!-- User-Profile-{SSID}-WiFiCost-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-Profile-{SSID}-WiFiCost-Applicability-End -->
 
 <!-- User-Profile-{SSID}-WiFiCost-OmaUri-Begin -->
@@ -725,7 +723,7 @@ Optional node. If the policy is active selecting one of the values from the foll
 <!-- User-Profile-{SSID}-WlanXml-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-Profile-{SSID}-WlanXml-Applicability-End -->
 
 <!-- User-Profile-{SSID}-WlanXml-OmaUri-Begin -->
@@ -743,12 +741,8 @@ Link to schema: <https://msdn.microsoft.com/library/windows/desktop/ms707341(v=v
 
 <!-- User-Profile-{SSID}-WlanXml-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-The profile XML must be escaped, as shown in the examples below.
 
-If it exists in the blob, the **keyType** and **protected** elements must come before **keyMaterial**, as shown in the example in [WPA2-Personal Profile Sample](/windows/win32/nativewifi/wpa2-personal-profile-sample).
-
-> [!NOTE]
-> If you need to specify other advanced conditions, such as specifying criteria for certificates that can be used by the Wi-Fi profile, you can do so by specifying this through the EapHostConfig portion of the WlanXML. For more information, see [EAP configuration](./eap-configuration.md).
+See [Device/Profile/{SSID}/WlanXml](#deviceprofilessidwlanxml) for more information.
 <!-- User-Profile-{SSID}-WlanXml-Editable-End -->
 
 <!-- User-Profile-{SSID}-WlanXml-DFProperties-Begin -->
@@ -790,7 +784,7 @@ The following example shows how to add PEAP-MSCHAPv2 network with SSID 'MyNetwor
           <Meta>
             <Format xmlns="syncml:metinf">chr</Format>
           </Meta>
-          <Data><?xml version="1.0"?><WLANProfile xmlns="http://contoso.com/networking/WLAN/profile/v1"><name>MyNetwork</name><SSIDConfig><SSID><hex>412D4D534654574C414E</hex><name>MyNetwork</name></SSID><nonBroadcast>false</nonBroadcast></SSIDConfig><connectionType>ESS</connectionType><connectionMode>manual</connectionMode><MSM><security><authEncryption><authentication>WPA2</authentication><encryption>AES</encryption><useOneX>true</useOneX></authEncryption><OneX xmlns="http://contoso.com/networking/OneX/v1"><authMode>user</authMode><EAPConfig><EapHostConfig xmlns="http://contoso.com/provisioning/EapHostConfig"><EapMethod><Type xmlns="http://contoso.com/provisioning/EapCommon">25</Type><VendorId xmlns="http://contoso.com/provisioning/EapCommon">0</VendorId><VendorType xmlns="http://contoso.com/provisioning/EapCommon">0</VendorType><AuthorId xmlns="http://contoso.com/provisioning/EapCommon">0</AuthorId></EapMethod><Config xmlns="http://contoso.com/provisioning/EapHostConfig"><Eap xmlns="http://contoso.com/provisioning/BaseEapConnectionPropertiesV1"><Type>25</Type><EapType xmlns="http://contoso.com/provisioning/MsPeapConnectionPropertiesV1"><ServerValidation><DisableUserPromptForServerValidation>true</DisableUserPromptForServerValidation><ServerNames></ServerNames></ServerValidation><FastReconnect>true</FastReconnect><InnerEapOptional>false</InnerEapOptional><Eap xmlns="http://contoso.com/provisioning/BaseEapConnectionPropertiesV1"><Type>26</Type><EapType xmlns="http://contoso.com/provisioning/MsChapV2ConnectionPropertiesV1"><UseWinLogonCredentials>false</UseWinLogonCredentials></EapType></Eap><EnableQuarantineChecks>false</EnableQuarantineChecks><RequireCryptoBinding>false</RequireCryptoBinding><PeapExtensions><PerformServerValidation xmlns="http://contoso.com/provisioning/MsPeapConnectionPropertiesV2">false</PerformServerValidation><AcceptServerName xmlns="http://contoso.com/provisioning/MsPeapConnectionPropertiesV2">false</AcceptServerName></PeapExtensions></EapType></Eap></Config></EapHostConfig></EAPConfig></OneX></security></MSM></WLANProfile> </Data>
+          <Data><?xml version="1.0"?><WLANProfile xmlns="http://microsoft.com/networking/WLAN/profile/v1"><name>MyNetwork</name><SSIDConfig><SSID><hex>412D4D534654574C414E</hex><name>MyNetwork</name></SSID><nonBroadcast>false</nonBroadcast></SSIDConfig><connectionType>ESS</connectionType><connectionMode>manual</connectionMode><MSM><security><authEncryption><authentication>WPA2</authentication><encryption>AES</encryption><useOneX>true</useOneX></authEncryption><OneX xmlns="http://microsoft.com/networking/OneX/v1"><authMode>user</authMode><EAPConfig><EapHostConfig xmlns="http://microsoft.com/provisioning/EapHostConfig"><EapMethod><Type xmlns="http://microsoft.com/provisioning/EapCommon">25</Type><VendorId xmlns="http://microsoft.com/provisioning/EapCommon">0</VendorId><VendorType xmlns="http://microsoft.com/provisioning/EapCommon">0</VendorType><AuthorId xmlns="http://microsoft.com/provisioning/EapCommon">0</AuthorId></EapMethod><Config xmlns="http://microsoft.com/provisioning/EapHostConfig"><Eap xmlns="http://microsoft.com/provisioning/BaseEapConnectionPropertiesV1"><Type>25</Type><EapType xmlns="http://microsoft.com/provisioning/MsPeapConnectionPropertiesV1"><ServerValidation><DisableUserPromptForServerValidation>true</DisableUserPromptForServerValidation><ServerNames></ServerNames></ServerValidation><FastReconnect>true</FastReconnect><InnerEapOptional>false</InnerEapOptional><Eap xmlns="http://microsoft.com/provisioning/BaseEapConnectionPropertiesV1"><Type>26</Type><EapType xmlns="http://microsoft.com/provisioning/MsChapV2ConnectionPropertiesV1"><UseWinLogonCredentials>false</UseWinLogonCredentials></EapType></Eap><EnableQuarantineChecks>false</EnableQuarantineChecks><RequireCryptoBinding>false</RequireCryptoBinding><PeapExtensions><PerformServerValidation xmlns="http://microsoft.com/provisioning/MsPeapConnectionPropertiesV2">false</PerformServerValidation><AcceptServerName xmlns="http://microsoft.com/provisioning/MsPeapConnectionPropertiesV2">false</AcceptServerName></PeapExtensions></EapType></Eap></Config></EapHostConfig></EAPConfig></OneX></security></MSM></WLANProfile> </Data>
         </Item>
       </Add>
     </Atomic>
