@@ -63,7 +63,7 @@ To disable CHPE, create and/or set the following DWORD registry key:
 Path: `HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management`
 DWORD key value: HotPatchRestrictions=1
 
-You can also use the CSP DisableCHPE (available on Windows Insider Preview). See [DisableCHPE](/windows/client-management/mdm/policy-csp-system#disablechpe).
+You can also use the CSP DisableCHPE (available on Windows Insider Preview). For more information, see [DisableCHPE](/windows/client-management/mdm/policy-csp-system#disablechpe).
 
 > [!NOTE]
 > There are no plans to support hotpatch updates on Arm64 devices with CHPE enabled. Disabling CHPE is required only for Arm64 devices. AMD and Intel CPUs don’t have CHPE.
