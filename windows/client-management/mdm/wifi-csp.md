@@ -18,9 +18,9 @@ Programming considerations:
 
 - If the authentication method needs a certificate (for example, client certificates for EAP-TLS), you must configure it through the [CertificateStore](./certificatestore-csp) configuration service provider. The WiFi configuration service provider doesn't provide that functionality; instead, the Wi-Fi profile can specify characteristics of the certificate to be used for choosing the right certificate for that network. The server must successfully enroll the certificate first before deploying the Wi-Fi network configuration. For example, for an EAP-TLS profile, the server must successfully configure and enroll the required client certificate before deploying the Wi-Fi profile. Self-signed certificate works for EAP-TLS/PEAP-MSCHAPv2, but it isn't supported in EAP-TLS.
 - For WEP, WPA, and WPA2-based networks, include the passkey in the network configuration in plaintext. The passkey is encrypted automatically when it's stored on the device.
-- The `SSID` part of the LocURI node must be a valid URI based on RFC 2396. This condition requires that all nonexcluded ASCII characters must be escaped using a %-character. This includes replacing the space character (` `) with `%20`. Characters (including Unicode) without the necessary escaping aren't supported.
+- The `SSID` part of the LocURI node must be a valid URI based on RFC 2396. This condition requires that all nonexcluded ASCII characters must be escaped using a %-character, including replacing the space character (` `) with `%20`. Characters (including Unicode) without the necessary escaping aren't supported.
 - For the WiFi CSP, you can't use the Replace command unless the node already exists.
-- Using ProxyPacUrl or ProxyWPAD in Windows client editions (Home, Pro, Enterprise, and Education) will result in failure.
+- Using `ProxyPacUrl` or `ProxyWPAD` in Windows client editions (Home, Pro, Enterprise, and Education) will fail.
 <!-- WiFi-Editable-End -->
 
 <!-- WiFi-Tree-Begin -->
@@ -107,7 +107,7 @@ The Profile name of the Wi-Fi network. This is added when WlanXml node is added 
 
 <!-- Device-Profile-{SSID}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Specifies the Profile Name of the Wi-Fi network (32 bytes maximum) to create, configure, query, or delete. The name is case sensitive and can be represented in ASCII. In the URI, it must be %-escaped, but the non-%-escaped value is what's used when applied to the system.
+Specifies the Profile Name of the Wi-Fi network (32 bytes maximum) to create, configure, query, or delete. The name is case sensitive and can be represented in ASCII. In the URI, it must be %-escaped, but the non-%-escaped value is used inside the system.
 
 > [!NOTE]
 > This field is the Profile Name that appears as a "Friendly Name" to the user and contains the Wi-Fi settings information. The non-%-escaped value must correspond to `<name>` in `<WLANProfile> <name>`. This value MAY be different from the SSID of the actual network being broadcast (which is under `<WLANProfile> <SSIDConfig> <SSID> <name>`).
@@ -243,7 +243,7 @@ Optional node. URL to the PAC file location.
 <!-- Device-Profile-{SSID}-ProxyPacUrl-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Don't use. Using this configuration in Windows client editions will result in failure.
+> Don't use. Using this configuration in Windows client editions will fail.
 <!-- Device-Profile-{SSID}-ProxyPacUrl-Editable-End -->
 
 <!-- Device-Profile-{SSID}-ProxyPacUrl-DFProperties-Begin -->
@@ -284,7 +284,7 @@ Optional node. The presence of the field enables WPAD for proxy lookup.
 <!-- Device-Profile-{SSID}-ProxyWPAD-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Don't use. Using this configuration in Windows client editions will result in failure.
+> Don't use. Using this configuration in Windows client editions will fail.
 <!-- Device-Profile-{SSID}-ProxyWPAD-Editable-End -->
 
 <!-- Device-Profile-{SSID}-ProxyWPAD-DFProperties-Begin -->
@@ -385,7 +385,7 @@ Link to schema: <https://msdn.microsoft.com/library/windows/desktop/ms707341(v=v
 
 <!-- Device-Profile-{SSID}-WlanXml-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-The profile XML must be escaped, as shown in the examples below.
+The profile XML must be escaped, as shown in the following examples.
 
 If it exists in the blob, the **keyType** and **protected** elements must come before **keyMaterial**, as shown in the example in [WPA2-Personal Profile Sample](/windows/win32/nativewifi/wpa2-personal-profile-sample).
 
@@ -470,7 +470,7 @@ The Profile name of the Wi-Fi network. This is added when WlanXml node is added 
 
 <!-- User-Profile-{SSID}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-See [Device/Profile/{SSID}](#deviceprofilessid) for more information.
+For more information, see [Device/Profile/{SSID}](#deviceprofilessid).
 <!-- User-Profile-{SSID}-Editable-End -->
 
 <!-- User-Profile-{SSID}-DFProperties-Begin -->
@@ -600,7 +600,7 @@ Optional node. URL to the PAC file location.
 <!-- User-Profile-{SSID}-ProxyPacUrl-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Don't use. Using this configuration in Windows client editions will result in failure.
+> Don't use. Using this configuration in Windows client editions will fail.
 <!-- User-Profile-{SSID}-ProxyPacUrl-Editable-End -->
 
 <!-- User-Profile-{SSID}-ProxyPacUrl-DFProperties-Begin -->
@@ -641,7 +641,7 @@ Optional node. The presence of the field enables WPAD for proxy lookup.
 <!-- User-Profile-{SSID}-ProxyWPAD-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Don't use. Using this configuration in Windows client editions will result in failure.
+> Don't use. Using this configuration in Windows client editions will fail.
 <!-- User-Profile-{SSID}-ProxyWPAD-Editable-End -->
 
 <!-- User-Profile-{SSID}-ProxyWPAD-DFProperties-Begin -->
@@ -743,7 +743,7 @@ Link to schema: <https://msdn.microsoft.com/library/windows/desktop/ms707341(v=v
 <!-- User-Profile-{SSID}-WlanXml-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-See [Device/Profile/{SSID}/WlanXml](#deviceprofilessidwlanxml) for more information.
+For more information, see [Device/Profile/{SSID}/WlanXml](#deviceprofilessidwlanxml).
 <!-- User-Profile-{SSID}-WlanXml-Editable-End -->
 
 <!-- User-Profile-{SSID}-WlanXml-DFProperties-Begin -->
