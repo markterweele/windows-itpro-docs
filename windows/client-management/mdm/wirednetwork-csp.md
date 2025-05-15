@@ -195,7 +195,7 @@ For more information, see [Device/LanXML](#devicelanxml).
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
 ## Examples
 
-The following example shows how to add a wired network profile that authenticates with PEAP-MSCHAPv2:
+The following example shows how to add a wired network profile that authenticates with PEAP-MSCHAPv2. This example is based on the sample profile at [PEAP Profile Sample](/windows/win32/nativewifi/peap-profile-sample)
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
@@ -221,6 +221,7 @@ The following example shows how to add a wired network profile that authenticate
 
 ## Related articles
 
-* [Configuration service provider reference](configuration-service-provider-reference.md)
-* [Extensible Authentication Protocol (EAP) for network access](/windows-server/networking/technologies/extensible-authentication-protocol/network-access)
-* [Configure EAP profiles and settings in Windows](/windows-server/networking/technologies/extensible-authentication-protocol/configure-eap-profiles)
+- [Wired profile samples](/windows/win32/nativewifi/wired-profile-samples)
+- [Configuration service provider reference](configuration-service-provider-reference.md)
+- [Extensible Authentication Protocol (EAP) for network access](/windows-server/networking/technologies/extensible-authentication-protocol/network-access)
+- [Configure EAP profiles and settings in Windows](/windows-server/networking/technologies/extensible-authentication-protocol/configure-eap-profiles)

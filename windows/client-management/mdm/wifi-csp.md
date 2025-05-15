@@ -769,7 +769,7 @@ These XML examples show how to perform various tasks using OMA DM.
 
 ### Add a network
 
-The following example shows how to add a WPA2-Enterprise network with SSID and profile name `MyNetwork` that authenticates with PEAP-MSCHAPv2.
+The following example shows how to add a WPA2-Enterprise network with SSID and profile name `MyNetwork` that authenticates with PEAP-MSCHAPv2. This example is based on the sample profile at [WPA2-Enterprise with PEAP-MSCHAPv2 profile sample](/windows/win32/nativewifi/wpa2-enterprise-with-peap-mschapv2-profile-sample).
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
@@ -794,7 +794,7 @@ The following example shows how to add a WPA2-Enterprise network with SSID and p
 </SyncML>
 ```
 
-The following example shows how to add a WPA3-Enterprise network with profile name `My Network` and SSID `MySSID` that authenticates with EAP-TLS.
+The following example shows how to add a WPA3-Enterprise network with profile name `My Network` and SSID `MySSID` that authenticates with EAP-TLS. This example is based on the sample profile at [WPA2-Enterprise with TLS profile sample](/windows/win32/nativewifi/wpa2-enterprise-with-tls-profile-sample).
 
 > [!IMPORTANT]
 > Notice how the space is %-escaped in the `LocURI` and unescaped in the `WLANProfile` > `name`.
@@ -817,7 +817,7 @@ The following example shows how to add a WPA3-Enterprise network with profile na
 </Atomic>
 ```
 
-The following example shows how to add a WPA3-Personal (transition mode) network with profile name and SSID `MyNetwork` that includes the passphrase `TestPassword1!`.
+The following example shows how to add a WPA3-Personal (transition mode) network with profile name and SSID `MyNetwork` that includes the passphrase `TestPassword1!`. This example is based on the sample profile at [WPA3-Personal with transition mode profile sample](/windows/win32/nativewifi/wpa3-personal-transition-profile-sample).
 
 ```xml
 <Atomic>
@@ -890,6 +890,7 @@ The following example shows how to remove a network with SSID `MyNetwork` and no
 
 ## Related articles
 
-* [Configuration service provider reference](configuration-service-provider-reference.md)
-* [Extensible Authentication Protocol (EAP) for network access](/windows-server/networking/technologies/extensible-authentication-protocol/network-access)
-* [Configure EAP profiles and settings in Windows](/windows-server/networking/technologies/extensible-authentication-protocol/configure-eap-profiles)
+- [Wireless profile samples](/windows/win32/nativewifi/wireless-profile-samples)
+- [Configuration service provider reference](configuration-service-provider-reference.md)
+- [Extensible Authentication Protocol (EAP) for network access](/windows-server/networking/technologies/extensible-authentication-protocol/network-access)
+- [Configure EAP profiles and settings in Windows](/windows-server/networking/technologies/extensible-authentication-protocol/configure-eap-profiles)
