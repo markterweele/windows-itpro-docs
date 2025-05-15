@@ -157,11 +157,14 @@ Example:
 </AllAppsList>
 ```
 
-> [!IMPORTANT]
-> If you pins elements to the Start menu with Microsoft Edge secondary tiles, include the following apps in the allowed apps list:
->
-> - `<App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge_proxy.exe" />`
-> - `<App AppUserModelId="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!App"/>`
+#### Microsoft Edge secondary tiles considerations
+
+Microsoft Edge secondary tiles are pinned website shortcuts that appear on the Start menu. These pins provide quick access to specific websites directly from the Start menu, functioning similarly to app shortcuts.
+
+If you pin elements to the Start menu with Microsoft Edge secondary tiles, include the following apps in the allowed apps list:
+
+- `<App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge_proxy.exe" />`
+- `<App AppUserModelId="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!App"/>`
 
 ::: zone pivot="windows-10"
 
