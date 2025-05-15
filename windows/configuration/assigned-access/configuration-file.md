@@ -169,6 +169,8 @@ If you pin elements to the Start menu with Microsoft Edge secondary tiles, inclu
     <App AppUserModelId="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!App"/>
 ```
 
+For more information about Start menu customizations and pinning secondary tiles, see [Customize the Start layout](../start/layout.md).
+
 ::: zone pivot="windows-10"
 
 ### File Explorer restrictions
