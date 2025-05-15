@@ -127,7 +127,7 @@ Example of two profiles, a desktop app and a UWP app:
 
 ### AllAppList
 
-Based on the purpose of the kiosk device, define the list of applications that are allowed to run. This list can contain both UWP apps and desktop apps. When the mult-app kiosk configuration is applied to a device, AppLocker rules are generated to allow the apps that are listed in the configuration.
+Based on the purpose of the kiosk device, define the list of applications that are allowed to run. This list can contain both UWP apps and desktop apps. When the multi-app kiosk configuration is applied to a device, AppLocker rules are generated to allow the apps that are listed in the configuration.
 
 > [!NOTE]
 > If an app has a dependency on another app, both must be included in the allowed apps list.
