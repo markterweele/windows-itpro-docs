@@ -163,8 +163,11 @@ Microsoft Edge secondary tiles are pinned website shortcuts that appear on the S
 
 If you pin elements to the Start menu with Microsoft Edge secondary tiles, include the following apps in the allowed apps list:
 
-- `<App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge_proxy.exe" />`
-- `<App AppUserModelId="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!App"/>`
+```xml
+    <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" />
+    <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge_proxy.exe" />
+    <App AppUserModelId="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!App"/>
+```
 
 ::: zone pivot="windows-10"
 
