@@ -46,7 +46,9 @@ By default, Windows offers to save the passkey locally on the **Windows device**
 - **Security key**: the passkey is saved to a FIDO2 security key, protected by the key's unlock mechanism (for example, biometrics or PIN).
 
 >[!NOTE]
->Micorsoft Entra ID passkeys on Windows aren't currently supported. To learn see [Passkey authentication matrix with Microsoft Entra ID](/entra/identity/authentication/concept-fido2-compatibility).
+>Currently, Micorsoft Entra ID passkeys can't be stored on Windows devices. To learn more, see [Passkey authentication matrix with Microsoft Entra ID](/entra/identity/authentication/concept-fido2-compatibility).
+
+Microsoft Entra ID currently supports only device-bound passkeys stored on FIDO2 security keys or in Microsoft Authenticator
 
 Pick one of the following options to learn how to save a passkey, based on where you want to store it.
 
