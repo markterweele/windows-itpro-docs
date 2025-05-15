@@ -18,7 +18,7 @@ Programming considerations:
 
 - If the authentication method needs a certificate (for example, client certificates for EAP-TLS), you must configure it through the [CertificateStore](certificatestore-csp.md) configuration service provider. The WiFi configuration service provider doesn't provide that functionality; instead, the Wi-Fi profile can specify characteristics of the certificate to be used for choosing the right certificate for that network. The server must successfully enroll the certificate first before deploying the Wi-Fi network configuration. For example, for an EAP-TLS profile, the server must successfully configure and enroll the required client certificate before deploying the Wi-Fi profile. Self-signed certificate works for EAP-TLS/PEAP-MSCHAPv2, but it isn't supported in EAP-TLS.
 - For WEP, WPA, and WPA2-based networks, include the passkey in the network configuration in plaintext. The passkey is encrypted automatically when it's stored on the device.
-- The `SSID` part of the LocURI node must be a valid URI based on RFC 2396. This condition requires that all nonexcluded ASCII characters must be escaped using a %-character, including replacing the space character (` `) with `%20`. Characters (including Unicode) without the necessary escaping aren't supported.
+- The `SSID` part of the LocURI node must be a valid URI based on RFC 2396. This condition requires that all nonexcluded ASCII characters must be escaped using a %-character, including replacing the space character (' ') with '%20'. Characters (including Unicode) without the necessary escaping aren't supported.
 - For the WiFi CSP, you can't use the Replace command unless the node already exists.
 - Using `ProxyPacUrl` or `ProxyWPAD` in Windows client editions (Home, Pro, Enterprise, and Education) will fail.
 <!-- WiFi-Editable-End -->
@@ -52,7 +52,7 @@ The following list shows the WiFi configuration service provider nodes:
 <!-- Device-Profile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Profile-Applicability-End -->
 
 <!-- Device-Profile-OmaUri-Begin -->
@@ -91,7 +91,7 @@ Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is 
 <!-- Device-Profile-{SSID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Profile-{SSID}-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-OmaUri-Begin -->
@@ -187,7 +187,7 @@ Allows for defining which administrative entity is setting this Wi-Fi profile. T
 <!-- Device-Profile-{SSID}-Proxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Profile-{SSID}-Proxy-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-Proxy-OmaUri-Begin -->
@@ -226,7 +226,7 @@ Optional node. The format is url:port. Configuration of the network proxy (if an
 <!-- Device-Profile-{SSID}-ProxyPacUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Profile-{SSID}-ProxyPacUrl-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-ProxyPacUrl-OmaUri-Begin -->
@@ -267,7 +267,7 @@ Optional node. URL to the PAC file location.
 <!-- Device-Profile-{SSID}-ProxyWPAD-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Profile-{SSID}-ProxyWPAD-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-ProxyWPAD-OmaUri-Begin -->
@@ -317,7 +317,7 @@ Optional node. The presence of the field enables WPAD for proxy lookup.
 <!-- Device-Profile-{SSID}-WiFiCost-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Profile-{SSID}-WiFiCost-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-WiFiCost-OmaUri-Begin -->
@@ -367,7 +367,7 @@ Optional node. If the policy is active selecting one of the values from the foll
 <!-- Device-Profile-{SSID}-WlanXml-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Profile-{SSID}-WlanXml-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-WlanXml-OmaUri-Begin -->
@@ -415,7 +415,7 @@ See [Add a network](#add-a-network) for examples.
 <!-- User-Profile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-Profile-Applicability-End -->
 
 <!-- User-Profile-OmaUri-Begin -->
@@ -454,7 +454,7 @@ Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is 
 <!-- User-Profile-{SSID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-Profile-{SSID}-Applicability-End -->
 
 <!-- User-Profile-{SSID}-OmaUri-Begin -->
@@ -544,7 +544,7 @@ Allows for defining which administrative entity is setting this Wi-Fi profile. T
 <!-- User-Profile-{SSID}-Proxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-Profile-{SSID}-Proxy-Applicability-End -->
 
 <!-- User-Profile-{SSID}-Proxy-OmaUri-Begin -->
@@ -583,7 +583,7 @@ Optional node. The format is url:port. Configuration of the network proxy (if an
 <!-- User-Profile-{SSID}-ProxyPacUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-Profile-{SSID}-ProxyPacUrl-Applicability-End -->
 
 <!-- User-Profile-{SSID}-ProxyPacUrl-OmaUri-Begin -->
@@ -624,7 +624,7 @@ Optional node. URL to the PAC file location.
 <!-- User-Profile-{SSID}-ProxyWPAD-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-Profile-{SSID}-ProxyWPAD-Applicability-End -->
 
 <!-- User-Profile-{SSID}-ProxyWPAD-OmaUri-Begin -->
@@ -674,7 +674,7 @@ Optional node. The presence of the field enables WPAD for proxy lookup.
 <!-- User-Profile-{SSID}-WiFiCost-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- User-Profile-{SSID}-WiFiCost-Applicability-End -->
 
 <!-- User-Profile-{SSID}-WiFiCost-OmaUri-Begin -->
@@ -724,7 +724,7 @@ Optional node. If the policy is active selecting one of the values from the foll
 <!-- User-Profile-{SSID}-WlanXml-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-Profile-{SSID}-WlanXml-Applicability-End -->
 
 <!-- User-Profile-{SSID}-WlanXml-OmaUri-Begin -->
