@@ -20,7 +20,7 @@ Programming considerations:
 - For WEP, WPA, and WPA2-based networks, include the passkey in the network configuration in plaintext. The passkey is encrypted automatically when it's stored on the device.
 - The `SSID` part of the LocURI node must be a valid URI based on RFC 2396. This condition requires that all nonexcluded ASCII characters must be escaped using a %-character, including replacing the space character (' ') with '%20'. Characters (including Unicode) without the necessary escaping aren't supported.
 - For the WiFi CSP, you can't use the Replace command unless the node already exists.
-- Using `ProxyPacUrl` or `ProxyWPAD` in Windows client editions (Home, Pro, Enterprise, and Education) will fail.
+- Using `Proxy`, `ProxyPacUrl` or `ProxyWPAD` in Windows client editions (Home, Pro, Enterprise, and Education) may fail or have no effect. Use [NetworkProxy](networkproxy-csp.md) CSP instead.
 <!-- WiFi-Editable-End -->
 
 <!-- WiFi-Tree-Begin -->
@@ -229,6 +229,9 @@ Optional node. The format is url:port. Configuration of the network proxy (if an
 
 <!-- Device-Profile-{SSID}-Proxy-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Don't use. Using this configuration in Windows client editions may fail or have no effect. Use [NetworkProxy](networkproxy-csp.md) CSP instead.
+
 <!-- Device-Profile-{SSID}-Proxy-Editable-End -->
 
 <!-- Device-Profile-{SSID}-Proxy-DFProperties-Begin -->
@@ -269,7 +272,7 @@ Optional node. URL to the PAC file location.
 <!-- Device-Profile-{SSID}-ProxyPacUrl-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Don't use. Using this configuration in Windows client editions will fail.
+> Don't use. Using this configuration in Windows client editions may fail or have no effect. Use [NetworkProxy](networkproxy-csp.md) CSP instead.
 
 <!-- Device-Profile-{SSID}-ProxyPacUrl-Editable-End -->
 
@@ -311,7 +314,7 @@ Optional node. The presence of the field enables WPAD for proxy lookup.
 <!-- Device-Profile-{SSID}-ProxyWPAD-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Don't use. Using this configuration in Windows client editions will fail.
+> Don't use. Using this configuration in Windows client editions may fail or have no effect. Use [NetworkProxy](networkproxy-csp.md) CSP instead.
 
 <!-- Device-Profile-{SSID}-ProxyWPAD-Editable-End -->
 
@@ -589,6 +592,9 @@ Optional node. The format is url:port. Configuration of the network proxy (if an
 
 <!-- User-Profile-{SSID}-Proxy-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Don't use. Using this configuration in Windows client editions may fail or have no effect. Use [NetworkProxy](networkproxy-csp.md) CSP instead.
+
 <!-- User-Profile-{SSID}-Proxy-Editable-End -->
 
 <!-- User-Profile-{SSID}-Proxy-DFProperties-Begin -->
@@ -629,7 +635,7 @@ Optional node. URL to the PAC file location.
 <!-- User-Profile-{SSID}-ProxyPacUrl-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Don't use. Using this configuration in Windows client editions will fail.
+> Don't use. Using this configuration in Windows client editions may fail or have no effect. Use [NetworkProxy](networkproxy-csp.md) CSP instead.
 
 <!-- User-Profile-{SSID}-ProxyPacUrl-Editable-End -->
 
@@ -671,7 +677,7 @@ Optional node. The presence of the field enables WPAD for proxy lookup.
 <!-- User-Profile-{SSID}-ProxyWPAD-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Don't use. Using this configuration in Windows client editions will fail.
+> Don't use. Using this configuration in Windows client editions may fail or have no effect. Use [NetworkProxy](networkproxy-csp.md) CSP instead.
 
 <!-- User-Profile-{SSID}-ProxyWPAD-Editable-End -->
 
