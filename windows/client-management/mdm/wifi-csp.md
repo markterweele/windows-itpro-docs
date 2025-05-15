@@ -107,13 +107,13 @@ The Profile name of the Wi-Fi network. This is added when WlanXml node is added 
 
 <!-- Device-Profile-{SSID}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Specifies the Profile Name of the Wi-Fi network (32 bytes maximum) to create, configure, query, or delete. The name is case sensitive and can be represented in ASCII. In the URI, it must be %-escaped, but the non-%-escaped value is used inside the system.
+Specifies the Profile name of the Wi-Fi network (32 bytes maximum) to create, configure, query, or delete. The name is case sensitive and can be represented in ASCII. In the URI, it must be %-escaped, but the non-%-escaped value is used inside the system.
 
 > [!NOTE]
-> This field is the Profile Name that appears as a "Friendly Name" to the user and contains the Wi-Fi settings information. The non-%-escaped value must correspond to `<name>` in `<WLANProfile> <name>`. This value MAY be different from the SSID of the actual network being broadcast (which is under `<WLANProfile> <SSIDConfig> <SSID> <name>`).
+> This field is the Profile Name that appears as a "Friendly Name" to the user and contains the Wi-Fi settings information. The non-%-escaped value must correspond to `<name>` in `<WLANProfile> <name>`.
 
-> [!IMPORTANT]
-> If the Profile name isn't set correctly in the MDM SyncML, as per the information in the Wi-Fi settings XML (`<WLANProfile>`), it could lead to some unexpected errors. In other words, if the profile is `<WLANProfile><name>Contoso Wi-Fi</name>{...}`, the MDM SyncML must be `<LocURI>./Vendor/MSFT/WiFi/Profile/Contoso%20Wi-Fi/WlanXml</LocURI>`.
+The Profile name can be the same or different from the SSID of the actual network being broadcast (which is under `<WLANProfile> <SSIDConfig> <SSID> <name>`). For example, the broadcast SSID might be "CC_Corp_7" but the Profile name might be "ContosoWiFi".
+
 <!-- Device-Profile-{SSID}-Editable-End -->
 
 <!-- Device-Profile-{SSID}-DFProperties-Begin -->
@@ -128,6 +128,32 @@ Specifies the Profile Name of the Wi-Fi network (32 bytes maximum) to create, co
 
 <!-- Device-Profile-{SSID}-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+
+In the following example, the 'ContosoWiFi' Profile is added, targeting the 'CC_Corp_7' SSID. The rest of the profile is omitted for brevity - for complete examples, see [Add a network](#add-a-network).
+
+```xml
+<Atomic>
+  <CmdID>300</CmdID>
+  <Add>
+    <CmdID>301</CmdID>
+    <Item>
+      <Target>
+        <LocURI>./Vendor/MSFT/WiFi/Profile/ContosoWiFi/WlanXml</LocURI>
+      </Target>
+      <Meta>
+        <Format xmlns="syncml:metinf">chr</Format>
+      </Meta>
+      <Data><![CDATA[<?xml version="1.0"?><WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1"><name>ContosoWiFi</name><SSIDConfig><SSID><name>CC_Corp_7</name></SSID></SSIDConfig>{...}</WLANProfile>]]></Data>
+    </Item>
+  </Add>
+</Atomic>
+```
+
+> [!IMPORTANT]
+> If the Profile name isn't set correctly in the MDM SyncML, as per the information in the Wi-Fi settings XML (`<WLANProfile>`), it could lead to some unexpected errors at runtime. In other words, if the profile is `<WLANProfile><name>Contoso Wi-Fi</name>{...}`, the MDM SyncML must be `<LocURI>./Vendor/MSFT/WiFi/Profile/Contoso%20Wi-Fi/WlanXml</LocURI>`.
+>
+> In this example, if we instead had `<LocURI>./Vendor/MSFT/WiFi/Profile/CC_Corp_7/WlanXml</LocURI>`, the profile would be considered to be User provisioned, not MDM provisioned, which may cause users to connect to the wrong network.
+
 <!-- Device-Profile-{SSID}-Examples-End -->
 
 <!-- Device-Profile-{SSID}-End -->
@@ -244,6 +270,7 @@ Optional node. URL to the PAC file location.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Don't use. Using this configuration in Windows client editions will fail.
+
 <!-- Device-Profile-{SSID}-ProxyPacUrl-Editable-End -->
 
 <!-- Device-Profile-{SSID}-ProxyPacUrl-DFProperties-Begin -->
@@ -285,6 +312,7 @@ Optional node. The presence of the field enables WPAD for proxy lookup.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Don't use. Using this configuration in Windows client editions will fail.
+
 <!-- Device-Profile-{SSID}-ProxyWPAD-Editable-End -->
 
 <!-- Device-Profile-{SSID}-ProxyWPAD-DFProperties-Begin -->
@@ -391,6 +419,7 @@ If it exists in the blob, the **keyType** and **protected** elements must come b
 
 > [!NOTE]
 > If you need to specify other advanced conditions, such as specifying criteria for certificates that can be used by the Wi-Fi profile, you can do so by specifying this through the [EapHostConfig](/windows/win32/eaphost/eaphostconfigschema-eaphostconfig-element) portion of the WlanXml ([WLANProfile](/windows/win32/nativewifi/wlan-profileschema-elements) > [MSM](/windows/win32/nativewifi/wlan-profileschema-msm-wlanprofile-element) > [security](/windows/win32/nativewifi/wlan-profileschema-security-msm-element) > [OneX](/windows/win32/nativewifi/onexschema-onex-element) > EAPConfig). For more information, see [EAP configuration](./eap-configuration.md) and [Extensible Authentication Protocol (EAP) for network access](/windows-server/networking/technologies/extensible-authentication-protocol/network-access). For an example, see [Wireless profile samples](/windows/win32/nativewifi/wireless-profile-samples).
+
 <!-- Device-Profile-{SSID}-WlanXml-Editable-End -->
 
 <!-- Device-Profile-{SSID}-WlanXml-DFProperties-Begin -->
@@ -601,6 +630,7 @@ Optional node. URL to the PAC file location.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Don't use. Using this configuration in Windows client editions will fail.
+
 <!-- User-Profile-{SSID}-ProxyPacUrl-Editable-End -->
 
 <!-- User-Profile-{SSID}-ProxyPacUrl-DFProperties-Begin -->
@@ -642,6 +672,7 @@ Optional node. The presence of the field enables WPAD for proxy lookup.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > Don't use. Using this configuration in Windows client editions will fail.
+
 <!-- User-Profile-{SSID}-ProxyWPAD-Editable-End -->
 
 <!-- User-Profile-{SSID}-ProxyWPAD-DFProperties-Begin -->
