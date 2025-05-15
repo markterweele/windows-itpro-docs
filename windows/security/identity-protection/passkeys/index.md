@@ -391,7 +391,7 @@ To provide feedback for passkeys, open [**Feedback Hub**][FHUB] and use the cate
 
 [CSP-1]: /windows/client-management/mdm/policy-csp-bluetooth#allowadvertising
 [CSP-2]: /windows/client-management/mdm/policy-csp-bluetooth#allowdiscoverablemode
-[CSP-3]: /windows/client-management/mdm/policy-csp-bluetooth#allowprepairing
+[CSP-3]: /windows/client-management/mdm/policy-csp-bluetooth#allowpreparing
 [CSP-4]: /windows/client-management/mdm/policy-csp-bluetooth#allowpromptedproximalconnections
 [CSP-5]: /windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist
 [CSP-6]: /windows/client-management/mdm/policy-csp-deviceinstallation#preventinstallationofmatchingdeviceids
