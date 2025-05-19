@@ -52,7 +52,7 @@ To enable ESU for Windows 10, you must meet the following prerequisites:
 
 ## Get the product keys for activating Extended Security Update (ESU) licenses
 
-If you bought ESU licenses, you can activate them with Multiple Activation Keys (MAK) that you get from the admin center. To find the ESU license MAK, use the following steps:
+If you bought ESU licenses, you can activate them with Multiple Activation Keys (MAK) that you get from the Microsoft 365 admin center. To find the ESU license MAK, use the following steps:
 
 1. In the [admin center](https://admin.microsoft.com), go to the **Billing** > **Your Products** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume licensing</a> tab.
 2. In the **Contracts** section, select **View contracts**.  
@@ -63,10 +63,10 @@ If you bought ESU licenses, you can activate them with Multiple Activation Keys 
 
 ## Install and activate the ESU key
 
-The device needs access to the internet and to Microsoft Activation Servers. If the device can't access either the internet or the Microsoft Activation Servers, see [Activate ESU keys by phone](#activate-esu-keys-by-phone) To install the ESU key on clients, use the following steps:
+You'll be managing licensing and activation on devices using [slmgr.vbs](/windows-server/get-started/activation-slmgr-vbs-options). The device needs access to the internet and to Microsoft Activation Servers. If the device can't access either the internet or the Microsoft Activation Servers, see [Activate ESU keys by phone](#activate-esu-keys-by-phone). To install the ESU key on clients, use the following steps:
 
 1. Open an elevated Command Prompt window on the device.
-1. Run the following command to install the ESU key, replacing `<ESU MAK>` with the actual ESU MAK you obtained in the previous section:
+1. Run the following command to install the ESU key, replacing `<ESU MAK>` with the actual ESU MAK you obtained from the Microsoft 365 admin center:
 
    ```cmd
    slmgr.vbs /ipk <ESU MAK>
@@ -105,7 +105,7 @@ The device needs access to the internet and to Microsoft Activation Servers. If 
 
 If the device doesn't have access to the internet or to the Microsoft Activation Servers, use the following steps fo a manual phone activation:
 
-1. Open an elevated Command Prompt window on the device.
+1. Open an elevated Command Prompt window on the device. You'll be managing licensing and activation on devices using [slmgr.vbs](/windows-server/get-started/activation-slmgr-vbs-options).
 1. Run the following command to install the ESU key, replacing `<ESU MAK>` with the actual ESU MAK you obtained in the previous section:
 
    ```cmd
@@ -119,6 +119,9 @@ If the device doesn't have access to the internet or to the Microsoft Activation
    ```cmd
    slmgr.vbs /dlv
    ```
+
+   > [!Note]
+   > The activation IDs are the same across all eligible Windows ESU editions and all devices enrolled for that program.
 
 1. Find the ESU Activation ID using the following table:
 
@@ -155,3 +158,8 @@ If the device doesn't have access to the internet or to the Microsoft Activation
    ```
 
    The output should show the **Name** of the corresponding ESU program and the **License Status** as `Licensed` for that program.
+
+## Related content
+
+- [Slmgr.vbs options](/windows-server/get-started/activation-slmgr-vbs-options)
+- [Extended Security Updates (ESU) program for Windows 10](extended-security-updates.md)
