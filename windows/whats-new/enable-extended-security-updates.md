@@ -150,6 +150,12 @@ If the device doesn't have access to the internet or to the Microsoft Activation
 
    The output should show the **Name** of the corresponding ESU program and the **License Status** as `Licensed` for that program.
 
+### Activate large numbers of devices that don't have internet access
+  
+For more information on how to do manual activation of large numbers of devices, review the Volume Activation Management Tool (VAMT) [Proxy Activation](/windows/deployment/volume-activation/proxy-activation-vamt) scenario. You should install the latest [Automated Deployment Kit (ADK) tool](/windows-hardware/get-started/adk-install) to ensure that the VAMT tool includes updated PkeyConfig files for Windows 10 ESU MAK keys.
+
+For more information on adding additional activations to a Windows 10 ESU MAK, see [Request an increase to MAK activation limits](/microsoft-365/commerce/licenses/product-keys-for-vl#request-an-increase-to-mak-activation-limits). 
+
 ## Related content
 
 - [Slmgr.vbs options](/windows-server/get-started/activation-slmgr-vbs-options)
