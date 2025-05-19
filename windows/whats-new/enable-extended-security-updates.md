@@ -71,27 +71,32 @@ The device needs access to the internet and to Microsoft Activation Servers. If 
    ```cmd
    slmgr.vbs /ipk <ESU MAK>
    ```
+
   After you run this command, you should see a Windows Script Host dialog box that states the product key was installed successfully.
 
 1. Find the ESU Activation ID using the following table:
+
    | ESU Program | Activation ID |
    |---|---|
    |Win10 ESU Year1| f520e45e-7413-4a34-a497-d2765967d094 |
    |Win10 ESU Year2| 1043add5-23b1-4afb-9a0f-64343c8f3f8d |
    |Win10 ESU Year3| 83d49986-add3-41d7-ba33-87c7bfb5c0fb |
-   
+
    > [!Note]
-   > The activation IDs are the same across all eligible Windows ESU editions and all devices enrolled for that program
+   > The activation IDs are the same across all eligible Windows ESU editions and all devices enrolled for that program.
+
 1. From the elevated Command Prompt window, run the following command to activate the ESU key, replacing `<Activation ID>` with the actual ESU Activation ID you obtained in the previous step:
 
    ```cmd
    slmgr.vbs /ato <Activation ID>
    ```
+
     After you run this command, you should see a Windows Script Host dialog box that states the product was activated successfully.
+
 1. To verify that the ESU key is installed and activated, run the following command from an elevated Command Prompt:
 
    ```cmd
-   slmgr.vbs /dli
+   slmgr.vbs /dlv
    ```
 
    The output should show the **Name** of the corresponding ESU program and the **License Status** as `Licensed` for that program.
@@ -99,3 +104,54 @@ The device needs access to the internet and to Microsoft Activation Servers. If 
 ## Activate ESU keys by phone
 
 If the device doesn't have access to the internet or to the Microsoft Activation Servers, use the following steps fo a manual phone activation:
+
+1. Open an elevated Command Prompt window on the device.
+1. Run the following command to install the ESU key, replacing `<ESU MAK>` with the actual ESU MAK you obtained in the previous section:
+
+   ```cmd
+   slmgr.vbs /ipk <ESU MAK>
+   ```
+
+  After you run this command, you should see a Windows Script Host dialog box that states the product key was installed successfully.
+
+1. To verify that the ESU key is installed, run the following command from an elevated Command Prompt:
+
+   ```cmd
+   slmgr.vbs /dlv
+   ```
+
+1. Find the ESU Activation ID using the following table:
+
+   | ESU Program | Activation ID |
+   |---|---|
+   |Win10 ESU Year1| f520e45e-7413-4a34-a497-d2765967d094 |
+   |Win10 ESU Year2| 1043add5-23b1-4afb-9a0f-64343c8f3f8d |
+   |Win10 ESU Year3| 83d49986-add3-41d7-ba33-87c7bfb5c0fb |
+
+   > [!Note]
+   > The activation IDs are the same across all eligible Windows ESU editions and all devices enrolled for that program.
+
+1. Get the **Installation ID (IID)** from the device by run the following command in  an elevated Command Prompt, replacing `<Activation ID>` with the actual ESU Activation ID you obtained in the previous step:
+
+   ```cmd
+   slmgr.vbs /dti <Activation ID>
+   ```
+
+1. Once you have the **Installation ID**, call the [Microsoft Licensing Activation Center](https://www.microsoft.com/Licensing/existing-customer/activation-centers) for your region. They'll walk you through the steps to get the **Confirmation ID**. Make a note of your **Confirmation ID**. You can also request to receive a text message with a link to a web page where you can look up your **Confirmation ID** by entering the **Installation ID**. The link can only be used for two devices at a time.
+
+1. From the elevated Command Prompt window, run the following command to activate the ESU key, replacing `<Activation ID>` with the actual ESU Activation ID you obtained from the chart and `<Confirmation ID>` with the actual Confirmation ID you received from the Microsoft Licensing Activation Center:
+
+   ```cmd
+   slmgr.vbs /atp <Confirmation ID> <Activation ID>
+   ```
+
+   > [!Note]
+   > The `<Confirmation ID>` shouldn't have spaces in it.
+
+1. To verify that the ESU key is installed and activated, run the following command from an elevated Command Prompt:
+
+   ```cmd
+   slmgr.vbs /dlv
+   ```
+
+   The output should show the **Name** of the corresponding ESU program and the **License Status** as `Licensed` for that program.
