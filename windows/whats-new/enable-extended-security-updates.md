@@ -31,24 +31,24 @@ To enable ESU for Windows 10, you must meet the following prerequisites:
 - Administrative privileges on the device
 
 **Endpoints for client activation:**
-- https://go.microsoft.com/
-- https://go.microsoft.com/
-- https://login.live.com
-- https://activation.sls.microsoft.com/
-- http://crl.microsoft.com/pki/crl/products/MicProSecSerCA_2007-12-04.crl
-- https://validation.sls.microsoft.com/
-- https://activation-v2.sls.microsoft.com/
-- https://validation-v2.sls.microsoft.com/
-- https://displaycatalog.mp.microsoft.com/
-- https://licensing.mp.microsoft.com/
-- https://purchase.mp.microsoft.com/
-- https://displaycatalog.md.mp.microsoft.com/
-- https://licensing.md.mp.microsoft.com/
-- https://purchase.md.mp.microsoft.com/
+- `https://go.microsoft.com/`
+- `https://go.microsoft.com/`
+- `https://login.live.com`
+- `https://activation.sls.microsoft.com/`
+- `http://crl.microsoft.com/pki/crl/products/MicProSecSerCA_2007-12-04.crl`
+- `https://validation.sls.microsoft.com/`
+- `https://activation-v2.sls.microsoft.com/`
+- `https://validation-v2.sls.microsoft.com/`
+- `https://displaycatalog.mp.microsoft.com/`
+- `https://licensing.mp.microsoft.com/`
+- `https://purchase.mp.microsoft.com/`
+- `https://displaycatalog.md.mp.microsoft.com/`
+- `https://licensing.md.mp.microsoft.com/`
+- `https://purchase.md.mp.microsoft.com/`
 
 **Microsoft 365 admin center:**
 
-[Volume licensing access](/microsoft-365/commerce/licenses/vl-sign-in) to the [Microsoft 365 admin center](https://admin.microsoft.com) for volume licensing
+[Volume licensing access](/microsoft-365/commerce/licenses/vl-sign-in) to the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 ## Get the product keys for activating Extended Security Update (ESU) licenses
 
@@ -72,8 +72,7 @@ You'll be managing licensing and activation on devices using [slmgr.vbs](/window
    slmgr.vbs /ipk <ESU MAK>
    ```
 
-  After you run this command, you should see a Windows Script Host dialog box that states the product key was installed successfully.
-
+   After you run this command, you should see a Windows Script Host dialog box that states the product key was installed successfully.
 1. Find the ESU Activation ID using the following table:
 
    | ESU Program | Activation ID |
@@ -84,15 +83,13 @@ You'll be managing licensing and activation on devices using [slmgr.vbs](/window
 
    > [!Note]
    > The activation IDs are the same across all eligible Windows ESU editions and all devices enrolled for that program.
-
 1. From the elevated Command Prompt window, run the following command to activate the ESU key, replacing `<Activation ID>` with the actual ESU Activation ID you obtained in the previous step:
 
    ```cmd
    slmgr.vbs /ato <Activation ID>
    ```
 
-    After you run this command, you should see a Windows Script Host dialog box that states the product was activated successfully.
-
+   After you run this command, you should see a Windows Script Host dialog box that states the product was activated successfully.
 1. To verify that the ESU key is installed and activated, run the following command from an elevated Command Prompt:
 
    ```cmd
@@ -112,8 +109,7 @@ If the device doesn't have access to the internet or to the Microsoft Activation
    slmgr.vbs /ipk <ESU MAK>
    ```
 
-  After you run this command, you should see a Windows Script Host dialog box that states the product key was installed successfully.
-
+   After you run this command, you should see a Windows Script Host dialog box that states the product key was installed successfully.
 1. To verify that the ESU key is installed, run the following command from an elevated Command Prompt:
 
    ```cmd
@@ -122,7 +118,6 @@ If the device doesn't have access to the internet or to the Microsoft Activation
 
    > [!Note]
    > The activation IDs are the same across all eligible Windows ESU editions and all devices enrolled for that program.
-
 1. Find the ESU Activation ID using the following table:
 
    | ESU Program | Activation ID |
@@ -133,15 +128,12 @@ If the device doesn't have access to the internet or to the Microsoft Activation
 
    > [!Note]
    > The activation IDs are the same across all eligible Windows ESU editions and all devices enrolled for that program.
-
 1. Get the **Installation ID (IID)** from the device by run the following command in  an elevated Command Prompt, replacing `<Activation ID>` with the actual ESU Activation ID you obtained in the previous step:
 
    ```cmd
    slmgr.vbs /dti <Activation ID>
    ```
-
 1. Once you have the **Installation ID**, call the [Microsoft Licensing Activation Center](https://www.microsoft.com/Licensing/existing-customer/activation-centers) for your region. They'll walk you through the steps to get the **Confirmation ID**. Make a note of your **Confirmation ID**. You can also request to receive a text message with a link to a web page where you can look up your **Confirmation ID** by entering the **Installation ID**. The link can only be used for two devices at a time.
-
 1. From the elevated Command Prompt window, run the following command to activate the ESU key, replacing `<Activation ID>` with the actual ESU Activation ID you obtained from the chart and `<Confirmation ID>` with the actual Confirmation ID you received from the Microsoft Licensing Activation Center:
 
    ```cmd
@@ -150,7 +142,6 @@ If the device doesn't have access to the internet or to the Microsoft Activation
 
    > [!Note]
    > The `<Confirmation ID>` shouldn't have spaces in it.
-
 1. To verify that the ESU key is installed and activated, run the following command from an elevated Command Prompt:
 
    ```cmd
