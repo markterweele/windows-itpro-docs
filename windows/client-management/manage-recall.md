@@ -176,16 +176,18 @@ Snapshots won't be saved when supported remote desktop clients are used. The rem
 
 ## Allow export of Recall and snapshot information
 <!--9257953-->
-This policy allows you to determine whether Recall and snapshot information can be exported. The files that are exported are encrypted since Recall and snapshot information may be sensitive. Users can export from **Settings** > **Privacy & Security** > **Recall & Snapshots** > **Advanced Settings** > **Export snapshots** -> **Export past snapshots** -> **Export**. From **Settings** > **Privacy & Security** > **Recall & Snapshots** > **Advanced Settings**, users can also choose to turn on the option to **Export snapshots from now on**, which continuously exports their snapshots.
+This policy allows you to determine whether users can export their own Recall and snapshot information. Exporting allows users to share their Recall and snapshot information with trusted apps or websites. Users can export from **Settings** > **Privacy & Security** > **Recall & Snapshots** > **Advanced Settings** > **Export snapshots** > **Export past snapshots** > **Export**. 
 
-Before export, users are notified that their files are encrypted since they may contain sensitive information. The user is also notified that they'll need to provide an export code if they want to allow trusted apps or websites access to exported snapshots. Before starting an export, the user must authenticate with Windows Hello.
+Users can also choose to continuously export their snapshots if they turn on the option to **Export snapshots from now on** from **Settings** > **Privacy & Security** > **Recall & Snapshots** > **Advanced Settings** > **Export snapshots** > **Export**.
+
+Before starting an export, the user must authenticate with Windows Hello and they're notified that their exported snapshots are encrypted since they might contain sensitive information. The user is also notified that they'll need to provide their Recall export code if they want to allow trusted apps or websites access to exported snapshots. The Recall export code is displayed to users during Recall setup even if this policy is set to disabled or not configured. For managed devices:
 
 When you set this policy to enabled, users will be able to export Recall and snapshot information.
 
 If the policy is set to disabled or not configured, users won't be able to export their Recall and snapshot information.
 
 > [!Important]
-> The export of Recall and snapshot information feature and its policy applies only to devices in the European Economic Area (EEA). The feature isn't available in other regions. The policy is available in all regions, but it won't have any effect outside of the EEA.
+> This setting applies to devices in the European Economic Area (EEA) only. Export of Recall and snapshot information is a user-initiated process and is per user. IT admins or other users can't initiate an export on behalf of another.
 
 | &nbsp; | Setting  |
 |---|---|
