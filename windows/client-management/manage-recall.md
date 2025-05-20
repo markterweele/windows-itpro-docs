@@ -161,19 +161,6 @@ To filter websites from being saved in snapshots, use the **Set a list of URIs t
 | **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[SetDenyAppListForRecall](mdm/policy-csp-windowsai.md#setdenyapplistforrecall) </br></br> ./User/Vendor/MSFT/Policy/Config/WindowsAI/[SetDenyAppListForRecall](mdm/policy-csp-windowsai.md#setdenyapplistforrecall)|
 | **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Set a list of apps to be filtered from snapshots for Recall** </br></br>User Configuration > Administrative Templates > Windows Components > Windows AI > **Set a list of apps to be filtered from snapshots for Recall**|
 
-
-## Remote desktop connection clients filtered from snapshots
-
-Snapshots won't be saved when supported remote desktop clients are used. The remote desktop connection sessions from the following clients are filtered from snapshots: <!--9119193, 10049089-->
-
-   - [Remote Desktop Connection (mstsc.exe)](/windows-server/administration/windows-commands/mstsc)
-   - [VMConnect.exe](/windows-server/virtualization/hyper-v/learn-more/hyper-v-virtual-machine-connect) 
-   - [Azure Virtual Desktop (MSI)](/azure/virtual-desktop/users/connect-windows) 
-   - [Remote applications integrated locally (RAIL)](/openspecs/windows_protocols/ms-rdperp/485e6f6d-2401-4a9c-9330-46454f0c5aba)
-
-> [!Note]
-> Clients will be saved by Recall unless the client implements screen capture protection, for example [screen capture protection in Azure Virtual desktop](/azure/virtual-desktop/screen-capture-protection). Clients can control how screen capture protection is implemented and may allow some pages to be saved but not the remote session. Customers can always add filters for specific client apps. Check with the provider of your remote client software for details on their screen capture policy. For information about adding screen capture protection to a client, see the [Information for developers](#information-for-developers) section.
-
 ## Allow export of Recall and snapshot information
 <!--9257953-->
 This policy allows you to determine whether users can export their own Recall and snapshot information. Exporting allows users to share their Recall and snapshot information with trusted apps or websites. Users can export from **Settings** > **Privacy & Security** > **Recall & Snapshots** > **Advanced Settings** > **Export snapshots** > **Export past snapshots** > **Export**. 
@@ -193,6 +180,20 @@ If the policy is set to disabled or not configured, users won't be able to expor
 |---|---|
 | **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[AllowRecallExport](mdm/policy-csp-windowsai.md#allowrecallexport) |
 | **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Allow export of Recall and snapshot information** |
+
+
+## Remote desktop connection clients filtered from snapshots
+
+Snapshots won't be saved when supported remote desktop clients are used. The remote desktop connection sessions from the following clients are filtered from snapshots: <!--9119193, 10049089-->
+
+   - [Remote Desktop Connection (mstsc.exe)](/windows-server/administration/windows-commands/mstsc)
+   - [VMConnect.exe](/windows-server/virtualization/hyper-v/learn-more/hyper-v-virtual-machine-connect) 
+   - [Azure Virtual Desktop (MSI)](/azure/virtual-desktop/users/connect-windows) 
+   - [Remote applications integrated locally (RAIL)](/openspecs/windows_protocols/ms-rdperp/485e6f6d-2401-4a9c-9330-46454f0c5aba)
+
+> [!Note]
+> Clients will be saved by Recall unless the client implements screen capture protection, for example [screen capture protection in Azure Virtual desktop](/azure/virtual-desktop/screen-capture-protection). Clients can control how screen capture protection is implemented and may allow some pages to be saved but not the remote session. Customers can always add filters for specific client apps. Check with the provider of your remote client software for details on their screen capture policy. For information about adding screen capture protection to a client, see the [Information for developers](#information-for-developers) section.
+
 
 
 ## Bring your own device (BYOD) considerations
