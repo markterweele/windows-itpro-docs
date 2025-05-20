@@ -11,7 +11,7 @@ ms.collection:
   - highpri
   - tier2
 ms.subservice: itpro-fundamentals
-ms.date: 05/19/2025
+ms.date: 05/20/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 24H2</a>
 ---
