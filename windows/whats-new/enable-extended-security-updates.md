@@ -8,7 +8,7 @@ author: mestew
 manager: aaroncz
 ms.localizationpriority: medium
 ms.topic: article
-ms.date: 05/20/2025
+ms.date: 05/21/2025
 ms.collection:
   - highpri
   - tier2
@@ -35,7 +35,7 @@ To enable ESU for Windows 10, you must meet the following prerequisites:
 - `https://go.microsoft.com/`
 - `https://login.live.com`
 - `https://activation.sls.microsoft.com/`
-- `http://crl.microsoft.com/pki/crl/products/MicProSecSerCA_2007-12-04.crl`
+- `http://crl.microsoft.com/`
 - `https://validation.sls.microsoft.com/`
 - `https://activation-v2.sls.microsoft.com/`
 - `https://validation-v2.sls.microsoft.com/`
@@ -48,7 +48,7 @@ To enable ESU for Windows 10, you must meet the following prerequisites:
 
 **Microsoft 365 admin center:**
 
-[Volume licensing access](/microsoft-365/commerce/licenses/vl-sign-in) to the [Microsoft 365 admin center](https://admin.microsoft.com).
+- [Volume licensing access](/microsoft-365/commerce/licenses/vl-sign-in) in the [Microsoft 365 admin center](https://admin.microsoft.com)
 
 ## Get the product keys for activating Extended Security Update (ESU) licenses
 
@@ -63,7 +63,7 @@ If you bought ESU licenses, you can activate them with Multiple Activation Keys 
 
 ## Install and activate the ESU key
 
-You'll be managing licensing and activation on devices using [slmgr.vbs](/windows-server/get-started/activation-slmgr-vbs-options). The device needs access to the internet and to Microsoft Activation Servers. If the device can't access either the internet or the Microsoft Activation Servers, see [Activate ESU keys by phone](#activate-esu-keys-by-phone). To install the ESU key on clients, use the following steps:
+You manage licensing and activation on devices using [slmgr.vbs](/windows-server/get-started/activation-slmgr-vbs-options). The device needs access to the internet and to Microsoft Activation Servers. If the device can't access either the internet or the Microsoft Activation Servers, see [Activate ESU keys by phone](#activate-esu-keys-by-phone). To install the ESU key on clients, use the following steps:
 
 1. Open an elevated Command Prompt window on the device.
 1. Run the following command to install the ESU key, replacing `<ESU MAK>` with the actual ESU MAK you obtained from the Microsoft 365 admin center:
