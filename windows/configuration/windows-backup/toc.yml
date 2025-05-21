@@ -1,8 +1,6 @@
 items:
 - name: Reference
   items:
-  - name: Policy settings
-    href: policy-settings.md
   - name: Backup/restore settings catalog
     href: catalog.md
   - name: Enterprise State Roaming settings catalog
