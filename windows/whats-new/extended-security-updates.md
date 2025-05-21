@@ -27,7 +27,7 @@ Individuals or organizations who elect to continue using Windows 10 after suppor
 
 ## Device prerequisites
 
-To be eligible to install updates from the ESU program, devices must be running Windows 10, version 22H2.
+To be eligible to install updates from the ESU program, devices must be running Windows 10, version 22H2. For more information on prerequisites and enabling ESU in commercial environments, see [Enable Extended Security Updates (ESU)](enable-extended-security-updates.md).
 
 ## Limitations
 
@@ -91,3 +91,7 @@ Windows 10 PCs will continue to work, but we recommend customers upgrade eligibl
 - Technical support
 - Feature updates or new features
 - Quality updates (including security and reliability fixes)
+
+## Related content
+
+For more information about enabling ESU in commercial environments, see [Enable Extended Security Updates (ESU)](enable-extended-security-updates.md).
