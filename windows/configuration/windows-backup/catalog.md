@@ -11,6 +11,8 @@ zone_pivot_groups: windows-versions-11-10
 
 # Windows Backup for Organizations settings catalog
 
+[!INCLUDE [insider-feature](../includes/insider-feature.md)]
+
 This article provides a comprehensive list of settings that are backed up to the cloud when using Windows Backup for Organizations.
 
 - The settings are grouped to match the Windows Settings app, which is divided into different areas, each further divided into categories.
