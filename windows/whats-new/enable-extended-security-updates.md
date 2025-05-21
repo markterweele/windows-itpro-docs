@@ -20,7 +20,7 @@ appliesto:
 <!--10014911-->
 > **Looking for consumer information?** For individuals or Windows 10 Home customers, more information about Extended Security Updates for Windows 10 is available in the frequently asked questions section of the [End of support for Windows 10](https://www.microsoft.com/windows/end-of-support) page.<!--10013381-->
 
-The Windows 10 Extended Security Updates (ESU) program allows organizations to receive critical and important security updates for PCs enrolled in the paid subscription service. ESU extends the use of Windows 10 devices past the end of support date on October 14, 2025. This article provides instructions on how to enable the ESU keys in commercial environments.
+The [Windows 10 Extended Security Updates (ESU) program](extended-security-updates.md) allows organizations to receive critical and important security updates for PCs enrolled in the paid subscription service. ESU extends the use of Windows 10 devices past the end of support date on October 14, 2025. This article provides instructions on how to enable the ESU keys in commercial environments.
 
 ## Prerequisites
 
