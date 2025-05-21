@@ -65,11 +65,11 @@ For individuals or Windows 10 Home customers, Extended Security Updates for Wind
 
 ### Is there a minimum license purchase requirement for Windows 10 ESU?
 
-The minimum license purchase requirements for Windows 10 ESU is one license.
+The minimum license purchase requirement for Windows 10 ESU is one license.
 
 ### Can ESUs be purchased for a specific duration?
 
-The Extended Security Update Program for Windows 10 must be purchased by year. Customers can't buy partial periods, for instance, only six months. Year One starts in November 2025. If you decide to purchase the program in Year Two, you'll have to pay for Year One too, as ESUs are cumulative.
+The Extended Security Update Program for Windows 10 must be purchased by year. Customers can't buy partial periods, for instance, only six months. Year One starts in November 2025. If you decide to purchase the program in Year Two, you have to pay for Year One too, as ESUs are cumulative.
 
 
 ### When will the ESU offer be available for licensing?
