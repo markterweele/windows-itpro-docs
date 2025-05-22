@@ -495,7 +495,7 @@ Apps are not backed up or restored by Windows Backup for Organizations.
 | &nbsp;&nbsp;&nbsp;&nbsp;Contrast Themes | ✅ |
 | &nbsp;&nbsp;&nbsp;&nbsp;Choose a theme | ✅ |
 | &nbsp;&nbsp;&nbsp;&nbsp;Text | ✅ |
-| &nbsp;&nbsp;&nbsp;&nbsp;Hypterlinks | ✅ |
+| &nbsp;&nbsp;&nbsp;&nbsp;Hyperlinks | ✅ |
 | &nbsp;&nbsp;&nbsp;&nbsp;Disabled Text | ✅ |
 | &nbsp;&nbsp;&nbsp;&nbsp;Selected Text | ✅ |
 | &nbsp;&nbsp;&nbsp;&nbsp;Button Text | ✅ |
@@ -756,7 +756,7 @@ Apps are not backed up or restored by Windows Backup for Organizations.
 | &nbsp;&nbsp;&nbsp;&nbsp;**Notification preferences** |  |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notify me when I turn on Sticky, Filter, or Toggle keys from the keyboard | ✅ |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Play a sound when I turn Sticky, Filter, or Toggle keys on or off from the keyboard | ✅ |
-| &nbsp;&nbsp;&nbsp;&nbsp;Underline acess keys | ✅ |
+| &nbsp;&nbsp;&nbsp;&nbsp;Underline access keys | ✅ |
 | &nbsp;&nbsp;&nbsp;&nbsp;Use the print screen to open screen capture | ✅ |
 | **Mouse** |  |
 | &nbsp;&nbsp;&nbsp;&nbsp;**Mouse keys** |  |
