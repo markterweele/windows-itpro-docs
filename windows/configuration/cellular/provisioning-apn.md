@@ -48,7 +48,7 @@ For users who work in different locations, you can configure one APN to connect 
     | UserName | If you select PAP, CHAP, or MSCHAPv2 authentication, enter a user name.  |
 
 1. After you configure the connection settings, [build the provisioning package](../provisioning-packages/provisioning-create-package.md#build-package).
-1. [Apply the package to devices.](../provisioning-packages/provisioning-apply-package.md)
+1. Add the new profile to the [COSA database](/windows-hardware/customize/desktop/customize-cosa) of mobile operator profiles or [apply the package to devices.](../provisioning-packages/provisioning-apply-package.md).
 
 ## Confirm the settings
 
