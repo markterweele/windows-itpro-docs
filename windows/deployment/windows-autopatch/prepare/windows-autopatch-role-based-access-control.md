@@ -1,6 +1,6 @@
 ---
 title: Role-based access control
-description: This article provides an overview on how to register devices in Autopatch.
+description: This article provides an overview on role-based access control in Windows Autopatch
 ms.date: 05/27/2025
 ms.service: windows-client
 ms.subservice: autopatch
