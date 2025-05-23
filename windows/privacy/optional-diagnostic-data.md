@@ -266,7 +266,7 @@ If a user has enabled Tailored experiences on the device, [pseudonymized](#pseud
 - If data shows a device is running low on file storage, we may recommend Windows-compatible cloud storage solutions to free up space.
 - If data shows the device is experiencing performance issues, we may provide recommendations for Windows apps that can help diagnose or resolve these issues. These apps might be free or paid.
 
-**Microsoft doesn't use crash and hang dump data to [personalize](#personalize), [recommend](#recommend), [offer](#offer), or [promote](#promote) any product or service.**
+Microsoft doesn't use crash and hang dump data to [personalize](#personalize), [recommend](#recommend), [offer](#offer), or [promote](#promote) any product or service.
 
 ### Data Description for Product and Service Performance data type
 
