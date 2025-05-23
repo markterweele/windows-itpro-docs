@@ -139,4 +139,4 @@ To view endpoints for other versions of Windows 10 Enterprise, see:
 ## Related links
 
 - [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
-- [Network infrastructure requirements for Microsoft Intune](/intune/intune-service/fundamentals/intune-endpoints)
+- [Network endpoints for Microsoft Intune](/intune/intune-service/fundamentals/intune-endpoints)
