@@ -9,6 +9,7 @@ ms.author: danbrown
 manager: dansimp
 ms.date: 05/23/2025
 ms.topic: reference
+hideEdit: true
 ms.collection: 
 - privacy-windows
 - must-keep
