@@ -142,22 +142,6 @@ To configure the Wi-Fi network connection used during recovery, use the followin
 |- **OMA-URI:** `./Device/Vendor/MSFT/RemoteRemediation/CloudRemediationSettings/NetworkSettings/NetworkCredentials/NetworkPasswordEncryptionType`<br>- **Data type:** Integer<br>- **Value:** `0` = The password isn't encrypted; `1` = The password is encrypted with the MDM certificate, `2` = The password is encrypted with custom certificate. When this value is used, you must also specify the custom store name in the `NetworkPasswordEncryptionStore` node.|
 |- **OMA-URI:** `./Device/Vendor/MSFT/RemoteRemediation/CloudRemediationSettings/NetworkSettings/NetworkCredentials/NetworkPasswordEncryptionStore`<br>- **Data type:** string<br>- **Value:** When a value of `2` is contained in `NetworkPasswordEncryptionType`, specify the store name where the certificate for decrypting the Network Password is stored.|
 
-# [:::image type="icon" source="../images/icons/settings-app.svg"::: **Settings**](#tab/settings)
-
-Here are the steps to configure quick mahcine recovery from Settings:
-
-1. Open Settings and go to System > Recovery**, or use the following shortcut:
-
-    > [!div class="nextstepaction"]
-    >
-    > [Recovery](ms-settings:recovery)
-
-1. Select **Quick machine recovery**
-1. To enable quick machine recovery, turn the **Quick machine recovery** toggle to **On**
-1. Configure the retry intervals and time-outs as needed
-
- :::image type="content" source="images/quick-machine-recovery-settings.png" border="false" lightbox="images/quick-machine-recovery-settings.png" alt-text="Screenshot of the Setting app - Recovery - Quick machine recovery - showing the quick machine recovery options.":::
-
 # [:::image type="icon" source="../images/icons/cmd.svg"::: **Command prompt**](#tab/cmd)
 
 To configure quick machine recovery using the command line, you must create an XML file with the desired settings and then use the `reagentc.exe` command to apply those settings.
@@ -199,6 +183,21 @@ To remove the configured recovery settings, run the following command from an el
 reagentc.exe /clearrecoverysettings
 ```
 
+# [:::image type="icon" source="../images/icons/settings-app.svg"::: **Settings**](#tab/settings)
+
+Here are the steps to configure quick mahcine recovery from Settings:
+
+1. Open Settings and go to **System** > **Recovery**, or use the following shortcut:
+
+    > [!div class="nextstepaction"]
+    >
+    > [Recovery](ms-settings:recovery)
+
+1. Select **Quick machine recovery**
+1. To enable quick machine recovery, turn the **Quick machine recovery** toggle to **On**
+1. Configure the retry and restart intervals as needed
+
+ :::image type="content" source="images/quick-machine-recovery-settings.png" border="false" lightbox="images/quick-machine-recovery-settings.png" alt-text="Screenshot of the Setting app - Recovery - Quick machine recovery - showing the quick machine recovery options.":::
 ---
 
 ### Verify Recovery Settings
