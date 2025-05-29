@@ -267,7 +267,7 @@ You can use Group Policy to set your organization’s diagnostic data setting:
 
 1. From the Group Policy Management Console, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds**.
 
-2.  Double-click **Allow diagnostic data** (or **Allow telemetry** on Windows 10 version 1809 and earlier and on Windows Server 2019).
+2.  Double-click **Allow diagnostic data** (or **Allow telemetry** on Windows 10 version 1809 and earlier, and on Windows Server 2019).
 
     > [!NOTE]
     > If devices in your organization are running Windows 10, 1803 and later, the user can still use Settings to set the diagnostic data setting to a more restrictive value, unless the **Configure diagnostic data opt-in settings user interface** policy is set.
@@ -315,10 +315,10 @@ The Windows diagnostic data processor configuration enables you to be the contro
   - Enterprise
   - Professional
   - Education
-- The device must be joined to Azure Active Directory (can be a hybrid Azure AD join).
+- The device must be joined to Microsoft Entra (can be a Microsoft Entra hybrid join).
 
 > [!NOTE]
-> In all cases, enrollment in the Windows diagnostic data processor configuration requires a device to be joined to an Azure AD tenant. If a device isn't properly enrolled, Microsoft will act as the controller for Windows diagnostic data in accordance with the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement) and the [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) terms won't apply.
+> In all cases, enrollment in the Windows diagnostic data processor configuration requires a device to be joined to a Microsoft Entra tenant. If a device isn't properly enrolled, Microsoft will act as the controller for Windows diagnostic data in accordance with the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement) and the [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) terms won't apply.
 
 For the best experience, use the most current build of any operating system specified above. Configuration functionality and availability may vary on older systems. For release information, see [Windows 10 Enterprise and Education](/lifecycle/products/windows-10-enterprise-and-education) and [Windows 11 Enterprise and Education](/lifecycle/products/windows-11-enterprise-and-education) on the Microsoft Lifecycle Policy site.
 
@@ -342,17 +342,17 @@ Tenants with billing addresses in countries or regions in the Middle East and Af
 > - Windows 10, versions 20H2 and newer
 > - Windows 11, versions 21H2 and newer
 
-Starting with the January 2023 preview cumulative update, how you enable the processor configuration option depends on the billing address of the Azure AD tenant to which your devices are joined.
+Starting with the January 2023 preview cumulative update, how you enable the processor configuration option depends on the billing address of the Microsoft Entra tenant to which your devices are joined.
 
-#### Devices in Azure AD tenants with a billing address in the European Union (EU) or European Free Trade Association (EFTA)
+#### Devices in Microsoft Entra tenants with a billing address in the European Union (EU) or European Free Trade Association (EFTA)
 
-For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) in the EU or EFTA, the Windows diagnostic data for that device will be automatically configured for the processor option. The Windows diagnostic data for those devices will be processed in Europe.
+For Windows devices with diagnostic data turned on and that are joined to an [Microsoft Entra tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) in the EU or EFTA, the Windows diagnostic data for that device will be automatically configured for the processor option. The Windows diagnostic data for those devices will be processed in Europe.
 
 From a compliance standpoint, this change means that Microsoft will be the processor and the organization will be the controller of the Windows diagnostic data. IT admins for those organizations will become responsible for responding to their users’ [data subject requests](/compliance/regulatory/gdpr-dsr-windows).
 
-#### Devices in Azure AD tenants with a billing address outside of the EU and EFTA
+#### Devices in Microsoft Entra tenants with a billing address outside of the EU and EFTA
 
-For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) outside of the EU and EFTA, to enable the processor configuration option, the organization must sign up for any of the following enterprise services, which rely on diagnostic data:
+For Windows devices with diagnostic data turned on and that are joined to an [Microsoft Entra tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) outside of the EU and EFTA, to enable the processor configuration option, the organization must sign up for any of the following enterprise services, which rely on diagnostic data:
 
 - [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview)
 - [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview)
@@ -374,7 +374,7 @@ To enable Windows diagnostic data processor configuration, you can use Group Pol
 - For Group Policy, you can use the "Allow commercial data pipeline" policy, which is also available in the Intune [settings catalog](/intune/intune-service/configuration/settings-catalog).
 - For an MDM solution, you can use the AllowCommercialDataPipeline setting in the System Policy configuration service provider (CSP).
 
-For more information about AllowCommercialDataPipeline and the “Allow commercial data pipeline” policy, [review this information](/windows/client-management/mdm/policy-csp-system#allowcommercialdatapipeline).
+For more information about AllowCommercialDataPipeline and the "Allow commercial data pipeline" policy, [review this information](/windows/client-management/mdm/policy-csp-system#allowcommercialdatapipeline).
 
 ## Change privacy settings on a single server
 
