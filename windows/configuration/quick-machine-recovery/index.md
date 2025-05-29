@@ -198,6 +198,7 @@ Here are the steps to configure quick mahcine recovery from Settings:
 1. Configure the retry and restart intervals as needed
 
  :::image type="content" source="images/quick-machine-recovery-settings.png" border="false" lightbox="images/quick-machine-recovery-settings.png" alt-text="Screenshot of the Setting app - Recovery - Quick machine recovery - showing the quick machine recovery options.":::
+
 ---
 
 ### Verify Recovery Settings
