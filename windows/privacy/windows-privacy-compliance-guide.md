@@ -7,7 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dansimp
-ms.date: 05/29/2025
+ms.date: 05/30/2025
 ms.topic: concept-article
 hideEdit: true
 ms.collection: 
@@ -60,7 +60,7 @@ The following table provides an overview of the Windows 10 and Windows 11 privac
 
 [Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) is a Microsoft Store app (available in Windows 10, version 1803 and later and Windows 11) that lets a user review the Windows diagnostic data that is being collected on their Windows device and sent to Microsoft in real-time. DDV groups the information into simple categories that describe the data that’s being collected.
 
-An administrator can also use the Diagnostic Data Viewer for PowerShell module to view the diagnostic data collected from the device instead of using the Diagnostic Data Viewer UI. The [Diagnostic Data Viewer for PowerShell Overview](diagnostic-data-viewer-powershell.md) provides further information.
+An administrator can also use the Diagnostic Data Viewer for PowerShell module to view the diagnostic data collected from the device instead of using the Diagnostic Data Viewer UI. The [Diagnostic Data Viewer for PowerShell overview](diagnostic-data-viewer-powershell.md) provides further information.
 
 > [!Note]
 > If the Windows diagnostic data processor configuration is enabled, IT administrators should use the admin portal to fulfill data subject requests to access or export Windows diagnostic data associated with a particular user’s device usage. For more information, see [The process for exercising data subject rights](#3-the-process-for-exercising-data-subject-rights).
@@ -146,7 +146,7 @@ Windows 10, version 1809 and later and Windows 11 allow a user to delete diagnos
 An administrator can disable a user’s ability to delete their device’s diagnostic data by setting the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** > **Disable deleting diagnostic data** or the MDM policy `DisableDeviceDelete`.
 
 >[!Note]
->If the Windows diagnostic data processor configuration is enabled, the Delete diagnostic data button will be disabled and the powershell cmdlet will not delete data collected under this configuration. IT administrators can instead delete diagnostic data collected by invoking a delete request from the admin portal.
+>If the Windows diagnostic data processor configuration is enabled, the Delete diagnostic data button will be disabled and the PowerShell cmdlet will not delete data collected under this configuration. IT administrators can instead delete diagnostic data collected by invoking a delete request from the admin portal.
 
 #### _2.3.7 Diagnostic data: Enabling the Windows diagnostic data processor configuration_
 
@@ -184,14 +184,14 @@ Users can delete their device-based data by opening the Windows settings app and
 
 ### 3.2 View
 
-The [Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) provides a view into the diagnostic data being collected from a Windows device. Administrators can also use the [Get-DiagnosticData](diagnostic-data-viewer-powershell.md#install-and-use-the-diagnostic-data-viewer-for-powershell) PowerShell cmdlet.
+The [Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) provides a view into the diagnostic data being collected from a Windows device. Administrators can also use the [Get-DiagnosticData](/powershell/module/microsoft.diagnosticdataviewer/get-diagnosticdata) PowerShell cmdlet.
 
 >[!Note]
 >If the Windows diagnostic data processor configuration is enabled, IT administrators can view the diagnostic data that is associated with a user from the admin portal.
 
 ### 3.3 Export
 
-The [Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) provides the ability to export the diagnostic data captured while the app is running, by clicking the **Export** data button in the top menu. Administrators can also use the [Get-DiagnosticData](diagnostic-data-viewer-powershell.md#install-and-use-the-diagnostic-data-viewer-for-powershell) PowerShell cmdlet script.
+The [Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) provides the ability to export the diagnostic data captured while the app is running, by clicking the **Export** data button in the top menu. Administrators can also use the [Get-DiagnosticData](/powershell/module/microsoft.diagnosticdataviewer/get-diagnosticdata) PowerShell cmdlet.
 
 >[!Note]
 >If the Windows diagnostic data processor configuration is enabled, IT administrators can also export the diagnostic data that is associated with a user from the admin portal.
