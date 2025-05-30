@@ -249,7 +249,7 @@ Use the steps in this section to configure the diagnostic data settings for Wind
 >- These diagnostic data settings only apply to components, features, and apps that are considered a part of the Windows operating system. 
 >- Third-party apps and other Microsoft apps, such as Microsoft 365 Apps, that customers install may also collect and send diagnostic data using their own controls.
 >- You should work with your app vendors to understand their diagnostic data policy, and how you can opt in or opt out.
->- For more information on how Microsoft Office uses diagnostic data, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](/microsoft-365-apps/privacy/overview-privacy-controls). 
+>- For more information on how Microsoft 365 Apps uses diagnostic data, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](/microsoft-365-apps/privacy/overview-privacy-controls). 
 >- If you would like to control Windows data collection that isn't Windows diagnostic data, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
 
 You can configure your device's diagnostic data settings using the management tools you’re already using, such as Group Policy or MDM.
