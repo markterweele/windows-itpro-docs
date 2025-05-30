@@ -3,7 +3,7 @@ title: Updated Windows and Microsoft 365 Copilot Chat experience
 description: Learn about changes to the Copilot in Windows experience for commercial environments and how to configure it for your organization.
 ms.topic: overview
 ms.subservice: windows-copilot
-ms.date: 05/30/2025
+ms.date: 06/02/2025
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -95,7 +95,7 @@ The updated Copilot hardware key experience on Windows 11 devices offers a more 
 
 ## Policies to manage the Copilot key
 
-Policies are available to configure the target app of the Copilot hardware key. For more information, see [WindowsAI Policy CSP](mdm/policy-csp-windowsai.md). 
+Policies are available so admins can configure the target app of the Copilot hardware key. For more information, see [WindowsAI Policy CSP](mdm/policy-csp-windowsai.md). 
 
 To configure the Copilot key, use the following policy:
 
