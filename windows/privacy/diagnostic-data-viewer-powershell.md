@@ -110,9 +110,9 @@ Each event is displayed as a PowerShell Object. By default each event shows the 
 
 ### View diagnostic event categories
 
-Each event shows the diagnostic event categories that it belongs to. These categories define how events are used by Microsoft. The categories are shown as numeric identifiers. For more information about these categories, see [Windows Diagnostic Data](./windows-diagnostic-data.md).  
+Each event shows the diagnostic event categories that it belongs to. These categories define how events are used by Microsoft. The categories are shown as numeric identifiers.
 
-To view the diagnostic category represented by each numeric identifier and what the category means, you can run the command:
+To view the diagnostic category represented by each numeric identifier and what the category means, you can run the following command:
 
 ```powershell
 PS C:\> Get-DiagnosticDataTypes
@@ -159,7 +159,7 @@ By default, the tool shows you up to 1 GB or 30 days of data (whichever comes fi
 
 ### Modify the size of your data history
 
-[!IMPORTANT]
+>[!IMPORTANT]
 >- Modifying the maximum amount of diagnostic data viewable by the tool might come with performance impacts to your machine.
 >- If you modify the maximum data history size from a larger value to a lower value, you must turn off data viewing and turn it back on in order to reclaim disk space.
 
