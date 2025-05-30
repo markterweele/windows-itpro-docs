@@ -1,6 +1,6 @@
 ---
 description: Use this article to make informed decisions about how you can configure Windows diagnostic data in your organization.
-title: Configure Windows diagnostic data in your organization (Windows 10 and Windows 11)
+title: Configure Windows diagnostic data in your organization
 ms.service: windows-client
 ms.subservice: itpro-privacy
 ms.localizationpriority: high

@@ -1,5 +1,5 @@
 ---
-title: Diagnostic Data Viewer for PowerShell Overview
+title: Diagnostic Data Viewer for PowerShell overview
 description: Use this article to use the Diagnostic Data Viewer for PowerShell to review the diagnostic data sent to Microsoft by your device.
 ms.service: windows-client
 ms.subservice: itpro-privacy
@@ -15,7 +15,7 @@ ms.collection:
 - must-keep
 ---
 
-# Diagnostic Data Viewer for PowerShell Overview
+# Diagnostic Data Viewer for PowerShell overview
 
 **Applies to**
 
@@ -49,7 +49,7 @@ To install the newest version of the Diagnostic Data Viewer PowerShell module, r
 PS C:\> Install-Module -Name Microsoft.DiagnosticDataViewer
 ```
 
-To see more information about the module, go to the [Microsoft.DiagnosticDataViewer](https://www.powershellgallery.com/packages/Microsoft.DiagnosticDataViewer) page in the PowerShell Gallery.
+For more information about the module, go to the [Microsoft.DiagnosticDataViewer](https://www.powershellgallery.com/packages/Microsoft.DiagnosticDataViewer) page in the PowerShell Gallery.
 
 ### Turn on data viewing
 
@@ -99,10 +99,10 @@ If the number of events is large, and you'd like to stop the command, enter `Ctr
 
 The Diagnostic Data Viewer for PowerShell provides you with the following features to view and filter your device's diagnostic data. You can also use the extensive suite of other PowerShell tools with this module.
 
-> [!NOTE]
+> [!TIP]
 > For more information about the PowerShell commands available, see the [Microsoft.DiagnosticDataViewer module documentation](/powershell/module/microsoft.diagnosticdataviewer).
 
-### View your diagnostic events.
+### View your diagnostic events
 
 Running `PS C:\> Get-DiagnosticData`, you can review your diagnostic events. These events reflect activities that occurred and were sent to Microsoft.
 
@@ -118,7 +118,7 @@ To view the diagnostic category represented by each numeric identifier and what 
 PS C:\> Get-DiagnosticDataTypes
 ```  
 
-### Filter events by when they were sent.
+### Filter events by when they were sent
 
 You can view events within specified time ranges by specifying a start time and end time of each command. For example, to see all diagnostic data sent between 12 and 6 hours ago, run the following command. Data is shown in order of oldest first.
 
@@ -126,14 +126,13 @@ You can view events within specified time ranges by specifying a start time and 
 PS C:\> Get-DiagnosticData -StartTime (Get-Date).AddHours(-12) -EndTime (Get-Date).AddHours(-6)
 ```
 
-### Export the results of each command.
+### Export the results of each command
 
 You can export the results of each command to a separate file such as a csv by using pipe `|`. For example:
 
-    ```powershell
-    PS C:\> Get-DiagnosticData | Export-Csv 'mydata.csv'
-    ```
-
+```powershell
+PS C:\> Get-DiagnosticData | Export-Csv 'mydata.csv'
+```
 
 ## Turn off data viewing
 
@@ -161,8 +160,8 @@ By default, the tool shows you up to 1 GB or 30 days of data (whichever comes fi
 ### Modify the size of your data history
 
 [!IMPORTANT]
-> - Modifying the maximum amount of diagnostic data viewable by the tool might come with performance impacts to your machine.
-> - If you modify the maximum data history size from a larger value to a lower value, you must turn off data viewing and turn it back on in order to reclaim disk space.
+>- Modifying the maximum amount of diagnostic data viewable by the tool might come with performance impacts to your machine.
+>- If you modify the maximum data history size from a larger value to a lower value, you must turn off data viewing and turn it back on in order to reclaim disk space.
 
 You can change the maximum data history size (in megabytes) that you can view. For example, to set the maximum data history size to 2,048 MB (2 GB), you can run the following command.
 
