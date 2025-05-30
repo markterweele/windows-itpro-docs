@@ -50,6 +50,8 @@ To start the Diagnostic Data Viewer, do the following steps:
 
 1. Go to **Start**, select **Settings** > **Privacy & security** > **Diagnostics & feedback**.
 
+   (You can also go to **Start** and search for *Diagnostic Data Viewer*.) 
+
 2. Under **View diagnostic data**, select the **Open Diagnostic Data Viewer** button.
 
 3. Close the Diagnostic Data Viewer. Use your device as you normally would for a few days. Then open the Diagnostic Data Viewer again to review the updated list of diagnostic data.
@@ -58,7 +60,7 @@ To start the Diagnostic Data Viewer, do the following steps:
 
 The Diagnostic Data Viewer provides you with the following features to view and filter your device's diagnostic data.
 
-## View your Windows diagnostic events
+### View your Windows diagnostic events
 
 In the left column, you can review your diagnostic events. These events reflect activities that occurred and were sent to Microsoft.
 
@@ -67,7 +69,7 @@ Selecting an event opens the detailed JSON view, which provides the exact detail
 >[!NOTE]
 >Seeing an event does not necessarily mean it has been uploaded yet. It’s possible that some events are still queued and will be uploaded at a later time.
 
-     ![View your diagnostic events.](images/ddv-event-view.jpg)
+![View your diagnostic events.](images/ddv-event-view.jpg)
 
 ### Search your diagnostic events
 
@@ -85,7 +87,7 @@ Microsoft only needs diagnostic data from a small number of devices to make big 
 
 To signify your contribution, you’ll see this icon (![Icon to review the device-level sampling.](images/ddv-device-sample.png)) if your device is part of the group. In addition, if any of your diagnostic data events are sent from your device to Microsoft to help make improvements, you’ll see this icon (![Icon to review the event-level sampling](images/ddv-event-sample.png)).
 
-## Provide event feedback
+### Provide event feedback
 
 The **Feedback** icon in the upper right corner of the window opens the Feedback Hub app, letting you provide feedback about the Diagnostic Data Viewer and the diagnostic events.
 
@@ -101,7 +103,7 @@ The **About my data** in the Diagnostic Data Viewer lets you see an overview of 
 Through this feature, you can see how much data you send on average each day, the breakdown of your data by category, the top components and services that have sent data, and more.  
 
 >[!NOTE]
->This content is a reflection of the history of Windows data that the app has stored. If you'd like to have extended analyses, modify the storage capacity of the Diagnostic Data Viewer. 
+>This content is a reflection of the history of Windows data that the app has stored. If you'd like to have extended analyses, modify the storage capacity of the Diagnostic Data Viewer.
 
 ![Look at an overview of what data you've shared with Microsoft through the 'About my data' page in Diagnostic Data Viewer.](images/ddv-analytics.png) 
 
@@ -124,7 +126,7 @@ To turn off data viewing, do the following steps:
 By default, the Diagnostic Data Viewer shows you up to 1 GB or 30 days of data (whichever comes first) for Windows diagnostic data. Once either the time or space limit is reached, the data is incrementally dropped with the oldest data points dropped first.
 
 > [!Important]
-> Note that if you have [Office diagnostic data viewing enabled](#view-office-diagnostic-data), the Office data history is fixed at 1 GB and cannot be modified.
+> If you have [diagnostic data viewing enabled](#view-microsoft-365-apps-and-microsoft-office-diagnostic-data) for Microsoft 365 Apps and Microsoft Office, their data history is fixed at 1 GB and cannot be modified.
 
 **Modify the size of your data history**
 
@@ -133,7 +135,7 @@ To make changes to the size of your Windows diagnostic data history, visit the *
 > [!Important]
 > Decreasing the maximum amount of diagnostic data viewable through the tool will remove all data history and requires a reboot of your device. Additionally, increasing the maximum amount of diagnostic data viewable by the tool may come with performance impacts to your machine.
 
-## View additional diagnostic data in the View problem reports tool
+## View additional diagnostic data in the "View problem reports" tool
 
 Available on Windows 10 (version 1809 and higher) and on Windows 11, you can review additional Windows Error Reporting diagnostic data in the **View problem reports** page within the Diagnostic Data Viewer.
 
@@ -145,15 +147,18 @@ You can also use the Windows Error Reporting tool available in the Control Panel
 
 On Windows 10 (version 1809 and higher) and on Windows 11, you can review Windows Error Reporting diagnostic data in the Diagnostic Data Viewer.  
 
-![Starting with Windows 1809 and higher and Windows 11, you can review Windows Error Reporting diagnostic data in the Diagnostic Data Viewer.](images/ddv-problem-reports.png)
+![Screenshot of the "Problem reports" section of the Diagnostic Data Viewer.](images/ddv-problem-reports.png)
 
 ### To view your Windows Error Reporting diagnostic data using the Control Panel
 
-Go to **Start**, select **Control Panel** > **All Control Panel Items** > **Security and Maintenance** > **Problem Reports**.<br><br>-OR-<br><br>
-Go to **Start** and search for *Problem Reports*.
+To use the Windows Error Reporting tool in the Control Panel, you can do either of the following steps:
+
+- Go to **Start**, select **Control Panel** > **All Control Panel Items** > **Security and Maintenance** > **Problem Reports**.
+- Go to **Start** and search for *Problem Reports*.
+
 The **Review problem reports** tool opens, showing you your Windows Error Reporting reports, along with a status about whether it was sent to Microsoft.
 
-![View problem reports tool with report statuses.](images/control-panel-problem-reports-screen.png)
+![Screenshot of the "Review problem reports" tool in Control Panel.](images/control-panel-problem-reports-screen.png)
 
 > [!IMPORTANT]
 > To inquire about Windows data access or interoperability related to the Digital Markets Act (DMA), [submit this form](https://go.microsoft.com/fwlink/p/?linkid=2271128).
