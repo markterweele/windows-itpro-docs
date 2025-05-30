@@ -67,7 +67,7 @@ In the left column, you can review your diagnostic events. These events reflect 
 Selecting an event opens the detailed JSON view, which provides the exact details uploaded to Microsoft. Microsoft uses this info to continually improve the Windows operating system.
 
 >[!NOTE]
->Seeing an event does not necessarily mean it has been uploaded yet. It’s possible that some events are still queued and will be uploaded at a later time.
+>Seeing an event doesn't necessarily mean it has been uploaded yet. It’s possible that some events are still queued and will be uploaded at a later time.
 
 ![View your diagnostic events.](images/ddv-event-view.jpg)
 
@@ -83,7 +83,7 @@ The app's **Menu** button opens the detailed menu. In here, you can find a list 
 
 ### Help to make your Windows experience better
 
-Microsoft only needs diagnostic data from a small number of devices to make big improvements to the Windows operating system and ultimately, your experience. If you’re a part of this small device group and you experience issues, Microsoft will collect the associated event diagnostic data, allowing your info to potentially help fix the issue for others.
+Microsoft only needs diagnostic data from a small number of devices to make big improvements to the Windows operating system and ultimately, your experience. If you’re a part of this small device group and you experience issues, Microsoft collects the associated event diagnostic data, allowing your info to potentially help fix the issue for others.
 
 To signify your contribution, you’ll see this icon (![Icon to review the device-level sampling.](images/ddv-device-sample.png)) if your device is part of the group. In addition, if any of your diagnostic data events are sent from your device to Microsoft to help make improvements, you’ll see this icon (![Icon to review the event-level sampling](images/ddv-event-sample.png)).
 
@@ -105,7 +105,7 @@ Through this feature, you can see how much data you send on average each day, th
 >[!NOTE]
 >This content is a reflection of the history of Windows data that the app has stored. If you'd like to have extended analyses, modify the storage capacity of the Diagnostic Data Viewer.
 
-![Look at an overview of what data you've shared with Microsoft through the 'About my data' page in Diagnostic Data Viewer.](images/ddv-analytics.png) 
+![Screenshot of the "About my data" page in the Diagnostic Data Viewer.](images/ddv-analytics.png) 
 
 ## View Microsoft 365 Apps or Microsoft Office diagnostic data
 
