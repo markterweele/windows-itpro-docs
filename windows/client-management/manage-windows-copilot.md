@@ -53,6 +53,7 @@ For users signing in to new PCs with work or school accounts, the following expe
 -	If admins elect not to pin Microsoft 365 Copilot Chat and indicate that users can't be asked, Microsoft 365 Copilot Chat won't be available via the Microsoft 365 Copilot app, Outlook, or Teams. Users have access to Microsoft 365 Copilot Chat from <www.microsoft.com/copilot> unless that URL is blocked by the IT admin.
 -	If the admins make no selection, users will be asked to pin Microsoft 365 Copilot Chat by themselves for easy access. 
 
+IT admins can pin the Microsoft 365 Copilot app to the Windows taskbar to enable easy and seamless access for users. This can be managed using policies  to [configure applications pinned to the Windows taskbar](/windows/configuration/taskbar/pinned-apps).
 
 ## When will this happen?
 
@@ -105,6 +106,7 @@ To configure the Copilot key, use the following policy:
 | **Group policy** | User Configuration > Administrative Templates > Windows Components > Windows Copilot > **Set Copilot Hardware Key** |
 
 
+
 ## End user settings for the Copilot key
 
 If you choose to provide users in your organization with the choice to manage their own experience, a protocol to launch the **Settings** app remap the Copilot key is available. The following can be used by apps and scripts to bring the user to the setting so they can modify it to meet their needs:
@@ -112,7 +114,6 @@ If you choose to provide users in your organization with the choice to manage th
 `ms-settings:personalization-textinput-copilot-hardwarekey`
 
 :::image type="content" border="true" source="./images/9598546-copilot-key-settings.png" alt-text="Screenshot of the text input page in Settings." lightbox="./images/9598546-copilot-key-settings.png":::
-
 
 
 If a user signed in with their Microsoft Entra account doesn't already have the key mapped to the Microsoft 365 Copilot app, they can select the app by going to **Settings** > **Personalization** > **Text input**, then selecting from the dropdown menu in the setting called **Customize Copilot key on keyboard**. This dropdown has options for: **Search**, **Custom**, or a currently mapped app if one is selected.
@@ -124,7 +125,7 @@ Users can also choose to have the Copilot key launch an app that is MSIX package
 
 ## Copilot installation with Windows updates and controls
 
-If you're an IT administrator and have enabled group policies to prevent the installation of Copilot, the Copilot app won't be installed on the configured devices. If you haven't enabled a group policy, you can remove the Copilot app by following one of the steps in the [Remove or prevent installation of the Copilot app](#remove-or-prevent-installation-of-the-copilot-app) section or configure the [AppLocker policy](/windows/security/application-security/application-control/app-control-for-business/applocker/applocker-overview) before installing Windows updates. When the AppLocker policy for Copilot is enabled, it will:
+If you're an IT administrator, you can remove the consumer Copilot app by following one of the steps in the [Remove or prevent installation of the Copilot app](#remove-or-prevent-installation-of-the-copilot-app) section or configure the [AppLocker policy](/windows/security/application-security/application-control/app-control-for-business/applocker/applocker-overview) before installing Windows updates. When the AppLocker policy for Copilot is enabled, it will:
 
-- Prevent the app from being installed if it isn't already on the device.
-- Block the app from being launched if it's already installed.
+- Prevent the consumer app from being installed if it isn't already on the device.
+- Block the consumer app from being launched if it's already installed.
