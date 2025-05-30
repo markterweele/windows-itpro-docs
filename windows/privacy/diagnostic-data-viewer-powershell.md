@@ -60,7 +60,7 @@ This setting doesn't control whether your device sends diagnostic data. Instead,
 Once data viewing is enabled, your device begins saving a history of diagnostic data that is sent to Microsoft from this point on.
 
 >[!IMPORTANT]
->Turning on data viewing can use up to 1 GB (default setting) of disk space on your system drive. We recommend that you turn off data viewing when you're done using the Diagnostic Data Viewer. For info about turning off data viewing, see the [Turn off data viewing](#turn-off-data-viewing) section in this article.
+>Turning on data viewing can use up to 1 GB (default setting) of disk space on your system drive. We recommend that you turn off data viewing when you're done using the Diagnostic Data Viewer. For info about turning off data viewing, see the [Turn off data viewing](#turn-off-data-viewing) section later in this article.
 
 #### To turn on data viewing through the Settings page
 
