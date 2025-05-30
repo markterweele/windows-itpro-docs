@@ -98,7 +98,7 @@ Selecting a specific event in the Diagnostic Data Viewer automatically fills in 
 
 ### View a summary of the data you've shared with us over time
 
-The **About my data** in the Diagnostic Data Viewer lets you see an overview of the Windows data you've shared with Microsoft.
+The **About your data** in the Diagnostic Data Viewer lets you see an overview of the Windows data you've shared with Microsoft.
 
 Through this feature, you can see how much data you send on average each day, the breakdown of your data by category, the top components and services that have sent data, and more.  
 
@@ -107,13 +107,13 @@ Through this feature, you can see how much data you send on average each day, th
 
 ![Look at an overview of what data you've shared with Microsoft through the 'About my data' page in Diagnostic Data Viewer.](images/ddv-analytics.png) 
 
-## View Microsoft 365 Apps and Microsoft Office diagnostic data
+## View Microsoft 365 Apps or Microsoft Office diagnostic data
 
-By default, the Diagnostic Data Viewer shows you Windows data. You can also view Microsoft 365 Apps and Microsoft Office diagnostic data by enabling the feature in the app settings page. To learn more about how to view Microsoft 365 Apps and Office diagnostic data, see [Using the Diagnostic Data Viewer with Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855).
+By default, the Diagnostic Data Viewer shows you Windows data. You can also view Microsoft 365 Apps or Microsoft Office diagnostic data by enabling the feature in the app settings page. To learn more about how to view Microsoft 365 Apps or Microsoft Office diagnostic data, see [Using the Diagnostic Data Viewer with Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855).
 
 ## Turn off data viewing
 
-When you're done reviewing your diagnostic data, you should turn off data viewing. This also removes your Windows data history. This setting doesn't affect your Office data viewing or history for Microsoft 365 Apps or Microsoft Office.
+When you're done reviewing your diagnostic data, you should turn off data viewing. This also removes your Windows data history. This setting doesn't affect your data viewing or history for Microsoft 365 Apps or Microsoft Office.
 
 To turn off data viewing, do the following steps:
 
@@ -126,7 +126,7 @@ To turn off data viewing, do the following steps:
 By default, the Diagnostic Data Viewer shows you up to 1 GB or 30 days of data (whichever comes first) for Windows diagnostic data. Once either the time or space limit is reached, the data is incrementally dropped with the oldest data points dropped first.
 
 > [!Important]
-> If you have [diagnostic data viewing enabled](#view-microsoft-365-apps-and-microsoft-office-diagnostic-data) for Microsoft 365 Apps and Microsoft Office, their data history is fixed at 1 GB and cannot be modified.
+> If you have [diagnostic data viewing enabled](#view-microsoft-365-apps-or-microsoft-office-diagnostic-data) for Microsoft 365 Apps or Microsoft Office, their data history is fixed at 1 GB and cannot be modified.
 
 **Modify the size of your data history**
 
