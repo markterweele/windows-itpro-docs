@@ -55,7 +55,7 @@ IT admins can pin the Microsoft 365 Copilot app to the Windows taskbar to enable
 
 ## When will this happen?
 
-The update to Microsoft 365 Copilot Chat to offer enterprise data protection roll out started in September 2024. Changes were rolled out to managed PCs starting with the September 2024 optional nonsecurity preview release, and then the October 2024 monthly security update for all supported versions of Windows 11. These changes were applied to Windows 10 PCs in November 2024. This update is replacing the current Copilot in Windows experience.
+The update to Microsoft 365 Copilot Chat to offer enterprise data protection roll out started in September 2024. Changes were rolled out to managed PCs starting with the September 2024 optional nonsecurity preview release, and then the October 2024 monthly security update for all supported versions of Windows 11. These changes were applied to Windows 10 PCs in November 2024. This update replaced the legacy Copilot in Windows experience.
  
 The Copilot app is automatically enabled after you install the Windows updates listed above if you haven't previously enabled a group policy to prevent the installation of Copilot. The [AppLocker policy](/windows/security/application-security/application-control/app-control-for-business/applocker/applocker-overview) is available to control this Copilot experience before installing these Windows updates mentioned above or any subsequent Windows updates. 
  
