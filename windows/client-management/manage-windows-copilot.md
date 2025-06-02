@@ -22,8 +22,6 @@ appliesto:
 
 Starting in September 2024, the Copilot experience on Windows is changing to enhance data security, privacy, compliance, and simplify the user experience, for users signed in with a Microsoft Entra work or school account. [Microsoft 365 Copilot Chat](https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/updates-to-microsoft-copilot-to-bring-enterprise-data-protection/ba-p/4217152) is available at no additional cost and it redirects users to a new simplified interface designed for work and education. [Enterprise data protection (EDP)](/copilot/microsoft-365/enterprise-data-protection) refers to controls and commitments, under the Data Protection Addendum and Product Terms, that apply to customer data for users of Microsoft 365 Copilot and Microsoft 365 Copilot Chat. This means that security, privacy, compliance controls and commitments available for Microsoft 365 Copilot will extend to Microsoft 365 Copilot Chat prompts and responses. Prompts and responses are protected by the same terms and commitments that are widely trusted by our customers. This is an improvement on top of the previous commercial data protection (CDP) promise. For more information, see the [Microsoft 365 Copilot Chat updates and enterprise data protection FAQ](/copilot/edpfaq).
 
-> [!IMPORTANT]
-> To streamline the user experience, updates to the Copilot entry points in Windows are being made for users. **Copilot in Windows (preview) will be removed from Windows**. The experience will slightly vary depending on whether your organization has already opted into using Copilot in Windows (preview) or not. 
 
 ## Copilot in Windows (preview) isn't enabled
 
@@ -42,7 +40,7 @@ If you have already activated Copilot in Windows (preview) - and want your users
 
 For users signing in to new PCs with work or school accounts, the following experience occurs:
 
--	The Microsoft 365 Copilot app is pinned to the taskbar - this is the app comes preinstalled with Windows and includes convenient access to Office apps such as Word, PowerPoint, etc. 
+-	The Microsoft 365 Copilot app is pinned to the taskbar - this is the app that comes preinstalled with Windows and includes convenient access to Office apps such as Word, PowerPoint, etc. 
 -	Users that have the Microsoft 365 Copilot license have Microsoft 365 Copilot Chat pinned by default inside the Microsoft 365 Copilot app. 
 -	Within the Microsoft 365 Copilot app, the Microsoft 365 Copilot Chat icon is situated next to the home button.
     - Microsoft 365 Copilot Chat (`web` grounding chat) isn't the same as Microsoft 365 Copilot (`web` and `work` scope), which is a separate add-on license. 
@@ -50,7 +48,7 @@ For users signing in to new PCs with work or school accounts, the following expe
    - For users with the Microsoft 365 Copilot license, they can toggle between the web grounding-based chat capabilities of Microsoft 365 Copilot Chat and the work scoped chat capabilities of Microsoft 365 Copilot. 
 -	Customers that don't have a license for Microsoft 365 Copilot are asked if they want to pin Microsoft 365 Copilot Chat to ensure they have easy access to Copilot. To set the default behavior, admins should [set pinning options](/copilot/microsoft-365/pin-copilot) in the Microsoft 365 admin center. 
 -	If admins elect not to pin Copilot and indicate that users can be asked, users will be asked to pin it themselves in the Microsoft 365 Copilot app, Outlook, and Teams. 
--	If admins elect not to pin Microsoft 365 Copilot Chat and indicate that users can't be asked, Microsoft 365 Copilot Chat won't be available via the Microsoft 365 Copilot app, Outlook, or Teams. Users have access to Microsoft 365 Copilot Chat from <www.microsoft.com/copilot> unless that URL is blocked by the IT admin.
+-	If admins elect not to pin Microsoft 365 Copilot Chat and indicate that users can't be asked, Microsoft 365 Copilot Chat won't be available via the Microsoft 365 Copilot app, Outlook, or Teams. Users have access to Microsoft 365 Copilot Chat from [https://www.microsoft.com/copilot](https://www.microsoft.com/copilot) unless that URL is blocked by the IT admin.
 -	If the admins make no selection, users will be asked to pin Microsoft 365 Copilot Chat by themselves for easy access. 
 
 IT admins can pin the Microsoft 365 Copilot app to the Windows taskbar to enable easy and seamless access for users. This can be managed using policies  to [configure applications pinned to the Windows taskbar](/windows/configuration/taskbar/pinned-apps).
@@ -91,7 +89,7 @@ You can remove or uninstall the Copilot app from your device by using one of the
 
 ## Implications for the Copilot hardware key
 <!--9598546, 10050561-->
-The updated Copilot hardware key experience on Windows 11 devices offers a more streamlined and context-aware interaction model for both consumer and commercial users. For commercial customers, pressing the Copilot key now opens a lightweight prompt box for quick access to Microsoft 365 Copilot, allowing users to stay in their workflow without switching apps or screens. This prompt can be expanded into the full Microsoft 365 Copilot app for more functionality. This change, started rolling out in the  May 2025 optional nonsecurity preview release. It addressed feedback from enterprise users who found the key defaulted to a consumer experience on managed devices. IT admins can configure or remap the key using [group policy or CSP settings](#policies-to-manage-the-copilot-key) to meet organizational needs. 
+The updated Copilot hardware key experience on Windows 11 devices offers a more streamlined and context-aware interaction model for both consumer and commercial users. For commercial customers, pressing the Copilot key now opens a lightweight prompt box for quick access to Microsoft 365 Copilot, allowing users to stay in their workflow without switching apps or screens. This prompt can be expanded into the full Microsoft 365 Copilot app for more functionality. This change started rolling out in the May 2025 optional nonsecurity preview release. It addressed feedback from enterprise users who found the key defaulted to a consumer experience on managed devices. IT admins can configure or remap the key using [group policy or CSP settings](#policies-to-manage-the-copilot-key) to meet organizational needs. 
 
 
 ## Policies to manage the Copilot key
@@ -120,7 +118,7 @@ If a user signed in with their Microsoft Entra account doesn't already have the 
 
 To map the key to the Microsoft 365 Copilot app, the user should select **Custom** and then choose the Microsoft 365 Copilot app from the app picker. If this app picker is empty or doesn't include the Microsoft 365 Copilot app, they should reinstall it from the Microsoft Store. 
 
-Users can also choose to have the Copilot key launch an app that is MSIX packaged and signed, ensuring the app options the Copilot key can remap to meet security and privacy requirements.   
+Users can also choose to have the Copilot key launch an app that is MSIX packaged and signed, ensuring the app configured to the Copilot key can remap to meet security and privacy requirements.   
 
 
 ## Copilot installation with Windows updates and controls
