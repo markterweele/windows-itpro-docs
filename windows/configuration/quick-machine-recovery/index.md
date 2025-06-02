@@ -2,12 +2,11 @@
 title: Quick Machine Recovery
 description: Learn about quick machine recovery and how to configure it with the RemoteRemediation configuration service provider (CSP).
 ms.topic: how-to
-ms.date: 05/29/2025
+ms.date: 06/02/2025
 ms.author: paoloma
 author: paolomatarazzo
 appliesto:
   - "✅ <a href=\"https://learn.microsoft.com/windows-insider/flight-hub\" target=\"_blank\">Windows Insider (Beta Channel)</a>"
-  - "✅ <a href=\"https://learn.microsoft.com/windows-insider/flight-hub\" target=\"_blank\">Windows Insider (Dev Channel)</a>"
 ---
 
 # Quick machine recovery
