@@ -184,7 +184,7 @@ reagentc.exe /clearrecoverysettings
 
 # [:::image type="icon" source="../images/icons/settings-app.svg"::: **Settings**](#tab/settings)
 
-Here are the steps to configure quick mahcine recovery from Settings:
+Here are the steps to configure quick machine recovery from Settings:
 
 1. Open Settings and go to **System** > **Recovery**, or use the following shortcut:
 
