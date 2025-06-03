@@ -6,7 +6,7 @@ ms.topic: how-to
 author: scottbreenmsft
 ms.author: scbree
 ms.reviewer: paoloma
-manager: aaroncz
+manager: bpardi
 ms.collection:
   - tier3
   - education
