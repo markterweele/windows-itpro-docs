@@ -9,7 +9,7 @@ appliesto:
 
 # Create policies to enable applications
 
-[!INCLUDE [winse-eos](../includes/winse-eos.md)]
+[!INCLUDE [winse-eos](../../includes/winse-eos.md)]
 
 :::row:::
    :::column span="":::

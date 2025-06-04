@@ -9,7 +9,7 @@ appliesto:
 
 # Validate the applications deployed to Windows SE devices
 
-[!INCLUDE [winse-eos](../includes/winse-eos.md)]
+[!INCLUDE [winse-eos](../../includes/winse-eos.md)]
 
 :::row:::
    :::column span="":::

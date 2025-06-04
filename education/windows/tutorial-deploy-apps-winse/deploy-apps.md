@@ -9,7 +9,7 @@ appliesto:
 
 # Applications deployment considerations
 
-[!INCLUDE [winse-eos](../includes/winse-eos.md)]
+[!INCLUDE [winse-eos](../../includes/winse-eos.md)]
 
 :::row:::
    :::column span="":::
