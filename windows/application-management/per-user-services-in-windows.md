@@ -1,8 +1,8 @@
 ---
 title: Per-user services
 description: Learn about per-user services, how to change the template service startup type, and manage per-user services through group policy and security templates.
-author: aczechowski
-ms.author: aaroncz
+author: vinaypamnani-msft
+ms.author: vinpa
 manager: bpardi
 ms.date: 10/01/2024
 ms.topic: how-to

@@ -1,8 +1,8 @@
 ---
 title: Keep removed apps from returning during an update
 description: When you remove provisioned apps from devices, this article explains how to keep those apps from returning during an update.
-author: aczechowski
-ms.author: aaroncz
+author: vinaypamnani-msft
+ms.author: vinpa
 manager: bpardi
 ms.date: 05/25/2018
 ms.topic: how-to

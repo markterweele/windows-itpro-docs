@@ -1,8 +1,8 @@
 ---
 title: Service host grouping in Windows 10
 description: Learn about the Service Host (SvcHost) service refactoring introduced in Windows 10 version 1703.
-author: aczechowski
-ms.author: aaroncz
+author: vinaypamnani-msft
+ms.author: vinpa
 manager: bpardi
 ms.date: 07/20/2017
 ms.topic: concept-article
