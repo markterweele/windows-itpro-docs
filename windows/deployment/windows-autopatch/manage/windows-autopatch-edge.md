@@ -77,8 +77,8 @@ If you [created an Autopatch group](../manage/windows-autopatch-manage-autopatch
 1. The following new policies should be discoverable from the list of profiles:
     1. `"Windows Autopatch Microsoft Edge Update Policy - <group name> - <ring name>"`
 1. The following profiles should be removed from your list of profiles and no longer visible/active. Use the Search with the keywords "Microsoft Edge Update Channel". The result should return *0 profiles filtered*.
-    1. Windows Autopatch - Microsoft Edge Update Channel Beta
-    1. Windows Autopatch - Microsoft Edge Update Channel Stable
+    1. Windows Autopatch - Edge Update Channel Beta
+    1. Windows Autopatch - Edge Update Channel Stable
 
 ### Verify Microsoft Edge updates policies are created
 
