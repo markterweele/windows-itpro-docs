@@ -14,6 +14,8 @@ ms.collection:
 
 # Upgrade Windows Home to Windows Education on student-owned devices
 
+[!INCLUDE [winse-eos](../includes/winse-eos.md)]
+
 ## Overview
 
 Customers with qualifying subscriptions can upgrade student-owned and institution-owned devices from *Windows Home* to *Windows Education*, which is designed for both the classroom and remote learning.
