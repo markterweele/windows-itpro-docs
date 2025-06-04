@@ -4,7 +4,7 @@ description: An overview of software and firmware threats faced in the current s
 ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
-manager: aaroncz
+manager: bpardi
 ms.date: 12/31/2017
 ms.topic: how-to
 ---
