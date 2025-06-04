@@ -3,7 +3,7 @@ title: Updated Windows and Microsoft 365 Copilot Chat experience
 description: Learn about changes to the Copilot in Windows experience for commercial environments and how to configure it for your organization.
 ms.topic: overview
 ms.subservice: windows-copilot
-ms.date: 06/02/2025
+ms.date: 06/05/2025
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -32,7 +32,7 @@ If your organization hasn't enabled Copilot in Windows (preview), your existing 
 
 ## Copilot in Windows (preview) is enabled
 
-If you had previously activated Copilot in Windows (in preview) for your workforce, we want to thank you for your enthusiasm. To provide the best Copilot experience for your users moving forward, and support greater efficiency and productivity, we won't automatically pin the Microsoft 365 Copilot app to the taskbar in Windows. Rather, we ensure that you have control over how you enable the Copilot experience within your organization. Our focus remains on empowering IT to seamlessly manage AI experiences and adopt those experiences at a pace that suits your organizational needs.
+If you had previously activated Copilot in Windows (preview) for your workforce, we want to thank you for your enthusiasm. To provide the best Copilot experience for your users moving forward, and support greater efficiency and productivity, we won't automatically pin the Microsoft 365 Copilot app to the taskbar in Windows. Rather, we ensure that you have control over how you enable the Copilot experience within your organization. Our focus remains on empowering IT to seamlessly manage AI experiences and adopt those experiences at a pace that suits your organizational needs.
 
 If you have already activated Copilot in Windows (preview) - and want your users to have uninterrupted access to Copilot on the taskbar after the update - use the [configuration options](/windows/configuration/taskbar/?pivots=windows-11) to pin the Microsoft 365 Copilot app to the taskbar as Copilot in Windows (preview) icon will be removed from the taskbar.
 
@@ -40,7 +40,7 @@ If you have already activated Copilot in Windows (preview) - and want your users
 
 For users signing in to new PCs with work or school accounts, the following experience occurs:
 
--	The Microsoft 365 Copilot app is pinned to the taskbar - this is the app that comes preinstalled with Windows and includes convenient access to Office apps such as Word, PowerPoint, etc. 
+-	The Microsoft 365 Copilot app is pinned to the taskbar - this is the app that typically comes preinstalled with Windows and includes convenient access to Office apps such as Word, PowerPoint, etc. 
 -	Users that have the Microsoft 365 Copilot license have Microsoft 365 Copilot Chat pinned by default inside the Microsoft 365 Copilot app. 
 -	Within the Microsoft 365 Copilot app, the Microsoft 365 Copilot Chat icon is situated next to the home button.
     - Microsoft 365 Copilot Chat (`web` grounding chat) isn't the same as Microsoft 365 Copilot (`web` and `work` scope), which is a separate add-on license. 
@@ -91,6 +91,8 @@ You can remove or uninstall the Copilot app from your device by using one of the
 <!--9598546, 10050561-->
 The updated Copilot hardware key experience on Windows 11 devices offers a more streamlined and context-aware interaction model for both consumer and commercial users. For commercial customers, pressing the Copilot key now opens a lightweight prompt box for quick access to Microsoft 365 Copilot, allowing users to stay in their workflow without switching apps or screens. This prompt can be expanded into the full Microsoft 365 Copilot app for more functionality. This change started rolling out in the May 2025 optional nonsecurity preview release. It addressed feedback from enterprise users who found the key defaulted to a consumer experience on managed devices. IT admins can configure or remap the key using [group policy or CSP settings](#policies-to-manage-the-copilot-key) to meet organizational needs. 
 
+If you're a software developer, you'll need to register your app as a [Microsoft Copilot hardware key provider](/windows/apps/develop/windows-integration/microsoft-copliot-key-provider) to allow users to remap the Copilot key to your app. This is done by adding `com.microsoft.windows.copilotkeyprovider` as the **Name** within the [uap3:AppExtension](/uwp/schemas/appxpackage/uapmanifestschema/element-uap3-appextension-manual) for your app's package manifest file.
+
 
 ## Policies to manage the Copilot key
 
@@ -118,7 +120,7 @@ If a user signed in with their Microsoft Entra account doesn't already have the 
 
 To map the key to the Microsoft 365 Copilot app, the user should select **Custom** and then choose the Microsoft 365 Copilot app from the app picker. If this app picker is empty or doesn't include the Microsoft 365 Copilot app, they should reinstall it from the Microsoft Store. 
 
-Users can also choose to have the Copilot key launch an app that is MSIX packaged and signed, ensuring the app configured to the Copilot key can remap to meet security and privacy requirements.   
+Users can also choose to have the Copilot key launch an app that is MSIX packaged and signed, ensuring the app configured to the Copilot key can remap to meet security and privacy requirements. If the app isn't listed in the app picker for the Copilot key, it's possible that the app provider hasn't registered it yet in their package manifest file as a [Microsoft Copilot hardware key provider](/windows/apps/develop/windows-integration/microsoft-copliot-key-provider). Check with your app provider to see if they've recently updated the app and that you have the lastest version of their app installed.
 
 
 ## Copilot installation with Windows updates and controls
