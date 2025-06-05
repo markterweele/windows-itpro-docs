@@ -3,7 +3,7 @@ title: Windows threat protection
 description: Describes the security capabilities in Windows client focused on threat protection
 author: aczechowski
 ms.author: aaroncz
-manager: aaroncz
+manager: bpardi
 ms.topic: article
 ms.date: 12/31/2017
 ---
