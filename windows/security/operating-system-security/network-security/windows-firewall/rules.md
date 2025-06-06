@@ -97,15 +97,25 @@ Here's a list of recommendations when designing your firewall rules:
 
 When designing a set of firewall policies for your network, it's a recommended practice to configure *allow rules* for any networked applications deployed on the host. Having the rules in place before the user first launches the application helps to ensure a seamless experience.
 
-The absence of these staged rules doesn't necessarily mean that in the end an application will be unable to communicate on the network. However, the behaviors involved in the automatic creation of application rules at runtime require user interaction and administrative privilege. If the device is expected to be used by non-administrative users, you should follow best practices and provide these rules before the application's first launch to avoid unexpected networking issues.
+The absence of these staged rules doesn't necessarily mean that in the end an application will be unable to communicate on the network. However, the behaviors involved in the automatic creation of application rules at runtime require user interaction and administrative privilege. 
+
+If the device is expected to be used by non-administrative users, you should follow best practices and 
+
+- provide these rules before the application's first launch to avoid unexpected networking issues
+
+- disable inbound notifications on all profiles. This disables the automatic creation of firewall rules.
 
 To determine why some applications are blocked from communicating in the network, check for the following instances:
 
-1. A user with sufficient privileges receives a query notification advising them that the application needs to make a change to the firewall policy. Not fully understanding the prompt, the user cancels or dismisses the prompt
-1. A user lacks sufficient privileges and is therefore not prompted to allow the application to make the appropriate policy changes
-1. [Local policy merge](#local-policy-merge-and-application-rules) is disabled, preventing the application or network service from creating local rules
+1. A user with sufficient privileges receives a query notification advising them that the application needs to make a change to the firewall policy. Not fully understanding the prompt, the user cancels or dismisses the prompt. Block rules are created
 
-Creation of application rules at runtime can also be prohibited by administrators using the Settings app or policy settings.
+1. A user with sufficient privileges is **not** prompted because notifications are disabled. No Allow rules are created, the traffic is blocked by the default block rule
+
+1. A user lacks sufficient privileges and is prompted to allow the application to make the appropriate policy changes. No matter what he clicks, Block rules get created for the application
+
+1. A user lacks sufficient privileges and is **not** prompted because notifications are disabled. No Allow rules are created, the traffic is blocked by the default block rule
+
+1. [Local policy merge](#local-policy-merge-and-application-rules) is disabled, preventing the application or network service from creating local rules
 
 ### Outbound rules considerations
 
