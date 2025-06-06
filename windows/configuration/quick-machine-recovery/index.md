@@ -7,6 +7,7 @@ ms.author: paoloma
 author: paolomatarazzo
 appliesto:
   - "✅ <a href=\"https://learn.microsoft.com/windows-insider/flight-hub\" target=\"_blank\">Windows Insider (Beta Channel)</a>"
+  - "✅ <a href=\"https://learn.microsoft.com/windows-insider/flight-hub\" target=\"_blank\">Windows Insider (Dev Channel)</a>"
 ---
 
 # Quick machine recovery
