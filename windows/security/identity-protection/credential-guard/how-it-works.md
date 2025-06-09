@@ -21,14 +21,15 @@ Kerberos, NTLM, and Credential Manager isolate secrets by using Virtualization-b
 :::row-end:::
 
 ## VSM and TPM Protections
-Secrets protected by Credential Guard are protected in memory isolated at runtime by the hypervisor using [Virtual Secure Mode](/virtualization/hyper-v-on-windows/tlfs/vsm). On recent supported hardware with TPM2.0, VSM data that is persisted will be protected by a key called the VSM master key which is protected by device firmware protections (see [System Guard: How a hardware-based root of trust helps protect Windows](/windows/security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows
-)). The VSM master key is protected by the TPM, ensuring that they key and the secrets protected by Credential Guard can only be accessed in a trusted environment. 
-
-Credential Guard does not typically persist authentication data (NTLM hash and TGTs) and that data is lost between reboots and refreshed when the user signs into the system. This means that it is not dependent on the VSM master key or the TPM to protect that data at rest. 
-
-Note: The VBS master key may not be protected by the TPM in any of the following environments:
-- If Secure Boot is disabled
-- If a TPM is not available on the firmware
+Secrets protected by Credential Guard are protected in memory and isolated at runtime by the hypervisor using [Virtual Secure Mode](/virtualization/hyper-v-on-windows/tlfs/vsm) (VSM). On recent supported hardware with TPM 2.0, VSM data that is persisted will be protected by a key called the VSM master key which is protected by device firmware protections. To learn more, see [System Guard: How a hardware-based root of trust helps protect Windows](/windows/security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows). The VSM master key is protected by the TPM, ensuring that they key and the secrets protected by Credential Guard can only be accessed in a trusted environment.
+ 
+Credential Guard does not typically persist authentication data (NTLM hash and TGTs) as that data is lost between reboots and refreshed when the user signs into the system. This means that it isn't dependent on the VSM master key or the TPM to protect that data at reset.
+ 
+> [!NOTE]
+> The VBS master key may not be protected by the TPM in any of the following environments:
+>
+> - If Secure Boot is disabled
+> - If a TPM is not available on the firmware
 
 ## Credential Guard protection limits
 
