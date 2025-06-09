@@ -49,6 +49,14 @@ To enable ESU for Windows 10, you must meet the following prerequisites:
 
 - [Volume licensing access](/microsoft-365/commerce/licenses/vl-sign-in) in the [Microsoft 365 admin center](https://admin.microsoft.com)
 
+## Cloud and virtualization scenario considerations
+
+Some cloud and virtualization scenarios have specific considerations for enabling ESU. In some cases, ESU is already enabled for you and in others, you may need to take additional steps. The following list summarizes these scenarios:
+
+- **Windows 365 Cloud PCs**: Devices that access Windows 11 Cloud PCs via [Windows 365](/windows-365/overview) are automatically entitled to ESU if a valid Windows 365 license exists. No manual activation is required.
+- **Azure Virtual Desktop** (AVD): Windows 10 VMs hosted in [Azure Virtual Desktop](/azure/virtual-desktop/overview) or Azure IaaS are automatically entitled to ESU. No keys or additional configuration needed.
+- Other virtualization platforms (such as Nutanix, Citrix): These platforms require manual ESU key activation. Contact your Microsoft account team to obtain a key. Activation can be managed with the Volume Activation Management Tool or with a script.
+
 ## Get the product keys for activating Extended Security Update (ESU) licenses
 
 If you bought ESU licenses, you can activate them with Multiple Activation Keys (MAK) that you get from the Microsoft 365 admin center. To find the ESU license MAK, use the following steps:
