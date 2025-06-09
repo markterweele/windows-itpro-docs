@@ -3,7 +3,7 @@ title: Updated Windows and Microsoft 365 Copilot Chat experience
 description: Learn about changes to the Copilot in Windows experience for commercial environments and how to configure it for your organization.
 ms.topic: overview
 ms.subservice: windows-copilot
-ms.date: 06/05/2025
+ms.date: 06/09/2025
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -22,19 +22,6 @@ appliesto:
 
 Starting in September 2024, the Copilot experience on Windows is changing to enhance data security, privacy, compliance, and simplify the user experience, for users signed in with a Microsoft Entra work or school account. [Microsoft 365 Copilot Chat](https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/updates-to-microsoft-copilot-to-bring-enterprise-data-protection/ba-p/4217152) is available at no additional cost and it redirects users to a new simplified interface designed for work and education. [Enterprise data protection (EDP)](/copilot/microsoft-365/enterprise-data-protection) refers to controls and commitments, under the Data Protection Addendum and Product Terms, that apply to customer data for users of Microsoft 365 Copilot and Microsoft 365 Copilot Chat. This means that security, privacy, compliance controls and commitments available for Microsoft 365 Copilot will extend to Microsoft 365 Copilot Chat prompts and responses. Prompts and responses are protected by the same terms and commitments that are widely trusted by our customers. This is an improvement on top of the previous commercial data protection (CDP) promise. For more information, see the [Microsoft 365 Copilot Chat updates and enterprise data protection FAQ](/copilot/edpfaq).
 
-
-## Copilot in Windows (preview) isn't enabled
-
-If your organization hasn't enabled Copilot in Windows (preview), your existing preferences are respected. Neither Microsoft 365 Copilot Chat or the Microsoft 365 Copilot app (formerly the Microsoft 365 app) are pinned to the taskbar. Admins should [set pinning options](/copilot/microsoft-365/pin-copilot) in the Microsoft 365 admin center.
-
-> [!NOTE]
-> Although we won't be pinning any app to the taskbar by default, IT has the capability to use policies to enforce their preferred app pinning.
-
-## Copilot in Windows (preview) is enabled
-
-If you had previously activated Copilot in Windows (preview) for your workforce, we want to thank you for your enthusiasm. To provide the best Copilot experience for your users moving forward, and support greater efficiency and productivity, we won't automatically pin the Microsoft 365 Copilot app to the taskbar in Windows. Rather, we ensure that you have control over how you enable the Copilot experience within your organization. Our focus remains on empowering IT to seamlessly manage AI experiences and adopt those experiences at a pace that suits your organizational needs.
-
-If you have already activated Copilot in Windows (preview) - and want your users to have uninterrupted access to Copilot on the taskbar after the update - use the [configuration options](/windows/configuration/taskbar/?pivots=windows-11) to pin the Microsoft 365 Copilot app to the taskbar as Copilot in Windows (preview) icon will be removed from the taskbar.
 
 ## Users signing in to new PCs with Microsoft Entra accounts
 
