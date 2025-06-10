@@ -1,7 +1,7 @@
 ---
 title: MultiSIM CSP
 description: Learn more about the MultiSIM CSP.
-ms.date: 06/09/2025
+ms.date: 06/10/2025
 ms.topic: generated-reference
 ---
 
@@ -484,10 +484,6 @@ Slot state (Unknown = 0, OffEmpty = 1, Off = 2, Empty = 3, NotReady = 4, Active 
 
 <!-- MultiSIM-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
-<!-- MultiSIM-CspMoreInfo-End -->
-
-<!-- MultiSIM-End -->
-
 ## Examples
 
 - Get modem:
@@ -574,6 +570,9 @@ Slot state (Unknown = 0, OffEmpty = 1, Off = 2, Empty = 3, NotReady = 4, Active 
       </SyncBody>
     </SyncML>
     ```
+<!-- MultiSIM-CspMoreInfo-End -->
+
+<!-- MultiSIM-End -->
 
 ## Related articles
 
