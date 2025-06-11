@@ -8,7 +8,7 @@ author: mestew
 manager: bpardi
 ms.localizationpriority: medium
 ms.topic: article
-ms.date: 05/21/2025
+ms.date: 06/12/2025
 ms.collection:
   - highpri
   - tier2
@@ -53,9 +53,16 @@ To enable ESU for Windows 10, you must meet the following prerequisites:
 
 Some cloud and virtualization scenarios have specific considerations for enabling ESU. In some cases, ESU is already enabled for you and in others, you may need to take additional steps. The following list summarizes these scenarios:
 
-- **Windows 365 Cloud PCs**: Devices that access Windows 11 Cloud PCs via [Windows 365](/windows-365/overview) are automatically entitled to ESU if a valid Windows 365 license exists. No manual activation is required.
-- **Azure Virtual Desktop** (AVD): Windows 10 VMs hosted in [Azure Virtual Desktop](/azure/virtual-desktop/overview) or Azure IaaS are automatically entitled to ESU. No keys or additional configuration needed.
-- Other virtualization platforms (such as Nutanix, Citrix): These platforms require manual ESU key activation. Contact your Microsoft account team to obtain a key. Activation can be managed with the Volume Activation Management Tool or with a script.
+- Extended Security Updates (ESU) are available at no additional cost for Windows 10 virtual machines in the following Microsoft-hosted or Azure-integrated environments. No additional configuration or keys are needed in the following environments:
+   - [Azure Virtual Desktop](/azure/virtual-desktop/overview)
+   - [Azure virtual machines](/azure/virtual-machines/overview)
+   - [Azure Dedicated Host](/azure/virtual-machines/dedicated-hosts)
+   - [Azure Local](/azure/azure-local/overview) (Azure Local is the new name for Azure Stack HCI)
+   - [Azure Stack Hub](/azure-stack/operator/azure-stack-overview)
+   - [Azure Stack Edge](/azure/databox-online/)
+
+- **Windows 365 Cloud PCs**: Windows 10 endpoints accessing  Windows 11 Cloud PCs via [Windows 365](/windows-365/overview) are automatically entitled to ESU for up to three years, so long as the valid Windows 365 license remains active. 
+- **Other virtualization platforms** (such as Nutanix or Citrix): These platforms require manual ESU key activation. Contact your Microsoft account team to obtain a 5x5 key. Activation can be managed with the Volume Activation Management Tool or with a script.
 
 ## Get the product keys for activating Extended Security Update (ESU) licenses
 
