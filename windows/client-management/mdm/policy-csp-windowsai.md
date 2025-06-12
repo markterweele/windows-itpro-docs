@@ -1,7 +1,7 @@
 ---
 title: WindowsAI Policy CSP
 description: Learn more about the WindowsAI Area in Policy CSP.
-ms.date: 05/02/2025
+ms.date: 06/12/2025
 ms.topic: generated-reference
 ---
 
@@ -84,6 +84,67 @@ This policy setting allows you to determine whether the Recall optional componen
 <!-- AllowRecallEnablement-Examples-End -->
 
 <!-- AllowRecallEnablement-End -->
+
+<!-- AllowRecallExport-Begin -->
+## AllowRecallExport
+
+<!-- AllowRecallExport-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AllowRecallExport-Applicability-End -->
+
+<!-- AllowRecallExport-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsAI/AllowRecallExport
+```
+<!-- AllowRecallExport-OmaUri-End -->
+
+<!-- AllowRecallExport-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy allows you to determine whether users can export their own Recall and snapshot information. Exporting allows users to share their Recall and snapshot information with trusted apps or websites. Users can export from Settings > Privacy & security > Recall & snapshots > Advanced settings > Export snapshots > Export past snapshots > Export. Users can also choose to continuously export their snapshots if they turn on the option to Export snapshots from now on from Settings > Privacy & security > Recall & snapshots > Advanced settings > Export snapshots > Export. Before starting an export, the user must authenticate with Windows Hello and they're notified that their exported snapshots are encrypted since they might contain sensitive information. The user is also notified that they'll need to provide their Recall export code if they want to allow trusted apps or websites access to exported snapshots. The Recall export code is displayed to users during Recall setup even if this policy is set to disabled or not configured. For managed devices: When you set this policy to enabled, users will be able to export Recall and snapshot information. If the policy is set to disabled or not configured, users won't be able to export their Recall and snapshot information.
+
+> [!IMPORTANT]
+> This setting applies to devices in the European Economic Area (EEA) only. Export of Recall and snapshot information is a user-initiated process and is per user. IT admins or other users can't initiate an export on behalf of another.
+<!-- AllowRecallExport-Description-End -->
+
+<!-- AllowRecallExport-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowRecallExport-Editable-End -->
+
+<!-- AllowRecallExport-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowRecallExport-DFProperties-End -->
+
+<!-- AllowRecallExport-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Deny export of Recall and snapshots information. |
+| 1 | Allow export of Recall and snapshot information. |
+<!-- AllowRecallExport-AllowedValues-End -->
+
+<!-- AllowRecallExport-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowRecallExport |
+| Path | WindowsAI > AT > WindowsComponents > WindowsAI |
+<!-- AllowRecallExport-GpMapping-End -->
+
+<!-- AllowRecallExport-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowRecallExport-Examples-End -->
+
+<!-- AllowRecallExport-End -->
 
 <!-- DisableAIDataAnalysis-Begin -->
 ## DisableAIDataAnalysis
