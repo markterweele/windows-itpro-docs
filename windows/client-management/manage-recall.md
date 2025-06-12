@@ -185,7 +185,7 @@ Before starting an export, the user must authenticate with Windows Hello and the
 > [!Important]
 > - This setting applies to devices in the European Economic Area (EEA) only. Export of Recall snapshots is a user-initiated process and is per user. IT admins or other users can't initiate an export on behalf of another.
 > - Changes to this policy take effect after device restart.
-> - For information about adding exported Recall and snapshot information to your application or website, see [Decrypt exported snapshots from Recall](/windows/ai/recall/decrypt-exported-snapshots). 
+> - Developer documentation will be coming at a later date. 
 
 | &nbsp; | Setting  |
 |---|---|
