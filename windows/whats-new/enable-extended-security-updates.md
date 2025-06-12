@@ -151,11 +151,7 @@ If the device doesn't have access to the internet or to the Microsoft Activation
 
 ## Activate large numbers of devices that don't have internet access
 
-For more information on how to do manual activation of large numbers of devices, review the Volume Activation Management Tool (VAMT) [Proxy Activation](/windows/deployment/volume-activation/proxy-activation-vamt) scenario. You should install the latest [Automated Deployment Kit (ADK) tool](/windows-hardware/get-started/adk-install) to ensure that you have latest VAMT tool
-
-Note:  In order to add Windows 10 ESU keys to VAMT update the pkeyconfig files with this update
-
-[https://www.microsoft.com/en-us/download/details.aspx?id=106364](https://www.microsoft.com/download/details.aspx?id=106364)
+For more information on how to do manual activation of large numbers of devices, review the Volume Activation Management Tool (VAMT) [Proxy Activation](/windows/deployment/volume-activation/proxy-activation-vamt) scenario.  You should install the latest [Automated Deployment Kit (ADK) tool](/windows-hardware/get-started/adk-install) to ensure that you have the latest VAMT. You'll also need to install an update to the VMAT from [https://www.microsoft.com/download/details.aspx?id=106364](https://www.microsoft.com/download/details.aspx?id=106364) so it includes updated PkeyConfig files for Windows 10 ESU MAK keys.
 
 For more information on adding additional activations to a Windows 10 ESU MAK, see [Request an increase to MAK activation limits](/microsoft-365/commerce/licenses/product-keys-for-vl#request-an-increase-to-mak-activation-limits).
 
