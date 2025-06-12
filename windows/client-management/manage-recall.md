@@ -165,7 +165,7 @@ To filter websites from being saved in snapshots, use the **Set a list of URIs t
 <!--9257953-->
 The Recall export experience is available in preview to Copilot + PCs through the Windows Insiders Program. For more information, see [Announcing Windows 11 Insider Preview Build 26120.4441 (Beta Channel)](https://blogs.windows.com/windows-insider).
 
-In the European Economic Area (EEA), users can choose to [export their Recall snapshots](https://support.microsoft.com/topic/680bd134-4aaa-4bf5-8548-a8e2911c8069) if IT admins allow exporting. By default, exporting Recall and snapshot information is disabled for managed devices. Exporting allows users to share their Recall and snapshot information with third-party apps or websites that the user trusts. Exporting is optional, and users can review their snapshots at any time in Recall without needing to export. Exported information includes:
+In the European Economic Area (EEA), users can choose to [export their Recall snapshots](https://go.microsoft.com/fwlink/?linkid=2309200) if IT admins allow exporting. By default, exporting Recall and snapshot information is disabled for managed devices. Exporting allows users to share their Recall and snapshot information with third-party apps or websites that the user trusts. Exporting is optional, and users can review their snapshots at any time in Recall without needing to export. Exported information includes:
 
 - Snapshots, including snapshots that the user or Recall saved
 - Snapshot details, including information related to each snapshot such as the time and date it was saved along with associated information from opened apps
@@ -185,11 +185,11 @@ Before starting an export, the user must authenticate with Windows Hello and the
 > [!Important]
 > - This setting applies to devices in the European Economic Area (EEA) only. Export of Recall snapshots is a user-initiated process and is per user. IT admins or other users can't initiate an export on behalf of another.
 > - Changes to this policy take effect after device restart.
-> - For information about adding exported Recall and snapshot information to your application or website, see [Decrypt exported snapshots from Recall](/windows/ai/recall/decrypt-exported-snapshots). 
+> - For information about adding exported Recall and snapshot information to your application or website, see [Decrypt exported snapshots from Recall](https://go.microsoft.com/fwlink/?linkid=2309200). 
 
 | &nbsp; | Setting  |
 |---|---|
-| **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[AllowRecallExport](mdm/policy-csp-windowsai.md#allowrecallexport) |
+| **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[AllowRecallExport](mdm/policy-csp-windowsai.md) |
 | **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Allow export of Recall and snapshot information** |
 
 
