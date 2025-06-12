@@ -54,6 +54,7 @@ To enable ESU for Windows 10, you must meet the following prerequisites:
 Some cloud and virtualization scenarios have specific considerations for enabling ESU. In some cases, ESU is already enabled for you and in others, you may need to take additional steps. The following list summarizes these scenarios:
 
 - Extended Security Updates (ESU) are available at no additional cost for Windows 10 virtual machines in the following Microsoft-hosted or Azure-integrated environments. No additional configuration or keys are needed in the following environments:
+
    - [Azure Virtual Desktop](/azure/virtual-desktop/overview)
    - [Azure virtual machines](/azure/virtual-machines/overview)
    - [Azure Dedicated Host](/azure/virtual-machines/dedicated-hosts)
