@@ -3,7 +3,7 @@ title: Manage Recall for Windows clients
 description: Learn how to manage Recall for commercial environments and about Recall features.
 ms.topic: how-to
 ms.subservice: windows-copilot
-ms.date: 04/24/2025
+ms.date: 06/13/2025
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -163,18 +163,29 @@ To filter websites from being saved in snapshots, use the **Set a list of URIs t
 
 ## Allow export of Recall and snapshot information
 <!--9257953-->
-This policy allows you to determine whether users can export their own Recall and snapshot information. Exporting allows users to share their Recall and snapshot information with trusted apps or websites. Users can export from **Settings** > **Privacy & Security** > **Recall & Snapshots** > **Advanced Settings** > **Export snapshots** > **Export past snapshots** > **Export**. 
+The Recall export experience is available in preview to Copilot + PCs through the Windows Insiders Program. For more information, see Announcing Windows 11 Insider Preview Build **<placeholder link>**.
 
-Users can also choose to continuously export their snapshots if they turn on the option to **Export snapshots from now on** from **Settings** > **Privacy & Security** > **Recall & Snapshots** > **Advanced Settings** > **Export snapshots** > **Export**.
+In the European Economic Area (EEA), users can choose to [export their Recall snapshots](https://support.microsoft.com/topic/680bd134-4aaa-4bf5-8548-a8e2911c8069) if IT admins allow exporting. By default, exporting Recall and snapshot information is disabled for managed devices. Exporting allows users to share their Recall and snapshot information with third-party apps or websites that the user trusts. Exporting is optional, and users can review their snapshots at any time in Recall without needing to export. Exported information includes:
 
-Before starting an export, the user must authenticate with Windows Hello and they're notified that their exported snapshots are encrypted since they might contain sensitive information. The user is also notified that they'll need to provide their Recall export code if they want to allow trusted apps or websites access to exported snapshots. The Recall export code is displayed to users during Recall setup even if this policy is set to disabled or not configured. For managed devices:
+- Snapshots, including snapshots that the user or Recall saved
+- Snapshot details, including information related to each snapshot such as the time and date it was saved along with associated information from opened apps
 
-When you set this policy to enabled, users will be able to export Recall and snapshot information.
+The user has the following two options for exporting Recall snapshots:
+-	**Export past snapshots**: A single export of all the user's Recall snapshots from the last 7 days, last 30 days, or all of their snapshots.
+-	**Export snapshots from now on**: Starts a continuous export of snapshots from the time the user turns on this setting until they turn it off or reset Recall. Users will be reminded every 30 days that continuous export is enabled.
 
-If the policy is set to disabled or not configured, users won't be able to export their Recall and snapshot information.
+The **Allow export of Recall and snapshot information** policy allows IT admins to determine whether users can export their own Recall and snapshot information. Exporting allows users to share their Recall and snapshot information with apps or websites. **Settings** > **Privacy & Security** > **Recall & Snapshots** > **Advanced Settings** > **Export snapshots** > **Export past snapshots** > **Export**.
+Users can also choose to continuously export their snapshots if they turn on the option to  **Export snapshots from now on** from **Settings** > **Privacy & Security** > **Recall & Snapshots** > **Advanced Settings** > **Export snapshots** > **Export**.
+
+Before starting an export, the user must authenticate with Windows Hello and they're notified that their exported snapshots are encrypted since they might contain sensitive information. The user is also notified that they'll need to provide their Recall export code if they want to allow apps or websites access to exported snapshots. The Recall export code is displayed to users during Recall setup even if this policy is set to disabled or not configured. For managed devices:
+
+- When you set this policy to enabled, users will be able to export their Recall snapshots
+- If the policy is set to disabled or not configured, users won't be able to export their Recall snapshots.
 
 > [!Important]
-> This setting applies to devices in the European Economic Area (EEA) only. Export of Recall and snapshot information is a user-initiated process and is per user. IT admins or other users can't initiate an export on behalf of another.
+> - This setting applies to devices in the European Economic Area (EEA) only. Export of Recall snapshots is a user-initiated process and is per user. IT admins or other users can't initiate an export on behalf of another.
+> - Changes to this policy take effect after device restart.
+> - For information about adding exported Recall and snapshot information to your application or website, see [Decrypt exported snapshots from Recall](/windows/ai/recall/decrypt-exported-snapshots). 
 
 | &nbsp; | Setting  |
 |---|---|
