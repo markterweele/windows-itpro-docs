@@ -111,7 +111,8 @@ Before starting an export, the user must authenticate with Windows Hello and the
 - If the policy is set to disabled or not configured, users won't be able to export their Recall and snapshot information.
 
 > [!IMPORTANT]
-> This setting applies to devices in the European Economic Area (EEA) only. Export of Recall and snapshot information is a user-initiated process and is per user. IT admins or other users can't initiate an export on behalf of another.
+> - This setting applies to devices in the European Economic Area (EEA) only. Export of Recall and snapshot information is a user-initiated process and is per user. IT admins or other users can't initiate an export on behalf of another.
+> - Changes to this policy take effect after device restart.
 <!-- AllowRecallExport-Description-End -->
 
 <!-- AllowRecallExport-Editable-Begin -->
