@@ -189,7 +189,7 @@ Before starting an export, the user must authenticate with Windows Hello and the
 
 | &nbsp; | Setting  |
 |---|---|
-| **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[AllowRecallExport](mdm/policy-csp-windowsai.md) |
+| **CSP** | ./Device/Vendor/MSFT/Policy/Config/WindowsAI/[AllowRecallExport](mdm/policy-csp-windowsai.md#allowrecallexport) |
 | **Group policy** | Computer Configuration > Administrative Templates > Windows Components > Windows AI > **Allow export of Recall and snapshot information** |
 
 
