@@ -17,21 +17,26 @@ appliesto:
 
 # Copilot+ PC Silicon-specific Claims
 
-## AMD Processors
+<!--put these into tabs-->
+# [AMD Processors](#tab/amd)
 
 | **Claim** | **Disclaimer** | **Testing period** | 
 |---|---|---|
 | test | test | test |
 
-## Intel Processors
+# [Intel Processors](#tab/intel)
+
 
 | **Claim** | **Disclaimer** | **Testing period** | 
 |---|---|---|
 | test | test | test |
 
-## Snapdragon Processors
+# [Snapdragon Processors](#tab/snapdragon)
+
+
 
 | **Claim** | **Disclaimer** | **Testing period** | 
 |---|---|---|
 | test | test | test |
 
+---
