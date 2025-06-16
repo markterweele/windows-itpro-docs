@@ -1814,7 +1814,7 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 
 - If you enable this setting, low CPU priority will be used during scheduled scans.
 
-- If you disable or don't configure this setting, not changes will be made to CPU priority for scheduled scans.
+- If you disable or don't configure this setting, no changes will be made to CPU priority for scheduled scans.
 <!-- EnableLowCPUPriority-Description-End -->
 
 <!-- EnableLowCPUPriority-Editable-Begin -->
@@ -2069,7 +2069,7 @@ Allows an administrator to specify a list of directory paths to ignore during a 
 Allows an administrator to specify a list of files opened by processes to ignore during a scan.
 
 > [!IMPORTANT]
-> The process itself isn't excluded from the scan, but can be by using the Defender/ExcludedPaths policy to exclude its path. Each file type must be separated by a |. For example, C:\Example. exe|C:\Example1.exe.
+> The process itself isn't excluded from the scan, but can be by using the Defender/ExcludedPaths policy to exclude its path. Each file type must be separated by a |. For example, C:\Example.exe|C:\Example1.exe.
 <!-- ExcludedProcesses-Description-End -->
 
 <!-- ExcludedProcesses-Editable-Begin -->
