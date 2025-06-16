@@ -11,20 +11,20 @@
       href: silicon-specific-claims.md
     - name: Testing methodology
       href: testing-methodology.md
-- name: Detailed test results
-  expanded: false
-  items:
-    - name: Acer detailed test results
-      href: acer-detailed-test-results.md
-    - name: ASUS detailed test results
-      href: asus-detailed-test-results.md
-    - name: Dell Technologies detailed test results
-      href: dell-detailed-test-results.md
-    - name: HP detailed test results
-      href: hp-detailed-test-results.md
-    - name: Lenovo detailed test results
-      href: lenovo-detailed-results.md
-    - name: Microsoft Surface detailed test results
-      href: microsoft-surface-detailed-test-results.md
-    - name: Samsung detailed test results
-      href: samsung-detailed-test-results.md
+    - name: Detailed test results
+      expanded: false
+      items:
+        - name: Acer detailed test results
+          href: acer-detailed-test-results.md
+        - name: ASUS detailed test results
+          href: asus-detailed-test-results.md
+        - name: Dell Technologies detailed test results
+          href: dell-detailed-test-results.md
+        - name: HP detailed test results
+          href: hp-detailed-test-results.md
+        - name: Lenovo detailed test results
+          href: lenovo-detailed-results.md
+        - name: Microsoft Surface detailed test results
+          href: microsoft-surface-detailed-test-results.md
+        - name: Samsung detailed test results
+          href: samsung-detailed-test-results.md
