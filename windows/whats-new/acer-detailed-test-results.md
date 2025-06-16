@@ -10,8 +10,7 @@ ms.author: mstewart
 manager: bpardi
 ms.topic: reference
 ms.collection:
-  - highpri
-  - tier1
+  - tier3
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
