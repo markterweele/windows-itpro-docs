@@ -2868,13 +2868,12 @@ Valid remediation action values are:
 <!-- ThreatSeverityDefaultAction-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
+>
+> - **Ignore** is the same as **Allow** in [Microsoft Defender for Endpoint Security Settings Management](/defender-endpoint/mde-security-settings-management), [Microsoft Intune](/intune/intune-service/protect/endpoint-security-antivirus-policy), and Defender Powershell module: [Set-MpPreference](/powershell/module/defender/set-mppreference).
+> - Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- ThreatSeverityDefaultAction-Editable-End -->
 
 <!-- ThreatSeverityDefaultAction-DFProperties-Begin -->
-> [!NOTE]
-> "Ignore" is the same as "Allow" in [Microsoft Defender for Endpoint Security Settings Management](/defender-endpoint/mde-security-settings-management), [Microsoft Intune](/intune/intune-service/protect/endpoint-security-antivirus-policy), and Defender Powershell module: [Set-MpPreference](/powershell/module/defender/set-mppreference?view=windowsserver2025-ps).
-
 **Description framework properties**:
 
 | Property name | Property value |
