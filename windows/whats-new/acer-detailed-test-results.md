@@ -16,7 +16,7 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
 
-Acer Detailed Test Results
+# Acer Detailed Test Results
 
 | **Device description** | **Processor** | **Cinebench R24 MT** | **Source** | **Date** |
 |---|---|---|---|---|
@@ -29,12 +29,12 @@ Acer Detailed Test Results
 |---|---|---|---|---|
 | **Acer Aspire Vero 16** | Intel© Core™ Ultra 5 125U | 7435.6 | Microsoft | December 2024 |
 
-| **Device description** | **Processor** | **Procyon® Office(multi-platform)** | **Source** | **Date** |
+| **Device description** | **Processor** | **Procyon® Office (multi-platform)** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Acer Swift Go 14 AI** | Snapdragon© X Plus 8c | 225,000.0 | Principled Technologies | February 2024 |
 | **Acer Swift 14 AI** | Intel© Core™ Ultra 9 288V | 272,000.0 | Principled Technologies | September 2024 |
 
-| **Device Name** | **Processor** | **Procyon® Office(Windows platform)** | **Source** | **Date** |
+| **Device Name** | **Processor** | **Procyon® Office (Windows platform)** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Acer Aspire Vero 16** | Intel© Core™ Ultra 5 125U | 4380.6 | Windows Performance Lab | December 2024 |
 
