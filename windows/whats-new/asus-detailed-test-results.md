@@ -30,7 +30,7 @@ appliesto:
 |---|---|---|---|---|
 | **ASUS Zenbook 14** | Intel© Core™ Ultra 5 125H | 11,651 | Windows Performance Lab | December 2024 |
 
-| **Device description** | **Processor** | **Procyon® Office(multi-platform)** | **Source** | **Date** |
+| **Device description** | **Processor** | **Procyon® Office (multi-platform)** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Asus Zenbook S 16** | AMD Ryzen™ AI 9 HX 370 | 240,333.3 | Principled Technologies | September 2024 |
 | **Asus Vivobook S 14** | AMD Ryzen™ AI 9 365 | 248,000.0 | Principled Technologies | September 2024 |
