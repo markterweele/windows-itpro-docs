@@ -1,0 +1,56 @@
+### YamlMime:Landing
+
+title: What's new in Windows
+summary: Find out about new features and capabilities in the latest release of Windows client for IT professionals.
+
+metadata:
+  title: What's new in Windows
+  description: Find out about new features and capabilities in the latest release of Windows client for IT professionals.
+  ms.service: windows-client
+  ms.subservice: itpro-fundamentals
+  ms.topic: landing-page
+  ms.collection:
+    - highpri
+    - tier1
+  author: mestew
+  ms.author: mstewart
+  manager: bpardi
+  ms.date: 07/01/2024
+  ms.localizationpriority: medium
+
+landingContent:
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+  - title: Windows Performance Lab
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows Performance Lab overview
+            url: overview.md
+          - text: Claims and disclosures
+            url: claims-and-disclosures.md
+          - text: Silicon specific claims
+            url: silicon-specific-claims.md
+          - text: Testing methodology
+            url: testing-methodology.md
+
+
+  - title: Detailed test results
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Acer detailed test results
+            url: acer-detailed-test-results.md
+          - text: ASUS detailed test results
+            url: asus-detailed-test-results.md
+          - text: Dell Technologies detailed test results
+            url: dell-detailed-test-results.md
+          - text: HP detailed test results
+            url: hp-detailed-test-results.md
+          - text: Lenovo detailed test results
+            url: lenovo-detailed-test-results.md
+          - text: Microsoft Surface detailed test results
+            url: microsoft-surface-detailed-test-results.md
+          - text: Samsung detailed test results
+            url: samsung-detailed-test-results.md
