@@ -49,7 +49,7 @@ landingContent:
           - text: HP detailed test results
             url: hp-detailed-test-results.md
           - text: Lenovo detailed test results
-            url: lenovo-detailed-test-results.md
+            url: lenovo-detailed-results.md
           - text: Microsoft Surface detailed test results
             url: microsoft-surface-detailed-test-results.md
           - text: Samsung detailed test results
