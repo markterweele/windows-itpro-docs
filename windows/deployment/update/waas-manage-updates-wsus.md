@@ -60,7 +60,7 @@ When using WSUS to manage updates on Windows client devices, start by configurin
    ![Create a GPO in this domain example in the UI.](images/waas-wsus-fig3.png)
 
    >[!NOTE]
-   >In this example, the **Configure Automatic Updates** and **Intranet Microsoft Update Service Location** Group Policy settings are specified for the entire domain. This is not a requirement; you can target these settings to any security group by using Security Filtering or a specific OU.
+   >In this example, the **Configure Automatic Updates** and **Intranet Microsoft Update Service Location** Group Policy settings are specified for the entire domain. This isn't a requirement; you can target these settings to any security group by using Security Filtering or a specific OU.
 
 4. In the **New GPO** dialog box, name the new GPO **WSUS - Auto Updates and Intranet Update Service Location**.
 
@@ -79,7 +79,7 @@ When using WSUS to manage updates on Windows client devices, start by configurin
    ![Select Auto download and notify for install in the UI.](images/waas-wsus-fig5.png)
 
    >[!IMPORTANT]
-   > - Use Regedit.exe to check that the following key is not enabled, because it can break Windows Store connectivity: Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations
+   > - Use Regedit.exe to check that the following key isn't enabled, because it can break Windows Store connectivity: Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations
    > - There are three other settings for automatic update download and installation dates and times. This is simply the option this example uses. For more examples of how to control automatic updates and other related policies, see [Configure Automatic Updates by Using Group Policy](/windows-server/administration/windows-server-update-services/deploy/4-configure-group-policy-settings-for-automatic-updates).
 
 10. Right-click the **Specify intranet Microsoft update service location** setting, and then select **Edit**.
@@ -229,7 +229,7 @@ The next time the clients in the **Ring 4 Broad Business Users** security group 
 For clients that should have their feature updates approved as soon as they're available, you can configure Automatic Approval rules in WSUS.
 
 >[!NOTE]
->WSUS respects the client device's servicing branch. If you approve a feature update while it is still in one branch, such as Insider Preview, WSUS will install the update only on devices that are in that servicing branch. When Microsoft releases the build for the [General Availability Channel](waas-overview.md#general-availability-channel), the devices in that will install it. Windows Update client policies branch settings do not apply to feature updates through WSUS.
+>WSUS respects the client device's servicing branch. If you approve a feature update while it's still in one branch, such as Insider Preview, WSUS will install the update only on devices that are in that servicing branch. When Microsoft releases the build for the [General Availability Channel](waas-overview.md#general-availability-channel), the devices in that will install it. Windows Update client policies branch settings don't apply to feature updates through WSUS.
 
 
 **To configure an Automatic Approval rule for Windows client feature updates and approve them for the Ring 3 Broad IT deployment ring**
@@ -260,7 +260,7 @@ This example uses Windows 10, but the process is the same for Windows 11.
 9. In the **Automatic Approvals** dialog box, select **OK**.
 
     >[!NOTE]
-    >WSUS does not honor any existing month/week/day [deferral settings](waas-configure-wufb.md#configure-when-devices-receive-feature-updates). That said, if you're using Windows Update client policies for a computer for which WSUS is also managing updates, when WSUS approves the update, it will be installed on the computer regardless of whether you configured Group Policy to wait.
+    >WSUS doesn't honor any existing month/week/day [deferral settings](waas-configure-wufb.md#configure-when-devices-receive-feature-updates). That said, if you're using Windows Update client policies for a computer for which WSUS is also managing updates, when WSUS approves the update, it will be installed on the computer regardless of whether you configured Group Policy to wait.
 
 Now, whenever Windows client feature updates are published to WSUS, they'll automatically be approved for the **Ring 3 Broad IT** deployment ring with an installation deadline of 1 week.
 
