@@ -24,7 +24,7 @@ items:
         - name: HP detailed test results
           href: hp-detailed-test-results.md
         - name: Lenovo detailed test results
-          href: lenovo-detailed-results.md
+          href: lenovo-detailed-test-results.md
         - name: Microsoft Surface detailed test results
           href: microsoft-surface-detailed-test-results.md
         - name: Samsung detailed test results
