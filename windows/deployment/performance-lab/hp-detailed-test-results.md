@@ -1,7 +1,7 @@
 ---
 title: HP Detailed Test Results
 description: Resources and details for HP device performance testing.
-ms.date: 06/16/2025
+ms.date: 06/27/2025
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium

@@ -1,7 +1,7 @@
 ---
 title: Copilot+ PC Silicon-specific Claims
 description: Claims and Disclosures, Copilot+ PC Silicon-specific Claims
-ms.date: 06/16/2025
+ms.date: 06/27/2025
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium

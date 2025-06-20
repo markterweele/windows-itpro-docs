@@ -1,7 +1,7 @@
 ---
 title: Windows Performance Lab Overview
 description: Overview of the Windows Performance Lab and its purpose in testing device performance.
-ms.date: 06/16/2025
+ms.date: 06/27/2025
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium

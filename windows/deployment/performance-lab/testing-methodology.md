@@ -1,7 +1,7 @@
 ---
 title: Testing Methodology
 description: CTesting Methodology Information
-ms.date: 06/16/2025
+ms.date: 06/27/2025
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
