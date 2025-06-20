@@ -17,8 +17,6 @@ appliesto:
 
 # Testing Methodology
 
-Testing Methodology
-
 This section consolidates the documented steps for running a selection of synthetic benchmarks Microsoft uses in performance evaluation. Below is a nonexhaustive list of benchmarks regularly used by Microsoft for device testing, with the respective testing process.
 
 > [!Note] 

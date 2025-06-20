@@ -17,7 +17,7 @@ appliesto:
 
 # Copilot+ PC Silicon-specific Claims
 
-<!--put these into tabs-->
+
 # [AMD Processors](#tab/amd)
 
 | **Claim** | **Disclaimer** | **Testing Period** |
