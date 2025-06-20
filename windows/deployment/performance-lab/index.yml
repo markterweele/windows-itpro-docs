@@ -33,7 +33,7 @@ landingContent:
           - text: Silicon specific claims
             url: silicon-specific-claims.md
           - text: Windows 11 PCs Claims
-            url: windows-11-pcs-claims.md           
+            url: windows-11-pc-claims.md           
           - text: Testing methodology
             url: testing-methodology.md
 
