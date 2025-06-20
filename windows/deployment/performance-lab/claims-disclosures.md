@@ -1,6 +1,6 @@
 ---
 title: Claims and Disclosures
-description: Claims and Disclosures
+description: Claims and Disclosures 
 ms.date: 06/27/2025
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
@@ -19,16 +19,7 @@ appliesto:
 
 As Microsoft continues transitioning device testing in-house, some performance claims are based on testing we commissioned from external third parties, while others come directly from testing performed by the Windows Performance Lab. To ensure full transparency, review the disclosures accompanying each claim to verify the source of the data.
 
-# [Windows 11 PCs Claims](#tab/windows11)
 
-| **Claim** | **Disclaimer** | **Testing Period** |
-|---|---|---|
-| **Top Windows 11 PCs have up to 2.7 more hours of battery life than Windows 10 PCs** | Based on local video playback test conducted by Microsoft in December 2024 comparing a selection of Windows 10 PCs with Intel© Core™ 6th, 8th, and 10th generation processors and Windows 11 PCs with Intel© Core™ 12th and 13th generation processors conducted in December 2024. Testing consisted of 90% battery discharge during video playback of an .mp4 file through the Windows Media Player application in 1080p at 24 FPS. All settings were default except screen brightness set to 150 nits with Auto-brightness disabled. Wi-Fi was connected to a network. Battery life varies significantly by device and with settings, usage, and other factors. For more information, see Detailed Test Results. | December 2024 |
-| **Windows 11 PCs are up to 2.3x faster than Windows 10 PCs** | Based on testing performed by Microsoft in December 2024 using Geekbench 6 Multi-core score comparing a selection of Windows 10 PCs with Intel© Core™ 6th, 8th, and 10th generation processors and Windows 11 PCs with Intel© Core™ 12th and 13th generation processors. Performance will vary significantly by device and with settings, usage, and other factors. For more information, see Detailed Test Results. | December 2024 |
-| **Windows 11 PCs offer up to 3.2x faster web browsing than Windows 10 PCs** | Based on testing performed by Microsoft in December 2024 using Speedometer with Microsoft Edge browser versions 130.x and 131.x comparing a selection of Windows 10 PCs with Intel© Core™ 6th, 8th, and 10th generation processors and Windows 11 PCs with Intel© Core™ 12th and 13th generation processors. Performance will vary significantly by device, browser and with settings, usage, and other factors. For more information, see Detailed Test Results. | December 2024 |
-| **Windows 11 PCs offer up to 2x faster Microsoft Office productivity than Windows 10 PCs** | Based on testing performed by Microsoft in December 2024 using Procyon® Office benchmark comparing a selection of Windows 10 PCs with Intel© Core™ 6th, 8th, and 10th generation processors and Windows 11 PCs with Intel© Core™ 12th and 13th generation processors. Performance will vary significantly by device and with settings, usage, and other factors. For more information, see Detailed Test Results. | December 2024 |
-
-# [Copilot+ PC Category Claims](#tab/copilotplus)
 ## Copilot+ PC Category Claims
 
 | **Claim** | **Disclaimer** | **Testing Period** |
@@ -52,5 +43,3 @@ As Microsoft continues transitioning device testing in-house, some performance c
 | **Top-performing Copilot+ PCs have up to 2x more FPS in War Thunder than most popular 5-year-old Windows PCs** | Performance results from a selection of x86 thin and light non-GPU Copilot+ PCs and devices with Intel i7 1065G7 and AMD R7 3700U processors, selected based on sales data from 5 years ago. Testing conducted by Microsoft in April 2025. War Thunder benchmarks are built into the game. Actual performance may vary based on specific hardware and software configurations. For more information, see Detailed Test Results. | April 2025 |
 | **Top-performing Copilot+ PCs are up to 2x faster in War Thunder than most popular 5-year-old Windows PCs** | Performance results from a selection of x86 thin and light non-GPU Copilot+ PCs and devices with Intel i7 1065G7 and AMD R7 3700U processors, selected based on sales data from 5 years ago. Testing conducted by Microsoft in April 2025. War Thunder benchmarks are built into the game. Actual performance may vary based on specific hardware and software configurations. For more information, see Detailed Test Results. | April 2025 |
 | **Top-performing Copilot+ PCs have up to 3.2x more FPS in World of Tanks than most popular 5-year-old Windows PCs** | Performance results from a selection of x86 thin and light non-GPU Copilot+ PCs and devices with Intel i7 1065G7 and AMD R7 3700U processors, selected based on sales data from 5 years ago. Testing conducted by Microsoft in April 2025. World of Tanks benchmarks are built into the game. Actual performance may vary based on specific hardware and software configurations. For more information, see Detailed Test Results. | April 2025 |
-
----
