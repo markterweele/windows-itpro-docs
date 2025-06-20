@@ -74,7 +74,7 @@ The Extended Security Update Program for Windows 10 must be purchased by year. C
 
 ### When will the ESU offer be available for licensing?
 
-Windows 10 ESU licenses are available to purchase in volume licensing. However, the ESU Multiple Activation Keys displayed in the Microsoft 365 admin center volume licensing Product Details panel are not usable until the end of support date of Windows 10, which is when the defined ESU coverage period begins. See [get-the-product-keys-for-activating-extended-security-update-esu-licenses ](/windows/whats-new/enable-extended-security-updates)
+Windows 10 ESU licenses are available to purchase in volume licensing. However, the ESU Multiple Activation Keys displayed in the Microsoft 365 admin center volume licensing Product Details panel are not usable until the end of support date of Windows 10, which is when the defined ESU coverage period begins. For more information, see [Get the product keys for activating Extended Security Update (ESU) licenses](enable-extended-security-updates.md#get-the-product-keys-for-activating-extended-security-update-esu-licenses).
 
 ### How long can I get security updates for?
 
