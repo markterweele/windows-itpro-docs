@@ -28,7 +28,7 @@ landingContent:
         links:
           - text: Windows Performance Lab overview
             url: overview.md
-          - text: Claims and disclosures
+          - text: Claims and Disclosures
             url: claims-disclosures.md
           - text: Silicon specific claims
             url: silicon-specific-claims.md
