@@ -207,21 +207,6 @@ Download and install Geekbench 6 using default settings ([link](https://www.geek
 
 *(Coming soon)*
 
-## Detailed Test Results
+[!INCLUDE [Detailed Test Results](./includes/detailed-test-results.md)]
 
-To ensure transparency, we have listed the tested devices and their results. Access the reports through the links below. Some results are based on Microsoft-commissioned testing performed by a third party before the Windows Performance Lab was developed at Microsoft.
-
-[Acer Detailed Test Results](acer-detailed-test-results.md)
-
-[Asus Detailed Test Results](asus-detailed-test-results.md)
-
-[Dell Technologies Detailed Test Results](dell-detailed-test-results.md)
-
-[HP Detailed Test Results](hp-detailed-test-results.md)
-
-[Lenovo Detailed Test Results](lenovo-detailed-test-results.md)
-
-[Microsoft Surface Detailed Test Results](microsoft-surface-detailed-test-results.md)
-
-[Samsung Detailed Test Results](samsung-detailed-test-results.md)
 
