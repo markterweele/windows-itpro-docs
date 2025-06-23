@@ -17,7 +17,7 @@ appliesto:
 
 # Lenovo Detailed Test Results
 
-| **Device description** | **Processor** | **Cinebench R24 MT** | **Source** | **Date** |
+| **Device**| **Processor** | **Cinebench R24 MT** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Lenovo IdeaPad 3** | Intel© Core™ i5-1155G7 | 255.3 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 | **Lenovo IdeaPad 3** | Intel© Core™ i5-1155G7 | 243.3 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
@@ -38,13 +38,13 @@ appliesto:
 | **Lenovo T14s Gen6** | Snapdragon© X Elite | 729 | Windows Performance Lab | April 2025 |
 | **Lenovo Yoga Slim 7i 15"** | Intel© Core™ Ultra 7 256V | 574 | Windows Performance Lab | April 2025 |
 
-| **Device Name** | **Processor** | **Geekbench 6** | **Source** | **Date** |
+| **Device**| **Processor** | **Geekbench 6** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Lenovo Ideapad Slim 3** | Intel© Core™ i5-1335U | 8,559 | Windows Performance Lab | December 2024 |
 | **Lenovo Ideapad Slim 3** | Intel© Core™ i3-1215U | 4,960 | Windows Performance Lab | December 2024 |
 | **Lenovo Yoga** | Intel© Core™ i7-1065G7 | 5,223 | Windows Performance Lab | December 2024 |
 
-| **Device description** | **Processor** | **Procyon® Office (multi-platform)** | **Source** | **Date** |
+| **Device**| **Processor** | **Procyon® Office (multi-platform)** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Lenovo Yoga Slim 7x**<br>**14"** | Snapdragon© X Elite | 227,000.0 | Principled Technologies | February 2024 |
 | **Lenovo Yoga Slim 7x14"** | Snapdragon© X Elite | 224,000.0 | Principled Technologies | February 2024 |
@@ -54,19 +54,19 @@ appliesto:
 | **Lenovo Yoga Slim 7** | Intel© Core™ Ultra 7 256V | 266,000.0 | Principled Technologies | September 2024 |
 | **Lenovo IdeaPad 5 2-in-1 14Q8X9** | Snapdragon© X Plus 8c | 213,333.3 | Principled Technologies | September 2024 |
 
-| **Device Name** | **Processor** | **Procyon® Office (Windows platform)** | **Source** | **Date** |
+| **Device**| **Processor** | **Procyon® Office (Windows platform)** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Lenovo Ideapad Slim 3** | Intel© Core™ i5-1335U | 4,932.7 | Windows Performance Lab | December 2024 |
 | **Lenovo Ideapad Slim 3** | Intel© Core™ i3-1215U | 4,206.0 | Windows Performance Lab | December 2024 |
 | **Lenovo Yoga** | Intel© Core™ i7-1065G7 | 4,523.3 | Windows Performance Lab | December 2024 |
 
-| **Device Name** | **Processor** | **Speedometer** | **Source** | **Date** |
+| **Device**| **Processor** | **Speedometer** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Lenovo Ideapad Slim 3** | Intel© Core™ i5-1335U | 22.37 | Windows Performance Lab | December 2024 |
 | **Lenovo Ideapad Slim 3** | Intel© Core™ i3-1215U | 18.23 | Windows Performance Lab | December 2024 |
 | **Lenovo Yoga** | Intel© Core™ i7-1065G7 | 15.83 | Windows Performance Lab | December 2024 |
 
-| **Device description** | **Processor** | **Procyon® AI** | **Source** | **Date** |
+| **Device**| **Processor** | **Procyon® AI** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Lenovo Yoga Slim 7x**<br>**14"** | Snapdragon© X Elite | 1,699.7 | Principled Technologies | February 2024 |
 | **Lenovo Yoga Slim 7x14"** | Snapdragon© X Elite | 1,750.7 | Principled Technologies | February 2024 |
@@ -82,22 +82,22 @@ appliesto:
 | **Lenovo Yoga Slim 7** | Intel© Core™ Ultra 7 256V | 550.00 | Windows Performance Lab | April 2025 |
 | **Lenovo IdeaPad S340** | AMD Ryzen™ 7 3700U with Radeon Vega Mobile Gfx | NULL | Windows Performance Lab | April 2025 |
 
-| **Device Name** | **Processor** | **War Thunder Avg FPS** | **Source** | **Date** |
+| **Device**| **Processor** | **War Thunder Avg FPS** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Lenovo Yoga Slim 7** | Intel© Core™ Ultra 7 256V | 102.13 | Windows Performance Lab | April 2025 |
 | **Lenovo IdeaPad S340** | AMD Ryzen™ 7 3700U with Radeon Vega Mobile Gfx | 35.40 | Windows Performance Lab | April 2025 |
 
-| **Device Name** | **Processor** | **War Thunder Score Avg** | **Source** | **Date** |
+| **Device**| **Processor** | **War Thunder Score Avg** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Lenovo Yoga Slim 7** | Intel© Core™ Ultra 7 256V | 4,195 | Windows Performance Lab | April 2025 |
 | **Lenovo IdeaPad S340** | AMD Ryzen™ 7 3700U with Radeon Vega Mobile Gfx | 1,454.67 | Windows Performance Lab | April 2025 |
 
-| **Device Name** | **Processor** | **World of Tanks Avg FPS** | **Source** | **Date** |
+| **Device**| **Processor** | **World of Tanks Avg FPS** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Lenovo Yoga Slim 7** | Intel© Core™ Ultra 7 256V | 66.03 | Windows Performance Lab | April 2025 |
 | **Lenovo IdeaPad S340** | AMD Ryzen™ 7 3700U with Radeon Vega Mobile Gfx | 21.87 | Windows Performance Lab | April 2025 |
 
-| **Device description** | **Processor** | **Windows ADK Battery Life test - Web Browsing** | **Source** | **Date** |
+| **Device**| **Processor** | **Windows ADK Battery Life test - Web Browsing** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Lenovo IdeaPad 3** | Intel© Core™ i5-1155G7 | 5.23 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 | **Lenovo IdeaPad 3** | Intel© Core™ i5-1155G7 | 5.26 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
@@ -114,7 +114,7 @@ appliesto:
 | **Lenovo Yoga Pro 7** | AMD Ryzen™ AI 9 365 CPU | 9.31 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
 | **Lenovo IdeaPad 5 2-in-1 14Q8X9** | Snapdragon© X Plus 8c | 13.12 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
 
-| **Device description** | **Processor** | **Windows ADK Battery Life test - Local Video Playback** | **Source** | **Date** |
+| **Device**| **Processor** | **Windows ADK Battery Life test - Local Video Playback** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Lenovo IdeaPad 3** | Intel© Core™ i5-1155G7 | 10.98 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 | **Lenovo IdeaPad 3** | Intel© Core™ i5-1155G7 | 11.05 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |

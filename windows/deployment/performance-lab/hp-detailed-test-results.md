@@ -17,7 +17,7 @@ appliesto:
 
 # HP Detailed Test Results
 
-| **Device description** | **Processor** | **Cinebench R24 MT** | **Source** | **Date** |
+| **Device**| **Processor** | **Cinebench R24 MT** | **Source** | **Date** |
 |---|---|---|---|---|
 | **HP Spectre x360 Convertible** | Intel© Core™ i7-8750H | 242.3 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 | **HP ENVY x360 Convertible** | Intel© Core™ i7-1260P | 421.0 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
@@ -39,7 +39,7 @@ appliesto:
 | **HP OmniBook X 14"** | Snapdragon© X Plus 8c | 651 | Windows Performance Lab | April 2025 |
 | **HP OmniBook Ultra Flip 14** | Intel© Core™ Ultra 7 268V | 573 | Windows Performance Lab | April 2025 |
 
-| **Device description** | **Processor** | **Geekbench 6 MT** | **Source** | **Date** |
+| **Device**| **Processor** | **Geekbench 6 MT** | **Source** | **Date** |
 |---|---|---|---|---|
 | **HP Envyx360** | Intel© Core™ i7-1065G7 | 4,022 | Windows Performance Lab | December 2024 |
 | **HP Laptop 15** | Intel© Core™ i5-1135G7 | 4,891 | Windows Performance Lab | December 2024 |
@@ -48,7 +48,7 @@ appliesto:
 | **HP Laptop 15** | Intel© Core™ i3-1215U | 5,811 | Windows Performance Lab | December 2024 |
 | **HP Pavilion Laptop 15** | Intel© Core™ i5-1335U | 7,736 | Windows Performance Lab | December 2024 |
 
-| **Device description** | **Processor** | **Procyon® Office (multi-platform)** | **Source** | **Date** |
+| **Device**| **Processor** | **Procyon® Office (multi-platform)** | **Source** | **Date** |
 |---|---|---|---|---|
 | **HP OmniBook X 14"** | Snapdragon© X Elite | 220,000.0 | Principled Technologies | February 2024 |
 | **HP OmniBook X 14"** | Snapdragon© X Elite | 214,000.0 | Principled Technologies | February 2024 |
@@ -56,7 +56,7 @@ appliesto:
 | **HP Spectre Laptop 14** | AMD Ryzen™ AI 9 365 | 258,333.3 | Principled Technologies | September 2024 |
 | **HP OmniBook Ultra 14** | AMD Ryzen™ AI 9 HX 375 | 267,000.0 | Principled Technologies | September 2024 |
 
-| **Device description** | **Processor** | **Procyon® Office (Windows platform)** | **Source** | **Date** |
+| **Device**| **Processor** | **Procyon® Office (Windows platform)** | **Source** | **Date** |
 |---|---|---|---|---|
 | **HP Envyx360** | Intel© Core™ i7-1065G7 | 3,783.3 | Windows Performance Lab | December 2024 |
 | **HP Laptop 15** | Intel© Core™ i5-1135G7 | 4,219.0 | Windows Performance Lab | December 2024 |
@@ -65,7 +65,7 @@ appliesto:
 | **HP Laptop 15** | Intel© Core™ i3-1215U | 4,680.3 | Windows Performance Lab | December 2024 |
 | **HP Pavilion Laptop 15** | Intel© Core™ i5-1335U | 5,280.3 | Windows Performance Lab | December 2024 |
 
-| **Device description** | **Processor** | **Speedometer** | **Source** | **Date** |
+| **Device**| **Processor** | **Speedometer** | **Source** | **Date** |
 |---|---|---|---|---|
 | **HP Envyx360** | Intel© Core™ i7-1065G7 | 12.77 | Windows Performance Lab | December 2024 |
 | **HP Laptop 15** | Intel© Core™ i5-1135G7 | 17.10 | Windows Performance Lab | December 2024 |
@@ -74,7 +74,7 @@ appliesto:
 | **HP Laptop 15** | Intel© Core™ i3-1215U | 20.53 | Windows Performance Lab | December 2024 |
 | **HP Pavilion Laptop 15** | Intel© Core™ i5-1335U | 17.60 | Windows Performance Lab | December 2024 |
 
-| **Device description** | **Processor** | **Procyon® AI** | **Source** | **Date** |
+| **Device**| **Processor** | **Procyon® AI** | **Source** | **Date** |
 |---|---|---|---|---|
 | **HP OmniBook X 14"** | Snapdragon© X Elite | 1,716.7 | Principled Technologies | February 2024 |
 | **HP OmniBook X 14"** | Snapdragon© X Elite | 1,674.3 | Principled Technologies | February 2024 |
@@ -84,7 +84,7 @@ appliesto:
 | **HP OmniBook X 14"** | Snapdragon© X Plus 8c | 1,746 | Windows Performance Lab | April 2025 |
 | **HP OmniBook Ultra Flip 14** | Intel© Core™ Ultra 7 268V | 1,629 | Windows Performance Lab | April 2025 |
 
-| **Device Name** | **Processor** | **3DMark Steel Nomad - Raw Score - High Performance** | **Source** | **Date** |
+| **Device**| **Processor** | **3DMark Steel Nomad - Raw Score - High Performance** | **Source** | **Date** |
 |---|---|---|---|---|
 | **HP Omnibook Ultra** | AMD Ryzen™ AI 9 365 w/ Radeon 880M | 429.00 | Windows Performance Lab | April 2025 |
 | **Hp Envy X360** | Intel© Core™ i7-1065G7 CPU @ 1.30GHz | 113.00 | Windows Performance Lab | April 2025 |
@@ -93,7 +93,7 @@ appliesto:
 | **Hp Envy x360** | AMD Ryzen™ 7 7730U with Radeon Graphics | NULL | Windows Performance Lab | April 2025 |
 | **HP 15** | AMD Ryzen™ 7 7730U with Radeon Graphics | 208.50 | Windows Performance Lab | April 2025 |
 
-| **Device Name** | **Processor** | **War Thunder Avg FPS** | **Source** | **Date** |
+| **Device**| **Processor** | **War Thunder Avg FPS** | **Source** | **Date** |
 |---|---|---|---|---|
 | **HP Omnibook Ultra** | AMD Ryzen™ AI 9 365 w/ Radeon 880M | 86.43 | Windows Performance Lab | April 2025 |
 | **Hp Envy X360** | Intel© Core™ i7-1065G7 CPU @ 1.30GHz | 53.23 | Windows Performance Lab | April 2025 |
@@ -102,7 +102,7 @@ appliesto:
 | **Hp Envy x360** | AMD Ryzen™ 7 7730U with Radeon Graphics | 50.73 | Windows Performance Lab | April 2025 |
 | **HP 15** | AMD Ryzen™ 7 7730U with Radeon Graphics | 92.73 | Windows Performance Lab | April 2025 |
 
-| **Device Name** | **Processor** | **War Thunder Score Avg** | **Source** | **Date** |
+| **Device**| **Processor** | **War Thunder Score Avg** | **Source** | **Date** |
 |---|---|---|---|---|
 | **HP Omnibook Ultra** | AMD Ryzen™ AI 9 365 w/ Radeon 880M | 3,551.67 | Windows Performance Lab | April 2025 |
 | **Hp Envy X360** | Intel© Core™ i7-1065G7 CPU @ 1.30GHz | 2,187.00 | Windows Performance Lab | April 2025 |
@@ -111,7 +111,7 @@ appliesto:
 | **Hp Envy x360** | AMD Ryzen™ 7 7730U with Radeon Graphics | 2,083.00 | Windows Performance Lab | April 2025 |
 | **HP 15** | AMD Ryzen™ 7 7730U with Radeon Graphics | 3,810.00 | Windows Performance Lab | April 2025 |
 
-| **Device Name** | **Processor** | **World of Tanks Avg FPS** | **Source** | **Date** |
+| **Device**| **Processor** | **World of Tanks Avg FPS** | **Source** | **Date** |
 |---|---|---|---|---|
 | **HP Omnibook Ultra** | AMD Ryzen™ AI 9 365 w/ Radeon 880M | 82.67 | Windows Performance Lab | April 2025 |
 | **Hp Envy X360** | Intel© Core™ i7-1065G7 CPU @ 1.30GHz | 36.10 | Windows Performance Lab | April 2025 |
@@ -120,7 +120,7 @@ appliesto:
 | **Hp Envy x360** | AMD Ryzen™ 7 7730U with Radeon Graphics | 34.53 | Windows Performance Lab | April 2025 |
 | **HP 15** | AMD Ryzen™ 7 7730U with Radeon Graphics | 52.10 | Windows Performance Lab | April 2025 |
 
-| **Device description** | **Processor** | **Windows ADK Battery Life test - Web Browsing** | **Source** | **Date** |
+| **Device**| **Processor** | **Windows ADK Battery Life test - Web Browsing** | **Source** | **Date** |
 |---|---|---|---|---|
 | **HP Spectre x360 Convertible** | Intel© Core™ i7-8750H | 6.08 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 | **HP ENVY x360 Convertible** | Intel© Core™ i7-1260P | 6.92 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
@@ -138,7 +138,7 @@ appliesto:
 | **HP Spectre Laptop 14** | AMD Ryzen™ AI 9 365 | 9.69 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
 | **HP OmniBook Ultra 14** | AMD Ryzen™ AI 9 HX 375 | 11.08 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
 
-| **Device description** | **Processor** | **Windows ADK Battery Life test - Local Video Playback** | **Source** | **Date** |
+| **Device**| **Processor** | **Windows ADK Battery Life test - Local Video Playback** | **Source** | **Date** |
 |---|---|---|---|---|
 | **HP Spectre x360 Convertible** | Intel© Core™ i7-8750H | 11.22 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 | **HP ENVY x360 Convertible** | Intel© Core™ i7-1260P | 11.34 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |

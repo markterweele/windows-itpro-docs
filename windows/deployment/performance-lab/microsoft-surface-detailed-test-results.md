@@ -17,7 +17,7 @@ appliesto:
 
 # Microsoft Surface Detailed Test Results
 
-| **Device description** | **Processor** | **Cinebench R24 MT** | **Source** | **Date** |
+| **Device**| **Processor** | **Cinebench R24 MT** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Microsoft Surface Laptop 3** | Intel© Core™ i7-1065G7 | 208.0 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 | **Microsoft**<br>**Surface Laptop 15"** | Snapdragon© X Elite | 950.0 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
@@ -26,7 +26,7 @@ appliesto:
 | **Microsoft**<br>**Surface Pro** | Snapdragon X<br>Plus 10c | 802.7 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 | **Microsoft**<br>**Surface Pro** | Snapdragon© X Elite | 866.3 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 
-| **Device description** | **Processor** | **Procyon® Office (multi-platform)** | **Source** | **Date** |
+| **Device**| **Processor** | **Procyon® Office (multi-platform)** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Microsoft**<br>**Surface Laptop 15"** | Snapdragon© X Elite | 235,333.3 | Principled Technologies | February 2024 |
 | **Microsoft**<br>**Surface Laptop 13.8"** | Snapdragon X<br>Plus 10c | 221,666.7 | Principled Technologies | February 2024 |
@@ -34,7 +34,7 @@ appliesto:
 | **Microsoft**<br>**Surface Pro** | Snapdragon X<br>Plus 10c | 218,666.7 | Principled Technologies | February 2024 |
 | **Microsoft**<br>**Surface Pro** | Snapdragon© X Elite | 230,000.0 | Principled Technologies | February 2024 |
 
-| **Device description** | **Processor** | **Procyon® AI** | **Source** | **Date** |
+| **Device**| **Processor** | **Procyon® AI** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Microsoft**<br>**Surface Laptop 15"** | Snapdragon© X Elite | 1,723.0 | Principled Technologies | February 2024 |
 | **Microsoft**<br>**Surface Laptop 13.8"** | Snapdragon X<br>Plus 10c | 1,724.7 | Principled Technologies | February 2024 |
@@ -42,7 +42,7 @@ appliesto:
 | **Microsoft**<br>**Surface Pro** | Snapdragon X<br>Plus 10c | 1,721.3 | Principled Technologies | February 2024 |
 | **Microsoft**<br>**Surface Pro** | Snapdragon© X Elite | 1,731.3 | Principled Technologies | February 2024 |
 
-| **Device description** | **Processor** | **Windows ADK Battery Life test - Web Browsing** | **Source** | **Date** |
+| **Device**| **Processor** | **Windows ADK Battery Life test - Web Browsing** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Microsoft Surface Laptop 3** | Intel© Core™ i7-1065G7 | 6.13 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 | **Microsoft**<br>**Surface Laptop 15"** | Snapdragon© X Elite | 14.17 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
@@ -51,7 +51,7 @@ appliesto:
 | **Microsoft**<br>**Surface Pro** | Snapdragon X<br>Plus 10c | 10.50 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 | **Microsoft**<br>**Surface Pro** | Snapdragon© X Elite | 11.01 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 
-| **Device description** | **Processor** | **Windows ADK Battery Life test - Local Video Playback** | **Source** | **Date** |
+| **Device**| **Processor** | **Windows ADK Battery Life test - Local Video Playback** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Microsoft Surface Laptop 3** | Intel© Core™ i7-1065G7 | 7.77 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 | **Microsoft**<br>**Surface Laptop 15"** | Snapdragon© X Elite | 19.43 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |

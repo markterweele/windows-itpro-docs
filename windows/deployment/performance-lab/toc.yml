@@ -12,7 +12,7 @@ items:
       href: silicon-specific-claims.md
     - name: Windows 11 PCs Claims
       href: windows-11-pc-claims.md    
-    - name: Testing methodology
+    - name: Testing Methodology
       href: testing-methodology.md
     - name: Detailed test results
       expanded: false

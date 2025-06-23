@@ -1,6 +1,6 @@
 ---
 title: Testing Methodology
-description: CTesting Methodology Information
+description: Testing Methodology Information
 ms.date: 06/27/2025
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
@@ -142,8 +142,6 @@ Download and install Procyon® AI Computer Vision Benchmark from UL ([link](http
 1. Launch Procyon®. 
 
 1. On the **My suite** page, **Select AI Computer Vision Benchmark**.
-
-1. Select **AI Computer Vision Benchmark**.
 
 1. Select the corresponding test for your silicon and select **Run**.
 

@@ -17,7 +17,7 @@ appliesto:
 
 # Dell Technologies Detailed Test Results
 
-| **Device description** | **Processor** | **Cinebench R24 MT** | **Source** | **Date** |
+| **Device**| **Processor** | **Cinebench R24 MT** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Dell Inspiron 15" 7000 2-in-1** | Intel© Core™ i7-8565U | 199.7 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 | **Dell Inspiron 13" 5000 2-in-1** | Intel© Core™ i5-8250U | 165.0 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
@@ -39,7 +39,7 @@ appliesto:
 | **Dell XPS 13 9345** | Snapdragon© X Elite | 817 | Windows Performance Lab | April 2025 |
 | **Dell 16 Plus** | Intel© Core™ Ultra 9 288V | 488 | Windows Performance Lab | April 2025 |
 
-| **Device description** | **Processor** | **Geekbench 6 MT** | **Source** | **Date** |
+| **Device**| **Processor** | **Geekbench 6 MT** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Dell Inspiron 7590** | Intel© Core™ i7-8565U | 3,651 | Windows Performance Lab | December 2024 |
 | **Dell Inspiron 3580** | Intel© Core™ i7-8565U | 3,432 | Windows Performance Lab | December 2024 |
@@ -50,7 +50,7 @@ appliesto:
 | **Dell XPS 13** | Intel© Core™ i5-6200U | 2,034 | Windows Performance Lab | December 2024 |
 | **Dell Inspiron 7430** | Intel© Core™ i7-1355U | 8,637 | Windows Performance Lab | December 2024 |
 
-| **Device description** | **Processor** | **Procyon® Office (multi-platform)** | **Source** | **Date** |
+| **Device**| **Processor** | **Procyon® Office (multi-platform)** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Dell Inspiron Plus 7441** | Snapdragon X<br>Plus 10c | 223,333.3 | Principled Technologies | February 2024 |
 | **Dell Latitude 7455** | Snapdragon X<br>Plus 10c | 223,000.0 | Principled Technologies | February 2024 |
@@ -60,7 +60,7 @@ appliesto:
 | **Dell Latitude 5445** | Snapdragon X<br>Plus 8c | 232,000.0 | Principled Technologies | September 2024 |
 | **Dell Inspiron 5441** | Snapdragon X<br>Plus 8c | 232,666.7 | Principled Technologies | September 2024 |
 
-| **Device description** | **Processor** | **Procyon® Office (Windows platform)** | **Source** | **Date** |
+| **Device**| **Processor** | **Procyon® Office (Windows platform)** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Dell Inspiron 7590** | Intel© Core™ i7-8565U | 3,017.3 | Windows Performance Lab | December 2024 |
 | **Dell Inspiron 3580** | Intel© Core™ i7-8565U | 3,060.3 | Windows Performance Lab | December 2024 |
@@ -70,7 +70,7 @@ appliesto:
 | **Dell Inspiron 7353** | Intel© Core™ i3-6100U | 1,991.0 | Windows Performance Lab | December 2024 |
 | **Dell Inspiron 7430** | Intel© Core™ i7-1355U | 5,754.0 | Windows Performance Lab | December 2024 |
 
-| **Device description** | **Processor** | **Speedometer** | **Source** | **Date** |
+| **Device**| **Processor** | **Speedometer** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Dell Inspiron Plus 7441** | Snapdragon X<br>Plus 10c | 10.73 | Principled Technologies | February 2024 |
 | **Dell Latitude 7455** | Snapdragon X<br>Plus 10c | 12.80 | Principled Technologies | February 2024 |
@@ -80,7 +80,7 @@ appliesto:
 | **Dell Latitude 5445** | Snapdragon X<br>Plus 8c | 6.11 | Principled Technologies | September 2024 |
 | **Dell Inspiron 5441** | Snapdragon X<br>Plus 8c | 6.95 | Principled Technologies | September 2024 |
 
-| **Device description** | **Processor** | **Procyon® AI** | **Source** | **Date** |
+| **Device**| **Processor** | **Procyon® AI** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Dell Inspiron Plus 7441** | Snapdragon X<br>Plus 10c | 1,698.7 | Principled Technologies | February 2024 |
 | **Dell Latitude 7455** | Snapdragon X<br>Plus 10c | 1,706.7 | Principled Technologies | February 2024 |
@@ -95,7 +95,7 @@ appliesto:
 | **Dell XPS 13 9345** | Snapdragon© X Elite | 1,658 | Windows Performance Lab | April 2025 |
 | **Dell 16 Plus** | Intel© Core™ Ultra 9 288V | 1,653 | Windows Performance Lab | April 2025 |
 
-| **Device description** | **Processor** | **Windows ADK Battery Life test - Web Browsing** | **Source** | **Date** |
+| **Device**| **Processor** | **Windows ADK Battery Life test - Web Browsing** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Dell Inspiron 15" 7000 2-in-1** | Intel© Core™ i7-8565U | 6.05 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 | **Dell Inspiron 13" 5000 2-in-1** | Intel© Core™ i5-8250U | 5.91 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
@@ -112,7 +112,7 @@ appliesto:
 | **Dell Latitude 5445** | Snapdragon X<br>Plus 8c | 14.03 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
 | **Dell Inspiron 5441** | Snapdragon X<br>Plus 8c | 15.32 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
 
-| **Device description** | **Processor** | **Windows ADK Battery Life test - Local Video Playback** | **Source** | **Date** |
+| **Device**| **Processor** | **Windows ADK Battery Life test - Local Video Playback** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Dell Inspiron 15" 7000 2-in-1** | Intel© Core™ i7-8565U | 8.72 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 | **Dell Inspiron 13" 5000 2-in-1** | Intel© Core™ i5-8250U | 6.77 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |

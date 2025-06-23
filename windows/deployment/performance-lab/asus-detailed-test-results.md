@@ -17,7 +17,7 @@ appliesto:
 
 # ASUS Detailed Test Results
 
-| **Device description** | **Processor** | **Cinebench R24 MT** | **Source** | **Date** |
+| **Device**| **Processor** | **Cinebench R24 MT** | **Source** | **Date** |
 |---|---|---|---|---|
 | **ASUS Zenbook S 16** | AMD Ryzen™ AI 9 HX 370 | 740.3 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
 | **ASUS Vivobook S 14** | AMD Ryzen™ AI 9 365 | 912.0 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
@@ -26,65 +26,65 @@ appliesto:
 | **ASUS Vivobook S 14** | AMD Ryzen™ AI 9 365 | 930 | Windows Performance Lab | April 2025 |
 | **ASUS Zenbook S 14** | Intel© Core™ Ultra 7 256V | 490 | Windows Performance Lab | April 2025 |
 
-| **Device description** | **Processor** | **Geekbench 6 MT** | **Source** | **Date** |
+| **Device**| **Processor** | **Geekbench 6 MT** | **Source** | **Date** |
 |---|---|---|---|---|
 | **ASUS Zenbook 14** | Intel© Core™ Ultra 5 125H | 11,651 | Windows Performance Lab | December 2024 |
 
-| **Device description** | **Processor** | **Procyon® Office (multi-platform)** | **Source** | **Date** |
+| **Device**| **Processor** | **Procyon® Office (multi-platform)** | **Source** | **Date** |
 |---|---|---|---|---|
 | **ASUS Zenbook S 16** | AMD Ryzen™ AI 9 HX 370 | 240,333.3 | Principled Technologies | September 2024 |
 | **ASUS Vivobook S 14** | AMD Ryzen™ AI 9 365 | 248,000.0 | Principled Technologies | September 2024 |
 | **ASUS Zenbook S 14** | Intel© Core™ Ultra 7 256V | 253,666.7 | Principled Technologies | September 2024 |
 
-| **Device description** | **Processor** | **Procyon® Office (Windows platform)** | **Source** | **Date** |
+| **Device**| **Processor** | **Procyon® Office (Windows platform)** | **Source** | **Date** |
 |---|---|---|---|---|
 | **ASUS Zenbook 14** | Intel© Core™ Ultra 5 125H | 5,675.7 | Windows Performance Lab | December 2024 |
 
-| **Device description** | **Processor** | **Speedometer** | **Source** | **Date** |
+| **Device**| **Processor** | **Speedometer** | **Source** | **Date** |
 |---|---|---|---|---|
 | **ASUS Zenbook 14** | Intel© Core™ Ultra 5 125H | 22.43 | Windows Performance Lab | December 2024 |
 
-| **Device description** | **Processor** | **Procyon® AI** | **Source** | **Date** |
+| **Device**| **Processor** | **Procyon® AI** | **Source** | **Date** |
 |---|---|---|---|---|
 | **ASUS Zenbook S 14** | Intel© Core™ Ultra 7 256V | 1,779.3 | Principled Technologies | September 2024 |
 | **ASUS Zenbook S 16** | AMD Ryzen™ AI 9 HX 370 | 1,687 | Windows Performance Lab | April 2025 |
 | **ASUS Vivobook S 14** | AMD Ryzen™ AI 9 365 | 1,614 | Windows Performance Lab | April 2025 |
 | **ASUS Zenbook S 14** | Intel© Core™ Ultra 7 256V | 1,749 | Windows Performance Lab | April 2025 |
 
-| **Device Name** | **Processor** | **3DMark Steel Nomad - Raw Score - High Performance** | **Source** | **Date** |
+| **Device**| **Processor** | **3DMark Steel Nomad - Raw Score - High Performance** | **Source** | **Date** |
 |---|---|---|---|---|
 | **ASUS Vivobook S14** | AMD Ryzen™ AI 9 365 w/ Radeon 880M | 283.00 | Windows Performance Lab | April 2025 |
 | **ASUS Zenbook S 16** | AMD Ryzen™ AI 9 HX 370 w/ Radeon 890M | 306.50 | Windows Performance Lab | April 2025 |
 | **ASUS Vivobook** | AMD Ryzen™ 7 3700U with Radeon Vega Mobile Gfx | NULL | Windows Performance Lab | April 2025 |
 
-| **Device Name** | **Processor** | **War Thunder Avg FPS** | **Source** | **Date** |
+| **Device**| **Processor** | **War Thunder Avg FPS** | **Source** | **Date** |
 |---|---|---|---|---|
 | **ASUS Vivobook S14** | Intel© Core™ Ultra 7 258V | 98.67 | Windows Performance Lab | April 2025 |
 | **ASUS Vivobook S14** | AMD Ryzen™ AI 9 365 w/ Radeon 880M | 146.30 | Windows Performance Lab | April 2025 |
 | **ASUS Zenbook S 16** | AMD Ryzen™ AI 9 HX 370 w/ Radeon 890M | 119.23 | Windows Performance Lab | April 2025 |
 | **ASUS Vivobook** | AMD Ryzen™ 7 3700U with Radeon Vega Mobile Gfx | 67.80 | Windows Performance Lab | April 2025 |
 
-| **Device Name** | **Processor** | **War Thunder Score Avg** | **Source** | **Date** |
+| **Device**| **Processor** | **War Thunder Score Avg** | **Source** | **Date** |
 |---|---|---|---|---|
 | **ASUS Vivobook S14** | Intel© Core™ Ultra 7 258V | 4,054.00 | Windows Performance Lab | April 2025 |
 | **ASUS Vivobook S14** | AMD Ryzen™ AI 9 365 w/ Radeon 880M | 6,010.67 | Windows Performance Lab | April 2025 |
 | **ASUS Zenbook S 16** | AMD Ryzen™ AI 9 HX 370 w/ Radeon 890M | 4,898.33 | Windows Performance Lab | April 2025 |
 | **ASUS Vivobook** | AMD Ryzen™ 7 3700U with Radeon Vega Mobile Gfx | 2,786.33 | Windows Performance Lab | April 2025 |
 
-| **Device Name** | **Processor** | **World of Tanks Avg FPS** | **Source** | **Date** |
+| **Device**| **Processor** | **World of Tanks Avg FPS** | **Source** | **Date** |
 |---|---|---|---|---|
 | **ASUS Vivobook S14** | Intel© Core™ Ultra 7 258V | 122.17 | Windows Performance Lab | April 2025 |
 | **ASUS Vivobook S14** | AMD Ryzen™ AI 9 365 w/ Radeon 880M | 54.33 | Windows Performance Lab | April 2025 |
 | **ASUS Zenbook S 16** | AMD Ryzen™ AI 9 HX 370 w/ Radeon 890M | 52.47 | Windows Performance Lab | April 2025 |
 | **ASUS Vivobook** | AMD Ryzen™ 7 3700U with Radeon Vega Mobile Gfx | 16.97 | Windows Performance Lab | April 2025 |
 
-| **Device description** | **Processor** | **Windows ADK Battery Life test - Web Browsing** | **Source** | **Date** |
+| **Device**| **Processor** | **Windows ADK Battery Life test - Web Browsing** | **Source** | **Date** |
 |---|---|---|---|---|
 | **ASUS Zenbook S 16** | AMD Ryzen™ AI 9 HX 370 | 11.91 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
 | **ASUS Vivobook S 14** | AMD Ryzen™ AI 9 365 | 9.66 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
 | **ASUS Zenbook S 14** | Intel© Core™ Ultra 7 256V | 7.4 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
 
-| **Device description** | **Processor** | **Windows ADK Battery Life test - Local Video Playback** | **Source** | **Date** |
+| **Device**| **Processor** | **Windows ADK Battery Life test - Local Video Playback** | **Source** | **Date** |
 |---|---|---|---|---|
 | **ASUS Zenbook S 16** | AMD Ryzen™ AI 9 HX 370 | 19.01 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
 | **ASUS Vivobook S 14** | AMD Ryzen™ AI 9 365 | 13.56 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
