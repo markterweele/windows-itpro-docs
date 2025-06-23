@@ -26,9 +26,13 @@ The [Windows 10 Extended Security Updates (ESU) program](extended-security-updat
 
 To enable ESU for Windows 10, you must meet the following prerequisites:
 
-**Client operating system:**
 - Windows 10, version 22H2 with [KB5046613](https://support.microsoft.com/help/5046613), or a later update installed
 - Administrative privileges on the device
+- The Windows 10 device is either Microsoft Entra joined or Microsoft Entra hybrid joined.
+   - Devices that are only Entra registered aren't eligible for commercial ESU access.
+   >[!NOTE]
+   > Personal or BYOD devices that are not managed by the organization and are only Entra registered will not qualify for this entitlement. These devices should be enrolled via the Consumer ESU program.
+ 
 
 **Endpoints for client activation:**
 - `https://go.microsoft.com/`
@@ -62,7 +66,15 @@ Some cloud and virtualization scenarios have specific considerations for enablin
    - [Azure Stack Hub](/azure-stack/operator/azure-stack-overview)
    - [Azure Stack Edge](/azure/databox-online/)
 
-- **Windows 365 Cloud PCs**: Windows 10 endpoints accessing  Windows 11 Cloud PCs via [Windows 365](/windows-365/overview) are automatically entitled to ESU for up to three years, so long as the valid Windows 365 license remains active. 
+- **Windows 365 Cloud PCs**: Windows 10 devices accessing Cloud PCs via [Windows 365](/windows-365/overview) are automatically entitled to ESU for the duration of the ESU offer if the user has an active Windows 365 license assigned, provided the following conditions are met:
+- The Windows 10 device is either Microsoft Entra joined or Entra hybrid joined.
+   - Devices that are only Entra registered are not eligible for commercial ESU access.
+- The user must sign in to the Windows 10 device using their Microsoft Entra ID account at least once every 22 days.
+   - If this 22-day window lapses without sign-in, the device will lose ESU access until the user signs in again.
+   - The ESU license is valid for 30 days once issued, and the system attempts to renew it starting at day 22 to avoid service interruption.
+   >[!NOTE]
+   > Personal or BYOD devices that are not managed by the organization and are only Entra registered will not qualify for this entitlement. These devices should be enrolled via the Consumer ESU program.
+
 - **Other virtualization platforms** (such as Nutanix or Citrix): These platforms require manual ESU key activation. Contact your Microsoft account team to obtain a 5x5 key. Activation can be managed with the Volume Activation Management Tool or with a script.
 
 ## Get the product keys for activating Extended Security Update (ESU) licenses
