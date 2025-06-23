@@ -78,7 +78,9 @@ appliesto:
 | **Lenovo Yoga Slim 7x 14.5"** | Snapdragon© X Elite | 1,752 | Windows Performance Lab | April 2025 |
 | **Lenovo T14s Gen6** | Snapdragon© X Elite | 1,755 | Windows Performance Lab | April 2025 |
 | **Lenovo Yoga Slim 7i 15"** | Intel© Core™ Ultra 7 256V | 1,481 | Windows Performance Lab | April 2025 |
-| **Device Name** | Processor | 3DMark Steel Nomad - Raw Score - High Performance | Source | Date |
+
+| **Device** | **Processor** | **3DMark Steel Nomad - Raw Score - High Performance** |  **Source** | **Date** |
+|---|---|---|---|---|
 | **Lenovo Yoga Slim 7** | Intel© Core™ Ultra 7 256V | 550.00 | Windows Performance Lab | April 2025 |
 | **Lenovo IdeaPad S340** | AMD Ryzen™ 7 3700U with Radeon Vega Mobile Gfx | NULL | Windows Performance Lab | April 2025 |
 
