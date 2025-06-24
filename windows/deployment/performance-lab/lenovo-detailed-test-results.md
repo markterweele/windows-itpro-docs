@@ -82,7 +82,7 @@ appliesto:
 | **Device** | **Processor** | **3DMark Steel Nomad - Raw Score - High Performance** |  **Source** | **Date** |
 |---|---|---|---|---|
 | **Lenovo Yoga Slim 7** | Intel© Core™ Ultra 7 256V | 550.00 | Windows Performance Lab | April 2025 |
-| **Lenovo IdeaPad S340** | AMD Ryzen™ 7 3700U with Radeon Vega Mobile Gfx | NULL | Windows Performance Lab | April 2025 |
+
 
 | **Device**| **Processor** | **War Thunder Avg FPS** | **Source** | **Date** |
 |---|---|---|---|---|

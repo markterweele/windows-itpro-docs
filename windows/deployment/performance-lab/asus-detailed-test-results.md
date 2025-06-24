@@ -55,7 +55,7 @@ appliesto:
 |---|---|---|---|---|
 | **ASUS Vivobook S14** | AMD Ryzen™ AI 9 365 w/ Radeon 880M | 283.00 | Windows Performance Lab | April 2025 |
 | **ASUS Zenbook S 16** | AMD Ryzen™ AI 9 HX 370 w/ Radeon 890M | 306.50 | Windows Performance Lab | April 2025 |
-| **ASUS Vivobook** | AMD Ryzen™ 7 3700U with Radeon Vega Mobile Gfx | NULL | Windows Performance Lab | April 2025 |
+
 
 | **Device**| **Processor** | **War Thunder Avg FPS** | **Source** | **Date** |
 |---|---|---|---|---|

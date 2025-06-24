@@ -90,7 +90,6 @@ appliesto:
 | **Hp Envy X360** | Intel© Core™ i7-1065G7 CPU @ 1.30GHz | 113.00 | Windows Performance Lab | April 2025 |
 | **Hp Pavilion** | Intel© Core™ i7-1065G7 CPU @ 1.30GHz | 126.00 | Windows Performance Lab | April 2025 |
 | **Hp Envy** | Intel© Core™ i7-1065G7 CPU @ 1.30GHz | 128.50 | Windows Performance Lab | April 2025 |
-| **Hp Envy x360** | AMD Ryzen™ 7 7730U with Radeon Graphics | NULL | Windows Performance Lab | April 2025 |
 | **HP 15** | AMD Ryzen™ 7 7730U with Radeon Graphics | 208.50 | Windows Performance Lab | April 2025 |
 
 | **Device**| **Processor** | **War Thunder Avg FPS** | **Source** | **Date** |
