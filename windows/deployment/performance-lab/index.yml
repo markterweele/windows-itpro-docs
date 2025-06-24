@@ -29,11 +29,7 @@ landingContent:
           - text: Windows Performance Lab overview
             url: overview.md
           - text: Claims and Disclosures
-            url: claims-disclosures.md
-          - text: Silicon specific claims
-            url: silicon-specific-claims.md
-          - text: Windows 11 PCs Claims
-            url: windows-11-pc-claims.md           
+            url: claims-disclosures.md       
           - text: Testing Methodology
             url: testing-methodology.md
 

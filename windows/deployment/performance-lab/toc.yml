@@ -8,14 +8,10 @@ items:
       href: overview.md
     - name: Claims and Disclosures
       href: claims-disclosures.md
-    - name: Silicon specific claims
-      href: silicon-specific-claims.md
-    - name: Windows 11 PCs Claims
-      href: windows-11-pc-claims.md    
     - name: Testing Methodology
       href: testing-methodology.md
     - name: Detailed Test Results
-      expanded: false
+      expanded: true
       items:
         - name: Acer® Detailed Test Results
           href: acer-detailed-test-results.md
