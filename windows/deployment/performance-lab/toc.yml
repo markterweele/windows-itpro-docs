@@ -8,8 +8,6 @@ items:
       href: overview.md
     - name: Claims and Disclosures
       href: claims-disclosures.md
-    - name: Testing Methodology
-      href: testing-methodology.md
     - name: Detailed Test Results
       expanded: true
       items:
@@ -27,3 +25,5 @@ items:
           href: microsoft-surface-detailed-test-results.md
         - name: Samsung® Detailed Test Results
           href: samsung-detailed-test-results.md
+    - name: Testing Methodology
+      href: testing-methodology.md
