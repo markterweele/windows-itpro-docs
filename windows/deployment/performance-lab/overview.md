@@ -1,5 +1,5 @@
 ---
-title: Windows Performance Lab Overview
+title: Windows Performance Lab
 description: Overview of the Windows Performance Lab and its purpose in testing device performance.
 ms.date: 06/27/2025
 ms.service: windows-client
@@ -15,7 +15,7 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 --- 
 
-# Windows Performance Lab Overview
+# Windows Performance Lab
 
 At Microsoft, we believe that trust is built on transparency, and excellence is driven by accuracy. That is why, in early 2025, we established the Windows Performance Lab—a dedicated team committed to delivering rigorous, data-backed performance insights that empower the entire Windows ecosystem. By providing a centralized source for information about performance testing, we aim to promote the adoption of a consistent approach to benchmark testing across the ecosystem, provide our partners and customers with transparency and build trust in our performance claims. This is especially critical as we usher in a new era of Windows innovation with Copilot+ PCs, where performance and AI experiences go hand in hand. Our mission is clear:
 
