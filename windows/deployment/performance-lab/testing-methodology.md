@@ -79,13 +79,13 @@ Prior to launching any benchmark, follow the procedures below:
 > [!Note]
 > This procedure is required for all benchmarks except those that have an inherent requirement for a network connection. For this (and all) benchmarks, we expect you to use your best efforts to do the following: (i) purchase a fully licensed version of the test (to prevent automatic upload and/or sharing of test results); or (ii) select the appropriate options to disable automatic uploading and/or sharing of test results.
 
-## Cinebench R24
+## Cinebench® R24
 
-Download and install Cinebench R24 from Maxon ([link](https://www.maxon.net/en/downloads/cinebench-2024-downloads)).
+Download and install Cinebench® R24 from Maxon ([link](https://www.maxon.net/en/downloads/cinebench-2024-downloads)).
 
 ### Running the test 
 
-1. Launch Cinebench.
+1. Launch Cinebench®.
 
 1. Select **Start** next to the test you want to run on the top left of the screen.
 
@@ -149,37 +149,37 @@ Download and install Procyon® AI Computer Vision Benchmark from UL ([link](http
 
 1. Wait 15 minutes before rerunning.
 
-## 3DMark 
+## 3DMark® 
 
-Download and install 3DMark benchmark from UL ([link](https://benchmarks.ul.com/3dmark)).
+Download and install 3DMark® benchmark from UL ([link](https://benchmarks.ul.com/3dmark)).
 
 ### Setting up the test
 
-1. Launch 3DMark.
+1. Launch 3DMark®.
 
 1. Enter the registration code.
 
 1. Check for and install any updates.
 
-1. Close 3DMark.
+1. Close 3DMark®.
 
 ### Running the test
 
-1. Launch 3DMark.
+1. Launch 3DMark®.
 
-1. On the 3DMark main page, select **Run** underneath the benchmark of your choice.
+1. On the 3DMark® main page, select **Run** underneath the benchmark of your choice.
 
 1. When the test is completed, record the results.
 
 1. Wait 15 minutes before rerunning.
 
-## Geekbench
+## Geekbench®
 
-Download and install Geekbench 6 using default settings ([link](https://www.geekbench.com/)).
+Download and install Geekbench® 6 using default settings ([link](https://www.geekbench.com/)).
 
 ### Running the test
 
-1. Launch Geekbench.
+1. Launch Geekbench®.
 
 1. Click **Run** on the benchmark of your choice.
 
@@ -195,7 +195,7 @@ Download and install Geekbench 6 using default settings ([link](https://www.geek
 
 ### Running the test
 
-1. The benchmarks are typically located in Graphics sections of the settings within the game (for example, Shadow of the Tomb Raider: Display and Graphics; Cyberpunk 2077: Graphics, B).
+1. The benchmarks are typically located in Graphics sections of the settings within the game (for example, Shadow of the Tomb Raider®: Display and Graphics; Cyberpunk 2077®: Graphics, B).
 
 1. Run benchmark.
 

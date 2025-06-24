@@ -14,20 +14,20 @@ items:
       href: windows-11-pc-claims.md    
     - name: Testing Methodology
       href: testing-methodology.md
-    - name: Detailed test results
+    - name: Detailed Test Results
       expanded: false
       items:
-        - name: Acer detailed test results
+        - name: Acer® Detailed Test Results
           href: acer-detailed-test-results.md
-        - name: ASUS detailed test results
+        - name: ASUS® Detailed Test Results
           href: asus-detailed-test-results.md
-        - name: Dell Technologies detailed test results
+        - name: Dell® Technologies Detailed Test Results
           href: dell-detailed-test-results.md
-        - name: HP detailed test results
+        - name: HP® Detailed Test Results
           href: hp-detailed-test-results.md
-        - name: Lenovo detailed test results
+        - name: Lenovo® Detailed Test Results
           href: lenovo-detailed-test-results.md
         - name: Microsoft Surface detailed test results
           href: microsoft-surface-detailed-test-results.md
-        - name: Samsung detailed test results
+        - name: Samsung® Detailed Test Results
           href: samsung-detailed-test-results.md

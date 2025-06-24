@@ -17,7 +17,7 @@ appliesto:
 
 # Microsoft Surface Detailed Test Results
 
-| **Device**| **Processor** | **Cinebench R24 MT** | **Source** | **Date** |
+| **Device**| **Processor** | **Cinebench® R24 MT** | **Source** | **Date** |
 |---|---|---|---|---|
 | **Microsoft Surface Laptop 3** | Intel© Core™ i7-1065G7 | 208.0 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |
 | **Microsoft**<br>**Surface Laptop 15"** | Snapdragon© X Elite | 950.0 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | February 2024 |

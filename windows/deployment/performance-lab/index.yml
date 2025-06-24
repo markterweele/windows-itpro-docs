@@ -38,21 +38,21 @@ landingContent:
             url: testing-methodology.md
 
 
-  - title: Detailed test results
+  - title: Detailed Test Results
     linkLists:
       - linkListType: reference
         links:
-          - text: Acer detailed test results
+          - text: Acer® Detailed Test Results
             url: acer-detailed-test-results.md
-          - text: ASUS detailed test results
+          - text: ASUS® Detailed Test Results
             url: asus-detailed-test-results.md
-          - text: Dell Technologies detailed test results
+          - text: Dell® Technologies Detailed Test Results
             url: dell-detailed-test-results.md
-          - text: HP detailed test results
+          - text: HP® Detailed Test Results
             url: hp-detailed-test-results.md
-          - text: Lenovo detailed test results
+          - text: Lenovo® Detailed Test Results
             url: lenovo-detailed-test-results.md
           - text: Microsoft Surface detailed test results
             url: microsoft-surface-detailed-test-results.md
-          - text: Samsung detailed test results
+          - text: Samsung® Detailed Test Results
             url: samsung-detailed-test-results.md
