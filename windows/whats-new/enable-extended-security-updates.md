@@ -8,7 +8,7 @@ author: mestew
 manager: bpardi
 ms.localizationpriority: medium
 ms.topic: article
-ms.date: 06/12/2025
+ms.date: 06/24/2025
 ms.collection:
   - highpri
   - tier2
@@ -67,13 +67,11 @@ Some cloud and virtualization scenarios have specific considerations for enablin
    - [Azure Stack Edge](/azure/databox-online/)
 
 - **Windows 365 Cloud PCs**: Windows 10 devices accessing Cloud PCs via [Windows 365](/windows-365/overview) are automatically entitled to ESU for the duration of the ESU offer if the user has an active Windows 365 license assigned, provided the following conditions are met:
-- The Windows 10 device is either Microsoft Entra joined or Entra hybrid joined.
-   - Devices that are only Entra registered are not eligible for commercial ESU access.
+- The Windows 10 device meets the [prerequisites](#prerequisites)
 - The user must sign in to the Windows 10 device using their Microsoft Entra ID account at least once every 22 days.
    - If this 22-day window lapses without sign-in, the device will lose ESU access until the user signs in again.
    - The ESU license is valid for 30 days once issued, and the system attempts to renew it starting at day 22 to avoid service interruption.
-   >[!NOTE]
-   > Personal or BYOD devices that are not managed by the organization and are only Entra registered will not qualify for this entitlement. These devices should be enrolled via the Consumer ESU program.
+
 
 - **Other virtualization platforms** (such as Nutanix or Citrix): These platforms require manual ESU key activation. Contact your Microsoft account team to obtain a 5x5 key. Activation can be managed with the Volume Activation Management Tool or with a script.
 
