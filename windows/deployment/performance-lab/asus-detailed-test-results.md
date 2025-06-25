@@ -90,3 +90,11 @@ appliesto:
 | **ASUS® Vivobook S 14** | AMD Ryzen™ AI 9 365 | 13.56 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
 | **ASUS® Zenbook S 14** | Intel© Core™ Ultra 7 256V | 23.28 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
 | **ASUS® Zenbook 14** | Intel© Core™ Ultra 5 125H | 17.39 | Windows Performance Lab | December 2024 |
+
+| **Device**| **Processor** | **Memory** | **Storage** | **Civilization VI® Avg Frame Time** | **Date** |
+|---|---|---|---|---|---|
+| **ASUS® Vivobook S 14** | Intel© Core™ Ultra 7 256V |  32 GB | 1000 GB | 9.63 | April 2025 |
+| **ASUS® Vivobook S 14** | AMD Ryzen™ AI 9 365 | 24 GB | 512 GB | 16.77 | April 2025 |
+| **ASUS® Zenbook S 16** | AMD Ryzen™ AI 9 HX 370 | 32 GB | 1000 GB | 16.17 | April 2025 |
+| **ASUS® Vivobook** | AMD Ryzen™ 7 3700U | 8 GB | 512 GB | 31.72 | April 2025 |
+

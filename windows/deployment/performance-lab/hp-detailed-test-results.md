@@ -160,3 +160,11 @@ appliesto:
 | **HP® Envy x360** | Intel© Core™ 7 150U | 7.07 | Windows Performance Lab | December 2024 |
 | **HP® Laptop 15** | Intel© Core™ i3-1215U | 10.99 | Windows Performance Lab | December 2024 |
 | **HP® Pavilion Laptop 15** | Intel© Core™ i5-1335U | 8.48 | Windows Performance Lab | December 2024 |
+
+| **Device**| **Processor** | **Memory** | **Storage** | **PCMark Gaming Battery Life (minutes)** | **Date** |
+|---|---|---|---|---|---|
+| **HP® Envy x360**  | Intel© Core™ i7-1065G7 | 12 GB | 512 GB | 103 | April 2025 |
+| **HP® Envy**  | Intel© Core™ i7-1065G7 | 8 GB | 256 GB | 110 | April 2025 |
+| **HP® Envy x360** | AMD Ryzen™ 7 3700U | 16 GB | 1000 GB | 97 | April 2025 |
+| **HP® 15** | AMD Ryzen™ 7 3700U | 8 GB | 256 GB | 78 | April 2025 |
+
