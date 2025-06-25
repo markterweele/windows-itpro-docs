@@ -8,7 +8,7 @@ author: mestew
 manager: bpardi
 ms.localizationpriority: medium
 ms.topic: article
-ms.date: 06/24/2025
+ms.date: 06/25/2025
 ms.collection:
   - highpri
   - tier2
@@ -18,7 +18,7 @@ appliesto:
 
 # Enable Extended Security Updates (ESU)
 <!--10014911-->
-> **Looking for consumer information?** For individuals or Windows 10 Home customers, more information about Extended Security Updates for Windows 10 is available in the frequently asked questions section of the [End of support for Windows 10](https://www.microsoft.com/windows/end-of-support) page.<!--10013381-->
+> **Looking for consumer information?** For individuals or Windows 10 Home customers, more information about Extended Security Updates for Windows 10 is available in the frequently asked questions section of the [End of support for Windows 10](https://www.microsoft.com/windows/end-of-support) page. For information on how to enroll in ESU, see [Windows 10 Consumer Extended Security Updates (ESU) program](https://support.microsoft.com/windows/33e17de9-36b3-43bb-874d-6c53d2e4bf42).<!--10013381-->
 
 The [Windows 10 Extended Security Updates (ESU) program](extended-security-updates.md) allows organizations to receive critical and important security updates for PCs enrolled in the paid subscription service. ESU extends the use of Windows 10 devices past the end of support date on October 14, 2025. This article provides instructions on how to enable the ESU keys in commercial environments.
 
@@ -68,8 +68,8 @@ Some cloud and virtualization scenarios have specific considerations for enablin
 
 - **Windows 365 Cloud PCs**: Windows 10 devices accessing Cloud PCs via [Windows 365](/windows-365/overview) are automatically entitled to ESU for the duration of the ESU offer if the user has an active Windows 365 license assigned, provided the following conditions are met:
    - The Windows 10 device meets the [prerequisites](#prerequisites)
-   - The user must sign in to the Windows 10 device using their Microsoft Entra ID account at least once every 22 days.
-      - If this 22-day window lapses without sign-in, the device will lose ESU access until the user signs in again.
+   - The user must sign in to the Windows 10 device using their Microsoft Entra ID account at least once every 22 days to maintain ESU access.
+      - If this 22-day window lapses without sign-in, the device will no longer be entitled to new ESU updates until the user signs in again.
       - The ESU license is valid for 30 days once issued, and the system attempts to renew it starting at day 22 to avoid service interruption.
 
 
