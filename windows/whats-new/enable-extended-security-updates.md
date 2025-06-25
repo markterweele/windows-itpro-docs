@@ -31,7 +31,7 @@ To enable ESU for Windows 10, you must meet the following prerequisites:
 - The Windows 10 device is either Microsoft Entra joined or Microsoft Entra hybrid joined.
    - Devices that are only Entra registered aren't eligible for commercial ESU access.
    >[!NOTE]
-   > Personal or BYOD devices that are not managed by the organization and are only Entra registered will not qualify for this entitlement. These devices should be enrolled via the Consumer ESU program.
+   > Personal or BYOD devices that are not managed by the organization and are only Entra registered will not qualify for this entitlement. These devices should be enrolled via the [Consumer ESU program](https://support.microsoft.com/windows/33e17de9-36b3-43bb-874d-6c53d2e4bf42).
  
 
 **Endpoints for client activation:**
