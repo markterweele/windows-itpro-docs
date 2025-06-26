@@ -112,7 +112,7 @@ appliesto:
 
 | **Device**| **Processor** | **World of Tanks® Avg FPS** | **Source** | **Date** |
 |---|---|---|---|---|
-| **HP® Omnibook Ultra** | AMD Ryzen™ AI 9 365 w/ Radeon 880M | 82.67 | Windows Performance Lab | April 2025 |
+| **HP® Omnibook Ultra** | AMD Ryzen™ AI 9 36582.67 | Windows Performance Lab | April 2025 |
 | **HP® Envy X360** | Intel© Core™ i7-1065G7 CPU @ 1.30GHz | 36.10 | Windows Performance Lab | April 2025 |
 | **HP® Pavilion** | Intel© Core™ i7-1065G7 CPU @ 1.30GHz | 34.10 | Windows Performance Lab | April 2025 |
 | **HP® Envy** | Intel© Core™ i7-1065G7 CPU @ 1.30GHz | 31.63 | Windows Performance Lab | April 2025 |
@@ -160,6 +160,16 @@ appliesto:
 | **HP® Envy x360** | Intel© Core™ 7 150U | 7.07 | Windows Performance Lab | December 2024 |
 | **HP® Laptop 15** | Intel© Core™ i3-1215U | 10.99 | Windows Performance Lab | December 2024 |
 | **HP® Pavilion Laptop 15** | Intel© Core™ i5-1335U | 8.48 | Windows Performance Lab | December 2024 |
+
+| **Device**| **Processor** | **Memory** | **Storage** | **Civilization VI® Avg Frame Time** | **Date** |
+|---|---|---|---|---|---|
+| **HP® Omnibook Ultra** | AMD Ryzen™ AI 9 365 | 16 GB | 1000 GB | 11.23 | April 2025 |
+| **HP® Envyx360** | Intel© Core™ i7-1065G7 | 12 GB | 512 GB | 60.8 | April 2025 |
+| **HP® Pavilion Laptop 15** | Intel© Core™ i7-1065G7 | 16 GB | 512 GB | 56.13 | April 2025 |
+| **HP® Envy** | Intel© Core™ i7-1065G7 | 8 GB | 256 GB | 58.73 | April 2025 |
+| **HP® Envy x360** | AMD Ryzen™ 7 3700U | 16 GB | 1000 GB | 38 | April 2025 |
+| **HP® 15** | AMD Ryzen™ 7 3700U | 8 GB | 256 GB | 18.43 | April 2025 |
+
 
 | **Device**| **Processor** | **Memory** | **Storage** | **PCMark Gaming Battery Life (minutes)** | **Date** |
 |---|---|---|---|---|---|

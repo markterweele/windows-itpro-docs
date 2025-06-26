@@ -135,3 +135,10 @@ appliesto:
 | **Lenovo® Ideapad Slim 3** | Intel© Core™ i5-1335U | 14.86 | Windows Performance Lab | December 2024 |
 | **Lenovo® Ideapad Slim 3** | Intel© Core™ i3-1215U | 11.22 | Windows Performance Lab | December 2024 |
 | **Lenovo® Yoga** | Intel© Core™ i7-1065G7 | 20.13 | Windows Performance Lab | December 2024 |
+
+| **Device**| **Processor** | **Memory** | **Storage** | **Civilization VI® Avg Frame Time** | **Date** |
+|---|---|---|---|---|---|
+
+
+| **Device**| **Processor** | **Memory** | **Storage** | **PCMark Gaming Battery Life (minutes)** | **Date** |
+|---|---|---|---|---|---|

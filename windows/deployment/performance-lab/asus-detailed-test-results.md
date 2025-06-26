@@ -98,3 +98,10 @@ appliesto:
 | **ASUS® Zenbook S 16** | AMD Ryzen™ AI 9 HX 370 | 32 GB | 1000 GB | 16.17 | April 2025 |
 | **ASUS® Vivobook** | AMD Ryzen™ 7 3700U | 8 GB | 512 GB | 31.72 | April 2025 |
 
+
+| **Device**| **Processor** | **Memory** | **Storage** | **PCMark Gaming Battery Life (minutes)** | **Date** |
+|---|---|---|---|---|---|
+| **ASUS® Vivobook S 14** | Intel© Core™ Ultra 7 256V |  32 GB | 1000 GB | 151 | April 2025 |
+| **ASUS® Vivobook S 14** | AMD Ryzen™ AI 9 365 | 24 GB | 512 GB | 100 | April 2025 |
+| **ASUS® Zenbook S 16** | AMD Ryzen™ AI 9 HX 370 | 32 GB | 1000 GB | 100 | April 2025 |
+| **ASUS® Vivobook** | AMD Ryzen™ 7 3700U | 8 GB | 512 GB | 78 | April 2025 |

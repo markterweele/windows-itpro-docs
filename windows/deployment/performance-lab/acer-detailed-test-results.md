@@ -74,3 +74,11 @@ appliesto:
 | **Acer® Swift 14 AI** | Intel© Core™ Ultra 9 288V | 15.72 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
 | **Acer® Swift Go 14 AI** | Snapdragon© X Plus 8c | 20.23 | [Principled Technologies](https://www.principledtechnologies.com/Microsoft/Copilot-plus-PC-performance/) | September 2024 |
 | **Acer® Aspire Vero 16** | Intel© Core™ Ultra 5 125U | 17.05 | Windows Performance Lab | December 2024 |
+
+| **Device**| **Processor** | **Memory** | **Storage** | **Civilization VI® Avg Frame Time** | **Date** |
+|---|---|---|---|---|---|
+| **Acer® Swift AI** | Intel© Core™ Ultra 7 256V | 32 GB | 1000 GB | 20.4 | April 2025 |
+
+| **Device**| **Processor** | **Memory** | **Storage** | **PCMark Gaming Battery Life (minutes)** | **Date** |
+|---|---|---|---|---|---|
+| **Acer® Swift AI** | Intel© Core™ Ultra 7 256V | 32 GB | 1000 GB | 135 | April 2025 |
