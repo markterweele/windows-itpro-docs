@@ -138,7 +138,12 @@ appliesto:
 
 | **Device**| **Processor** | **Memory** | **Storage** | **Civilization VI® Avg Frame Time** | **Date** |
 |---|---|---|---|---|---|
-
+| **Lenovo® Yoga Slim 7** | Intel© Core™ Ultra 7 256V | 16 GB | 512 GB | 11.8 | April 2025 |
+| **Lenovo® Yoga Pro 7** | AMD Ryzen™ AI 9 365 CPU | 32 GB | 1000 GB | 11.77 | April 2025 |
+| **Lenovo® IdeaPad S340** | AMD Ryzen™ 7 3700U | 16 GB | 256 GB | 53.43 | April 2025 |
 
 | **Device**| **Processor** | **Memory** | **Storage** | **PCMark Gaming Battery Life (minutes)** | **Date** |
 |---|---|---|---|---|---|
+| **Lenovo® Yoga Slim 7** | Intel© Core™ Ultra 7 256V | 16 GB | 512 GB | 127 | April 2025 |
+| **Lenovo® Yoga Pro 7** | AMD Ryzen™ AI 9 365 CPU | 32 GB | 1000 GB | 83 | April 2025 |
+| **Lenovo® IdeaPad S340** | AMD Ryzen™ 7 3700U | 16 GB | 256 GB | 127 | April 2025 |
