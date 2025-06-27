@@ -1,7 +1,8 @@
 ---
 title: MSSecurityGuide Policy CSP
 description: Learn more about the MSSecurityGuide Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 04/30/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -21,7 +22,7 @@ ms.date: 09/27/2024
 <!-- ApplyUACRestrictionsToLocalAccountsOnNetworkLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ApplyUACRestrictionsToLocalAccountsOnNetworkLogon-Applicability-End -->
 
 <!-- ApplyUACRestrictionsToLocalAccountsOnNetworkLogon-OmaUri-Begin -->
@@ -71,7 +72,7 @@ ms.date: 09/27/2024
 <!-- ConfigureSMBV1ClientDriver-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureSMBV1ClientDriver-Applicability-End -->
 
 <!-- ConfigureSMBV1ClientDriver-OmaUri-Begin -->
@@ -121,7 +122,7 @@ ms.date: 09/27/2024
 <!-- ConfigureSMBV1Server-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureSMBV1Server-Applicability-End -->
 
 <!-- ConfigureSMBV1Server-OmaUri-Begin -->
@@ -171,7 +172,7 @@ ms.date: 09/27/2024
 <!-- EnableStructuredExceptionHandlingOverwriteProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnableStructuredExceptionHandlingOverwriteProtection-Applicability-End -->
 
 <!-- EnableStructuredExceptionHandlingOverwriteProtection-OmaUri-Begin -->
@@ -221,7 +222,7 @@ ms.date: 09/27/2024
 <!-- NetBTNodeTypeConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 with [KB5053657](https://support.microsoft.com/help/5053657) [10.0.22621.5126] and later <br> ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- NetBTNodeTypeConfiguration-Applicability-End -->
 
 <!-- NetBTNodeTypeConfiguration-OmaUri-Begin -->
@@ -271,7 +272,7 @@ ms.date: 09/27/2024
 <!-- TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications-Applicability-End -->
 
 <!-- TurnOnWindowsDefenderProtectionAgainstPotentiallyUnwantedApplications-OmaUri-Begin -->
@@ -321,7 +322,7 @@ ms.date: 09/27/2024
 <!-- WDigestAuthentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- WDigestAuthentication-Applicability-End -->
 
 <!-- WDigestAuthentication-OmaUri-Begin -->

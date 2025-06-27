@@ -2,7 +2,7 @@
 title: AppLocker architecture and components
 description: This article for IT professional describes AppLocker’s basic architecture and its major components.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/11/2024
 ---
 

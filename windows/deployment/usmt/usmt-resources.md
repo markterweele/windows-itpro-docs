@@ -2,12 +2,12 @@
 title: USMT Resources
 description: Learn about User State Migration Tool (USMT) online resources, including Microsoft Visual Studio and forums.
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
 ms.date: 01/29/2025
-ms.topic: conceptual
+ms.topic: article
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

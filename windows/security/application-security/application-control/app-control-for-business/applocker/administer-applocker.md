@@ -2,7 +2,7 @@
 title: Administer AppLocker
 description: This article for IT professionals provides links to specific procedures to use when administering AppLocker policies.
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2024
 ---
 

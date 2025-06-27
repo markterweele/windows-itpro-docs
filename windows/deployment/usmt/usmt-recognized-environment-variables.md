@@ -4,11 +4,11 @@ description: Learn how to use environment variables to identify folders that can
 ms.service: windows-client
 ms.subservice: itpro-deploy
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 author: frankroj
 ms.date: 01/29/2025
-ms.topic: conceptual
+ms.topic: article
 ms.collection:
   - highpri
   - tier2

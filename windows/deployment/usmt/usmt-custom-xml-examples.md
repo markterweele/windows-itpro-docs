@@ -2,11 +2,11 @@
 title: Custom XML Examples
 description: Use custom XML examples to learn how to migrate an unsupported application, migrate files and registry keys, and migrate the Videos folder.
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.topic: conceptual
+ms.topic: article
 ms.subservice: itpro-deploy
 ms.date: 01/29/2025
 appliesto:

@@ -7,14 +7,14 @@ ms.topic: reference
 author: cmknox
 ms.author: carmenf
 ms.reviewer: mstewart
-manager: aaroncz
+manager: bpardi
 ms.collection: tier3
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>
-- ✅ <a href=https://learn.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache target=_blank>Connected Cache on a Configuration Manager distribution point</a>		
-ms.date: 05/23/2024
+- ✅ <a href=https://learn.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache target=_blank>Connected Cache on a Configuration Manager distribution point</a>
+ms.date: 04/15/2025
 ---
 
 # Microsoft Connected Cache content and services endpoints
@@ -36,4 +36,7 @@ Use the table below to reference any particular content types or services endpoi
 | *.assets1.xboxlive.com, *.assets2.xboxlive.com, *.dlassets.xboxlive.com, *.dlassets2.xboxlive.com, *.d1.xboxlive.com, *.d2.xboxlive.com, *.assets.xbox.com, *.xbl-dlassets-origin.xboxlive.com, *.assets-origin.xboxlive.com, *.xvcb1.xboxlive.com, *.xvcb2.xboxlive.com, *.xvcf1.xboxlive.com, *.xvcf2.xboxlive.com |  HTTP / 80 | Xbox | | Both |
 | *.tlu.dl.adu.microsoft.com, *.nlu.dl.adu.microsoft.com, *.dcsfe.prod.adu.microsoft.com |  HTTP / 80 | Device Update | [Complete list](/azure/iot-hub-device-update/) of endpoints for Device Update updates.  |  Both |
 | *.do.dsp.mp.microsoft.com |  HTTP / 80 </br> HTTPs / 443 | Microsoft Connected Cache -> Delivery Optimization Services communication | [Complete list](../do/waas-delivery-optimization-faq.yml) of endpoints for Delivery Optimization only.  | Connected Cache Managed in Azure |
-| *.azure-devices.net, *.global.azure-devices-provisioning.net, *.azurecr.io, *.blob.core.windows.net, *.mcr.microsoft.com, github.com |  AMQP / 5671 </br>  MQTT / 8883 </br> HTTPs / 443 | IoT Edge / IoT Hub communication| [Complete list](/azure/iot-hub/iot-hub-devguide-protocols) of Azure IoT Hub communication protocols and ports. [Azure IoT Guide](/azure/iot-hub/iot-hub-devguide-endpoints) to understanding Azure IoT Hub endpoints. | Connected Cache Managed in Azure |
+| *.azure-devices.net, *.global.azure-devices-provisioning.net, *.azurecr.io, *.blob.core.windows.net, *.mcr.microsoft.com, github.com | HTTPs / 443 | IoT Edge / IoT Hub communication| [Complete list](/azure/iot-hub/iot-hub-devguide-protocols) of Azure IoT Hub communication protocols and ports. [Azure IoT Guide](/azure/iot-hub/iot-hub-devguide-endpoints) to understanding Azure IoT Hub endpoints. | Connected Cache Managed in Azure |
+| *.ubuntu.com, api.snapcraft.io | HTTP / 80 </br> HTTPs / 443 | Ubuntu package updates | Used by Linux distribution image in WSL on Windows host machine to deploy Connected Cache. | Connected Cache Managed in Azure |
+| packages.microsoft.com | HTTP / 80 </br> HTTPs / 443 | Microsoft package updates | Used to deploy required Connected Cache packages to Windows and Linux host machines. | Connected Cache Managed in Azure |
+| aka.ms, raw.githubusercontent.com | HTTPs / 443 | Azure IoT Identity Service | Checks the identity service version file is the latest version. | Connected Cache Managed in Azure |

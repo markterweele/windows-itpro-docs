@@ -3,14 +3,14 @@ title: What's new in Delivery Optimization
 description: What's new in Delivery Optimization, a peer-to-peer distribution method in Windows 10 and Windows 11.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: whats-new
 author: cmknox
 ms.author: carmenf
-manager: aaroncz
+manager: bpardi
 ms.reviewer: mstewart
 ms.collection: tier3
 ms.localizationpriority: medium
-appliesto: 
+appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 05/23/2024

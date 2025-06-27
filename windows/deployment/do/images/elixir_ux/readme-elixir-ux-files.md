@@ -1,11 +1,11 @@
 ---
 title: Don't Remove images under do/images/elixir_ux - used by Azure portal Diagnose/Solve feature UI
-manager: aaroncz
+manager: bpardi
 description: Elixir images read me file
 ms.service: windows-client
 author: nidos
 ms.author: nidos
-ms.topic: conceptual
+ms.topic: article
 ms.date: 12/31/2017
 ms.subservice: itpro-updates
 robots: noindex
@@ -13,7 +13,7 @@ robots: noindex
 
 # Read Me
 
-This file contains the images that are included in this GitHub repository that are used by the Azure UI for Diagnose and Solve. The following images _shouldn't be removed_ from the repository: 
+This file contains the images that are included in this GitHub repository that are used by the Azure UI for Diagnose and Solve. The following images _shouldn't be removed_ from the repository:
 
 :::image type="content" source="ux-check-verbose-2.png" alt-text="A screenshot that shows 6 out of the 22 checks raising errors.":::
 

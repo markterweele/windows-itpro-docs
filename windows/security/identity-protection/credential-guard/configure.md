@@ -1,5 +1,5 @@
 ---
-ms.date: 06/20/2024
+ms.date: 02/25/2025
 title: Configure Credential Guard
 description: Learn how to configure Credential Guard using MDM, Group Policy, or the registry.
 ms.topic: how-to
@@ -190,29 +190,6 @@ Open the Event Viewer (`eventvwr.exe`) and go to `Windows Logs\System` and filte
   ```
   :::column-end:::
 :::row-end:::
-
-The following event indicates whether TPM is used for key protection. Path: `Applications and Services logs > Microsoft > Windows > Kernel-Boot`
-
-:::row:::
-  :::column span="1":::
-  **Event ID**
-  :::column-end:::
-  :::column span="3":::
-  **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column span="1":::
-  51 (Information)
-  :::column-end:::
-  :::column span="3":::
-  ```logging
-  VSM Master Encryption Key Provisioning. Using cached copy status: 0x0. Unsealing cached copy status: 0x1. New key generation status: 0x1. Sealing status: 0x1. TPM PCR mask: 0x0.
-  ```
-  :::column-end:::
-:::row-end:::
-
-If you're running with a TPM, the TPM PCR mask value is something other than 0.
 
 ## Disable Credential Guard
 

@@ -1,7 +1,8 @@
 ---
 title: LocalSecurityAuthority Policy CSP
 description: Learn more about the LocalSecurityAuthority Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 03/12/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -21,7 +22,7 @@ ms.date: 09/27/2024
 <!-- AllowCustomSSPsAPs-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- AllowCustomSSPsAPs-Applicability-End -->
 
 <!-- AllowCustomSSPsAPs-OmaUri-Begin -->
@@ -80,7 +81,7 @@ This policy controls the configuration under which LSASS loads custom SSPs and A
 <!-- ConfigureLsaProtectedProcess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureLsaProtectedProcess-Applicability-End -->
 
 <!-- ConfigureLsaProtectedProcess-OmaUri-Begin -->

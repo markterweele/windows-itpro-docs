@@ -3,10 +3,10 @@ title: Policies for update compliance and user experience
 description: Explanation and recommendations for update compliance, activity, and user experience for your organization.
 ms.service: windows-client
 ms.subservice: itpro-updates
-ms.topic: conceptual
+ms.topic: article
 author: mestew
 ms.author: mstewart
-manager: aaroncz
+manager: bpardi
 ms.localizationpriority: medium
 appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
@@ -94,7 +94,7 @@ options must be **Disabled** in order to take advantage of intelligent active ho
 If you do set active hours, we recommend setting the following policies to **Disabled** in order to increase update
 velocity:
 
-- [Delay automatic reboot](waas-restart.md#delay-automatic-restart). While it's possible to set the system to delay restarts for users who are logged in, this setting might delay an update indefinitely if a user is always either logged in or shut down. Instead, we recommend setting the following polices to **Disabled**:
+- [Delay automatic reboot](waas-restart.md#delay-automatic-restart). While it's possible to set the system to delay restarts for users who are logged in, this setting might delay an update indefinitely if a user is always either logged in or shut down. Instead, we recommend setting the following policies to **Disabled**:
     - **Turn off auto-restart during active hours**
     - **No auto-restart with logged on users for scheduled automatic updates**
 
@@ -183,7 +183,7 @@ As administrators, you have set up and expect certain behaviors, so we expressly
 > expected. For example, if a device is not reacting to your MDM policy changes, check to see if a similar
 > policy is set in Group Policy with a differing value.
 > If you find that update velocity is not as high as you expect or if some devices are slower than others, it might be
-> time to clear all polices and settings and specify only the recommended update policies. See the Policy and settings reference for a consolidated list of recommended polices.
+> time to clear all policies and settings and specify only the recommended update policies. See the Policy and settings reference for a consolidated list of recommended policies.
 
 The following are policies that you might want to disable because they could decrease update velocity or there are better policies to use that might conflict:
 - **Defer Feature Updates Period in Days**. For maximum update velocity, it's best to set this to **0** (no

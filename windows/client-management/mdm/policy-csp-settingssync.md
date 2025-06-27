@@ -1,7 +1,8 @@
 ---
 title: SettingsSync Policy CSP
 description: Learn more about the SettingsSync Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 04/30/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -10,6 +11,8 @@ ms.date: 09/27/2024
 # Policy CSP - SettingsSync
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- SettingsSync-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -21,7 +24,7 @@ ms.date: 09/27/2024
 <!-- DisableAccessibilitySettingSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DisableAccessibilitySettingSync-Applicability-End -->
 
 <!-- DisableAccessibilitySettingSync-OmaUri-Begin -->
@@ -82,7 +85,7 @@ If you don't set or disable this setting, syncing of the "accessibility" group i
 <!-- DisableLanguageSettingSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DisableLanguageSettingSync-Applicability-End -->
 
 <!-- DisableLanguageSettingSync-OmaUri-Begin -->
@@ -136,6 +139,56 @@ If you don't set or disable this setting, syncing of the "language preferences" 
 <!-- DisableLanguageSettingSync-Examples-End -->
 
 <!-- DisableLanguageSettingSync-End -->
+
+<!-- EnableWindowsBackup-Begin -->
+## EnableWindowsBackup
+
+<!-- EnableWindowsBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- EnableWindowsBackup-Applicability-End -->
+
+<!-- EnableWindowsBackup-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/SettingsSync/EnableWindowsBackup
+```
+<!-- EnableWindowsBackup-OmaUri-End -->
+
+<!-- EnableWindowsBackup-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- EnableWindowsBackup-Description-End -->
+
+<!-- EnableWindowsBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableWindowsBackup-Editable-End -->
+
+<!-- EnableWindowsBackup-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableWindowsBackup-DFProperties-End -->
+
+<!-- EnableWindowsBackup-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | EnableWindowsBackup |
+| ADMX File Name | SettingSync.admx |
+<!-- EnableWindowsBackup-AdmxBacked-End -->
+
+<!-- EnableWindowsBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableWindowsBackup-Examples-End -->
+
+<!-- EnableWindowsBackup-End -->
 
 <!-- SettingsSync-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

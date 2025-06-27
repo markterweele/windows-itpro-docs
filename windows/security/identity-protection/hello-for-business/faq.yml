@@ -177,7 +177,7 @@ sections:
           *Convenience PIN* provides a simpler way to sign in to Windows than passwords, but it still uses a password for authentication. When the correct convenience PIN is provided to Windows, the password information is loaded from its cache and authenticates the user. Organizations using convenience PINs should move to **Windows Hello for Business**. New Windows deployments should deploy Windows Hello for Business and not convenience PINs.
       - question: Can I use a convenience PIN with Microsoft Entra ID?
         answer: |
-          No. While it's possible to set a convenience PIN on Microsoft Entra joined and Microsoft Entra hybrid joined devices, convenience PIN isn't supported for Microsoft Entra user accounts (including synchronized identities). Convenience PIN is only supported for on-premises Active Directory users and local account users.
+          No. While it's possible to set a convenience PIN on Microsoft Entra joined and Microsoft Entra hybrid joined devices, convenience PIN isn't supported for authenticating Microsoft Entra user accounts (including synchronized identities). Convenience PIN is only supported for authenticating users to on-premises Active Directory and local account users. Organizations that want to authenticate to Microsoft Entra should deploy Windows Hello for Business, which provides users with an Entra credential that can be used to access Entra-protected resources. Organizations that do not use Windows Hello for Business can choose to deploy convenience PINs on their workstations, including Entra Joined or Entra Hybrid Joined workstations used by on-premises or synchronized user accounts, but convenience PIN will not be able to provide authentication or SSO to Entra. The convenience PIN may still be used for logging into the user's PC or for storing other credentials used by the organization, such as certificates or passkeys.
       - question: What about virtual smart cards?
         answer: |
           Windows Hello for Business is the modern, two-factor authentication for Windows. Customers using virtual smart cards are strongly encouraged to move to Windows Hello for Business.
@@ -210,9 +210,9 @@ sections:
       - question: Does Windows Hello for Business cloud Kerberos trust work in my on-premises environment?
         answer: |
           This feature doesn't work in a pure on-premises AD domain services environment.
-      - question: Does Windows Hello for Business cloud Kerberos trust work in a Windows sign-in with RODC present in the hybrid environment?
+      - question: Does Windows Hello for Business cloud Kerberos trust work with RODC present in the hybrid environment?
         answer: |
-          Windows Hello for Business cloud Kerberos trust looks for a writeable DC to exchange the partial TGT. As long as you have at least one writeable DC per site, login with cloud Kerberos trust will work.
+          Windows Hello for Business cloud Kerberos trust functions correctly when the client authenticates directly to a writable domain controller or to a Read-Only Domain Controller (RODC) that doesn't cache the user's credentials, in accordance with the Password Replication Policy. If the client attempts to authenticate to an RODC that can cache the user's credentials, cloud Kerberos trust authentication might fail. To mitigate this, deploy KDC certificates to all RODCs to support Windows Hello for Business key trust authentication, which is also required for those RODCs to support LDAP over SSL. This configuration ensures that authentication can seamlessly failover to Windows Hello for Business key trust authentication, thereby guaranteeing successful user authentication.
       - question: Do I need line of sight to a domain controller to use Windows Hello for Business cloud Kerberos trust?
         answer: |
           Windows Hello for Business cloud Kerberos trust requires line of sight to a domain controller when:

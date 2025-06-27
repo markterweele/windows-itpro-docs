@@ -2,12 +2,12 @@
 title: General Conventions
 description: Learn about general XML guidelines and how to use XML helper functions in the XML Elements library to change migration behavior.
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
 ms.date: 01/29/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

@@ -4,9 +4,9 @@ description: Hardware and software system integrity-hardening capabilities that 
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa
-manager: aaroncz
+manager: bpardi
 ms.date: 09/11/2024
-ms.topic: conceptual
+ms.topic: article
 appliesto:
 - ✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>
 - ✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>

@@ -1,13 +1,13 @@
 ---
 title: Windows deployment scenarios
 description: Understand the different ways Windows operating system can be deployed in an organization. Explore several Windows deployment scenarios.
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 author: frankroj
 ms.service: windows-client
 ms.localizationpriority: medium
-ms.topic: conceptual
-ms.date: 02/13/2024
+ms.topic: install-set-up-deploy
+ms.date: 02/27/2025
 ms.subservice: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>

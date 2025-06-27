@@ -2,11 +2,11 @@
 title: Identify Users
 description: Learn how to identify users that need to be migrated, and how to migrate local accounts and domain accounts.
 ms.reviewer: kevinmi,warrenw
-manager: aaroncz
+manager: bpardi
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.topic: conceptual
+ms.topic: article
 ms.localizationpriority: medium
 ms.subservice: itpro-deploy
 ms.date: 01/29/2025
